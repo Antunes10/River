@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator leftLayoutAnimator;
     [SerializeField] private Animator middleLayoutAnimator;
     [SerializeField] private Animator rightLayoutAnimator;
+
+    private Animator layoutAnimator;
     
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -60,6 +62,8 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         choosing = false;
+
+        layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         // get all of the choices text
         choicesText = new TextMeshProUGUI[choices.Length];
@@ -205,6 +209,12 @@ public class DialogueManager : MonoBehaviour
             switch(tagKey) {
                 case SPEAKER_TAG:
                     displayNameText.text = tagValue;
+                    if (tagValue == "") {
+                        layoutAnimator.Play("NarratorMode");
+                    }
+                    else {
+                        layoutAnimator.Play("DialogueMode");
+                    }
                     break;
                 case PORTRAIT_TAG:
                     portraitAnimator.Play(tagValue);
