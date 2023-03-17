@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
         _horizontalM = Input.GetAxisRaw("Horizontal") * _speed;
         _verticalM = Input.GetAxisRaw("Vertical") * _speed;
 
-        transform.position = new Vector2(transform.position.x + _horizontalM, transform.position.y + _verticalM);
+        //transform.position = new Vector2(transform.position.x + _horizontalM, transform.position.y + _verticalM);
+
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
     }
 }
