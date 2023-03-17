@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private const string BACKGROUND_TAG = "background";
 
     private DialogueVariables dialogueVariables;
 
@@ -235,6 +236,10 @@ public class DialogueManager : MonoBehaviour
                             Debug.Log("Tag not recognised");
                             break;
                     }
+                    break;
+                case BACKGROUND_TAG:
+                    // TODO: implement background animator
+                    //backgroundAnimator.Play(tagValue);
                     break;
                 default:
                     Debug.Log("Tag not recognised");
