@@ -58,7 +58,8 @@ public class ParallaxEffect : MonoBehaviour
                 nextImage.GetComponent<ParallaxEffect>()._speed = _speed;
                 _isLastCreated = true;
             }
-            else if (camPosition.x - transform.position.x >= textureUnitSizeX * sizeMultiplier && _isLastCreated)
+            else if (camPosition.x - 
+                transform.position.x >= textureUnitSizeX * sizeMultiplier && _isLastCreated)
             {
                 Destroy(gameObject);
             }

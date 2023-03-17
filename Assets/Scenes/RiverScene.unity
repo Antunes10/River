@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95398804}
   - component: {fileID: 95398805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798696013}
   - component: {fileID: 798696014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 823061906}
   - component: {fileID: 823061907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,6 +612,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 24.865976, y: 0.53608245}
   m_EdgeRadius: 0
+--- !u!1 &1168190883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1168190885}
+  - component: {fileID: 1168190884}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1168190884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168190883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485febe215f35f44bafd7e23d1654ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _topLimit: -1
+  _botLimit: -6
+  _obstacles:
+  - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
+--- !u!4 &1168190885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168190883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.58, y: -3.75, z: -0.10588961}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1740269047}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1640686770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022511215364492912, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
@@ -650,6 +698,7 @@ Transform:
   - {fileID: 706485925}
   - {fileID: 519420032}
   - {fileID: 122691653}
+  - {fileID: 1168190885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -708,7 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929677263}
   - component: {fileID: 1929677264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
