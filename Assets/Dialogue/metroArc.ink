@@ -45,8 +45,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Tails lost his fear and stood over the trash can so he could see the firefly better.
     On that moment the bug took notice.
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy #layout:left:tails_default #layout:middle:default
-    Sparks: Oh, hi there friend! 
-    Sparks: My name is Sparks and I’m a firefly has you can see. What is your name?
+    Oh, hi there friend! 
+    My name is Sparks and I’m a firefly has you can see. What is your name?
     #speaker:
     The mouse was unsure how to answer. 
     
@@ -58,58 +58,58 @@ Its origin unknown to the little mouse, moves closer to the ground.
         #speaker:Sparks #portrait:sparks_default #layout:right:sparks_happy
         I’m just finishing, are you hungry? I believe there are some crumbs left where I found this one. 
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
-        Tails: No thanks… I’m not hungry. 
-        Tails: Why are you here? 
+        No thanks… I’m not hungry. 
+        Why are you here? 
         #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
-        Sparks: Oh well, that is a very long story. 
-        Sparks: I was flying with my mother when the “Big Booms” happened.
+        Oh well, that is a very long story. 
+        I was flying with my mother when the “Big Booms” happened.
         #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
-        Sparks: We got separated and after that I went looking for her. 
-        Sparks: Didn’t find her though.
+        We got separated and after that I went looking for her. 
+        Didn’t find her though.
         #speaker: Sparks #portrait:sparks_happy #layout:right:sparks_happy
-        Sparks: But I found food. 
+        But I found food. 
         #speaker:
         His face lightens up as he shakes the small piece of bread. 
 
     ++[Ask why he’s here, alone.]
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
-        Tails: What are you doing here all by yourself? Don’t you have family or friends? 
+        What are you doing here all by yourself? Don’t you have family or friends? 
         #speaker: Sparks #portrait:sparks_default #layout:right:default
-        Sparks: Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere.
+        Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere.
         #speaker:
         The mouse understood he shouldn’t have started with that question. 
         #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-        Tails: I am sorry. I hope you can find them again. 
+        I am sorry. I hope you can find them again. 
         #speaker:Sparks #portrait:sparks_happy #layout:left:sparks_happy
-        Sparks: Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh. 
+        Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh. 
         #speaker:
         The young bug’s levity caught Tails off-guard. 
         He was expecting a totally different reaction, but there is not a hint of sadness in his face.
         It looks like he totally believed what he was saying.
     
     --#speaker:Tails #portrait:tails_default #layout:left:tails_default 
-    Tails: Have you thought about what you are going to do? 
+    Have you thought about what you are going to do? 
     #speaker:Sparks #portrait:sparks_happt #layout:right:sparks_happy
-    Sparks: I’m going to help you get out of here, of course. You don’t have a light booty like me. 
+    I’m going to help you get out of here, of course. You don’t have a light booty like me. 
     #speaker:
     The mouse is not able to hold his smile at the comical remark.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Tails: That would really help me, but shouldn’t you look for your mother?
+    That would really help me, but shouldn’t you look for your mother?
     #speaker:Sparks #portrait:sparks:sparks_default #layout:right:sparks_default
-    Sparks: Not to worry. I will find her eventually. Right now, it’s you the one that’s lost.
+    Not to worry. I will find her eventually. Right now, it’s you the one that’s lost.
     #speaker:
     He finishes the crumb with one last bite and flies towards Tails still munching.
     #speaker:Sparks #portrait:sparks_default
-    Sparks: Where are we going? 
+    Where are we going? 
     #speaker:Tails #portrait:tails_default
-    Tails: I have a big shell that I’m using to follow the river. I think it might lead us to the surface.
+    I have a big shell that I’m using to follow the river. I think it might lead us to the surface.
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_right
-    Sparks: Funtastic! I’ve always wanted to swim in the river.
+    Funtastic! I’ve always wanted to swim in the river.
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
-    Sparks: Although my mother told me it was very dangerous for my wings.
+    Although my mother told me it was very dangerous for my wings.
     #portrait:sparks_happy #layout:right:sparks_happy
-    Sparks: But if I do it inside a shell, I’ll be dry! 
-    Sparks: You are very smart, Mr.Tails.
+    But if I do it inside a shell, I’ll be dry! 
+    You are very smart, Mr.Tails.
     #speaker:
     The mouse felt a bit flattered by the compliment and took the bug with him to the half shell.
     The firefly sat on its border and the mouse pushed it back to the river.
@@ -139,72 +139,72 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Time passes.
     A small light appears far away amidts the black.
     It becomes stronger and stronger, shinning away the fear and uncertainty.
-    #speaker:??? 
-    ???: Hello? 
-    ???: Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default
+    #speaker:??? #portrait: blank
+    Hello? 
+    Are you hurt Mr.Mouse? 
+    #speaker: #layout:left:tails_default #layout:right:sparks_default #layout:middle:default
     Tails opens his eyes and sees a young firefly over him, shinning his light.
     #speaker:??? #portrait:sparks_default
-    ???: You’re all wet. Did you go for a swim and got tired? 
+    You’re all wet. Did you go for a swim and got tired? 
     #speaker:
     The mouse regains his strength and rises to his feet.
-    #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-    Tails: I think I drowned… 
+    #speaker:Tails #portrait:tails_sad #layout:left:tails_sad 
+    I think I drowned… 
     #speaker:??? #portrait:sparks_sad #layout:right:sparks_sad
-    ???: Oh, that is a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
-    #speaker:
+    Oh, that is a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
+    #speaker: #layout:right:sparks_happy
     The firefly seems joyous even though destruction surrounds them. 
     He is the only light that shines in that place.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Tails: My name is Tails, what is yours? 
+    My name is Tails, what is yours? 
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
-    Sparks: I’m Sparks. I’m a firefly as you can see! 
+    I’m Sparks. I’m a firefly as you can see! 
     #speaker:
     He shakes his behind signalling his identity. Just like a happy puppy.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Tails: Where is your mother? Are you alone? 
+    Where is your mother? Are you alone? 
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
-    Sparks: Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere. 
+    Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere. 
     #speaker:
     The mouse understood he shouldn’t have started with that question. 
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-    Tails: I am sorry. I hope you can find her again. 
+    I am sorry. I hope you can find her again. 
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
-    Sparks: Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh.
+    Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh.
     #speaker: #layout:left:tails_happy
     The young bug’s levity caught Tails off-guard. 
     He was expecting a totally different reaction, but there was not a hint of sadness in his face.
     It looked like he totally believed what he was saying.
     #speaker:Sparks #portrait:sparks_happy
-    Sparks: So, were are we going? 
+    So, were are we going? 
     #speaker:Tails  #portrait:tails_happy
-    Tails: We? You want to come with me? 
+    We? You want to come with me? 
     #speaker:Sparks #portrait:sparks_happy
-    Sparks: Of course! 
-    Sparks: Its much more fun when you fly with friends.
+    Of course! 
+    Its much more fun when you fly with friends.
     #speaker:
     The mouse laughted at the idea. 
     #speaker:Tails #portrait:tails_happy
-    Tails: Well, unfortunately I cannot fly. 
+    Well, unfortunately I cannot fly. 
     #speaker:Sparks #portrait:sparks_happy
-    Sparks: Oh, bummer. 
-    Sparks: Then how do you got here? Did you swim?
+    Oh, bummer. 
+    Then how do you got here? Did you swim?
     #speaker:Tails #portrait:tails_happy
-    Tails: No, I had a shell that helped me float. 
+    No, I had a shell that helped me float. 
     #speaker:Sparks #portrait:sparks_happy
-    Sparks: Funtastic! I’ve always wanted to swim in the river. 
-    Sparks: If I do it inside a shell, I’ll be dry!
-    Sparks: You are very smart, Mr.Tails.
+    Funtastic! I’ve always wanted to swim in the river. 
+    If I do it inside a shell, I’ll be dry!
+    You are very smart, Mr.Tails.
     #speaker:
     The mouse felt a bit flattered, but his mood changed fast. 
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-    Tails: Unfortunately, I lost it when I almost drowned. 
+    Unfortunately, I lost it when I almost drowned. 
     #speaker:Sparks #portrait:sparks_happy 
-    Sparks: Not to worry! With my booty we shall find it in no time. 
-    #speaker:Tails #portrait:tails_happy #layout:right:tails_happy
-    Tails: Are you always this optimistic? 
-    #speaker:Sparks #portrait:spatks_happy
-    Sparks: No Mr.Tails, I’m a firefly. 
+    Not to worry! With my booty we shall find it in no time. 
+    #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
+    Are you always this optimistic? 
+    #speaker:Sparks #portrait:sparks_happy
+    No Mr.Tails, I’m a firefly. 
     #speaker:
     The mouse laughed with those innocent words and in turn made the young bug laugh.
     Now, light was not only shinning in the tunnel but also in Tails hearts.
