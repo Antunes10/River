@@ -6,6 +6,7 @@ public class Obstacle : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private float _speed;
+    [SerializeField] private bool _barbed;
     private float _timer;
     void Start()
     {
@@ -19,6 +20,21 @@ public class Obstacle : MonoBehaviour
         if (Time.time - _timer > 7)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_barbed)
+        {
+            if(collision.CompareTag("Player"))
+            {
+                collision.GetComponent<PlayerController>().HitBarbed();
+            }
+        }
+        else
+        {
+            collision.GetComponent<PlayerController>().HitRock();
         }
     }
 }
