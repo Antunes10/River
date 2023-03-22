@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator leftLayoutAnimator;
     [SerializeField] private Animator middleLayoutAnimator;
     [SerializeField] private Animator rightLayoutAnimator;
+    [SerializeField] private Animator backgroundAnimator;
 
     private Animator layoutAnimator;
     
@@ -238,8 +239,8 @@ public class DialogueManager : MonoBehaviour
                     }
                     break;
                 case BACKGROUND_TAG:
-                    // TODO: implement background animator
-                    //backgroundAnimator.Play(tagValue);
+                    displayNameText.text = tagValue;
+                    backgroundAnimator.Play(tagValue);
                     break;
                 default:
                     Debug.Log("Tag not recognised");
