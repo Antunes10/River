@@ -26,7 +26,7 @@ Tails: Thank you for your help, Sparks. I think this is where we part ways.
 The firefly looked confused.
 #speaker:Sparks #portrait:sparks_scared
 Sparks: Why? You didn’t like my company?
-#speaker:Tails #portrait:tails_sad #layput:left:tails_sad
+#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Tails: No, no, that’s not it.
 Tails: I suppose now you are going to find your mother.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
@@ -42,12 +42,12 @@ Sparks: Can I go with you to this enchanted place?
 Tails: What about your mother?
 #speaker:
 The firefly smiled.
-#speaker:Sparks #portrait:sparks_default #layout:right:sparks_happy 
+#speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy 
 Sparks: She is going to find me, I’m sure!
 Sparks: We fireflies always manage to find each other!
 #speaker:
 His hope was unwavering.
-#speaker:Tails #portrait:tails_happy #layout_left:tails_happy
+#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Tails: Well in that case we will keep on traveling together.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy
 Sparks: Yay!
@@ -68,13 +68,14 @@ Tails: Something is wrong, stay close Sparks.
 The firefly nodded silently.
 A chirp pierced the emptiness.
 A desperate chirp. Clearly screaming of hopelessness.
-As the helmet approached the bridge, they saw an XXX fighting against a net of sharp metal claws.
+#layout:middle:sky_sad
+As the helmet approached the bridge, they saw a bird fighting against a net of sharp metal claws.
 Trapped it was trying to free itself, but each movement allowed the claws to pierce him painfully.
 
 +[Help the Bird]
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad #layout:middle:sky_sad 
     Sparks: Poor thing! We have to help him!
-    #speakerr:
+    #speaker:
     The mouse did not answer, he just steered the Helmet towards the shore, with his helm.
     The helmet hit solid ground and both animals darted in the direction of the one that was trapped.
     The bird was clearly desperate.
@@ -99,7 +100,7 @@ Trapped it was trying to free itself, but each movement allowed the claws to pie
     #speaker:
     The birds’ cries were met with deaf ears.
     The mouse was decided.
-    #layout:left:dafault
+    #layout:left:default
     He jumped onto the helmet again and kept on following the river.
     The bird still tried to free himself, but in vain.
     Has the bridge started to get smaller with the distance, Sparks broke the silence.
@@ -173,9 +174,9 @@ Sparks: You got it!
 #speaker: #layout:right:default
 The firefly darts away rising in the air to get a better view.
 A few moments pass as they both cover a good area in search of the perfect item.
-#speaker:Sparks #portrait:sparks_default
+#speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
 Sparks: Tails! Tails! I’ve found it!
-#speaker: #layout:left:tails_sad #layout:right:sparks_default
+#speaker: #layout:left:tails_sad 
 The mouse approaches the young bug and sees a piece of sharp glass buried on the dirt.
 #layout:middle:sky_sad
 With some effort he digs it out and takes it to the barbed wire.
@@ -186,7 +187,7 @@ Tails: Just stay still.
 #speaker:
 The mouse places the glass’ edge against one of the wires and starts to cut vigorously.
 The entire trap shakes.
-#speaker:Bird 
+#speaker:Bird #portrait:sky_scared
 Bird: Stop it! Are you crazy! It hurts!
 +++[Stop It]
     #speaker:
@@ -245,7 +246,7 @@ There was no place for naivety if they wanted to reach the West.
 #speaker:
 If they wanted to free the bird they would need to protect him from the metal razors.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
-Tails: Sparks, helm me find some branches.
+Tails: Sparks, help me find some branches.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
 Sparks: Roger, roger!
 #speaker:
@@ -315,7 +316,7 @@ In an instant all the bridge collapses.
 And the shockwave sends the helmet away with the strength of the tide.
 The dust settles.
 All three are safe.
-#speaker:Sparks #portrait:sparks_happy #layout:left:sparks_happy
+#speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
 Sparks: That was awesome!
 #speaker: #layout:left:tails_happy
 The mouse smiles with the young one’s positivity.
@@ -324,7 +325,7 @@ The bird seems perplexed.
 #speaker:Tails #portrait:tails_default
 Tails: I’m Tails and this is Sparks.
 Tails: I’m glad we managed to save you.
-#speaker
+#speaker:
 The bird awakes from his comatose state.
 #speaker:Bird #portrait:sky_default #layout:middle:sky_default
 Bird: Yes, yes… I’m sorry I was shocked…
@@ -332,7 +333,7 @@ Bird: Yes, yes… I’m sorry I was shocked…
 Sky: My name is sky.
 #portrait:sky_default #layout:middle:sky_default
 Sky: I can’t thank you enough for saving me.
-#speaker:Sparks #portrait:sparks_happy #layout:tight:sparks_happy
+#speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
 Sparks: You don’t have to! That’s what friends do.
 #speaker:
 The bird smiles but then he looks at his wing and his face becomes dark.
