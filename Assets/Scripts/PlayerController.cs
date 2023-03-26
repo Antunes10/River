@@ -21,13 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var input = Input.inputString;
-
-        switch (input)
-        {
-            case "W":
-                break;
-        }
+        
     }
 
     private void FixedUpdate()
@@ -61,6 +55,10 @@ public class PlayerController : MonoBehaviour
     public void HitRock()
     {
         _slider.value += 20;
+        if(_slider.value > 99)
+        {
+            LevelManager.Instance.LoseGame();
+        }
     }
 
     public void HitBarbed()
