@@ -31,6 +31,7 @@ And suddenly it moves!
 Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
+    #background:tunnel
     Against his most primal instincts, Tails puts the little stick in the waters and changes the direction of the shell, approaching the light.
     Once the “boat” hit the dirt, he jumped onto the ground.
     He walks slowly, one part curious another part scared.
@@ -133,16 +134,17 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Until it hits with enough strength to turn it around and send Tails into the cold water.
     He submerges and in desperation tries to surface in search of air.
     He swims rapidly and when he reaches the surface he hits a rock.
+    #background:black #layout:middle:default
     He succumbs to the pain and falls unconscious.
     
     //TODO: MAKE A DARK SCREEN WHEN TAILS HAS HIS EYES CLOSED
     Time passes.
     A small light appears far away amidts the black.
     It becomes stronger and stronger, shinning away the fear and uncertainty.
-    #speaker:??? #portrait: blank
+    #speaker:??? #portrait:blank 
     Hello? 
     Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default #layout:middle:default
+    #speaker: #layout:left:tails_default #layout:right:sparks_default #layout:middle:default #background:tunnel
     Tails opens his eyes and sees a young firefly over him, shinning his light.
     #speaker:??? #portrait:sparks_default
     You’re all wet. Did you go for a swim and got tired? 

@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:middle:sky_default #layout:left:tails_default #layout:right:sparks_default
+#speaker: #layout:middle:sky_default #layout:left:tails_default #layout:right:sparks_default #background:forest
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
@@ -11,7 +11,7 @@ They have been travelling for hours.
 Tails: perhaps its best if we stop here for the night.
 #speaker:Sky #portrait:sky_default
 Bird: Why don’t we keep going? The river is making all the work.
-#speaker:Tails #portrait:tails_sad #layout:left:tails_sasd
+#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Tails: My arms are tired, steering this shell is no easy work.
 #portrait:tails_default #layout:left:tails_default
 Tails: Besides, we don’t know what dangers might lurk in the dark of night.
@@ -22,19 +22,19 @@ Their paws and feet touch the murky sands and start walking in the direction of 
 Bird: Perhaps its best if I scout ahead, my wing should be healed now.
 #speaker:
 The bird flaps his wings and lunges upwards.
-#speaker:Sky #portrait:sky_scard #layout:middle:sky_scared
+#speaker:Sky #portrait:sky_scared #layout:middle:sky_scared
 Sky: Ahhhhhhh!
-#speaker #layout:left:sky_sad
+#speaker: #layout:middle:sky_sad
 Only to fall hard on the ground, unable to fly.
 #speaker:Sky #portrait:sky_sad 
 Sky: My wing!
-#speaker: #layout:middle:tails_sad #layout:right:sparks_sad
+#speaker: #layout:left:tails_sad #layout:right:sparks_sad
 The other two rush to his side.
 His wing still seems badly hurt.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
 Sparks: Don’t worry Mr.Sky, I can go take a look!
 Sparks: You should rest your beautiful wings.
-#speaker #layout:right:default
+#speaker: #layout:right:default
 He takes off buzzing through the air, disappearing in the night.
 Tails and Sky stand next to each other, and the mouse can see that wing’s damage was irreversible.
 
@@ -42,7 +42,7 @@ Tails and Sky stand next to each other, and the mouse can see that wing’s dama
     ~ sky_hopeful_VS_truth = 1
     #speaker:
     Tails approaches him and his voice goes soft.
-    #speaker:Tails 
+    #speaker:Tails #portrait:tails_sad
     Tails: Sky… I’m sorry but your wing…
     #speaker:
     The bird frowns.
@@ -97,7 +97,7 @@ Tails and Sky stand next to each other, and the mouse can see that wing’s dama
     #speaker:Sky #portrait:sky_default #layout:middle:sky_default
     Sky: No, you are invaluable. Without you I would have died in that wire.
     Sky: I will follow your example and try to find ways to be helpful.
-    #speaker: layout:left:tails_happy
+    #speaker: #layout:left:tails_happy
     Tails smiles happily.
     He managed to make a bad situation, good.
 
@@ -108,7 +108,7 @@ The buzzing is heard again.
 With a fast landing the firefly re-joins the group.
 #speaker:Sparks #portrait:sparks_happy
 Sparks: It’s… it’s… it’s…
-#speaker:Tails #portrat:tails_default
+#speaker:Tails #portrait:tails_default
 Tails: Breath first, little one.
 #speaker:
 The bug takes and exaggerated breath and then smiles jokingly.
@@ -143,7 +143,7 @@ Or perhaps it was best if Tails spent some time with his companions.
 +[Look for food]
     #speaker:
     Right now, their provisions take priority.
-    #layput:middle:tails_default #layout:right:default #layout:left:default 
+    #layout:middle:tails_default #layout:right:default #layout:left:default 
     The mouse warns his companions and goes out into the night.
     It is cold and dark, but thankfully his nose can “see” very well.
     There are some natural scents…
@@ -164,6 +164,7 @@ Or perhaps it was best if Tails spent some time with his companions.
     Death.
     
     ++[Go anyway.]
+        ~ found_food = found_food + 1
         #speaker: #layout:middle:tails_sad
         It was uncomfortable, but it was a necessary evil.
         #layout:middle:tails_scared
@@ -205,7 +206,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         #speaker:Sparks #portrait:sparks_default
         Sparks: Hey Mr.Tails!
         Sparks: Do mouses like to stare at the dark too?
-        #speaker:Tails #portrait:sparks_defaullt
+        #speaker:Tails #portrait:sparks_default
         Tails: Not usually.
         Tails: I don’t think most animals enjoy the dark.
         #speaker:Sparks #portrait:sparks_default
@@ -215,9 +216,9 @@ Or perhaps it was best if Tails spent some time with his companions.
         Sparks: It’s thanks to it that our lights can shine so bright and be seen far, far away.
         #speaker:
         The mouse lets out a smile.
-        #speaker:Tails #portrait:tails_happy layout:left:tails_happy
+        #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
         Tails: I think I can understand that.
-        #layout:left:tails_default
+        #speaker: #layout:left:tails_default
         His eyes looked towards the infinite void, and somehow…
         He finds quiet and peace.
         After days of catastrophe and apocalyptic chaos.
@@ -253,7 +254,7 @@ Or perhaps it was best if Tails spent some time with his companions.
 
 
 === if_hopeful_1 ===
-#speaker:
+#speaker: #layout:left:tails_default #layout:middle:sky_default #layout:right:sparks_default
 With Sky’s help, Tails was able to build a small shelter of leaves and twigs.
 Although unable to fly, his beak could still carry several things.
 And thanks to Tail’s words he was determined to help.
@@ -291,7 +292,7 @@ The firefly’s antennas fell with sadness, and he went inside defeated.
 
 
 === if_hopeful_2 ===
-#speaker #layout:left:tails_default #layout:middle:default #layout:right:sky_default
+#speaker: #layout:left:tails_default #layout:middle:default #layout:right:sky_default
 The bird is sitting inside the shelter, checking is wing.
 #speaker:Tails #portrait:tails_default
 Tails: Everything alright?
@@ -344,7 +345,7 @@ Tails: And a good night’s rest.
 #speaker:Sky #portrait:sky_default
 Sky: Oi! Don’t go acting like a lousy parent.
 Sky: I’m almost full grown!
-#layout:left:tails_happy #layout:right:sky_happy
+#speaker: #layout:left:tails_happy #layout:right:sky_happy
 They try too initially but fail to contain a thunderous laughter.
 Tails falls on his back and Sky feels his injury sting with the uncontrollable giggling.
 It takes a few seconds for them to compose themselves.
@@ -358,7 +359,7 @@ With a smile and a small goodbye, the woodpecker goes to lie down on a small pil
 ->DONE
 
 === if_truth_2 ===
-#speaker #layout:left:tails_default #layout:middle:default #layout:right:sky_sad
+#speaker: #layout:left:tails_default #layout:middle:default #layout:right:sky_sad
 The bird is sitting alone in a dark corner.
 He checks is wing occasionally, still incredulous with the truth the mouse told him.
 #speaker:Tails #portrait:tails_default
@@ -368,14 +369,14 @@ The bird does not turn around to meet him.
 #speaker:Sky #portrait:sky_sad
 Sky: How could I be?
 Sky: It was not enough to lose everything, I had to lose the most important thing to a bird.
-#speaker:Tails #portrait:tails_drfault
+#speaker:Tails #portrait:tails_default
 Tails: No, you did not…
 Tails: You are still alive.
 Tails: Lots of other birds where not that lucky.
 #speaker:
 Silence speaks.
 Then the bird finally turns around.
-#speaker:Skt #portrait:sky_default #layout:right:skt_default
+#speaker:Sky #portrait:sky_default #layout:right:sky_default
 Sky: I guess you’re right.
 Sky: Rather alive and flyless than dead with wings.
 #speaker:
