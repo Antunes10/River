@@ -68,18 +68,18 @@ Something is wrong, stay close Sparks.
 The firefly nodded silently.
 A chirp pierced the emptiness.
 A desperate chirp. Clearly screaming of hopelessness.
-#layout:middle:sky_sad_hurt
+#layout:middle:nimbus_sad_hurt
 As the helmet approached the bridge, they saw a bird fighting against a net of sharp metal claws.
 Trapped it was trying to free itself, but each movement allowed the claws to pierce him painfully.
 
 +[Help the Bird]
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad #layout:middle:sky_sad_hurt
+    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad #layout:middle:nimbus_sad_hurt
     Poor thing! We have to help him!
     #speaker:
     The mouse did not answer, he just steered the Helmet towards the shore, with his helm.
     The helmet hit solid ground and both animals darted in the direction of the one that was trapped.
     The bird was clearly desperate.
-    #speaker:Bird #portrait:sky_scared #layout:middle:sky_scared_hurt
+    #speaker:Bird #portrait:nimbus_scared #layout:middle:nimbus_scared_hurt
     Help me please! I can’t get out! I’ve been trying for hours.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
     Don’t worry we are going to help you. Just stay still or you’re going to hurt yourself even more.
@@ -88,14 +88,14 @@ Trapped it was trying to free itself, but each movement allowed the claws to pie
     ->ChoicePanel
 
 +[Ignore the Bird]
-    #speaker: #layout:left:sky_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad
+    #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad
     There was nothing that they could do.
     A trap like that was too complex for them to disarm.
     They would only lose precious time.
     The mouse looked to the bird with sad eyes.
     #speaker:Tails #portrait:tails_sad
     I’m sorry, we can’t help you.
-    #speaker:Bird #portrait:sky_scared #layout:left:sky_scared_hurt
+    #speaker:Bird #portrait:nimbus_scared #layout:left:nimbus_scared_hurt
     No please, no! Don’t leave me here!
     #speaker:
     The birds’ cries were met with deaf ears.
@@ -150,7 +150,7 @@ If you can manage to protect the bird from the cuts, you will be able to free hi
 #speaker:
 The mouse places his hands slowly on the metal strings, where there are no cutting edges.
 Slowly he starts to separate them, trying to open a gap for the bird to escape.
-#speaker:Bird #portrait:sky_scared #layout:middle:sky_scared_hurt
+#speaker:Bird #portrait:nimbus_scared #layout:middle:nimbus_scared_hurt
 Ouch! It’s cutting my leg!
 #speaker:
 The fangs start to cut the trapped animal and Tails stops his efforts.
@@ -178,16 +178,16 @@ A few moments pass as they both cover a good area in search of the perfect item.
 Tails! Tails! I’ve found it!
 #speaker: #layout:left:tails_sad 
 The mouse approaches the young bug and sees a piece of sharp glass buried on the dirt.
-#layout:middle:sky_sad_hurt
+#layout:middle:nimbus_sad_hurt
 With some effort he digs it out and takes it to the barbed wire.
-#speaker:Bird #portrait:sky_scared #layout:middle:sky_scared_hurt
+#speaker:Bird #portrait:nimbus_scared #layout:middle:nimbus_scared_hurt
 What are you going to do with that?
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad #layout:right:sparks_sad
 Just stay still.
 #speaker:
 The mouse places the glass’ edge against one of the wires and starts to cut vigorously.
 The entire trap shakes.
-#speaker:Bird #portrait:sky_scared
+#speaker:Bird #portrait:nimbus_scared
 Stop it! Are you crazy! It hurts!
 +++[Stop It]
     #speaker:
@@ -216,14 +216,14 @@ Stop it! Are you crazy! It hurts!
     ->END
 
 === LeaveHim ===
-#speaker: #layout:left:sky_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad
+#speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad
 There was nothing that they could do.
 A trap like that was too complex for them to disarm.
 They would only lose precious time.
 The mouse looked to the bird with sad eyes.
 #speaker:Tails #portrait:tails_sad
 I’m sorry, we can’t help you.
-#speaker:Bird #portrait:sky_scared #layout:left:sky_scared_hurt
+#speaker:Bird #portrait:nimbus_scared #layout:left:nimbus_scared_hurt
 No please, no! Don’t leave me here!
 #speaker:
 The birds’ cries were met with deaf ears.
@@ -260,9 +260,9 @@ Finally, when Tails felt it was safe he place his hands on one of the wires and 
 The wires moved and didn’t cut the bird.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
 That’s it! You’re doing it, Mr.Tails!
-#speaker: #layout:left:tails_scared #layout:middle:sky_scared_hurt #layout:right:sparks_scared
+#speaker: #layout:left:tails_scared #layout:middle:nimbus_scared_hurt #layout:right:sparks_scared
 The joyous words were suddenly stuffed by a huge metal roar from above the bridge.
-#speaker:Bird #portrait:sky_scared
+#speaker:Bird #portrait:nimbus_scared
 What the hell is this?
 #speaker:
 All of them stood motionless.
@@ -273,7 +273,7 @@ Sparks, go see what it is.
 The firefly flown up and disappeared above the bridge.
 The mouse continued his work with renewed determination.
 Dirt and small rocks started to fall from under the bridge.
-#speaker:Bird #portrait:sky_scared
+#speaker:Bird #portrait:nimbus_scared
 Quickly, please! Or we’re going to be buried here.
 #speaker: #layout:right:sparks_scared
 The young bug came back in a hurry.
@@ -289,14 +289,14 @@ The time was running out.
 ->ChoicePanel
 
 === KeepTrying ===
-#speaker: #layout:middle:sky_sad_hurt #layout:left:tails_sad #layout:right:sparks_sad
+#speaker: #layout:middle:nimbus_sad_hurt #layout:left:tails_sad #layout:right:sparks_sad
 Tails kept on with his task of removing the wires.
 If the bird was to die, there he wouldn’t die alone.
-#layout:middle:sky_sad
+#layout:middle:nimbus_sad
 Finally, the last wire was moved away and the bird managed to escape the trap.
 The tried to fly away, but fell miserably on the ground.
 His right wing was bleeding heavily, and it seemed displaced.
-#speaker:Bird #portrait:sky_sad 
+#speaker:Bird #portrait:nimbus_sad 
 Darned, I can’t move my right wing!
 #speaker:
 A huge rock fell right next to the mouse, making him jump with the scare.
@@ -328,11 +328,11 @@ I’m Tails and this is Sparks.
 I’m glad we managed to save you.
 #speaker:
 The bird awakes from his comatose state.
-#speaker:Bird #portrait:sky_default #layout:middle:sky_default
+#speaker:Bird #portrait:nimbus_default #layout:middle:nimbus_default
 Yes, yes… I’m sorry I was shocked…
-#speaker:Sky #portrait:sky_happy #layout:middle:sky_happy
-My name is sky.
-#portrait:sky_default #layout:middle:sky_default
+#speaker:nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
+My name is nimbus.
+#portrait:nimbus_default #layout:middle:nimbus_default
 I can’t thank you enough for saving me.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
 You don’t have to! That’s what friends do.
@@ -341,11 +341,11 @@ The bird smiles but then he looks at his wing and his face becomes dark.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
 Now its not a time for you to worry about it.
 I will patch it up in a bit, but our focus should be on getting away from this place.
-#speaker:Sky #portrait:sky_default
+#speaker:nimbus #portrait:nimbus_default
 Where are you going?
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
 West. Towards the enchanted land.
-#speaker:Sky #portrait:sky_default 
+#speaker:nimbus #portrait:nimbus_default 
 Guess I’ll accompany you..
 For now…
 #speaker:
@@ -356,5 +356,5 @@ You are welcome to.
 The river kept on flowing.
 Taking them away from the forest.
 Into the far away land they were searching for.
-SkySaved = 1
+~ nimbusSaved = 1
 ->END

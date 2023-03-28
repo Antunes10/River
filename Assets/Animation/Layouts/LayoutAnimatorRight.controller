@@ -26,14 +26,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-5604960316295440934
+--- !u!1102 &-8095039260703723295
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sky_scared
+  m_Name: oak_happy
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,7 +46,59 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d9616441f00bc0a4997ff9b6cb56f87c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4423329230d79a34e83af24d26a35235, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &-7325965197482933884
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nimbus_default
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: a2d606bebcbcb964b96a55572996aa5f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &-6056393614645623130
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: oak_default
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: b2ced14a48e3df84a8fe09837272571e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -115,22 +167,34 @@ AnimatorStateMachine:
     m_State: {fileID: 1235771988785498311}
     m_Position: {x: 580, y: 350, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4605464341316220972}
+    m_State: {fileID: -6056393614645623130}
+    m_Position: {x: 1040, y: 430, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8095039260703723295}
+    m_Position: {x: 1040, y: 190, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4443612446563337951}
+    m_Position: {x: 1040, y: 270, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6046674509633773590}
+    m_Position: {x: 1040, y: 350, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7325965197482933884}
     m_Position: {x: 810, y: 430, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5726587453269362258}
+    m_State: {fileID: 8186921416068795041}
     m_Position: {x: 810, y: 190, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 840497476482816252}
+    m_State: {fileID: 2541858176092051754}
     m_Position: {x: 810, y: 270, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -5604960316295440934}
-    m_Position: {x: 810, y: 350, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1969212188605375583}
+    m_State: {fileID: 8965318069436560053}
     m_Position: {x: 810, y: 510, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6590890998372071659}
+    m_State: {fileID: 6065258823222803677}
+    m_Position: {x: 810, y: 350, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2635746329198983958}
     m_Position: {x: 810, y: 590, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
@@ -216,32 +280,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &840497476482816252
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: sky_sad
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 30545cbc1ca07d040a3d253e9d14d627, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &1235771988785498311
 AnimatorState:
   serializedVersion: 6
@@ -268,14 +306,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1969212188605375583
+--- !u!1102 &2541858176092051754
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sky_sad_hurt
+  m_Name: nimbus_sad
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -288,7 +326,33 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: acc4726670edeae489c3c54e523cbdc7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 30545cbc1ca07d040a3d253e9d14d627, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &2635746329198983958
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nimbus_scared_hurt
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 6592e975a5ee84a4d8ee5d924320da1b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -346,14 +410,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &4605464341316220972
+--- !u!1102 &4443612446563337951
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sky_default
+  m_Name: oak_sad
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -366,7 +430,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a2d606bebcbcb964b96a55572996aa5f, type: 2}
+  m_Motion: {fileID: 7400000, guid: eeffa49d7e84192418e94094c9bcc6d2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -398,14 +462,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5726587453269362258
+--- !u!1102 &6046674509633773590
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sky_happy
+  m_Name: oak_scared
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -418,20 +482,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e5235b4cf3a45ab458a54f3cea432d83, type: 2}
+  m_Motion: {fileID: 7400000, guid: f3b34e1a90cfde64bb3f00f92c231f84, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &6590890998372071659
+--- !u!1102 &6065258823222803677
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sky_scared_hurt
+  m_Name: nimbus_scared
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -444,7 +508,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6592e975a5ee84a4d8ee5d924320da1b, type: 2}
+  m_Motion: {fileID: 7400000, guid: d9616441f00bc0a4997ff9b6cb56f87c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -471,6 +535,58 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: e8cd8995b76ea6041ae6cb028a44118b, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8186921416068795041
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nimbus_happy
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: e5235b4cf3a45ab458a54f3cea432d83, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8965318069436560053
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nimbus_sad_hurt
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: acc4726670edeae489c3c54e523cbdc7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
