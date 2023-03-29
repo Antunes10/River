@@ -35,7 +35,7 @@ public class Obstacle : MonoBehaviour
         {
             collision.GetComponent<PlayerController>().HitBarbed();
         }
-        else if (_barrier && collision.GetComponent<PlayerController>()._usingNimbus)
+        else if (_barrier && collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
         {
             return;
         }

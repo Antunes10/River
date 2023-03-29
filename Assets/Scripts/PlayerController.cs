@@ -8,10 +8,9 @@ public class PlayerController : MonoBehaviour
     private float _horizontalM;
     private float _verticalM;
     [SerializeField] private float _speed;
-    private bool _stunned;
-    private bool _gettingWaterOut;
-    private bool _usingOak;
-    public bool _usingNimbus;
+
+    public HelmetState _helmetState;
+
     private bool _isRaining;
 
     [SerializeField] private Slider _slider;
@@ -22,39 +21,40 @@ public class PlayerController : MonoBehaviour
         _levelManager = LevelManager.Instance;
         _levelManager.StartRain += IsRaining;
         _levelManager.EndRain += StopRaining;
+        _helmetState = HelmetState.normal;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_isRaining && !_usingOak)
+
+        //Rise water level if its raining
+        if (_isRaining && !_helmetState.Equals(HelmetState.oak))
         {
             _slider.value += 0.05f;
         }
 
+
+        //Move Helmet
         _horizontalM = Input.GetAxisRaw("Horizontal") * _speed;
         _verticalM = Input.GetAxisRaw("Vertical") * _speed;
-
-        //transform.position = new Vector2(transform.position.x + _horizontalM, transform.position.y + _verticalM);
-
-        if (!_stunned && !_gettingWaterOut)
+        if (!_helmetState.Equals(HelmetState.stunned) && !_helmetState.Equals(HelmetState.water))
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !_gettingWaterOut && !_stunned && !_usingOak && !_usingNimbus)
+
+        //Get Water out of the Helmet
+        if (Input.GetKeyDown(KeyCode.E) && _helmetState.Equals(HelmetState.normal))
         {
-            if (!_gettingWaterOut && !_stunned)
-            {
-                TakeOutWater();
-            }
+            TakeOutWater();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && !_gettingWaterOut && !_stunned && !_usingOak && !_usingNimbus)
+        if (Input.GetKeyDown(KeyCode.R) && _helmetState.Equals(HelmetState.normal))
         {
             UseOak();
         }
-        else if(Input.GetKeyUp(KeyCode.R) && !_gettingWaterOut && !_stunned && _usingOak && !_usingNimbus)
+        else if(Input.GetKeyUp(KeyCode.R) && _helmetState.Equals(HelmetState.oak))
         {
             StopUseOak();
         }
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
     public void HitBarbed()
     {
-        if (!_stunned)
+        if (!_helmetState.Equals(HelmetState.stunned))
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             StartCoroutine(GetStunned());
@@ -103,37 +103,42 @@ public class PlayerController : MonoBehaviour
 
     void UseOak()
     {
-        _usingOak = true;
+        _helmetState = HelmetState.oak;
         this.GetComponent<SpriteRenderer>().color = Color.green;
     }
 
     void StopUseOak()
     {
+        _helmetState = HelmetState.normal;
         this.GetComponent<SpriteRenderer>().color = Color.white;
-        _usingOak = false;
     }
 
     IEnumerator GetStunned()
     {
-        _usingNimbus = false;
-        _usingOak = false;
-        _gettingWaterOut = false;
-
-        _stunned = true;
+        _helmetState = HelmetState.stunned;
         this.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3);
         this.GetComponent<SpriteRenderer>().color = Color.white;
-        _stunned = false;
+        _helmetState = HelmetState.normal;
     }
 
     IEnumerator GetWater()
     {
-        _gettingWaterOut = true;
+        _helmetState = HelmetState.water;
         this.GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(3);
         this.GetComponent<SpriteRenderer>().color = Color.white;
-        _gettingWaterOut = false;
+        _helmetState = HelmetState.normal;
     }
 
+    public enum HelmetState
+    {
+        normal = 0,
+        stunned = 1,
+        water = 2,
+        nimbus = 3,
+        oak = 4
+
+    }
     
 }
