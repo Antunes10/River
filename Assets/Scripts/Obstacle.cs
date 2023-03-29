@@ -6,7 +6,9 @@ public class Obstacle : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private float _speed;
+    [SerializeField] private float _cooldown;
     [SerializeField] private bool _barbed;
+    [SerializeField] private bool _barrier;
     private float _timer;
     void Start()
     {
@@ -17,7 +19,7 @@ public class Obstacle : MonoBehaviour
     void FixedUpdate()
     {
         gameObject.transform.position = new Vector2(transform.position.x - _speed, transform.position.y);
-        if (Time.time - _timer > 7)
+        if (Time.time - _timer > _cooldown)
         {
             Destroy(this.gameObject);
         }
@@ -25,12 +27,17 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
         if (_barbed)
         {
-            if(collision.CompareTag("Player"))
-            {
-                collision.GetComponent<PlayerController>().HitBarbed();
-            }
+            collision.GetComponent<PlayerController>().HitBarbed();
+        }
+        else if (_barrier && collision.GetComponent<PlayerController>()._usingNimbus)
+        {
+            return;
         }
         else
         {
