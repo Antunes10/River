@@ -52,7 +52,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R) && !_gettingWaterOut && !_stunned && !_usingOak && !_usingNimbus)
         {
-            StartCoroutine(UseOak());
+            UseOak();
+        }
+        else if(Input.GetKeyUp(KeyCode.R) && !_gettingWaterOut && !_stunned && _usingOak && !_usingNimbus)
+        {
+            StopUseOak();
         }
     }
 
@@ -97,6 +101,18 @@ public class PlayerController : MonoBehaviour
         _isRaining = false;
     }
 
+    void UseOak()
+    {
+        _usingOak = true;
+        this.GetComponent<SpriteRenderer>().color = Color.green;
+    }
+
+    void StopUseOak()
+    {
+        this.GetComponent<SpriteRenderer>().color = Color.white;
+        _usingOak = false;
+    }
+
     IEnumerator GetStunned()
     {
         _usingNimbus = false;
@@ -119,12 +135,5 @@ public class PlayerController : MonoBehaviour
         _gettingWaterOut = false;
     }
 
-    IEnumerator UseOak()
-    {
-        _usingOak = true;
-        this.GetComponent<SpriteRenderer>().color = Color.green;
-        yield return new WaitForSeconds(3);
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-        _usingOak = false;
-    }
+    
 }
