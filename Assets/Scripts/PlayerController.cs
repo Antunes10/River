@@ -10,22 +10,28 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _speed;
     private bool _stunned;
     private bool _gettingWaterOut;
+    private bool _usingOak;
+    public bool _usingNimbus;
+    private bool _isRaining;
 
     [SerializeField] private Slider _slider;
+    private LevelManager _levelManager;
 
     void Start()
     {
-        
+        _levelManager = LevelManager.Instance;
+        _levelManager.StartRain += IsRaining;
+        _levelManager.EndRain += StopRaining;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        if (_isRaining && !_usingOak)
+        {
+            _slider.value += 0.05f;
+        }
 
-    private void FixedUpdate()
-    {
         _horizontalM = Input.GetAxisRaw("Horizontal") * _speed;
         _verticalM = Input.GetAxisRaw("Vertical") * _speed;
 
@@ -36,13 +42,23 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !_gettingWaterOut && !_stunned && !_usingOak && !_usingNimbus)
         {
             if (!_gettingWaterOut && !_stunned)
             {
                 TakeOutWater();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.R) && !_gettingWaterOut && !_stunned && !_usingOak && !_usingNimbus)
+        {
+            StartCoroutine(UseOak());
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     public void TakeOutWater()
@@ -71,8 +87,22 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    void IsRaining()
+    {
+        _isRaining = true;
+    }
+
+    void StopRaining()
+    {
+        _isRaining = false;
+    }
+
     IEnumerator GetStunned()
     {
+        _usingNimbus = false;
+        _usingOak = false;
+        _gettingWaterOut = false;
+
         _stunned = true;
         this.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3);
@@ -87,5 +117,14 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3);
         this.GetComponent<SpriteRenderer>().color = Color.white;
         _gettingWaterOut = false;
+    }
+
+    IEnumerator UseOak()
+    {
+        _usingOak = true;
+        this.GetComponent<SpriteRenderer>().color = Color.green;
+        yield return new WaitForSeconds(3);
+        this.GetComponent<SpriteRenderer>().color = Color.white;
+        _usingOak = false;
     }
 }

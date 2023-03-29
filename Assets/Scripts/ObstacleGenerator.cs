@@ -27,6 +27,12 @@ public class ObstacleGenerator : MonoBehaviour
         }
     }
 
+    public void SetObstacleList(GameObject[] list)
+    {
+        _obstacles = new GameObject[list.Length];
+        list.CopyTo(_obstacles, 0);
+    }
+
     void Generate()
     {
         GameObject obstacle = _obstacles[Random.Range(0, _obstacles.Length)];
