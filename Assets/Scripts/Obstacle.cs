@@ -37,6 +37,7 @@ public class Obstacle : MonoBehaviour
         }
         else if (_barrier && collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
         {
+            this.GetComponent<SpriteRenderer>().color = Color.cyan;
             return;
         }
         else
