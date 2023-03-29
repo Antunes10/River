@@ -45,7 +45,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     It was contradictory. The dark and scary surroundings were disarmed by the smile of the clearly innocent bug.
     Tails lost his fear and stood over the trash can so he could see the firefly better.
     On that moment the bug took notice.
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy #layout:left:tails_default #layout:middle:default
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default
     Oh, hi there friend! 
     My name is Sparks and I’m a firefly has you can see. What is your name?
     #speaker:
@@ -56,18 +56,18 @@ Its origin unknown to the little mouse, moves closer to the ground.
         Hi… my name is Tails… I am a mouse. 
         #speaker:
         The bug waved satisfied with the response.
-        #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
+        #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
         I’m just finishing, are you hungry? I believe there are some crumbs left where I found this one. 
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
         No thanks… I’m not hungry. 
         Why are you here? 
-        #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
+        #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
         Oh well, that is a very long story. 
         I was flying with my mother when the “Big Booms” happened.
-        #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
+        #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
         We got separated and after that I went looking for her. 
         Didn’t find her though.
-        #speaker: Sparks #portrait:sparks_happy #layout:right:sparks_happy
+        #speaker: Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
         But I found food. 
         #speaker:
         His face lightens up as he shakes the small piece of bread. 
@@ -75,13 +75,13 @@ Its origin unknown to the little mouse, moves closer to the ground.
     ++[Ask why he’s here, alone.]
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
         What are you doing here all by yourself? Don’t you have family or friends? 
-        #speaker: Sparks #portrait:sparks_default #layout:right:sparks_default
+        #speaker: Sparks #portrait:sparks_default #layout:right:sparks_default_m
         Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere.
         #speaker:
         The mouse understood he shouldn’t have started with that question. 
         #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
         I am sorry. I hope you can find them again. 
-        #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
+        #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
         Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh. 
         #speaker:
         The young bug’s levity caught Tails off-guard. 
@@ -90,13 +90,13 @@ Its origin unknown to the little mouse, moves closer to the ground.
     
     --#speaker:Tails #portrait:tails_default #layout:left:tails_default 
     Have you thought about what you are going to do? 
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     I’m going to help you get out of here, of course. You don’t have a light booty like me. 
     #speaker:
     The mouse is not able to hold his smile at the comical remark.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     That would really help me, but shouldn’t you look for your mother?
-    #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default
+    #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
     Not to worry. I will find her eventually. Right now, it’s you the one that’s lost.
     #speaker:
     He finishes the crumb with one last bite and flies towards Tails still munching.
@@ -104,11 +104,11 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Where are we going? 
     #speaker:Tails #portrait:tails_default
     I have a big shell that I’m using to follow the river. I think it might lead us to the surface.
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     Funtastic! I’ve always wanted to swim in the river.
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
+    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
     Although my mother told me it was very dangerous for my wings.
-    #portrait:sparks_happy #layout:right:sparks_happy
+    #portrait:sparks_happy #layout:right:sparks_happy_m
     But if I do it inside a shell, I’ll be dry! 
     You are very smart, Mr.Tails.
     #speaker:
@@ -144,7 +144,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:??? #portrait:blank 
     Hello? 
     Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default #layout:middle:default #background:tunnel
+    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel
     Tails opens his eyes and sees a young firefly over him, shinning his light.
     #speaker:??? #portrait:sparks_default
     You’re all wet. Did you go for a swim and got tired? 
@@ -152,26 +152,26 @@ Its origin unknown to the little mouse, moves closer to the ground.
     The mouse regains his strength and rises to his feet.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad 
     I think I drowned… 
-    #speaker:??? #portrait:sparks_sad #layout:right:sparks_sad
+    #speaker:??? #portrait:sparks_sad #layout:right:sparks_sad_m
     Oh, that is a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
-    #speaker: #layout:right:sparks_happy
+    #speaker: #layout:right:sparks_happy_m
     The firefly seems joyous even though destruction surrounds them. 
     He is the only light that shines in that place.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     My name is Tails, what is yours? 
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     I’m Sparks. I’m a firefly as you can see! 
     #speaker:
     He shakes his behind signalling his identity. Just like a happy puppy.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     Where is your mother? Are you alone? 
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
+    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
     Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere. 
     #speaker:
     The mouse understood he shouldn’t have started with that question. 
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
     I am sorry. I hope you can find her again. 
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh.
     #speaker: #layout:left:tails_happy
     The young bug’s levity caught Tails off-guard. 
@@ -212,7 +212,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Now, light was not only shinning in the tunnel but also in Tails hearts.
     He forgot the sadness he felt before and a few moments later they found the helmet and continued following the river, to reach the surface.  
     
-- END OF DIALOGUE
+- 
 
 
     

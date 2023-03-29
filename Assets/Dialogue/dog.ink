@@ -209,7 +209,7 @@ He had seen mice teared to shreds by angry mongrels.
 	They arrive and the little bug is still lying down.
 	#speaker:Tails #portrait:tails_default
 	Tails: Come one, Sparks is time to get on our way.
-	#speaker:
+	#speaker: #layout:right:sparks_sad
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad
 	Sparks: Fine, fine. I’m up and flying.
@@ -218,7 +218,7 @@ He had seen mice teared to shreds by angry mongrels.
     They all go outside curious and see a band of birds disappearing in the clouds.
     #speaker:Nimbus #portrait:nimbus_default 
     Nimbus: Something is wrong, Tails. They flew from something.
-    #speaker:Tails #portrait:tials_default
+    #speaker:Tails #portrait:tails_default
     Tails: Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.

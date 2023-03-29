@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #portrait:narrator 
+#speaker: #portrait:narrator #background:metro
 Rain falls.
 The only sound thats heard.
 Blue and grey.
@@ -19,9 +19,9 @@ Water and dust the only thing he smells.
 The river runs ever so slow.
 Almost like he only moved due to obligation. With no will of its own.
 He hops over the rocks again.
-Tails: Paws? Rudy? Butter?      #speaker:Tails #portrait:tails_default #layout:middle:tails_default
+ Paws? Rudy? Butter?      #speaker:Tails #portrait:tails_default #layout:middle:tails_default
 His voice fades unresponded.        #speaker: #portrait:narrator
-Tails: Is anyone there?     #speaker:Tails #portrait:tails_default 
+Is anyone there?     #speaker:Tails #portrait:tails_default 
 No one is there to speak.       #speaker: #portrait:narrator
 He is alone.
 Now there is nothing that binds him to this place.
@@ -34,8 +34,8 @@ Everything is gone.
 He closes his eyes and turns his back on the past.
 He accompanies the river, walking over the rocks that once formed mountains of stone and glass.
 The river is slow.
-Tails: How long must I walk west?       #speaker:Tails #portrait:tails_default 
-Tails: I won't make it on foot...
+How long must I walk west?       #speaker:Tails #portrait:tails_default 
+I won't make it on foot...
 He realizes the impossible task ahead and looks for an answer between the mist.     #speaker: #portrait:narrator
 Near to a rubble of wood and sand he finds a round shell.
 A metal thing that looks like half an egg long hatched.
