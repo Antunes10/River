@@ -72,7 +72,7 @@ public class LevelManager : MonoBehaviour
     {
         StartRain?.Invoke();
         _rainSprite.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(UnityEngine.Random.Range(3, 6));
         _rainSprite.SetActive(false);
         EndRain?.Invoke();
     }

@@ -127,8 +127,11 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.water;
         this.GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(3);
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-        _helmetState = HelmetState.normal;
+        if (_helmetState.Equals(HelmetState.water))
+        {
+            this.GetComponent<SpriteRenderer>().color = Color.white;
+            _helmetState = HelmetState.normal;
+        }
     }
 
     public enum HelmetState
