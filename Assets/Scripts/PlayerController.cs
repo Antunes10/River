@@ -5,23 +5,34 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private float _horizontalM;
-    private float _verticalM;
-    [SerializeField] private float _speed;
+    //Variables to check unlocked animals
+    [SerializeField] private bool _hasNimbus;
+    [SerializeField] private bool _hasOak;
+    [SerializeField] private bool _hasCotton;
 
     public HelmetState _helmetState;
-
     private bool _isRaining;
 
+    [SerializeField] private float _speed;
     [SerializeField] private Slider _slider;
+    private float _horizontalM;
+    private float _verticalM;
+
+    private GameManager _gameManager;
     private LevelManager _levelManager;
 
     void Start()
     {
         _levelManager = LevelManager.Instance;
+        _gameManager = GameManager.Instance;
         _levelManager.StartRain += IsRaining;
         _levelManager.EndRain += StopRaining;
         _helmetState = HelmetState.normal;
+
+        //Assign character checks
+        _hasOak = _gameManager._hasOak;
+        _hasNimbus = _gameManager._hasNimbus;
+        _hasCotton = _gameManager._hasCotton;
     }
 
     // Update is called once per frame
@@ -50,13 +61,24 @@ public class PlayerController : MonoBehaviour
             TakeOutWater();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && _helmetState.Equals(HelmetState.normal))
+        //Open Dog Hat
+        if (Input.GetKeyDown(KeyCode.R) && _hasOak && _helmetState.Equals(HelmetState.normal))
         {
             UseOak();
         }
-        else if(Input.GetKeyUp(KeyCode.R) && _helmetState.Equals(HelmetState.oak))
+        else if(Input.GetKeyUp(KeyCode.R) && _hasOak && _helmetState.Equals(HelmetState.oak))
         {
             StopUseOak();
+        }
+
+        //Get Bird Beak on Front
+        if (Input.GetKeyDown(KeyCode.Space) && _hasNimbus && _helmetState.Equals(HelmetState.normal))
+        {
+            UseNimbus();
+        }
+        else if (Input.GetKeyUp(KeyCode.Space) && _hasNimbus && _helmetState.Equals(HelmetState.nimbus))
+        {
+            StopUseNimbus();
         }
     }
 
@@ -69,6 +91,10 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         _slider.value -= 5;
+        if (_hasCotton)
+        {
+            _slider.value -= 5;
+        }
         StartCoroutine(GetWater());
     }
 
@@ -108,6 +134,18 @@ public class PlayerController : MonoBehaviour
     }
 
     void StopUseOak()
+    {
+        _helmetState = HelmetState.normal;
+        this.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    void UseNimbus()
+    {
+        _helmetState = HelmetState.nimbus;
+        this.GetComponent<SpriteRenderer>().color = Color.cyan;
+    }
+
+    void StopUseNimbus()
     {
         _helmetState = HelmetState.normal;
         this.GetComponent<SpriteRenderer>().color = Color.white;
