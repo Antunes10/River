@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #background:forest
-#speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad 
+#speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
 Sun shines.
 The bright rays pierce the dead leaves that cover the shelter and signals the start of a new day.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
@@ -17,7 +17,7 @@ Sky: I’ve checked part of the village already and it seems quiet.
 #speaker:
 He looked a bit more composed than last night.
 His wing was still bandaged.
-#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad
+#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 Sparks: Can I stay a bit longer? I’m not used to wake up this early.
 #speaker:
 The little bug hides his face with a bit of foliage.
@@ -35,7 +35,7 @@ Nimbus: You should take the time to check the other half of the village. We migh
 They agree silently and walk out of the collapsed building.
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
 The road is a bit drier than yesterday.
-#speaker:Nimbus #portrait:nimbus_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default_m
 Sky: It is going to rain in a few hours.
 #speaker:
 The mouse looks up but the sky is all too cloudy to identify different levels of possible precipitation.
@@ -46,14 +46,14 @@ Nimbus: I’m a bird. We feel it in the air.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Tails: It will make our voyage harder.
 Tails: Our shell will get flooded.
-#speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad
+#speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad_m
 Nimbus: Are you confident that it will hold for the rest of the journey?
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
 Tails: I think it will. It is quite sturdy.
 Tails: It is human made after all.
-#speaker: #layout:middle:nimbus_default
+#speaker: #layout:middle:nimbus_default_m
 The bird stops and looks at a huge collapsed barn.
-#speaker:Nimbus #portrait:nimbus_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default
 Nimbus: Humans are pretty good at destroying sturdy things.
 #speaker:
 The mouse saw the association and could not argue with its logic.
@@ -98,7 +98,7 @@ He had seen mice teared to shreds by angry mongrels.
         Tails: You are right, let’s go.
         #speaker:
         They both turn around.
-        #layout:right:oak_default
+        #layout:right:oak_default_m
         And totally unprepared find the dog behind them.
 
     ++[Go talk to the dog]
@@ -111,18 +111,18 @@ He had seen mice teared to shreds by angry mongrels.
         #speaker:
         The mouse turns to face the well but the dog isn’t there anymore.
         A scream breaches the silence.
-        #layout:right:oak_default
+        #layout:right:oak_default_m
         Nimbus voice makes Tails turn around, only to find the huge dog right in front of them.
     
     -- #speaker: #layout:middle:tails_scared
     They jump terrified.
     The dog’s dark eyes are locked on them.
     Nimbus tries to run away but stumbles to the ground.
-    #speaker:Dog #portrait:oak_sad #layout:right:oak_sad
+    #speaker:Dog #portrait:oak_sad #layout:right:oak_sad_m
     Dog: Where are you going?
     #speaker:
     Both of them are catatonic.
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Dog: Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -130,7 +130,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Tails #portrait:tails_scared
     Tails: We… we are just passing by…
     Tails: We are not looking for trouble, please let us go.
-    #layout:right:oak_sad
+    #layout:right:oak_sad_m
     The dog raises one eyebrow.
     #speaker:Oak #portrait:oak_sad
     Oak: Why would old Oak prevent you both gentlemen from leaving?
@@ -140,14 +140,14 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Oak #portrait:oak_sad
     Oak: That would be most uncivilized.
     Oak: Old oak does not eat little animals.
-    #speaker:Oak #portrait:oak_happy #layout:right:oak_happy
+    #speaker:Oak #portrait:oak_happy #layout:right:oak_happy_m
     Oak: Old oak only eats canned food, cooked food and delicious white cookies from the pastry down the road.
-    #speaker: #layout:middle:tails_default #layout:left:nimbus:default
+    #speaker: #layout:middle:tails_default #layout:left:nimbus_default
     The two small animals look at each other without knowing how to react.
     The dog seems genuinely harmless.
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: So… you.. you.. won’t do us any harm?
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Oak: Categorically, little bird.
     #speaker:
     With the mouse’s help, the woodpecker gets up on his feet.
@@ -155,14 +155,14 @@ He had seen mice teared to shreds by angry mongrels.
     Tails: I am Tails, and this is Nimbus.
     Tails: Together with a small firefly we are trying to escape this calamity and find refuge to the West.
     Tails: We wandered into this village to spend the night.
-    #speaker: #layout:right:oak_happy
+    #speaker: #layout:right:oak_happy_m
     The dog smiles.
     #speaker:Oak #portrait:oak_happy
     Oak: What a marvellous entourage you have forged.
     Oak: It is a pleasure to get your acquaintance.
     #speaker:
     The dog makes a small bow, and the recipients try to respond, doing it awkwardly.
-    #sspeaker:Nimbus #portrait:nimbus:default
+    #speaker:Nimbus #portrait:nimbus_default
     Nimbus: And what are you doing here… Old Oak?
     #speaker:
     The dog laughs out loud.
@@ -171,45 +171,51 @@ He had seen mice teared to shreds by angry mongrels.
     Oak: My name is merely “Oak”.
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: Forgive me. What are you doing here, Sir Oak?
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Oak: This is my village you see. Or was.
     Oak: It was attacked by the other humans that came from the East.
-    #portrait:oak_sad #layout:right:oak_sad
+    #portrait:oak_sad #layout:right:oak_sad_m
     Oak: My owner advised me to run to the woods and wait for the storm of fire to pass.
     Oak: And so, I did. Although he never came back to meet me.
-    #portrait:oak_default #layout:right:oak_default
+    #portrait:oak_default #layout:right:oak_default_m
     Oak: Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
         #speaker:Tails #portrait:tails_default 
         Tails: We could help you find him.
-        #speaker: #layout:right:oak_happy
+        #speaker: #layout:right:oak_happy_m
         The dog smiles.
         #speaker:Oak #portrait:oak_happy
         Oak: That would be most kind.
         #speaker:Tails #portrait:tails_default
         Tails: Could you give us a description?
-        #speaker:Oak #portrait:oak_default #layout:right:oak_default
+        #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
         Oak: He is grey already. With fur on his face, bright eyes and forest coloured clothes.
         Oak: Oh! And he wears a green hat that looks like a bucket.
+        {found_food == 1: ->if_1 | ->if_2}
         
         ->continuation
 
     ++[Wish him luck and go on your way]
+        Tails: I hope you find your human friend. We have to go now.
+        The dog smiles with kindness and goes back to sniffing around.
         
-        {found_food == 0: ->if_1 | ->if_2}
-    
-        
+        ->get_away
 
 
 +[Get away from the village]
-    #speaker:
+    ->get_away
+
+->END
+
+=== get_away ===
+#speaker:
     Both friends go back to the shelter.
-    #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_default
+    #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_default_m
 	They arrive and the little bug is still lying down.
 	#speaker:Tails #portrait:tails_default
 	Tails: Come one, Sparks is time to get on our way.
-	#speaker: #layout:right:sparks_sad
+	#speaker: #layout:right:sparks_sad_m
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad
 	Sparks: Fine, fine. I’m up and flying.
@@ -222,7 +228,7 @@ He had seen mice teared to shreds by angry mongrels.
     Tails: Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
-    #layout:left:tails_scared #layout:middle:nimbus_scared #layout:right:sparks_scared
+    #layout:left:tails_scared #layout:middle:nimbus_scared #layout:right:sparks_scared_m
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared
     Sparks: AH!
@@ -230,7 +236,6 @@ He had seen mice teared to shreds by angry mongrels.
     They all take cover inside the helmet.
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: Let’s get away from here!
-
 ->END
 
 === if_1 ===
@@ -239,7 +244,7 @@ He had seen mice teared to shreds by angry mongrels.
     His eyes lower with sadness.
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad 
     Tails: I think I know where he is.
-    #speaker:Oak #portrait:oak_sad #layout:right:oak_sad
+    #speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
     Oak: Oh…
     #speaker:
     The rodent does not share his master’s fate, but the dog lowers his ears, feeling it.
@@ -256,7 +261,7 @@ He had seen mice teared to shreds by angry mongrels.
     They agree and start looking for the man.
     Clouds start to gather.
     The humidity does not help to identify the different scents.
-    #layout:right:oak_sad #layout:middle:tails_sad
+    #layout:right:oak_sad_m #layout:middle:tails_sad
     It takes a couple of minutes until the dog freezes.
     In front of him lies an old man motionless on the ground.
     Alone.
@@ -269,15 +274,15 @@ The dog approaches him and sniffs him, licking his face for a bit.
 He then sits silently, looking at the ephemerality of life.
 Th wind howls and rain starts to fall.
 The dog grabs the owner’s hat and places it on his.
-#speaker:Oak #portrait:oak_sad
+#speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
 Oak: I should have stayed, you old fool…
 Oak: I should have stayed.
-#speaker:Tails #portrait:tails_sad
+#speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
 Tails places his paw on the brown fur.
 Tails: I’m sorry…
 #speaker:
 The dog sniffs.
-#speaker:Oak #portrait:oak_sad
+#speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
 Oak: It is alright. I was already expecting it, once he did not came back.
 Oak: With age comes the acceptance of life and death.
 Oak: And I am already old…
@@ -296,13 +301,13 @@ Oak: Explosions!
 Both animals don’t know how to react, so he grabs them by the mouth and tosses them over his back.
 He runs towards the river, barking to alert every animal in the vicinity.
 Nimbus almost falls off but they both manage to make the voyage unscathed.
-#layout:right:sparks_default #layout:middle:oak_scared #layout:left:tails_scared
+#layout:right:sparks_default_m #layout:middle:oak_scared #layout:left:tails_scared
 The firefly arrives moments after.
 #speaker:Sparks #portrait:sparks_default
 Sparks: Heya, friends, what’s going on, why are you running?
 #speaker:
 The moment the question is asked a huge bang is heard nearby.
-#speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared
+#speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
 Sparks: AH!
 #speaker:
 They all rush to push the helmet into the water.
