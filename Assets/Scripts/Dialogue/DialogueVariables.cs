@@ -1,19 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
-using System.IO;
+
 
 public class DialogueVariables : MonoBehaviour
 {
     public Dictionary<string, Ink.Runtime.Object> variables {get; private set;}
 
-    public DialogueVariables(string globalsFilePath) {
-        // compile the story
-
-        string inkFileContents = File.ReadAllText(globalsFilePath); 
-        Ink.Compiler compiler = new Ink.Compiler(inkFileContents);
-        Story globalVariablesStory = compiler.Compile();
+    public DialogueVariables(TextAsset loadGlobalsJSON) {
+        //create the story
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
 
         // initialize the variables dictionary
         variables = new Dictionary<string, Ink.Runtime.Object>();

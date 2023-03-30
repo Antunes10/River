@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
-using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
-    [Header("Dialogue UI")]
-
     [Header("Globals Ink File")]
-    [SerializeField] private InkFile globalsInkFile;
+    [SerializeField] private TextAsset loadGlobalsJSON;
 
+    [Header("Dialogue UI")]
     private static DialogueManager instance;
     private Coroutine displayLineCoroutine;
     private bool canContinueNextLine = false;
@@ -53,7 +51,7 @@ public class DialogueManager : MonoBehaviour
        }
        instance = this;
 
-       dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+       dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogueManager GetInstance() {
