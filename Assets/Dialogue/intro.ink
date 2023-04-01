@@ -1,4 +1,5 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
 
 ->main
 
@@ -7,6 +8,11 @@ INCLUDE globals.ink
 Rain falls.
 The only sound thats heard.
 Blue and grey.
+
+
+//~changeScene("RiverScene")
+
+
 Water and mist.
 They fill the world around giving it a coldness he had never seen before.
 An emptiness he never felt before.

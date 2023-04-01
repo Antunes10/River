@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator leftLayoutAnimator;
     [SerializeField] private Animator middleLayoutAnimator;
     [SerializeField] private Animator rightLayoutAnimator;
+    [SerializeField] private Animator sparksLayoutAnimator;
     [SerializeField] private Animator backgroundAnimator;
 
     private Animator layoutAnimator;
@@ -46,6 +48,8 @@ public class DialogueManager : MonoBehaviour
     private DialogueVariables dialogueVariables;
 
     private void Awake() {
+
+        DontDestroyOnLoad(this.gameObject);
        if(instance != null) {
            Debug.Log("More than one dialogue manager");
        }
@@ -102,12 +106,19 @@ public class DialogueManager : MonoBehaviour
 
         dialogueVariables.StartListening(currentStory); 
 
+        currentStory.BindExternalFunction("changeScene", (string sceneName) => {
+            Debug.Log("Changing scene to " + sceneName);
+            ExitDialogueMode();
+            GameManager.Instance.changeToRiverScene();
+        });
+
         // sets everything to the default state
         displayNameText.text = "default";
         portraitAnimator.Play("default");
         leftLayoutAnimator.Play("default");
         rightLayoutAnimator.Play("default");
         middleLayoutAnimator.Play("default");
+        sparksLayoutAnimator.Play("default");
 
         ContinueStory();
     }
@@ -118,6 +129,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueVariables.StopListening(currentStory);
 
+        currentStory.UnbindExternalFunction("changeScene");
+
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
@@ -125,6 +138,7 @@ public class DialogueManager : MonoBehaviour
         leftLayoutAnimator.Play("default");
         rightLayoutAnimator.Play("default");
         middleLayoutAnimator.Play("default");
+        sparksLayoutAnimator.Play("default");
     }
 
     private void ContinueStory() {
@@ -230,6 +244,9 @@ public class DialogueManager : MonoBehaviour
                             break;
                         case "middle":
                             middleLayoutAnimator.Play(tagSprite);
+                            break;
+                        case "sparks":
+                            sparksLayoutAnimator.Play(tagSprite);
                             break;
                         default:
                             Debug.Log("Tag not recognised");
