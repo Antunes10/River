@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Level _levelData;
     [SerializeField] private ObstacleGenerator _generator;
     [SerializeField] private GameObject _rainSprite;
+    [SerializeField] private Slider _progressSlider;
 
     private bool _rain;
     private float _rainInterval;
@@ -33,7 +35,9 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time - _timer > _levelLength)
+        _progressSlider.value = Time.time;
+
+        if (Time.time - _timer > _levelLength)
         {
             WinGame();
         }
@@ -52,6 +56,9 @@ public class LevelManager : MonoBehaviour
         _rain = _levelData.rain;
         _rainInterval = _levelData.rainInterval;
         _levelLength = _levelData.levelLength;
+
+        //Set Progress Slider Max
+        _progressSlider.maxValue = _levelData.levelLength;
     }
 
     public void LoseGame()
