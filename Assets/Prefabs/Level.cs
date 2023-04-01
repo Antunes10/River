@@ -9,4 +9,9 @@ public class Level : ScriptableObject
     public float rainInterval;
     public GameObject[] obstacleList;
     public float levelLength;
+
+    [Header("Obstacles Probability")]
+    public float min;
+    public float max;
+
 }

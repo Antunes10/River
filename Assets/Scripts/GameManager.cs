@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     public bool _hasOak;
     public bool _hasCotton;
 
-    public DialogueManager _dialogueManager;
-    public LevelManager _levelManager;
+    public Level[] _levels;
+    public Level _actualLevel;
+
+    //public DialogueManager _dialogueManager;
+    //public LevelManager _levelManager;
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
