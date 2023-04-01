@@ -38,9 +38,11 @@ public class Obstacle : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().color -= new Color(multiplier, multiplier, multiplier, 0);
         }
-        else if (Time.time - _timer > _timeToDetonate)
+        else if (Time.time - _timer > _timeToDetonate - 0.5f)
         {
-            GetComponent<Collider2D>().enabled = true;
+            /*GetComponent<Collider2D>().enabled = true;
+            transform.GetChild(0).gameObject.SetActive(true);*/
+            GetComponent<Animator>().SetTrigger("Fall");
         }
     }
 
