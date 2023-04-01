@@ -12,9 +12,12 @@ public class ObstacleGenerator : MonoBehaviour
     private float _cooldown;
     private float _timer;
 
+    public float minObsCooldown;
+    public float maxObsCooldown;
+
     void Start()
     {
-        _cooldown = 6;
+        _cooldown = minObsCooldown;
         _timer = Time.time;
     }
 
@@ -37,7 +40,7 @@ public class ObstacleGenerator : MonoBehaviour
     {
         GameObject obstacle = _obstacles[Random.Range(0, _obstacles.Length)];
         Instantiate(obstacle, new Vector3(transform.position.x, Random.Range(_botLimit, _topLimit), 0), Quaternion.identity);
-        _cooldown = Random.Range(3, 6);
+        _cooldown = Random.Range(minObsCooldown, maxObsCooldown);
         _timer = Time.time;
     }
 }

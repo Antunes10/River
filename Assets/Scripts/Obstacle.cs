@@ -7,8 +7,11 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private float _speed;
     [SerializeField] private float _cooldown;
-    [SerializeField] private bool _barbed;
-    [SerializeField] private bool _barrier;
+
+    public bool _barbed;
+    public bool _barrier;
+    public bool _debris;
+
     private float _timer;
     void Start()
     {

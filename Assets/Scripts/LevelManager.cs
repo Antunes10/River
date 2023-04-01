@@ -41,7 +41,14 @@ public class LevelManager : MonoBehaviour
 
     void Initialize()
     {
+        _levelData = GameManager.Instance._actualLevel;
+
+        //Initialize Obstacle Generator
         _generator.SetObstacleList(_levelData.obstacleList);
+        _generator.minObsCooldown = _levelData.min;
+        _generator.maxObsCooldown = _levelData.max;
+
+        //Initialize Level Variables
         _rain = _levelData.rain;
         _rainInterval = _levelData.rainInterval;
         _levelLength = _levelData.levelLength;
