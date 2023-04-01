@@ -13,9 +13,16 @@ public class Obstacle : MonoBehaviour
     public bool _debris;
 
     private float _timer;
+    private float _timeToDetonate;
+    private float multiplier;
     void Start()
     {
         _timer = Time.time;
+        if (_debris)
+        {
+            _timeToDetonate = Random.Range(4, 6);
+            multiplier = 1 / _timeToDetonate / 50;
+        }
     }
 
     // Update is called once per frame
@@ -25,6 +32,15 @@ public class Obstacle : MonoBehaviour
         if (Time.time - _timer > _cooldown)
         {
             Destroy(this.gameObject);
+        }
+
+        if (_debris && Time.time - _timer < _timeToDetonate)
+        {
+            GetComponent<SpriteRenderer>().color -= new Color(multiplier, multiplier, multiplier, 0);
+        }
+        else if (Time.time - _timer > _timeToDetonate)
+        {
+            GetComponent<Collider2D>().enabled = true;
         }
     }
 
