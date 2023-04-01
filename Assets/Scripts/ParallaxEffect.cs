@@ -14,6 +14,8 @@ public class ParallaxEffect : MonoBehaviour
     private float textureUnitSizeX;
     private float sizeMultiplier;
 
+    public bool _isRipples;
+
 
     void Start()
     {
@@ -46,6 +48,14 @@ public class ParallaxEffect : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (_isRipples)
+        {
+            transform.position = new Vector2(0, -4.04f);
         }
     }
 }
