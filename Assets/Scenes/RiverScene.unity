@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hasNimbus: 1
   _hasOak: 1
-  _hasCotton: 1
+  _hasCotton: 0
   _levels: []
   _actualLevel: {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   inkJSON: {fileID: 0}
