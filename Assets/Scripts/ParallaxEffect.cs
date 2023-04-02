@@ -15,6 +15,7 @@ public class ParallaxEffect : MonoBehaviour
     private float sizeMultiplier;
 
     public bool _isRipples;
+    public bool _goingRight;
 
 
     void Start()
@@ -33,7 +34,7 @@ public class ParallaxEffect : MonoBehaviour
     {
         transform.position -= new Vector3(_speed, 0);
 
-        if (_loop)
+        if (_loop && !_goingRight)
         {
             if (transform.position.x <= 0 && !_isLastCreated)
             {
@@ -45,6 +46,22 @@ public class ParallaxEffect : MonoBehaviour
                 _isLastCreated = true;
             }
             else if (transform.position.x <= - textureUnitSizeX * sizeMultiplier && _isLastCreated)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if(_loop && _goingRight)
+        {
+            if (transform.position.x >= 1 && !_isLastCreated)
+            {
+                var nextImage = Instantiate(gameObject);
+                nextImage.transform.parent = transform.parent;
+                nextImage.transform.localPosition =
+                    transform.localPosition - new Vector3(textureUnitSizeX * transform.localScale.x, 0, 0);
+                nextImage.GetComponent<ParallaxEffect>()._speed = _speed;
+                _isLastCreated = true;
+            }
+            else if (transform.position.x >= textureUnitSizeX * sizeMultiplier && _isLastCreated)
             {
                 Destroy(gameObject);
             }
