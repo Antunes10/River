@@ -36,9 +36,9 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _progressSlider.value = Time.time;
+        _progressSlider.value = Time.timeSinceLevelLoad;
 
-        if (Time.time - _timer > _levelLength)
+        if (Time.timeSinceLevelLoad > _levelLength)
         {
             WinGame();
         }
@@ -73,7 +73,9 @@ public class LevelManager : MonoBehaviour
     public void WinGame()
     {
         Debug.Log("Win River Minigame");
-        GameManager.Instance.changeToDialogueScene();
+        //GameManager.Instance.changeToDialogueScene();
+
+        GameManager.Instance.changeToRiverScene();
     }
 
     public void ReloadLevel()
@@ -91,7 +93,7 @@ public class LevelManager : MonoBehaviour
     {
         StartRain?.Invoke();
         _rainSprite.SetActive(true);
-        yield return new WaitForSeconds(UnityEngine.Random.Range(3, 6));
+        yield return new WaitForSeconds(UnityEngine.Random.Range(5, 8));
         _rainSprite.SetActive(false);
         EndRain?.Invoke();
     }

@@ -27,6 +27,7 @@ public class ParallaxEffect : MonoBehaviour
             _sprite = GetComponent<SpriteRenderer>().sprite;
             texture = _sprite.texture;
             textureUnitSizeX = texture.width / _sprite.pixelsPerUnit;
+            Debug.Log(_sprite.pixelsPerUnit);
             sizeMultiplier = Mathf.Abs(transform.localScale.x);
         }
     }

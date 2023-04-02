@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour
         if (_isRaining && !_helmetState.Equals(HelmetState.oak))
         {
             _slider.value += 0.05f;
+            if (_slider.value > 99)
+            {
+                LevelManager.Instance.LoseGame();
+            }
         }
 
 
@@ -122,7 +126,7 @@ public class PlayerController : MonoBehaviour
     public void HitRock(float amount)
     {
         _slider.value += amount;
-        if(_slider.value > 99)
+        if (_slider.value > 99)
         {
             LevelManager.Instance.LoseGame();
         }
@@ -133,6 +137,8 @@ public class PlayerController : MonoBehaviour
         if (!_helmetState.Equals(HelmetState.stunned))
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            _playeranimations._animController.SetBool("Oak", false);
+            _playeranimations._animController.SetBool("Nimbus", false);
             StartCoroutine(GetStunned());
         }
         
