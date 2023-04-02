@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 3
   m_EditorClassIdentifier: 
   rain: 1
-  rainInterval: 5
+  rainInterval: 15
   obstacleList:
   - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}
@@ -30,3 +30,4 @@ MonoBehaviour:
   levelLength: 120
   min: 3
   max: 7
+  backgrounds: {fileID: 0}
