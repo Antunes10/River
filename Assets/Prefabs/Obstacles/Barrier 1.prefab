@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.08
-  _cooldown: 7
+  _cooldown: 10
   _alternateSprite: {fileID: 21300000, guid: 15d1c09aefdf4e649a6aa96ed082d9c5, type: 3}
   _barbed: 0
   _barrier: 1

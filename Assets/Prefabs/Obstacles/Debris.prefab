@@ -297,7 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.08
-  _cooldown: 7
+  _cooldown: 10
+  _alternateSprite: {fileID: 0}
   _barbed: 0
   _barrier: 0
   _debris: 1
