@@ -6,10 +6,13 @@ using System;
 public class PlayerAnimations : MonoBehaviour
 {
     // Start is called before the first frame update
-    [Header("Animal Sprites")]
+    [Header("Sprites")]
     [SerializeField] private SpriteRenderer[] _animalsSprites;
+    [SerializeField] private Sprite[] _helmetSprites;
+    
 
     public Animator _animController;
+    private SpriteRenderer _helmetSpriteRenderer;
 
     private bool _hasNimbus;
     private bool _hasOak;
@@ -22,6 +25,7 @@ public class PlayerAnimations : MonoBehaviour
         _hasNimbus = _gameManager._hasNimbus;
         _hasOak = _gameManager._hasOak;
         _hasCotton = _gameManager._hasCotton;
+        _helmetSpriteRenderer = GetComponent<SpriteRenderer>();
 
 
         if (!_hasNimbus) 
@@ -42,5 +46,19 @@ public class PlayerAnimations : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChangeHelmetSprite(int val)
+    {
+        _helmetSpriteRenderer.sprite = _helmetSprites[val];
+    }
+
+    public enum Helmet
+    {
+        idle = 0,
+        bot = 1,
+        right = 2,
+        left = 3
+
     }
 }

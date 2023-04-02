@@ -50,8 +50,28 @@ public class PlayerController : MonoBehaviour
         //Move Helmet
         _horizontalM = Input.GetAxisRaw("Horizontal") * _speed;
         _verticalM = Input.GetAxisRaw("Vertical") * _speed;
+
         if (!_helmetState.Equals(HelmetState.stunned) && !_helmetState.Equals(HelmetState.water))
         {
+
+            //Change Helmet Sprite
+            if(_horizontalM > 0)
+            {
+                _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.right);
+            }
+            else if(_horizontalM < 0)
+            {
+                _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.left);
+            }
+            else if (_verticalM < 0)
+            {
+                _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.bot);
+            }
+            else
+            {
+                _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
+            }
+
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
         }
 
