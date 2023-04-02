@@ -98,9 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.6
+  _speed: 0.04
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511214520019911
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,9 +200,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.3
+  _speed: 0.03
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511214920848163
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,9 +302,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.1
+  _speed: 0.01
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511215149088021
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +407,7 @@ MonoBehaviour:
   _speed: 0
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511215206428007
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,9 +506,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.2
+  _speed: 0.02
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511215222892112
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,9 +608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.5
+  _speed: 0.05
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 0
 --- !u!1 &1022511215364492915
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022511215364492912}
   m_Layer: 0
-  m_Name: Back_Prefab
+  m_Name: Back_Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,6 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loop: 1
-  _speed: 0.2
+  _speed: -0.02
   _camera: {fileID: 0}
   _isRipples: 0
+  _goingRight: 1
