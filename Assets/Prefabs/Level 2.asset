@@ -22,9 +22,7 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: c29b25968002d5843b10f2039e206577, type: 3}
   - {fileID: 6958465596665280448, guid: e1bc08be2ef8fe441b77e17d71962815, type: 3}
   - {fileID: 6958465596665280448, guid: f99b1cb7c9909ac41be86ff8dbe588ae, type: 3}
-  - {fileID: 3421729367470482422, guid: de7fb87ec6928d34fac60ea0cb8eed97, type: 3}
-  - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
   levelLength: 90
   min: 1
   max: 4
-  backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
+  backgrounds: {fileID: 1022511215364492915, guid: a1d8a64ee953e524391f5c6c2ab6d8eb, type: 3}
