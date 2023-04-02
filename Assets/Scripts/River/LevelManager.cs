@@ -16,15 +16,12 @@ public class LevelManager : MonoBehaviour
     private bool _rain;
     private float _rainInterval;
     private float _levelLength;
-    private float _timer;
 
     public event Action StartRain;
     public event Action EndRain;
     // Start is called before the first frame update
     void Start()
     {
-
-        _timer = Time.time;
         Initialize();
         if (_rain)
         {
@@ -73,9 +70,7 @@ public class LevelManager : MonoBehaviour
     public void WinGame()
     {
         Debug.Log("Win River Minigame");
-        //GameManager.Instance.changeToDialogueScene();
-
-        GameManager.Instance.changeToRiverScene();
+        GameManager.Instance.changeToDialogueScene();
     }
 
     public void ReloadLevel()

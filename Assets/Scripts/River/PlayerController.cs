@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool _hasNimbus;
     [SerializeField] private bool _hasOak;
     [SerializeField] private bool _hasCotton;
+    [SerializeField] private bool _hasSparks;
 
     public HelmetState _helmetState;
     private bool _isRaining;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         _hasOak = _gameManager._hasOak;
         _hasNimbus = _gameManager._hasNimbus;
         _hasCotton = _gameManager._hasCotton;
+        _hasSparks = _gameManager._hasSparks;
     }
 
     // Update is called once per frame
@@ -62,10 +64,12 @@ public class PlayerController : MonoBehaviour
             if(_horizontalM > 0)
             {
                 _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.right);
+                _horizontalM += 2;
             }
             else if(_horizontalM < 0)
             {
                 _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.left);
+                _horizontalM = _horizontalM / _speed;
             }
             else if (_verticalM < 0)
             {
