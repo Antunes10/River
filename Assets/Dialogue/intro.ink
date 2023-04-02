@@ -8,11 +8,6 @@ EXTERNAL changeScene(scene)
 Rain falls.
 The only sound thats heard.
 Blue and grey.
-
-
-~changeScene("RiverScene")
-
-
 Water and mist.
 They fill the world around giving it a coldness he had never seen before.
 An emptiness he never felt before.
@@ -60,5 +55,7 @@ What did he do to deserve such ignorance?
 What did all the other mouses did to deserve such fate?
 He was too small to deserve an answer.
 Too small to matter.
+
+~changeScene("RiverScene")
 
 ->END

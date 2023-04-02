@@ -11,14 +11,19 @@ public class GameManager : MonoBehaviour
     public bool _hasCotton;
 
     public Level[] _levels;
-    public Level _actualLevel;
+    public Level _currentLevel;
 
     public TextAsset[] _inkJSONs;
     public TextAsset _currentInk;
 
+    private int _currentLevelIndex;
+    private int _currentInkIndex;
+
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        _currentLevelIndex = -1;
+        _currentInkIndex = -1;
     }
 
     // Update is called once per frame
@@ -28,24 +33,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void changeToRiverScene() {
+        _currentLevelIndex++;
+        _currentLevel = _levels[_currentLevelIndex];
         SceneManager.LoadScene("RiverScene");
     }
 
     public void changeToDialogueScene() {
+        _currentInkIndex++;
+        _currentInk = _inkJSONs[_currentInkIndex];
         SceneManager.LoadScene("IntroScene");
     }
-
-    public void finishedDialogueSection(string sceneName) {
-        Debug.Log("Finished Dialogue Section: " + sceneName);
-        changeToRiverScene();
-    }
-
-    public void finishedRiverSection(string sceneName) {
-        Debug.Log("Finished River Section: " + sceneName);
-        changeToDialogueScene();
-    }
-
-    
 
     #region Singleton
     private static GameManager _instance;

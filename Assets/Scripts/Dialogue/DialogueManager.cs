@@ -51,8 +51,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake() {
 
-        //DontDestroyOnLoad(this.gameObject);
-        
         currentInk = GameManager.Instance._currentInk;
 
         if(instance != null) {
@@ -117,9 +115,8 @@ public class DialogueManager : MonoBehaviour
         dialogueVariables.StartListening(currentStory); 
 
         currentStory.BindExternalFunction("changeScene", (string sceneName) => {
-            Debug.Log("Changing scene to " + sceneName);
             ExitDialogueMode();
-            GameManager.Instance.finishedDialogueSection(sceneName);
+            GameManager.Instance.changeToRiverScene();
         });
 
         // sets everything to the default state

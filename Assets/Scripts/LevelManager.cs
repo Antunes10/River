@@ -23,8 +23,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        //DontDestroyOnLoad(this.gameObject);
-        _levelData = GameManager.Instance._actualLevel;
+        _levelData = GameManager.Instance._currentLevel;
 
         _timer = Time.time;
         Initialize();
@@ -48,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
     void Initialize()
     {
-        _levelData = GameManager.Instance._actualLevel;
+        _levelData = GameManager.Instance._currentLevel;
 
         //Initialize Obstacle Generator
         _generator.SetObstacleList(_levelData.obstacleList);
