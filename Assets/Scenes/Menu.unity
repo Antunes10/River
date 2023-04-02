@@ -225,8 +225,9 @@ MonoBehaviour:
   _levels:
   - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
-  _actualLevel: {fileID: 0}
-  inkJSON: {fileID: 0}
+  _actualLevel: {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
+  _inkJSONs: []
+  _currentInk: {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
 --- !u!4 &730998456
 Transform:
   m_ObjectHideFlags: 0
