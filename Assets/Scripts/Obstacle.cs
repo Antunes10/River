@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private float _speed;
     [SerializeField] private float _cooldown;
+    [SerializeField] private Sprite _alternateSprite;
 
     public bool _barbed;
     public bool _barrier;
@@ -56,14 +57,26 @@ public class Obstacle : MonoBehaviour
         {
             collision.GetComponent<PlayerController>().HitBarbed();
         }
-        else if (_barrier && collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
+        else if (_barrier)
         {
-            this.GetComponent<SpriteRenderer>().color = Color.cyan;
-            return;
+            if (collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
+            {
+                this.GetComponent<SpriteRenderer>().sprite = _alternateSprite;
+                GetComponent<Collider2D>().enabled = false;
+            }
+            else
+            {
+                collision.GetComponent<PlayerController>().HitRock(20);
+                collision.GetComponent<PlayerController>().HitBarbed();
+            }
+        }
+        else if(_debris)
+        {
+            collision.GetComponent<PlayerController>().HitRock(40);
         }
         else
         {
-            collision.GetComponent<PlayerController>().HitRock();
+            collision.GetComponent<PlayerController>().HitRock(20);
         }
     }
 }
