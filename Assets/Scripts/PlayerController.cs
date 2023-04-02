@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private GameManager _gameManager;
     private LevelManager _levelManager;
+    public PlayerAnimations _playeranimations;
 
     void Start()
     {
@@ -130,25 +131,25 @@ public class PlayerController : MonoBehaviour
     void UseOak()
     {
         _helmetState = HelmetState.oak;
-        this.GetComponent<SpriteRenderer>().color = Color.green;
+        _playeranimations._animController.SetBool("Oak", true);
     }
 
     void StopUseOak()
     {
         _helmetState = HelmetState.normal;
-        this.GetComponent<SpriteRenderer>().color = Color.white;
+        _playeranimations._animController.SetBool("Oak", false);
     }
 
     void UseNimbus()
     {
         _helmetState = HelmetState.nimbus;
-        this.GetComponent<SpriteRenderer>().color = Color.cyan;
+        _playeranimations._animController.SetBool("Nimbus", true);
     }
 
     void StopUseNimbus()
     {
         _helmetState = HelmetState.normal;
-        this.GetComponent<SpriteRenderer>().color = Color.white;
+        _playeranimations._animController.SetBool("Nimbus", false);
     }
 
     IEnumerator GetStunned()
@@ -163,11 +164,10 @@ public class PlayerController : MonoBehaviour
     IEnumerator GetWater()
     {
         _helmetState = HelmetState.water;
-        this.GetComponent<SpriteRenderer>().color = Color.yellow;
+        _playeranimations._animController.SetTrigger("GettingWater");
         yield return new WaitForSeconds(3);
         if (_helmetState.Equals(HelmetState.water))
         {
-            this.GetComponent<SpriteRenderer>().color = Color.white;
             _helmetState = HelmetState.normal;
         }
     }
