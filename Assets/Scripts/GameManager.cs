@@ -13,16 +13,12 @@ public class GameManager : MonoBehaviour
     public Level[] _levels;
     public Level _actualLevel;
 
-    //public DialogueManager _dialogueManager;
-    //public LevelManager _levelManager;
-
-    [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    public TextAsset[] _inkJSONs;
+    public TextAsset _currentInk;
 
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        //_dialogueManager.EnterDialogueMode(inkJSON);
     }
 
     // Update is called once per frame
@@ -31,13 +27,25 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void triggerDialogue() {
-        DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-    }
-
     public void changeToRiverScene() {
         SceneManager.LoadScene("RiverScene");
     }
+
+    public void changeToDialogueScene() {
+        SceneManager.LoadScene("IntroScene");
+    }
+
+    public void finishedDialogueSection(string sceneName) {
+        Debug.Log("Finished Dialogue Section: " + sceneName);
+        changeToRiverScene();
+    }
+
+    public void finishedRiverSection(string sceneName) {
+        Debug.Log("Finished River Section: " + sceneName);
+        changeToDialogueScene();
+    }
+
+    
 
     #region Singleton
     private static GameManager _instance;

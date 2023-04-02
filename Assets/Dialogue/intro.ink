@@ -10,7 +10,7 @@ The only sound thats heard.
 Blue and grey.
 
 
-//~changeScene("RiverScene")
+~changeScene("RiverScene")
 
 
 Water and mist.

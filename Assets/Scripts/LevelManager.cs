@@ -20,7 +20,10 @@ public class LevelManager : MonoBehaviour
     public event Action EndRain;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        //DontDestroyOnLoad(this.gameObject);
+        _levelData = GameManager.Instance._actualLevel;
+
         _timer = Time.time;
         Initialize();
         if (_rain)
@@ -61,7 +64,8 @@ public class LevelManager : MonoBehaviour
 
     public void WinGame()
     {
-        Debug.Log("Win");
+        Debug.Log("Win River Minigame");
+        GameManager.Instance.changeToDialogueScene();
     }
 
     public void ReloadLevel()

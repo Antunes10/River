@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Globals Ink File")]
     [SerializeField] private TextAsset loadGlobalsJSON;
 
+    public TextAsset currentInk;
+
     [Header("Dialogue UI")]
     private static DialogueManager instance;
     private Coroutine displayLineCoroutine;
@@ -49,20 +51,17 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake() {
 
-        DontDestroyOnLoad(this.gameObject);
-       if(instance != null) {
-           Debug.Log("More than one dialogue manager");
-       }
-       instance = this;
+        //DontDestroyOnLoad(this.gameObject);
+        
+        currentInk = GameManager.Instance._currentInk;
 
-       dialogueVariables = new DialogueVariables(loadGlobalsJSON);
-    }
+        if(instance != null) {
+            Debug.Log("More than one dialogue manager");
+        }
+        instance = this;
 
-    public static DialogueManager GetInstance() {
-        return instance;
-    }
-
-    public void Start() {
+        dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+        Debug.Log("Starting Dialogue Manager");
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         choosing = false;
@@ -83,6 +82,17 @@ public class DialogueManager : MonoBehaviour
             choice.SetActive(false);
             index++;
         }
+
+        EnterDialogueMode(currentInk);
+    }
+
+    public static DialogueManager GetInstance() {
+        return instance;
+    }
+
+    public void Start() {
+        //USSELESS FOR NOW?
+        
     }
 
     private void Update() {
@@ -109,7 +119,7 @@ public class DialogueManager : MonoBehaviour
         currentStory.BindExternalFunction("changeScene", (string sceneName) => {
             Debug.Log("Changing scene to " + sceneName);
             ExitDialogueMode();
-            GameManager.Instance.changeToRiverScene();
+            GameManager.Instance.finishedDialogueSection(sceneName);
         });
 
         // sets everything to the default state
