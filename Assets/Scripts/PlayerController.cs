@@ -99,9 +99,9 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(GetWater());
     }
 
-    public void HitRock()
+    public void HitRock(float amount)
     {
-        _slider.value += 20;
+        _slider.value += amount;
         if(_slider.value > 99)
         {
             LevelManager.Instance.LoseGame();
@@ -165,9 +165,11 @@ public class PlayerController : MonoBehaviour
     {
         _helmetState = HelmetState.water;
         _playeranimations._animController.SetTrigger("GettingWater");
+        this.GetComponent<SpriteRenderer>().color = Color.cyan;
         yield return new WaitForSeconds(3);
         if (_helmetState.Equals(HelmetState.water))
         {
+            this.GetComponent<SpriteRenderer>().color = Color.white;
             _helmetState = HelmetState.normal;
         }
     }
