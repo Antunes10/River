@@ -25,3 +25,4 @@ MonoBehaviour:
   levelLength: 90
   min: 3
   max: 8
+  backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}

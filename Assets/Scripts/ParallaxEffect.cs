@@ -6,8 +6,8 @@ public class ParallaxEffect : MonoBehaviour
 {
     [SerializeField] private bool _loop;
     [SerializeField] private float _speed;
-    [SerializeField] private Camera _camera;
-
+    
+    private Camera _camera;
     private bool _isLastCreated;
     private Sprite _sprite;
     private Texture2D texture;
@@ -20,6 +20,8 @@ public class ParallaxEffect : MonoBehaviour
 
     void Start()
     {
+        _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
         if (_loop)
         {
             _sprite = GetComponent<SpriteRenderer>().sprite;

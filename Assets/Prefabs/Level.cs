@@ -14,4 +14,7 @@ public class Level : ScriptableObject
     public float min;
     public float max;
 
+    [Header("Background")]
+    public GameObject backgrounds;
+
 }

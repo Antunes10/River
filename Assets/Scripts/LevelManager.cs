@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
     private float _rainInterval;
     private float _levelLength;
     private float _timer;
+    private GameObject _backgroundContainer;
 
     public event Action StartRain;
     public event Action EndRain;
@@ -24,6 +25,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {   
         _levelData = GameManager.Instance._currentLevel;
+        Instantiate(_levelData.backgrounds);
 
         _timer = Time.time;
         Initialize();
