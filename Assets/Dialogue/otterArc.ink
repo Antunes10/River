@@ -5,7 +5,7 @@ EXTERNAL gameOver()
 ->main
 
 === main ===
-
+#background:river
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
 Hours pass and they reach a wider body of water, surrounded by gravel and bushes.
 Trees block again the skies, as the river sliders inside another forest.

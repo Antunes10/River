@@ -519,7 +519,8 @@ MonoBehaviour:
   _hasCotton: 0
   _levels: []
   _currentLevel: {fileID: 0}
-  _currentInk: {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
+  _inkJSONs: []
+  _currentInk: {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
 --- !u!4 &402087510
 Transform:
   m_ObjectHideFlags: 0
