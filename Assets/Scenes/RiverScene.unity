@@ -284,11 +284,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb13db187103bfb45912fdca3d0a0df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasNimbus: 0
+  _hasNimbus: 1
   _hasOak: 0
   _hasCotton: 0
   _levels: []
-  _currentLevel: {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
+  _currentLevel: {fileID: 11400000, guid: 4f132836ef5cc3f4b8eb9ab6af45e582, type: 2}
   _inkJSONs: []
   _currentInk: {fileID: 0}
 --- !u!4 &259085036
@@ -11317,22 +11317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1888929643251035850, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_Size.x
-      value: 3.1035419
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888929643251035850, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_Size.y
-      value: 1.7389319
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888929643251035850, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.019921124
-      objectReference: {fileID: 0}
-    - target: {fileID: 1888929643251035850, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.0110055
-      objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705978, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: _slider
       value: 
@@ -11344,14 +11328,6 @@ PrefabInstance:
     - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: m_LocalPosition.x
