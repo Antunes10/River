@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool _hasNimbus;
     public bool _hasOak;
     public bool _hasCotton;
+    public bool _hasSparks;
 
     public Level[] _levels;
     public Level _currentLevel;
@@ -26,9 +27,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        /*_hasCotton = false;
+        _hasCotton = false;
         _hasNimbus = false;
-        _hasOak = false;*/
+        _hasOak = false;
+        _hasSparks = false;
         _currentLevelIndex = -1;
         _currentInkIndex = -1;
         _dialogueIndex = 0;
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void decreaseFood(int val) { _currentFood = _currentFood - val; }
     public void decreaseHope(int val) { _currentHope = _currentHope - val; }
 
+    public void recruitSparks() { _hasSparks = true; }
     public void recruitNimbus() {_hasNimbus = true; }
     public void recruitOak() { _hasOak = true; }
     public void recruitCotton() { _hasCotton = true; }

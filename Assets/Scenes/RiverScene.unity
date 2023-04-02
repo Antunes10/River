@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 259085036}
   - component: {fileID: 259085035}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManager (delete)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,10 +287,11 @@ MonoBehaviour:
   _hasNimbus: 1
   _hasOak: 1
   _hasCotton: 0
+  _hasSparks: 1
   _levels:
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
   - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
-  _currentLevel: {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
+  _currentLevel: {fileID: 11400000, guid: 3e5104b2cf75c154ea0d994f097db5eb, type: 2}
   _inkJSONs: []
   _currentInk: {fileID: 0}
 --- !u!4 &259085036
@@ -11320,6 +11321,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4837785539666705978, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
+      propertyPath: _speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837785539666705978, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: _slider
       value: 
       objectReference: {fileID: 1081319278}
@@ -11333,11 +11338,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.51
       objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.79
+      value: -2.46
       objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705980, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: m_LocalPosition.z
