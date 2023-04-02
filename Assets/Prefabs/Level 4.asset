@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 4
   m_EditorClassIdentifier: 
   rain: 1
-  rainInterval: 5
+  rainInterval: 25
   obstacleList:
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   levelLength: 120
