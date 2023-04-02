@@ -517,6 +517,7 @@ MonoBehaviour:
   _hasNimbus: 0
   _hasOak: 0
   _hasCotton: 0
+  _hasSparks: 0
   _levels: []
   _currentLevel: {fileID: 0}
   _inkJSONs: []
@@ -2531,7 +2532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 0.5882353}
+  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

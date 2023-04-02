@@ -124,6 +124,11 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.gameOver();
         });
 
+        currentStory.BindExternalFunction("recruitSparks", () => {
+            ExitDialogueMode();
+            GameManager.Instance.recruitSparks();
+        });
+
         currentStory.BindExternalFunction("recruitOak", () => {
             ExitDialogueMode();
             GameManager.Instance.recruitOak();

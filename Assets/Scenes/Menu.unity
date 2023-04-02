@@ -356,11 +356,13 @@ MonoBehaviour:
   _hasNimbus: 0
   _hasOak: 1
   _hasCotton: 1
+  _hasSparks: 0
   _levels:
   - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
   - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
   - {fileID: 11400000, guid: 4f132836ef5cc3f4b8eb9ab6af45e582, type: 2}
+  - {fileID: 11400000, guid: 3e5104b2cf75c154ea0d994f097db5eb, type: 2}
   _currentLevel: {fileID: 0}
   _inkJSONs:
   - _InkJSONs:
