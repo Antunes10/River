@@ -30,9 +30,9 @@ Sparks: What are we going to do?
 #speaker:Tails #portrait:tails_default
 Tails: We could carry on foot…
 Tails: Or we could try to create a small breach so the helmet could fit.
-#speaker:Nimbus #portrait:right:nimbus_default_m
+#speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
 Nimbus: It’s going to take ages just us four. Perhaps the helmet served its purpose.
-#speaker:Sparks #portrait:sparks_default_m
+#speaker:Sparks #portrait:sparks_default
 Sparks: Oh, but I liked it.
 #speaker:
 The firefly pouts.
@@ -53,7 +53,7 @@ They had to decide.
 	Tails: It’s time to say goodbye to it.
 	#speaker: #layout:sparks:sparks_sad_m #layout:left:oak_sad #layout:right:nimbus_sad_m
 	Their eyes sadden and antennas and ears are lowered.
-	#peaker:Sparks #portrait:sparks_sad_m
+	#peaker:Sparks #portrait:sparks_sad
 	Sparks: It helped us so much…
 	#speaker:
 	The small bug sniffs away her tears.
@@ -89,7 +89,7 @@ They had to decide.
 +[Try to beach the dam]
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     Tails: Out there is dangerous and we go faster by water.
-    Tails: Let’s try to find a way through.#
+    Tails: Let’s try to find a way through.
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: What if we don’t find it?
     #speaker:Tails #portrait:tails_default
@@ -103,14 +103,14 @@ They had to decide.
     Lastly, Tails squirms through a breach and enter inside the dam to look for a way through.
     As a team they work efficiently.
     However there seems to be no way through.
-    #speaker:Tails #portrait:tails_default
+    #speaker:
     Tails goes back outside.
     Tails: Did you find anything, Nimbus?
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: Not a damn thing.
     #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m
     Sparks: Ih, ih a damn thing in a dam…
-    #speaker: #layoutmiddle:tails_happy
+    #speaker: #layout:middle:tails_happy
     The mouse smiles with the childish remark and turns to the brown fur down in the water.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     Tails: And you Sir Oak?
@@ -139,7 +139,7 @@ They had to decide.
     Hazel: But beavers tell us oaks are tasteful. Although I never tried.
     #layout:left:hazel_default #speaker:
     As destined, the fourth companion emerges from underwater, shaking away the excessive water that now drips heavily from his hat and fur.
-    #speaker:Oak #portrait:oak #layout:right:oak_default_m
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Oak: Look who I was fortunate to find.
     Oak: Otters are masters of dams. If anybody can help us its her.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy
@@ -189,7 +189,7 @@ They had to decide.
     Hazel: Ta dah!
     #speaker:
     The otter emerges hands raised as if magic was used.
-    #speaker:Sparks #portrait:sparks_happy
+    #speaker:Sparks #portrait:sparks_happy #layout:middle:tails_default_m
     Sparks: Hurray Miss Hazel, you’re the best!
     #speaker:
     They all jump aboard the shell and with the otter’s help they traverse the dam into the other side.
@@ -201,7 +201,7 @@ They had to decide.
     Tails: We can’t thank you enough Miss Hazel.
     #speaker:
     She makes a small bow and then raises her nose remembering something.
-    #speaker:Hazel #portrait:hazel_sad #layout:left:hazel_default
+    #speaker:Hazel #portrait:hazel_sad #layout:left:hazel_sad
     Hazel: Actually, if you’ll be so kind to give me a little food.
     Hazel: It has been hard to find fish the last couple of days and I’m starving.
     #speaker:
@@ -237,7 +237,7 @@ They had to decide.
         Then he though about something that could mend the situation.
 
     --
-    #speaker:Tails #portrait:tails_default layout:middle:tails_default
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     Tails: Do you want to come with us, Hazel?
     #speaker:
     The otter looks West and then back at the lake.
@@ -247,7 +247,7 @@ They had to decide.
     Otter: I must stay and do my part.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Oak: Honourable and caring. My you receive has half has you give, Miss Hazel.
-    #peaker:
+    #speaker:
     They all wave their paws and wings and go their separate ways.
     The group was now closer to reaching their western destination.
     But clouds were gathering on the horizon.

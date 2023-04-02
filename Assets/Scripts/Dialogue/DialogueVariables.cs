@@ -16,7 +16,6 @@ public class DialogueVariables : MonoBehaviour
         foreach(string name in globalVariablesStory.variablesState) {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
-            Debug.Log("Variable added: " + name + " = " + value);
         }
     }
 

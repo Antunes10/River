@@ -221,12 +221,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hasNimbus: 0
   _hasOak: 1
-  _hasCotton: 0
+  _hasCotton: 1
   _levels:
   - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
-  _actualLevel: {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
-  _inkJSONs: []
+  - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
+  - {fileID: 11400000, guid: 4f132836ef5cc3f4b8eb9ab6af45e582, type: 2}
+  _currentLevel: {fileID: 0}
+  _inkJSONs:
+  - {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
+  - {fileID: 4900000, guid: 487c317f2daeffd40b0234fbac5c5f57, type: 3}
+  - {fileID: 4900000, guid: 25815327a32cf5147bc8571ceb5a6627, type: 3}
+  - {fileID: 4900000, guid: b943b0ca6e5b6094ca5f6f237d933064, type: 3}
+  - {fileID: 4900000, guid: dd35b3eb27663f748889024abcd62ea9, type: 3}
+  - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
+  - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
+  - {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   _currentInk: {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
 --- !u!4 &730998456
 Transform:
@@ -514,7 +526,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 730998455}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: changeToRiverScene
+        m_MethodName: changeToDialogueScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -20,7 +20,7 @@ Water and dust the only thing he smells.
 The river runs ever so slow.
 Almost like he only moved due to obligation. With no will of its own.
 He hops over the rocks again.
- Paws? Rudy? Butter?      #speaker:Tails #portrait:tails_default #layout:middle:tails_default
+ Paws? Rudy? Butter?      #speaker:Tails #portrait:tails_default #layout:middle:tails_default 
 His voice fades unresponded.        #speaker: #portrait:narrator
 Is anyone there?     #speaker:Tails #portrait:tails_default 
 No one is there to speak.       #speaker: #portrait:narrator
