@@ -1,4 +1,7 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
+EXTERNAL recruitNimbus()
 
 ->main
 
@@ -113,7 +116,8 @@ Trapped it was trying to free itself, but each movement allowed the claws to pie
     It was life and life wasn’t fair.
     There was no place for naivety if they wanted to reach the West.
     
--END OF DIALOGUE
+-
+~changeScene("RiverScene")
 
 ->END
 
@@ -213,6 +217,7 @@ Stop it! Are you crazy! It hurts!
     He was dead.
     Blood was running everywhere.
     He should have stopped cutting.
+    ~changeScene("RiverScene")
     ->END
 
 === LeaveHim ===
@@ -240,6 +245,8 @@ Sometimes we can’t save those who need saving.
 The firefly got sad with the remark.
 It was life and life wasn’t fair.
 There was no place for naivety if they wanted to reach the West.
+
+~changeScene("RiverScene")
 ->END
 
 === UseBranches ===
@@ -356,5 +363,8 @@ You are welcome to.
 The river kept on flowing.
 Taking them away from the forest.
 Into the far away land they were searching for.
+
 ~ nimbusSaved = 1
+~recruitNimbus()
+~changeScene("RiverScene")
 ->END

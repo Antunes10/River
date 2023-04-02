@@ -1,4 +1,6 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 
@@ -117,5 +119,6 @@ Tails: I did not mean right now.
 Oak: I guess it is best to take advantage of his high spirits.
 In agreement the band goes back to the helmet and set sail to their assured horizon.
 
+~changeScene("RiverScene")
 
 -> END

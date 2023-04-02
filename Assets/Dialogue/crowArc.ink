@@ -1,4 +1,6 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 
@@ -176,7 +178,8 @@ Looking around with dark eyes.
     The crow’s laugh is heard again as they drown in agony and fear.
     A slow and asphyxiating death.
     
-    -
+-
+~changeScene("RiverScene")
 
 ->END
 
@@ -196,6 +199,8 @@ Looking around with dark eyes.
 === KeepWaiting ===
 
 {currentFood > 0: ->hasFoodAndWaited | ->noFoodAndWaited}
+
+~changeScene("RiverScene")
 
 ->END
 
@@ -222,6 +227,7 @@ And again, the mist hasn’t disappeared.
 
 === noFoodAndWaited ===
 
+~changeScene("RiverScene")
 -> END
 
 === Wait ===
@@ -300,5 +306,7 @@ No animal in this world could answer that question.
 No animal in this world had seen what they were about to…
 A city flooded by waters that carried the dead with it.
 A city in ruins.
+
+~changeScene("RiverScene")
 
 ->END

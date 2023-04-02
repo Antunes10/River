@@ -1,5 +1,6 @@
 INCLUDE globals.ink
 EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 

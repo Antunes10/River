@@ -13,17 +13,22 @@ public class GameManager : MonoBehaviour
     public Level[] _levels;
     public Level _currentLevel;
 
-    public TextAsset[] _inkJSONs;
+    public DialogueGrid[] _inkJSONs;
     public TextAsset _currentInk;
 
     private int _currentLevelIndex;
     private int _currentInkIndex;
+    private int _dialogueIndex;
 
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        _hasCotton = false;
+        _hasNimbus = false;
+        _hasOak = false;
         _currentLevelIndex = -1;
         _currentInkIndex = -1;
+        _dialogueIndex = 0;
     }
 
     // Update is called once per frame
@@ -32,6 +37,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void gameOver() {
+        Debug.Log("Game Over");
+    }
+
+    public void recruitNimbus() {_hasNimbus = true; }
+    public void recruitOak() { _hasOak = true; }
+    public void recruitCotton() { _hasCotton = true; }
+
     public void changeToRiverScene() {
         _currentLevelIndex++;
         _currentLevel = _levels[_currentLevelIndex];
@@ -39,9 +52,28 @@ public class GameManager : MonoBehaviour
     }
 
     public void changeToDialogueScene() {
+         
+        //Changing to Bridge Aftermath Scene OR Oak Scene
+        if (_currentInkIndex == 2 || _currentInkIndex == 3) {     
+            if (_hasNimbus) { _dialogueIndex = 1; }
+            else { _dialogueIndex = 0; }
+        }
+        //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
+        else if (_currentInkIndex == 4 || _currentInkIndex == 5 || _currentInkIndex == 6) {   
+            if (!_hasNimbus && !_hasOak) {_dialogueIndex = 0; }
+            else if (!_hasNimbus && _hasOak) { _dialogueIndex = 1; }
+            else if (_hasNimbus && !_hasOak) { _dialogueIndex = 2; }
+            else if (_hasNimbus && _hasOak) { _dialogueIndex = 3; }
+        }
+            
         _currentInkIndex++;
-        _currentInk = _inkJSONs[_currentInkIndex];
+        _currentInk = _inkJSONs[_currentInkIndex]._InkJSONs[_dialogueIndex];
         SceneManager.LoadScene("IntroScene");
+    }
+
+    [System.Serializable]
+    public class DialogueGrid {
+        public TextAsset[] _InkJSONs;
     }
 
     #region Singleton

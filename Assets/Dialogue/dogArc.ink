@@ -1,9 +1,12 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
+EXTERNAL recruitOak()
 
 ->main
 
 === main ===
-#background:forest
+#background:village
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
 Sun shines.
 The bright rays pierce the dead leaves that cover the shelter and signals the start of a new day.
@@ -206,6 +209,8 @@ He had seen mice teared to shreds by angry mongrels.
 +[Get away from the village]
     ->get_away
 
+~changeScene("RiverScene")
+
 ->END
 
 === get_away ===
@@ -236,6 +241,9 @@ He had seen mice teared to shreds by angry mongrels.
     They all take cover inside the helmet.
     #speaker:Nimbus #portrait:nimbus_default
     Nimbus: Let’s get away from here!
+    
+~changeScene("RiverScene")
+
 ->END
 
 === if_1 ===
@@ -311,5 +319,8 @@ The moment the question is asked a huge bang is heard nearby.
 Sparks: AH!
 #speaker:
 They all rush to push the helmet into the water.
+
+~recruitOak()
+~changeScene("RiverScene")
 
 ->END

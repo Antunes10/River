@@ -1,9 +1,11 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 
 === main ===
-#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:forest
+#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:village
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
@@ -17,6 +19,7 @@ My arms are tired, steering this shell is no easy work.
 Besides, we don’t know what dangers might lurk in the dark of night.
 #speaker:
 They agree with the plan, docking the helmet near the river’s shoreline, next to a large log.
+#background:villageHouse
 Their paws and feet touch the murky sands and start walking in the direction of a house with a collapsed ceiling.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
 Perhaps its best if I scout ahead, my wing should be healed now.
@@ -131,6 +134,8 @@ Their steps echoed inside the destroyed building.
 Here at least the wind didn’t bite them.
 
 {nimbus_hopeful_VS_truth == 0: ->if_hopeful_1 | ->if_truth_1}
+
+~changeScene("RiverScene")
 
 ->END
 
@@ -249,6 +254,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         {nimbus_hopeful_VS_truth == 0: ->if_hopeful_2 | ->if_truth_2}
         
     -
+~changeScene("RiverScene")
 
 ->END
 
@@ -356,6 +362,8 @@ You and me both.
 #speaker:
 With a smile and a small goodbye, the woodpecker goes to lie down on a small pile of leaves.
 
+~changeScene("RiverScene")
+
 ->DONE
 
 === if_truth_2 ===
@@ -406,6 +414,8 @@ I will go back. We have a long day ahead of us.
 Want to come too?
 #speaker:Tails
 The bird confirms with a small nod, and they go back to the warmth of the shelter together.
+
+~changeScene("RiverScene")
 
 ->DONE
 

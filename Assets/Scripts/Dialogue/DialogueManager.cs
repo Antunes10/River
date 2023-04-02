@@ -119,6 +119,27 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.changeToRiverScene();
         });
 
+        currentStory.BindExternalFunction("gameOver", () => {
+            ExitDialogueMode();
+            GameManager.Instance.gameOver();
+        });
+
+        currentStory.BindExternalFunction("recruitOak", () => {
+            ExitDialogueMode();
+            GameManager.Instance.recruitOak();
+        });
+
+        currentStory.BindExternalFunction("recruitCotton", () => {
+            ExitDialogueMode();
+            GameManager.Instance.recruitCotton();
+        });
+
+        currentStory.BindExternalFunction("recruitNimbus", () => {
+            ExitDialogueMode();
+            GameManager.Instance.recruitNimbus();
+        });
+
+
         // sets everything to the default state
         displayNameText.text = "default";
         portraitAnimator.Play("default");

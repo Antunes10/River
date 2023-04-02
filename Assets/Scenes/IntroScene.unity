@@ -518,19 +518,8 @@ MonoBehaviour:
   _hasOak: 0
   _hasCotton: 0
   _levels: []
-  _actualLevel: {fileID: 0}
-  _inkJSONs:
-  - {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
-  - {fileID: 4900000, guid: 487c317f2daeffd40b0234fbac5c5f57, type: 3}
-  - {fileID: 4900000, guid: 25815327a32cf5147bc8571ceb5a6627, type: 3}
-  - {fileID: 4900000, guid: b943b0ca6e5b6094ca5f6f237d933064, type: 3}
-  - {fileID: 4900000, guid: dd35b3eb27663f748889024abcd62ea9, type: 3}
-  - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
-  - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _currentInk: {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
+  _currentLevel: {fileID: 0}
+  _currentInk: {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
 --- !u!4 &402087510
 Transform:
   m_ObjectHideFlags: 0

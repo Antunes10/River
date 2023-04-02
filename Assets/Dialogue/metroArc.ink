@@ -1,4 +1,6 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 
@@ -214,8 +216,6 @@ Its origin unknown to the little mouse, moves closer to the ground.
     
 - 
 
-
-    
-    
+~changeScene("RiverScene")
 
 ->END

@@ -1,4 +1,6 @@
 INCLUDE globals.ink
+EXTERNAL changeScene(scene)
+EXTERNAL gameOver()
 
 ->main
 
@@ -253,5 +255,6 @@ They had to decide.
     But clouds were gathering on the horizon.
 
 -
+~changeScene("RiverScene")
 
 ->END
