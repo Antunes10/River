@@ -1,7 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
-EXTERNAL recruitNimbus()
 
 ->main
 
@@ -200,6 +197,8 @@ Stop it! Are you crazy! It hurts!
     ->ChoicePanel
     
 +++[Continue]
+    ~decreaseHope(2)
+    ~currentHope = currentHope - 2
     #speaker:
     Tails ignored the bird’s cries.
     With determination he started to cut again.
@@ -221,6 +220,8 @@ Stop it! Are you crazy! It hurts!
     ->END
 
 === LeaveHim ===
+~decreaseHope(1)
+~currentHope = currentHope - 1
 #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad_m
 There was nothing that they could do.
 A trap like that was too complex for them to disarm.
@@ -296,6 +297,8 @@ The time was running out.
 ->ChoicePanel
 
 === KeepTrying ===
+~increaseHope(1)
+~currentHope = currentHope - 1
 #speaker: #layout:middle:nimbus_sad_hurt_m #layout:left:tails_sad #layout:right:sparks_sad_m
 Tails kept on with his task of removing the wires.
 If the bird was to die, there he wouldn’t die alone.
