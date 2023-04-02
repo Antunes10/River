@@ -45,10 +45,10 @@ public class GameManager : MonoBehaviour
     public int getFood() { return _currentFood; }
     public int getHope() { return _currentHope; }
 
-    public void increaseFood() { _currentFood++; }
-    public void increaseHope() { _currentHope++; }
-    public void decreaseFood() { _currentFood--; }
-    public void decreaseHope() { _currentHope--; }
+    public void increaseFood(int val) { _currentFood = _currentFood + val; }
+    public void increaseHope(int val) { _currentHope = _currentHope + val; }
+    public void decreaseFood(int val) { _currentFood = _currentFood - val; }
+    public void decreaseHope(int val) { _currentHope = _currentHope - val; }
 
     public void recruitNimbus() {_hasNimbus = true; }
     public void recruitOak() { _hasOak = true; }
@@ -59,6 +59,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void changeToFinishDay() {
+        // -1 food at the end of every day
+        decreaseFood(1);
+
+        if (_currentFood <= 0) {
+            gameOver();
+        }
+
         SceneManager.LoadScene("FinishDayScene");
     }
 

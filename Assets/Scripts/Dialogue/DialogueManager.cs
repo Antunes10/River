@@ -139,27 +139,25 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.recruitNimbus();
         });
 
-        currentStory.BindExternalFunction("increaseFood", () => {
+        currentStory.BindExternalFunction("increaseFood", (int val) => {
             ExitDialogueMode();
-            GameManager.Instance.increaseFood();
+            GameManager.Instance.increaseFood(val);
         });
 
-        currentStory.BindExternalFunction("decreaseFood", () => {
+        currentStory.BindExternalFunction("decreaseFood", (int val) => {
             ExitDialogueMode();
-            GameManager.Instance.decreaseFood();
+            GameManager.Instance.decreaseFood(val);
         });
 
-        currentStory.BindExternalFunction("increaseHope", () => {
+        currentStory.BindExternalFunction("increaseHope", (int val) => {
             ExitDialogueMode();
-            GameManager.Instance.increaseHope();
+            GameManager.Instance.increaseHope(val);
         });
 
-        currentStory.BindExternalFunction("decreaseHope", () => {
+        currentStory.BindExternalFunction("decreaseHope", (int val) => {
             ExitDialogueMode();
-            GameManager.Instance.decreaseHope();
+            GameManager.Instance.decreaseHope(val);
         });
-
-
 
 
         // sets everything to the default state

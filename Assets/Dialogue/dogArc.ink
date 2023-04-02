@@ -1,7 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
-EXTERNAL recruitOak()
 
 ->main
 
@@ -184,6 +181,8 @@ He had seen mice teared to shreds by angry mongrels.
     Oak: Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
+        ~increaseHope(1)
+        ~currentHope = currentHope + 1
         #speaker:Tails #portrait:tails_default 
         Tails: We could help you find him.
         #speaker: #layout:right:oak_happy_m

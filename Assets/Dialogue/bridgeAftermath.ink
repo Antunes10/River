@@ -1,6 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
 
 ->main
 
@@ -42,7 +40,9 @@ He takes off buzzing through the air, disappearing in the night.
 Tails and nimbus stand next to each other, and the mouse can see that wing’s damage was irreversible.
 
 +[Tell him the truth about his wing.]
-    ~ nimbus_hopeful_VS_truth = 1
+    ~decreaseHope(1)
+    ~currentHope = currentHope - 1
+    ~nimbus_hopeful_VS_truth = 1
     #speaker:
     Tails approaches him and his voice goes soft.
     #speaker:Tails #portrait:tails_sad
@@ -71,6 +71,8 @@ Tails and nimbus stand next to each other, and the mouse can see that wing’s d
     Or perhaps because of a broken spirit.
 
 +[Keep him hopeful.]
+    ~increaseHope(1)
+    ~currentHope = currentHope + 1
     ~ nimbus_hopeful_VS_truth = 0
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     I know you want to be helpful.
@@ -135,6 +137,7 @@ Here at least the wind didn’t bite them.
 
 {nimbus_hopeful_VS_truth == 0: ->if_hopeful_1 | ->if_truth_1}
 
+~currentFood = currentFood - 1
 ~changeScene("RiverScene")
 
 ->END
@@ -169,6 +172,8 @@ Or perhaps it was best if Tails spent some time with his companions.
     Death.
     
     ++[Go anyway.]
+        ~increaseFood(1)
+        ~currentFood = currentFood + 1
         ~ found_food = found_food + 1
         #speaker: #layout:middle:tails_sad
         It was uncomfortable, but it was a necessary evil.
@@ -199,6 +204,8 @@ Or perhaps it was best if Tails spent some time with his companions.
     
 
 +[Talk with the others]
+    ~increaseHope(1)
+    ~currentHope = currentHope + 1
     #speaker:
     Right now, hope was more important than fighting hunger.
     Her mother always taught him the spirit was as much important as the body.
@@ -254,6 +261,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         {nimbus_hopeful_VS_truth == 0: ->if_hopeful_2 | ->if_truth_2}
         
     -
+~currentFood = currentFood - 1
 ~changeScene("RiverScene")
 
 ->END
@@ -362,6 +370,7 @@ You and me both.
 #speaker:
 With a smile and a small goodbye, the woodpecker goes to lie down on a small pile of leaves.
 
+~currentFood = currentFood - 1
 ~changeScene("RiverScene")
 
 ->DONE
@@ -415,6 +424,7 @@ Want to come too?
 #speaker:Tails
 The bird confirms with a small nod, and they go back to the warmth of the shelter together.
 
+~currentFood = currentFood - 1
 ~changeScene("RiverScene")
 
 ->DONE

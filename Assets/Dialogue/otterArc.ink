@@ -1,6 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
 
 ->main
 
@@ -210,6 +208,10 @@ They had to decide.
     Looks inside the helmet to the little food they have left.
     
     ++[Give food]
+        ~currentFood = currentFood - 1
+        ~currentHope = currentHope + 1
+        ~decreaseFood(1)
+        ~increaseHope(1)
         #speaker:Tails #portrait:tails_default 
         Tails: We don’t have much to spare, but we can share a bit with you.
         #speaker:Sparks #portrait:sparks_happy
@@ -226,6 +228,8 @@ They had to decide.
         Their hearts get warm with the remark, and they share a wholesome moment.
 
     ++[Deny her request]
+        ~currentHope = currentHope - 1
+        ~decreaseHope(1)
         #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad_m
         Tails: I am really sorry, Miss Otter…
         Tails: But we don’t have enough to share…
@@ -255,6 +259,7 @@ They had to decide.
     But clouds were gathering on the horizon.
 
 -
+~currentFood = currentFood - 1
 ~changeScene("RiverScene")
 
 ->END

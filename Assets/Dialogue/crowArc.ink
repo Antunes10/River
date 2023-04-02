@@ -1,6 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
 
 ->main
 
@@ -207,6 +205,7 @@ Looking around with dark eyes.
 
 === hasFoodAndWaited ===
 ~currentFood = currentFood - 1
+~decreaseFood(1)
 
 #speaker:
 The mouse returns inside.

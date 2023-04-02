@@ -1,6 +1,5 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
+
 
 ->main
 
@@ -30,6 +29,10 @@ Sparks: My belly hurts…
 Nimbus: I’m starving too. Thank the heavens we still have some food left.
 
 +[Eat together to recover your strength]
+    ~currentFood = currentFood - 1 
+    ~currentHope = currentHope + 1
+    ~decreaseFood(1)
+    ~increaseHope(1)
     #speaker:
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the dog and retrieves a bit more.
@@ -42,6 +45,8 @@ Nimbus: I’m starving too. Thank the heavens we still have some food left.
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
+    ~currentHope = currentHope - 1
+    ~decreaseHope(1)
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
     Tails: I know it is hard, but we have to ration our food.
     Tails: We don’t know what lies ahead.

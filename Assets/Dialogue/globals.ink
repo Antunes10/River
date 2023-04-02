@@ -1,3 +1,13 @@
+EXTERNAL increaseHope(val)
+EXTERNAL decreaseHope(val)
+EXTERNAL increaseFood(val)
+EXTERNAL decreaseFood(val)
+EXTERNAL gameOver()
+EXTERNAL changeScene(scene)
+EXTERNAL recruitNimbus()
+EXTERNAL recruitOak()
+EXTERNAL recruitCotton()
+
 VAR choice = ""
 
 VAR nimbusSaved = 0

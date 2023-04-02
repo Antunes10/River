@@ -1,6 +1,4 @@
 INCLUDE globals.ink
-EXTERNAL changeScene(scene)
-EXTERNAL gameOver()
 
 ->main
 
@@ -122,7 +120,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Avoid the light.]
     #speaker: #layout:middle:tails_default
-    //TODO: WAIT FOR TAILS_FEAR
+    ~decreaseHope(1)
+    ~ currentHope = currentHope - 1
     There was a hint of curiosity in his eyes, but his instincts reigned his body.
     He was a mouse after all, any danger was a possible deadly one.
     He just saw an entire stone forest razed by fire and explosions; he wasn’t going to take any risks now.
@@ -139,7 +138,6 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #background:black #layout:middle:default
     He succumbs to the pain and falls unconscious.
     
-    //TODO: MAKE A DARK SCREEN WHEN TAILS HAS HIS EYES CLOSED
     Time passes.
     A small light appears far away amidts the black.
     It becomes stronger and stronger, shinning away the fear and uncertainty.
