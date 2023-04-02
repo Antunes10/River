@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RiverScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/IntroScene.unity
+    path: Assets/Scenes/DialogueScene.unity
     guid: 71c075672d8103845bf39f6de6de62e2
+  - enabled: 1
+    path: Assets/Scenes/FinishDayScene.unity
+    guid: 9553344a6b40fad4b85310cac28d772c
   m_configObjects: {}

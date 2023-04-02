@@ -8,7 +8,7 @@ EXTERNAL gameOver()
 #speaker: #layout:middle:tails_default #layout:sparks:sparks_default_m #layout:left:oak_default #layout:right:nimbus_default_m
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The slow river reaches a march an its waters spread throughout the unseen horizon.
+The night went by and now the slow river reaches a march an its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:middle:tails_sad #layout:sparks:sparks_default_m #layout:left:oak_scared #layout:right:nimbus_default_m
 A scent of death hangs in the air.

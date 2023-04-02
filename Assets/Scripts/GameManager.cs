@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     private int _currentInkIndex;
     private int _dialogueIndex;
 
+    private int _currentFood;
+    private int _currentHope;
+
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -29,6 +32,8 @@ public class GameManager : MonoBehaviour
         _currentLevelIndex = -1;
         _currentInkIndex = -1;
         _dialogueIndex = 0;
+        _currentFood = 3;
+        _currentHope = 3;
     }
 
     // Update is called once per frame
@@ -37,13 +42,25 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void gameOver() {
-        Debug.Log("Game Over");
-    }
+    public int getFood() { return _currentFood; }
+    public int getHope() { return _currentHope; }
+
+    public void increaseFood() { _currentFood++; }
+    public void increaseHope() { _currentHope++; }
+    public void decreaseFood() { _currentFood--; }
+    public void decreaseHope() { _currentHope--; }
 
     public void recruitNimbus() {_hasNimbus = true; }
     public void recruitOak() { _hasOak = true; }
     public void recruitCotton() { _hasCotton = true; }
+
+    public void gameOver() {
+        Debug.Log("Game Over");
+    }
+
+    public void changeToFinishDay() {
+        SceneManager.LoadScene("FinishDayScene");
+    }
 
     public void changeToRiverScene() {
         _currentLevelIndex++;
@@ -68,7 +85,7 @@ public class GameManager : MonoBehaviour
             
         _currentInkIndex++;
         _currentInk = _inkJSONs[_currentInkIndex]._InkJSONs[_dialogueIndex];
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("DialogueScene");
     }
 
     [System.Serializable]

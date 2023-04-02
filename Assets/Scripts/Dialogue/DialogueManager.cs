@@ -139,6 +139,28 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.recruitNimbus();
         });
 
+        currentStory.BindExternalFunction("increaseFood", () => {
+            ExitDialogueMode();
+            GameManager.Instance.increaseFood();
+        });
+
+        currentStory.BindExternalFunction("decreaseFood", () => {
+            ExitDialogueMode();
+            GameManager.Instance.decreaseFood();
+        });
+
+        currentStory.BindExternalFunction("increaseHope", () => {
+            ExitDialogueMode();
+            GameManager.Instance.increaseHope();
+        });
+
+        currentStory.BindExternalFunction("decreaseHope", () => {
+            ExitDialogueMode();
+            GameManager.Instance.decreaseHope();
+        });
+
+
+
 
         // sets everything to the default state
         displayNameText.text = "default";
