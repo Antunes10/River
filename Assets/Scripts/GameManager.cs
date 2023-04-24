@@ -98,6 +98,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("DialogueScene");
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     [System.Serializable]
     public class DialogueGrid {
         public TextAsset[] _InkJSONs;
