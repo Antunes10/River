@@ -16,13 +16,38 @@ public class Obstacle : MonoBehaviour
     private float _timer;
     private float _timeToDetonate;
     private float multiplier;
+    private bool _inside;
+
+    private GameObject _player;
+    private SpriteRenderer _thisSprite;
     void Start()
     {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _thisSprite = gameObject.GetComponent<SpriteRenderer>();
+
         _timer = Time.time;
         if (_debris)
         {
             _timeToDetonate = Random.Range(4, 6);
             multiplier = 1 / _timeToDetonate / 50;
+        }
+    }
+
+    private void Update()
+    {
+        if (_inside)
+        {
+            return;
+        }
+        if(_player.transform.position.y > transform.position.y)
+        {
+            _thisSprite.sortingLayerName = "Player";
+            _thisSprite.sortingOrder = 5;
+        }
+        else
+        {
+            _thisSprite.sortingLayerName = "Obstacles";
+            _thisSprite.sortingOrder = 11;
         }
     }
 
@@ -53,6 +78,9 @@ public class Obstacle : MonoBehaviour
         {
             return;
         }
+
+        _inside = true;
+
         if (_barbed)
         {
             collision.GetComponent<PlayerController>().HitBarbed();
@@ -77,6 +105,14 @@ public class Obstacle : MonoBehaviour
         else
         {
             collision.GetComponent<PlayerController>().HitRock(20);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            _inside = false;
         }
     }
 }
