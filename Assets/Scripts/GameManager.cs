@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Characters
     public bool _hasNimbus;
     public bool _hasOak;
     public bool _hasCotton;
@@ -14,13 +14,16 @@ public class GameManager : MonoBehaviour
     public Level[] _levels;
     public Level _currentLevel;
 
+    //INK variables
     public DialogueGrid[] _inkJSONs;
     public TextAsset _currentInk;
 
+    //Scene variables
     private int _currentLevelIndex;
     private int _currentInkIndex;
     private int _dialogueIndex;
 
+    //Resources
     private int _currentFood;
     private int _currentHope;
 
@@ -96,6 +99,12 @@ public class GameManager : MonoBehaviour
         _currentInkIndex++;
         _currentInk = _inkJSONs[_currentInkIndex]._InkJSONs[_dialogueIndex];
         SceneManager.LoadScene("DialogueScene");
+    }
+
+    public void changeToMenuScene()
+    {
+        SceneManager.LoadScene("Menu");
+        Destroy(gameObject);
     }
 
     public void Exit()

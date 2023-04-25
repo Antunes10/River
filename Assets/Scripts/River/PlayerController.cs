@@ -109,6 +109,12 @@ public class PlayerController : MonoBehaviour
         {
             StopUseNimbus();
         }
+
+        //Pause Game
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            _levelManager.PauseUnpause();
+        }
     }
 
     private void FixedUpdate()

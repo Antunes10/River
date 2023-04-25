@@ -12,6 +12,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private ObstacleGenerator _generator;
     [SerializeField] private GameObject _rainSprite;
     [SerializeField] private Slider _progressSlider;
+    [SerializeField] private Canvas _inGameCanvas;
+    [SerializeField] private Canvas _pauseMenuCanvas;
+
+    private bool _gamePaused;
 
     private bool _rain;
     private float _rainInterval;
@@ -60,6 +64,32 @@ public class LevelManager : MonoBehaviour
 
         //Set Progress Slider Max
         _progressSlider.maxValue = _levelData.levelLength;
+
+        _gamePaused = false;
+    }
+
+    public void PauseUnpause()
+    {
+        _gamePaused = !_gamePaused;
+
+        if (_gamePaused)
+        {
+            Time.timeScale = 0;
+            _inGameCanvas.enabled = false;
+            _pauseMenuCanvas.enabled = true;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            _inGameCanvas.enabled = true;
+            _pauseMenuCanvas.enabled = false;
+        }
+    }
+
+    public void ExitToMenu()
+    {
+        Time.timeScale = 1;
+        GameManager.Instance.changeToMenuScene();
     }
 
     public void LoseGame()
@@ -75,6 +105,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadLevel()
     {
+        Time.timeScale = 1;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
