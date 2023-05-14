@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public PlayerAnimations _playeranimations;
 
     public bool _invulnerable;
+    private bool _victory;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         _gameManager = GameManager.Instance;
         _levelManager.StartRain += IsRaining;
         _levelManager.EndRain += StopRaining;
+        _levelManager.Victory += Victory;
         _helmetState = HelmetState.normal;
 
         //Assign character checks
@@ -121,7 +123,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if (_victory)
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * 5, Camera.main.transform);
+        }
     }
 
     public void TakeOutWater()
@@ -137,16 +142,16 @@ public class PlayerController : MonoBehaviour
 
     public void HitRock(float amount)
     {
-        //jogador fica invulneravel
+        /*====================================
+        Gives invulnerability to the player
+        Triggers the Blink Animation
+        Add water to the water slider
+        Checks if the player lost the game
+        ====================================*/
+
         _invulnerable = true;
-
-        //acciona animação de blink
         _playeranimations.HelmetHit();
-
-        //adiciona água ao slider
         _slider.value += amount;
-
-        //verifica se o jogador perdeu
         if (_slider.value > 99)
         {
             LevelManager.Instance.LoseGame();
@@ -197,6 +202,21 @@ public class PlayerController : MonoBehaviour
     {
         _helmetState = HelmetState.normal;
         _playeranimations._animController.SetBool("Nimbus", false);
+    }
+
+    void Victory()
+    {
+        /*=================================================================================
+        changes to stunned so the player can't control the helmet
+        Disables collider to avoid triggers
+        Validates the victory bool so the FixedUpdate can apply Translation to the helmet
+        Triggers the right animation because the helmet will move right
+        =================================================================================*/
+
+        _helmetState = HelmetState.stunned;
+        _victory = true;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.right);
     }
 
     IEnumerator GetStunned()

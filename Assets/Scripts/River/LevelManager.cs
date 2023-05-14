@@ -15,7 +15,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Canvas _inGameCanvas;
     [SerializeField] private Canvas _pauseMenuCanvas;
 
+    private GameManager _gameManager;
+
     private bool _gamePaused;
+    private bool _alreadyVic;
 
     private bool _rain;
     private float _rainInterval;
@@ -23,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
     public event Action StartRain;
     public event Action EndRain;
+    public event Action Victory;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,37 +43,48 @@ public class LevelManager : MonoBehaviour
     {
         _progressSlider.value = Time.timeSinceLevelLoad;
 
-        if (Time.timeSinceLevelLoad > _levelLength)
+        if (Time.timeSinceLevelLoad > _levelLength && !_alreadyVic)
         {
-            WinGame();
+            Victory?.Invoke();
+            StartCoroutine(WinGame());
+            _alreadyVic = true;
         }
     }
 
     void Initialize()
     {
-        _levelData = GameManager.Instance._currentLevel;
+        /*====================================
+        Instanciates the Game Manager
+        Gets the level data from the Game Manager
+        Instanciates the Backgrounds
+        Initialize the Obstacle Generator and the level variables
+        Sets Progress Slider Max
+        ====================================*/
 
-        //Instanciate Backgrounds
+        _gameManager = GameManager.Instance;
+        _levelData = _gameManager._currentLevel;
         Instantiate(_levelData.backgrounds);
 
-        //Initialize Obstacle Generator
         _generator.SetObstacleList(_levelData.obstacleList);
         _generator.minObsCooldown = _levelData.min;
         _generator.maxObsCooldown = _levelData.max;
 
-        //Initialize Level Variables
         _rain = _levelData.rain;
         _rainInterval = _levelData.rainInterval;
         _levelLength = _levelData.levelLength;
 
-        //Set Progress Slider Max
         _progressSlider.maxValue = _levelData.levelLength;
-
-        _gamePaused = false;
     }
 
     public void PauseUnpause()
     {
+        /*===========================================
+       Changes the pause variable
+       Checks if the game is going to pause or resume
+       Sets Time Scale
+       Enables the right UI or HUD
+       ============================================*/
+
         _gamePaused = !_gamePaused;
 
         if (_gamePaused)
@@ -89,18 +104,12 @@ public class LevelManager : MonoBehaviour
     public void ExitToMenu()
     {
         Time.timeScale = 1;
-        GameManager.Instance.changeToMenuScene();
+        _gameManager.changeToMenuScene();
     }
 
     public void LoseGame()
     {
         _loseScreen.SetActive(true);
-    }
-
-    public void WinGame()
-    {
-        Debug.Log("Win River Minigame");
-        GameManager.Instance.changeToDialogueScene();
     }
 
     public void ReloadLevel()
@@ -113,6 +122,13 @@ public class LevelManager : MonoBehaviour
     void Raining()
     {
         StartCoroutine(Rain());
+    }
+
+    IEnumerator WinGame()
+    {
+        Debug.Log("Win River Minigame");
+        yield return new WaitForSeconds(5);
+        _gameManager.changeToDialogueScene();
     }
 
     IEnumerator Rain()
