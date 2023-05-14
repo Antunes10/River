@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private LevelManager _levelManager;
     public PlayerAnimations _playeranimations;
 
+    public bool _invulnerable;
+
     void Start()
     {
         _levelManager = LevelManager.Instance;
@@ -135,7 +137,16 @@ public class PlayerController : MonoBehaviour
 
     public void HitRock(float amount)
     {
+        //jogador fica invulneravel
+        _invulnerable = true;
+
+        //acciona animação de blink
+        _playeranimations.HelmetHit();
+
+        //adiciona água ao slider
         _slider.value += amount;
+
+        //verifica se o jogador perdeu
         if (_slider.value > 99)
         {
             LevelManager.Instance.LoseGame();

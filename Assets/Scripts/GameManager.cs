@@ -30,10 +30,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        _hasCotton = false;
-        _hasNimbus = false;
-        _hasOak = false;
-        _hasSparks = false;
         _currentLevelIndex = -1;
         _currentInkIndex = -1;
         _dialogueIndex = 0;
