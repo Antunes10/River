@@ -74,6 +74,13 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Verifica se esta invulneravel
+        if (_player.GetComponent<PlayerController>()._invulnerable)
+        {
+            return;
+        }
+
+        //Verifica se é o player
         if (!collision.CompareTag("Player"))
         {
             return;
@@ -81,6 +88,7 @@ public class Obstacle : MonoBehaviour
 
         _inside = true;
 
+        //Verifica qual o tipo de obstaculo e aplica os efeitos
         if (_barbed)
         {
             collision.GetComponent<PlayerController>().HitBarbed();

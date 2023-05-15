@@ -19,6 +19,8 @@ public class PlayerAnimations : MonoBehaviour
     private bool _hasCotton;
     private bool _hasSparks;
 
+    private bool _hit;
+
     private GameManager _gameManager;
     void Start()
     {
@@ -50,7 +52,14 @@ public class PlayerAnimations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (_hit)
+        {
+            _helmetSpriteRenderer.color = new Color(1f, 1f, 1f, Mathf.PingPong(Time.time * 5, 1));
+            foreach(SpriteRenderer sr in _animalsSprites)
+            {
+                sr.color = new Color(1f, 1f, 1f, Mathf.PingPong(Time.time * 5, 1));
+            }
+        }
     }
 
     public void ChangeHelmetSprite(int val)
@@ -65,5 +74,28 @@ public class PlayerAnimations : MonoBehaviour
         right = 2,
         left = 3
 
+    }
+
+    public void HelmetHit()
+    {
+        StartCoroutine(Hit());
+    }
+
+    IEnumerator Hit()
+    {
+        _hit = true;
+        yield return new WaitForSeconds(2f);
+
+        _hit = false;
+
+        //Repõe a transparencia a zero
+        _helmetSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+        foreach (SpriteRenderer sr in _animalsSprites)
+        {
+            sr.color = new Color(1f, 1f, 1f, 1f);
+        }
+
+        //Volta a meter a variavel de invulneravel a falso
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>()._invulnerable = false;
     }
 }
