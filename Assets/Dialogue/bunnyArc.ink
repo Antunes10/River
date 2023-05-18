@@ -3,85 +3,130 @@ INCLUDE globals.ink
 ->main
 
 === main ===
+#layout:left:oak_sad #layout:middle:tails_sad #layout:sparks:sparks_sad_m #layout:right:nimbus_default_m #speaker:
 Inside the building, the explosions sound like distant nightmares.
 Waiting for them to come out of hiding.
 The rabbit runs faster than any of them and occasionally they lose sight of her.
+#layout:right:default
 Nimbus could not follow them, so he stayed behind.
 Oak’s breathing was starting to become ever more audible.
+#speaker:Oak #portrait:oak_sad
 Oak: I am uncertain about my ability to keep up this pace.
 Oak: I am quite the elder.
+#speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
 Sparks: C’mon Mr.Oaks, you can do it!
+#speaker: #layout:sparks:sparks_default
 The firefly’s words serve as an incentive and the canine regains some energy.
 The rabbit clearly knew the way.
 She took no time choosing her path even when there were several possibilities.
 She kept on descending into the underground levels.
 Suddenly, Oak slips and crashes into the ground, hard.
+#layout:sparks:sparks_sad_m
 The bug stops in her tracks to look out for her friend.
 
-+[Keep following the rabbit]
++[Forget the rabbit and go help Oak]
     Tails stops in his tracks.
     His breathing was heavy.
     They had been running for several minutes and the rabbit did not turn back once.
     It was not worth it.
+    #layout:middle:tails_default_m
     He turns back and approaches the old dog.
+    #speaker:Tails #portrait:tails_sad
     Tails: Are you alright, Oak?
+    #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
     Oak: Nothing major. I slipped and landed badly with my front paws.
+    #portrait:oak_default #layout:left:oak_default
     Oak: Just need a bit of rest to recover.
+    #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
     Sparks: It must be really hard to run so fast!
+    #speaker:Oak #portrait:oak_default
     Oak: Not as hard as being old.
+    #speaker: #layout:middle:tails_happy
     They both smile at the remark.
+    #speaker:Tails #portrait:tails_happy 
     Tails: That’s the advantage of having wings. You don’t have to worry about where you step.
+    #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
     Sparks: That’s true!
     Sparks: I never thought about that.
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     Tails: Can you get up?
+    #speaker:Oak #portrait:oak_default
     Oak: I would rather lie a bit. If we are not in a hurry, that is.
+    #speaker:
     The mouse confirms they gave up on their chase and the three sit over a dusty rug to catch their breath.
     
+    #layout:middle:tails_default #layout:right:nimbus_default_m
     A few moments pass and Nimbus reunites with the group.
     He clearly had been putting an effort into walking fast.
+    #speaker:Nimbus #portrait:nimbus_default 
     Nimbus: Finally, caught up with you!
     Nimbus: Still getting use to walking so much.
+    #speaker: #layout:right:nimbus_scared_m
     He looks around perplexed.
+    #speaker:Nimbus #portrait:nimbus_scared
     Nimbus: Where is the rabbit?
+    #spekaer:Tails #portrait:tails_sad #layout:middle:tails_sad
     Tails: We lost it.
+    #layout:right:nimbus_default_m
     Tails: And to be honest I don’t think she was interested in us. She never looked back.
+    #speaker:
     The silence of the empty building takes centre stage, and they take a good look at their surroundings.
     Doors were unlocked and some broken.
     There were bags and clothes spread throughout the floor and there were even some walls with bullet holes.
+    #speaker:Oak #portrait:oak_default #layout:left:oak_default
     Oak: We should find a place to spend the night.
+    #speaker:Nimbus #portrait:nimbus_default
     Nimbus: Perhaps in the upper levels? At least there we can see the rest of the city.
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Tails: Might be less protected from the explosions…
     Tails: But I think the visibility is a greater advantage.
+    #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
     Sparks: And we can gaze the night’s sky!
     Sparks: With luck we can spot other fireflies on their way West!
+    #speaker: #layout:left:oak_happy #layout:middle:tails_happy #layout:right:nimbus_happy_m
     The contagious positivity engulfs the whole group, and they agree to find shelter in the upper levels.
 
 
-+[Forget the rabbit and go help Oak]
++[Keep following the rabbit]
+    #speaker:
     The rabbit clearly was in a rush. Perhaps she needed help.
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Tails: Sparks, stay with Oak!
+    #speaker: #portrait:sparks_default #layout:sparks:sparks_default_m
     The firefly signals affirmatively and the mouse goes back on track.
+    #layout:sparks:default #layout:left:default
     The light becomes weak as they arrive to the lower levels.
+    #layout:middle:default #layout:left:tails_default #layout:right:bunny_sad
     Tails arrives at a corridor and sees the rabbit trying to move a piece of wood that fell from the ceiling.
     She’s doing it like her life depends on it.
     There is rubble all around, revealing a recent crumbling.
+    #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
     Tails: Do you need help with that?
+    #speaker:
     The rabbit doesn’t stop her efforts.
+    #speaker:??? #portrait:bunny_sad #layout:right:bunny_sad_m
     ???: Yes… yes!
     ???: Please help me!
+    #speaker: #layout:left:default #layout:middle:tails_sad
     The mouse approaches the wooden board and puts his hands on it.
     They both push and the wooden board moves slightly, allowing Tails to see a hole behind it. Large enough for a rabbit to enter.
+    #speaker:Tails #portrait:tails_sad
     Tails: Why are you in this kind of hurry?
+    #speaker:
     She doesn’t answer immediately.
+    #speaker:??? #portrait:bunny_sad
     ???: My…
     ???: My cubs are in the hole behind this wood…
     ???: I went outside to get some food when an explosion rocked the building.
     ???: I must make sure they are alright.
+    #speaker:
     She was clearly stressed.
     Now Tails totally understood her lack of social interaction with them.
     With renewed strength he pushed with all he had.
     The wooden board moved further, and they managed to displace it enough to uncover the hole.
+    #layout:right:default
     The rabbit took no time to enter it and Tails followed.
+    #layout:middle:default  #layout:middle_left:tails_sad #layout:middle_right:bunny_sad_m
     The tunnel was covered in metal, perfectly smoothed.
     It was clearly human made and the rabbit must have taken advantage of it.
     The mouse starts to feel a bit nervous.
@@ -95,20 +140,28 @@ The bug stops in her tracks to look out for her friend.
     Half of the room was covered in rocks, metals and wooden planks.
     Th rabbit stops.
     She sniffs the air with her ears wide open.
+    #layout:middle_right:bunny_scared_m #speaker:??? #portrait:bunny_scared
     ???: No… no… no…
+    #speaker:
     The world darkens.
+    #speaker:??? #portrait:bunny_scared
     ???: Please no… Oh please…
+    #speaker:
     She moves slowly towards the rubble.
+    #speaker:??? #portrait:bunny_scared
     ???: Darlings?
     ???: Hazel?
     ???: Blue?
     ???: Silk? Cotton?
+    #speaker:
     Tails heart sinks.
     His lungs lacking enough air to breath.
     There is no other voice, than the rabbit mother’s.
+    #speaker:??? #layout:middle_right:bunny_sad_m
     ???: Where are you!?
     ???: Please answer me!
     ???: Please…
+    #speaker:
     She starts to dig the rubble.
     First slowly then erratically.
     A pain so strong no one could bare.
@@ -127,7 +180,9 @@ The bug stops in her tracks to look out for her friend.
         Ever so gently.
         She doesn’t even feel it.
         She keeps on digging as her paws start to bleed.
+        #speaker:Tails #portrait:tails_sad 
         Tails: I am so sorry…
+        #speaker:
         The digging slows down.
         The crying gets stronger.
         The rabbit falls on her fours and places her head against the rocks.
@@ -153,4 +208,5 @@ The bug stops in her tracks to look out for her friend.
 
 
 -
+~changeScene("RiverScene")
 ->END
