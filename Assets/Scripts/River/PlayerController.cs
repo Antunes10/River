@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_victory)
         {
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             transform.Translate(Vector3.right * Time.deltaTime * 5, Camera.main.transform);
         }
     }

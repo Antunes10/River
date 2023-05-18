@@ -361,10 +361,12 @@ MonoBehaviour:
   _hasNimbus: 0
   _hasOak: 0
   _hasCotton: 0
+  _hasSparks: 0
   _helmetState: 0
-  _speed: 5
+  _speed: 1.2
   _slider: {fileID: 0}
   _playeranimations: {fileID: 5833160010082452519}
+  _invulnerable: 0
 --- !u!50 &4837785539666705982
 Rigidbody2D:
   serializedVersion: 4
@@ -430,6 +432,7 @@ MonoBehaviour:
   - {fileID: 8749634136199957084}
   - {fileID: 3511211914606597810}
   - {fileID: 3541722413989213155}
+  _helmetSprites: []
   _animController: {fileID: 7708209426673438863}
 --- !u!95 &7708209426673438863
 Animator:

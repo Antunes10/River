@@ -1,0 +1,11 @@
+{
+    "HasSparks": true,
+    "HasNimbus": false,
+    "HasOak": false,
+    "HasCotton": false,
+    "Food": 2,
+    "Hope": 3,
+    "CurrentLevelIndex": 2,
+    "CurrentInkIndex": 3,
+    "CurrentDialogueIndex": 0
+}

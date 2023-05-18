@@ -60,6 +60,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over");
     }
 
+    public void LoadGame()
+    {
+        var jsonTextFile = Resources.Load<TextAsset>("test_save");
+        //Then use JsonUtility.FromJson<T>() to deserialize jsonTextFile into an object
+    }
+
     public void changeToFinishDay() {
         // -1 food at the end of every day
         decreaseFood(1);
