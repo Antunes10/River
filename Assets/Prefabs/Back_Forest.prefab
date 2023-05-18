@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022511214127314754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.024, y: 0.74, z: 0}
+  m_LocalPosition: {x: 0.024, y: 0.56, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,7 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0.04
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511214520019911
@@ -201,7 +200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0.03
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511214920848163
@@ -303,7 +301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0.01
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511215149088021
@@ -405,7 +402,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511215206428007
@@ -507,7 +503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0.02
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511215222892112
@@ -609,7 +604,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: 0.05
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 0
 --- !u!1 &1022511215364492915
@@ -749,6 +743,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loop: 1
   _speed: -0.02
-  _camera: {fileID: 0}
   _isRipples: 0
   _goingRight: 1
