@@ -17,7 +17,6 @@ My arms are tired, steering this shell is no easy work.
 Besides, we don’t know what dangers might lurk in the dark of night.
 #speaker:
 They agree with the plan, docking the helmet near the river’s shoreline, next to a large log.
-#background:villageHouse
 Their paws and feet touch the murky sands and start walking in the direction of a house with a collapsed ceiling.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
 Perhaps its best if I scout ahead, my wing should be healed now.
@@ -122,6 +121,7 @@ It’s empty!
 No badies around.
 #speaker:
 Soothed by the information, the animals go to the human settlement in search for a place to spend the night.
+#background:villageHouse
 Now closer they see that most of the buildings are reduce to rubble. With the house they were eyeing, one of the few that could offer any kind of shelter.
 Craters make the path uneven and what were once fences are now piles.
 #speaker:Tails #portrait:tails_default

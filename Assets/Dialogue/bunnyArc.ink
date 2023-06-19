@@ -3,6 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
+#background:citySquare
 #layout:left:oak_sad #layout:middle:tails_sad #layout:sparks:sparks_sad_m #layout:right:nimbus_default_m #speaker:
 Inside the building, the explosions sound like distant nightmares.
 Waiting for them to come out of hiding.
@@ -88,6 +89,7 @@ The bug stops in her tracks to look out for her friend.
 
 
 +[Keep following the rabbit]
+    ~followedRabbit = 1
     #speaker:
     The rabbit clearly was in a rush. Perhaps she needed help.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
@@ -96,6 +98,7 @@ The bug stops in her tracks to look out for her friend.
     The firefly signals affirmatively and the mouse goes back on track.
     #layout:sparks:default #layout:left:default
     The light becomes weak as they arrive to the lower levels.
+    #background:hallway
     #layout:middle:default #layout:left:tails_default #layout:right:bunny_sad
     Tails arrives at a corridor and sees the rabbit trying to move a piece of wood that fell from the ceiling.
     She’s doing it like her life depends on it.
@@ -131,6 +134,7 @@ The bug stops in her tracks to look out for her friend.
     It was clearly human made and the rabbit must have taken advantage of it.
     The mouse starts to feel a bit nervous.
     Afraid that this story wouldn’t have a happy ending.
+    #background:room
     The tunnel ends inside a small room, with just a tiny window close to the ceiling, on the opposite wall.
     There is a lot of dust around.
     Silence is heard.

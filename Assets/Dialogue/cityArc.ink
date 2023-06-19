@@ -3,7 +3,7 @@ INCLUDE globals.ink
 -> main
 
 === main ===
-#background:black
+#background:city
 #speaker: #layout:left:oak_scared #layout:middle:tails_scared #layout:right:nimbus_scared_m #layout:sparks:sparks_scared_m
 Explosions are heard.
 They seem far away but at the same time too close.
@@ -73,6 +73,7 @@ Someone is in danger.
 #speaker:
 The scream is heard again.
 #speaker:Tails #portrait:tails_default #layout:middle:tails_default
+#background:citySquare
 Let’s see what it is.
 #speaker: 
 Arriving at a submersed square, they see a wheelbarrow turned around over some kind of structure.
