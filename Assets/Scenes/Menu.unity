@@ -620,16 +620,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb13db187103bfb45912fdca3d0a0df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasNimbus: 0
-  _hasOak: 0
-  _hasCotton: 0
-  _hasSparks: 0
   _levels:
   - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
   - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
-  - {fileID: 11400000, guid: 4f132836ef5cc3f4b8eb9ab6af45e582, type: 2}
   - {fileID: 11400000, guid: 3e5104b2cf75c154ea0d994f097db5eb, type: 2}
+  - {fileID: 11400000, guid: 575ef94f0001afd4aa13ed53f20e4306, type: 2}
   _currentLevel: {fileID: 0}
   _inkJSONs:
   - _InkJSONs:
@@ -1497,12 +1493,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 730998455}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: changeToDialogueScene
-        m_Mode: 1
+        m_MethodName: LoadGame
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
