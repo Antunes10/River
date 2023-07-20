@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 4
   m_EditorClassIdentifier: 
   rain: 1
-  rainInterval: 25
+  rainInterval: 20
   obstacleList:
   - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}
@@ -32,7 +32,12 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: de7fb87ec6928d34fac60ea0cb8eed97, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
-  levelLength: 90
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  levelLength: 80
   min: 1
   max: 3
-  backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
+  backgrounds: {fileID: 1022511215364492915, guid: 78a3678a69674474380d0661e269e638, type: 3}
