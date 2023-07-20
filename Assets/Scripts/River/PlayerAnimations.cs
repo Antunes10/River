@@ -25,10 +25,10 @@ public class PlayerAnimations : MonoBehaviour
     void Start()
     {
         _gameManager = GameManager.Instance;
-        _hasSparks = _gameManager._hasSparks;
-        _hasNimbus = _gameManager._hasNimbus;
-        _hasOak = _gameManager._hasOak;
-        _hasCotton = _gameManager._hasCotton;
+        _hasSparks = _gameManager.GetHasSparks();
+        _hasNimbus = _gameManager.GetHasNimbus();
+        _hasOak = _gameManager.GetHasOak();
+        _hasCotton = _gameManager.GetHasCotton();
         _helmetSpriteRenderer = GetComponent<SpriteRenderer>();
 
         if (!_hasSparks)

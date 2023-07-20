@@ -36,10 +36,10 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.normal;
 
         //Assign character checks
-        _hasOak = _gameManager._hasOak;
-        _hasNimbus = _gameManager._hasNimbus;
-        _hasCotton = _gameManager._hasCotton;
-        _hasSparks = _gameManager._hasSparks;
+        _hasOak = _gameManager.GetHasOak();
+        _hasNimbus = _gameManager.GetHasNimbus();
+        _hasCotton = _gameManager.GetHasCotton();
+        _hasSparks = _gameManager.GetHasSparks();
     }
 
     // Update is called once per frame

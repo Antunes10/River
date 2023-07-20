@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.JsonUtility;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    //Characters
-    public bool _hasNimbus;
-    public bool _hasOak;
-    public bool _hasCotton;
-    public bool _hasSparks;
 
     public Level[] _levels;
     public Level _currentLevel;
@@ -18,23 +15,42 @@ public class GameManager : MonoBehaviour
     public DialogueGrid[] _inkJSONs;
     public TextAsset _currentInk;
 
-    //Scene variables
-    private int _currentLevelIndex;
-    private int _currentInkIndex;
-    private int _dialogueIndex;
+    //Game State
+    private GameState _gs;
 
-    //Resources
-    private int _currentFood;
-    private int _currentHope;
+    #region Character Getters
+
+    public bool GetHasSparks()
+    {
+        return _gs.hasSparks;
+    }
+
+    public bool GetHasNimbus()
+    {
+        return _gs.hasNimbus;
+    }
+
+    public bool GetHasOak()
+    {
+        return _gs.hasOak;
+    }
+
+    public bool GetHasCotton()
+    {
+        return _gs.hasCotton;
+    }
+
+    #endregion
 
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        _currentLevelIndex = -1;
-        _currentInkIndex = -1;
-        _dialogueIndex = 0;
-        _currentFood = 3;
-        _currentHope = 3;
+        _gs = new GameState();
+        _gs.currentLevelIndex = -1;
+        _gs.currentInkIndex = -1;
+        _gs.dialogueIndex = 0;
+        _gs.currentFood = 3;
+        _gs.currentHope = 3;
     }
 
     // Update is called once per frame
@@ -43,34 +59,50 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public int getFood() { return _currentFood; }
-    public int getHope() { return _currentHope; }
+    public int getFood() { return _gs.currentFood; }
+    public int getHope() { return _gs.currentHope; }
 
-    public void increaseFood(int val) { _currentFood = _currentFood + val; }
-    public void increaseHope(int val) { _currentHope = _currentHope + val; }
-    public void decreaseFood(int val) { _currentFood = _currentFood - val; }
-    public void decreaseHope(int val) { _currentHope = _currentHope - val; }
+    public void increaseFood(int val) { _gs.currentFood += val; }
+    public void increaseHope(int val) { _gs.currentHope += val; }
+    public void decreaseFood(int val) { _gs.currentFood -= val; }
+    public void decreaseHope(int val) { _gs.currentHope -= val; }
 
-    public void recruitSparks() { _hasSparks = true; }
-    public void recruitNimbus() {_hasNimbus = true; }
-    public void recruitOak() { _hasOak = true; }
-    public void recruitCotton() { _hasCotton = true; }
+    public void recruitSparks() { _gs.hasSparks = true; }
+    public void recruitNimbus() { _gs.hasNimbus = true; }
+    public void recruitOak() { _gs.hasOak = true; }
+    public void recruitCotton() { _gs.hasCotton = true; }
 
     public void gameOver() {
         Debug.Log("Game Over");
     }
 
-    public void LoadGame()
+
+    #region SaveSystem
+    public void LoadGame(int number)
     {
-        var jsonTextFile = Resources.Load<TextAsset>("test_save");
-        //Then use JsonUtility.FromJson<T>() to deserialize jsonTextFile into an object
+        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+        string json = sr.ReadToEnd();
+        sr.Close();
+        _gs = FromJson<GameState>(json);
     }
+
+    public void SaveGame(int number)
+    {
+        string json = ToJson(_gs, true);
+        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+        sw.Write(json);
+        sw.Close();
+    }
+
+    #endregion
+
+    #region Change Scenes
 
     public void changeToFinishDay() {
         // -1 food at the end of every day
         decreaseFood(1);
 
-        if (_currentFood <= 0) {
+        if (_gs.currentFood <= 0) {
             gameOver();
         }
 
@@ -78,28 +110,28 @@ public class GameManager : MonoBehaviour
     }
 
     public void changeToRiverScene() {
-        _currentLevelIndex++;
-        _currentLevel = _levels[_currentLevelIndex];
+        _gs.currentLevelIndex++;
+        _currentLevel = _levels[_gs.currentLevelIndex];
         SceneManager.LoadScene("RiverScene");
     }
 
     public void changeToDialogueScene() {
          
         //Changing to Bridge Aftermath Scene OR Oak Scene
-        if (_currentInkIndex == 2 || _currentInkIndex == 3) {     
-            if (_hasNimbus) { _dialogueIndex = 1; }
-            else { _dialogueIndex = 0; }
+        if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3) {     
+            if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
+            else { _gs.dialogueIndex = 0; }
         }
         //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-        else if (_currentInkIndex == 4 || _currentInkIndex == 5 || _currentInkIndex == 6) {   
-            if (!_hasNimbus && !_hasOak) {_dialogueIndex = 0; }
-            else if (!_hasNimbus && _hasOak) { _dialogueIndex = 1; }
-            else if (_hasNimbus && !_hasOak) { _dialogueIndex = 2; }
-            else if (_hasNimbus && _hasOak) { _dialogueIndex = 3; }
+        else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6) {   
+            if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
+            else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
+            else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 2; }
+            else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
         }
-            
-        _currentInkIndex++;
-        _currentInk = _inkJSONs[_currentInkIndex]._InkJSONs[_dialogueIndex];
+
+        _gs.currentInkIndex++;
+        _currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
         SceneManager.LoadScene("DialogueScene");
     }
 
@@ -108,6 +140,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
         Destroy(gameObject);
     }
+
+    #endregion
 
     public void Exit()
     {
@@ -131,4 +165,22 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+}
+
+public class GameState
+{
+    //Characters
+    public bool hasSparks;
+    public bool hasNimbus;
+    public bool hasOak;
+    public bool hasCotton;
+
+    //Resources
+    public int currentFood;
+    public int currentHope;
+
+    //Scene variables
+    public int currentLevelIndex;
+    public int currentInkIndex;
+    public int dialogueIndex;
 }
