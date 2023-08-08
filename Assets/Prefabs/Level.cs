@@ -17,4 +17,6 @@ public class Level : ScriptableObject
     [Header("Background")]
     public GameObject backgrounds;
 
+    [Header("Music")]
+    public AudioManager.MusicsRiver music;
 }
