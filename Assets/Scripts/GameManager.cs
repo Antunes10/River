@@ -153,6 +153,7 @@ public class GameManager : MonoBehaviour
   public void changeToMenuScene()
   {
     SceneManager.LoadScene("Menu");
+        AudioManager.Instance.PlayMenuMusic();
   }
 
   #endregion

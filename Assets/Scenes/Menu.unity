@@ -431,7 +431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1a9a4945363be41b703838fff13134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuMusics: []
+  _menuMusics:
+  - {fileID: 8300000, guid: 963d575c3e299854c91f3c63d641d7e1, type: 3}
   _riverMusics:
   - {fileID: 8300000, guid: 30accf2148678d84ebc894121ee0d444, type: 3}
   _narrativeMusics: []

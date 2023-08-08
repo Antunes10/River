@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,9 +28,21 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void PlayMusic(MusicsRiver musicIndex)
+    public void PlayMenuMusic()
     {
-        musicSource.clip = _riverMusics[(int)musicIndex];
+        musicSource.clip = _menuMusics[0];
+        musicSource.Play();
+    }
+
+    public void PlayRiverMusic(MusicsRiver indexer)
+    {
+        musicSource.clip = _riverMusics[(int)indexer];
+        musicSource.Play();
+    }
+
+    public void PlayNarrativeMusic(MusicsNarrative indexer)
+    {
+        musicSource.clip = _riverMusics[(int)indexer];
         musicSource.Play();
     }
 
