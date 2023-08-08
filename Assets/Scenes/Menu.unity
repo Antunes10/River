@@ -629,47 +629,47 @@ MonoBehaviour:
   _currentLevel: {fileID: 0}
   _inkJSONs:
   - _InkJSONs:
-    - {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
+    - {fileID: 4900000, guid: 3a26d27ebec1829479a651da32e620ae, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 487c317f2daeffd40b0234fbac5c5f57, type: 3}
+    - {fileID: 4900000, guid: 64ee1515febef444da9b813508be96ba, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 25815327a32cf5147bc8571ceb5a6627, type: 3}
+    - {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: b943b0ca6e5b6094ca5f6f237d933064, type: 3}
-    - {fileID: 4900000, guid: b943b0ca6e5b6094ca5f6f237d933064, type: 3}
+    - {fileID: 4900000, guid: 2162e7cc046504044abb4521c9cd21e1, type: 3}
+    - {fileID: 4900000, guid: 2162e7cc046504044abb4521c9cd21e1, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: dd35b3eb27663f748889024abcd62ea9, type: 3}
-    - {fileID: 4900000, guid: dd35b3eb27663f748889024abcd62ea9, type: 3}
+    - {fileID: 4900000, guid: 28024868535f1744d8e316556c706765, type: 3}
+    - {fileID: 4900000, guid: 28024868535f1744d8e316556c706765, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
-    - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
-    - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
-    - {fileID: 4900000, guid: e3029a343641f4c4786f173c2a4f03d6, type: 3}
+    - {fileID: 4900000, guid: 052cfad95d674eb4295dd40f3e5fb2e4, type: 3}
+    - {fileID: 4900000, guid: 052cfad95d674eb4295dd40f3e5fb2e4, type: 3}
+    - {fileID: 4900000, guid: 052cfad95d674eb4295dd40f3e5fb2e4, type: 3}
+    - {fileID: 4900000, guid: 052cfad95d674eb4295dd40f3e5fb2e4, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
-    - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
-    - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
-    - {fileID: 4900000, guid: d534ade20fae6a147ab82c534ac6cfc6, type: 3}
+    - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
+    - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
+    - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
+    - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
-    - {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
-    - {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
-    - {fileID: 4900000, guid: 0b88e0c3c381c30429c4496fbc713484, type: 3}
+    - {fileID: 4900000, guid: 7670e776a74adf34aa99d7beb73f5b39, type: 3}
+    - {fileID: 4900000, guid: 7670e776a74adf34aa99d7beb73f5b39, type: 3}
+    - {fileID: 4900000, guid: 7670e776a74adf34aa99d7beb73f5b39, type: 3}
+    - {fileID: 4900000, guid: 7670e776a74adf34aa99d7beb73f5b39, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 2b98b944288c3e446aaae4f4ffc5439e, type: 3}
-    - {fileID: 4900000, guid: 2b98b944288c3e446aaae4f4ffc5439e, type: 3}
-    - {fileID: 4900000, guid: 2b98b944288c3e446aaae4f4ffc5439e, type: 3}
-    - {fileID: 4900000, guid: 2b98b944288c3e446aaae4f4ffc5439e, type: 3}
+    - {fileID: 4900000, guid: 18c03f0db4da4534cb1d0c3385eaeef4, type: 3}
+    - {fileID: 4900000, guid: 18c03f0db4da4534cb1d0c3385eaeef4, type: 3}
+    - {fileID: 4900000, guid: 18c03f0db4da4534cb1d0c3385eaeef4, type: 3}
+    - {fileID: 4900000, guid: 18c03f0db4da4534cb1d0c3385eaeef4, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 261f0f806f45a204d8a1b3b57c44cc5c, type: 3}
-    - {fileID: 4900000, guid: 261f0f806f45a204d8a1b3b57c44cc5c, type: 3}
-    - {fileID: 4900000, guid: 261f0f806f45a204d8a1b3b57c44cc5c, type: 3}
-    - {fileID: 4900000, guid: 261f0f806f45a204d8a1b3b57c44cc5c, type: 3}
+    - {fileID: 4900000, guid: 9f90ac1b08b52ba47ad16eab30f55ed5, type: 3}
+    - {fileID: 4900000, guid: 9f90ac1b08b52ba47ad16eab30f55ed5, type: 3}
+    - {fileID: 4900000, guid: 9f90ac1b08b52ba47ad16eab30f55ed5, type: 3}
+    - {fileID: 4900000, guid: 9f90ac1b08b52ba47ad16eab30f55ed5, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 1ecb3575a7dd60a4a941751dfbbd753b, type: 3}
-    - {fileID: 4900000, guid: 1ecb3575a7dd60a4a941751dfbbd753b, type: 3}
-    - {fileID: 4900000, guid: 1ecb3575a7dd60a4a941751dfbbd753b, type: 3}
-    - {fileID: 4900000, guid: 1ecb3575a7dd60a4a941751dfbbd753b, type: 3}
+    - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
+    - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
+    - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
+    - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
   _currentInk: {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
 --- !u!4 &730998456
 Transform:
