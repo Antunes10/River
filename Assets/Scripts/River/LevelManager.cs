@@ -64,6 +64,7 @@ public class LevelManager : MonoBehaviour
         _gameManager = GameManager.Instance;
         _levelData = _gameManager._currentLevel;
         Instantiate(_levelData.backgrounds);
+        AudioManager.Instance.PlayMusic(_levelData.music);
 
         _generator.SetObstacleList(_levelData.obstacleList);
         _generator.minObsCooldown = _levelData.min;
