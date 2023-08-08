@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #portrait:narrator #background:metro
-Rain falls. YEYE
+Rain falls.
 The only sound thats heard.
 Blue and grey.
 Water and mist.
@@ -55,6 +55,6 @@ What did all the other mouses did to deserve such fate?
 He was too small to deserve an answer.
 Too small to matter.
 
-~changeScene("DialogueScene")
+~changeScene("RiverScene")
 
 ->END
