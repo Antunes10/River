@@ -40,9 +40,17 @@ public class GameManager : MonoBehaviour
     return _gs.hasCotton;
   }
 
-  #endregion
+    #endregion
 
-  void Start()
+    private void Awake()
+    {
+        if(Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
   {
     DontDestroyOnLoad(this.gameObject);
     _gs = new GameState();
@@ -145,7 +153,6 @@ public class GameManager : MonoBehaviour
   public void changeToMenuScene()
   {
     SceneManager.LoadScene("Menu");
-    Destroy(gameObject);
   }
 
   #endregion

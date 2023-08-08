@@ -41,3 +41,4 @@ MonoBehaviour:
   min: 1
   max: 3
   backgrounds: {fileID: 1022511215364492915, guid: 78a3678a69674474380d0661e269e638, type: 3}
+  music: 2
