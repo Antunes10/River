@@ -40,17 +40,17 @@ public class GameManager : MonoBehaviour
     return _gs.hasCotton;
   }
 
-    #endregion
+  #endregion
 
-    private void Awake()
+  private void Awake()
+  {
+    if (Instance != this)
     {
-        if(Instance != this)
-        {
-            Destroy(gameObject);
-        }
+      Destroy(gameObject);
     }
+  }
 
-    void Start()
+  void Start()
   {
     DontDestroyOnLoad(this.gameObject);
     _gs = new GameState();
@@ -153,7 +153,12 @@ public class GameManager : MonoBehaviour
   public void changeToMenuScene()
   {
     SceneManager.LoadScene("Menu");
-        AudioManager.Instance.PlayMenuMusic();
+    AudioManager.Instance.PlayMenuMusic();
+  }
+
+  public void changeToUnlockablesScene()
+  {
+    SceneManager.LoadScene("Unlockables");
   }
 
   #endregion
