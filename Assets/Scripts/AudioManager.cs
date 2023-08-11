@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayNarrativeMusic(MusicsNarrative indexer)
     {
-        musicSource.clip = _riverMusics[(int)indexer];
+        musicSource.clip = _narrativeMusics[(int)indexer];
         musicSource.Play();
     }
 

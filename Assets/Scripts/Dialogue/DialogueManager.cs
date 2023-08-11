@@ -198,6 +198,34 @@ public class DialogueManager : MonoBehaviour
       GameManager.Instance.decreaseHope(val);
     });
 
+    currentStory.BindExternalFunction("playMusic", (string val) =>
+    {
+      ExitDialogueMode();
+      Debug.Log("playMusic");
+
+      switch (val) {
+        case "prologue":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.prologue);
+          break;
+        case "tunnel":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.tunnel);
+          break;
+        case "sparks":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.sparks);
+          break;
+        case "forest":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.forest);
+          break;
+        case "nimbus":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.nimbus);
+          break;
+        case "villageArrival":
+          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageArrival);
+          break;
+      }
+
+    });
+
 
     // sets everything to the default state
     displayNameText.text = "default";
