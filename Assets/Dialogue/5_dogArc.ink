@@ -208,7 +208,7 @@ He had seen mice teared to shreds by angry mongrels.
 +[Get away from the village]
     ->get_away
 
-~changeScene("DialogueScene")
+~changeScene("RiverScene")
 
 ->END
 
@@ -241,7 +241,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Nimbus #portrait:nimbus_default
     Let’s get away from here!
     
-~changeScene("DialogueScene")
+~changeScene("RiverScene")
 
 ->END
 
@@ -320,6 +320,6 @@ AH!
 They all rush to push the helmet into the water.
 
 ~recruitOak()
-~changeScene("DialogueScene")
+~changeScene("RiverScene")
 
 ->END

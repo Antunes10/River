@@ -4,7 +4,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-
+#background:forest
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
 The waters of the river slow down as the rain goes away, allowing a brighter day rip slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
