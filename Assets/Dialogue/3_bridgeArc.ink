@@ -199,6 +199,7 @@ Stop it! Are you crazy! It hurts!
 +++[Continue]
     ~decreaseHope(2)
     ~currentHope = currentHope - 2
+    ~nimbusStatus = 0
     #speaker:
     Tails ignored the bird’s cries.
     With determination he started to cut again.
@@ -222,6 +223,7 @@ Stop it! Are you crazy! It hurts!
 === LeaveHim ===
 ~decreaseHope(1)
 ~currentHope = currentHope - 1
+~nimbusStatus = 1
 #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad_m
 There was nothing that they could do.
 A trap like that was too complex for them to disarm.
