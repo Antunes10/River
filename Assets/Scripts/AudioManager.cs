@@ -63,6 +63,9 @@ public class AudioManager : MonoBehaviour
         forest = 3,
         nimbus = 4,
         villageArrival = 5,
+        villageDepartue = 6,
+        oak = 7,
+        respite = 8
     }
 
     #region Singleton

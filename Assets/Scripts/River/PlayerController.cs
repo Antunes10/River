@@ -133,10 +133,10 @@ public class PlayerController : MonoBehaviour
     public void TakeOutWater()
     {
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        _slider.value -= 5;
+        _slider.value -= 10;
         if (_hasCotton)
         {
-            _slider.value -= 5;
+            _slider.value -= 20;
         }
         StartCoroutine(GetWater());
     }

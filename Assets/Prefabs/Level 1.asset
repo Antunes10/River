@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c82a0251f0eb345a1d5586cbddca65, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  levelLength: 40
+  levelLength: 45
   backgrounds: {fileID: 1022511215364492915, guid: a1d8a64ee953e524391f5c6c2ab6d8eb, type: 3}
   music: 0
   obstacleList:
