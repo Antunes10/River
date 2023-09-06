@@ -8,6 +8,7 @@ using System.IO;
 public class GameManager : MonoBehaviour
 {
 
+  //River  Level Variables
   public Level[] _levels;
   public Level _currentLevel;
 
@@ -18,8 +19,7 @@ public class GameManager : MonoBehaviour
   //Game State
   private GameState _gs;
 
-  #region Character Getters
-
+  #region Getters and Setters
   public bool GetHasSparks()
   {
     return _gs.hasSparks;
@@ -40,6 +40,18 @@ public class GameManager : MonoBehaviour
     return _gs.hasCotton;
   }
 
+  public int getFood() { return _gs.currentFood; }
+  public int getHope() { return _gs.currentHope; }
+
+  public void increaseFood(int val) { _gs.currentFood += val; }
+  public void increaseHope(int val) { _gs.currentHope += val; }
+  public void decreaseFood(int val) { _gs.currentFood -= val; }
+  public void decreaseHope(int val) { _gs.currentHope -= val; }
+
+  public void recruitSparks() { _gs.hasSparks = true; }
+  public void recruitNimbus() { _gs.hasNimbus = true; }
+  public void recruitOak() { _gs.hasOak = true; }
+  public void recruitCotton() { _gs.hasCotton = true; }
   #endregion
 
   private void Awake()
@@ -61,30 +73,10 @@ public class GameManager : MonoBehaviour
     _gs.currentHope = 3;
   }
 
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
-  public int getFood() { return _gs.currentFood; }
-  public int getHope() { return _gs.currentHope; }
-
-  public void increaseFood(int val) { _gs.currentFood += val; }
-  public void increaseHope(int val) { _gs.currentHope += val; }
-  public void decreaseFood(int val) { _gs.currentFood -= val; }
-  public void decreaseHope(int val) { _gs.currentHope -= val; }
-
-  public void recruitSparks() { _gs.hasSparks = true; }
-  public void recruitNimbus() { _gs.hasNimbus = true; }
-  public void recruitOak() { _gs.hasOak = true; }
-  public void recruitCotton() { _gs.hasCotton = true; }
-
   public void gameOver()
   {
     Debug.Log("Game Over");
   }
-
 
   #region SaveSystem
   public void LoadGame(int number)
