@@ -113,12 +113,44 @@ public class unlockablesManager : MonoBehaviour
             }
         }
 
-        if (currIndex != 0) previousButton.gameObject.SetActive(true);
-        if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
+        if (currIndex != 0 && currIndex != images.Length - 1)
+        {
+            previousButton.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            if (currIndex == 0) previousButton.gameObject.SetActive(false);
+            if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
+        }
+
     }
 
     public void hideBigImage()
     {
         uiImageBig.gameObject.SetActive(false);
+
+        int dividend = currIndex / 4;
+
+        uiImage1.GetComponent<Image>().sprite = images[dividend * 4];
+        uiImage2.GetComponent<Image>().sprite = images[dividend * 4 + 1];
+        uiImage3.GetComponent<Image>().sprite = images[dividend * 4 + 2];
+        uiImage4.GetComponent<Image>().sprite = images[dividend * 4 + 3];
+
+        if (currIndex >= 0 && currIndex <= 3)
+        {
+            previousButton.gameObject.SetActive(false);
+            nextButton.gameObject.SetActive(true);
+        }
+        else if (currIndex >= images.Length - 4 && currIndex <= images.Length - 1)
+        {
+            nextButton.gameObject.SetActive(false);
+            previousButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            previousButton.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(true);
+        }
     }
 }
