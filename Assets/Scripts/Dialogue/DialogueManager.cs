@@ -48,6 +48,7 @@ public class DialogueManager : MonoBehaviour
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
   private const string BACKGROUND_TAG = "background";
+  private const string NEXT_MUSIC_TAG = "nextMusic";
 
   private DialogueVariables dialogueVariables;
 
@@ -197,35 +198,6 @@ public class DialogueManager : MonoBehaviour
       ExitDialogueMode();
       GameManager.Instance.decreaseHope(val);
     });
-
-    currentStory.BindExternalFunction("playMusic", (string val) =>
-    {
-      ExitDialogueMode();
-      Debug.Log("playMusic");
-
-      switch (val) {
-        case "prologue":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.prologue);
-          break;
-        case "tunnel":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.tunnel);
-          break;
-        case "sparks":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.sparks);
-          break;
-        case "forest":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.forest);
-          break;
-        case "nimbus":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.nimbus);
-          break;
-        case "villageArrival":
-          AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageArrival);
-          break;
-      }
-
-    });
-
 
     // sets everything to the default state
     displayNameText.text = "default";
@@ -401,6 +373,9 @@ public class DialogueManager : MonoBehaviour
         case BACKGROUND_TAG:
           displayNameText.text = tagValue;
           backgroundAnimator.Play(tagValue);
+          break;
+        case NEXT_MUSIC_TAG:
+          AudioManager.Instance.PlayNextNarrativeMusic();
           break;
         default:
           Debug.Log("Tag not recognised");

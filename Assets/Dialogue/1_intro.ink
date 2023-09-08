@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #portrait:narrator #background:metro
+#speaker: #portrait:narrator #background:metro #nextMusic:
 Rain falls.
 The only sound thats heard.
 Blue and grey.

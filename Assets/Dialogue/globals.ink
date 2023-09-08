@@ -8,7 +8,6 @@ EXTERNAL recruitSparks()
 EXTERNAL recruitNimbus()
 EXTERNAL recruitOak()
 EXTERNAL recruitCotton()
-EXTERNAL playMusic(val)
 
 VAR choice = ""
 

@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource musicSource;
 
+    private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
+    private bool switchPrologue = false;
+
     private void Awake()
     {
         if (Instance != this)
@@ -43,6 +46,26 @@ public class AudioManager : MonoBehaviour
     public void PlayNarrativeMusic(MusicsNarrative indexer)
     {
         musicSource.clip = _narrativeMusics[(int)indexer];
+        musicSource.Play();
+    }
+
+    public void PlayNextNarrativeMusic()
+    {
+        //if currentNarrativeMusic is the prologue one
+        if (!switchPrologue)
+        {
+            // Play the first music clip
+            musicSource.clip = _narrativeMusics[0];
+            musicSource.Play();
+            switchPrologue = true;
+            return;
+        }
+
+        // Increment the current enum value
+        currentNarrativeMusic = (MusicsNarrative)(((int)currentNarrativeMusic + 1) % Enum.GetValues(typeof(MusicsNarrative)).Length);
+
+        // Play the corresponding music clip
+        musicSource.clip = _narrativeMusics[(int)currentNarrativeMusic];
         musicSource.Play();
     }
 
