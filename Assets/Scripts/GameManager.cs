@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using static UnityEngine.JsonUtility;
 using System.IO;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -85,17 +86,19 @@ public class GameManager : MonoBehaviour
     string json = sr.ReadToEnd();
     sr.Close();
     _gs = FromJson<GameState>(json);
+
+    changeToDialogueScene();
   }
 
-  public void SaveGame(int number)
-  {
-    string json = ToJson(_gs, true);
-    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
-    sw.Write(json);
-    sw.Close();
-  }
-
-  #endregion
+    public void SaveGame(int number)
+    {
+        _gs.date = DateTime.Now.ToString();
+        string json = ToJson(_gs, true);
+        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+        sw.Write(json);
+        sw.Close();
+    }
+    #endregion
 
   #region Change Scenes
 
@@ -182,18 +185,21 @@ public class GameManager : MonoBehaviour
 
 public class GameState
 {
-  //Characters
-  public bool hasSparks;
-  public bool hasNimbus;
-  public bool hasOak;
-  public bool hasCotton;
+    //Characters
+    public bool hasSparks;
+    public bool hasNimbus;
+    public bool hasOak;
+    public bool hasCotton;
 
-  //Resources
-  public int currentFood;
-  public int currentHope;
+    //Resources
+    public int currentFood;
+    public int currentHope;
 
-  //Scene variables
-  public int currentLevelIndex;
-  public int currentInkIndex;
-  public int dialogueIndex;
+    //Scene variables
+    public int currentLevelIndex;
+    public int currentInkIndex;
+    public int dialogueIndex;
+
+    //Save data variables
+    public String date;
 }
