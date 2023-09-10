@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
     private AudioSource musicSource;
 
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
-    private bool switchPrologue = false;
+    public bool switchPrologue = false;
 
     private void Awake()
     {

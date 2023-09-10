@@ -10,15 +10,13 @@ public class DialogueTrigger : MonoBehaviour
 
     void Start()
     {
-        triggerDialogue();
+
     }
 
     void Update()
     {
-    
+
     }
 
-    void triggerDialogue() {
-        DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-    }
+
 }

@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
+  public GameObject saveMenuUi;
+  public GameObject loadMenuUi;
+
   [Header("Params")]
   [SerializeField] private float typingSpeed = 0.04f;
 
@@ -50,11 +53,12 @@ public class DialogueManager : MonoBehaviour
   private const string BACKGROUND_TAG = "background";
   private const string NEXT_MUSIC_TAG = "nextMusic";
 
+  private string savedJson;
+
   private DialogueVariables dialogueVariables;
 
   private void Awake()
   {
-
     currentInk = GameManager.Instance._currentInk;
 
     if (instance != null)
@@ -64,6 +68,7 @@ public class DialogueManager : MonoBehaviour
     instance = this;
 
     dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+
     Debug.Log("Starting Dialogue Manager");
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
@@ -98,7 +103,6 @@ public class DialogueManager : MonoBehaviour
 
   public void Start()
   {
-    //USSELESS FOR NOW?
 
   }
 
@@ -120,9 +124,20 @@ public class DialogueManager : MonoBehaviour
     }
   }
 
+  public void SaveGame(int n)
+  {
+    GameManager.Instance.SaveGame(n);
+  }
+
+  public void changeToMenuScene()
+  {
+    GameManager.Instance.changeToMenuScene();
+  }
+
   public void EnterDialogueMode(TextAsset inkJSON)
   {
     currentStory = new Story(inkJSON.text);
+
     dialogueIsPlaying = true;
     dialoguePanel.SetActive(true);
 
@@ -235,6 +250,7 @@ public class DialogueManager : MonoBehaviour
 
   private void ContinueStory()
   {
+
     if (currentStory.canContinue)
     {
       if (displayLineCoroutine != null)
@@ -290,6 +306,7 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(typingSpeed);
       }
     }
+
     continueIcon.SetActive(true);
     DisplayChoices();
     canContinueNextLine = true;

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using TMPro;
 using static UnityEngine.JsonUtility;
 
-public class LoadMenu_UI_Manager : MonoBehaviour
+public class SaveMenu_UI_Manager : MonoBehaviour
 {
     [SerializeField]
     private Button[] _loadButtons;
@@ -33,21 +33,17 @@ public class LoadMenu_UI_Manager : MonoBehaviour
                 button.enabled = true;
                 button.GetComponentInChildren<TextMeshProUGUI>().text = _gs.date;
 
-                Initialization(button, number);
-            }
-            else
-            {
-                button.enabled = false;
-                button.GetComponentInChildren<TextMeshProUGUI>().text = null;
             }
 
+            Initialization(button, number);
             number++;
         }
     }
 
     public void Initialization(Button button, int index)
     {
-        button.onClick.AddListener(() => GameManager.Instance.LoadGame(index));
+        button.onClick.AddListener(() => GameManager.Instance.SaveGame(index));
+        button.onClick.AddListener(() => LoadSaveInfo());
     }
 
     // Update is called once per frame

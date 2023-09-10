@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
   //Game State
   private GameState _gs;
 
+  public string savedJson;
+
   #region Getters and Setters
   public bool GetHasSparks()
   {
@@ -82,6 +84,7 @@ public class GameManager : MonoBehaviour
   #region SaveSystem
   public void LoadGame(int number)
   {
+    Time.timeScale = 1f;
     StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverSave" + number + ".json");
     string json = sr.ReadToEnd();
     sr.Close();
@@ -90,15 +93,16 @@ public class GameManager : MonoBehaviour
     changeToDialogueScene();
   }
 
-    public void SaveGame(int number)
-    {
-        _gs.date = DateTime.Now.ToString();
-        string json = ToJson(_gs, true);
-        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
-        sw.Write(json);
-        sw.Close();
-    }
-    #endregion
+  public void SaveGame(int number)
+  {
+    Debug.Log("Saving Game");
+    _gs.date = DateTime.Now.ToString();
+    string json = ToJson(_gs, true);
+    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+    sw.Write(json);
+    sw.Close();
+  }
+  #endregion
 
   #region Change Scenes
 
@@ -122,9 +126,17 @@ public class GameManager : MonoBehaviour
     SceneManager.LoadScene("RiverScene");
   }
 
+  public void startDialogue()
+  {
+    _gs.currentInkIndex = 0;
+    _gs.dialogueIndex = 0;
+    _currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
+    AudioManager.Instance.switchPrologue = false;
+    SceneManager.LoadScene("DialogueScene");
+  }
+
   public void changeToDialogueScene()
   {
-
     //Changing to Bridge Aftermath Scene OR Oak Scene
     if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3)
     {
@@ -147,6 +159,7 @@ public class GameManager : MonoBehaviour
 
   public void changeToMenuScene()
   {
+    Time.timeScale = 1f;
     SceneManager.LoadScene("Menu");
     AudioManager.Instance.PlayMenuMusic();
   }
@@ -185,21 +198,21 @@ public class GameManager : MonoBehaviour
 
 public class GameState
 {
-    //Characters
-    public bool hasSparks;
-    public bool hasNimbus;
-    public bool hasOak;
-    public bool hasCotton;
+  //Characters
+  public bool hasSparks;
+  public bool hasNimbus;
+  public bool hasOak;
+  public bool hasCotton;
 
-    //Resources
-    public int currentFood;
-    public int currentHope;
+  //Resources
+  public int currentFood;
+  public int currentHope;
 
-    //Scene variables
-    public int currentLevelIndex;
-    public int currentInkIndex;
-    public int dialogueIndex;
+  //Scene variables
+  public int currentLevelIndex;
+  public int currentInkIndex;
+  public int dialogueIndex;
 
-    //Save data variables
-    public String date;
+  //Save data variables
+  public String date;
 }
