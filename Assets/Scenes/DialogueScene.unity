@@ -1928,7 +1928,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1588935541}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitMenu
+        m_MethodName: BacktoMenu
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1510742517}
@@ -3179,7 +3179,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1588935541}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitMenu
+        m_MethodName: BacktoMenu
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2032329218}
@@ -3584,10 +3584,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1588935541}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuittoMainMenu
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
