@@ -50,8 +50,9 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    public void QuitMenu(GameObject menu)
+    public void QuittoMainMenu(GameObject menu)
     {
-        menu.SetActive(false);
+        Time.timeScale = 1f;
+        GameManager.Instance.changeToMenuScene();
     }
 }
