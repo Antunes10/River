@@ -36,7 +36,7 @@ public class LoadMenu_UI_Manager : MonoBehaviour
 
                 button.enabled = true;
                 _dateTexts[number].text = _gs.date;
-                _chapterTexts[number].text = "Chapter " + _gs.currentInkIndex;
+                _chapterTexts[number].text = "Chapter " + (_gs.currentInkIndex + 1);
 
                 Initialization(button, number);
             }

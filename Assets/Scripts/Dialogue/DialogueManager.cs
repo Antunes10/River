@@ -152,7 +152,7 @@ public class DialogueManager : MonoBehaviour
           GameManager.Instance.changeToRiverScene();
           break;
         case "DialogueScene":
-          GameManager.Instance.changeToDialogueScene();
+          GameManager.Instance.changeToNextDialogueScene();
           break;
         case "EndDayScene":
           GameManager.Instance.changeToEndDayScene();
