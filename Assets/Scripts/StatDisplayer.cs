@@ -58,6 +58,6 @@ public class StatDisplayer : MonoBehaviour
 
   public void switchSceneToDialogue()
   {
-    GameManager.Instance.changeToDialogueScene();
+    GameManager.Instance.changeToNextDialogueScene();
   }
 }

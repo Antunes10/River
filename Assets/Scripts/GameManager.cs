@@ -70,8 +70,8 @@ public class GameManager : MonoBehaviour
     public void InitGameState()
     {
         _gs = new GameState();
-        _gs.currentLevelIndex = 0;
-        _gs.currentInkIndex = 0;
+        _gs.currentLevelIndex = -1;
+        _gs.currentInkIndex = -1;
         _gs.dialogueIndex = 0;
         _gs.currentFood = 3;
         _gs.currentHope = 3;
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
         sr.Close();
         _gs = FromJson<GameState>(json);
 
-        changeToDialogueScene();
+        loadDialogueScene();
     }
 
     public void SaveGame(int number)
@@ -120,14 +120,34 @@ public class GameManager : MonoBehaviour
 
     public void changeToRiverScene()
     {
+        _gs.currentLevelIndex++;
         _currentLevel = _levels[_gs.currentLevelIndex];
         SceneManager.LoadScene("RiverScene");
-        _gs.currentLevelIndex++;
     }
 
-    public void changeToDialogueScene()
+    public void loadDialogueScene()
     {
+        if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3)
+        {
+            if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
+            else { _gs.dialogueIndex = 0; }
+        }
+        //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
+        else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6)
+        {
+            if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
+            else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
+            else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 2; }
+            else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
+        }
 
+        _currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
+        SceneManager.LoadScene("DialogueScene");
+    }
+
+    public void changeToNextDialogueScene()
+    {
+        _gs.currentInkIndex++;
         //Changing to Bridge Aftermath Scene OR Oak Scene
         if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3)
         {
@@ -145,7 +165,6 @@ public class GameManager : MonoBehaviour
 
         _currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
         SceneManager.LoadScene("DialogueScene");
-        _gs.currentInkIndex++;
     }
 
     public void changeToMenuScene()

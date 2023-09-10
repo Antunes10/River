@@ -129,7 +129,7 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Win River Minigame");
         yield return new WaitForSeconds(5);
-        _gameManager.changeToDialogueScene();
+        _gameManager.changeToNextDialogueScene();
     }
 
     IEnumerator Rain()
