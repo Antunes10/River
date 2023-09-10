@@ -45,7 +45,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     It was contradictory. The dark and scary surroundings were disarmed by the smile of the clearly innocent bug.
     Tails lost his fear and stood over the trash can so he could see the firefly better.
     On that moment the bug took notice.
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default #nextMusic:
     Oh, hi there friend! 
     My name is Sparks and I’m a firefly has you can see. What is your name?
     #speaker:
@@ -144,7 +144,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:??? #portrait:blank 
     Hello? 
     Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel
+    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel #nextMusic:
     Tails opens his eyes and sees a young firefly over him, shinning his light.
     #speaker:??? #portrait:sparks_default
     You’re all wet. Did you go for a swim and got tired? 

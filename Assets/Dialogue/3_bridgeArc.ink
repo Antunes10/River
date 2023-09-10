@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:bridge
+#speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:bridge #nextMusic:
 As the sunlight begins to pierce the darkness, also birds start to sing their melody.
 The cold and grey tunnels gives place to a small forest, painted in colours of golden brown, orange and red.
 #speaker:Sparks #portrait:sparks_happy
@@ -68,7 +68,7 @@ Something is wrong, stay close Sparks.
 The firefly nodded silently.
 A chirp pierced the emptiness.
 A desperate chirp. Clearly screaming of hopelessness.
-#layout:middle:nimbus_sad_hurt_m
+#layout:middle:nimbus_sad_hurt_m #nextMusic:
 As the helmet approached the bridge, they saw a bird fighting against a net of sharp metal claws.
 Trapped it was trying to free itself, but each movement allowed the claws to pierce him painfully.
 
