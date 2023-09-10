@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
 
         //Rise water level if its raining
-        if (_isRaining && !_helmetState.Equals(HelmetState.oak))
+        if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory)
         {
             _slider.value += 0.05f;
             if (_slider.value > 99)
