@@ -11,6 +11,10 @@ public class LoadMenu_UI_Manager : MonoBehaviour
 {
     [SerializeField]
     private Button[] _loadButtons;
+    [SerializeField]
+    private TextMeshProUGUI[] _chapterTexts;
+    [SerializeField]
+    private TextMeshProUGUI[] _dateTexts;
 
     void Start()
     {
@@ -31,7 +35,8 @@ public class LoadMenu_UI_Manager : MonoBehaviour
                 _gs = FromJson<GameState>(json);
 
                 button.enabled = true;
-                button.GetComponentInChildren<TextMeshProUGUI>().text = _gs.date;
+                _dateTexts[number].text = _gs.date;
+                _chapterTexts[number].text = "Chapter " + _gs.currentInkIndex;
 
                 Initialization(button, number);
             }
