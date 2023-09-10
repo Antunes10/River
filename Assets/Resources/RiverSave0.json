@@ -5,8 +5,8 @@
     "hasCotton": false,
     "currentFood": 3,
     "currentHope": 3,
-    "currentLevelIndex": 0,
-    "currentInkIndex": 2,
+    "currentLevelIndex": -1,
+    "currentInkIndex": 0,
     "dialogueIndex": 0,
-    "date": "10/09/2023 18:46:21"
+    "date": "10/09/2023 19:32:29"
 }
