@@ -128,13 +128,13 @@ public class GameManager : MonoBehaviour
 
   public void loadDialogueScene()
   {
-    if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3)
+    if (_gs.currentInkIndex == 3 || _gs.currentInkIndex == 4)
     {
       if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
       else { _gs.dialogueIndex = 0; }
     }
     //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-    else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9)
+    else if (_gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10)
     {
       if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
       else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
@@ -150,13 +150,14 @@ public class GameManager : MonoBehaviour
   {
     _gs.currentInkIndex++;
     //Changing to Bridge Aftermath Scene OR Oak Scene
-    if (_gs.currentInkIndex == 2 || _gs.currentInkIndex == 3)
+    if (_gs.currentInkIndex == 3 || _gs.currentInkIndex == 4)
     {
+      Debug.Log("Coisas");
       if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
       else { _gs.dialogueIndex = 0; }
     }
     //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-    else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6)
+    else if (_gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10)
     {
       if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
       else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
