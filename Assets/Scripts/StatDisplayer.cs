@@ -17,15 +17,15 @@ public class StatDisplayer : MonoBehaviour
     switch (GameManager.Instance.getFood())
     {
       case 1:
-        foodText.text = "LOW";
+        foodText.text = "Low";
         foodText.color = Color.red;
         break;
       case 2:
-        foodText.text = "MEDIUM";
+        foodText.text = "Medium";
         foodText.color = Color.yellow;
         break;
       case 3:
-        foodText.text = "HIGH";
+        foodText.text = "High";
         foodText.color = Color.green;
         break;
     }
@@ -33,15 +33,15 @@ public class StatDisplayer : MonoBehaviour
     switch (GameManager.Instance.getHope())
     {
       case 1:
-        hopeText.text = "LOW";
+        hopeText.text = "Low";
         hopeText.color = Color.red;
         break;
       case 2:
-        hopeText.text = "MEDIUM";
+        hopeText.text = "Medium";
         hopeText.color = Color.yellow;
         break;
       case 3:
-        hopeText.text = "HIGH";
+        hopeText.text = "High";
         hopeText.color = Color.green;
         break;
     }
