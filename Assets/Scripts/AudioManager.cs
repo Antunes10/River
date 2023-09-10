@@ -84,11 +84,11 @@ public class AudioManager : MonoBehaviour
         tunnel = 1,
         sparks = 2,
         forest = 3,
-        nimbus = 4,
-        villageArrival = 5,
+        nimbus = 4, // find nimbus 
+        villageArrival = 5, //
         villageDepartue = 6,
-        oak = 7,
-        respite = 8
+        oak = 7, // meet oak
+        respite = 8 // scene before otter
     }
 
     #region Singleton
