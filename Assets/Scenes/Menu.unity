@@ -551,8 +551,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1117299142}
+  m_Children: []
   m_Father: {fileID: 1889680707}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -782,7 +781,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 963d575c3e299854c91f3c63d641d7e1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8560357e117fb78429f9667d57e9e272, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -889,23 +888,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _menuMusics:
-  - {fileID: 8300000, guid: 963d575c3e299854c91f3c63d641d7e1, type: 3}
+  - {fileID: 8300000, guid: 8560357e117fb78429f9667d57e9e272, type: 3}
   _riverMusics:
   - {fileID: 8300000, guid: 30accf2148678d84ebc894121ee0d444, type: 3}
-  - {fileID: 8300000, guid: 948c4c1196cb876449b91728b2af16c3, type: 3}
-  - {fileID: 8300000, guid: 0bc696058c7355b4db66f382ee038b3b, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   _narrativeMusics:
-  - {fileID: 8300000, guid: 54bcaa0dd707bc544a55f530b178d80b, type: 3}
-  - {fileID: 8300000, guid: 063a447ec7c7ed84a9b0610365bec8a5, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 62e2cf60cc277d3489f81262c8008eba, type: 3}
-  - {fileID: 8300000, guid: 948c4c1196cb876449b91728b2af16c3, type: 3}
-  - {fileID: 8300000, guid: ce79eaa2fd02f214d83964e36321763c, type: 3}
-  - {fileID: 8300000, guid: 6a0772953c7c2d643a9913255ff651b1, type: 3}
-  - {fileID: 8300000, guid: 79cdc4d20ff0eae4496d7c0d7ecbbf40, type: 3}
-  - {fileID: 8300000, guid: 79cdc4d20ff0eae4496d7c0d7ecbbf40, type: 3}
-  - {fileID: 8300000, guid: 79cdc4d20ff0eae4496d7c0d7ecbbf40, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   musicSource: {fileID: 220168045}
   switchPrologue: 0
 --- !u!4 &220168048
@@ -2408,7 +2407,6 @@ MonoBehaviour:
     - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
     - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
   _currentInk: {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
-  savedJson: 
 --- !u!4 &730998456
 Transform:
   m_ObjectHideFlags: 0
@@ -4939,6 +4937,7 @@ RectTransform:
   - {fileID: 552645807}
   - {fileID: 1933835089}
   - {fileID: 2094493140}
+  - {fileID: 194107909}
   m_Father: {fileID: 329249409}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
