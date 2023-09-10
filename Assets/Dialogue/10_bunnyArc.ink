@@ -12,10 +12,10 @@ The rabbit runs faster than any of them and occasionally they lose sight of her.
 Nimbus could not follow them, so he stayed behind.
 Oak’s breathing was starting to become ever more audible.
 #speaker:Oak #portrait:oak_sad
-Oak: I am uncertain about my ability to keep up this pace.
-Oak: I am quite the elder.
+I am uncertain about my ability to keep up this pace.
+I am quite the elder.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
-Sparks: C’mon Mr.Oaks, you can do it!
+C’mon Mr.Oaks, you can do it!
 #speaker: #layout:sparks:sparks_default
 The firefly’s words serve as an incentive and the canine regains some energy.
 The rabbit clearly knew the way.
@@ -33,26 +33,26 @@ The bug stops in her tracks to look out for her friend.
     #layout:middle:tails_default_m
     He turns back and approaches the old dog.
     #speaker:Tails #portrait:tails_sad
-    Tails: Are you alright, Oak?
+    Are you alright, Oak?
     #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
-    Oak: Nothing major. I slipped and landed badly with my front paws.
+    Nothing major. I slipped and landed badly with my front paws.
     #portrait:oak_default #layout:left:oak_default
-    Oak: Just need a bit of rest to recover.
+    Just need a bit of rest to recover.
     #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
-    Sparks: It must be really hard to run so fast!
+    It must be really hard to run so fast!
     #speaker:Oak #portrait:oak_default
-    Oak: Not as hard as being old.
+    Not as hard as being old.
     #speaker: #layout:middle:tails_happy
     They both smile at the remark.
     #speaker:Tails #portrait:tails_happy 
-    Tails: That’s the advantage of having wings. You don’t have to worry about where you step.
+    That’s the advantage of having wings. You don’t have to worry about where you step.
     #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-    Sparks: That’s true!
-    Sparks: I never thought about that.
+    That’s true!
+    I never thought about that.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    Tails: Can you get up?
+    Can you get up?
     #speaker:Oak #portrait:oak_default
-    Oak: I would rather lie a bit. If we are not in a hurry, that is.
+    I would rather lie a bit. If we are not in a hurry, that is.
     #speaker:
     The mouse confirms they gave up on their chase and the three sit over a dusty rug to catch their breath.
     
@@ -60,30 +60,30 @@ The bug stops in her tracks to look out for her friend.
     A few moments pass and Nimbus reunites with the group.
     He clearly had been putting an effort into walking fast.
     #speaker:Nimbus #portrait:nimbus_default 
-    Nimbus: Finally, caught up with you!
-    Nimbus: Still getting use to walking so much.
+    Finally, caught up with you!
+    Still getting use to walking so much.
     #speaker: #layout:right:nimbus_scared_m
     He looks around perplexed.
     #speaker:Nimbus #portrait:nimbus_scared
-    Nimbus: Where is the rabbit?
+    Where is the rabbit?
     #spekaer:Tails #portrait:tails_sad #layout:middle:tails_sad
-    Tails: We lost it.
+    We lost it.
     #layout:right:nimbus_default_m
-    Tails: And to be honest I don’t think she was interested in us. She never looked back.
+    And to be honest I don’t think she was interested in us. She never looked back.
     #speaker:
     The silence of the empty building takes centre stage, and they take a good look at their surroundings.
     Doors were unlocked and some broken.
     There were bags and clothes spread throughout the floor and there were even some walls with bullet holes.
     #speaker:Oak #portrait:oak_default #layout:left:oak_default
-    Oak: We should find a place to spend the night.
+    We should find a place to spend the night.
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: Perhaps in the upper levels? At least there we can see the rest of the city.
+    Perhaps in the upper levels? At least there we can see the rest of the city.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Tails: Might be less protected from the explosions…
-    Tails: But I think the visibility is a greater advantage.
+    Might be less protected from the explosions…
+    But I think the visibility is a greater advantage.
     #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-    Sparks: And we can gaze the night’s sky!
-    Sparks: With luck we can spot other fireflies on their way West!
+    And we can gaze the night’s sky!
+    With luck we can spot other fireflies on their way West!
     #speaker: #layout:left:oak_happy #layout:middle:tails_happy #layout:right:nimbus_happy_m
     The contagious positivity engulfs the whole group, and they agree to find shelter in the upper levels.
 
@@ -93,7 +93,7 @@ The bug stops in her tracks to look out for her friend.
     #speaker:
     The rabbit clearly was in a rush. Perhaps she needed help.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Tails: Sparks, stay with Oak!
+    Sparks, stay with Oak!
     #speaker: #portrait:sparks_default #layout:sparks:sparks_default_m
     The firefly signals affirmatively and the mouse goes back on track.
     #layout:sparks:default #layout:left:default
@@ -104,24 +104,24 @@ The bug stops in her tracks to look out for her friend.
     She’s doing it like her life depends on it.
     There is rubble all around, revealing a recent crumbling.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-    Tails: Do you need help with that?
+    Do you need help with that?
     #speaker:
     The rabbit doesn’t stop her efforts.
     #speaker:??? #portrait:bunny_sad #layout:right:bunny_sad_m
-    ???: Yes… yes!
-    ???: Please help me!
+    Yes… yes!
+    Please help me!
     #speaker: #layout:left:default #layout:middle:tails_sad
     The mouse approaches the wooden board and puts his hands on it.
     They both push and the wooden board moves slightly, allowing Tails to see a hole behind it. Large enough for a rabbit to enter.
     #speaker:Tails #portrait:tails_sad
-    Tails: Why are you in this kind of hurry?
+    Why are you in this kind of hurry?
     #speaker:
     She doesn’t answer immediately.
     #speaker:??? #portrait:bunny_sad
-    ???: My…
-    ???: My cubs are in the hole behind this wood…
-    ???: I went outside to get some food when an explosion rocked the building.
-    ???: I must make sure they are alright.
+    My…
+    My cubs are in the hole behind this wood…
+    I went outside to get some food when an explosion rocked the building.
+    I must make sure they are alright.
     #speaker:
     She was clearly stressed.
     Now Tails totally understood her lack of social interaction with them.
@@ -145,26 +145,26 @@ The bug stops in her tracks to look out for her friend.
     Th rabbit stops.
     She sniffs the air with her ears wide open.
     #layout:middle_right:bunny_scared_m #speaker:??? #portrait:bunny_scared
-    ???: No… no… no…
+    No… no… no…
     #speaker:
     The world darkens.
     #speaker:??? #portrait:bunny_scared
-    ???: Please no… Oh please…
+    Please no… Oh please…
     #speaker:
     She moves slowly towards the rubble.
     #speaker:??? #portrait:bunny_scared
-    ???: Darlings?
-    ???: Hazel?
-    ???: Blue?
-    ???: Silk? Cotton?
+    Darlings?
+    Hazel?
+    Blue?
+    Silk? Cotton?
     #speaker:
     Tails heart sinks.
     His lungs lacking enough air to breath.
     There is no other voice, than the rabbit mother’s.
     #speaker:??? #layout:middle_right:bunny_sad_m
-    ???: Where are you!?
-    ???: Please answer me!
-    ???: Please…
+    Where are you!?
+    Please answer me!
+    Please…
     #speaker:
     She starts to dig the rubble.
     First slowly then erratically.
@@ -185,7 +185,7 @@ The bug stops in her tracks to look out for her friend.
         She doesn’t even feel it.
         She keeps on digging as her paws start to bleed.
         #speaker:Tails #portrait:tails_sad 
-        Tails: I am so sorry…
+        I am so sorry…
         #speaker:
         The digging slows down.
         The crying gets stronger.
