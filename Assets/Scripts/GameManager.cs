@@ -67,8 +67,8 @@ public class GameManager : MonoBehaviour
   {
     DontDestroyOnLoad(this.gameObject);
     _gs = new GameState();
-    _gs.currentLevelIndex = -1;
-    _gs.currentInkIndex = -1;
+    _gs.currentLevelIndex = 0;
+    _gs.currentInkIndex = 0;
     _gs.dialogueIndex = 0;
     _gs.currentFood = 3;
     _gs.currentHope = 3;
@@ -117,10 +117,10 @@ public class GameManager : MonoBehaviour
 
   public void changeToRiverScene()
   {
-    _gs.currentLevelIndex++;
     _currentLevel = _levels[_gs.currentLevelIndex];
     SceneManager.LoadScene("RiverScene");
-  }
+    _gs.currentLevelIndex++;
+   }
 
   public void changeToDialogueScene()
   {
@@ -140,10 +140,10 @@ public class GameManager : MonoBehaviour
       else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
     }
 
-    _gs.currentInkIndex++;
     _currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
     SceneManager.LoadScene("DialogueScene");
-  }
+    _gs.currentInkIndex++;
+   }
 
   public void changeToMenuScene()
   {
