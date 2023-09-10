@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
       else { _gs.dialogueIndex = 0; }
     }
     //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-    else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6)
+    else if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9)
     {
       if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
       else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }

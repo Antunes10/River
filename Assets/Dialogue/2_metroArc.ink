@@ -31,7 +31,7 @@ And suddenly it moves!
 Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
-    #background:tunnel
+    #background:tunnel #nextMusic:
     Against his most primal instincts, Tails puts the little stick in the waters and changes the direction of the shell, approaching the light.
     Once the “boat” hit the dirt, he jumped onto the ground.
     He walks slowly, one part curious another part scared.
