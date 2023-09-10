@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:village #nextMusic:
+#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:village #music:forest
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.

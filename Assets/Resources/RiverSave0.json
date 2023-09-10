@@ -4,9 +4,9 @@
     "hasOak": false,
     "hasCotton": false,
     "currentFood": 3,
-    "currentHope": 3,
-    "currentLevelIndex": -1,
-    "currentInkIndex": 0,
+    "currentHope": 2,
+    "currentLevelIndex": 0,
+    "currentInkIndex": 1,
     "dialogueIndex": 0,
-    "date": "10/09/2023 21:13:26"
+    "date": "10/09/2023 23:13:35"
 }

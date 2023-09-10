@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
   private const string BACKGROUND_TAG = "background";
-  private const string NEXT_MUSIC_TAG = "nextMusic";
+  private const string NEXT_MUSIC_TAG = "music";
 
   private string savedJson;
 
@@ -392,8 +392,38 @@ public class DialogueManager : MonoBehaviour
           backgroundAnimator.Play(tagValue);
           break;
         case NEXT_MUSIC_TAG:
-          AudioManager.Instance.PlayNextNarrativeMusic();
+          switch (tagValue)
+          {
+            case "prologue":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.prologue);
+              break;
+            case "tunnel":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.tunnel);
+              break;
+            case "sparks":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.sparks);
+              break;
+            case "forest":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.forest);
+              break;
+            case "nimbus":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.nimbus);
+              break;
+            case "villageArrival":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageArrival);
+              break;
+            case "villageDepartue":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageDepartue);
+              break;
+            case "oak":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.oak);
+              break;
+            case "respite":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.respite);
+              break;
+          }
           break;
+
         default:
           Debug.Log("Tag not recognised");
           break;

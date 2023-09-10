@@ -897,8 +897,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   _narrativeMusics:
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
-  - {fileID: 8300000, guid: 62e2cf60cc277d3489f81262c8008eba, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 62e2cf60cc277d3489f81262c8008eba, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}

@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #portrait:narrator #layout:left:default #background:metro
-#portrait:tails_default #layout:middle:tails_default
+#portrait:tails_default #layout:middle:tails_default #music:prologue
 The darkness engulfs the world.
 The water sounds echo inside the underground passage.
 Tails feels claustrophobic.
@@ -31,7 +31,7 @@ And suddenly it moves!
 Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
-    #background:tunnel #nextMusic:
+    #background:tunnel #music:tunnel
     Against his most primal instincts, Tails puts the little stick in the waters and changes the direction of the shell, approaching the light.
     Once the “boat” hit the dirt, he jumped onto the ground.
     He walks slowly, one part curious another part scared.
@@ -45,7 +45,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     It was contradictory. The dark and scary surroundings were disarmed by the smile of the clearly innocent bug.
     Tails lost his fear and stood over the trash can so he could see the firefly better.
     On that moment the bug took notice.
-    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default #nextMusic:
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default #music:sparks
     Oh, hi there friend! 
     My name is Sparks and I’m a firefly has you can see. What is your name?
     #speaker:
@@ -144,7 +144,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:??? #portrait:blank 
     Hello? 
     Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel #nextMusic:
+    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel #music:sparks
     Tails opens his eyes and sees a young firefly over him, shinning his light.
     #speaker:??? #portrait:sparks_default
     You’re all wet. Did you go for a swim and got tired? 
