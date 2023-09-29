@@ -157,6 +157,9 @@ public class DialogueManager : MonoBehaviour
         case "EndDayScene":
           GameManager.Instance.changeToEndDayScene();
           break;
+        case "Credits":
+          GameManager.Instance.changeToCreditsScene();
+          break;
       }
     });
 

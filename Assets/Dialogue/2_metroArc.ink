@@ -215,6 +215,6 @@ Its origin unknown to the little mouse, moves closer to the ground.
 - 
 
 ~recruitSparks()
-~changeScene("RiverScene")
+~changeScene("Credits")
 
 ->END

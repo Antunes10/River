@@ -181,6 +181,12 @@ public class GameManager : MonoBehaviour
     SceneManager.LoadScene("Unlockables");
   }
 
+  public void changeToCreditsScene()
+  {
+    InitGameState();
+    SceneManager.LoadScene("Credits");
+  }
+
   #endregion
 
   public void Exit()
