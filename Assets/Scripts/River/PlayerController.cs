@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
         Add water to the water slider
         Checks if the player lost the game
         ====================================*/
-
+        AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.rockHit1, (int)AudioManager.SFXSounds.rockHit3);
         _invulnerable = true;
         _playeranimations.HelmetHit();
         _slider.value += amount;

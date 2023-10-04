@@ -78,6 +78,11 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(_sfxSounds[(int)indexer]);
     }
 
+    public void PlaySFX(int indexer1, int indexer2)
+    {
+        sfxSource.PlayOneShot(_sfxSounds[UnityEngine.Random.Range(indexer1, indexer2 + 1)]);
+    }
+
     public enum MusicsRiver
     {
         tunnel = 0,
@@ -102,7 +107,20 @@ public class AudioManager : MonoBehaviour
 
     public enum SFXSounds
     {
-        button = 0
+        button = 0,
+        startGame = 1,
+        nextPage = 2,
+        rockHit1 = 3, rockHit2 = 4, rockHit3 = 5,
+        wireHit = 6,
+        clothHit = 7,
+        debrisHit = 8,
+        debrisFalling = 9,
+        pouringWaterOut = 10,
+        rain = 11,
+        machineGun = 12,
+        explosion = 13,
+        RiverVictory = 14,
+        RiverDefeat = 15
     }
 
     #region Singleton
