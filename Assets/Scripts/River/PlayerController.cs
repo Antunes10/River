@@ -163,6 +163,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!_helmetState.Equals(HelmetState.stunned))
         {
+            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.wireHit);
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             _playeranimations._animController.SetBool("Oak", false);
             _playeranimations._animController.SetBool("Nimbus", false);
