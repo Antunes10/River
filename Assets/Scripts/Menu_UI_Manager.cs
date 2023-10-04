@@ -44,6 +44,7 @@ public class Menu_UI_Manager : MonoBehaviour
     /// <param name="choosenMenu">Index of Menu to Enable</param>
     public void LoadMenu(int choosenMenu)
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         menus[currMenuIndex].SetActive(false);
         menus[choosenMenu].SetActive(true);
         currMenuIndex = choosenMenu;

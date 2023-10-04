@@ -47,16 +47,19 @@ public class PauseMenu : MonoBehaviour
 
     public void SetMenuActive(GameObject menu)
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         menu.SetActive(true);
     }
 
     public void BacktoMenu(GameObject menu)
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         menu.SetActive(false);
     }
 
     public void QuittoMainMenu()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         Time.timeScale = 1f;
         GameManager.Instance.changeToMenuScene();
     }

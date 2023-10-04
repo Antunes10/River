@@ -11,9 +11,13 @@ public class AudioManager : MonoBehaviour
     private AudioClip[] _riverMusics;
     [SerializeField]
     private AudioClip[] _narrativeMusics;
+    [SerializeField]
+    private AudioClip[] _sfxSounds;
 
     [SerializeField]
     private AudioSource musicSource;
+    [SerializeField]
+    private AudioSource sfxSource;
 
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
     public bool switchPrologue = false;
@@ -69,6 +73,11 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void PlaySFX(SFXSounds indexer)
+    {
+        sfxSource.PlayOneShot(_sfxSounds[(int)indexer]);
+    }
+
     public enum MusicsRiver
     {
         tunnel = 0,
@@ -89,6 +98,11 @@ public class AudioManager : MonoBehaviour
         villageDepartue = 6,
         oak = 7, // meet oak
         respite = 8 // scene before otter
+    }
+
+    public enum SFXSounds
+    {
+        button = 0
     }
 
     #region Singleton

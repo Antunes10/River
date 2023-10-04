@@ -104,6 +104,7 @@ public class LevelManager : MonoBehaviour
 
     public void ExitToMenu()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         Time.timeScale = 1;
         _gameManager.changeToMenuScene();
     }
@@ -115,6 +116,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadLevel()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         Time.timeScale = 1;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
