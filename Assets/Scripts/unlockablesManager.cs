@@ -58,6 +58,7 @@ public class unlockablesManager : MonoBehaviour
 
         if (index == images.Length) return;
 
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
         previousButton.gameObject.SetActive(true);
 
         uiImage1.GetComponent<Image>().sprite = images[index];
@@ -86,6 +87,7 @@ public class unlockablesManager : MonoBehaviour
 
         if (index == 4) return;
 
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
         nextButton.gameObject.SetActive(true);
 
         uiImage1.GetComponent<Image>().sprite = images[index - 8];
