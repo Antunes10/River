@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class CreditsManager : MonoBehaviour
 {
+    public void Start()
+    {
+
+
+
+    }
 
     public void ChangeToMainMenu()
     {

@@ -138,7 +138,8 @@ Here at least the wind didn’t bite them.
 {nimbus_hopeful_VS_truth == 0: ->if_hopeful_1 | ->if_truth_1}
 
 ~currentFood = currentFood - 1
-~changeScene("EndDayScene")
+// TODO: change this back to end day scene
+~changeScene("Credits")
 
 ->END
 
@@ -262,7 +263,8 @@ Or perhaps it was best if Tails spent some time with his companions.
         
     -
 ~currentFood = currentFood - 1
-~changeScene("EndDayScene")
+// TODO: change this back to end day scene
+~changeScene("Credits")
 
 ->END
 
@@ -371,7 +373,8 @@ You and me both.
 With a smile and a small goodbye, the woodpecker goes to lie down on a small pile of leaves.
 
 ~currentFood = currentFood - 1
-~changeScene("EndDayScene")
+// TODO: change this back to end day scene
+~changeScene("Credits")
 
 ->DONE
 
@@ -425,7 +428,8 @@ Want to come too?
 The bird confirms with a small nod, and they go back to the warmth of the shelter together.
 
 ~currentFood = currentFood - 1
-~changeScene("EndDayScene")
+// TODO: change this back to end day scene
+~changeScene("Credits")
 
 ->DONE
 
