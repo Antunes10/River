@@ -122,7 +122,7 @@ They had to decide.
     The mouse as to look twice to understand his mistake.
     The brown mass down there is not his dog friend, but rather a long and sharp Otter than swims around happily.
     #speaker:Sparks #portrait:sparks_scared #layout:sparks:sparks_scared_m
-    Oh, my light! He ate Mr.Oak!
+    Oh, my light! She ate Mr.Oak!
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
     Well… oaks are quite tasteful.
     #speaker: 
@@ -130,7 +130,7 @@ They had to decide.
     #speaker:Sparks #portrait:sparks_scared
     The horror!
     #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
-    You doofus, Sparky. He’s talking about the tree, not our dog.
+    You doofus, Sparky. She’s talking about the tree, not our dog.
     #speaker:Sparks #portrait:sparks_scared
     Oh…
     #speaker:Hazel #portrait:hazel_default #layout:sparks:sparks_default_m

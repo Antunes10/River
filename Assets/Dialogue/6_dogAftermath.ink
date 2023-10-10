@@ -95,7 +95,7 @@ I know it exists, because I have been there.
 #speaker: #layout:middle:tails_happy_m #layout:right:nimbus_happy_m
 They all open their eyes wide with amazement.
 #speaker:Oak 
-My human took me there some of years ago.
+My human took me there some years ago.
 We ran through the woods, howled at the moon and slept under the stary night sky.
 It’s a wonderful place.
 #speaker:
@@ -115,7 +115,7 @@ Sparks straightens himself and places a makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
 Ay ay, Mr.Captain.
 #speaker:
-He then flies back to the helmet with renewed motivation.
+She then flies back to the helmet with renewed motivation.
 #layout:left:oak_happy #layout:middle:tails_happy_m #layout:right:nimbus_happy_m
 They all laugh.
 #speaker:Tails #portrait:tails_happy 

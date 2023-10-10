@@ -36,7 +36,7 @@ I don’t like the big booms.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Don’t worry, Sparky. I will protect you, no matter what.
     #speaker:
-    His eyes brighten up a bit.
+    Her eyes brighten up a bit.
     #speaker:Sparks #portrait:sparks_sad
     Will you?
     #speaker:Sparks #portrait:tails_happy #layout:middle:tails_happy
@@ -54,7 +54,7 @@ I don’t like the big booms.
     Right now, we must stay focused, Sparky.
     It does us no good to be fearful.
     #speaker: 
-    The firefly got a bit sad but then he took his words at heart and focused on the surroundings.
+    The firefly got a bit sad but then she took his words at heart and focused on the surroundings.
     #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
     Don’t worry, Mr.Tails, I won’t let you down.
     
@@ -133,7 +133,7 @@ What are we going to do?
         #speaker: #layout:middle:tails_sad #layout:sparks:sparks_sad_m
         Terrified screams are heard from inside the metal dome.
         Tails’ paw gets stuck on the rubble beneath.
-        IN a panic attack he tries to free himself…
+        In a panic attack, he tries to free himself…
         But in vain…
         The wheelbarrow sinks…
         Taking him with it to the abyss…
@@ -246,7 +246,7 @@ What are we going to do?
 === send_sparks_inside2 ===
     #layout:sparks:sparks_default
     The firefly is still a frightened about the explosions.
-    He takes a bit to understand Tails’ request and then flies inside the wheelbarrow.
+    She takes a bit to understand Tails’ request and then flies inside the wheelbarrow.
 -> send_sparks_continuation
 
 === send_sparks_continuation ===
