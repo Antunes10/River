@@ -9,11 +9,11 @@ They reach the outskirts of a small, destroyed village, illuminated by the shimm
 They have been travelling for hours.
 #speaker:Tails #portrait:tails_default
 perhaps its best if we stop here for the night.
-#speaker:
+#speaker: 
 The firefly doesn’t answer.
 #layout:left:tails_sad
-He has been silent for some time.
-His antennas hang low.
+She has been silent for some time.
+Her antennas hang low.
 Tails docks the helmet near the river’s shoreline, next to a large log.
 His paws touch the murky sands, and he starts walking in the direction of a house with a collapsed ceiling.
 Sparks is still in the shell.
@@ -23,11 +23,11 @@ Sparks is still in the shell.
     #speaker:Tails #portrait:tails_sad
     Hey, little guy… are you alright?
     #speaker:
-    He nods his head, clearly lying.
+    She nods his head, clearly lying.
     #speaker:Tails #layout:left:tails_default #portrait:tails_default
     I need your help; can you do that?
     #speaker: #layout:right:sparks_default_m
-    His antennas raise a bit.
+    Her antennas raise a bit.
     #speaker:Tails #portrait:tails_default
     I need you to go and check the village up ahead.
     To make sure it’s safe.
@@ -35,7 +35,7 @@ Sparks is still in the shell.
     #speaker:Sparks #layout:right:sparks_default_m 
     O… Okay.
     #speaker: #layout:right:default
-    He gets up slowly and takes off buzzing through the air, disappearing in the night.
+    She gets up slowly and takes off buzzing through the air, disappearing in the night.
     The mouse sits alone, looking towards the river.
     #layout:left:tails_sad
     He knew why his friend was down.
@@ -96,15 +96,15 @@ Sparks is still in the shell.
     I got it cover.
     Lo and behold my shiny booty!
     #speaker: #layout:left:tails_happy
-    The firefly rises his behind and shines light inside the shelter.
-    The mouse laughs with the juvenal joy of Sparks and takes his place with comfort.
+    The firefly raises her butt and shines light inside the shelter.
+    The mouse laughs with joy.
     Inside they could share their heat and sleep more comfortably.
 
 +[Go and check the village yourself.]
     #speaker:Tails #layout:left:tails_default #layout:right:sparks_sad_m #portrait:tails_default
     Hey, little guy… are you alright?
     #speaker:
-    He nods his head, clearly lying.
+    She nods his head, clearly lying.
     #speaker:Tails #portrait:tails_default
     I am going to check the village ahead, to see if it’s safe.
     Can you stay here quiet, until I come back?
@@ -127,7 +127,7 @@ Sparks is still in the shell.
     O… Okay.
     #speaker: #layout:left:tails_default
     The firefly starts flying slowly in the village’s direction.
-    He is clearly affected by what happened at the bridge.
+    She is clearly affected by what happened at the bridge.
     Once safe, Tails should cheer him up.
     
     #background:villageHouse
@@ -137,7 +137,7 @@ Sparks is still in the shell.
     #layout:left:default #layout:right:default #layout:middle:tails_default
     Tails was able to build a small shelter of leaves and twigs.
     It took a bit of time without Spark’s help.
-    Who could blame him?
+    Who could blame her?
     He sat in a corner sniffing occasionally.
     #speaker:Tails #portrait:tails_default
     Hey little one, do you want to join me in this cosy shelter?
@@ -204,8 +204,8 @@ Or perhaps it was best if Tails spent some time with his companion.
     Her mother always taught him the spirit was as much important as the body.
     And right now, his friend was suffering.
     Tails looked around and found the firefly’s light hight above, on the parapet on an open window.
-    Nimbly he climbed unto it and sat next to Sparks.
-    He was shining his light brightly into the night.
+    Nimbly he climbed onto it and sat next to Sparks.
+    She was shining his light brightly into the night.
     #speaker:Sparks #layout:right:sparks_default_m #portrait:sparks_default
     Hey Mr.Tails.
     Do mouses like to stare at the dark too?
@@ -213,7 +213,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     Not usually.
     I don’t think most animals enjoy the dark.
     #speaker: #layout:right:sparks_sad_m
-    The firefly lowers his head.
+    The firefly lowers her head.
     #speaker:Sparks #portrait:sparks_sad
     Oh, that’s unfortunate.
     #speaker:Tails #portrait:tails_default
@@ -228,8 +228,8 @@ Or perhaps it was best if Tails spent some time with his companion.
     #speaker:Tails #portrait:tails_happy
     I think I can understand that.
     #speaker: #layout:left:tails_default #layout:right:sparks_default_m
-    His eyes looked towards the infinite void, and somehow…
-    He finds quiet and peace.
+    Her eyes looked towards the infinite void, and somehow…
+    She finds quiet and peace.
     After days of catastrophe and apocalyptic chaos.
     The silence was soothing.
     Furthermore, no destruction could be seen without the sun.
@@ -270,17 +270,17 @@ Or perhaps it was best if Tails spent some time with his companion.
     #speaker:Tails #portrait:tails_sad
     Your heart is in the right place…
     #layout:middle:tails_default
-    But in this world we sometimes have to listen to our head, instead of our heart.
+    But in this world we sometimes have to listen to our headw , instead of our heart.
     #layout:middle:tails_sad
     Or we will share the fate of those we lost.
     #speaker: #layout:middle:default #layout:left:tails_sad
     The firefly takes the advice badly.
-    He gets sad and moves away from the mouse.
+    She gets sad and moves away from the mouse.
     #speaker:Sparks #portrait:sparks_sad
     I would like to be alone a bit, Mr.Tails…
     #speaker:
     The request hurts the rodent’s feelings, but he heeds it.
-    Tails turns his back to his friend and goes back to the nest to sleep away the pain.
+    Tails turns her back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
     ~changeScene("Credits")
@@ -313,7 +313,7 @@ You can shine it down there if you want.
 #speaker:Sparks #portrait:sparks_default
 But that way my mother won’t be able to see it.
 #speaker:
-Tails understood now why he was there facing the open night.
+Tails understood now why she was there facing the open night.
 Why he was looking hopefully to the stary night.
 #speaker:Sparks #portrait:sparks_default
 Here in the night, she will be able to spot my light.
@@ -337,14 +337,14 @@ The mouse gives a little kiss to the firefly’s forehead and goes back to the n
     Those who kill all beings…
     They were the ones that killed that bird.
     #speaker:
-    The firefly lowers his head with sadness.
+    The firefly lowers her head with sadness.
     #speaker:Sparks #portrait:sparks_sad
     But we couldn’t save him…
     We are too weak to save anybody…
     I would like to be alone a bit, Mr.Tails…
     #speaker:
     The request hurts the rodent’s feelings, but he heeds it.
-    Tails turns his back to his friend and goes back to the nest to sleep away the pain.
+    Tails turns the back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
     ~changeScene("Credits")
@@ -365,11 +365,11 @@ The mouse gives a little kiss to the firefly’s forehead and goes back to the n
     And that’s two more and no one.
     #speaker:
     Sparks tears dry up.
-    He raises his eyes towards his friend.
+    She raises his eyes towards his friend.
     #speaker:Sparks #layout:right:sparks_default_m #layout:left:tails_default #portrait:sparks_default
     You’re right.
     #speaker:
-    And embraces him, recovering his spirit.
+    And embraces him, recovering her spirit.
 
 -
 #speaker:Tails #portrait:tails_default

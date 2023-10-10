@@ -70,7 +70,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         #speaker: Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
         But I found food. 
         #speaker:
-        His face lightens up as he shakes the small piece of bread. 
+        Her face lightens up as he shakes the small piece of bread. 
 
     ++[Ask why he’s here, alone.]
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
@@ -85,8 +85,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
         Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh. 
         #speaker:
         The young bug’s levity caught Tails off-guard. 
-        He was expecting a totally different reaction, but there is not a hint of sadness in his face.
-        It looks like he totally believed what he was saying.
+        He was expecting a totally different reaction, but there is not a hint of sadness in her face.
+        It looks like she totally believed what he was saying.
     
     --#speaker:Tails #portrait:tails_default #layout:left:tails_default 
     Have you thought about what you are going to do? 
@@ -99,7 +99,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
     Not to worry. I will find her eventually. Right now, it’s you the one that’s lost.
     #speaker:
-    He finishes the crumb with one last bite and flies towards Tails still munching.
+    She finishes the crumb with one last bite and flies towards Tails still munching.
     #speaker:Sparks #portrait:sparks_default
     Where are we going? 
     #speaker:Tails #portrait:tails_default
@@ -109,7 +109,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
     Although my mother told me it was very dangerous for my wings.
     #portrait:sparks_happy #layout:right:sparks_happy_m
-    But if I do it inside a shell, I’ll be dry! 
+    But if I go inside the shell, I’ll be dry! 
     You are very smart, Mr.Tails.
     #speaker:
     The mouse felt a bit flattered by the compliment and took the bug with him to the half shell.
@@ -156,13 +156,13 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Oh, that is a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
     #speaker: #layout:right:sparks_happy_m
     The firefly seems joyous even though destruction surrounds them. 
-    He is the only light that shines in that place.
+    She is the only light that shines in that place.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     My name is Tails, what is yours? 
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     I’m Sparks. I’m a firefly as you can see! 
     #speaker:
-    He shakes his behind signalling his identity. Just like a happy puppy.
+    She shakes his behind signalling his identity. Just like a happy puppy.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     Where is your mother? Are you alone? 
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
@@ -175,8 +175,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Oh, don’t worry, I know I will. We fireflies are easy to find… at least during the night, eh eh.
     #speaker: #layout:left:tails_happy
     The young bug’s levity caught Tails off-guard. 
-    He was expecting a totally different reaction, but there was not a hint of sadness in his face.
-    It looked like he totally believed what he was saying.
+    He was expecting a totally different reaction, but there was not a hint of sadness in her face.
+    It looked like she totally believed what she was saying.
     #speaker:Sparks #portrait:sparks_happy
     So, were are we going? 
     #speaker:Tails  #portrait:tails_happy
@@ -195,7 +195,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     No, I had a shell that helped me float. 
     #speaker:Sparks #portrait:sparks_happy
     Funtastic! I’ve always wanted to swim in the river. 
-    If I do it inside a shell, I’ll be dry!
+    If I go inside the shell, I’ll be dry!
     You are very smart, Mr.Tails.
     #speaker:
     The mouse felt a bit flattered, but his mood changed fast. 
@@ -210,7 +210,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:
     The mouse laughed with those innocent words and in turn made the young bug laugh.
     Now, light was not only shinning in the tunnel but also in Tails hearts.
-    He forgot the sadness he felt before and a few moments later they found the helmet and continued following the river, to reach the surface.  
+    He forgot the sadness he felt before, and a few moments later they found the helmet and continued following the river to reach the surface.  
     
 - 
 

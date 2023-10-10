@@ -46,7 +46,7 @@ The firefly smiled.
 She is going to find me, I’m sure!
 We fireflies always manage to find each other!
 #speaker:
-His hope was unwavering.
+Her hope was unwavering.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Well in that case we will keep on traveling together.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
@@ -103,7 +103,7 @@ Trapped it was trying to free itself, but each movement allowed the claws to pie
     #layout:left:default
     He jumped onto the helmet again and kept on following the river.
     The bird still tried to free himself, but in vain.
-    Has the bridge started to get smaller with the distance, Sparks broke the silence.
+    As the bridge started to get smaller with the distance, Sparks broke the silence.
     #speaker:Sparks #portrait:sparks_sad
     Why did we leave him?
     #speaker:Tails #portrait:tails_sad
@@ -343,7 +343,7 @@ The bird awakes from his comatose state.
 #speaker:Bird #portrait:nimbus_default #layout:middle:nimbus_default_m
 Yes, yes… I’m sorry I was shocked…
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy_m
-My name is nimbus.
+My name is Nimbus.
 #portrait:nimbus_default #layout:middle:nimbus_default_m
 I can’t thank you enough for saving me.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m

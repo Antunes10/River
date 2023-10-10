@@ -20,7 +20,7 @@ His wing was still bandaged.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 Can I stay a bit longer? I’m not used to wake up this early.
 #speaker:
-The little bug hides his face with a bit of foliage.
+The little bug hides her face with a bit of foliage.
 #speaker:Tails #portrait:tails_default 
 I guess that’s ok. But we will have to depart in a bit.
 #speaker:

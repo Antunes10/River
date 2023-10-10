@@ -8,7 +8,7 @@ The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
 #speaker:Tails #portrait:tails_default
-perhaps its best if we stop here for the night.
+Perhaps its best if we stop here for the night.
 #speaker:Nimbus #portrait:nimbus_default
 Why don’t we keep going? The river is making all the work.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
@@ -32,10 +32,10 @@ My wing!
 The other two rush to his side.
 His wing still seems badly hurt.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-Don’t worry Mr.nimbus, I can go take a look!
+Don’t worry Mr.Nimbus, I can go take a look!
 You should rest your beautiful wings.
 #speaker: #layout:right:default
-He takes off buzzing through the air, disappearing in the night.
+She takes off buzzing through the air, disappearing in the night.
 Tails and nimbus stand next to each other, and the mouse can see that wing’s damage was irreversible.
 
 +[Tell him the truth about his wing.]
@@ -215,7 +215,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         #speaker: #layout:left:tails_default #layout:middle:default #layout:right:sparks_default_m
         Tails looked around and found the firefly’s light hight above, on the parapet on an open window.
         Nimbly he climbed unto it and sat next to Sparks.
-        He was shinning his light brightly into the night.
+        She was shinning his light brightly into the night.
         #speaker:Sparks #portrait:sparks_default
         Hey Mr.Tails!
         Do mouses like to stare at the dark too?
@@ -232,8 +232,8 @@ Or perhaps it was best if Tails spent some time with his companions.
         #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
         I think I can understand that.
         #speaker: #layout:left:tails_default
-        His eyes looked towards the infinite void, and somehow…
-        He finds quiet and peace.
+        Her eyes looked towards the infinite void, and somehow…
+        She finds quiet and peace.
         After days of catastrophe and apocalyptic chaos.
         The silence was soothing.
         Furthermore, no destruction could be seen without the sun.
@@ -249,8 +249,8 @@ Or perhaps it was best if Tails spent some time with his companions.
         #speaker:Sparks #portrait:sparks_default
         But that way my mother wouldn’t be able to see it.
         #speaker:
-        Tails understood now why he was there facing the open night.
-        Why he was looking hopefully to the stary night.
+        Tails understood now why she was there facing the open night.
+        Why she was looking hopefully to the stary night.
         #speaker:Sparks #portrait:sparks_default
         Here in the night, she will be able to spot my light.
         She will find me, I know she will.
