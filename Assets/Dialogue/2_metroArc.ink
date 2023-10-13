@@ -51,7 +51,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:
     The mouse was unsure how to answer. 
     
-    ++[Greet him.]
+    ++[Greet her.]
         #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
         Hi… my name is Tails… I am a mouse. 
         #speaker:
