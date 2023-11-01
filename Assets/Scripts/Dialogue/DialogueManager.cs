@@ -217,6 +217,12 @@ public class DialogueManager : MonoBehaviour
       GameManager.Instance.decreaseHope(val);
     });
 
+    currentStory.BindExternalFunction("unlockImage", (int val) =>
+    {
+      ExitDialogueMode();
+      GameManager.Instance.UnlockImage(val);
+    });
+
     // sets everything to the default state
     displayNameText.text = "default";
     portraitAnimator.Play("default");

@@ -695,7 +695,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &201120074
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -712,8 +712,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &201120075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2329,7 +2328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2449,6 +2447,7 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
     - {fileID: 4900000, guid: e10d5017deba4d649a489d3f5773a8c8, type: 3}
   _currentInk: {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
+  unlockedImages: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &730998456
 Transform:
   m_ObjectHideFlags: 0
@@ -2904,6 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac83a46493c372f46a91b99aa1e63b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedImage: {fileID: 21300000, guid: f1c0c19e174df6449a997a782b72da37, type: 3}
   images:
   - {fileID: 21300000, guid: 313551b15de528d49b30b7c2438acf6c, type: 3}
   - {fileID: 21300000, guid: deffb9083794e7a45ab6de4d7983481c, type: 3}
@@ -4445,7 +4445,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1612138263
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4462,8 +4462,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1724845794
 GameObject:
   m_ObjectHideFlags: 0

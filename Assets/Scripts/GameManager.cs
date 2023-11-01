@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
   //Game State
   private GameState _gs;
 
+  // int array 
+  public int[] unlockedImages = new int[20];
+
   #region Getters and Setters
   public bool GetHasSparks()
   {
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
   void Start()
   {
     DontDestroyOnLoad(this.gameObject);
+
     InitGameState();
   }
 
@@ -75,6 +79,11 @@ public class GameManager : MonoBehaviour
     _gs.dialogueIndex = 0;
     _gs.currentFood = 3;
     _gs.currentHope = 3;
+  }
+
+  public void UnlockImage(int n)
+  {
+    unlockedImages[n] = 1;
   }
 
   public void gameOver()

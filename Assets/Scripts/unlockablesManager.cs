@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class unlockablesManager : MonoBehaviour
 {
+    //locked image
+    public Sprite lockedImage;
 
     //images
     public Sprite[] images;
@@ -27,10 +29,38 @@ public class unlockablesManager : MonoBehaviour
         uiImageBig.gameObject.SetActive(false);
         previousButton.gameObject.SetActive(false);
 
-        uiImage1.GetComponent<Image>().sprite = images[0];
-        uiImage2.GetComponent<Image>().sprite = images[1];
-        uiImage3.GetComponent<Image>().sprite = images[2];
-        uiImage4.GetComponent<Image>().sprite = images[3];
+        if (GameManager.Instance.unlockedImages[0] == 1)
+        {
+            uiImage1.GetComponent<Image>().sprite = images[0];
+        }
+        else
+        {
+            uiImage1.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[1] == 1)
+        {
+            uiImage2.GetComponent<Image>().sprite = images[1];
+        }
+        else
+        {
+            uiImage2.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[2] == 1)
+        {
+            uiImage3.GetComponent<Image>().sprite = images[2];
+        }
+        else
+        {
+            uiImage3.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[3] == 1)
+        {
+            uiImage4.GetComponent<Image>().sprite = images[3];
+        }
+        else
+        {
+            uiImage4.GetComponent<Image>().sprite = lockedImage;
+        }
 
         index = 4;
     }
@@ -47,7 +77,15 @@ public class unlockablesManager : MonoBehaviour
     {
         if (uiImageBig.gameObject.activeSelf)
         {
-            uiImageBig.GetComponent<Image>().sprite = images[currIndex + 1];
+            if (GameManager.Instance.unlockedImages[currIndex + 1] == 1)
+            {
+                uiImageBig.GetComponent<Image>().sprite = images[currIndex + 1];
+            }
+            else
+            {
+                uiImageBig.GetComponent<Image>().sprite = lockedImage;
+            }
+
             currIndex++;
 
             if (currIndex != 0) previousButton.gameObject.SetActive(true);
@@ -61,10 +99,38 @@ public class unlockablesManager : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
         previousButton.gameObject.SetActive(true);
 
-        uiImage1.GetComponent<Image>().sprite = images[index];
-        uiImage2.GetComponent<Image>().sprite = images[index + 1];
-        uiImage3.GetComponent<Image>().sprite = images[index + 2];
-        uiImage4.GetComponent<Image>().sprite = images[index + 3];
+        if (GameManager.Instance.unlockedImages[index] == 1)
+        {
+            uiImage1.GetComponent<Image>().sprite = images[index];
+        }
+        else
+        {
+            uiImage1.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index + 1] == 1)
+        {
+            uiImage2.GetComponent<Image>().sprite = images[index + 1];
+        }
+        else
+        {
+            uiImage2.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index + 2] == 1)
+        {
+            uiImage3.GetComponent<Image>().sprite = images[index + 2];
+        }
+        else
+        {
+            uiImage3.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index + 3] == 1)
+        {
+            uiImage4.GetComponent<Image>().sprite = images[index + 3];
+        }
+        else
+        {
+            uiImage4.GetComponent<Image>().sprite = lockedImage;
+        }
 
         index += 4;
 
@@ -75,8 +141,15 @@ public class unlockablesManager : MonoBehaviour
     {
         if (uiImageBig.gameObject.activeSelf)
         {
+            if (GameManager.Instance.unlockedImages[currIndex - 1] == 1)
+            {
+                uiImageBig.GetComponent<Image>().sprite = images[currIndex - 1];
+            }
+            else
+            {
+                uiImageBig.GetComponent<Image>().sprite = lockedImage;
+            }
 
-            uiImageBig.GetComponent<Image>().sprite = images[currIndex - 1];
             currIndex--;
 
             if (currIndex != images.Length - 1) nextButton.gameObject.SetActive(true);
@@ -90,10 +163,39 @@ public class unlockablesManager : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
         nextButton.gameObject.SetActive(true);
 
-        uiImage1.GetComponent<Image>().sprite = images[index - 8];
-        uiImage2.GetComponent<Image>().sprite = images[index - 7];
-        uiImage3.GetComponent<Image>().sprite = images[index - 6];
-        uiImage4.GetComponent<Image>().sprite = images[index - 5];
+        if (GameManager.Instance.unlockedImages[index - 8] == 1)
+        {
+            uiImage1.GetComponent<Image>().sprite = images[index - 8];
+        }
+        else
+        {
+            uiImage1.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index - 7] == 1)
+        {
+            uiImage2.GetComponent<Image>().sprite = images[index - 7];
+        }
+        else
+        {
+            uiImage2.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index - 6] == 1)
+        {
+            uiImage3.GetComponent<Image>().sprite = images[index - 6];
+        }
+        else
+        {
+            uiImage3.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[index - 5] == 1)
+        {
+            uiImage4.GetComponent<Image>().sprite = images[index - 5];
+        }
+        else
+        {
+            uiImage4.GetComponent<Image>().sprite = lockedImage;
+        }
+
 
         index -= 4;
 
@@ -102,6 +204,8 @@ public class unlockablesManager : MonoBehaviour
 
     public void showBigImage(Image img)
     {
+        if (img.sprite == lockedImage) return;
+
         uiImageBig.gameObject.SetActive(true);
         uiImageBig.GetComponent<Image>().sprite = img.sprite;
 
@@ -134,10 +238,38 @@ public class unlockablesManager : MonoBehaviour
 
         int dividend = currIndex / 4;
 
-        uiImage1.GetComponent<Image>().sprite = images[dividend * 4];
-        uiImage2.GetComponent<Image>().sprite = images[dividend * 4 + 1];
-        uiImage3.GetComponent<Image>().sprite = images[dividend * 4 + 2];
-        uiImage4.GetComponent<Image>().sprite = images[dividend * 4 + 3];
+        if (GameManager.Instance.unlockedImages[dividend * 4] == 1)
+        {
+            uiImage1.GetComponent<Image>().sprite = images[dividend * 4];
+        }
+        else
+        {
+            uiImage1.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[dividend * 4 + 1] == 1)
+        {
+            uiImage2.GetComponent<Image>().sprite = images[dividend * 4 + 1];
+        }
+        else
+        {
+            uiImage2.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[dividend * 4 + 2] == 1)
+        {
+            uiImage3.GetComponent<Image>().sprite = images[dividend * 4 + 2];
+        }
+        else
+        {
+            uiImage3.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[dividend * 4 + 3] == 1)
+        {
+            uiImage4.GetComponent<Image>().sprite = images[dividend * 4 + 3];
+        }
+        else
+        {
+            uiImage4.GetComponent<Image>().sprite = lockedImage;
+        }
 
         if (currIndex >= 0 && currIndex <= 3)
         {
