@@ -2423,8 +2423,8 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 052cfad95d674eb4295dd40f3e5fb2e4, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
-    - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
-    - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
+    - {fileID: 4900000, guid: e65b99f7b3e8c7748b2311c95339f06a, type: 3}
+    - {fileID: 4900000, guid: 99dfd106b28550d4ea2898b9edc7ec2b, type: 3}
     - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
