@@ -214,11 +214,11 @@ They had to decide.
         ~increaseHope(1)
         #speaker:Tails #portrait:tails_default 
         We don’t have much to spare, but we can share a bit with you.
-        #speaker:Sparks #portrait:sparks_happy
+        #speaker:Sparks #portrait:sparks_default
         Yes! You deserve it.
         #speaker:
         The otter receives the rations with a smile on her face.
-        #speaker:Hazel #portrait:hazel_default #layout:left:hazel_happy
+        #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy
         You are most kind.
         It has been difficult lately.
         #speaker:Nimbus #portrait:nimbus_default 
