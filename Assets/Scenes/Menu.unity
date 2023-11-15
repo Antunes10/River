@@ -2427,9 +2427,9 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 99dfd106b28550d4ea2898b9edc7ec2b, type: 3}
     - {fileID: 4900000, guid: 2853700bcbd75444a802d57222b050dc, type: 3}
   - _InkJSONs:
+    - {fileID: 4900000, guid: 2a133732216c3af42944c7f6e621ac45, type: 3}
     - {fileID: 4900000, guid: 39b4ca06d90c26442bc33eecaf1a2c08, type: 3}
-    - {fileID: 4900000, guid: 39b4ca06d90c26442bc33eecaf1a2c08, type: 3}
-    - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}
+    - {fileID: 4900000, guid: 1c75b21ade95de547a427f4c56cd9b63, type: 3}
     - {fileID: 4900000, guid: 7670e776a74adf34aa99d7beb73f5b39, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 468eff452240560458c64ecdc9d23e55, type: 3}

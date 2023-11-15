@@ -3,73 +3,59 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:swamp
-#speaker: #layout:middle:tails_default #layout:right:sparks_default_m #layout:left:oak_default
+#background:swamp #speaker: #layout:left:tails_default #layout:right:sparks_default_m
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
 The night went by and now the slow river reaches a march an its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
-#layout:middle:tails_sad #layout:right:sparks_sad_m #layout:left:oak_scared
+#layout:left:tails_sad #layout:right:sparks_sad_m
 A scent of death hangs in the air.
 #speaker:Tails #portrait:tails_sad
 Tails: I cannot see where we are going.
 Tails: I no longer know where’s West.
 #speaker:
-They all seem uncertain and apprehensive about the march they now traverse.
+The firefly seems to get smaller and more frightened.
 #speaker:Sparks #portrait:sparks_sad
 Sparks: My light can’t make the fog go away…
 Sparks: And the water in the air makes my wings heavy…
-#speaker:Oak #portrait:oak_sad #layout:left:oak_sad
-Oak: Stay inside our transportation, little bug.
-Oak: We need to stay together, or we risk losing ourselves in the shifty mist.
 #speaker:Tails #portrait:tails_sad
-Tails: This smell is awful, where is it coming from?
-#speaker:Oak #portrait:oak_sad
-Oak: I believe we do not want to know.
+Tails: Stay inside the shell, Sparks. You’re safe here with me.
 #speaker:
 They try to keep going in one direction but make no visible progress.
 A tree appears.
 A dead tree.
 Twisted and grey, as if choked by the murky waters and mud that surrounds it.
-They all feel a icy shiver down their spines.
+They both feel an icy shiver down their spines.
 #speaker:Sparks #portrait:sparks_sad
 Sparks: Hmmm, I don’t wanna be here…
 #speaker: #layout:right:default
-The small bug hides inside the dog’s hat, shaking in terror.
-The others stay as apprehensive, looking at the macabre.
+The small bug hides inside the helmet, shaking in terror, while Tails stays apprehensive, looking at the macabre.
 A single black bird stands atop the tree, in one of its longer branches.
 It seems unphased by all the eeriness around him.
 Looking around with dark eyes.
 
 +[Avoid the Crow]
-    #speaker:
+    #speaker: #layout:right:sparks_sad_m
     Tails pushes the helmet forward and away from the dead tree.
-    #speaker:Oak #portrait:oak_sad
-    Oak: Are we not going to inquire him for help?
     #speaker:Tails #portrait:tails_sad
-    Tails: I rather not.
     Tails: I sense he is not to be trusted.
     #speaker:
-    No one seems to disagree with him.
-    #layout:right:sparks_sad_m
-    And so, the helmet keeps daring through the thick mist that surrounds the world.
+    The helmet keeps daring through the thick mist that surrounds the world.
     Minutes pass.
     Hours pass.
     And nothing.
     Just mud, drowned brushes, and a scent of death.
-    #speaker:Sparks #portrait:sparks_sad 
+    #speaker:Sparks #portrait:sparks_sad
     Sparks: I think we’ve been here.
     Sparks: Are we going in circles, Mr.Tails?
-    #speaker:Tails #portrait:tails_sad
+    #speaker:Tails #portrait:sparks_sad
     Tails: I don’t know, Sparks. With this heavy fog I can’t see much.
     #speaker:
     The mouse looks around, but he can’t seem to find the right path.
     
     ->ChoicePanel
-    
-
 +[Ask the Crow for help]
-    #speaker:
+    #speaker: #layout:right:sparks_sad_m
     Tails pushes the helmet forward.
     The tree gets bigger and bigger. Becoming even more frightening.
     They stop right under it.
@@ -83,7 +69,7 @@ Looking around with dark eyes.
     Tails: We can’t figure out where’s West.
     #speaker:
     The bird’s wings open wide, making it look a lot bigger than before.
-    #layout:right:crow_default_m
+    #layout:middle:tails_sad #layout:left:sparks_sad #layout:right:crow_default_m
     He then flaps them with ease and lowers himself to a branch closer to them.
     #speaker:Crow #portrait:crow_default
     Crow: Many greetings to you all.
@@ -99,21 +85,17 @@ Looking around with dark eyes.
     Crow: Many more traveling West.
     #portrait:crow_menacing #layout:right:crow_menacing_m
     Crow: I helped them all.
-    #speaker:Oak #portrait:oak_default #layout:left:oak_default
-    Oak: That is good. Could you help us too, Sir Crow?
-    #speaker: #layout:right:crow_default_m
+    #speaker: 
     The crow looks at each of them individually.
-    #speaker:Crow #portrait:crow_menacing #layout:right:crow_menacing_m
-    Crow: Of course.
-    #speaker: #layout:right:default
+    #layout:right:default
     He opens his wings again and starts flying away.
     The mouse loses no time getting back in the water and following the black bird.
-    #speaker:Oak #portrait:oak_default
-    Oak: He’s going left. We were going in the wrong direction.
+    #speaker:Sparks #portrait:sparks_sad #layout:middle:tails_default_m
+    Sparks: He’s going the other way…
     #speaker:
-    Some faces lighten up with the new route.
+    Sparks face lightens up with the new route.
     Some time passes as the bird keeps flying above them, within voice reach.
-    #speaker:Tails #portrait:tails_default 
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Tails: Is it much further?
     #speaker:
     The crow looks around.
@@ -126,15 +108,14 @@ Looking around with dark eyes.
     The bird laughs.
     #speaker:Crow #portrait:crow_menacing
     Crow: Much bigger than you can imagine.
-    #portrait:crow_default
     Crow: And it is not alone. Hundred more now paint the once green fields.
     Crow: Grey and mud fills the world.
     Crow: As bodies pile up East and are brough by the murky river.
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
+    #speaker:Sparks #portrait:sparks_sad
     Sparks: But there is an enchanted land in the West, right?
     #speaker:
     The bird laughs again.
-    #speaker:Crow #portrait:crow_menacing
+    #speaker:Crow #portrait:crow_default
     Crow: That’s what they all say.
     Crow: But there are humans West too.
     Crow: And death follows in their wake.
@@ -142,30 +123,26 @@ Looking around with dark eyes.
     The ominous words make everyone go sad.
     Hope is drowned by the blackness of the bird’s figure.
     They see no end to the swamp.
-    #speaker:Oak #portrait:oak_scared #layout:left:oak_scared
-    Oak: I have a bad feeling about all of this, friends.
-    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Tails: What do you mean?
-    #speaker:Oak #portrait:oak_scared
-    Oak: I mean we better turn back…
+    #speaker:Sparks #portrait:sparks_sad #layout:middle:tails_default_m
+    Sparks: I’m feeling weird in my tummy, Mr. Tails.
     #speaker:Tails #portrait:tails_default
-    Tails: But he said this is his swamp, so he must know it well.
-    #speaker:Oak #portrait:oak_scared
-    Oak: Exactly, Sir Tails. Who would want to call this place his home?
+    Tails: What do you mean? Are you sick?
+    #speaker:Sparks #portrait:sparks_sad
+    Sparks: I wanna go back.
+    #speaker:Tails #portrait:tails_default
+    Tails: It’s going to be alright, Sparks, just a bit further and we’ll be out of here.
     #speaker:
-    The dog’s words bring another perspective.
-    A perspective so dark, they could not see it initially.
     Tails’ stick gets stuck in the mud and the helmet is brought to a halt.
     The waters have turned to black mud.
     A sticky and shifty mud.
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-    Sparks: Hey! Mr. Crow! We are stuck.
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
+    Tails: Hey! Mr. Crow! We are stuck.
     #speaker:
     But the flying guide is nowhere to be seen.
     Suddenly the helmet starts to sink.
-    #speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
+    #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad_m
     Tails: This is not mud, this is oil!
-    #speaker: #layout:right:sparks_sad
+    #speaker:
     They all scream.
     Slowly the helmet starts to sink in the tar pit.
     They try to escape but are also swollen by the artificial blackness.
@@ -178,9 +155,8 @@ TODO:change to dead scene
 
 ->END
 
-
 === ChoicePanel ===
-    +{not Wait} [Wait for the mist to dissipate]
++{not Wait} [Wait for the mist to dissipate]
         ->Wait
     +{Wait} [Keep Waiting]
         ->KeepWaiting
@@ -207,7 +183,7 @@ The mouse returns inside.
 Sparks: Are we going now?
 #speaker:
 He shakes his head.
-#speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
+#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Tails: Let’s eat something while we wait.
 Tails: Here we are safe from the cold.
 #speaker:
@@ -215,6 +191,7 @@ They all agree and start munching away their anxiety and hunger.
 Time passes.
 And again, the mouse goas to the top.
 And again, the mist hasn’t disappeared.
+
 ->ChoicePanel
 
 === noFoodAndWaited ===
@@ -234,18 +211,17 @@ Sparks: Are we going to stay here too long?
 Tails: Just until the mist starts to disappear.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
 Sparks: It’s comfy inside. Mr.Oak keeps us all warm.
-#speaker: #layout:left:oak_default
+#speaker: 
 The firefly smiles looking at the dog, that returns the smile.
 Time passes.
 Finally, tired of waiting, Tails peaks from under Oak’s hat.
 The mist hasn’t disappeared.
-
 ->ChoicePanel
 
 === RiskIt ===
-#speaker:  #layout:left:oak_sad #layout:right:sparks_sad_m
+#speaker: #layout:right:sparks_sad_m
 Tails had the feeling they would starve if they stayed in that forsaken place.
-#speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
+#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Tails: We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
 #speaker:
 Apprehension was all around, but no other animal voiced a better option.
@@ -277,23 +253,20 @@ Time seems infinite.
 Minutes turn to years.
 Until finally a huge shadow obscures them and everything around.
 A huge object before them, towers the waters, covering the sun behind.
-The rest of the group notice the sudden darkness and emerge from under the hat with curiosity.
-#speaker:Oak #portrait:oak_scared #layout:left:oak_scared
-Oak: What!?
 #speaker:
 A huge building appears from inside the mist.
 Bigger than any tree they had seen.
 It has huge scars on his body, with half its structure already collapsed.
 And another building follows behind.
 And another, and another…
-#speaker:Oak #portrait:oak_scared #layout:left:oak_scared
-Oak: This is not a swamp…
-Oak: This is a city…
-#speaker: #layout:middle:tails_sad
+#speaker:Tails #portrait:tails_sad
+Tails: This is not a swamp…
+Tails: This is a city…
+#speaker:
 Shock and awe.
 #speaker:Tails #portrait:tails_sad
 Tails: The river flooded an entire city…
-Tails: Was it them and their war?~
+Tails: Was it them and their war?
 #speaker:
 No animal in this world could answer that question.
 No animal in this world had seen what they were about to…
@@ -303,4 +276,3 @@ A city in ruins.
 ~changeScene("RiverScene")
 
 ->END
-        
