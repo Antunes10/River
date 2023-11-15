@@ -3,63 +3,8 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:bridge #music:forest
-As the sunlight begins to pierce the darkness, also birds start to sing their melody.
-The cold and grey tunnels gives place to a small forest, painted in colours of golden brown, orange and red.
-#speaker:Sparks #portrait:sparks_happy
-We made it!
-#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-All thanks to you, Sparks.
-#speaker:
-The young firefly glows with happiness.
-#speaker:Tails #portrait:tails_happy 
-It’s good to be around nature again. At least this place seems to be unscathed.
-#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-Yes, tunnels and stone forests can be quite depressing.
-#speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-Specially if they are all reduce to rumble, with no life around.
-#speaker: #layout:right:sparks_happy_m
-The mouse understood what the end of the tunnel meant to their relationship of coincidence.
-#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-Thank you for your help, Sparks. I think this is where we part ways.
-#speaker: #layout:right:sparks_scared_m
-The firefly looked confused.
-#speaker:Sparks #portrait:sparks_scared
-Why? You didn’t like my company?
-#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-No, no, that’s not it.
-I suppose now you are going to find your mother.
-#speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-What about you?
-#speaker:Tails #portrait:tails_default #layout:left:tails_default
-Well, I will keep going West.
-To a place where I can find my kind again, without fires or explosions.
-A place of peace.
-#speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
-That seems nice!
-Can I go with you to this enchanted place?
-#speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-What about your mother?
-#speaker:
-The firefly smiled.
-#speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m 
-She is going to find me, I’m sure!
-We fireflies always manage to find each other!
-#speaker:
-Her hope was unwavering.
-#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-Well in that case we will keep on traveling together.
-#speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
-Yay!
-#speaker:
-The two animals faced forward towards the West that awaits them.
-It was going to be a long and arduous trip.
-But for a moment hope reigned uncontested and they dared to dream.
-
-//TODO: SOMETHING TO SYMBOLIZE TIME PASSING
-
-#speaker: #layout:left:tails_sad #layout:right:sparks_scared_m
-A couple of moments pass, and a stone bridge appears between the trees, over the river that now narrowed and slowed a bit.
+#speaker: #layout:left:tails_sad #layout:right:sparks_scared_m #background:bridge
+A stone bridge appears between the trees, over the river that now narrowed and slowed a bit.
 There were no songs, either by flying birds or climbing mammals.
 Silence was now the primary sound.
 #speaker:Tails #portrait:tails_scared #layout:left:tails_scared
