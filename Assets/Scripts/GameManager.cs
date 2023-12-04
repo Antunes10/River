@@ -79,6 +79,12 @@ public class GameManager : MonoBehaviour
     _gs.dialogueIndex = 0;
     _gs.currentFood = 3;
     _gs.currentHope = 3;
+
+    //TODO: remover quando tivermos a logica de desbloquear imagens
+    for (int i = 0; i < unlockedImages.Length; i++)
+    {
+      unlockedImages[i] = 1;
+    }
   }
 
   public void UnlockImage(int n)
