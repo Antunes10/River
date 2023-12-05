@@ -108,7 +108,7 @@ public class DialogueManager : MonoBehaviour
 
   private void Update()
   {
-    if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.LeftControl))
+    if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Space))
     {
       submitSkip = true;
     }
@@ -118,7 +118,7 @@ public class DialogueManager : MonoBehaviour
       return;
     }
 
-    if ((Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.LeftControl)) && !choosing && canContinueNextLine)
+    if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.LeftControl)) && !choosing && canContinueNextLine)
     {
       ContinueStory();
     }
