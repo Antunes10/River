@@ -8,12 +8,13 @@ public class StatDisplayer : MonoBehaviour
 
   [SerializeField] private TextMeshProUGUI foodText;
   [SerializeField] private TextMeshProUGUI hopeText;
+  [SerializeField] public GameObject Button;
   GameManager gm;
 
   // Start is called before the first frame update
   void Start()
   {
-
+    StartCoroutine(ButtonCoroutine());
     switch (GameManager.Instance.getFood())
     {
       case 1:
@@ -48,6 +49,12 @@ public class StatDisplayer : MonoBehaviour
 
 
 
+  }
+
+  IEnumerator ButtonCoroutine()
+  {
+      yield return new WaitForSeconds(2.5f);
+      Button.SetActive(true);
   }
 
   // Update is called once per frame

@@ -2405,7 +2405,7 @@ MonoBehaviour:
   _currentLevel: {fileID: 0}
   _inkJSONs:
   - _InkJSONs:
-    - {fileID: 4900000, guid: 3a26d27ebec1829479a651da32e620ae, type: 3}
+    - {fileID: 4900000, guid: e65b99f7b3e8c7748b2311c95339f06a, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 64ee1515febef444da9b813508be96ba, type: 3}
   - _InkJSONs:
