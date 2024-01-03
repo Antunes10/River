@@ -401,7 +401,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01188302, y: -1.3561631}
+  m_Offset: {x: 0.009846926, y: -1.9971976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -412,7 +412,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1444268, y: 1.5592058}
+  m_Size: {x: 2.9923167, y: 0.27713668}
   m_EdgeRadius: 0
 --- !u!114 &5833160010082452519
 MonoBehaviour:
@@ -436,7 +436,7 @@ MonoBehaviour:
   _animController: {fileID: 7708209426673438863}
 --- !u!95 &7708209426673438863
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -453,7 +453,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5081546676131658894
 GameObject:
   m_ObjectHideFlags: 0

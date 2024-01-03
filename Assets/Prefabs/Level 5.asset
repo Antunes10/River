@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c82a0251f0eb345a1d5586cbddca65, type: 3}
   m_Name: Level 5
   m_EditorClassIdentifier: 
-  levelLength: 60
-  backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
-  music: 1
+  levelLength: 80
+  backgrounds: {fileID: 1022511215364492915, guid: 78a3678a69674474380d0661e269e638, type: 3}
+  music: 2
   obstacleList:
   - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}
@@ -33,6 +33,11 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: de7fb87ec6928d34fac60ea0cb8eed97, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   minProb: 1
   maxProb: 3
   rain: 1

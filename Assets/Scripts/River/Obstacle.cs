@@ -8,10 +8,12 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _cooldown;
     [SerializeField] private Sprite _alternateSprite;
+    [SerializeField] private Animator _animController;
 
     public bool _barbed;
     public bool _barrier;
     public bool _debris;
+    public int _animNumber;
 
     private float _timer;
     private float _timeToDetonate;
@@ -31,6 +33,7 @@ public class Obstacle : MonoBehaviour
             _timeToDetonate = Random.Range(4, 6);
             multiplier = 1 / _timeToDetonate / 50;
         }
+        InitiateAnim();
     }
 
     private void Update()
@@ -121,6 +124,28 @@ public class Obstacle : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _inside = false;
+        }
+    }
+
+    public void InitiateAnim()
+    {
+        _animController.SetInteger("Int", _animNumber);
+
+        if(_barbed)
+        {
+            _animController.SetTrigger("BarbedWire");
+        }
+        else if (_barrier)
+        {
+            _animController.SetTrigger("Barrier");
+        }
+        else if (_debris)
+        {
+            return;
+        }
+        else
+        {
+            _animController.SetTrigger("Rock");
         }
     }
 }
