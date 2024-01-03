@@ -695,7 +695,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &201120074
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -712,7 +712,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &201120075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,6 +2329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2397,6 +2399,7 @@ MonoBehaviour:
   _levels:
   - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
+  - {fileID: 11400000, guid: 00df81b11e00fd3458e5ab8cec129da9, type: 2}
   - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
   - {fileID: 11400000, guid: 3e5104b2cf75c154ea0d994f097db5eb, type: 2}
   - {fileID: 11400000, guid: f37f6aa21614281488006c1f11d0c303, type: 2}
@@ -4447,7 +4450,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1612138263
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4464,7 +4467,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1724845794
 GameObject:
   m_ObjectHideFlags: 0
