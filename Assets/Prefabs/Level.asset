@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c82a0251f0eb345a1d5586cbddca65, type: 3}
   m_Name: Level
   m_EditorClassIdentifier: 
-  levelLength: 5
+  levelLength: 30
   backgrounds: {fileID: 1022511215364492915, guid: fd67f3c01e181e149accdf4b4bfcda27, type: 3}
   music: 4
   obstacleList:
-  - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
-  minProb: 10
-  maxProb: 10
+  - {fileID: 6958465596665280448, guid: 395f59e9f4cdc794b85d9e2ab5c5608f, type: 3}
+  - {fileID: 6958465596665280448, guid: e1bc08be2ef8fe441b77e17d71962815, type: 3}
+  minProb: 1
+  maxProb: 2
   rain: 0
   rainInterval: 0
