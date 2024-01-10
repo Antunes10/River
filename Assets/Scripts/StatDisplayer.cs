@@ -29,6 +29,10 @@ public class StatDisplayer : MonoBehaviour
         foodText.text = "High";
         foodText.color = Color.green;
         break;
+      default:
+        foodText.text = "High";
+        foodText.color = Color.green;
+        break;
     }
 
     switch (GameManager.Instance.getHope())
@@ -42,6 +46,10 @@ public class StatDisplayer : MonoBehaviour
         hopeText.color = Color.yellow;
         break;
       case 3:
+        hopeText.text = "High";
+        hopeText.color = Color.green;
+        break;
+      default:
         hopeText.text = "High";
         hopeText.color = Color.green;
         break;

@@ -24,7 +24,9 @@ VAR oakSaved_final = 0
 VAR nimbusSaved_final = 0
 VAR nSaved = 0
 
-VAR nimbusStatus = 2
-
 VAR currentFood = 3
 VAR currentHope = 3
+
+VAR nimbusStatus = 2
+
+
