@@ -217,8 +217,9 @@ public class DialogueManager : MonoBehaviour
       GameManager.Instance.decreaseHope(val);
     });
 
-    currentStory.BindExternalFunction("unlockImages", (int val) =>
+    currentStory.BindExternalFunction("unlockImage", (int val) =>
     {
+      Debug.Log("Unlocking image " + val);
       ExitDialogueMode();
       GameManager.Instance.UnlockImage(val);
     });
