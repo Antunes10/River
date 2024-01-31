@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
     //TODO: remover quando tivermos a logica de desbloquear imagens
     for (int i = 0; i < unlockedImages.Length; i++)
     {
-      unlockedImages[i] = 1;
+      unlockedImages[i] = 0;
     }
   }
 

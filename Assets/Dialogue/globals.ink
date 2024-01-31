@@ -8,7 +8,7 @@ EXTERNAL recruitSparks()
 EXTERNAL recruitNimbus()
 EXTERNAL recruitOak()
 EXTERNAL recruitCotton()
-EXTERNAL unlockImage()
+EXTERNAL unlockImage(val)
 
 VAR choice = ""
 
