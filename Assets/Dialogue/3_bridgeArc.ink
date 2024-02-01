@@ -4,6 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #layout:left:tails_sad #layout:right:sparks_scared_m #background:bridge
+~unlockImage(11)
 A stone bridge appears between the trees, over the river that now narrowed and slowed a bit.
 There were no songs, either by flying birds or climbing mammals.
 Silence was now the primary sound.

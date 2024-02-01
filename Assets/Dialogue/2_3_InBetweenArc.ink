@@ -4,6 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:forest #music:forest
+~unlockImage(8)
 As the sunlight begins to pierce the darkness, also birds start to sing their melody.
 The cold and grey tunnels gives place to a small forest, painted in colours of golden brown, orange and red.
 #speaker:Sparks #portrait:sparks_happy

@@ -4,6 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #background:swamp #speaker: #layout:left:tails_default #layout:right:sparks_default_m
+~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
 The night went by and now the slow river reaches a march an its waters spread throughout the unseen horizon.

@@ -5,6 +5,8 @@ INCLUDE globals.ink
 === main ===
 #speaker: #portrait:narrator #layout:left:default #background:metro
 #portrait:tails_default #layout:middle:tails_default #music:prologue
+~unlockImage(2)
+~unlockImage(18)
 The darkness engulfs the world.
 The water sounds echo inside the underground passage.
 Tails feels claustrophobic.

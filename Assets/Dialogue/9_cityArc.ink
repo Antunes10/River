@@ -5,6 +5,7 @@ INCLUDE globals.ink
 === main ===
 #background:city
 #speaker: #layout:left:oak_scared #layout:middle:tails_scared #layout:right:nimbus_scared_m #layout:sparks:sparks_scared_m
+~unlockImage(17)
 Explosions are heard.
 They seem far away but at the same time too close.
 War is all around in a forest of concrete mountains, where a battle is still taking place.

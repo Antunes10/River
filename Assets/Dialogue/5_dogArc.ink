@@ -5,6 +5,8 @@ INCLUDE globals.ink
 === main ===
 #background:village
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
+~unlockImage(19)
+~unlockImage(13)
 Sun shines.
 The bright rays pierce the dead leaves that cover the shelter and signals the start of a new day.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy

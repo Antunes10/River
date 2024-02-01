@@ -5,6 +5,8 @@ INCLUDE globals.ink
 === main ===
 #background:river
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
+~unlockImage(7)
+~unlockImage(1)
 Hours pass and they reach a wider body of water, surrounded by gravel and bushes.
 Trees block again the skies, as the river sliders inside another forest.
 The wind does not hollow, since the trees block it from entering that green place.

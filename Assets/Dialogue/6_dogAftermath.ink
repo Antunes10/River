@@ -6,6 +6,8 @@ INCLUDE globals.ink
 === main ===
 #background:forest
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
+~unlockImage(12)
+~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rip slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
 #speaker:Nimbus #portrait:nimbus_default
