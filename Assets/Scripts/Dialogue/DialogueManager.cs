@@ -34,6 +34,8 @@ public class DialogueManager : MonoBehaviour
   [SerializeField] private Animator middleLeftAnimator;
   [SerializeField] private Animator middleRightAnimator;
   [SerializeField] private Animator backgroundAnimator;
+  [SerializeField] private Animator popupAnimator;
+  private GameObject popup;
 
   private Animator layoutAnimator;
 
@@ -220,6 +222,7 @@ public class DialogueManager : MonoBehaviour
     currentStory.BindExternalFunction("unlockImage", (int val) =>
     {
       Debug.Log("Unlocking image " + val);
+      ShowPopup();
       ExitDialogueMode();
       GameManager.Instance.UnlockImage(val);
     });
@@ -493,6 +496,10 @@ public class DialogueManager : MonoBehaviour
       Debug.LogWarning("Ink Variable was null: " + variableName);
     }
     return variableValue;
+  }
+
+  private void ShowPopup() {
+    popupAnimator.Play("FadeIn");
   }
 
 }
