@@ -77,16 +77,25 @@ public class unlockablesManager : MonoBehaviour
     {
         if (uiImageBig.gameObject.activeSelf)
         {
-            if (GameManager.Instance.unlockedImages[currIndex + 1] == 1)
-            {
-                uiImageBig.GetComponent<Image>().sprite = images[currIndex + 1];
-            }
-            else
-            {
-                uiImageBig.GetComponent<Image>().sprite = lockedImage;
-            }
+            Debug.Log(currIndex);
+            int lastUnlockedImage = currIndex;
 
-            currIndex++;
+            while (currIndex < images.Length - 1) {
+                if (GameManager.Instance.unlockedImages[currIndex + 1] == 1)
+                {
+                    AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
+                    uiImageBig.GetComponent<Image>().sprite = images[currIndex + 1];
+                    currIndex++;
+                    break;
+                }
+                currIndex++;
+
+                if (currIndex == images.Length -1) {
+                    currIndex = lastUnlockedImage;
+                    return;
+                }
+            }
+        
 
             if (currIndex != 0) previousButton.gameObject.SetActive(true);
             if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
@@ -140,17 +149,26 @@ public class unlockablesManager : MonoBehaviour
     public void previousPage()
     {
         if (uiImageBig.gameObject.activeSelf)
-        {
-            if (GameManager.Instance.unlockedImages[currIndex - 1] == 1)
+        {   
+            int lastUnlockedImage = currIndex;
+
+            while (currIndex > 0)
             {
-                uiImageBig.GetComponent<Image>().sprite = images[currIndex - 1];
-            }
-            else
-            {
-                uiImageBig.GetComponent<Image>().sprite = lockedImage;
+                Debug.Log(currIndex);
+                if (GameManager.Instance.unlockedImages[currIndex - 1] == 1)
+                {
+                    AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
+                    uiImageBig.GetComponent<Image>().sprite = images[currIndex - 1];
+                    currIndex--;
+                    break;
+                }
+                currIndex--;
             }
 
-            currIndex--;
+            if (currIndex == 0) {
+                currIndex = lastUnlockedImage;
+                return;
+            }
 
             if (currIndex != images.Length - 1) nextButton.gameObject.SetActive(true);
             if (currIndex == 0) previousButton.gameObject.SetActive(false);
