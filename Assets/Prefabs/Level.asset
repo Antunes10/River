@@ -16,8 +16,8 @@ MonoBehaviour:
   backgrounds: {fileID: 1022511215364492915, guid: fd67f3c01e181e149accdf4b4bfcda27, type: 3}
   music: 4
   obstacleList:
-  - {fileID: 6958465596665280448, guid: 395f59e9f4cdc794b85d9e2ab5c5608f, type: 3}
-  - {fileID: 6958465596665280448, guid: e1bc08be2ef8fe441b77e17d71962815, type: 3}
+  - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
+  - {fileID: 3421729367470482422, guid: de7fb87ec6928d34fac60ea0cb8eed97, type: 3}
   minProb: 1
   maxProb: 2
   rain: 0
