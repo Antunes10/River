@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool _hasCotton;
     [SerializeField] private bool _hasSparks;
 
+    [SerializeField] private SpriteRenderer _indicator;
+    [SerializeField] private Sprite[] _indicatorImages;
+
+
     public HelmetState _helmetState;
     private bool _isRaining;
 
@@ -224,21 +228,27 @@ public class PlayerController : MonoBehaviour
     IEnumerator GetStunned()
     {
         _helmetState = HelmetState.stunned;
+        _indicator.sprite = _indicatorImages[0];
+        _indicator.enabled = true;
         this.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3);
         this.GetComponent<SpriteRenderer>().color = Color.white;
+        _indicator.enabled = false;
         _helmetState = HelmetState.normal;
     }
 
     IEnumerator GetWater()
     {
         _helmetState = HelmetState.water;
+        _indicator.sprite = _indicatorImages[1];
+        _indicator.enabled = true;
         _playeranimations._animController.SetTrigger("GettingWater");
         this.GetComponent<SpriteRenderer>().color = Color.cyan;
         yield return new WaitForSeconds(3);
         if (_helmetState.Equals(HelmetState.water))
         {
             this.GetComponent<SpriteRenderer>().color = Color.white;
+            _indicator.enabled = false;
             _helmetState = HelmetState.normal;
         }
     }
