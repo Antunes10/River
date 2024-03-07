@@ -26,43 +26,7 @@ public class unlockablesManager : MonoBehaviour
 
     void Start()
     {
-        uiImageBig.gameObject.SetActive(false);
-        previousButton.gameObject.SetActive(false);
-
-        if (GameManager.Instance.unlockedImages[0] == 1)
-        {
-            uiImage1.GetComponent<Image>().sprite = images[0];
-        }
-        else
-        {
-            uiImage1.GetComponent<Image>().sprite = lockedImage;
-        }
-        if (GameManager.Instance.unlockedImages[1] == 1)
-        {
-            uiImage2.GetComponent<Image>().sprite = images[1];
-        }
-        else
-        {
-            uiImage2.GetComponent<Image>().sprite = lockedImage;
-        }
-        if (GameManager.Instance.unlockedImages[2] == 1)
-        {
-            uiImage3.GetComponent<Image>().sprite = images[2];
-        }
-        else
-        {
-            uiImage3.GetComponent<Image>().sprite = lockedImage;
-        }
-        if (GameManager.Instance.unlockedImages[3] == 1)
-        {
-            uiImage4.GetComponent<Image>().sprite = images[3];
-        }
-        else
-        {
-            uiImage4.GetComponent<Image>().sprite = lockedImage;
-        }
-
-        index = 4;
+        resetUnlockablesMenu();
     }
 
     void Update()
@@ -304,5 +268,45 @@ public class unlockablesManager : MonoBehaviour
             previousButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
         }
+    }
+
+    public void resetUnlockablesMenu() {
+        uiImageBig.gameObject.SetActive(false);
+        previousButton.gameObject.SetActive(false);
+
+        if (GameManager.Instance.unlockedImages[0] == 1)
+        {
+            uiImage1.GetComponent<Image>().sprite = images[0];
+        }
+        else
+        {
+            uiImage1.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[1] == 1)
+        {
+            uiImage2.GetComponent<Image>().sprite = images[1];
+        }
+        else
+        {
+            uiImage2.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[2] == 1)
+        {
+            uiImage3.GetComponent<Image>().sprite = images[2];
+        }
+        else
+        {
+            uiImage3.GetComponent<Image>().sprite = lockedImage;
+        }
+        if (GameManager.Instance.unlockedImages[3] == 1)
+        {
+            uiImage4.GetComponent<Image>().sprite = images[3];
+        }
+        else
+        {
+            uiImage4.GetComponent<Image>().sprite = lockedImage;
+        }
+
+        index = 4;
     }
 }
