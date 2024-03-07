@@ -37,11 +37,52 @@ public class unlockablesManager : MonoBehaviour
         }
     }
 
+    private bool isLastImage(int currIndex, int way)
+    {
+        if (way == 0)
+        {
+            if (currIndex == 0)
+            {
+                return true;
+            }
+
+            for (int i = currIndex-1; i >= 0; i--)
+            {
+                if (GameManager.Instance.unlockedImages[i] == 1)
+                {
+                    return false;
+                }
+            }
+            Debug.Log("É a ultima à esquerda");
+            return true;
+        }
+        else if (way == 1)
+        {
+            if (currIndex == GameManager.Instance.unlockedImages.Length)
+            {
+                return true;
+            }
+
+            for (int i = currIndex+1; i < GameManager.Instance.unlockedImages.Length; i++)
+            {
+                if (GameManager.Instance.unlockedImages[i] == 1)
+                {
+                    return false;
+                }
+            }
+            Debug.Log("É a ultima à direita");
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void nextPage()
     {
         if (uiImageBig.gameObject.activeSelf)
         {
-            Debug.Log(currIndex);
             int lastUnlockedImage = currIndex;
 
             while (currIndex < images.Length - 1) {
@@ -49,6 +90,12 @@ public class unlockablesManager : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
                     uiImageBig.GetComponent<Image>().sprite = images[currIndex + 1];
+
+                    if (isLastImage(currIndex+1, 1))
+                    {
+                        nextButton.gameObject.SetActive(false);
+                    }
+
                     currIndex++;
                     break;
                 }
@@ -63,6 +110,8 @@ public class unlockablesManager : MonoBehaviour
 
             if (currIndex != 0) previousButton.gameObject.SetActive(true);
             if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
+
+            index = currIndex - currIndex%4;
 
             return;
         }
@@ -113,7 +162,7 @@ public class unlockablesManager : MonoBehaviour
     public void previousPage()
     {
         if (uiImageBig.gameObject.activeSelf)
-        {   
+        {
             int lastUnlockedImage = currIndex;
 
             while (currIndex > 0)
@@ -123,6 +172,12 @@ public class unlockablesManager : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
                     uiImageBig.GetComponent<Image>().sprite = images[currIndex - 1];
+
+                    if (isLastImage(currIndex-1, 0))
+                    {
+                        previousButton.gameObject.SetActive(false);
+                    }
+
                     currIndex--;
                     break;
                 }
@@ -136,6 +191,8 @@ public class unlockablesManager : MonoBehaviour
 
             if (currIndex != images.Length - 1) nextButton.gameObject.SetActive(true);
             if (currIndex == 0) previousButton.gameObject.SetActive(false);
+
+            index = currIndex - currIndex%4;
 
             return;
         }
@@ -201,15 +258,14 @@ public class unlockablesManager : MonoBehaviour
             }
         }
 
-        if (currIndex != 0 && currIndex != images.Length - 1)
+        if (isLastImage(currIndex, 0))
         {
-            previousButton.gameObject.SetActive(true);
-            nextButton.gameObject.SetActive(true);
+            previousButton.gameObject.SetActive(false);
         }
-        else
+
+        if (isLastImage(currIndex, 1))
         {
-            if (currIndex == 0) previousButton.gameObject.SetActive(false);
-            if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
+            nextButton.gameObject.SetActive(false);
         }
 
     }
