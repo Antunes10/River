@@ -106,7 +106,7 @@ MonoBehaviour:
   _barbed: 1
   _barrier: 0
   _debris: 0
-  _animNumber: 0
+  _animNumber: 2
 --- !u!95 &2485571559706725148
 Animator:
   serializedVersion: 5
