@@ -100,7 +100,7 @@ public class Obstacle : MonoBehaviour
         {
             if (collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
             {
-                this.GetComponent<SpriteRenderer>().sprite = _alternateSprite;
+                _animController.SetTrigger("Ripped");
                 GetComponent<Collider2D>().enabled = false;
             }
             else
@@ -130,6 +130,7 @@ public class Obstacle : MonoBehaviour
     public void InitiateAnim()
     {
         _animController.SetInteger("Int", _animNumber);
+        _animController.SetBool("Ripped", false);
 
         if(_barbed)
         {
