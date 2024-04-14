@@ -83,6 +83,14 @@ public class Obstacle : MonoBehaviour
             return;
         }
 
+        if (collision.CompareTag("NimbusBeak") && _barrier)
+        {
+            AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.clothRip1, (int)AudioManager.SFXSounds.clothRip2);
+            _animController.SetTrigger("Ripped");
+            GetComponent<Collider2D>().enabled = false;
+            return;
+        }
+
         //Verifica se é o player
         if (!collision.CompareTag("Player"))
         {
@@ -94,20 +102,15 @@ public class Obstacle : MonoBehaviour
         //Verifica qual o tipo de obstaculo e aplica os efeitos
         if (_barbed)
         {
+            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.wireHit);
             collision.GetComponent<PlayerController>().HitBarbed();
         }
         else if (_barrier)
         {
-            if (collision.GetComponent<PlayerController>()._helmetState.Equals(PlayerController.HelmetState.nimbus))
-            {
-                _animController.SetTrigger("Ripped");
-                GetComponent<Collider2D>().enabled = false;
-            }
-            else
-            {
-                collision.GetComponent<PlayerController>().HitRock(20);
-                collision.GetComponent<PlayerController>().HitBarbed();
-            }
+            AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.rockHit1, (int)AudioManager.SFXSounds.rockHit3);
+            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.clothHit);
+            collision.GetComponent<PlayerController>().HitRock(20);
+            collision.GetComponent<PlayerController>().HitBarbed();
         }
         else if(_debris)
         {
@@ -115,6 +118,7 @@ public class Obstacle : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.rockHit1, (int)AudioManager.SFXSounds.rockHit3);
             collision.GetComponent<PlayerController>().HitRock(20);
         }
     }

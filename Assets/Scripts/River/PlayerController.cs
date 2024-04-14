@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private SpriteRenderer _indicator;
     [SerializeField] private Sprite[] _indicatorImages;
+    [SerializeField] private BoxCollider2D _nimbusCollider;
 
 
     public HelmetState _helmetState;
@@ -153,7 +154,7 @@ public class PlayerController : MonoBehaviour
         Add water to the water slider
         Checks if the player lost the game
         ====================================*/
-        AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.rockHit1, (int)AudioManager.SFXSounds.rockHit3);
+        
         _invulnerable = true;
         _playeranimations.HelmetHit();
         _slider.value += amount;
@@ -167,7 +168,6 @@ public class PlayerController : MonoBehaviour
     {
         if (!_helmetState.Equals(HelmetState.stunned))
         {
-            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.wireHit);
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             _playeranimations._animController.SetBool("Oak", false);
             _playeranimations._animController.SetBool("Nimbus", false);
@@ -200,12 +200,14 @@ public class PlayerController : MonoBehaviour
 
     void UseNimbus()
     {
+        _nimbusCollider.enabled = true;
         _helmetState = HelmetState.nimbus;
         _playeranimations._animController.SetBool("Nimbus", true);
     }
 
     void StopUseNimbus()
     {
+        _nimbusCollider.enabled = false;
         _helmetState = HelmetState.normal;
         _playeranimations._animController.SetBool("Nimbus", false);
     }
