@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
     private GameManager _gameManager;
 
     private bool _gamePaused;
+    private bool _gameLost;
     private bool _alreadyVic;
 
     private bool _rain;
@@ -86,6 +87,11 @@ public class LevelManager : MonoBehaviour
        Enables the right UI or HUD
        ============================================*/
 
+        if (_gameLost)
+        {
+            return;
+        }
+
         _gamePaused = !_gamePaused;
 
         if (_gamePaused)
@@ -111,6 +117,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoseGame()
     {
+        _gameLost = true;
         _loseScreen.SetActive(true);
     }
 
