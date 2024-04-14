@@ -113,14 +113,15 @@ public class AudioManager : MonoBehaviour
         rockHit1 = 3, rockHit2 = 4, rockHit3 = 5,
         wireHit = 6,
         clothHit = 7,
-        debrisHit = 8,
-        debrisFalling = 9,
-        pouringWaterOut = 10,
-        rain = 11,
-        machineGun = 12,
-        explosion = 13,
-        RiverVictory = 14,
-        RiverDefeat = 15
+        clothRip1, clothRip2,
+        debrisHit,
+        debrisFalling,
+        pouringWaterOut,
+        rain,
+        machineGun,
+        explosion,
+        RiverVictory,
+        RiverDefeat
     }
 
     #region Singleton
