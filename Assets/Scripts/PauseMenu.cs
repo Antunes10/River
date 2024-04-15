@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         isPaused = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
