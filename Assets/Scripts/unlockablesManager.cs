@@ -53,7 +53,7 @@ public class unlockablesManager : MonoBehaviour
                     return false;
                 }
             }
-            Debug.Log("É a ultima à esquerda");
+
             return true;
         }
         else if (way == 1)
@@ -70,7 +70,7 @@ public class unlockablesManager : MonoBehaviour
                     return false;
                 }
             }
-            Debug.Log("É a ultima à direita");
+
             return true;
         }
         else
@@ -110,7 +110,6 @@ public class unlockablesManager : MonoBehaviour
 
             if (currIndex != 0) previousButton.gameObject.SetActive(true);
             if (currIndex == images.Length - 1) nextButton.gameObject.SetActive(false);
-
             index = currIndex - currIndex%4;
 
             return;
@@ -155,7 +154,6 @@ public class unlockablesManager : MonoBehaviour
         }
 
         index += 4;
-
         if (index == images.Length) nextButton.gameObject.SetActive(false);
     }
 
@@ -167,7 +165,6 @@ public class unlockablesManager : MonoBehaviour
 
             while (currIndex > 0)
             {
-                Debug.Log(currIndex);
                 if (GameManager.Instance.unlockedImages[currIndex - 1] == 1)
                 {
                     AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.nextPage);
@@ -191,7 +188,6 @@ public class unlockablesManager : MonoBehaviour
 
             if (currIndex != images.Length - 1) nextButton.gameObject.SetActive(true);
             if (currIndex == 0) previousButton.gameObject.SetActive(false);
-
             index = currIndex - currIndex%4;
 
             return;
@@ -324,6 +320,8 @@ public class unlockablesManager : MonoBehaviour
             previousButton.gameObject.SetActive(true);
             nextButton.gameObject.SetActive(true);
         }
+        
+        index = (currIndex/4)*4 + 4;
     }
 
     public void resetUnlockablesMenu() {
