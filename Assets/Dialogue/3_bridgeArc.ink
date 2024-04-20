@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #layout:left:tails_sad #layout:right:sparks_scared_m #background:bridge
-~unlockImage(11)
+~unlockImage(2)
 A stone bridge appears between the trees, over the river that now narrowed and slowed a bit.
 There were no songs, either by flying birds or climbing mammals.
 Silence was now the primary sound.
@@ -311,6 +311,7 @@ Tails understood his reservation.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 You are welcome to.
 #portrait:tails_default #layout:left:tails_default
+~unlockImage(3)
 The river kept on flowing.
 Taking them away from the forest.
 Into the far away land they were searching for.

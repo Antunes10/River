@@ -256,12 +256,20 @@ public class unlockablesManager : MonoBehaviour
 
         if (isLastImage(currIndex, 0))
         {
+            Debug.Log("111111");
             previousButton.gameObject.SetActive(false);
+        }
+        else {
+            previousButton.gameObject.SetActive(true);
         }
 
         if (isLastImage(currIndex, 1))
         {
+            Debug.Log("222222");
             nextButton.gameObject.SetActive(false);
+        }
+        else {
+            nextButton.gameObject.SetActive(true);
         }
 
     }
