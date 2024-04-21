@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     private GameManager _gameManager;
 
     private bool _gamePaused;
-    private bool _gameLost;
+    public bool _gameLost;
     private bool _alreadyVic;
 
     private bool _rain;

@@ -120,10 +120,10 @@ public class PlayerController : MonoBehaviour
         }
 
         //Pause Game
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             _levelManager.PauseUnpause();
-        }
+        }*/
     }
 
     private void FixedUpdate()
