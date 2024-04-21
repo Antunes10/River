@@ -5,7 +5,6 @@ INCLUDE globals.ink
 === main ===
 #speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:village #music:forest
 ~unlockImage(3)
-~changeScene("Credits")
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
@@ -141,7 +140,7 @@ Here at least the wind didn’t bite them.
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 
 ->END
 
@@ -266,7 +265,7 @@ Or perhaps it was best if Tails spent some time with his companions.
     -
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 
 ->END
 
@@ -376,7 +375,7 @@ With a smile and a small goodbye, the woodpecker goes to lie down on a small pil
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 
 ->DONE
 
@@ -431,7 +430,7 @@ The bird confirms with a small nod, and they go back to the warmth of the shelte
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 
 ->DONE
 

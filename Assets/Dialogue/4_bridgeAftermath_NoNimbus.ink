@@ -5,7 +5,6 @@ INCLUDE globals.ink
 === main ===
 #speaker: #layout:left:tails_default #layout:right:sparks_sad_m #background:village
 ~unlockImage(9)
-~changeScene("Credits")
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
@@ -256,7 +255,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     }
 -
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 ->END
 
 === nimbusLeftBehind ===
@@ -285,7 +284,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     Tails turns her back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("Credits")
+    ~changeScene("EndDayScene")
     ->DONE
 +[You both are the ones that matter]
     #speaker:Tails #portrait:tails_sad
@@ -326,7 +325,7 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 ->END
 
 === nimbusDead ===
@@ -349,7 +348,7 @@ The mouse gives a little kiss to the firefly’s forehead and goes back to the n
     Tails turns the back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("Credits")
+    ~changeScene("EndDayScene")
     ->DONE
     
 +[It wasn’t your fault.]
@@ -395,7 +394,7 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~changeScene("EndDayScene")
 ->END
 
 === endDialogue ===

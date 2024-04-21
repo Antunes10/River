@@ -164,9 +164,8 @@ public class GameManager : MonoBehaviour
   {
     _gs.currentInkIndex++;
     //Changing to Bridge Aftermath Scene OR Oak Scene
-    if (_gs.currentInkIndex == 3 || _gs.currentInkIndex == 4)
+    if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5)
     {
-      Debug.Log("Coisas");
       if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
       else { _gs.dialogueIndex = 0; }
     }
