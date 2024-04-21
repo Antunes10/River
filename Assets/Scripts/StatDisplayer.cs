@@ -5,9 +5,9 @@ using TMPro;
 
 public class StatDisplayer : MonoBehaviour
 {
-
   [SerializeField] private TextMeshProUGUI foodText;
   [SerializeField] private TextMeshProUGUI hopeText;
+  [SerializeField] private TextMeshProUGUI dayText;
   [SerializeField] public GameObject Button;
   GameManager gm;
 
@@ -15,6 +15,19 @@ public class StatDisplayer : MonoBehaviour
   void Start()
   {
     StartCoroutine(ButtonCoroutine());
+    switch(GameManager.Instance.GetCurrentInk()) 
+    {
+      case 4:
+        dayText.text = "End of Day 1";
+        break;
+      case 7:
+        dayText.text = "End of Day 2";
+        break;  
+      default:
+        dayText.text = "ERROR";
+        break;   
+    }
+
     switch (GameManager.Instance.getFood())
     {
       case 1:
@@ -54,8 +67,6 @@ public class StatDisplayer : MonoBehaviour
         hopeText.color = Color.green;
         break;
     }
-
-
 
   }
 

@@ -182,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: End of Day 1
+  m_text: 'End of Day '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 6713115d49d24e049af0b8c3d96aa681, type: 2}
@@ -880,6 +880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodText: {fileID: 1671330915}
   hopeText: {fileID: 129733705}
+  dayText: {fileID: 3379491}
   Button: {fileID: 1818957226}
 --- !u!4 &474255101
 Transform:

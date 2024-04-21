@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     return _gs.hasCotton;
   }
 
+  public int GetCurrentInk() 
+  {
+    return _gs.currentInkIndex;
+  }
+
   public int getFood() { return _gs.currentFood; }
   public int getHope() { return _gs.currentHope; }
 
@@ -170,7 +175,7 @@ public class GameManager : MonoBehaviour
       else { _gs.dialogueIndex = 0; }
     }
     //Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-    else if (_gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10)
+    else if (_gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10 || _gs.currentInkIndex == 11)
     {
       if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
       else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }

@@ -12,20 +12,20 @@ From few meters wide, it transforms into several hundred, with no unified flow o
 #layout:middle:tails_sad #layout:right:sparks_sad_m
 A scent of death hangs in the air.
 #speaker:Tails #portrait:tails_sad
-Tails: I cannot see where we are going.
-Tails: I no longer know where’s West.
+I cannot see where we are going.
+I no longer know where’s West.
 #speaker:
 They all seem uncertain and apprehensive about the march they now traverse.
 #speaker:Sparks #portrait:sparks_sad
-Sparks: My light can’t make the fog go away…
-Sparks: And the water in the air makes my wings heavy…
+My light can’t make the fog go away…
+And the water in the air makes my wings heavy…
 #speaker:Tails #portrait:tails_sad
-Tails: Stay inside the shell, Sparks. You’re safe here with us.
-Tails: We need to stay together.
+Stay inside the shell, Sparks. You’re safe here with us.
+We need to stay together.
 #speaker:Nimbus #portrait:nimbus_default 
-Nimbus: This smell is awful, where is it coming from?
+This smell is awful, where is it coming from?
 #speaker:Tails #portrait:tails_sad
-Tails: I believe we do not want to know.
+I believe we do not want to know.
 #speaker:
 They try to keep going in one direction but make no visible progress.
 A tree appears.
@@ -33,11 +33,11 @@ A dead tree.
 Twisted and grey, as if choked by the murky waters and mud that surrounds it.
 They all feel an icy shiver down their spines.
 #speaker:Sparks #portrait:sparks_sad
-Sparks: Hmmm,I don’t wanna be here…
+Hmmm,I don’t wanna be here…
 #speaker: 
 The others stay as apprehensive, looking at the macabre.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: There is a crow up there.
+There is a crow up there.
 #speaker:
 The woodpecker points up with his beak.
 A single black bird stands atop the tree, in one of its longer branches.
@@ -48,10 +48,10 @@ Looking around with dark eyes.
     #speaker:
     Tails pushes the helmet forward and away from the dead tree.
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: What are you doing? Don’t you want to ask him for help?
+    What are you doing? Don’t you want to ask him for help?
     #speaker:Tails #portrait:tails_sad
-    Tails: I rather not.
-    Tails: I sense he is not to be trusted.
+    I rather not.
+    I sense he is not to be trusted.
     #speaker:
     No one seems to disagree with him.
     And so, the helmet keeps daring through the thick mist that surrounds the world.
@@ -60,12 +60,12 @@ Looking around with dark eyes.
     And nothing.
     Just mud, drowned brushes, and a scent of death.
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: We are going in circles. What if we just wait out this mist?
+    We are going in circles. What if we just wait out this mist?
     #speaker:Tails #portrait:tails_sad
-    Tails: Do you think it will go away?
+    Do you think it will go away?
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: I’ve never known a mist to stay for too long.
-    Nimbus: Besides, we might be heading towards something dangerous we can’t see.
+    I’ve never known a mist to stay for too long.
+    Besides, we might be heading towards something dangerous we can’t see.
     #speaker:
     The mouse looks around, but none of them holds a better answer.
     
@@ -78,12 +78,12 @@ Looking around with dark eyes.
     They stop right under it.
     The crow looks down unsurprised.
     #speaker:Tails #portrait:tails_sad
-    Tails: Hey there, friend!
+    Hey there, friend!
     #speaker:
     The bird leans downwards and takes a look at them.
     #speaker:Tails #portrait:tails_sad
-    Tails: Could you help us get out of this bog?
-    Tails: We can’t figure out where’s West.
+    Could you help us get out of this bog?
+    We can’t figure out where’s West.
     #speaker:
     The bird’s wings open wide, making it look a lot bigger than before.
     #layout:right:crow_default_m #layout:middle_left:sparks_sad
@@ -94,7 +94,7 @@ Looking around with dark eyes.
     #speaker:
     His voice is harsh and deep.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Tails: We got lost, thanks to this sly mist. And we are trying to find our way West.
+    We got lost, thanks to this sly mist. And we are trying to find our way West.
     TODO:colocar os fundos com e sem o corvo quando ele aparece e desaparece
     #speaker:Crow #portrait:crow_default
     Crow: I see…
@@ -103,7 +103,7 @@ Looking around with dark eyes.
     #portrait:crow_menacing #layout:right:crow_menacing_m
     Crow: I helped them all.
     #speaker:Nimbus #portrait:nimbus_default #layout:left:nimbus_default
-    Nimbus: That’s great. Can you help us too?
+    That’s great. Can you help us too?
     #speaker: #layout:right:crow_default_m
     The crow looks at each of them individually.
     #speaker:Crow #portrait:crow_menacing #layout:right:crow_menacing_m
@@ -112,19 +112,19 @@ Looking around with dark eyes.
     He opens his wings again and starts flying away.
     The mouse loses no time getting back in the water and following the black bird.
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: He’s going left. We were going in the wrong direction.
+    He’s going left. We were going in the wrong direction.
     #speaker:
     Some faces lighten up with the new route.
     Some time passes as the bird keeps flying above them, within voice reach.
     #speaker:Tails #portrait:tails_default
-    Tails: Is it much further?
+    Is it much further?
     #speaker:
     The crow looks around.
     #speaker:Crow #portrait:crow_default
     Crow: Just a bit.
     Crow: This swamp covers all the land.
     #speaker:Tails #portrait:tails_default
-    Tails: Is it that big?
+    Is it that big?
     #speaker:
     The bird laughs.
     #speaker:Crow #portrait:crow_menacing
@@ -133,7 +133,7 @@ Looking around with dark eyes.
     Crow: Grey and mud fills the world.
     Crow: As bodies pile up East and are brough by the murky river.
     #speaker:Sparks #portrait:sparks_sad
-    Sparks: But there is an enchanted land in the West, right?
+    But there is an enchanted land in the West, right?
     #speaker:
     The bird laughs again.
     #speaker:Crow #portrait:crow_menacing
@@ -145,34 +145,34 @@ Looking around with dark eyes.
     Hope is drowned by the blackness of the bird’s figure.
     They see no end to the swamp.
     #speaker:Sparks #portrait:sparks_sad
-    Sparks: I’m feeling weird in my tummy, Mr. Tails.
+    I’m feeling weird in my tummy, Mr. Tails.
     #speaker:Tails #portrait:tails_sad
-    Tails: What do you mean? Are you sick?
+    What do you mean? Are you sick?
     #speaker:Sparks #portrait:sparks_sad
-    Sparks: I wanna go back.
+    I wanna go back.
     #speaker:Tails #portrait:tails_sad
-    Tails: It’s going to be alright, Sparks, just a bit further and we’ll be out of here.
+    It’s going to be alright, Sparks, just a bit further and we’ll be out of here.
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: Don’t worry Sparks, he flies, he can see the way better than us.
-    Nimbus: And he said this is his sawm, so he must know it well.
+    Don’t worry Sparks, he flies, he can see the way better than us.
+    And he said this is his sawm, so he must know it well.
     #speaker:
     Tails gets pensative.
     #speaker:Tails #portrait:tails_sad
-    Tails: Who would want to stay in a place like this?
+    Who would want to stay in a place like this?
     #speaker:Nimbus #portrait:nimbus_default
-    Nimbus: Perhaps he’s staying to help stranded animals, like the otter we met the other day.
+    Perhaps he’s staying to help stranded animals, like the otter we met the other day.
     #speaker:Sparks #portrait:sparks_default
-    Sparks: Hazel was nice… this crow is not nice…
+    Hazel was nice… this crow is not nice…
     #speaker:
     Nimbus understands the little bug’s words and looks again at the skies, changing his mind about the situation.
     Tails’ stick gets stuck in the mud and the helmet is brought to a halt.
     The waters have turned to black mud.
     A sticky and shifty mud.
-    Nimbus: Hey! Crow! We are stuck.
+    Hey! Crow! We are stuck.
     But the flying guide is nowhere to be seen.
     Suddenly the helmet starts to sink.
     #speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
-    Tails: This is not mud, this is oil!
+    This is not mud, this is oil!
     #speaker: #layout:left:nimbus_scared
     They all scream.
     Slowly the helmet starts to sink in the tar pit.
@@ -210,10 +210,10 @@ TODO: change to dead scene
 ~decreaseFood(1)
 
 The mouse returns inside.
-Nimbus: Any changes?
+Any changes?
 He shakes his head.
-Tails: It’s fine, let’s eat something while we wait.
-Tails: Here we are safe from the cold.
+It’s fine, let’s eat something while we wait.
+Here we are safe from the cold.
 They all agree and start munching away their anxiety and hunger.
 Time passes.
 And again, the mouse goes to the top.
@@ -227,15 +227,15 @@ TODO:change to dead scene
 -> END
 
 === Wait ===
-Tails: Let’s play safe.
+Let’s play safe.
 The mouse stores the stick inside and sits comfortably.
 The others also take their place.
-Sparks: Are we going to stay here too long?
-Tails: Just until the mist starts to disappear.
-Sparks: It’s a bit cold.
+Are we going to stay here too long?
+Just until the mist starts to disappear.
+It’s a bit cold.
 The mouse gets closer to the bug and embraces her.
-Tails: Is it better now?
-Sparks: Much better!
+Is it better now?
+Much better!
 Time passes.
 Finally, tired of waiting, Tails peaks outside.
 The mist hasn’t disappeared.
@@ -244,7 +244,7 @@ The mist hasn’t disappeared.
 
 === RiskIt ===
 Tails had the feeling they would starve if they stayed in that forsaken place.
-Tails: We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
+We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
 Apprehension was all around, but no other animal voiced a better option.
 The mouse took out his faithful stick and pushed the helmet forwards.
 On mud and murky waters, they travel.
@@ -257,9 +257,9 @@ And the only thing getting stronger is the smell of death.
 The shell gets stuck.
 Tails perches on the helmet’s border to see what is holding it down and his eyes widen.
 A dead human blocks the way.
-Nimbus: Is everything alright?
-Tails: Yeah, yeah…
-Tails: Don’t worry, you can stay there.
+Is everything alright?
+Yeah, yeah…
+Don’t worry, you can stay there.
 He does is best to avoid sharing the horror he is seeing.
 With some effort he frees the helmet and goes around the body.
 The mist starts to dissipate and a terrifying image lays before the small mouse’s eyes.
@@ -272,17 +272,17 @@ Minutes turn to years.
 Until finally a huge shadow obscures them and everything around.
 A huge object before them, towers the waters, covering the sun behind.
 The rest of the group notices the sudden darkness and emerges from inside the helmet.
-Nimbus: What in the…
+What in the…
 A huge building appears from inside the mist.
 Bigger than any tree they had seen.
 It has huge scars on his body, with half its structure already collapsed.
 And another building follows behind.
 And another, and another…
-Nimbus: This is not a swamp…
-Nimbus: This is a city…
+This is not a swamp…
+This is a city…
 Shock and awe.
-Tails: The river flooded an entire city…
-Tails: Was it them and their war?
+The river flooded an entire city…
+Was it them and their war?
 No animal in this world could answer that question.
 No animal in this world had seen what they were about to…
 A city flooded by waters that carried the dead with it.
