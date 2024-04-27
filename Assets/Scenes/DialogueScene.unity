@@ -5319,6 +5319,7 @@ MonoBehaviour:
   - {fileID: 466569559}
   - {fileID: 1839180060}
   - {fileID: 1374127672}
+  pauseMenuUI: {fileID: 174921247}
 --- !u!114 &1588935541
 MonoBehaviour:
   m_ObjectHideFlags: 0
