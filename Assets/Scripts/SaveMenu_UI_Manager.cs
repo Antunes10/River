@@ -11,6 +11,8 @@ public class SaveMenu_UI_Manager : MonoBehaviour
 {
     [SerializeField]
     private Button[] _loadButtons;
+    [SerializeField]
+    private TextMeshProUGUI[] _chapterTexts;
 
     void Start()
     {
@@ -32,7 +34,7 @@ public class SaveMenu_UI_Manager : MonoBehaviour
 
                 button.enabled = true;
                 button.GetComponentInChildren<TextMeshProUGUI>().text = _gs.date;
-
+                _chapterTexts[number].text = "Chapter " + (_gs.currentInkIndex + 1);
             }
 
             Initialization(button, number);
