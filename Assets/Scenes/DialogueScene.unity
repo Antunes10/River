@@ -5333,7 +5333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 174921247}
-  saveMenuUi: {fileID: 1510742517}
+  saveMenuUI: {fileID: 1510742517}
+  loadMenuUI: {fileID: 2032329218}
 --- !u!1 &1674323513
 GameObject:
   m_ObjectHideFlags: 0
