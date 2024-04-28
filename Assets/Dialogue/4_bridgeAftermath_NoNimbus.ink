@@ -255,7 +255,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     }
 -
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 ->END
 
 === nimbusLeftBehind ===
@@ -284,7 +284,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     Tails turns her back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("EndDayScene")
+    ~changeScene("Credits")
     ->DONE
 +[You both are the ones that matter]
     #speaker:Tails #portrait:tails_sad
@@ -325,7 +325,7 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 ->END
 
 === nimbusDead ===
@@ -348,7 +348,7 @@ The mouse gives a little kiss to the firefly’s forehead and goes back to the n
     Tails turns the back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("EndDayScene")
+    ~changeScene("Credits")
     ->DONE
     
 +[It wasn’t your fault.]
@@ -394,7 +394,7 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 ->END
 
 === endDialogue ===

@@ -140,7 +140,7 @@ Here at least the wind didn’t bite them.
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 
 ->END
 
@@ -265,7 +265,7 @@ Or perhaps it was best if Tails spent some time with his companions.
     -
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 
 ->END
 
@@ -375,7 +375,7 @@ With a smile and a small goodbye, the woodpecker goes to lie down on a small pil
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 
 ->DONE
 
@@ -430,7 +430,7 @@ The bird confirms with a small nod, and they go back to the warmth of the shelte
 
 ~currentFood = currentFood - 1
 // TODO: change this back to end day scene
-~changeScene("EndDayScene")
+~changeScene("Credits")
 
 ->DONE
 
