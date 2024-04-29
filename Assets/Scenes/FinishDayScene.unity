@@ -2243,6 +2243,7 @@ GameObject:
   - component: {fileID: 2114175131}
   - component: {fileID: 2114175130}
   - component: {fileID: 2114175129}
+  - component: {fileID: 2114175132}
   m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
@@ -2267,7 +2268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 547, y: -85}
+  m_AnchoredPosition: {x: 547, y: -147.28}
   m_SizeDelta: {x: 500, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2114175129
@@ -2280,7 +2281,7 @@ Animator:
   m_GameObject: {fileID: 2114175127}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 27fd9728dce7032498f02937780e2c00, type: 2}
+  m_Controller: {fileID: 9100000, guid: ecfa1b237da372a459b82897969f404e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2328,3 +2329,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114175127}
   m_CullTransparentMesh: 1
+--- !u!114 &2114175132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114175127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b294fd41985eb3428720334ffceb003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.2
