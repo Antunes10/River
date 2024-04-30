@@ -47,6 +47,10 @@ public class GameManager : MonoBehaviour
     return _gs.currentInkIndex;
   }
 
+  public int GetCurrentRiver() {
+    return _gs.currentLevelIndex;
+  }
+
   public int getFood() { return _gs.currentFood; }
   public int getHope() { return _gs.currentHope; }
 

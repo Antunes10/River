@@ -65,7 +65,6 @@ public class LevelManager : MonoBehaviour
         _gameManager = GameManager.Instance;
         _levelData = _gameManager._currentLevel;
         Instantiate(_levelData.backgrounds);
-        AudioManager.Instance.PlayRiverMusic(_levelData.music);
 
         _generator.SetObstacleList(_levelData.obstacleList);
         _generator.minObsCooldown = _levelData.minProb;
@@ -76,6 +75,14 @@ public class LevelManager : MonoBehaviour
         _levelLength = _levelData.levelLength;
 
         _progressSlider.maxValue = _levelData.levelLength;
+    }
+
+    public void StartMusic() {
+        AudioManager.Instance.PlayRiverMusic(_levelData.music);
+    }
+
+    public string GetLevelName() {
+        return _levelData.name;
     }
 
     public void PauseUnpause()

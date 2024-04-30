@@ -73,7 +73,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         #speaker:
         Her face lightens up as he shakes the small piece of bread. 
 
-    ++[Ask why he’s here, alone.]
+    ++[Ask why she’s here, alone.]
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
         What are you doing here all by yourself? Don’t you have family or friends? 
         #speaker: Sparks #portrait:sparks_default #layout:right:sparks_default_m
