@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
     }
 
     InitGameState();
+    LoadUnlockables();
   }
 
   public void InitGameState()
@@ -98,6 +99,7 @@ public class GameManager : MonoBehaviour
   public void UnlockImage(int n)
   {
     unlockedImages[n] = 1;
+    SaveUnlockables();
   }
 
   public void gameOver()
@@ -122,6 +124,23 @@ public class GameManager : MonoBehaviour
     _gs.date = DateTime.Now.ToString();
     string json = ToJson(_gs, true);
     StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+    sw.Write(json);
+    sw.Close();
+  }
+
+  public void LoadUnlockables() {
+    StreamReader sr2 = new StreamReader(Application.dataPath + "/Resources/UnlockedImages.json");
+    string json2 = sr2.ReadToEnd();
+    sr2.Close();
+    unlockedImages = JsonHelper.FromJson<int>(json2);
+
+    Debug.Log(json2);
+  }
+
+  public void SaveUnlockables()
+  {
+    string json = JsonHelper.ToJson(unlockedImages);
+    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/UnlockedImages.json");
     sw.Write(json);
     sw.Close();
   }
