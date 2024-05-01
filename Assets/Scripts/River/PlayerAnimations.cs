@@ -88,7 +88,7 @@ public class PlayerAnimations : MonoBehaviour
 
         _hit = false;
 
-        //Repï¿½e a transparencia a zero
+        //Repõe a transparencia a zero
         _helmetSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
         foreach (SpriteRenderer sr in _animalsSprites)
         {

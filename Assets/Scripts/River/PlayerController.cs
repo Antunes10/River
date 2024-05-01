@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.stunned;
         _indicator.sprite = _indicatorImages[0];
         _indicator.enabled = true;
-        //this.GetComponent<SpriteRenderer>().color = Color.red;
+        this.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3);
         this.GetComponent<SpriteRenderer>().color = Color.white;
         _indicator.enabled = false;
@@ -239,7 +239,7 @@ public class PlayerController : MonoBehaviour
         _indicator.sprite = _indicatorImages[1];
         _indicator.enabled = true;
         _playeranimations._animController.SetTrigger("GettingWater");
-        //this.GetComponent<SpriteRenderer>().color = Color.cyan;
+        this.GetComponent<SpriteRenderer>().color = Color.cyan;
         yield return new WaitForSeconds(3);
         if (_helmetState.Equals(HelmetState.water))
         {
