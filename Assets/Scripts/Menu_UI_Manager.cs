@@ -49,4 +49,10 @@ public class Menu_UI_Manager : MonoBehaviour
         menus[choosenMenu].SetActive(true);
         currMenuIndex = choosenMenu;
     }
+
+    public void ToggleMenu(int choosenMenu)
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
+        menus[choosenMenu].SetActive(!menus[choosenMenu].activeSelf);
+    }
 }

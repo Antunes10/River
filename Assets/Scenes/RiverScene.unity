@@ -6870,6 +6870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlsMenu: {fileID: 1327847073}
+  volumeSlider: {fileID: 0}
   _nimbusText: {fileID: 1496459189}
   _oakText: {fileID: 1511669213}
 --- !u!1 &1168190883

@@ -4,11 +4,14 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
   public GameObject saveMenuUi;
   public GameObject loadMenuUi;
+
+  [SerializeField] private Slider volumeSlider;
 
   [Header("Params")]
   [SerializeField] private float typingSpeed = 0.04f;
@@ -97,6 +100,8 @@ public class DialogueManager : MonoBehaviour
       index++;
     }
 
+    volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+
     EnterDialogueMode(currentInk);
   }
 
@@ -108,6 +113,12 @@ public class DialogueManager : MonoBehaviour
   public void Start()
   {
 
+  }
+    
+  public void ChangeVolume()
+  {
+    Debug.Log("Changing volume");
+    AudioManager.Instance.ChangeVolume(volumeSlider.value);
   }
 
   private void Update()

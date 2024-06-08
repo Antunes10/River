@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource sfxSource;
 
+    [SerializeField]
+    private Slider volumeSlider;
+
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
     public bool switchPrologue = false;
 
@@ -33,6 +37,27 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        if (!PlayerPrefs.HasKey("musicVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", 1);
+            Load();
+        } 
+        else
+        {
+            Load();
+        }
+    }
+
+    public void ChangeVolume()
+    {
+        AudioListener.volume = volumeSlider.value;
+        Save();
+    }
+
+    public void ChangeVolume(float value)
+    {
+        AudioListener.volume = value;
+        Save();
     }
 
     public void PlayMenuMusic()
@@ -122,6 +147,16 @@ public class AudioManager : MonoBehaviour
         explosion,
         RiverVictory,
         RiverDefeat
+    }
+
+    private void Load()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
     #region Singleton
