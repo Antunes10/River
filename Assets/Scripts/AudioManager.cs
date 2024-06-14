@@ -21,7 +21,11 @@ public class AudioManager : MonoBehaviour
     private AudioSource sfxSource;
 
     [SerializeField]
-    private Slider volumeSlider;
+    private Slider masterVolumeSlider;
+    [SerializeField]
+    private Slider musicVolumeSlider;
+    [SerializeField]
+    private Slider sfxVolumeSlider;
 
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
     public bool switchPrologue = false;
@@ -37,26 +41,39 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        if (!PlayerPrefs.HasKey("musicVolume"))
+        if (!PlayerPrefs.HasKey("masterVolume"))
         {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        } 
-        else
-        {
-            Load();
+            PlayerPrefs.SetFloat("masterVolume", 10);
+        } else if (!PlayerPrefs.HasKey("musicVolume")) {
+            PlayerPrefs.SetFloat("musicVolume", 10);
+        } else if (!PlayerPrefs.HasKey("sfxVolume")) {
+            PlayerPrefs.SetFloat("sfxVolume", 10);
         }
+
+        Load();
     }
 
-    public void ChangeVolume()
+    public void ChangeVolume(int vol)
     {
-        AudioListener.volume = volumeSlider.value;
+        if (vol == 0) {
+            AudioListener.volume = masterVolumeSlider.value/10;
+        } else if (vol == 1) {
+            musicSource.volume = musicVolumeSlider.value/10;
+        } else if (vol == 2) {
+            sfxSource.volume = sfxVolumeSlider.value/10;
+        }
         Save();
     }
 
-    public void ChangeVolume(float value)
+    public void ChangeVolume(float value, int vol)
     {
-        AudioListener.volume = value;
+        if (vol == 0) {
+            AudioListener.volume = value/10;
+        } else if (vol == 1) {
+            musicSource.volume = value/10;
+        } else if (vol == 2) {
+            sfxSource.volume = value/10;
+        }
         Save();
     }
 
@@ -151,12 +168,16 @@ public class AudioManager : MonoBehaviour
 
     private void Load()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
+        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        PlayerPrefs.SetFloat("masterVolume", masterVolumeSlider.value);
+        PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
+        PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);
     }
 
     #region Singleton

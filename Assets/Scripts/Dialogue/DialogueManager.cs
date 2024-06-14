@@ -115,10 +115,10 @@ public class DialogueManager : MonoBehaviour
 
   }
     
-  public void ChangeVolume()
+  public void ChangeVolume(int vol)
   {
     Debug.Log("Changing volume");
-    AudioManager.Instance.ChangeVolume(volumeSlider.value);
+    AudioManager.Instance.ChangeVolume(volumeSlider.value, vol);
   }
 
   private void Update()
