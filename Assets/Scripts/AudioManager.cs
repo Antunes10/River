@@ -14,11 +14,15 @@ public class AudioManager : MonoBehaviour
     private AudioClip[] _narrativeMusics;
     [SerializeField]
     private AudioClip[] _sfxSounds;
+    [SerializeField]
+    private AudioClip[] _EnvSounds;
 
     [SerializeField]
     private AudioSource musicSource;
     [SerializeField]
     private AudioSource sfxSource;
+    [SerializeField]
+    private AudioSource EnvSource;
 
     [SerializeField]
     private Slider masterVolumeSlider;
@@ -95,6 +99,12 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void PlayEvironmentSound(EnvironmentSounds indexer)
+    {
+        EnvSource.clip = _EnvSounds[(int)indexer];
+        EnvSource.Play();
+    }
+
     public void PlayNextNarrativeMusic()
     {
         //if currentNarrativeMusic is the prologue one
@@ -125,6 +135,13 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(_sfxSounds[UnityEngine.Random.Range(indexer1, indexer2 + 1)]);
     }
 
+    public void StopAllSounds()
+    {
+        musicSource.Stop();
+        EnvSource.Stop();
+        sfxSource.Stop();
+    }
+
     public enum MusicsRiver
     {
         tunnel = 0,
@@ -138,6 +155,19 @@ public class AudioManager : MonoBehaviour
     {
         prologue = 0,
         tunnel = 1,
+        sparks = 2,
+        forest = 3,
+        nimbus = 4, // find nimbus 
+        villageArrival = 5, //
+        villageDepartue = 6,
+        oak = 7, // meet oak
+        respite = 8 // scene before otter
+    }
+
+    public enum EnvironmentSounds
+    {
+        tunnel_Nar1 = 0,
+        tunnel_Riv1 = 1,
         sparks = 2,
         forest = 3,
         nimbus = 4, // find nimbus 

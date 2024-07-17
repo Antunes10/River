@@ -163,6 +163,7 @@ public class GameManager : MonoBehaviour
 
   public void changeToRiverScene()
   {
+    AudioManager.Instance.StopAllSounds();
     _gs.currentLevelIndex++;
     _currentLevel = _levels[_gs.currentLevelIndex];
     SceneManager.LoadScene("RiverScene");
@@ -170,6 +171,7 @@ public class GameManager : MonoBehaviour
 
   public void loadDialogueScene()
   {
+    AudioManager.Instance.StopAllSounds();
     if (_gs.currentInkIndex == 3 || _gs.currentInkIndex == 4)
     {
       if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }

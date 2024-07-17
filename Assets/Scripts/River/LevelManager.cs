@@ -79,6 +79,7 @@ public class LevelManager : MonoBehaviour
 
     public void StartMusic() {
         AudioManager.Instance.PlayRiverMusic(_levelData.music);
+        AudioManager.Instance.PlayEvironmentSound(_levelData.envSounds);
     }
 
     public string GetLevelName() {
@@ -117,6 +118,7 @@ public class LevelManager : MonoBehaviour
 
     public void ExitToMenu()
     {
+        AudioManager.Instance.StopAllSounds();
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         Time.timeScale = 1;
         _gameManager.changeToMenuScene();

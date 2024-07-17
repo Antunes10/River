@@ -15,6 +15,7 @@ MonoBehaviour:
   levelLength: 45
   backgrounds: {fileID: 1022511215364492915, guid: a1d8a64ee953e524391f5c6c2ab6d8eb, type: 3}
   music: 0
+  envSounds: 1
   obstacleList:
   - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}

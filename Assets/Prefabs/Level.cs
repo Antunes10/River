@@ -12,6 +12,7 @@ public class Level : ScriptableObject
 
     [Header("Music")]
     public AudioManager.MusicsRiver music;
+    public AudioManager.EnvironmentSounds envSounds;
 
     [Header("Obstacles Variables")]
     public GameObject[] obstacleList;
