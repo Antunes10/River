@@ -59,8 +59,9 @@ public class DialogueManager : MonoBehaviour
   private const string LAYOUT_TAG = "layout";
   private const string BACKGROUND_TAG = "background";
   private const string NEXT_MUSIC_TAG = "music";
+  private const string ENVIRONMENT_TAG = "enviroSound";
 
-  private string savedJson;
+    private string savedJson;
 
   private DialogueVariables dialogueVariables;
 
@@ -462,6 +463,15 @@ public class DialogueManager : MonoBehaviour
               break;
           }
           break;
+        case ENVIRONMENT_TAG:
+           switch (tagValue)
+           {
+             case "tunnel":
+             AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel_Nar1);
+             break;
+           }
+           break;
+
 
         default:
           Debug.Log("Tag not recognised");
