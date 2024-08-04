@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:forest #music:forest
+#speaker: #layout:left:tails_default #layout:right:sparks_happy_m #background:forest #music:forest #enviroSound:forest
 ~unlockImage(1)
 As sunlight begins piercing the darkness, birds start to be heard, singing their melodies.
 The cold and grey tunnels give place to a small forest, painted in colours of golden brown, orange and red.
