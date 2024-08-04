@@ -65,6 +65,7 @@ public class AudioManager : MonoBehaviour
             musicSource.volume = musicVolumeSlider.value/10;
         } else if (vol == 2) {
             sfxSource.volume = sfxVolumeSlider.value/10;
+            EnvSource.volume = sfxVolumeSlider.value / 10;
         }
         Save();
     }
@@ -77,6 +78,7 @@ public class AudioManager : MonoBehaviour
             musicSource.volume = value/10;
         } else if (vol == 2) {
             sfxSource.volume = value/10;
+            EnvSource.volume = value / 10;
         }
         Save();
     }
