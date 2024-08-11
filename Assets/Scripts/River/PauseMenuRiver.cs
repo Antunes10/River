@@ -7,17 +7,15 @@ using UnityEngine.UI;
 
 public class PauseMenuRiver : MonoBehaviour
 {
-    public GameObject controlsMenu;
-    [SerializeField] private TextMeshProUGUI _nimbusText;
-    [SerializeField] private TextMeshProUGUI _oakText;
     private bool isPaused = false;
+    [SerializeField] private Canvas _soundMenuCanvas;
+    [SerializeField] private Slider masterVolumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private Slider sfxVolumeSlider;
 
     void Start()
     {
-        _oakText.text = GameManager.Instance.GetHasOak() ? "R - Use Oak" : "";
-        _nimbusText.text = GameManager.Instance.GetHasNimbus() ? "SPACE - Use Nimbus" : "";
         GetComponent<Canvas>().enabled = false;
-        controlsMenu.SetActive(false);
     }
 
 
@@ -48,20 +46,38 @@ public class PauseMenuRiver : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         isPaused = false;
         GetComponent<Canvas>().enabled = false;
-        controlsMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void SoundMenuSwitch()
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
+        _soundMenuCanvas.enabled = !_soundMenuCanvas.enabled;
+    }
+
+    public void ChangeVolume(int vol)
+    {
+        switch (vol) {
+        case 0:
+            AudioManager.Instance.ChangeVolume(masterVolumeSlider.value, vol);
+            break;
+        case 1:
+            AudioManager.Instance.ChangeVolume(musicVolumeSlider.value, vol);
+            break;
+        case 2:
+            AudioManager.Instance.ChangeVolume(sfxVolumeSlider.value, vol);
+            break;
+        }
     }
 
     public void SetControlsMenuActive()
     {
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
-        controlsMenu.SetActive(true);
     }
 
     public void BacktoMenu()
     {
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
-        controlsMenu.SetActive(false);
     }
 
     public void QuittoMainMenu()
