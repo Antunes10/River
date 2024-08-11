@@ -216,6 +216,7 @@ public class GameManager : MonoBehaviour
   {
     InitGameState();
     SceneManager.LoadScene("Menu");
+    AudioManager.Instance.StopAllSounds();
     AudioManager.Instance.PlayMenuMusic();
   }
 
