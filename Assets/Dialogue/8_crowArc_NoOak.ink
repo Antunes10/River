@@ -28,6 +28,7 @@ This smell is awful, where is it coming from?
 I believe we do not want to know.
 #speaker:
 They try to keep going in one direction but make no visible progress.
+#background:swapCrowTree
 A tree appears.
 A dead tree.
 Twisted and grey, as if choked by the murky waters and mud that surrounds it.
@@ -86,17 +87,16 @@ Looking around with dark eyes.
     We can’t figure out where’s West.
     #speaker:
     The bird’s wings open wide, making it look a lot bigger than before.
-    #layout:right:crow_default_m #layout:middle_left:sparks_sad
     He then flaps them with ease and lowers himself to a branch closer to them.
-    #speaker:Crow #portrait:crow_default
+    #portrait:crow_default #layout:right:crow_default_m #layout:middle_left:sparks_sad
+    #speaker:Crow 
     Crow: Many greetings to you all.
     Crow: What brings you to my swamp?
     #speaker:
     His voice is harsh and deep.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     We got lost, thanks to this sly mist. And we are trying to find our way West.
-    TODO:colocar os fundos com e sem o corvo quando ele aparece e desaparece
-    #speaker:Crow #portrait:crow_default
+    #speaker:Crow #portrait:crow_default #background:swapTree
     Crow: I see…
     Crow: Many more have passed through here.
     Crow: Many more traveling West.

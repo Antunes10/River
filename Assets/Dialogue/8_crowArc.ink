@@ -29,6 +29,7 @@ This smell is awful, where is it coming from?
 I believe we do not want to know.
 #speaker:
 They try to keep going in one direction but make no visible progress.
+#background:swapCrowTree
 A tree appears.
 A dead tree.
 #layout:sparks:sparks_sad_m
@@ -89,9 +90,9 @@ Looking around with dark eyes.
     We can’t figure out where’s West.
     #speaker: 
     The bird’s wings open wide, making it look a lot bigger than before.
-    #layout:right:crow_default_m #layout:middle_left:nimbus_default
     He then flaps them with ease and lowers himself to a branch closer to them.
-    #speaker:Crow #portrait:crow_default
+    #portrait:crow_default #background:swapTree #layout:right:crow_default_m #layout:middle_left:nimbus_default
+    #speaker:Crow 
     Many greetings to you all.
     What brings you to my swamp?
     #speaker:
