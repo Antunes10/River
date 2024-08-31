@@ -140,14 +140,16 @@ Its origin unknown to the little mouse, moves closer to the ground.
     He succumbs to the pain and falls unconscious.
     
     Time passes.
+    #background:blackLight
     A small light appears far away amidts the black.
     It becomes stronger and stronger, shinning away the fear and uncertainty.
     #speaker:??? #portrait:blank 
     Hello? 
     Are you hurt Mr.Mouse? 
-    #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default #background:tunnel #music:sparks
+    ~playSparksAnim()
+    #speaker: #music:sparks
     Tails opens his eyes and sees a young firefly over him, shinning her light.
-    #speaker:??? #portrait:sparks_default
+    #speaker:??? #portrait:sparks_default 
     You’re all wet. Did you go for a swim and got tired? 
     #speaker:
     The mouse regains his strength and rises to his feet.

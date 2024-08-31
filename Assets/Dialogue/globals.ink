@@ -9,6 +9,8 @@ EXTERNAL recruitNimbus()
 EXTERNAL recruitOak()
 EXTERNAL recruitCotton()
 EXTERNAL unlockImage(val)
+EXTERNAL playSparksAnim()
+EXTERNAL wait()
 
 VAR choice = ""
 

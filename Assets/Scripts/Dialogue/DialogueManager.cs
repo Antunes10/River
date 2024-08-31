@@ -5,6 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -40,6 +41,8 @@ public class DialogueManager : MonoBehaviour
   [SerializeField] private Animator middleRightAnimator;
   [SerializeField] private Animator backgroundAnimator;
   [SerializeField] private Animator popupAnimator;
+  [SerializeField] private GameObject image;
+  [SerializeField] private Animator videoAnimator;
   private GameObject popup;
 
   private Animator layoutAnimator;
@@ -53,6 +56,7 @@ public class DialogueManager : MonoBehaviour
   public bool dialogueIsPlaying { get; private set; }
   private bool canSkip = false;
   private bool submitSkip = false;
+  private bool playingVideo = false;
 
   private const string SPEAKER_TAG = "speaker";
   private const string PORTRAIT_TAG = "portrait";
@@ -147,7 +151,7 @@ public class DialogueManager : MonoBehaviour
       return;
     }
 
-    if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.LeftControl)) && !choosing && canContinueNextLine && !pauseMenuUI.activeSelf)
+    if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.LeftControl)) && !choosing && canContinueNextLine && !pauseMenuUI.activeSelf && !playingVideo)
     {
       ContinueStory();
     }
@@ -254,6 +258,15 @@ public class DialogueManager : MonoBehaviour
       GameManager.Instance.UnlockImage(val);
     });
 
+    currentStory.BindExternalFunction("playSparksAnim", () =>
+    {
+      ExitDialogueMode();
+      playingVideo = true;
+      image.SetActive(true);
+
+      StartCoroutine(ExitVideo());
+    });
+
     // sets everything to the default state
     displayNameText.text = "default";
     portraitAnimator.Play("default");
@@ -265,6 +278,19 @@ public class DialogueManager : MonoBehaviour
     middleRightAnimator.Play("default");
 
     ContinueStory();
+  }
+
+  private IEnumerator ExitVideo() {
+    yield return new WaitForSeconds(1.8f);
+    image.SetActive(false);
+
+    // hardcoded
+    backgroundAnimator.Play("tunnel");
+    leftLayoutAnimator.Play("tails_default");
+    rightLayoutAnimator.Play("sparks_default_m");
+    middleLayoutAnimator.Play("default");
+    
+    playingVideo = false;
   }
 
   private IEnumerator ExitDialogueMode()
