@@ -13,13 +13,23 @@ public class StatDisplayer : MonoBehaviour
 
   #region Menus Variables
   [Header("Backgrounds")]
-  [SerializeField]
-  private GameObject[] backgrounds;
+  [SerializeField] private GameObject[] campFireImg;
+  [SerializeField] private GameObject tailsImg;
+  [SerializeField] private GameObject[] sparksImg;
+  [SerializeField] private GameObject[] nimbusImg;
+  [SerializeField] private GameObject[] oakImg;
+  [SerializeField] private GameObject[] cottonImg;
+  [SerializeField] private GameObject[] villageImg;
+  [SerializeField] private GameObject[] riverImg;
+  [SerializeField] private GameObject[] cityImg;
   #endregion
 
   // Start is called before the first frame update
   void Start()
   {
+    gm = GameManager.Instance;
+    HideBackground();
+
     StartCoroutine(ButtonCoroutine());
     switch(GameManager.Instance.GetCurrentInk()) 
     {
@@ -95,12 +105,31 @@ public class StatDisplayer : MonoBehaviour
   }
 
   public void BackgroundChanger(int i) {
-    for (int j = 0; j < backgrounds.Length; j++) {
-      if (j == i) {
-        backgrounds[j].SetActive(true);
-      } else {
-        backgrounds[j].SetActive(false);
-      }
+    bool gameOver = gm.isGameOver();
+
+    if (gameOver) {campFireImg[1].SetActive(true); } else {campFireImg[0].SetActive(true); }
+
+    if (gm.GetHasSparks()) {sparksImg[0].SetActive(true); } else { if (gameOver) { sparksImg[1].SetActive(true); } }
+    if (gm.GetHasNimbus()) {nimbusImg[0].SetActive(true); } else { if (gameOver) { nimbusImg[1].SetActive(true); } }
+    if (gm.GetHasOak()) {oakImg[0].SetActive(true); } else { if (gameOver) { oakImg[1].SetActive(true); } }
+    if (gm.GetHasCotton()) {cottonImg[0].SetActive(true); } else { if (gameOver) {cottonImg[1].SetActive(true); } }
+
+    if (i == 0) {villageImg[0].SetActive(true); } else { if (gm.isGameOver()) { villageImg[1].SetActive(true); } }
+    if (i == 1) {riverImg[0].SetActive(true); } else { if (gm.isGameOver()) { riverImg[1].SetActive(true); } }
+    if (i == 2) {cityImg[0].SetActive(true); } else { if (gm.isGameOver()) { cityImg[1].SetActive(true); } }
+
+  }
+
+  public void HideBackground() {
+    for (int i = 0; i < 2; i++) {
+      campFireImg[i].SetActive(false);
+      sparksImg[i].SetActive(false);
+      nimbusImg[i].SetActive(false);
+      oakImg[i].SetActive(false);
+      cottonImg[i].SetActive(false);
+      villageImg[i].SetActive(false);
+      riverImg[i].SetActive(false);
+      cityImg[i].SetActive(false);
     }
   }
 

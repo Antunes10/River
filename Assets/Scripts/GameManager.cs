@@ -63,6 +63,11 @@ public class GameManager : MonoBehaviour
   public void recruitNimbus() { _gs.hasNimbus = true; }
   public void recruitOak() { _gs.hasOak = true; }
   public void recruitCotton() { _gs.hasCotton = true; }
+
+  public bool isGameOver() { 
+    if (_gs.currentFood <= 0 || _gs.currentHope <= 0) { return true; } 
+    else { return false; }
+  }
   #endregion
 
   private void Awake()
