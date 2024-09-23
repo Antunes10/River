@@ -65,7 +65,10 @@ public class PlayerAnimations : MonoBehaviour
 
     public void ChangeHelmetSprite(int val)
     {
-        _animController.SetInteger("Moving", val);
+        _animController.SetBool("Moving 0", true);
+        _helmetSpriteRenderer.enabled = true;
+        _helmetSpriteRenderer.sprite = _helmetSprites[val];
+        //_animController.SetInteger("Moving", val);
     }
 
     public void ChangeAnimalSprite(int animal, bool on)

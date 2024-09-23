@@ -86,7 +86,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
+                _playeranimations._animController.SetBool("Moving 0", false);
+                //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
             }
 
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
@@ -227,7 +228,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator GetStunned(bool wire)
     {
-        _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
+        //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
 
         _helmetState = HelmetState.stunned;
         _indicator.sprite = _indicatorImages[0];
@@ -248,7 +249,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator GetWater()
     {
-        _playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
+        //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
 
         _helmetState = HelmetState.water;
         _indicator.sprite = _indicatorImages[1];
