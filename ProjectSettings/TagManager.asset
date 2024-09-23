@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BackgroundContainer
   - Game Manager
+  - NimbusBeak
   layers:
   - Default
   - TransparentFX

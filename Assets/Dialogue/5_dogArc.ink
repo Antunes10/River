@@ -5,6 +5,7 @@ INCLUDE globals.ink
 === main ===
 #background:village
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
+#music:villageArrival
 ~unlockImage(19)
 ~unlockImage(13)
 Sun shines.

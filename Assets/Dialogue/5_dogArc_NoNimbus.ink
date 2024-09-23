@@ -6,6 +6,7 @@ INCLUDE globals.ink
 
 #background:village
 #speaker: #layout:left:tails_default #layout:right:sparks_sad_m
+#music:villageArrival
 ~unlockImage(13)
 Sun shines.
 The bright rays pierce the dead leaves that cover the shelter and signals the start of a new day.

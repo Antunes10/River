@@ -493,9 +493,12 @@ public class DialogueManager : MonoBehaviour
            switch (tagValue)
            {
              case "tunnel":
-             AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel_Nar1);
-             break;
-           }
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel_Nar1);
+                break;
+             case "forest":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.forest);
+                break;
+             }
            break;
 
 
