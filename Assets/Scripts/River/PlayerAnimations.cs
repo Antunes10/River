@@ -8,6 +8,7 @@ public class PlayerAnimations : MonoBehaviour
     // Start is called before the first frame update
     [Header("Sprites")]
     [SerializeField] private SpriteRenderer[] _animalsSprites;
+    [SerializeField] private Sprite[] _animalNewSprites;
     [SerializeField] private Sprite[] _helmetSprites;
     
 
@@ -64,7 +65,27 @@ public class PlayerAnimations : MonoBehaviour
 
     public void ChangeHelmetSprite(int val)
     {
-        _helmetSpriteRenderer.sprite = _helmetSprites[val];
+        _animController.SetInteger("Moving", val);
+    }
+
+    public void ChangeAnimalSprite(int animal, bool on)
+    {
+        if (!on)
+        {
+            _animalsSprites[2].sprite = _animalNewSprites[0];
+            _animalsSprites[3].sprite = _animalNewSprites[1];
+        }
+        else if(animal == 2)
+        {
+            //Nimbus
+            _animalsSprites[2].sprite = _animalNewSprites[2];
+            bool las = true;
+        }
+        else
+        {
+            //Oak
+            _animalsSprites[3].sprite = _animalNewSprites[3];
+        }
     }
 
     public enum Helmet

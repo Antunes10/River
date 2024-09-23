@@ -387,7 +387,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4837785539666705979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -548,7 +548,16 @@ MonoBehaviour:
   - {fileID: 8749634136199957084}
   - {fileID: 3511211914606597810}
   - {fileID: 3541722413989213155}
-  _helmetSprites: []
+  _animalNewSprites:
+  - {fileID: 21300000, guid: 3b32a7738f5c16045b50c7f1b772bce5, type: 3}
+  - {fileID: 21300000, guid: ad91f1404824b4a4aadf490e68a2a0fb, type: 3}
+  - {fileID: 21300000, guid: 95783268525b8de4c942298e4cfac53e, type: 3}
+  - {fileID: 21300000, guid: 3d4bd80284e1ad7498cf902a3e3aa6b6, type: 3}
+  _helmetSprites:
+  - {fileID: 21300000, guid: a70de346287ae6048b37b301ca0e3e61, type: 3}
+  - {fileID: 21300000, guid: 49fdf43b7af25514fb4c689995ebf277, type: 3}
+  - {fileID: 21300000, guid: 72c8071277eba8e4e8eb62cb8844dc27, type: 3}
+  - {fileID: 21300000, guid: 7165ccceb56a1e9498f881136e1222e5, type: 3}
   _animController: {fileID: 7708209426673438863}
 --- !u!95 &7708209426673438863
 Animator:

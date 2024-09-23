@@ -103,14 +103,14 @@ public class Obstacle : MonoBehaviour
         if (_barbed)
         {
             AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.wireHit);
-            collision.GetComponent<PlayerController>().HitBarbed();
+            collision.GetComponent<PlayerController>().HitBarbed(true);
         }
         else if (_barrier)
         {
             AudioManager.Instance.PlaySFX((int)AudioManager.SFXSounds.rockHit1, (int)AudioManager.SFXSounds.rockHit3);
             AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.clothHit);
             collision.GetComponent<PlayerController>().HitRock(20);
-            collision.GetComponent<PlayerController>().HitBarbed();
+            collision.GetComponent<PlayerController>().HitBarbed(false);
         }
         else if(_debris)
         {
