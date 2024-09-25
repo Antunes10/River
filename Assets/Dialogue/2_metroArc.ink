@@ -218,6 +218,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
 - 
 
 ~recruitSparks()
+~sparksRecruited = 1
 ~changeScene("RiverScene")
 
 ->END

@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 
-#background:village
+#background:villageSquare
 #speaker: #layout:left:tails_default #layout:right:sparks_sad_m
 #music:villageArrival
 ~unlockImage(13)
@@ -121,6 +121,7 @@ He had seen mice teared to shreds by angry mongrels.
     
     ++[Offer to help]
         ~recruitOak()
+        ~oakRecruited = 1
         ~increaseHope(1)
         ~currentHope = currentHope + 1
         #speaker:Tails #portrait:tails_default

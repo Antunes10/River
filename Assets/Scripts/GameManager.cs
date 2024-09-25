@@ -54,10 +54,10 @@ public class GameManager : MonoBehaviour
   public int getFood() { return _gs.currentFood; }
   public int getHope() { return _gs.currentHope; }
 
-  public void increaseFood(int val) { _gs.currentFood += val; }
-  public void increaseHope(int val) { _gs.currentHope += val; }
-  public void decreaseFood(int val) { _gs.currentFood -= val; }
-  public void decreaseHope(int val) { _gs.currentHope -= val; }
+  public void increaseFood(int val) { _gs.currentFood += val; Debug.Log(_gs.currentFood); }
+  public void increaseHope(int val) { _gs.currentHope += val; Debug.Log(_gs.currentHope); }
+  public void decreaseFood(int val) { _gs.currentFood -= val; Debug.Log(_gs.currentFood); }
+  public void decreaseHope(int val) { _gs.currentHope -= val; Debug.Log(_gs.currentHope);}
 
   public void recruitSparks() { _gs.hasSparks = true; }
   public void recruitNimbus() { _gs.hasNimbus = true; }
@@ -65,8 +65,7 @@ public class GameManager : MonoBehaviour
   public void recruitCotton() { _gs.hasCotton = true; }
 
   public bool isGameOver() { 
-    if (_gs.currentFood <= 0 || _gs.currentHope <= 0) { return true; } 
-    else { return false; }
+    return _gs.gameOver;
   }
   #endregion
 
@@ -99,6 +98,7 @@ public class GameManager : MonoBehaviour
     _gs.dialogueIndex = 0;
     _gs.currentFood = 3;
     _gs.currentHope = 3;
+    _gs.gameOver = false;
   }
 
   public void UnlockImage(int n)
@@ -109,7 +109,8 @@ public class GameManager : MonoBehaviour
 
   public void gameOver()
   {
-    Debug.Log("Game Over");
+    _gs.gameOver = true;
+    SceneManager.LoadScene("FinishDayScene");
   }
 
   #region SaveSystem
@@ -158,10 +159,10 @@ public class GameManager : MonoBehaviour
     // -1 food at the end of every day
     decreaseFood(1);
 
-    if (_gs.currentFood <= 0)
+    if (_gs.currentFood <= 0 || _gs.currentHope <= 0)
     {
       gameOver();
-    }
+    } 
 
     SceneManager.LoadScene("FinishDayScene");
   }
@@ -282,4 +283,6 @@ public class GameState
 
   //Save data variables
   public String date;
+
+  public bool gameOver;
 }

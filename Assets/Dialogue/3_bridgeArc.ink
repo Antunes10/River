@@ -34,6 +34,8 @@ Trapped, it's trying to free itself, but each movement makes the claws pierce hi
     ->ChoicePanel
 
 +[Ignore the Bird]
+    ~decreaseHope(1)
+    ~currentHope = currentHope - 1
     #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad_m
     There is nothing that they could do.
     A trap like that is too complex for them to disarm.
@@ -246,7 +248,7 @@ Time is running out.
 
 === KeepTrying ===
 ~increaseHope(1)
-~currentHope = currentHope - 1
+~currentHope = currentHope + 1
 #speaker: #layout:middle:nimbus_sad_hurt_m #layout:left:tails_sad #layout:right:sparks_sad_m
 Tails keeps on with his task of removing the wires.
 If the bird is to die here, he won't die alone.
@@ -316,5 +318,6 @@ In the direction of the far away land they are searching for.
 
 ~ nimbusSaved = 1
 ~recruitNimbus()
+~ nimbusRecruited = 1
 ~changeScene("RiverScene")
 ->END

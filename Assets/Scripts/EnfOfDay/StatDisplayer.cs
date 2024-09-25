@@ -8,7 +8,10 @@ public class StatDisplayer : MonoBehaviour
   [SerializeField] private TextMeshProUGUI foodText;
   [SerializeField] private TextMeshProUGUI hopeText;
   [SerializeField] private TextMeshProUGUI dayText;
+  [SerializeField] private TextMeshProUGUI food;
+  [SerializeField] private TextMeshProUGUI hope;
   [SerializeField] public GameObject Button;
+  [SerializeField] public GameObject ButtonGameOver;
   GameManager gm;
 
   #region Menus Variables
@@ -31,24 +34,30 @@ public class StatDisplayer : MonoBehaviour
     HideBackground();
 
     StartCoroutine(ButtonCoroutine());
-    switch(GameManager.Instance.GetCurrentInk()) 
-    {
-      case 4:
+    int i = GameManager.Instance.GetCurrentInk();
+    
+    if (i == 4) {
         dayText.text = "End of Day 1";
         BackgroundChanger(0);
-        break;
-      case 7:
+    }
+    else if (i == 7) {
         dayText.text = "End of Day 2";
         BackgroundChanger(1);
-        break;  
-      case 10:
+    }
+    else if (i == 10) {
         dayText.text = "End of Day 3";
         BackgroundChanger(2);
-        break;
-      default:
-        dayText.text = "ERROR";
-        break;   
     }
+    else {
+      dayText.text = "game over";
+      if (i <= 4) {BackgroundChanger(0); }
+      else if (i > 4 && i <= 7) {BackgroundChanger(1); }
+      else if (i > 7) {BackgroundChanger(2); }
+    } 
+
+    
+
+    if (gm.isGameOver()) { setupGameOver(); }
 
     switch (GameManager.Instance.getFood())
     {
@@ -95,7 +104,11 @@ public class StatDisplayer : MonoBehaviour
   IEnumerator ButtonCoroutine()
   {
       yield return new WaitForSeconds(2.5f);
-      Button.SetActive(true);
+      if (gm.isGameOver()) {
+        ButtonGameOver.SetActive(true);
+      } else {
+        Button.SetActive(true);
+      }
   }
 
   // Update is called once per frame
@@ -104,15 +117,37 @@ public class StatDisplayer : MonoBehaviour
 
   }
 
+  private void setupGameOver() {
+    dayText.text = "game over";
+    foodText.gameObject.SetActive(false);
+    hopeText.gameObject.SetActive(false);
+    food.gameObject.SetActive(false);
+    hope.gameObject.SetActive(false);
+  }
+
   public void BackgroundChanger(int i) {
     bool gameOver = gm.isGameOver();
 
     if (gameOver) {campFireImg[1].SetActive(true); } else {campFireImg[0].SetActive(true); }
 
-    if (gm.GetHasSparks()) {sparksImg[0].SetActive(true); } else { if (gameOver) { sparksImg[1].SetActive(true); } }
-    if (gm.GetHasNimbus()) {nimbusImg[0].SetActive(true); } else { if (gameOver) { nimbusImg[1].SetActive(true); } }
-    if (gm.GetHasOak()) {oakImg[0].SetActive(true); } else { if (gameOver) { oakImg[1].SetActive(true); } }
-    if (gm.GetHasCotton()) {cottonImg[0].SetActive(true); } else { if (gameOver) {cottonImg[1].SetActive(true); } }
+    if (!gameOver) { tailsImg.SetActive(true); }
+
+    if (gm.GetHasSparks()) {
+      if (gameOver) { sparksImg[1].SetActive(true); } 
+      else {sparksImg[0].SetActive(true);}
+    } 
+    if (gm.GetHasNimbus()) {
+      if (gameOver) { nimbusImg[1].SetActive(true); } 
+      else {nimbusImg[0].SetActive(true);}
+    } 
+    if (gm.GetHasOak()) {
+      if (gameOver) { oakImg[1].SetActive(true); } 
+      else {oakImg[0].SetActive(true);}
+    } 
+    if (gm.GetHasCotton()) {
+      if (gameOver) { cottonImg[1].SetActive(true); } 
+      else {cottonImg[0].SetActive(true);}
+    } 
 
     if (i == 0) {villageImg[0].SetActive(true); } else { if (gm.isGameOver()) { villageImg[1].SetActive(true); } }
     if (i == 1) {riverImg[0].SetActive(true); } else { if (gm.isGameOver()) { riverImg[1].SetActive(true); } }
@@ -133,8 +168,11 @@ public class StatDisplayer : MonoBehaviour
     }
   }
 
-  public void switchSceneToDialogue()
-  {
-    GameManager.Instance.changeToNextDialogueScene();
+  public void switchScene() {
+    if (gm.isGameOver()) {
+      GameManager.Instance.changeToMenuScene();
+    } else {
+      GameManager.Instance.changeToNextDialogueScene();
+    }
   }
 }

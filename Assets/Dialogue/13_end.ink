@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:room
+#background:finalValley
 #speaker: 
 The river flows serene. Carrying the helmet in a soothing motion.
 The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.

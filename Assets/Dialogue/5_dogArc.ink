@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:village
+#background:villageSquare
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
 #music:villageArrival
 ~unlockImage(19)
@@ -323,6 +323,7 @@ AH!
 They all rush to push the helmet into the water.
 
 ~recruitOak()
+~oakRecruited = 1
 ~changeScene("RiverScene")
 
 ->END

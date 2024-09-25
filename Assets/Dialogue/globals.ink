@@ -31,4 +31,9 @@ VAR currentHope = 3
 
 VAR nimbusStatus = 2
 
+VAR nimbusRecruited = 0
+VAR oakRecruited = 0
+VAR sparksRecruited = 0
+VAR cottonRecruited = 0
+
 

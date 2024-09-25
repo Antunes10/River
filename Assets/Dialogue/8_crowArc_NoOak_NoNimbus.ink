@@ -151,8 +151,7 @@ Looking around with dark eyes.
     A slow and asphyxiating death.
 
 -
-TODO:change to dead scene
-~changeScene("RiverScene")
+~changeScene("gameOver")
 
 ->END
 
@@ -196,8 +195,7 @@ And again, the mist hasn’t disappeared.
 ->ChoicePanel
 
 === noFoodAndWaited ===
-TODO:change to dead scene
-~changeScene("RiverScene")
+~changeScene("gameOver")
 ->END
 
 === Wait ===

@@ -22,6 +22,7 @@ Sparks is still in the shell.
 
 +[Ask Sparks to go check the village.]
     ~increaseHope(1)
+    ~currentHope = currentHope + 1
     #speaker:Tails #portrait:tails_sad
     Hey, little guy… are you alright?
     #speaker:
@@ -179,6 +180,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     
     ++[Go anyway]
         ~increaseFood(1)
+        ~currentFood = currentFood + 1
         It was uncomfortable, but it was a necessary evil.
         He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
         It was an old man.
@@ -256,12 +258,14 @@ Or perhaps it was best if Tails spent some time with his companion.
     }
 -
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~currentFood = currentFood - 1
+~changeScene("EndDayScene")
 ->END
 
 === nimbusLeftBehind ===
 +[It was too risky]
     ~decreaseHope(1)
+    ~currentHope = currentHope - 1
     #speaker:Tails #portrait:tails_sad
     It was too risky.
     We would have died there too.
@@ -285,7 +289,8 @@ Or perhaps it was best if Tails spent some time with his companion.
     Tails turns her back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("Credits")
+    ~currentFood = currentFood - 1
+    ~changeScene("EndDayScene")
     ->DONE
 +[You both are the ones that matter]
     #speaker:Tails #portrait:tails_sad
@@ -326,12 +331,14 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~currentFood = currentFood - 1
+~changeScene("EndDayScene")
 ->END
 
 === nimbusDead ===
 +[It was mankind’s fault]
     ~decreaseHope(1)
+    ~currentHope = currentHope - 1
     #speaker:Tails #portrait:tails_sad
     We did the best we could.
     But look around you.
@@ -349,7 +356,8 @@ The mouse gives a little kiss to the firefly’s forehead and goes back to the n
     Tails turns the back to his friend and goes back to the nest to sleep away the pain.
     
     // TODO: change this back to end day scene
-    ~changeScene("Credits")
+    ~currentFood = currentFood - 1
+    ~changeScene("EndDayScene")
     ->DONE
     
 +[It wasn’t your fault.]
@@ -395,7 +403,8 @@ Yes, I know she will too.
 The mouse gives a little kiss to the firefly’s forehead and goes back to the nest.
 
 // TODO: change this back to end day scene
-~changeScene("Credits")
+~currentFood = currentFood - 1
+~changeScene("EndDayScene")
 ->END
 
 === endDialogue ===
