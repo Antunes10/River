@@ -86,8 +86,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                _playeranimations._animController.SetBool("Moving 0", false);
-                //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
+                _playeranimations._animController.SetInteger("Moving", 0);
             }
 
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
@@ -184,31 +183,31 @@ public class PlayerController : MonoBehaviour
     void UseOak()
     {
         _helmetState = HelmetState.oak;
-        _playeranimations.ChangeAnimalSprite(3, true);
-        //_playeranimations._animController.SetBool("Oak", true);
+        //_playeranimations.ChangeAnimalSprite(3, true);
+        _playeranimations._animController.SetBool("Oak", true);
     }
 
     void StopUseOak()
     {
         _helmetState = HelmetState.normal;
-        _playeranimations.ChangeAnimalSprite(0, false);
-        //_playeranimations._animController.SetBool("Oak", false);
+        //_playeranimations.ChangeAnimalSprite(0, false);
+        _playeranimations._animController.SetBool("Oak", false);
     }
 
     void UseNimbus()
     {
         _nimbusCollider.enabled = true;
         _helmetState = HelmetState.nimbus;
-        _playeranimations.ChangeAnimalSprite(2, true);
-        //_playeranimations._animController.SetBool("Nimbus", true);
+        //_playeranimations.ChangeAnimalSprite(2, true);
+        _playeranimations._animController.SetBool("Nimbus", true);
     }
 
     void StopUseNimbus()
     {
         _nimbusCollider.enabled = false;
         _helmetState = HelmetState.normal;
-        _playeranimations.ChangeAnimalSprite(0, false);
-        //_playeranimations._animController.SetBool("Nimbus", false);
+        //_playeranimations.ChangeAnimalSprite(0, false);
+        _playeranimations._animController.SetBool("Nimbus", false);
     }
 
     void Victory()
@@ -228,6 +227,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator GetStunned(bool wire)
     {
+        _playeranimations._animController.SetBool("GettingWater", false);
         //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
 
         _helmetState = HelmetState.stunned;
@@ -254,11 +254,11 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.water;
         _indicator.sprite = _indicatorImages[1];
         _indicator.enabled = true;
-        _playeranimations._animController.SetTrigger("GettingWater");
+        _playeranimations._animController.SetBool("GettingWater", true);
         yield return new WaitForSeconds(3);
+        _playeranimations._animController.SetBool("GettingWater", false);
         if (_helmetState.Equals(HelmetState.water))
         {
-            _indicator.enabled = false;
             _helmetState = HelmetState.normal;
         }
     }

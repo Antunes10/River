@@ -3666,9 +3666,6 @@ MonoBehaviour:
   _currentLevel: {fileID: 0}
   _inkJSONs:
   - _InkJSONs:
-    - {fileID: 4900000, guid: 121e5fd4aa06f264b82ecada55373053, type: 3}
-    - {fileID: 4900000, guid: 2162e7cc046504044abb4521c9cd21e1, type: 3}
-  - _InkJSONs:
     - {fileID: 4900000, guid: 3a26d27ebec1829479a651da32e620ae, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 64ee1515febef444da9b813508be96ba, type: 3}
@@ -3676,6 +3673,9 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 3ff3065f9720a1947890fe1968c76d07, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
+  - _InkJSONs:
+    - {fileID: 4900000, guid: 121e5fd4aa06f264b82ecada55373053, type: 3}
+    - {fileID: 4900000, guid: 2162e7cc046504044abb4521c9cd21e1, type: 3}
   - _InkJSONs:
     - {fileID: 4900000, guid: 2996f9d33e33aad46b316567ea8ab0fd, type: 3}
     - {fileID: 4900000, guid: 28024868535f1744d8e316556c706765, type: 3}
