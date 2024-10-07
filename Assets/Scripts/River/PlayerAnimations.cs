@@ -13,6 +13,8 @@ public class PlayerAnimations : MonoBehaviour
     
 
     public Animator _animController;
+    public Animator _nimbusController;
+    public Animator _oakController;
     private SpriteRenderer _helmetSpriteRenderer;
 
     private bool _hasNimbus;
@@ -25,6 +27,8 @@ public class PlayerAnimations : MonoBehaviour
     private GameManager _gameManager;
     void Start()
     {
+        _nimbusController.enabled = false;
+        _nimbusController.enabled = true;
         _gameManager = GameManager.Instance;
         _hasSparks = _gameManager.GetHasSparks();
         _hasNimbus = _gameManager.GetHasNimbus();
