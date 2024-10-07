@@ -185,6 +185,7 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.oak;
         //_playeranimations.ChangeAnimalSprite(3, true);
         _playeranimations._animController.SetBool("Oak", true);
+        _playeranimations._oakController.SetBool("Oak", true);
     }
 
     void StopUseOak()
@@ -192,6 +193,7 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.normal;
         //_playeranimations.ChangeAnimalSprite(0, false);
         _playeranimations._animController.SetBool("Oak", false);
+        _playeranimations._oakController.SetBool("Oak", false);
     }
 
     void UseNimbus()
@@ -200,6 +202,7 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.nimbus;
         //_playeranimations.ChangeAnimalSprite(2, true);
         _playeranimations._animController.SetBool("Nimbus", true);
+        _playeranimations._nimbusController.SetBool("Nimbus", true);
     }
 
     void StopUseNimbus()
@@ -208,6 +211,7 @@ public class PlayerController : MonoBehaviour
         _helmetState = HelmetState.normal;
         //_playeranimations.ChangeAnimalSprite(0, false);
         _playeranimations._animController.SetBool("Nimbus", false);
+        _playeranimations._nimbusController.SetBool("Nimbus", false);
     }
 
     void Victory()

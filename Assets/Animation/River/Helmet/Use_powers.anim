@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Moving_down_Nimbus
+  m_Name: Use_powers
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -42,18 +42,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 49fdf43b7af25514fb4c689995ebf277, type: 3}
+      value: {fileID: 21300000, guid: a70de346287ae6048b37b301ca0e3e61, type: 3}
     attribute: m_Sprite
     path: 
-    classID: 212
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 21300000, guid: 95783268525b8de4c942298e4cfac53e, type: 3}
-    attribute: m_Sprite
-    path: Nimbus
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -82,18 +73,8 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 166281766
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 49fdf43b7af25514fb4c689995ebf277, type: 3}
-    - {fileID: 21300000, guid: 95783268525b8de4c942298e4cfac53e, type: 3}
+    - {fileID: 21300000, guid: a70de346287ae6048b37b301ca0e3e61, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

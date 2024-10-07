@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8259523697034714419}
   - component: {fileID: 8749634136199957084}
+  - component: {fileID: 5104092039426155820}
   m_Layer: 0
   m_Name: Nimbus
   m_TagString: Untagged
@@ -84,6 +85,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5104092039426155820
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822679355167827741}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a61ec9d55f9508f47ae889e81d4359b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1696695520134321306
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +581,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 72c8071277eba8e4e8eb62cb8844dc27, type: 3}
   - {fileID: 21300000, guid: 7165ccceb56a1e9498f881136e1222e5, type: 3}
   _animController: {fileID: 7708209426673438863}
+  _nimbusController: {fileID: 5104092039426155820}
+  _oakController: {fileID: 0}
 --- !u!95 &7708209426673438863
 Animator:
   serializedVersion: 5
