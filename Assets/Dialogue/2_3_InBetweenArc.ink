@@ -20,7 +20,7 @@ Yes, tunnels and "stone forests" can be quite depressing.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
 Specially if they're all reduced to rubble, with no life around.
 #speaker: #layout:right:sparks_happy_m
-The mouse understands what the end of the tunnel meas to their relationship of coincidence.
+The mouse understands what the end of the tunnel means to their relationship of coincidence.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Thank you for your help, Sparks. I think this is where we part ways.
 #speaker: #layout:right:sparks_scared_m
@@ -44,7 +44,7 @@ What about your mother?
 #speaker:
 The firefly smiles.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m 
-She is going to find me, I’m sure!
+She's going to find me, I’m sure!
 We fireflies always manage to find each other!
 #speaker:
 Her hope is unwavering.

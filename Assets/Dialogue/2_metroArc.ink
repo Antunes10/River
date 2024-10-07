@@ -13,19 +13,19 @@ His little heart starts racing, while his nose darts around sniffing a way out.
 
 +[Keep following the water’s flow.]
     Decided, he keeps himself safe inside the helmet.
-    The river keeps flowing slowly and takes the “boat” with it.
+    The river keeps flowing slowly and takes the shell with it.
 
 +[Stop and look for a way out.]
-    Tails changes the helmet’s course towards the shore made of debris, with the help of his little stick.
-    The “boat” hits the dirt and he jumps down onto the ground.
+    Tails changes the shell’s course towards the shore made of debris, with the help of his little stick.
+    The "shell" hits the dirt and he jumps down onto the ground.
     There is little to no light and he stumbles a bit.
     He tries to use his nose to help him find the surface but to no avail.
     Time passes and he understands it was a bad decision to stop following the river.
-    He goes back defeated and pushes the helmet back into the waters.
+    He goes back defeated and pushes the shell back into the waters.
 
-- After a couple of minutes the darkness starts to get slightly pushed back.
+- After a couple of minutes darkness starts to get slightly pushed back.
 A small ray of light creates a beacon. A cloud of blueish colour that tries to survive where it should not.
-Tails gets on the edge of the helmet and tries to get a better look with his unused eyes.
+Tails gets on the edge of the "boat" and tries to get a better look with his unused eyes.
 The light is weak and cold.
 Clearly not sunlight.
 And suddenly it moves!
@@ -33,8 +33,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
     #background:tunnel #music:tunnel
-    Against his most primal instincts, Tails puts the little stick in the waters and changes the helmet's direction, approaching the light.
-    Once the “boat” hits the dirt, he jumps onto the ground.
+    Against his most primal instincts, Tails puts the little stick in the waters and changes the boat's direction, approaching the light.
+    Once the boat hits the dirt, he jumps onto the ground.
     He walks slowly, one part curious another part scared.
     He is a mouse after all, there's no way he could defend himself against the dangers of this world.
     The light was now on the ground, behind a fallen garbage can.
@@ -63,7 +63,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         No thanks… I’m not hungry. 
         Why are you here? 
         #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-        Oh well, that is a very long story. 
+        Oh well, it's a very long story. 
         I was flying with my mother when the “Big Booms” happened.
         #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
         We got separated and after that I went looking for her. 
@@ -77,7 +77,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
         What are you doing here all by yourself? Don’t you have family or friends? 
         #speaker: Sparks #portrait:sparks_default #layout:right:sparks_default_m
-        Oh, we got separated during the “Big Booms”. It was very chaotic, even the two-legged giants were running everywhere.
+        Oh, we got separated during the “Big Booms”. It was very chaotic, even the "two-legged giants" were running everywhere.
         #speaker:
         The mouse understands he shouldn’t have started with that question. 
         #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
@@ -98,7 +98,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     That would really help me, but shouldn’t you look for your mother?
     #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-    Not to worry. I will find her eventually. Right now, it’s you the one that’s lost.
+    Don't worry. I'll find her eventually. Right now, it’s you the one that’s lost.
     #speaker:
     She finishes the crumb with one last bite and flies towards Tails still munching.
     #speaker:Sparks #portrait:sparks_default
@@ -123,13 +123,13 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker: #layout:middle:tails_default
     ~decreaseHope(1)
     ~ currentHope = currentHope - 1
-    There is a hint of curiosity in his eyes, but his instincts reign his body.
-    He's a mouse after all, any danger is possibly deadly one.
+    There's a hint of curiosity in his eyes, but his instincts reign his body.
+    He's a mouse after all, any danger is possibly a deadly one.
     He just saw an entire "stone forest" razed by fire and explosions; he isn't going to take any risks now.
     So, he lets the "shell" keep its path down the river, into the darkness.
     Soon the light fades behind him and darkness engulfs everything.
     He hears the water, but he can’t see a thing.
-    Suddenly the "shell" hits a rock making a dry sound.
+    Suddenly the shell hits a rock making a dry sound.
     Tails tumbles inside it, totally disorientated.
     Then hits another…
     And another…
@@ -156,9 +156,9 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad 
     I think I drowned… 
     #speaker:??? #portrait:sparks_sad #layout:right:sparks_sad_m
-    Oh, that is a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
+    Oh, that's a bummer. My mommy says the water is bad for the wings so that’s why I never go near it. 
     #speaker: #layout:right:sparks_happy_m
-    The firefly seems joyous even though destruction surrounds them. 
+    The firefly seems joyous even though destruction surrounds her. 
     She's' the only light that shines in that place.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     My name is Tails, what is yours? 
