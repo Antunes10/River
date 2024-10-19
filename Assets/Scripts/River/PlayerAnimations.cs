@@ -8,11 +8,11 @@ public class PlayerAnimations : MonoBehaviour
     // Start is called before the first frame update
     [Header("Sprites")]
     [SerializeField] private SpriteRenderer[] _animalsSprites;
-    [SerializeField] private Sprite[] _helmetSprites;
     
 
     public Animator _animController;
-    private SpriteRenderer _helmetSpriteRenderer;
+    public Animator _helmetController;
+    public SpriteRenderer _helmetSpriteRenderer;
 
     private bool _hasNimbus;
     private bool _hasOak;
@@ -29,7 +29,6 @@ public class PlayerAnimations : MonoBehaviour
         _hasNimbus = _gameManager.GetHasNimbus();
         _hasOak = _gameManager.GetHasOak();
         _hasCotton = _gameManager.GetHasCotton();
-        _helmetSpriteRenderer = GetComponent<SpriteRenderer>();
 
         if (!_hasSparks)
         {
@@ -64,7 +63,24 @@ public class PlayerAnimations : MonoBehaviour
 
     public void ChangeHelmetSprite(int val)
     {
-        _helmetSpriteRenderer.sprite = _helmetSprites[val];
+        _helmetController.SetInteger("Moving", val);
+    }
+
+    public void Getwater(bool state)
+    {
+        _animController.SetBool("GettingWater", state);
+        _helmetController.SetBool("GettingWater", state);
+    }
+
+    public void UsePower(string animal, bool usage)
+    {
+        _animController.SetBool(animal, usage);
+    }
+
+    public void Stunned(string obstacle, bool state)
+    {
+        _animController.SetBool("Stunned", state);
+        _helmetController.SetBool(obstacle, state);
     }
 
     public enum Helmet
