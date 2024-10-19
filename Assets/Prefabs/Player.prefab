@@ -773,7 +773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2432908401986294094}
   - component: {fileID: 2507005359116301854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NimbusCollider
   m_TagString: NimbusBeak
   m_Icon: {fileID: 0}
