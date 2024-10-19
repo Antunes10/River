@@ -8,14 +8,11 @@ public class PlayerAnimations : MonoBehaviour
     // Start is called before the first frame update
     [Header("Sprites")]
     [SerializeField] private SpriteRenderer[] _animalsSprites;
-    [SerializeField] private Sprite[] _animalNewSprites;
-    [SerializeField] private Sprite[] _helmetSprites;
     
 
     public Animator _animController;
-    public Animator _nimbusController;
-    public Animator _oakController;
-    private SpriteRenderer _helmetSpriteRenderer;
+    public Animator _helmetController;
+    public SpriteRenderer _helmetSpriteRenderer;
 
     private bool _hasNimbus;
     private bool _hasOak;
@@ -27,14 +24,11 @@ public class PlayerAnimations : MonoBehaviour
     private GameManager _gameManager;
     void Start()
     {
-        _nimbusController.enabled = false;
-        _nimbusController.enabled = true;
         _gameManager = GameManager.Instance;
         _hasSparks = _gameManager.GetHasSparks();
         _hasNimbus = _gameManager.GetHasNimbus();
         _hasOak = _gameManager.GetHasOak();
         _hasCotton = _gameManager.GetHasCotton();
-        _helmetSpriteRenderer = GetComponent<SpriteRenderer>();
 
         if (!_hasSparks)
         {
@@ -69,29 +63,24 @@ public class PlayerAnimations : MonoBehaviour
 
     public void ChangeHelmetSprite(int val)
     {
-        _helmetSpriteRenderer.enabled = true;
-        _helmetSpriteRenderer.sprite = _helmetSprites[val];
-        _animController.SetInteger("Moving", val);
+        _helmetController.SetInteger("Moving", val);
     }
 
-    public void ChangeAnimalSprite(int animal, bool on)
+    public void Getwater(bool state)
     {
-        if (!on)
-        {
-            _animalsSprites[2].sprite = _animalNewSprites[0];
-            _animalsSprites[3].sprite = _animalNewSprites[1];
-        }
-        else if(animal == 2)
-        {
-            //Nimbus
-            _animalsSprites[2].sprite = _animalNewSprites[2];
-            bool las = true;
-        }
-        else
-        {
-            //Oak
-            _animalsSprites[3].sprite = _animalNewSprites[3];
-        }
+        _animController.SetBool("GettingWater", state);
+        _helmetController.SetBool("GettingWater", state);
+    }
+
+    public void UsePower(string animal, bool usage)
+    {
+        _animController.SetBool(animal, usage);
+    }
+
+    public void Stunned(string obstacle, bool state)
+    {
+        _animController.SetBool("Stunned", state);
+        _helmetController.SetBool(obstacle, state);
     }
 
     public enum Helmet
