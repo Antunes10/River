@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                _playeranimations._animController.SetInteger("Moving", 0);
+                _playeranimations._helmetController.SetInteger("Moving", 0);
             }
 
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(_horizontalM, _verticalM);
@@ -183,35 +183,27 @@ public class PlayerController : MonoBehaviour
     void UseOak()
     {
         _helmetState = HelmetState.oak;
-        //_playeranimations.ChangeAnimalSprite(3, true);
-        _playeranimations._animController.SetBool("Oak", true);
-        _playeranimations._oakController.SetBool("Oak", true);
+        _playeranimations.UsePower("Oak", true);
     }
 
     void StopUseOak()
     {
         _helmetState = HelmetState.normal;
-        //_playeranimations.ChangeAnimalSprite(0, false);
-        _playeranimations._animController.SetBool("Oak", false);
-        _playeranimations._oakController.SetBool("Oak", false);
+        _playeranimations.UsePower("Oak", false);
     }
 
     void UseNimbus()
     {
         _nimbusCollider.enabled = true;
         _helmetState = HelmetState.nimbus;
-        //_playeranimations.ChangeAnimalSprite(2, true);
-        _playeranimations._animController.SetBool("Nimbus", true);
-        _playeranimations._nimbusController.SetBool("Nimbus", true);
+        _playeranimations.UsePower("Nimbus", true);
     }
 
     void StopUseNimbus()
     {
         _nimbusCollider.enabled = false;
         _helmetState = HelmetState.normal;
-        //_playeranimations.ChangeAnimalSprite(0, false);
-        _playeranimations._animController.SetBool("Nimbus", false);
-        _playeranimations._nimbusController.SetBool("Nimbus", false);
+        _playeranimations.UsePower("Nimbus", false);
     }
 
     void Victory()
@@ -231,22 +223,19 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator GetStunned(bool wire)
     {
-        _playeranimations._animController.SetBool("GettingWater", false);
-        //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
 
         _helmetState = HelmetState.stunned;
-        _indicator.sprite = _indicatorImages[0];
         if(wire) 
         {
-            _playeranimations._animController.SetBool("Stunned_Wire", true);
+            _playeranimations.Stunned("Stunned_Wire", true);
             yield return new WaitForSeconds(3);
-            _playeranimations._animController.SetBool("Stunned_Wire", false);
+            _playeranimations.Stunned("Stunned_Wire", false);
         }
         else
         {
-            _playeranimations._animController.SetBool("Stunned_Fabric", true);
+            _playeranimations.Stunned("Stunned_Fabric", true);
             yield return new WaitForSeconds(3);
-            _playeranimations._animController.SetBool("Stunned_Fabric", false);
+            _playeranimations.Stunned("Stunned_Fabric", false);
         }
         _helmetState = HelmetState.normal;
     }
@@ -256,11 +245,9 @@ public class PlayerController : MonoBehaviour
         //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
 
         _helmetState = HelmetState.water;
-        _indicator.sprite = _indicatorImages[1];
-        _indicator.enabled = true;
-        _playeranimations._animController.SetBool("GettingWater", true);
+        _playeranimations.Getwater(true);
         yield return new WaitForSeconds(3);
-        _playeranimations._animController.SetBool("GettingWater", false);
+        _playeranimations.Getwater(false);
         if (_helmetState.Equals(HelmetState.water))
         {
             _helmetState = HelmetState.normal;
