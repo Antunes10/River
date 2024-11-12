@@ -31,6 +31,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private Slider sfxVolumeSlider;
 
+    //base volume values
+    private float musicVolume;
+    private float sfxVolume;
+    private float envVolume;
+
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
     public bool switchPrologue = false;
 
@@ -44,6 +49,10 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
+        musicVolume = musicSource.volume;
+        envVolume = EnvSource.volume;
+        sfxVolume = sfxSource.volume;
+
         DontDestroyOnLoad(this.gameObject);
         if (!PlayerPrefs.HasKey("masterVolume"))
         {
@@ -62,10 +71,10 @@ public class AudioManager : MonoBehaviour
         if (vol == 0) {
             AudioListener.volume = masterVolumeSlider.value/10;
         } else if (vol == 1) {
-            musicSource.volume = musicVolumeSlider.value/10;
+            musicSource.volume = musicVolume * musicVolumeSlider.value/10;
         } else if (vol == 2) {
-            sfxSource.volume = sfxVolumeSlider.value/10;
-            EnvSource.volume = sfxVolumeSlider.value / 10;
+            sfxSource.volume = sfxVolume * sfxVolumeSlider.value/10;
+            EnvSource.volume = envVolume * sfxVolumeSlider.value / 10;
         }
         Save();
     }
@@ -75,10 +84,10 @@ public class AudioManager : MonoBehaviour
         if (vol == 0) {
             AudioListener.volume = value/10;
         } else if (vol == 1) {
-            musicSource.volume = value/10;
+            musicSource.volume = musicVolume * value / 10;
         } else if (vol == 2) {
-            sfxSource.volume = value/10;
-            EnvSource.volume = value / 10;
+            sfxSource.volume = sfxVolume * value/10;
+            EnvSource.volume = envVolume * value / 10;
         }
         Save();
     }
