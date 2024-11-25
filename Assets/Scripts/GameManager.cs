@@ -198,6 +198,7 @@ public class GameManager : MonoBehaviour
 
   public void changeToNextDialogueScene()
   {
+    AudioManager.Instance.StopAllSounds();
     _gs.currentInkIndex++;
     //Changing to Bridge Aftermath Scene OR Oak Scene
     if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5)
@@ -234,6 +235,7 @@ public class GameManager : MonoBehaviour
   public void changeToCreditsScene()
   {
     InitGameState();
+    AudioManager.Instance.StopAllSounds();
     SceneManager.LoadScene("Credits");
   }
 

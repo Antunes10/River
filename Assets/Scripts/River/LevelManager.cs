@@ -78,6 +78,8 @@ public class LevelManager : MonoBehaviour
     }
 
     public void StartMusic() {
+        _gameManager = GameManager.Instance;
+        _levelData = _gameManager._currentLevel;
         AudioManager.Instance.PlayRiverMusic(_levelData.music);
         AudioManager.Instance.PlayEvironmentSound(_levelData.envSounds);
     }
