@@ -15,6 +15,7 @@ MonoBehaviour:
   levelLength: 60
   backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
   music: 1
+  envSounds: 0
   obstacleList:
   - {fileID: 3421729367470482422, guid: 5733735757d05724eae7da8a247f51f6, type: 3}
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}
@@ -34,6 +35,6 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
   minProb: 1
-  maxProb: 3
+  maxProb: 2
   rain: 1
   rainInterval: 20
