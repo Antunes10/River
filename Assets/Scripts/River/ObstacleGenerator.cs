@@ -39,7 +39,7 @@ public class ObstacleGenerator : MonoBehaviour
     void Generate()
     {
         GameObject obstacle = _obstacles[Random.Range(0, _obstacles.Length)];
-        Instantiate(obstacle, new Vector3(transform.position.x, Random.Range(_botLimit, _topLimit), 0), Quaternion.identity);
+        Instantiate(obstacle, new Vector3(transform.position.x, Random.Range(_botLimit + obstacle.GetComponent<Collider2D>().bounds.min.y, _topLimit - obstacle.GetComponent<Collider2D>().bounds.max.y), 0), Quaternion.identity);
         _cooldown = Random.Range(minObsCooldown, maxObsCooldown);
         _timer = Time.time;
     }
