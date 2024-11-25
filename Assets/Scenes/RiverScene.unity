@@ -7894,8 +7894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485febe215f35f44bafd7e23d1654ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _topLimit: 1.5
-  _botLimit: -6.5
+  _topLimit: 1.22
+  _botLimit: -6.44
   _obstacles: []
   minObsCooldown: 0
   maxObsCooldown: 0
