@@ -79,7 +79,7 @@ Trapped, it's trying to free itself, but each movement makes the claws pierce hi
 ++ {TakeALook} {not UseBranches} [Use branches to protect the  bird from the fangs]
     ->UseBranches
     
-++ {UseBranches} [Keep trying to free the bird]
+++ {UseBranches} [Keep trying to free him with branches]
     ->KeepTrying
     
 ++ {TryToOpen or LookForSomething} [Leave him]
