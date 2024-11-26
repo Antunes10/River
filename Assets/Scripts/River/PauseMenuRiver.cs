@@ -12,10 +12,17 @@ public class PauseMenuRiver : MonoBehaviour
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
+    private bool audioFlag = false;
 
     void Start()
     {
         GetComponent<Canvas>().enabled = false;
+
+        float[] sliders = AudioManager.Instance.GetSliders();
+        masterVolumeSlider.value = sliders[0];
+        musicVolumeSlider.value = sliders[1];
+        sfxVolumeSlider.value = sliders[2];
+        audioFlag = true;
     }
 
 
@@ -57,17 +64,15 @@ public class PauseMenuRiver : MonoBehaviour
 
     public void ChangeVolume(int vol)
     {
-        switch (vol) {
-        case 0:
-            AudioManager.Instance.ChangeVolume(masterVolumeSlider.value, vol);
-            break;
-        case 1:
-            AudioManager.Instance.ChangeVolume(musicVolumeSlider.value, vol);
-            break;
-        case 2:
-            AudioManager.Instance.ChangeVolume(sfxVolumeSlider.value, vol);
-            break;
+        if (!audioFlag) {
+            return;
         }
+        
+        AudioManager.Instance.ChangeVolume(
+            masterVolumeSlider.value,
+            musicVolumeSlider.value,
+            sfxVolumeSlider.value,
+            vol);
     }
 
     public void SetControlsMenuActive()

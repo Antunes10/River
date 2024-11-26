@@ -65,7 +65,9 @@ public class DialogueManager : MonoBehaviour
   private const string NEXT_MUSIC_TAG = "music";
   private const string ENVIRONMENT_TAG = "enviroSound";
 
-    private string savedJson;
+  private string savedJson;
+
+  private bool audioFlag = false;
 
   private DialogueVariables dialogueVariables;
 
@@ -106,11 +108,6 @@ public class DialogueManager : MonoBehaviour
       choice.SetActive(false);
       index++;
     }
-
-    masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
-    musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-    sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
-
     EnterDialogueMode(currentInk);
   }
 
@@ -121,22 +118,25 @@ public class DialogueManager : MonoBehaviour
 
   public void Start()
   {
+    float[] sliders = AudioManager.Instance.GetSliders();
+    masterVolumeSlider.value = sliders[0];
+    musicVolumeSlider.value = sliders[1];
+    sfxVolumeSlider.value = sliders[2];
 
+    audioFlag = true;
   }
     
   public void ChangeVolume(int vol)
   {
-    switch (vol) {
-      case 0:
-        AudioManager.Instance.ChangeVolume(masterVolumeSlider.value, vol);
-        break;
-      case 1:
-        AudioManager.Instance.ChangeVolume(musicVolumeSlider.value, vol);
-        break;
-      case 2:
-        AudioManager.Instance.ChangeVolume(sfxVolumeSlider.value, vol);
-        break;
+    if (!audioFlag) {
+      return;
     }
+
+    AudioManager.Instance.ChangeVolume(
+            masterVolumeSlider.value,
+            musicVolumeSlider.value,
+            sfxVolumeSlider.value,
+            vol);
   }
 
   private void Update()
@@ -541,6 +541,7 @@ public class DialogueManager : MonoBehaviour
 
   public void MakeChoice(int choiceIndex)
   {
+
     if (canContinueNextLine)
     {
       currentStory.ChooseChoiceIndex(choiceIndex);

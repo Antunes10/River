@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using static UnityEngine.JsonUtility;
 
 public class AudioManager : MonoBehaviour
 {
@@ -31,10 +33,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private Slider sfxVolumeSlider;
 
-    //base volume values
-    private float musicVolume;
-    private float sfxVolume;
-    private float envVolume;
+    private float[] sliders = new float[3];
+
+    private bool flag = false;
 
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
     public bool switchPrologue = false;
@@ -49,47 +50,53 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        musicVolume = musicSource.volume;
-        envVolume = EnvSource.volume;
-        sfxVolume = sfxSource.volume;
+        LoadAudio();
+
+        sliders[0] = masterVolumeSlider.value;
+        sliders[1] = musicVolumeSlider.value;
+        sliders[2] = sfxVolumeSlider.value;
 
         DontDestroyOnLoad(this.gameObject);
-        if (!PlayerPrefs.HasKey("masterVolume"))
-        {
-            PlayerPrefs.SetFloat("masterVolume", 10);
-        } else if (!PlayerPrefs.HasKey("musicVolume")) {
-            PlayerPrefs.SetFloat("musicVolume", 10);
-        } else if (!PlayerPrefs.HasKey("sfxVolume")) {
-            PlayerPrefs.SetFloat("sfxVolume", 10);
-        }
-
-        Load();
     }
 
     public void ChangeVolume(int vol)
     {
+        if (flag == false) {
+            return;
+        }
+
         if (vol == 0) {
+            // master volume
             AudioListener.volume = masterVolumeSlider.value/10;
         } else if (vol == 1) {
-            musicSource.volume = musicVolume * musicVolumeSlider.value/10;
+            // music volume
+            musicSource.volume = masterVolumeSlider.value/10 * musicVolumeSlider.value/10;
         } else if (vol == 2) {
-            sfxSource.volume = sfxVolume * sfxVolumeSlider.value/10;
-            EnvSource.volume = envVolume * sfxVolumeSlider.value / 10;
+            // sfx volume
+            sfxSource.volume = masterVolumeSlider.value/10 * sfxVolumeSlider.value/10;
+            EnvSource.volume = masterVolumeSlider.value/10 * sfxVolumeSlider.value/10;
         }
-        Save();
+
+        SaveAudio(masterVolumeSlider.value, musicVolumeSlider.value, sfxVolumeSlider.value);        
+
+        Debug.Log("Music: " + musicSource.volume + " SFX: " + sfxSource.volume + " Env: " + EnvSource.volume);
     }
 
-    public void ChangeVolume(float value, int vol)
+    public void ChangeVolume(float master, float music, float sfx, int channel)
     {
-        if (vol == 0) {
-            AudioListener.volume = value/10;
-        } else if (vol == 1) {
-            musicSource.volume = musicVolume * value / 10;
-        } else if (vol == 2) {
-            sfxSource.volume = sfxVolume * value/10;
-            EnvSource.volume = envVolume * value / 10;
+        if (channel == 0) {
+            // master volume
+            AudioListener.volume = master/10;
+        } else if (channel == 1) {
+            // music volume
+            musicSource.volume = AudioListener.volume * music/10;
+        } else if (channel == 2) {
+            // sfx volume
+            sfxSource.volume = AudioListener.volume * sfx/10;
+            EnvSource.volume = AudioListener.volume * sfx/10;
         }
-        Save();
+
+        SaveAudio(master, music, sfx);
     }
 
     public void PlayMenuMusic()
@@ -207,18 +214,47 @@ public class AudioManager : MonoBehaviour
         RiverDefeat
     }
 
-    private void Load()
-    {
-        masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
-        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+    public void LoadAudio() {
+        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/AudioSettings.json");
+        string json = sr.ReadToEnd();
+        sr.Close();
+        sliders = JsonHelper.FromJson<float>(json);
+
+        updateMenuSliders();
+        updateSound();
+
+        flag = true;
+        Debug.Log("LOAD: " + json);
     }
 
-    private void Save()
+    public void SaveAudio(float master, float music, float sfx)
     {
-        PlayerPrefs.SetFloat("masterVolume", masterVolumeSlider.value);
-        PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
-        PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);
+        sliders[0] = master;
+        sliders[1] = music;
+        sliders[2] = sfx;
+
+        string json = JsonHelper.ToJson(sliders);
+        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/AudioSettings.json");
+        sw.Write(json);
+        sw.Close();
+
+        Debug.Log("SAVE: " + json);
+    }
+
+    public float[] GetSliders() {
+        return sliders;
+    }
+
+    public void updateMenuSliders() {
+        masterVolumeSlider.value = sliders[0];
+        musicVolumeSlider.value = sliders[1];
+        sfxVolumeSlider.value = sliders[2];
+    }
+
+    public void updateSound() {
+        musicSource.volume = (sliders[0]/10) * sliders[1] / 10;
+        sfxSource.volume = (sliders[0]/10) * sliders[2] / 10;
+        EnvSource.volume = (sliders[0]/10) * sliders[2] / 10;
     }
 
     #region Singleton

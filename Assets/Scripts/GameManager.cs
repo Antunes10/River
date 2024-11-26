@@ -86,6 +86,8 @@ public class GameManager : MonoBehaviour
       unlockedImages[i] = 0;
     }
 
+    AudioManager.Instance.updateMenuSliders();
+
     InitGameState();
     LoadUnlockables();
   }

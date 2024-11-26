@@ -3557,7 +3557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levels:
-  - {fileID: 11400000, guid: 0bc0d55399a2b614eb1782de670d92b3, type: 2}
+  - {fileID: 11400000, guid: 015e83c7347a64e49abc62b814ffbce0, type: 2}
   - {fileID: 11400000, guid: 699ecd9b75c0a0e4c8bd88ec937ac5ce, type: 2}
   - {fileID: 11400000, guid: 00df81b11e00fd3458e5ab8cec129da9, type: 2}
   - {fileID: 11400000, guid: ad65869131a751f41a3b9a603838d8e4, type: 2}
@@ -5082,8 +5082,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220168047}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1569594857}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 3
         m_Arguments:
@@ -5602,8 +5602,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220168047}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1569594857}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 3
         m_Arguments:
@@ -6839,8 +6839,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220168047}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1569594857}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 3
         m_Arguments:
@@ -6898,6 +6898,7 @@ GameObject:
   - component: {fileID: 1569594854}
   - component: {fileID: 1569594856}
   - component: {fileID: 1569594855}
+  - component: {fileID: 1569594857}
   m_Layer: 5
   m_Name: Menu_Volume
   m_TagString: Untagged
@@ -6969,6 +6970,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569594853}
   m_CullTransparentMesh: 1
+--- !u!114 &1569594857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569594853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1364b0d4054b7ad4ab53b23880a921ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterVolumeSlider: {fileID: 1169257804}
+  musicVolumeSlider: {fileID: 989477976}
+  sfxVolumeSlider: {fileID: 1534166158}
 --- !u!1 &1612138259
 GameObject:
   m_ObjectHideFlags: 0
