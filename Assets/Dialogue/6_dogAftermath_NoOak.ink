@@ -7,7 +7,7 @@ INCLUDE globals.ink
 #background:forest
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:nimbus_default_m
 ~unlockImage(0)
-The waters of the river slow down as the rain goes away, allowing a brighter day rip slightly through the clouds.
+The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
 #speaker:Nimbus #portrait:nimbus_default
 Nimbus: That was intense.
@@ -84,9 +84,9 @@ Tails: There is a valley full of green. Where water flows in abundance and men a
 #speaker:Sparks #portrait:sparks_default
 Sparks: Yes the beautiful valley you talked about earlier!
 #layout:right:sparks_happy_m #portrait:sparks_happy
-Sparks: There must be hundreds of fireflies there. All shinning together.
+Sparks: There must be hundreds of fireflies there. All shining together.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: It seems too good to be truth.
+Nimbus: It seems too good to be true.
 Nimbus: How do we know it even exists?
 #speaker:Tails #portrait:tails_default
 Tails: I had some friends who’ve been there and told tales of it, before the war.
@@ -108,7 +108,7 @@ And they deserve it, don’t they?
 Tails: We will get there in a couple of days.
 Tails: We just have to keep pressing on.
 #speaker:
-Sparks straightens himself and places a makes a salutation.
+Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
 Sparks: Ay ay, Mr.Captain.
 #speaker:

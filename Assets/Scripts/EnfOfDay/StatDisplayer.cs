@@ -35,17 +35,22 @@ public class StatDisplayer : MonoBehaviour
 
     StartCoroutine(ButtonCoroutine());
     int i = GameManager.Instance.GetCurrentInk();
-    
-    if (i == 4) {
+
+    if (i == 2)
+    {
         dayText.text = "End of Day 1";
+        BackgroundChanger(1);
+    }
+    else if (i == 4) {
+        dayText.text = "End of Day 2";
         BackgroundChanger(0);
     }
     else if (i == 7) {
-        dayText.text = "End of Day 2";
+        dayText.text = "End of Day 3";
         BackgroundChanger(1);
     }
     else if (i == 10) {
-        dayText.text = "End of Day 3";
+        dayText.text = "End of Day 4";
         BackgroundChanger(2);
     }
     else {
@@ -171,8 +176,12 @@ public class StatDisplayer : MonoBehaviour
   public void switchScene() {
     if (gm.isGameOver()) {
       GameManager.Instance.changeToMenuScene();
-    } else {
-      GameManager.Instance.changeToNextDialogueScene();
-    }
+    } else if(GameManager.Instance.GetCurrentInk() == 4){
+      GameManager.Instance.changeToCreditsScene();
+        }
+        else
+        {
+            GameManager.Instance.changeToNextDialogueScene();
+        }
   }
 }

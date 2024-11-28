@@ -15,7 +15,7 @@ He yawns and gets up to meet a warm sunbath.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Rise and shine, sleepyhead.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-Can I stay a bit longer? I’m not used to wake up this early.
+Can I stay a bit longer? I’m not used to waking up this early.
 #speaker:
 The little bug hides his face with a bit of foliage.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
@@ -26,7 +26,7 @@ The lazy youngling dozes off.
 It seems the juvenile sleepiness is common for all species.
 #speaker: #layout:middle:tails_happy 
 The mouse smiles entertained with his own remark.
-He should take the time to check the other half of the village. He might get lucky and find some food.
+He should take the time to check the rest of the village. He might get lucky and find some food.
 
 #speaker: #layout:middle:tails_default
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
@@ -115,7 +115,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Oak #portrait:oak_default 
     This is my village you see. Or was.
     It was attacked by the other humans that came from the East.
-    My owner advised me to run to the woods and wait for the storm of fire to pass.
+    My owner advised me to run to the woods and wait for the "storm of fire" to pass.
     And so, I did. Although he never came back to meet me.
     Consequently, I came back to him. I know by scent that he is still around.
     

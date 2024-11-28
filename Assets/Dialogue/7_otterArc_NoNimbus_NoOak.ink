@@ -7,8 +7,8 @@ INCLUDE globals.ink
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m 
 ~unlockImage(4)
 Hours pass and they both reach a wider body of water, surrounded by gravel and bushes.
-Trees block again the skies, as the river sliders inside another forest.
-The wind does not hollow, since the trees block it from entering that green place.
+Trees block the skies again, as the river slithers inside another forest.
+The wind doesn't howl, since the trees block it from entering that green place.
 The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Tails #portrait:tails_default
 I think we have a problem.

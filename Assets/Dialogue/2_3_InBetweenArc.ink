@@ -53,10 +53,20 @@ Well in that case we will keep on traveling together.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
 Yay!
 #speaker:
-The two animals face forward towards the West that awaits them.
+Tails smiles happily.
+#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
+The sun is going down so its better if we find a place to sleep.
+#speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
+Are we going to sleep in the forest!
+#speaker:Tails #portrait:tails_happy #layout:left:tails_happy
+Yes I suppose we can... I'll put the "shell" in a safe place.
+Meanwhile try to gather some wood for the fire.
+#speaker:
+The firefly buzzes away with a smile on her face.
+As the moon approaches they get ready to spend the night together.
 It's going to be a long and arduous trip.
 But for a moment hope reigns uncontested and they dare to dream.
 
-~changeScene("RiverScene")
+~changeScene("EndDayScene")
 
 ->END

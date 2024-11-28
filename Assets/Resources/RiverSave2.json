@@ -4,10 +4,10 @@
     "hasOak": false,
     "hasCotton": false,
     "currentFood": 3,
-    "currentHope": 6,
+    "currentHope": 4,
     "currentLevelIndex": 3,
-    "currentInkIndex": 5,
+    "currentInkIndex": 4,
     "dialogueIndex": 1,
-    "date": "28/11/2024 15:21:49",
+    "date": "28/11/2024 15:06:12",
     "gameOver": false
 }

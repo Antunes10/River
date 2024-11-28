@@ -8,7 +8,7 @@ INCLUDE globals.ink
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
 ~unlockImage(12)
 ~unlockImage(0)
-The waters of the river slow down as the rain goes away, allowing a brighter day rip slightly through the clouds.
+The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
 #speaker:Nimbus #portrait:nimbus_default
 That was intense.
@@ -87,10 +87,10 @@ And where that might be?
 West.
 There is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-That’s the place Mr.Tails talked us about!
-There must be hundreds of fireflies there. All shinning together.
+That’s the place Mr.Tails talked to us about!
+There must be hundreds of fireflies there. All shining together.
 #speaker:Nimbus #portrait:nimbus_default
-It seems too good to be truth.
+It seems too good to be true.
 How do we know it even exists?
 #speaker:Oak #portrait:oak_default
 I know it exists, because I have been there.
@@ -98,7 +98,7 @@ I know it exists, because I have been there.
 They all open their eyes wide with amazement.
 #speaker:Oak 
 My human took me there some years ago.
-We ran through the woods, howled at the moon and slept under the stary night sky.
+We ran through the woods, howled at the moon and slept under the starry night sky.
 It’s a wonderful place.
 #speaker:
 The firefly’s face lightens up alongside his behind.
@@ -113,7 +113,8 @@ And they deserve it, don’t they?
 #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
 We will get there in a couple of days.
 We just have to keep pressing on.
-Sparks straightens himself and places a makes a salutation.
+#speaker:
+Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
 Ay ay, Mr.Captain.
 #speaker:
@@ -123,7 +124,8 @@ They all laugh.
 #speaker:Tails #portrait:tails_happy 
 I did not mean right now.
 #speaker:Oak #portrait:oak_happy 
-I guess it is best to take advantage of his high spirits.
+I guess it is best to take advantage of her high spirits.
+#speaker:
 In agreement the band goes back to the helmet and set sail to their assured horizon.
 
 ~changeScene("RiverScene")
