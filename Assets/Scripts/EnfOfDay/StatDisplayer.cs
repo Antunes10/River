@@ -176,9 +176,7 @@ public class StatDisplayer : MonoBehaviour
   public void switchScene() {
     if (gm.isGameOver()) {
       GameManager.Instance.changeToMenuScene();
-    } else if(GameManager.Instance.GetCurrentInk() == 4){
-      GameManager.Instance.changeToCreditsScene();
-        }
+    }
         else
         {
             GameManager.Instance.changeToNextDialogueScene();

@@ -208,10 +208,10 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Load()
-    {/*
-        masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
-        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");*/
+    {
+        masterVolumeSlider.value = 1;
+        musicVolumeSlider.value = 1;
+        sfxVolumeSlider.value = 1;
     }
 
     private void Save()
