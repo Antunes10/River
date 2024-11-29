@@ -13,7 +13,7 @@ The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Tails #portrait:tails_default
 I think we have a problem.
 #speaker:
-As they get closer to the centre of the lake, the mouse points towards a dam of debris, that blocks the rivers’ natural flow.
+As they get closer to the centre of the lake, the mouse points towards a dam of debris, that blocks the river’s natural flow.
 #speaker:Sparks #portrait:sparks_default
 So that’s why there are trees inside the water.
 #portrait:sparks_sad #layout:right:sparks_sad_m
@@ -78,7 +78,7 @@ They had to decide.
     (Boom)
 + [Try to breach the dam]
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Out there is dangerous and we go faster by water.
+    Out there its dangerous and we go faster by water.
     Let’s try to find a way through.
     #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
     That means we can keep the green shell?
@@ -88,8 +88,8 @@ They had to decide.
     The firefly burst with joy, but his happiness disappears when he understands the task ahead.
     #layout:left:tails_default #layout:right:sparks_default_m
     Spreading out, the animals start to evaluate the blockage.
-    Sparks zigzags is way through the air, to have a better look from above.
-    While Tails squirms through a breach and enter inside the dam to look for a way through.
+    Sparks zigzags her way through the air, to have a better look from above.
+    While Tails squirms through a breach and enters inside the dam to look for a way through.
     As a team they work efficiently.
     However there seems to be no way through.
     Tails goes back outside.
@@ -132,10 +132,10 @@ They had to decide.
     Hazel: Pleasure to meet you both, fellow river travellers.
     Hazel: What brings you here?
     #speaker:
-    The mouse descends a few steps until he’s at the water level.
+    The mouse descends a few steps until he’s at the water's level.
     #speaker:Tails #portrait:tails_default
     Afternoon Miss Hazel.
-    We are trying to get across with our shell, but we can’t find a way through.
+    We are trying to get across with our "shell", but we can’t find a way through.
     Would you be kind enough to help us? You seem to know this place quite well.
     #speaker:Hazel #portrait:hazel_default #layout:right:hazel_default_m
     Hazel: Of course, sweet thing.
@@ -154,7 +154,7 @@ They had to decide.
     I can only image what you have seen.
     #speaker:
     The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
-    The Otter washes her hands vigorously.
+    The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_default 
     Hazel: Fear not. This otter is going to find a structural weakness and breach the damn thing.
     #speaker:Sparks #portrait:sparks_happy #layout:left:sparks_happy
@@ -175,7 +175,7 @@ They had to decide.
     #speaker:Sparks #portrait:sparks_happy
     Hurray Miss Hazel, you’re the best!
     #speaker: #layout:left:sparks_default #layout:middle:tails_default #layout:right:hazel_default_m
-    They both jump aboard the shell and with the otter’s help they traverse the dam into the other side.
+    They both jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
     The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default

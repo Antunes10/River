@@ -13,7 +13,7 @@ The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Sparks #portrait:sparks_default
 I think we have a problem.
 #speaker:
-As they get closer to the centre of the lake, the mouse points towards a dam of debris, that blocks the rivers’ natural flow.
+As they get closer to the centre of the lake, the mouse points towards a dam of debris, that blocks the river’s natural flow.
 #speaker:Sparks #portrait:sparks_default
 So that’s why there are trees inside the water.
 #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
@@ -83,15 +83,15 @@ They had to decide.
 
 + [Try to breach the dam.]
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    Out there is dangerous and we go faster by water.
+    Out there its dangerous and we go faster by water.
     Let’s try to find a way through.
     #speaker:
-    Nobody looks hopeful that the last plan would work, but they get out of the helmet anyway.
+    Nobody looks hopeful about the plan, but they get out of the helmet anyway.
     Spreading out, the animals start to evaluate the blockage.
     #layout:left:default
     Oak stays in the water, checking near the bottom.
-    Sparks that zigzag is way through the air, to have a better look from above.
-    Lastly, Tails squirms through a breach and enter inside the dam to look for a way through.
+    Sparks that zigzag her way through the air, to have a better look from above.
+    Lastly, Tails squirms through a breach and enters inside the dam to look for a way through.
     As a team they work efficiently.
     However there seems to be no way through.
     Tails goes back outside.
@@ -109,7 +109,7 @@ They had to decide.
     Hazel: I’m Hazel.
     #speaker:
     The mouse has to look twice to understand his mistake.
-    The brown mass down there is not his dog friend, but rather a long and sharp Otter than swims around happily.
+    The brown mass down there is not his dog friend, but rather a long and sharp Otter that swims around happily.
     #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
     Oh, my light! She ate Mr.Oak!
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
@@ -138,10 +138,10 @@ They had to decide.
     #portrait:hazel_default #layout:left:hazel_default
     Hazel: But is the dam bothering you?
     #speaker:
-    The mouse descends a few steps until he’s at the water level.
+    The mouse descends a few steps until he’s at the water's level.
     #speaker:Tails #portrait:tails_default
     Afternoon Miss Hazel.
-    We are trying to get across with our shell, but we can’t find a way through.
+    We are trying to get across with our "shell", but we can’t find a way through.
     Would you be kind enough to help us?
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_default
     Hazel: Of course, sweet thing.
@@ -161,7 +161,7 @@ They had to decide.
     I can only image what you have seen.
     #speaker:
     The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
-    The Otter washes her hands vigorously.
+    The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_default
     Hazel: Fear not. This otter is going to find a structural weakness and breach the damn thing.
     #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
@@ -183,7 +183,7 @@ They had to decide.
     #speaker:Sparks #portrait:sparks_happy #layout:middle:tails_default_m
     Hurray Miss Hazel, you’re the best!
     #speaker:
-    They all jump aboard the shell and with the otter’s help they traverse the dam into the other side.
+    They all jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
     The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
@@ -243,7 +243,7 @@ They had to decide.
     Otter: Tomorrow others might need my help traversing the river.
     Otter: I must stay and do my part.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
-    Honourable and caring. May you receive has half has you give, Miss Hazel.
+    Honourable and caring. May you receive as half as you give, Miss Hazel.
     #speaker:
     They all wave their paws and feet and go their separate ways.
     The group was now closer to reaching their western destination.

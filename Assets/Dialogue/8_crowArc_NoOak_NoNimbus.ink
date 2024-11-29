@@ -3,11 +3,11 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:swamp #speaker: #layout:left:tails_default #layout:right:sparks_default_m
+#background:swamp #speaker:
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The night went by and now the slow river reaches a march an its waters spread throughout the unseen horizon.
+The night went by and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:left:tails_sad #layout:right:sparks_sad_m
 A scent of death hangs in the air.
@@ -39,9 +39,11 @@ Looking around with dark eyes.
 +[Avoid the Crow]
     #speaker: #layout:right:sparks_sad_m
     Tails pushes the helmet forward and away from the dead tree.
+    #speaker:Sparks  #portrait:sparks_sad
+    Are we going to run fromt he bad crow?
     #speaker:Tails #portrait:tails_sad
-    I sense he is not to be trusted.
-    #speaker:
+    Yes, I sense he's not to be trusted.
+    #speaker: #background:swamp
     The helmet keeps daring through the thick mist that surrounds the world.
     Minutes pass.
     Hours pass.
@@ -111,7 +113,7 @@ Looking around with dark eyes.
     Crow: Much bigger than you can imagine.
     Crow: And it is not alone. Hundred more now paint the once green fields.
     Crow: Grey and mud fills the world.
-    Crow: As bodies pile up East and are brough by the murky river.
+    Crow: As bodies pile up East and are brought by the murky river.
     #speaker:Sparks #portrait:sparks_sad
     But there is an enchanted land in the West, right?
     #speaker:
@@ -146,8 +148,12 @@ Looking around with dark eyes.
     #speaker:
     They all scream.
     Slowly the helmet starts to sink in the tar pit.
-    They try to escape but are also swollen by the artificial blackness.
-    The crow’s laugh is heard again as they drown in agony and fear.
+    #layout:left:default
+    Tails looks for Sparks but she's nowhere to be found.
+    #background:black #layout:middle:default 
+    They try to escape but are also swallowed by the artificial blackness.
+    The crow’s laugh is heard again...
+    As they drown in agony and fear.
     A slow and asphyxiating death.
 
 -
@@ -219,12 +225,12 @@ The mist hasn’t disappeared.
 
 === RiskIt ===
 #speaker: #layout:right:sparks_sad_m
-Tails had the feeling they would starve if they stayed in that forsaken place.
+Tails has a feeling they will starve if they stay in this forsaken place.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
 #speaker:
-Apprehension was all around, but no other animal voiced a better option.
-The mouse took out his faithful stick and pushed the helmet forwards.
+Apprehension is all around, but no other animal voices a better option.
+The mouse takes out his faithful stick and pushes the helmet forward.
 On mud and murky waters, they travel.
 The mist grip keeps thigh on the world around.
 A white hand that strangles hope.
@@ -246,8 +252,8 @@ With some effort he frees the helmet and goes around the body.
 The mist starts to dissipate and a terrifying image lays before the small mouse’s eyes.
 Tens of bodies sunken and swallowed by the marsh’s waters, float all around them.
 Some bodies still red, others, maimed in ways inconceivable.
-His hands shook with the horror he was seeing.
-But he kept going, occasionally closing his eyes to avoid the nightmares that already shook his life.
+His hands shake with the horror he was seeing.
+But he keeps going, occasionally closing his eyes to avoid the nightmares that already shook his life.
 Time seems infinite.
 Minutes turn to years.
 Until finally a huge shadow obscures them and everything around.

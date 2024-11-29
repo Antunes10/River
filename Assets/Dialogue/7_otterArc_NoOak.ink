@@ -13,7 +13,7 @@ The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Nimbus #portrait:nimbus_default
 I think we have a problem.
 #speaker:
-As they get closer to the centre of the lake, the bird points towards a dam of debris, that blocks the rivers’ natural flow.
+As they get closer to the centre of the lake, the bird points towards a dam of debris, that blocks the river’s natural flow.
 #speaker:Sparks #portrait:sparks_default
 So that’s why there are trees inside the water.
 The river can’t get out!
@@ -84,17 +84,17 @@ They had to decide.
 
 + [Try to breach the dam.]
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    Out there is dangerous and we go faster by water.
+    Out there its dangerous and we go faster by water.
     Let’s try to find a way through.
     #speaker:Nimbus #portrait:nimbus_default
     What if we don’t find it?
     #speaker:Tails #portrait:tails_default
     Then we make one.
     #speaker:
-    Nobody looks hopeful that the last plan would work, but they get out of the helmet anyway.
+    Nobody looks hopeful about the plan, but they get out of the helmet anyway.
     Spreading out, the animals start to evaluate the blockage.
-    Nimbus jumps towards the top and is accompanied by Sparks that zigzags is way through the air.
-    Lastly, Tails squirms through a breach and enter inside the dam to look for a way through.
+    Nimbus jumps towards the top and is accompanied by Sparks that zigzags her way through the air.
+    Lastly, Tails squirms through a breach and enters inside the dam to look for a way through.
     As a team they work efficiently.
     However there seems to be no way through.
     Tails goes back outside.
@@ -102,7 +102,7 @@ They had to decide.
     Did you find anything, Nimbus?
     #speaker:Nimbus #portrait:nimbus_default
     Not a damn thing.
-    #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_happy_m
+    #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     Ih, ih a damn thing in a dam…
     #speaker: #layout:middle:tails_happy
     The mouse smiles with the childish remark as he tries to figure out another plan.
@@ -136,10 +136,10 @@ They had to decide.
     Hazel: Pleasure to meet you, fellow river travellers.
     Hazel: What brings you to this small lake?
     #speaker:
-    The bird descends a few steps until he’s at the water level.
+    The bird descends a few steps until he’s at the water's level.
     #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
     Good afternoon, Hazel.
-    We are trying to get across with our shell, but we can’t find a way through.
+    We are trying to get across with our "shell", but we can’t find a way through.
     Could you be help us? You seem to know this place quite well.
     #speaker:Hazel #portrait:hazel_happy
     Hazel: Of course, sweet thing.
@@ -158,7 +158,7 @@ They had to decide.
     We can only image what you have seen.
     #speaker:
     The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
-    The Otter washes her hands vigorously.
+    The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_default
     Hazel: Fear not. This otter is going to find a structural weakness and breach the damn thing.
     #speaker: #portrait:sparks_happy
@@ -180,7 +180,7 @@ They had to decide.
     #speaker:Sparks #portrait:sparks_happy #layout:middle:tails_default_m
     Hurray Miss Hazel, you’re the best!
     #speaker:
-    They all jump aboard the shell and with the otter’s help they traverse the dam into the other side.
+    They all jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
     The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default

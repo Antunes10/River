@@ -1,12 +1,13 @@
 {
     "hasSparks": true,
-    "hasNimbus": false,
-    "hasOak": false,
+    "hasNimbus": true,
+    "hasOak": true,
     "hasCotton": false,
-    "currentFood": 3,
-    "currentHope": 2,
-    "currentLevelIndex": 2,
-    "currentInkIndex": 3,
-    "dialogueIndex": 0,
-    "date": "24/09/2024 00:23:33"
+    "currentFood": 1,
+    "currentHope": 6,
+    "currentLevelIndex": 6,
+    "currentInkIndex": 9,
+    "dialogueIndex": 3,
+    "date": "29/11/2024 18:14:42",
+    "gameOver": false
 }
