@@ -194,7 +194,8 @@ public class AudioManager : MonoBehaviour
         plainsWar = 9, //
         villageDepartue = 10,
         oak = 11, // meet oak
-        respite = 12 // scene before otter
+        respite = 12, // scene before otter
+        silence = 13
     }
 
     public enum SFXSounds
