@@ -7,6 +7,9 @@ public class Level : ScriptableObject
 {
     public float levelLength;
 
+    [Header("Goes to Campfire?")]
+    public bool GoesToCampfire;
+
     [Header("Background")]
     public GameObject backgrounds;
 
