@@ -510,6 +510,9 @@ public class DialogueManager : MonoBehaviour
             case "village":
                 AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.village);
                 break;
+            case "nightWind":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.nightWind);
+                break;
             case "villageBirds":
                 AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageBirds);
                 break;

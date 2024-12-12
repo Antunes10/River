@@ -87,7 +87,7 @@ Sparks is still in the shell.
     None of them were equipped to answer the mouse’s question.
     They could only watch as a once yellow and lush land was made barren.
     
-    #background:villageHouseDark #layout:left:tails_default #layout:right:sparks_default_m #enviroSound:village
+    #background:villageHouseDark #layout:left:tails_default #layout:right:sparks_default_m #enviroSound:silence
     Their steps echo inside the destroyed building.
     Here at least the wind didn’t bite them.
     
@@ -135,8 +135,8 @@ Sparks is still in the shell.
     She is clearly affected by what happened at the bridge.
     Once safe, Tails should cheer her up.
     
-    #background:villageHouseDark #enviroSound:village
-    Their steps echoed inside the destroyed building.
+    #background:villageHouseDark #enviroSound:silence
+    Their steps echo inside the destroyed building.
     Here at least the wind didn’t bite them.
     
     #layout:left:default #layout:right:default #layout:middle:tails_default

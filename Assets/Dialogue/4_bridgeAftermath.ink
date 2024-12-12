@@ -136,7 +136,7 @@ Today they build, tomorrow they destroy.
 None of them were equipped to answer the mouse’s question.
 They could only watch as a once yellow and lush land was made barren.
 #background:villageHouseDark #enviroSound:silence
-Their steps echoed inside the destroyed building.
+Their steps echo inside the destroyed building.
 Here at least the wind didn’t bite them.
 
 {nimbus_hopeful_VS_truth == 0: ->if_hopeful_1 | ->if_truth_1}

@@ -188,14 +188,15 @@ public class AudioManager : MonoBehaviour
         bridgeArmy = 3,
         bridgeFalling = 4,
         village = 5,
-        villageBirds = 6,
-        villageExplosions = 7,
-        plains = 8, // find nimbus 
-        plainsWar = 9, //
-        villageDepartue = 10,
-        oak = 11, // meet oak
-        respite = 12, // scene before otter
-        silence = 13
+        nightWind = 6,
+        villageBirds = 7,
+        villageExplosions = 8,
+        plains = 9, // find nimbus 
+        plainsWar = 10, //
+        villageDepartue = 11,
+        oak = 12, // meet oak
+        respite = 13, // scene before otter
+        silence = 14
     }
 
     public enum SFXSounds
