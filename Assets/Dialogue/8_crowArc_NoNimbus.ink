@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:swamp
+#background:swamp #enviroSound:swamp
 #speaker:
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.

@@ -519,6 +519,9 @@ public class DialogueManager : MonoBehaviour
             case "villageExplosions":
                 AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageExplosions);
                 break;
+            case "swamp":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.swamp);
+                break;
             case "silence":
                 AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.silence);
                 break;
