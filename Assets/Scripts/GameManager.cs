@@ -187,8 +187,8 @@ public class GameManager : MonoBehaviour
     else if (_gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10)
     {
       if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
-      else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
-      else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 2; }
+      else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 1; }
+      else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 2; }
       else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
     }
 
