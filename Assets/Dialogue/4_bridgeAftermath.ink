@@ -135,7 +135,7 @@ Today they build, tomorrow they destroy.
 #speaker:
 None of them were equipped to answer the mouse’s question.
 They could only watch as a once yellow and lush land was made barren.
-#background:villageHouseDark
+#background:villageHouseDark #enviroSound:silence
 Their steps echoed inside the destroyed building.
 Here at least the wind didn’t bite them.
 
@@ -158,7 +158,7 @@ Or perhaps it was best if Tails spent some time with his companions.
     Right now, their provisions take priority.
     #layout:middle:tails_default #layout:right:default #layout:left:default 
     The mouse warns his companions and goes out into the night.
-    #background:villageSquareNight
+    #background:villageSquareNight #enviroSound:nightWind
     It is cold and dark, but thankfully his nose can “see” very well.
     There are some natural scents…
     Some that could come from food…

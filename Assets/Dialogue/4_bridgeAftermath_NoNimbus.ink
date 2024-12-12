@@ -87,7 +87,7 @@ Sparks is still in the shell.
     None of them were equipped to answer the mouse’s question.
     They could only watch as a once yellow and lush land was made barren.
     
-    #background:villageHouseDark #layout:left:tails_default #layout:right:sparks_default_m
+    #background:villageHouseDark #layout:left:tails_default #layout:right:sparks_default_m #enviroSound:village
     Their steps echo inside the destroyed building.
     Here at least the wind didn’t bite them.
     
@@ -135,7 +135,7 @@ Sparks is still in the shell.
     She is clearly affected by what happened at the bridge.
     Once safe, Tails should cheer her up.
     
-    #background:villageHouseDark
+    #background:villageHouseDark #enviroSound:village
     Their steps echoed inside the destroyed building.
     Here at least the wind didn’t bite them.
     
@@ -161,7 +161,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     #speaker:
     Right now, their provisions take priority.
     The mouse warns his companion and goes out into the night.
-    #background:villageSquareNight #layout:left:default #layout:right:default #layout:middle:tails_default
+    #background:villageSquareNight #layout:left:default #layout:right:default #layout:middle:tails_default #enviroSound:nightWind
     It is cold and dark, but thankfully his nose can “see” very well.
     There are some natural scents…
     Some that could come from food…
