@@ -46,6 +46,7 @@ public class PauseMenuRiver : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         isPaused = false;
         GetComponent<Canvas>().enabled = false;
+        _soundMenuCanvas.enabled = false;
         Time.timeScale = 1f;
     }
 
