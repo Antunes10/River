@@ -3,8 +3,8 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:villageFar #music:forest
-#music:villageArrival
+#speaker: #layout:middle:nimbus_default #layout:left:tails_default #layout:right:sparks_default_m #background:villageFar
+#music:villageArrival #enviroSound:village
 ~unlockImage(3)
 The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.

@@ -59,14 +59,13 @@ The sun is going down so its better if we find a place to sleep.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
 Are we going to sleep in the forest!
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-Yes I suppose we can... I'll put the "shell" in a safe place.
-Meanwhile try to gather some wood for the fire.
+Yes I suppose we can... we just have to find a safe place.
+Let's keep on the river a bit more until we find a good spot.
 #speaker:
-The firefly buzzes away with a smile on her face.
-As the moon approaches they get ready to spend the night together.
+The firefly draws a big smile.
 It's going to be a long and arduous trip.
 But for a moment hope reigns uncontested and they dare to dream.
 
-~changeScene("EndDayScene")
+~changeScene("RiverScene")
 
 ->END

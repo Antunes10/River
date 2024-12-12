@@ -63,7 +63,7 @@ Humans are pretty good at destroying sturdy things.
 The mouse saw the association and could not argue with its logic.
 Suddenly his hair gets bristly.
 His nose sniffs the coming scent and he get a bit apprehensive.
-#speaker:Tails #portrait:tails_scared #layout:left:tails_scared
+#speaker:Tails #portrait:tails_scared #layout:left:tails_scared #music:nimbus
 Dog…
 #speaker: #layout:middle:nimbus_scared
 The bird also gets stiff.
@@ -126,7 +126,7 @@ He had seen mice teared to shreds by angry mongrels.
     Where are you going?
     #speaker:
     Both of them are catatonic.
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m #music:villageArrival
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -210,6 +210,7 @@ He had seen mice teared to shreds by angry mongrels.
 
 
 +[Get away from the village]
+    #music:villageArrival
     ->get_away
 
 ~changeScene("RiverScene")
@@ -227,6 +228,7 @@ He had seen mice teared to shreds by angry mongrels.
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad
 	Fine, fine. I’m up and flying.
+    #music:tunnel #enviroSound:villageBirds
 	#speaker: 
 	Suddenly the sound of birds fleeing is heard.
     They all go outside curious and see a band of birds disappearing in the clouds.
@@ -237,6 +239,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
     #layout:left:tails_scared #layout:middle:nimbus_scared #layout:right:sparks_scared_m
+    #music:nimbus #enviroSound:villageExplosions
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared
     AH!
@@ -297,6 +300,7 @@ The dog sniffs.
 It is alright. I was already expecting it, once he did not came back.
 With age comes the acceptance of life and death.
 And I am already old…
+#music:tunnel #enviroSound:villageBirds
 #speaker:
 A band of birds flies away from the tall grass, spooked with something.
 Silence reigns.
@@ -317,6 +321,7 @@ The firefly arrives moments after.
 #speaker:Sparks #portrait:sparks_default
 Heya, friends, what’s going on, why are you running?
 #speaker:
+#music:nimbus #enviroSound:villageExplosions
 The moment the question is asked a huge bang is heard nearby.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
 AH!

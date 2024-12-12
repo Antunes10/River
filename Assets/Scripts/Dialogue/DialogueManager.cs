@@ -493,10 +493,28 @@ public class DialogueManager : MonoBehaviour
            switch (tagValue)
            {
              case "tunnel":
-                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel_Nar1);
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel);
+                break;
+            case "river":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.river);
                 break;
              case "forest":
                 AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.forest);
+                break;
+             case "bridge":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.bridgeArmy);
+                break;
+            case "bridgeFalling":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.bridgeFalling);
+                break;
+            case "village":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.village);
+                break;
+            case "villageBirds":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageBirds);
+                break;
+            case "villageExplosions":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageExplosions);
                 break;
              }
            break;

@@ -222,7 +222,7 @@ Finally, when Tails feels it's safe he places his hands on one of the wires and 
 The wires move, but don't cut the bird.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
 That’s it! You’re doing it, Mr.Tails!
-#speaker: #layout:left:tails_scared #layout:middle:nimbus_scared_hurt_m #layout:right:sparks_scared_m
+#speaker: #layout:left:tails_scared #layout:middle:nimbus_scared_hurt_m #layout:right:sparks_scared_m #enviroSound:bridge
 The joyous words are suddenly stuffed by a huge metal roar from above the bridge.
 #speaker:Bird #portrait:nimbus_scared
 What the hell is this?
@@ -275,6 +275,7 @@ The bird initially argues in pain but then accepts the help.
 They drag each other slowly towards the helmet.
 Falling debris are now big enough to kill them on impact.
 The bird is lunged inside and the mouse jumps behind, pushing the helmet into the river, with his stick.
+#enviroSound:bridgeFalling
 In an instant the bridge collapses.
 And the shockwave sends the helmet flying with the strength of the tide.
 The dust settles.

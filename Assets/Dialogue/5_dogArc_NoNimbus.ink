@@ -33,7 +33,7 @@ The morning brings a soothing humidity to the world, but it is not enough to cov
 The road is a bit drier than yesterday.
 Suddenly his hair gets bristly.
 His nose sniffs a new scent and he get a bit apprehensive.
-#speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
+#speaker:Tails #portrait:tails_scared #layout:middle:tails_scared #music:nimbus
 Dog…
 #speaker:
 The mouse gets stiff.
@@ -71,7 +71,7 @@ He had seen mice teared to shreds by angry mongrels.
     Dog: What are you doing here?
     #speaker:
     The mouse is catatonic.
-    #speaker:Oak #portrait:oak_default
+    #speaker:Oak #portrait:oak_default #music:villageArrival
     Dog: Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -183,6 +183,7 @@ He had seen mice teared to shreds by angry mongrels.
         It is alright. I was already expecting it, once he did not came back.
         With age comes the acceptance of life and death.
         And I am already old…
+        #music:tunnel #enviroSound:villageBirds
         #speaker:
         A band of birds flies away from the tall grass, spooked with something.
         Silence reigns.
@@ -201,6 +202,7 @@ He had seen mice teared to shreds by angry mongrels.
         The firefly arrives moments after.
         #speaker:Sparks #portrait:sparks_default
         Heya, friends, what’s going on, why are you running?
+        #music:nimbus #enviroSound:villageExplosions
         #speaker:
         The moment the question is asked a huge bang is heard nearby.
         #speaker:Sparks #portrait:sparks_scared #layout:middle:sparks_scared_m
@@ -228,6 +230,7 @@ He had seen mice teared to shreds by angry mongrels.
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 	Fine, fine. I’m up and flying.
+    #music:tunnel #enviroSound:villageBirds
 	#speaker:
 	Suddenly the sound of birds fleeing is heard.
     They go outside curious and see a band of birds disappearing in the clouds.
@@ -236,6 +239,7 @@ He had seen mice teared to shreds by angry mongrels.
     Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
+    #music:nimbus #enviroSound:villageExplosions
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
     AH!

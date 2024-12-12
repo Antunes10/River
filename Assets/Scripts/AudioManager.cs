@@ -116,6 +116,11 @@ public class AudioManager : MonoBehaviour
         EnvSource.Play();
     }
 
+    public void PlayEvironmentSoundOneShot(EnvironmentSounds indexer)
+    {
+        EnvSource.PlayOneShot(_EnvSounds[(int)indexer]);
+    }
+
     public void PlayNextNarrativeMusic()
     {
         //if currentNarrativeMusic is the prologue one
@@ -177,15 +182,19 @@ public class AudioManager : MonoBehaviour
 
     public enum EnvironmentSounds
     {
-        tunnel_Nar1 = 0,
-        tunnel_Riv1 = 1,
-        sparks = 2,
-        forest = 3,
-        nimbus = 4, // find nimbus 
-        villageArrival = 5, //
-        villageDepartue = 6,
-        oak = 7, // meet oak
-        respite = 8 // scene before otter
+        tunnel = 0,
+        river = 1,
+        forest = 2,
+        bridgeArmy = 3,
+        bridgeFalling = 4,
+        village = 5,
+        villageBirds = 6,
+        villageExplosions = 7,
+        plains = 8, // find nimbus 
+        plainsWar = 9, //
+        villageDepartue = 10,
+        oak = 11, // meet oak
+        respite = 12 // scene before otter
     }
 
     public enum SFXSounds

@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #portrait:narrator #layout:left:default #background:metro
+#speaker: #portrait:narrator #layout:left:default #background:metro #enviroSound:tunnel
 #portrait:tails_default #layout:middle:tails_default #music:prologue
 ~unlockImage(0)
 Darkness engulfs the world.
