@@ -185,14 +185,14 @@ He had seen mice teared to shreds by angry mongrels.
         And I am already old…
         #music:tunnel #enviroSound:villageBirds
         #speaker:
-        A band of birds flies away from the tall grass, spooked with something.
+        A band of birds flies away from the tall grass, spooked by something.
         Silence reigns.
         #layout:left:tails_scared
         The mouse looks around, worried.
         #layout:right:oak_scared_m
         In that moment one of the dog’s ears rises up.
         And his eyes widen up.
-        #speaker:Oak #portrait:oak_scared
+        #speaker:Oak #portrait:oak_scared #music:nimbus
         RUN!
         Explosions!
         #speaker:
@@ -202,7 +202,7 @@ He had seen mice teared to shreds by angry mongrels.
         The firefly arrives moments after.
         #speaker:Sparks #portrait:sparks_default
         Heya, friends, what’s going on, why are you running?
-        #music:nimbus #enviroSound:villageExplosions
+        #enviroSound:villageExplosions
         #speaker:
         The moment the question is asked a huge bang is heard nearby.
         #speaker:Sparks #portrait:sparks_scared #layout:middle:sparks_scared_m

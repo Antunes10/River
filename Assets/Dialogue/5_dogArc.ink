@@ -232,14 +232,14 @@ He had seen mice teared to shreds by angry mongrels.
 	#speaker: 
 	Suddenly the sound of birds fleeing is heard.
     They all go outside curious and see a band of birds disappearing in the clouds.
-    #speaker:Nimbus #portrait:nimbus_default 
+    #speaker:Nimbus #portrait:nimbus_default #music:nimbus
     Something is wrong, Tails. They flew from something.
     #speaker:Tails #portrait:tails_default
     Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
     #layout:left:tails_scared #layout:middle:nimbus_scared #layout:right:sparks_scared_m
-    #music:nimbus #enviroSound:villageExplosions
+    #enviroSound:villageExplosions
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared
     AH!
@@ -302,14 +302,14 @@ With age comes the acceptance of life and death.
 And I am already old…
 #music:tunnel #enviroSound:villageBirds
 #speaker:
-A band of birds flies away from the tall grass, spooked with something.
+A band of birds flies away from the tall grass, spooked by something.
 Silence reigns.
 #speaker:Nimbus #portrait:nimbus_sad #layout:left:nimbus_sad
 Something is wrong, Tails. They flew from something.
 The mouse looks around, worried.
 In that moment one of the dog’s ears rises up.
 And his eyes widen up.
-#speaker:Oak #portrait:oak_scared
+#speaker:Oak #portrait:oak_scared #music:nimbus
 RUN!
 Explosions!
 #speaker:
@@ -321,7 +321,7 @@ The firefly arrives moments after.
 #speaker:Sparks #portrait:sparks_default
 Heya, friends, what’s going on, why are you running?
 #speaker:
-#music:nimbus #enviroSound:villageExplosions
+#enviroSound:villageExplosions
 The moment the question is asked a huge bang is heard nearby.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
 AH!
