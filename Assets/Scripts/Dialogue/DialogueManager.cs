@@ -460,9 +460,6 @@ public class DialogueManager : MonoBehaviour
         case NEXT_MUSIC_TAG:
           switch (tagValue)
           {
-            case "prologue":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.prologue);
-              break;
             case "tunnel":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.tunnel);
               break;
@@ -473,19 +470,22 @@ public class DialogueManager : MonoBehaviour
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.forest);
               break;
             case "nimbus":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.nimbus);
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.bridge);
               break;
             case "villageArrival":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageArrival);
               break;
             case "villageDepartue":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageDepartue);
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageDeparture);
               break;
             case "oak":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.oak);
               break;
             case "respite":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.respite);
+              break;
+            case "silence":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
               break;
           }
           break;

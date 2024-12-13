@@ -1755,11 +1755,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   _narrativeMusics:
   - {fileID: 8300000, guid: 82d24895a7e2fa54cabd20527f5dd331, type: 3}
-  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 62e2cf60cc277d3489f81262c8008eba, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4ec7e0bf6be80bc458d5b78d507d1d81, type: 3}
   - {fileID: 8300000, guid: 54657bfd34ce4b641a92cce596522d8b, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 790c33e9601d5d547aeec1ba3a66fe92, type: 3}
