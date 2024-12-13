@@ -193,7 +193,7 @@ No please, no! Don’t leave me here!
 #speaker:
 The birds’ cries are met with deaf ears.
 The mouse is decided.
-#layout:left:dafault
+#layout:left:default
 He jumps onto the helmet again and keeps following the river.
 The bird still tries to free himself, but in vain.
 Has the bridge starts to get smaller with the distance, Sparks breaks silence.
