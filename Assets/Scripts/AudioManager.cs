@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
     private float sfxVolume;
     private float envVolume;
 
-    private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
+    private MusicsNarrative currentNarrativeMusic = MusicsNarrative.silence;
     public bool switchPrologue = false;
 
     private void Awake()
@@ -169,15 +169,15 @@ public class AudioManager : MonoBehaviour
 
     public enum MusicsNarrative
     {
-        prologue = 0,
-        tunnel = 1,
-        sparks = 2,
-        forest = 3,
-        nimbus = 4, // find nimbus 
-        villageArrival = 5, //
-        villageDepartue = 6,
-        oak = 7, // meet oak
-        respite = 8 // scene before otter
+        tunnel = 0,
+        sparks = 1,
+        forest = 2,
+        bridge = 3, // find nimbus 
+        villageArrival = 4, //
+        villageDeparture = 5,
+        oak = 6, // meet oak
+        respite = 7, // scene before otter
+        silence = 8
     }
 
     public enum EnvironmentSounds

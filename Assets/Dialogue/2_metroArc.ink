@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 === main ===
 #speaker: #portrait:narrator #layout:left:default #background:metro #enviroSound:tunnel
-#portrait:tails_default #layout:middle:tails_default #music:prologue
+#portrait:tails_default #layout:middle:tails_default #music:tunnel
 ~unlockImage(0)
 Darkness engulfs the world.
 The water sounds echoes inside the underground passage.

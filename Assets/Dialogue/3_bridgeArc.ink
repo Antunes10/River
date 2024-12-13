@@ -169,6 +169,11 @@ Stop it! Are you crazy! It hurts!
     He's dead.
     Blood is running everywhere.
     He should have stopped cutting...
+    #speaker:Tails #portrait:tails_sad #layout:right:tails_sad_m #music:silence
+    Let's go Sparks... we must... continue...
+    #speaker
+    In silence they return to the water, leaving behind a bloody corpse.
+    He should have stopped cutting...
     ~changeScene("RiverScene")
     ->END
 
@@ -275,7 +280,7 @@ The bird initially argues in pain but then accepts the help.
 They drag each other slowly towards the helmet.
 Falling debris are now big enough to kill them on impact.
 The bird is lunged inside and the mouse jumps behind, pushing the helmet into the river, with his stick.
-#enviroSound:silence #enviroSound:bridgeFalling
+#enviroSound:silence #enviroSound:bridgeFalling #music:silence
 In an instant the bridge collapses.
 And the shockwave sends the helmet flying with the strength of the tide.
 The dust settles.
