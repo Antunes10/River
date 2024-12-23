@@ -17,18 +17,18 @@ We have entered their world.
 The world of war.
 #speaker:
 Tails shivers at the thought of going through all of it again.
-Smoke raises high with loads of fires drawing black clouds in the skies.
+Smoke rises high with several fires drawing black clouds in the skies.
 The city is huge and the destruction as so.
 #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
-The mist we went through is not a natural one.
-It is being created by the dust and smoke from this city.
+The mist we went through isn't natural.
+It's being created by the dust and smoke from this city.
 Glad we decided to risk it and go through it.
 #speaker: #layout:sparks:sparks_sad_m
 The firefly gets closer to the mouse.
-The one that has been with him from the begging.
+The one that has been with her from the begging.
 #speaker:Sparks #portrait:sparks_sad
 I’m afraid, Mr.Tails.
-I don’t like the big booms.
+I don’t like the "big booms".
 
 +[Console him]
     ~increaseHope(1)
@@ -41,10 +41,10 @@ I don’t like the big booms.
     #speaker:Sparks #portrait:sparks_sad
     Will you?
     #speaker:Sparks #portrait:tails_happy #layout:middle:tails_happy
-    Yes, of course. And besides, we are almost at the enchanted land.
+    Yes, of course. And besides, we're almost at the enchanted land.
     We just have to leave this cursed place behind.
     #speaker: #layout:sparks:sparks_default_m
-    The firefly hugged him.
+    The firefly hugs him.
 
 +[Stay focused]
     ~ decreaseHope(1)

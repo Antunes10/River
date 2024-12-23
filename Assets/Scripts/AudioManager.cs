@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
     private float sfxVolume;
     private float envVolume;
 
-    private MusicsNarrative currentNarrativeMusic = MusicsNarrative.prologue;
+    private MusicsNarrative currentNarrativeMusic = MusicsNarrative.silence;
     public bool switchPrologue = false;
 
     private void Awake()
@@ -116,6 +116,11 @@ public class AudioManager : MonoBehaviour
         EnvSource.Play();
     }
 
+    public void PlayEvironmentSoundOneShot(EnvironmentSounds indexer)
+    {
+        EnvSource.PlayOneShot(_EnvSounds[(int)indexer]);
+    }
+
     public void PlayNextNarrativeMusic()
     {
         //if currentNarrativeMusic is the prologue one
@@ -164,28 +169,34 @@ public class AudioManager : MonoBehaviour
 
     public enum MusicsNarrative
     {
-        prologue = 0,
-        tunnel = 1,
-        sparks = 2,
-        forest = 3,
-        nimbus = 4, // find nimbus 
-        villageArrival = 5, //
-        villageDepartue = 6,
-        oak = 7, // meet oak
-        respite = 8 // scene before otter
+        tunnel = 0,
+        sparks = 1,
+        forest = 2,
+        bridge = 3, // find nimbus 
+        villageArrival = 4, //
+        villageDeparture = 5,
+        oak = 6, // meet oak
+        respite = 7, // scene before otter
+        silence = 8
     }
 
     public enum EnvironmentSounds
     {
-        tunnel_Nar1 = 0,
-        tunnel_Riv1 = 1,
-        sparks = 2,
-        forest = 3,
-        nimbus = 4, // find nimbus 
-        villageArrival = 5, //
-        villageDepartue = 6,
-        oak = 7, // meet oak
-        respite = 8 // scene before otter
+        tunnel = 0,
+        river = 1,
+        forest = 2,
+        bridgeArmy = 3,
+        bridgeFalling = 4,
+        village = 5,
+        nightWind = 6,
+        villageBirds = 7,
+        villageExplosions = 8,
+        plains = 9, // find nimbus 
+        plainsWar = 10, //
+        villageDepartue = 11,
+        swamp = 12, // meet oak
+        respite = 13, // scene before otter
+        silence = 14
     }
 
     public enum SFXSounds
@@ -209,16 +220,16 @@ public class AudioManager : MonoBehaviour
 
     private void Load()
     {
-        masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
-        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+        masterVolumeSlider.value = 1;
+        musicVolumeSlider.value = 1;
+        sfxVolumeSlider.value = 1;
     }
 
     private void Save()
-    {
+    {/*
         PlayerPrefs.SetFloat("masterVolume", masterVolumeSlider.value);
         PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
-        PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);
+        PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);*/
     }
 
     #region Singleton

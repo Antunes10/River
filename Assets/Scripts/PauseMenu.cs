@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject saveMenuUI;
     public GameObject loadMenuUI;
+    public GameObject soundMenuUI;
     private bool isPaused = false;
 
     void Start()
@@ -16,6 +17,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         saveMenuUI.SetActive(false);
         loadMenuUI.SetActive(false);
+        soundMenuUI.SetActive(false);
     }
 
 
@@ -26,10 +28,12 @@ public class PauseMenu : MonoBehaviour
             if (saveMenuUI.activeSelf)
             {
                 saveMenuUI.SetActive(false);
+                ResumeGame();
             }
             else if (loadMenuUI.activeSelf)
             {
                 loadMenuUI.SetActive(false);
+                ResumeGame();
             }
             else {
                 if (isPaused)
@@ -56,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
         isPaused = false;
         pauseMenuUI.SetActive(false);
+        soundMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }
 

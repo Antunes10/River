@@ -3,8 +3,8 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#speaker: #portrait:narrator #layout:left:default #background:metro
-#portrait:tails_default #layout:middle:tails_default #music:prologue
+#speaker: #portrait:narrator #layout:left:default #background:metro #enviroSound:tunnel
+#portrait:tails_default #layout:middle:tails_default #music:tunnel
 ~unlockImage(0)
 Darkness engulfs the world.
 The water sounds echoes inside the underground passage.
@@ -12,16 +12,16 @@ Tails feels claustrophobic.
 His little heart starts racing, while his nose darts around sniffing a way out.
 
 +[Keep following the water’s flow.]
-    Decided, he keeps himself safe inside the helmet.
-    The river keeps flowing slowly and takes the shell with it.
+    Decided, he keeps himself safe inside the "shell".
+    The river keeps flowing slowly and takes the "shell" with it.
 
 +[Stop and look for a way out.]
-    Tails changes the shell’s course towards the shore made of debris, with the help of his little stick.
+    Tails changes the "shell’s" course towards the shore of debris, with the help of his little stick.
     The "shell" hits the dirt and he jumps down onto the ground.
     There is little to no light and he stumbles a bit.
-    He tries to use his nose to help him find the surface but to no avail.
+    He tries to use his nose to help him find the surface, but to no avail.
     Time passes and he understands it was a bad decision to stop following the river.
-    He goes back defeated and pushes the shell back into the waters.
+    He goes back defeated and pushes the "shell" back into the waters.
 
 - After a couple of minutes darkness starts to get slightly pushed back.
 A small ray of light creates a beacon. A cloud of blueish colour that tries to survive where it should not.
@@ -33,22 +33,21 @@ Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
     #background:tunnel #music:tunnel
-    Against his most primal instincts, Tails puts the little stick in the waters and changes the boat's direction, approaching the light.
-    Once the boat hits the dirt, he jumps onto the ground.
+    Against his most primal instincts, Tails puts the little stick in the waters and changes the "boat's" direction, approaching the light.
+    Once the "shell" hits the dirt, he jumps onto the ground.
     He walks slowly, one part curious another part scared.
-    He is a mouse after all, there's no way he could defend himself against the dangers of this world.
-    The light was now on the ground, behind a fallen garbage can.
-    The light is now more intense and warmer.
+    He's a mouse after all, there's no way he can defend himself against the dangers of this world.
+    The light is now on the ground, behind a fallen garbage can, more intense and warmer than before.
     He peeks over the blockage…
     And surprise takes his face.
-    A young firefly is eating some crumbs, siting over a small pebble.
-    He's carefree, swinging his little legs and occasionally shaking his bright behind.
+    A young firefly is eating some crumbs, sitting over a small pebble.
+    She's carefree, swinging her little legs and occasionally shaking her bright behind.
     It is contradictory. The dark and scary surroundings are disarmed by the smile of a clearly innocent bug.
     Tails loses his fear and stands over the trash can so he can see the firefly better.
     On that moment the bug takes notice.
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default #music:sparks
     Oh, hi there friend! 
-    My name is Sparks and I’m a firefly has you can see. What is your name?
+    My name is Sparks and I’m a firefly as you can see. What is your name?
     #speaker:
     The mouse is unsure how to answer. 
     
@@ -71,7 +70,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         #speaker: Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
         But I found food. 
         #speaker:
-        Her face lightens up as he shakes the small piece of bread. 
+        Her face lightens up as she shakes the small piece of bread. 
 
     ++[Ask why she’s here, alone.]
         #speaker:Tails #portrait:tails_default #layout:left:tails_default
@@ -90,7 +89,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
         It looks like she totally believes what she's saying.
     
     --#speaker:Tails #portrait:tails_default #layout:left:tails_default 
-    Have you thought about what you are going to do? 
+    Have you thought about what you're going to do? 
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     I’m going to help you get out of here, of course. You don’t have a "light booty" like me. 
     #speaker:
@@ -98,7 +97,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     That would really help me, but shouldn’t you look for your mother?
     #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-    Don't worry. I'll find her eventually. Right now, it’s you the one that’s lost.
+    Don't worry. I'll find her eventually. Right now, it’s you the one who’s lost.
     #speaker:
     She finishes the crumb with one last bite and flies towards Tails still munching.
     #speaker:Sparks #portrait:sparks_default
@@ -111,11 +110,11 @@ Its origin unknown to the little mouse, moves closer to the ground.
     Although my mother told me it was very dangerous for my wings.
     #portrait:sparks_happy #layout:right:sparks_happy_m
     But if I go inside the "shell", I’ll be dry! 
-    You are very smart, Mr.Tails.
+    You're very smart, Mr.Tails.
     #speaker:
     The mouse feels a bit flattered by the compliment and takes the bug with him to the "half shell".
-    The firefly sits on its border and the mouse pushes it back into the river.
-    Now with Sparks’ light it was easier to navigate through the rubble and soon they will find the exit.
+    The firefly sits on its border and the mouse pushes it into the river.
+    Now with Sparks’ light it is easier to navigate through the rubble and soon they'll find the exit.
 
 
 
@@ -139,8 +138,8 @@ Its origin unknown to the little mouse, moves closer to the ground.
     #background:black #layout:middle:default
     He succumbs to the pain and falls unconscious.
     
-    Time passes.
     #background:blackLight
+    Time passes.
     A small light appears far away amidts the black.
     It becomes stronger and stronger, shinning away the fear and uncertainty.
     #speaker:??? #portrait:blank 
@@ -161,13 +160,13 @@ Its origin unknown to the little mouse, moves closer to the ground.
     The firefly seems joyous even though destruction surrounds her. 
     She's' the only light that shines in that place.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    My name is Tails, what is yours? 
+    My name is Tails, what's yours? 
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
     I’m Sparks. I’m a firefly as you can see! 
     #speaker:
     She shakes her behind signalling her identity. Just like a happy puppy.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Where is your mother? Are you alone? 
+    Where's your mother? Are you alone? 
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
     Oh, we got separated during the “Big Booms”. It was very chaotic, even the "two-legged giants" were running everywhere. 
     #speaker:

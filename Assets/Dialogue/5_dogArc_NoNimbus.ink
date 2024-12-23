@@ -15,7 +15,7 @@ He yawns and gets up to meet a warm sunbath.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Rise and shine, sleepyhead.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-Can I stay a bit longer? I’m not used to wake up this early.
+Can I stay a bit longer? I’m not used to waking up this early.
 #speaker:
 The little bug hides his face with a bit of foliage.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
@@ -26,14 +26,14 @@ The lazy youngling dozes off.
 It seems the juvenile sleepiness is common for all species.
 #speaker: #layout:middle:tails_happy 
 The mouse smiles entertained with his own remark.
-He should take the time to check the other half of the village. He might get lucky and find some food.
+He should take the time to check the rest of the village. He might get lucky and find some food.
 
 #speaker: #layout:middle:tails_default
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
 The road is a bit drier than yesterday.
 Suddenly his hair gets bristly.
 His nose sniffs a new scent and he get a bit apprehensive.
-#speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
+#speaker:Tails #portrait:tails_scared #layout:middle:tails_scared #music:nimbus
 Dog…
 #speaker:
 The mouse gets stiff.
@@ -71,7 +71,7 @@ He had seen mice teared to shreds by angry mongrels.
     Dog: What are you doing here?
     #speaker:
     The mouse is catatonic.
-    #speaker:Oak #portrait:oak_default
+    #speaker:Oak #portrait:oak_default #music:villageArrival
     Dog: Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -115,7 +115,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Oak #portrait:oak_default 
     This is my village you see. Or was.
     It was attacked by the other humans that came from the East.
-    My owner advised me to run to the woods and wait for the storm of fire to pass.
+    My owner advised me to run to the woods and wait for the "storm of fire" to pass.
     And so, I did. Although he never came back to meet me.
     Consequently, I came back to him. I know by scent that he is still around.
     
@@ -183,15 +183,16 @@ He had seen mice teared to shreds by angry mongrels.
         It is alright. I was already expecting it, once he did not came back.
         With age comes the acceptance of life and death.
         And I am already old…
+        #music:tunnel #enviroSound:villageBirds
         #speaker:
-        A band of birds flies away from the tall grass, spooked with something.
+        A band of birds flies away from the tall grass, spooked by something.
         Silence reigns.
         #layout:left:tails_scared
         The mouse looks around, worried.
         #layout:right:oak_scared_m
         In that moment one of the dog’s ears rises up.
         And his eyes widen up.
-        #speaker:Oak #portrait:oak_scared
+        #speaker:Oak #portrait:oak_scared #music:nimbus
         RUN!
         Explosions!
         #speaker:
@@ -201,6 +202,7 @@ He had seen mice teared to shreds by angry mongrels.
         The firefly arrives moments after.
         #speaker:Sparks #portrait:sparks_default
         Heya, friends, what’s going on, why are you running?
+        #enviroSound:villageExplosions
         #speaker:
         The moment the question is asked a huge bang is heard nearby.
         #speaker:Sparks #portrait:sparks_scared #layout:middle:sparks_scared_m
@@ -228,6 +230,7 @@ He had seen mice teared to shreds by angry mongrels.
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 	Fine, fine. I’m up and flying.
+    #music:tunnel #enviroSound:villageBirds
 	#speaker:
 	Suddenly the sound of birds fleeing is heard.
     They go outside curious and see a band of birds disappearing in the clouds.
@@ -236,6 +239,7 @@ He had seen mice teared to shreds by angry mongrels.
     Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
+    #music:nimbus #enviroSound:villageExplosions
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
     AH!

@@ -3,10 +3,10 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:forest
+#background:forest #enviroSound:forest
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m
 ~unlockImage(0)
-The waters of the river slow down as the rain goes away, allowing a brighter day rip slightly through the clouds.
+The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 That was scary.
@@ -77,7 +77,7 @@ Tails breaks a smile.
 It’s a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 A place were there is no fire or explosions. Where animals live in peace and happiness.
 #speaker:Sparks #portrait:sparks_happy
-There must be tens of fireflies there! All shinning together.
+There must be tens of fireflies there! All shining together.
 #speaker:Tails #portrait:tails_happy
 Hundreds.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
@@ -100,7 +100,7 @@ And they deserve it, don’t they?
 We will get there in a couple of days.
 We just have to keep pressing on.
 #speaker:
-Sparks straightens himself and places a makes a salutation.
+Sparks straightens himself and makes a salutation.
 #speaker: #portrait:sparks_happy
 Ay ay, Mr. Captain.
 #speaker:

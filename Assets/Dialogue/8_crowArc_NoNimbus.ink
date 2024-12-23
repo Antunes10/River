@@ -3,12 +3,12 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:swamp
-#speaker: #layout:middle:tails_default #layout:right:sparks_default_m #layout:left:oak_default
+#background:swamp #enviroSound:swamp
+#speaker:
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The night went by and now the slow river reaches a march an its waters spread throughout the unseen horizon.
+The night went by and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:middle:tails_sad #layout:right:sparks_sad_m #layout:left:oak_scared
 A scent of death hangs in the air.
@@ -33,7 +33,7 @@ They try to keep going in one direction but make no visible progress.
 A tree appears.
 A dead tree.
 Twisted and grey, as if choked by the murky waters and mud that surrounds it.
-They all feel a icy shiver down their spines.
+They all feel an icy shiver down their spines.
 #speaker:Sparks #portrait:sparks_sad
 Hmmm, I don’t wanna be here…
 #speaker: #layout:right:default
@@ -50,10 +50,10 @@ Looking around with dark eyes.
     Are we not going to inquire him for help?
     #speaker:Tails #portrait:tails_sad
     I rather not.
-    I sense he is not to be trusted.
+    I sense he's not to be trusted.
     #speaker:
     No one seems to disagree with him.
-    #layout:right:sparks_sad_m
+    #layout:right:sparks_sad_m #background:swamp
     And so, the helmet keeps daring through the thick mist that surrounds the world.
     Minutes pass.
     Hours pass.
@@ -130,7 +130,7 @@ Looking around with dark eyes.
     #portrait:crow_default
     Crow: And it is not alone. Hundred more now paint the once green fields.
     Crow: Grey and mud fills the world.
-    Crow: As bodies pile up East and are brough by the murky river.
+    Crow: As bodies pile up East and are brought by the murky river.
     #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
     But there is an enchanted land in the West, right?
     #speaker:
@@ -169,8 +169,14 @@ Looking around with dark eyes.
     #speaker: #layout:right:sparks_sad
     They all scream.
     Slowly the helmet starts to sink in the tar pit.
-    They try to escape but are also swollen by the artificial blackness.
-    The crow’s laugh is heard again as they drown in agony and fear.
+    #layout:left:default
+    Oak tries to jump out of the helmet, but the oil gets to him.
+    #layout:right:default
+    Tails looks for Sparks but she's nowhere to be found.
+    #background:black #layout:middle:default #layout:sparks:default
+    They try to escape but are also swallowed by the artificial blackness.
+    The crow’s laugh is heard again...
+    As they drown in agony and fear.
     A slow and asphyxiating death.
 
 -
@@ -243,12 +249,12 @@ The mist hasn’t disappeared.
 
 === RiskIt ===
 #speaker:  #layout:left:oak_sad #layout:right:sparks_sad_m
-Tails had the feeling they would starve if they stayed in that forsaken place.
+Tails has a feeling they will starve if they stay in this forsaken place.
 #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
 We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
 #speaker:
-Apprehension was all around, but no other animal voiced a better option.
-The mouse took out his faithful stick and pushed the helmet forwards.
+Apprehension is all around, but no other animal voices a better option.
+The mouse takes out his faithful stick and pushes the helmet forward.
 On mud and murky waters, they travel.
 The mist grip keeps thigh on the world around.
 A white hand that strangles hope.
@@ -270,8 +276,8 @@ With some effort he frees the helmet and goes around the body.
 The mist starts to dissipate and a terrifying image lays before the small mouse’s eyes.
 Tens of bodies sunken and swallowed by the marsh’s waters, float all around them.
 Some bodies still red, others, maimed in ways inconceivable.
-His hands shook with the horror he was seeing.
-But he kept going, occasionally closing his eyes to avoid the nightmares that already shook his life.
+His hands shake with the horror he was seeing.
+But he keeps going, occasionally closing his eyes to avoid the nightmares that already shook his life.
 Time seems infinite.
 Minutes turn to years.
 Until finally a huge shadow obscures them and everything around.

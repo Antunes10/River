@@ -460,9 +460,6 @@ public class DialogueManager : MonoBehaviour
         case NEXT_MUSIC_TAG:
           switch (tagValue)
           {
-            case "prologue":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.prologue);
-              break;
             case "tunnel":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.tunnel);
               break;
@@ -473,13 +470,13 @@ public class DialogueManager : MonoBehaviour
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.forest);
               break;
             case "nimbus":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.nimbus);
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.bridge);
               break;
             case "villageArrival":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageArrival);
               break;
             case "villageDepartue":
-              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageDepartue);
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.villageDeparture);
               break;
             case "oak":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.oak);
@@ -487,16 +484,46 @@ public class DialogueManager : MonoBehaviour
             case "respite":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.respite);
               break;
+            case "silence":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
+              break;
           }
           break;
         case ENVIRONMENT_TAG:
            switch (tagValue)
            {
              case "tunnel":
-                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel_Nar1);
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.tunnel);
+                break;
+            case "river":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.river);
                 break;
              case "forest":
                 AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.forest);
+                break;
+             case "bridge":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.bridgeArmy);
+                break;
+            case "bridgeFalling":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.bridgeFalling);
+                break;
+            case "village":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.village);
+                break;
+            case "nightWind":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.nightWind);
+                break;
+            case "villageBirds":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageBirds);
+                break;
+            case "villageExplosions":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.villageExplosions);
+                break;
+            case "swamp":
+                AudioManager.Instance.PlayEvironmentSoundOneShot(AudioManager.EnvironmentSounds.swamp);
+                break;
+            case "silence":
+                AudioManager.Instance.PlayEvironmentSound(AudioManager.EnvironmentSounds.silence);
                 break;
              }
            break;

@@ -45,7 +45,7 @@ public class Obstacle : MonoBehaviour
         if(_player.GetComponent<Collider2D>().bounds.min.y > this.GetComponent<Collider2D>().bounds.min.y)
         {
             _thisSprite.sortingLayerName = "Player";
-            _thisSprite.sortingOrder = 5;
+            _thisSprite.sortingOrder = 6;
         }
         else
         {

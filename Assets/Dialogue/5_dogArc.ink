@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:villageSquare
+#background:villageHouseDawn
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_sad_m
 #music:villageArrival
 ~unlockImage(19)
@@ -13,7 +13,7 @@ The bright rays pierce the dead leaves that cover the shelter and signals the st
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
 Rise and shine, deep sleepers.
 #speaker:
-Tails opens is eyes and sees the woodpecker already risen and awaken.
+Tails opens his eyes and sees the woodpecker already risen and awake.
 He yawns and gets up to meet with a warm sunbath.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default
 I’ve checked part of the village already and it seems quiet.
@@ -21,7 +21,7 @@ I’ve checked part of the village already and it seems quiet.
 He looked a bit more composed than last night.
 His wing was still bandaged.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-Can I stay a bit longer? I’m not used to wake up this early.
+Can I stay a bit longer? I’m not used to waking up this early.
 #speaker:
 The little bug hides her face with a bit of foliage.
 #speaker:Tails #portrait:tails_default 
@@ -33,9 +33,10 @@ It seems the juvenile sleepiness is common for all species.
 #speaker:
 The mouse smiles entertained with his own remark.
 #speaker: Nimbus #portrait:nimbus_default #layout:left:tails_default
-You should take the time to check the other half of the village. We might get lucky and find some food.
+We should take the time to check the other half of the village. We might get lucky and find some food.
 #speaker: #layout:right:default
 They agree silently and walk out of the collapsed building.
+#background:villageSquare
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
 The road is a bit drier than yesterday.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default_m
@@ -48,7 +49,7 @@ How do you know?
 I’m a bird. We feel it in the air.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 It will make our voyage harder.
-Our shell will get flooded.
+Our "shell" will get flooded.
 #speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad_m
 Are you confident that it will hold for the rest of the journey?
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
@@ -62,7 +63,7 @@ Humans are pretty good at destroying sturdy things.
 The mouse saw the association and could not argue with its logic.
 Suddenly his hair gets bristly.
 His nose sniffs the coming scent and he get a bit apprehensive.
-#speaker:Tails #portrait:tails_scared #layout:left:tails_scared
+#speaker:Tails #portrait:tails_scared #layout:left:tails_scared #music:nimbus
 Dog…
 #speaker: #layout:middle:nimbus_scared
 The bird also gets stiff.
@@ -92,7 +93,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Nimbus #portrait:
     He seems starved and I don’t have both wings to fly away from him, if he decides to chase us.
     
-    ++[Heed is warning.]
+    ++[Heed his warning.]
         #speaker: 
         The bird was right.
         He was being too reckless and not thinking of everyone involved.
@@ -115,7 +116,7 @@ He had seen mice teared to shreds by angry mongrels.
         The mouse turns to face the well but the dog isn’t there anymore.
         A scream breaches the silence.
         #layout:right:oak_default_m
-        Nimbus voice makes Tails turn around, only to find the huge dog right in front of them.
+        Nimbus' voice makes Tails turn around, only to find the huge dog right in front of them.
     
     -- #speaker: #layout:middle:tails_scared
     They jump terrified.
@@ -125,7 +126,7 @@ He had seen mice teared to shreds by angry mongrels.
     Where are you going?
     #speaker:
     Both of them are catatonic.
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m #music:villageArrival
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -133,7 +134,7 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Tails #portrait:tails_scared
     We… we are just passing by…
     We are not looking for trouble, please let us go.
-    #layout:right:oak_sad_m
+    #speaker: #layout:right:oak_sad_m
     The dog raises one eyebrow.
     #speaker:Oak #portrait:oak_sad
     Why would old Oak prevent you both gentlemen from leaving?
@@ -178,7 +179,7 @@ He had seen mice teared to shreds by angry mongrels.
     This is my village you see. Or was.
     It was attacked by the other humans that came from the East.
     #portrait:oak_sad #layout:right:oak_sad_m
-    My owner advised me to run to the woods and wait for the storm of fire to pass.
+    My owner advised me to run to the woods and wait for the "storm of fire" to pass.
     And so, I did. Although he never came back to meet me.
     #portrait:oak_default #layout:right:oak_default_m
     Consequently, I came back to him. I know by scent that he is still around.
@@ -209,6 +210,7 @@ He had seen mice teared to shreds by angry mongrels.
 
 
 +[Get away from the village]
+    #music:villageArrival
     ->get_away
 
 ~changeScene("RiverScene")
@@ -226,16 +228,18 @@ He had seen mice teared to shreds by angry mongrels.
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad
 	Fine, fine. I’m up and flying.
+    #music:tunnel #enviroSound:villageBirds
 	#speaker: 
 	Suddenly the sound of birds fleeing is heard.
     They all go outside curious and see a band of birds disappearing in the clouds.
-    #speaker:Nimbus #portrait:nimbus_default 
+    #speaker:Nimbus #portrait:nimbus_default #music:nimbus
     Something is wrong, Tails. They flew from something.
     #speaker:Tails #portrait:tails_default
     Let’s go back to the shell and get away from this place.
     #speaker:
     They walk towards where they left the helmet and push it into the waters.
     #layout:left:tails_scared #layout:middle:nimbus_scared #layout:right:sparks_scared_m
+    #enviroSound:villageExplosions
     When suddenly a huge explosion is heard nearby.
     #speaker:Sparks #portrait:sparks_scared
     AH!
@@ -296,15 +300,16 @@ The dog sniffs.
 It is alright. I was already expecting it, once he did not came back.
 With age comes the acceptance of life and death.
 And I am already old…
+#music:tunnel #enviroSound:villageBirds
 #speaker:
-A band of birds flies away from the tall grass, spooked with something.
+A band of birds flies away from the tall grass, spooked by something.
 Silence reigns.
 #speaker:Nimbus #portrait:nimbus_sad #layout:left:nimbus_sad
 Something is wrong, Tails. They flew from something.
 The mouse looks around, worried.
 In that moment one of the dog’s ears rises up.
 And his eyes widen up.
-#speaker:Oak #portrait:oak_scared
+#speaker:Oak #portrait:oak_scared #music:nimbus
 RUN!
 Explosions!
 #speaker:
@@ -316,6 +321,7 @@ The firefly arrives moments after.
 #speaker:Sparks #portrait:sparks_default
 Heya, friends, what’s going on, why are you running?
 #speaker:
+#enviroSound:villageExplosions
 The moment the question is asked a huge bang is heard nearby.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
 AH!
