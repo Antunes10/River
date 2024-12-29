@@ -23,6 +23,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource sfxSource;
     [SerializeField]
     private AudioSource EnvSource;
+    [SerializeField]
+    private AudioSource RainSource;
 
     [SerializeField]
     private Slider masterVolumeSlider;
@@ -75,6 +77,7 @@ public class AudioManager : MonoBehaviour
         } else if (vol == 2) {
             sfxSource.volume = sfxVolume * sfxVolumeSlider.value/10;
             EnvSource.volume = envVolume * sfxVolumeSlider.value / 10;
+            RainSource.volume = sfxVolume * sfxVolumeSlider.value / 10;
         }
         Save();
     }
@@ -88,6 +91,7 @@ public class AudioManager : MonoBehaviour
         } else if (vol == 2) {
             sfxSource.volume = sfxVolume * value/10;
             EnvSource.volume = envVolume * value / 10;
+            RainSource.volume = sfxVolume * value / 10;
         }
         Save();
     }
@@ -151,11 +155,25 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(_sfxSounds[UnityEngine.Random.Range(indexer1, indexer2 + 1)]);
     }
 
+    public void PlayRain(bool plays)
+    {
+        if (plays)
+        {
+            RainSource.Play();
+        }
+        else
+        {
+            RainSource.Stop();
+        }
+        
+    }
+
     public void StopAllSounds()
     {
         musicSource.Stop();
         EnvSource.Stop();
         sfxSource.Stop();
+        RainSource.Stop();
     }
 
     public enum MusicsRiver

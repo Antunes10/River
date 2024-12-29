@@ -159,7 +159,9 @@ public class LevelManager : MonoBehaviour
     {
         StartRain?.Invoke();
         _rainSprite.SetActive(true);
+        AudioManager.Instance.PlayRain(true);
         yield return new WaitForSeconds(UnityEngine.Random.Range(5, 8));
+        AudioManager.Instance.PlayRain(false);
         _rainSprite.SetActive(false);
         EndRain?.Invoke();
     }
