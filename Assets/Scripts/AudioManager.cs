@@ -191,8 +191,8 @@ public class AudioManager : MonoBehaviour
         nightWind = 6,
         villageBirds = 7,
         villageExplosions = 8,
-        plains = 9, // find nimbus 
-        plainsWar = 10, //
+        plains = 9,
+        plainsWar = 10,
         villageDepartue = 11,
         swamp = 12, // meet oak
         respite = 13, // scene before otter
@@ -211,11 +211,9 @@ public class AudioManager : MonoBehaviour
         clothRip2 = 9,
         debrisFalling = 10,
         pouringWaterOut = 11,
-        rain,
-        machineGun,
-        explosion,
-        RiverVictory,
-        RiverDefeat
+        rain = 12,
+        RiverVictory = 13,
+        RiverDefeat = 14
     }
 
     private void Load()

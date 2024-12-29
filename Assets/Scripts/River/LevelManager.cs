@@ -128,6 +128,8 @@ public class LevelManager : MonoBehaviour
 
     public void LoseGame()
     {
+        AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.RiverDefeat);
         _gameLost = true;
         _loseScreen.SetActive(true);
     }
@@ -147,7 +149,8 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator WinGame()
     {
-        Debug.Log("Win River Minigame");
+        AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.RiverVictory);
         yield return new WaitForSeconds(5);
         _gameManager.changeToNextDialogueScene();
     }
