@@ -13,6 +13,7 @@ public class Obstacle : MonoBehaviour
     public bool _barbed;
     public bool _barrier;
     public bool _debris;
+    public bool _debrisFalling = false;
     public int _animNumber;
 
     private float _timer;
@@ -65,12 +66,13 @@ public class Obstacle : MonoBehaviour
 
         if (_debris && Time.time - _timer < _timeToDetonate)
         {
+            _debrisFalling = false;
             GetComponent<SpriteRenderer>().color -= new Color(multiplier, multiplier, multiplier, 0);
         }
-        else if (_debris && Time.time - _timer > _timeToDetonate - 0.5f)
+        else if (_debris && Time.time - _timer > _timeToDetonate - 0.5f && !_debrisFalling)
         {
-            /*GetComponent<Collider2D>().enabled = true;
-            transform.GetChild(0).gameObject.SetActive(true);*/
+            _debrisFalling = true;
+            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.debrisFalling);
             GetComponent<Animator>().SetTrigger("Fall");
         }
     }

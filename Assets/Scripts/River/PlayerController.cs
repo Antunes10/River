@@ -243,7 +243,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator GetWater()
     {
         //_playeranimations.ChangeHelmetSprite((int)PlayerAnimations.Helmet.idle);
-
+        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.pouringWaterOut);
         _helmetState = HelmetState.water;
         _playeranimations.Getwater(true);
         yield return new WaitForSeconds(3);
