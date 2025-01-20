@@ -5,9 +5,9 @@
     "hasCotton": false,
     "currentFood": 3,
     "currentHope": 3,
-    "currentLevelIndex": -1,
-    "currentInkIndex": 0,
+    "currentLevelIndex": 0,
+    "currentInkIndex": 1,
     "dialogueIndex": 0,
-    "date": "19/01/2025 18:24:08",
+    "date": "20/01/2025 00:05:31",
     "gameOver": false
 }

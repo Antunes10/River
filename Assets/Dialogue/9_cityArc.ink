@@ -7,17 +7,15 @@ INCLUDE globals.ink
 #speaker: #layout:left:oak_scared #layout:middle:tails_scared #layout:right:nimbus_scared_m #layout:sparks:sparks_scared_m
 ~unlockImage(17)
 Explosions are heard.
-They seem far away but at the same time too close.
-War is all around in a forest of concrete mountains, where a battle is still taking place.
+War is all around in a forest of "concrete mountains", where a battle is still taking place.
 Landslides, craters, buildings turned to dust, bodies scattered. They paint a picture of mankind.
 The helmet goes slowly and carefully.
 #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
 I can hear humans a couple of blocks away.
 We have entered their world.
-The world of war.
 #speaker:
 Tails shivers at the thought of going through all of it again.
-Smoke rises high with several fires drawing black clouds in the skies.
+Smoke rises high with several fires painting black clouds on the skies.
 The city is huge and the destruction as so.
 #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
 The mist we went through isn't natural.
@@ -30,19 +28,19 @@ The one that has been with her from the begging.
 I’m afraid, Mr.Tails.
 I don’t like the "big booms".
 
-+[Console him]
++[Console her]
     ~increaseHope(1)
     ~currentHope = currentHope + 1 
 
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Don’t worry, Sparky. I will protect you, no matter what.
+    Don’t worry, Sparky. I'll protect you, no matter what.
     #speaker:
     Her eyes brighten up a bit.
     #speaker:Sparks #portrait:sparks_sad
     Will you?
     #speaker:Sparks #portrait:tails_happy #layout:middle:tails_happy
     Yes, of course. And besides, we're almost at the enchanted land.
-    We just have to leave this cursed place behind.
+    We just have to go through this cursed place behind.
     #speaker: #layout:sparks:sparks_default_m
     The firefly hugs him.
 
@@ -53,18 +51,18 @@ I don’t like the "big booms".
     
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Right now, we must stay focused, Sparky.
-    It does us no good to be fearful.
+    It doesn't help us to be fearful.
     #speaker: 
-    The firefly got a bit sad but then she took his words at heart and focused on the surroundings.
+    The firefly gets a bit sad but then she takes his words to heart and focuses on the surroundings.
     #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
     Don’t worry, Mr.Tails, I won’t let you down.
     
 -
-#speaker:Sparks #portrait:sparks_scared #layout:sparks:sparks_scared_m
+#speaker:Sparks #portrait:sparks_scared #layout:sparks:sparks_scared_m #enviroSound:villageExplosions
 Ahhh!
 #speaker: #layout:middle:tails_scared
-The ground blows up a few meters away from them.
-Dust and debris fly everywhere as the dog protects the inside of the helmet with his hat.
+The ground blows up.
+Dust and debris fly everywhere as the dog protects them with his hat.
 #speaker:Tails #portrait:tails_sad
 Is everyone alright?
 #speaker:
@@ -94,7 +92,7 @@ A deep sound is heard as the ground shakes.
 #speaker:Tails
 Are you ok?
 #speaker:??? #portrait:blank
-I’m trapped, and the ground will not hold for too long.
+I’m trapped, and the ground will not hold for long.
 #speaker: 
 The deep sound is heard again.
 There is a small hole on the top of the wheelbarrow. Only big enough for Sparks to enter.
@@ -109,7 +107,7 @@ What are we going to do?
         ~sentSparks = 1
         
         #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-        Sparks, there is a hole you can fit in up there.
+        Sparky, there is a hole you can fit in up there.
         Go inside and see what’s going on.
 
         {stayedFocused == 0: -> send_sparks_inside1 | -> send_sparks_inside2}

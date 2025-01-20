@@ -121,7 +121,7 @@ public class DialogueManager : MonoBehaviour
 
   public void Start()
   {
-
+        GameManager.Instance.AutoSaveGame();
   }
     
   public void ChangeVolume(int vol)

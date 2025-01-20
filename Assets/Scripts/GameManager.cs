@@ -1,3 +1,4 @@
+using Ink.Parsed;
 using System;
 using System.IO;
 using UnityEngine;
@@ -114,10 +115,10 @@ public class GameManager : MonoBehaviour
   }
 
   #region SaveSystem
-  public void LoadGame(int number)
+  public void LoadGame(int number, string saveMode)
   {
     Time.timeScale = 1f;
-    StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+    StreamReader sr = new StreamReader(Application.dataPath + saveMode + number + ".json");
     string json = sr.ReadToEnd();
     sr.Close();
     _gs = FromJson<GameState>(json);
@@ -131,6 +132,39 @@ public class GameManager : MonoBehaviour
     string json = ToJson(_gs, true);
     StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
     sw.Write(json);
+    sw.Close();
+  }
+
+  public void AutoSaveGame()
+  {
+        var chosenDate = DateTime.Parse("3050/04/01 17:09:10");
+        int chosenIterator = 0;
+        for (int iterator = 0; iterator < 3; iterator++)
+        {
+            if (System.IO.File.Exists(Application.dataPath + "/Resources/RiverAutoSave" + iterator + ".json"))
+            {
+                StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverAutoSave" + iterator + ".json");
+                string json = sr.ReadToEnd();
+                sr.Close();
+                GameState gm = FromJson<GameState>(json);
+
+                if(DateTime.Parse(gm.date) < chosenDate)
+                {
+                    chosenIterator = iterator;
+                    chosenDate = DateTime.Parse(gm.date);
+                }
+            }
+            else
+            {
+                chosenIterator = iterator;
+                break;
+            }
+        }
+
+    _gs.date = DateTime.Now.ToString();
+    string json2 = ToJson(_gs, true);
+    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverAutoSave" + chosenIterator + ".json");
+    sw.Write(json2);
     sw.Close();
   }
 
