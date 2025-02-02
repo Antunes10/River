@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 223678840}
   - component: {fileID: 223678839}
   - component: {fileID: 223678844}
+  - component: {fileID: 223678845}
   m_Layer: 5
   m_Name: SoundMenu
   m_TagString: Untagged
@@ -531,6 +532,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &223678845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223678838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdc363b927b6334ab62ecde44e37cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _exit: {fileID: 1262306283}
+  _master: {fileID: 1783866783}
+  _music: {fileID: 1731567912}
+  _sfx: {fileID: 1937497490}
 --- !u!1 &226838667
 GameObject:
   m_ObjectHideFlags: 0
@@ -13978,19 +13995,7 @@ MonoBehaviour:
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1335392622}
-        m_TargetAssemblyTypeName: PauseMenuRiver, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1740269046
 GameObject:
   m_ObjectHideFlags: 0
@@ -14127,19 +14132,7 @@ MonoBehaviour:
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1335392622}
-        m_TargetAssemblyTypeName: PauseMenuRiver, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1796549721
 GameObject:
   m_ObjectHideFlags: 0
@@ -14716,19 +14709,7 @@ MonoBehaviour:
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1335392622}
-        m_TargetAssemblyTypeName: PauseMenuRiver, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1943035944
 GameObject:
   m_ObjectHideFlags: 0

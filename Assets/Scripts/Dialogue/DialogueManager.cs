@@ -12,10 +12,6 @@ public class DialogueManager : MonoBehaviour
   public GameObject saveMenuUi;
   public GameObject loadMenuUi;
 
-  [SerializeField] private Slider masterVolumeSlider;
-  [SerializeField] private Slider musicVolumeSlider;
-  [SerializeField] private Slider sfxVolumeSlider;
-
   [Header("Params")]
   [SerializeField] private float typingSpeed = 0.04f;
 
@@ -107,10 +103,6 @@ public class DialogueManager : MonoBehaviour
       index++;
     }
 
-    masterVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
-    musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-    sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
-
     EnterDialogueMode(currentInk);
   }
 
@@ -122,21 +114,6 @@ public class DialogueManager : MonoBehaviour
   public void Start()
   {
         GameManager.Instance.AutoSaveGame();
-  }
-    
-  public void ChangeVolume(int vol)
-  {
-    switch (vol) {
-      case 0:
-        AudioManager.Instance.ChangeVolume(masterVolumeSlider.value, vol);
-        break;
-      case 1:
-        AudioManager.Instance.ChangeVolume(musicVolumeSlider.value, vol);
-        break;
-      case 2:
-        AudioManager.Instance.ChangeVolume(sfxVolumeSlider.value, vol);
-        break;
-    }
   }
 
   private void Update()

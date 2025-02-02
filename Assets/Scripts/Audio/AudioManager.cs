@@ -33,10 +33,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private Slider sfxVolumeSlider;
 
-    //base volume values
-    private float musicVolume;
-    private float sfxVolume;
-    private float envVolume;
 
     private MusicsNarrative currentNarrativeMusic = MusicsNarrative.silence;
     public bool switchPrologue = false;
@@ -51,35 +47,17 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        musicVolume = musicSource.volume;
-        envVolume = EnvSource.volume;
-        sfxVolume = sfxSource.volume;
 
-        DontDestroyOnLoad(this.gameObject);
-        if (!PlayerPrefs.HasKey("masterVolume"))
-        {
-            PlayerPrefs.SetFloat("masterVolume", 10);
-        } else if (!PlayerPrefs.HasKey("musicVolume")) {
-            PlayerPrefs.SetFloat("musicVolume", 10);
-        } else if (!PlayerPrefs.HasKey("sfxVolume")) {
-            PlayerPrefs.SetFloat("sfxVolume", 10);
-        }
-
-        Load();
     }
 
-    public void ChangeVolume(int vol)
+    public void InitVolumeValues(float master, float music, float sfx)
     {
-        if (vol == 0) {
-            AudioListener.volume = masterVolumeSlider.value/10;
-        } else if (vol == 1) {
-            musicSource.volume = musicVolume * musicVolumeSlider.value/10;
-        } else if (vol == 2) {
-            sfxSource.volume = sfxVolume * sfxVolumeSlider.value/10;
-            EnvSource.volume = envVolume * sfxVolumeSlider.value / 10;
-            RainSource.volume = sfxVolume * sfxVolumeSlider.value / 10;
-        }
-        Save();
+        AudioListener.volume = master;
+
+        musicSource.volume = music;
+        sfxSource.volume = sfx;
+        EnvSource.volume = sfx;
+        RainSource.volume = sfx;
     }
 
     public void ChangeVolume(float value, int vol)
@@ -87,13 +65,17 @@ public class AudioManager : MonoBehaviour
         if (vol == 0) {
             AudioListener.volume = value/10;
         } else if (vol == 1) {
-            musicSource.volume = musicVolume * value / 10;
+            musicSource.volume =  value / 10;
         } else if (vol == 2) {
-            sfxSource.volume = sfxVolume * value/10;
-            EnvSource.volume = envVolume * value / 10;
-            RainSource.volume = sfxVolume * value / 10;
+            sfxSource.volume = 0.8f * value/10;
+            EnvSource.volume = 0.35f * value / 10;
+            RainSource.volume = 0.5f * value / 10;
         }
-        Save();
+    }
+
+    public void SaveVolumes()
+    {
+        AudioVolumeSettings.Instance.SaveAudio(AudioListener.volume, musicSource.volume, sfxSource.volume * 1.2f);
     }
 
     public void PlayMenuMusic()
