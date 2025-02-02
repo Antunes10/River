@@ -195,7 +195,11 @@ public class AudioManager : MonoBehaviour
         villageDeparture = 5,
         oak = 6, // meet oak
         respite = 7, // scene before otter
-        silence = 8
+        hazel = 8,
+        swamp = 9,
+        crow = 10,
+        deadBodies= 11,
+        silence = 12,
     }
 
     public enum EnvironmentSounds

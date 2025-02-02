@@ -3,7 +3,8 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:swamp #enviroSound:swamp #speaker:
+#background:swamp #enviroSound:swamp #music:swamp
+#speaker:
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.

@@ -484,6 +484,9 @@ public class DialogueManager : MonoBehaviour
             case "respite":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.respite);
               break;
+            case "swamp":
+              AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.swamp);
+              break;
             case "silence":
               AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
               break;
