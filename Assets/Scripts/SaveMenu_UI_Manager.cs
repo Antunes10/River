@@ -25,9 +25,9 @@ public class SaveMenu_UI_Manager : MonoBehaviour
         GameState _gs = null;
         foreach (var button in _loadButtons)
         {
-            if (System.IO.File.Exists(Application.dataPath + "/Resources/RiverSave" + number + ".json"))
+            if (System.IO.File.Exists(Application.persistentDataPath + "/RiverSave" + number + ".json"))
             {
-                StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+                StreamReader sr = new StreamReader(Application.persistentDataPath + "/RiverSave" + number + ".json");
                 string json = sr.ReadToEnd();
                 sr.Close();
                 _gs = FromJson<GameState>(json);

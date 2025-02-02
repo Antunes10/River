@@ -35,19 +35,19 @@ public class LoadMenu_UI_Manager : MonoBehaviour
         string saveMode = null;
         if (isOnManual)
         {
-            saveMode = "/Resources/RiverSave";
+            saveMode = "/RiverSave";
         }
         else
         {
-            saveMode = "/Resources/RiverAutoSave";
+            saveMode = "/RiverAutoSave";
         }
 
         
         foreach (var button in _loadButtons)
         {
-            if (System.IO.File.Exists(Application.dataPath + saveMode + number + ".json"))
+            if (System.IO.File.Exists(Application.persistentDataPath + saveMode + number + ".json"))
             {
-                StreamReader sr = new StreamReader(Application.dataPath + saveMode + number + ".json");
+                StreamReader sr = new StreamReader(Application.persistentDataPath + saveMode + number + ".json");
                 string json = sr.ReadToEnd();
                 sr.Close();
                 _gs = FromJson<GameState>(json);

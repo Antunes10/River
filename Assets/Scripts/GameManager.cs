@@ -78,18 +78,22 @@ public class GameManager : MonoBehaviour
     }
   }
 
-  void Start()
-  {
-    DontDestroyOnLoad(this.gameObject);
-    
-    for (int i = 0; i < unlockedImages.Length; i++)
+    void Start()
     {
-      unlockedImages[i] = 0;
-    }
+        DontDestroyOnLoad(this.gameObject);
 
-    InitGameState();
-    LoadUnlockables();
-  }
+        for (int i = 0; i < unlockedImages.Length; i++)
+        {
+            unlockedImages[i] = 0;
+        }
+
+        InitGameState();
+
+        if (System.IO.File.Exists(Application.persistentDataPath + "/UnlockedImages.json"))
+        {
+            LoadUnlockables();
+        }
+    }
 
   public void InitGameState()
   {
@@ -130,7 +134,7 @@ public class GameManager : MonoBehaviour
   {
     _gs.date = DateTime.Now.ToString();
     string json = ToJson(_gs, true);
-    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/RiverSave" + number + ".json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/RiverSave" + number + ".json");
     sw.Write(json);
     sw.Close();
   }
@@ -141,9 +145,9 @@ public class GameManager : MonoBehaviour
         int chosenIterator = 0;
         for (int iterator = 0; iterator < 3; iterator++)
         {
-            if (System.IO.File.Exists(Application.persistentDataPath + "/Resources/RiverAutoSave" + iterator + ".json"))
+            if (System.IO.File.Exists(Application.persistentDataPath + "/RiverAutoSave" + iterator + ".json"))
             {
-                StreamReader sr = new StreamReader(Application.persistentDataPath + "/Resources/RiverAutoSave" + iterator + ".json");
+                StreamReader sr = new StreamReader(Application.persistentDataPath + "/RiverAutoSave" + iterator + ".json");
                 string json = sr.ReadToEnd();
                 sr.Close();
                 GameState gm = FromJson<GameState>(json);
@@ -163,13 +167,13 @@ public class GameManager : MonoBehaviour
 
     _gs.date = DateTime.Now.ToString();
     string json2 = ToJson(_gs, true);
-    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/RiverAutoSave" + chosenIterator + ".json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/RiverAutoSave" + chosenIterator + ".json");
     sw.Write(json2);
     sw.Close();
   }
 
   public void LoadUnlockables() {
-    StreamReader sr2 = new StreamReader(Application.persistentDataPath + "/Resources/UnlockedImages.json");
+    StreamReader sr2 = new StreamReader(Application.persistentDataPath + "/UnlockedImages.json");
     string json2 = sr2.ReadToEnd();
     sr2.Close();
     unlockedImages = JsonHelper.FromJson<int>(json2);
@@ -180,7 +184,7 @@ public class GameManager : MonoBehaviour
   public void SaveUnlockables()
   {
     string json = JsonHelper.ToJson(unlockedImages);
-    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/UnlockedImages.json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/UnlockedImages.json");
     sw.Write(json);
     sw.Close();
   }
