@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
   public void LoadGame(int number, string saveMode)
   {
     Time.timeScale = 1f;
-    StreamReader sr = new StreamReader(Application.dataPath + saveMode + number + ".json");
+    StreamReader sr = new StreamReader(Application.persistentDataPath + saveMode + number + ".json");
     string json = sr.ReadToEnd();
     sr.Close();
     _gs = FromJson<GameState>(json);
@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
   {
     _gs.date = DateTime.Now.ToString();
     string json = ToJson(_gs, true);
-    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverSave" + number + ".json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/RiverSave" + number + ".json");
     sw.Write(json);
     sw.Close();
   }
@@ -141,9 +141,9 @@ public class GameManager : MonoBehaviour
         int chosenIterator = 0;
         for (int iterator = 0; iterator < 3; iterator++)
         {
-            if (System.IO.File.Exists(Application.dataPath + "/Resources/RiverAutoSave" + iterator + ".json"))
+            if (System.IO.File.Exists(Application.persistentDataPath + "/Resources/RiverAutoSave" + iterator + ".json"))
             {
-                StreamReader sr = new StreamReader(Application.dataPath + "/Resources/RiverAutoSave" + iterator + ".json");
+                StreamReader sr = new StreamReader(Application.persistentDataPath + "/Resources/RiverAutoSave" + iterator + ".json");
                 string json = sr.ReadToEnd();
                 sr.Close();
                 GameState gm = FromJson<GameState>(json);
@@ -163,13 +163,13 @@ public class GameManager : MonoBehaviour
 
     _gs.date = DateTime.Now.ToString();
     string json2 = ToJson(_gs, true);
-    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/RiverAutoSave" + chosenIterator + ".json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/RiverAutoSave" + chosenIterator + ".json");
     sw.Write(json2);
     sw.Close();
   }
 
   public void LoadUnlockables() {
-    StreamReader sr2 = new StreamReader(Application.dataPath + "/Resources/UnlockedImages.json");
+    StreamReader sr2 = new StreamReader(Application.persistentDataPath + "/Resources/UnlockedImages.json");
     string json2 = sr2.ReadToEnd();
     sr2.Close();
     unlockedImages = JsonHelper.FromJson<int>(json2);
@@ -180,7 +180,7 @@ public class GameManager : MonoBehaviour
   public void SaveUnlockables()
   {
     string json = JsonHelper.ToJson(unlockedImages);
-    StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/UnlockedImages.json");
+    StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/UnlockedImages.json");
     sw.Write(json);
     sw.Close();
   }

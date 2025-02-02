@@ -13,7 +13,7 @@ public class AudioVolumeSettings : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
 
-        if (System.IO.File.Exists(Application.dataPath + "/Resources/AudioSettings.json"))
+        if (System.IO.File.Exists(Application.persistentDataPath + "/Resources/AudioSettings.json"))
         {
             LoadAudio();
         }
@@ -32,7 +32,7 @@ public class AudioVolumeSettings : MonoBehaviour
 
     public void LoadAudio()
     {
-        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/AudioSettings.json");
+        StreamReader sr = new StreamReader(Application.persistentDataPath + "/Resources/AudioSettings.json");
         string json = sr.ReadToEnd();
         sr.Close();
         volumes = JsonHelper.FromJson<float>(json);
@@ -47,7 +47,7 @@ public class AudioVolumeSettings : MonoBehaviour
         volumes[2] = sfx;
 
         string json = JsonHelper.ToJson(volumes);
-        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/AudioSettings.json");
+        StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/Resources/AudioSettings.json");
         sw.Write(json);
         sw.Close();
 
