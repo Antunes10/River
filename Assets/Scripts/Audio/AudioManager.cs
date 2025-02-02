@@ -75,7 +75,7 @@ public class AudioManager : MonoBehaviour
 
     public void SaveVolumes()
     {
-        AudioVolumeSettings.Instance.SaveAudio(AudioListener.volume, musicSource.volume, sfxSource.volume * 1.2f);
+        AudioVolumeSettings.Instance.SaveAudio(AudioListener.volume, musicSource.volume, sfxSource.volume);
     }
 
     public void PlayMenuMusic()
