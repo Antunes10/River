@@ -118,6 +118,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public bool GetPaused()
+    {
+        return _gamePaused;
+    }
+
     public void ExitToMenu()
     {
         AudioManager.Instance.StopAllSounds();

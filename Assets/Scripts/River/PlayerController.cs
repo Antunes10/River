@@ -50,9 +50,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //Rise water level if its raining
-        if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory)
+        if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory && !_levelManager.GetPaused())
         {
             _slider.value += 0.05f;
             if (_slider.value > 99)

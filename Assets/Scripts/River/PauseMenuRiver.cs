@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class PauseMenuRiver : MonoBehaviour
 {
-    private bool isPaused = false;
     [SerializeField] private Canvas _soundMenuCanvas;
 
     void Start()
@@ -20,31 +19,10 @@ public class PauseMenuRiver : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !LevelManager.Instance._gameLost)
         {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
+            LevelManager.Instance.PauseUnpause();
+            _soundMenuCanvas.enabled = false;
         }
-    }
-
-    public void PauseGame()
-    {
-        isPaused = true;
-        GetComponent<Canvas>().enabled = true;
-        Time.timeScale = 0f;
-    }
-
-    public void ResumeGame()
-    {
-        AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
-        isPaused = false;
-        GetComponent<Canvas>().enabled = false;
-        _soundMenuCanvas.enabled = false;
-        Time.timeScale = 1f;
     }
 
     public void SoundMenuSwitch()
