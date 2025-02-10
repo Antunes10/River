@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:river
+#background:Dam
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m 
 ~unlockImage(4)
 Hours pass and they both reach a wider body of water, surrounded by gravel and bushes.
@@ -76,6 +76,10 @@ They had to decide.
     #speaker:
     They start to walk backwards when a metal click is heard.
     (Boom)
+
+    ~gameOver()
+    -> END
+
 + [Try to breach the dam]
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     Out there its dangerous and we go faster by water.
@@ -124,13 +128,13 @@ They had to decide.
     #speaker:left:sparks_default
     Then, what are you miss animal?
     #speaker:Hazel #portrait:hazel_default #layout:right:hazel_default_m
-    Hazel: I’m an Otter, and my name is Hazel!
+    I’m an Otter, and my name is Hazel!
     #speaker:Sparks #portrait:sparks_default
     Oh…
     My name is Sparks, and this is my friend Tails.
     #speaker:Hazel #portrait:hazel_default
-    Hazel: Pleasure to meet you both, fellow river travellers.
-    Hazel: What brings you here?
+    Pleasure to meet you both, fellow river travellers.
+    What brings you here?
     #speaker:
     The mouse descends a few steps until he’s at the water's level.
     #speaker:Tails #portrait:tails_default
@@ -138,25 +142,25 @@ They had to decide.
     We are trying to get across with our "shell", but we can’t find a way through.
     Would you be kind enough to help us? You seem to know this place quite well.
     #speaker:Hazel #portrait:hazel_default #layout:right:hazel_default_m
-    Hazel: Of course, sweet thing.
-    Hazel: I’m always up for helping visitors.
-    Hazel: The other day I helped a rabbit find a bigger log, to sail down the river.
-    Hazel: She had quite an entourage of little rabbits.
+    Of course, sweet thing.
+    I’m always up for helping visitors.
+    The other day I helped a rabbit find a bigger log, to sail down the river.
+    She had quite an entourage of little rabbits.
     #speaker:Sparks #portrait:sparks_happy #layout:left:sparks_happy
     She’s going West too! To the enchanted land!
     #speaker: #layout:right:hazel_sad_m
     The otter makes a curious face.
     #layout:right:hazel_default_m #portrait:hazel_default
-    Hazel: Well, never heard of that place, but it seems quite nice.
-    Hazel: East I’ve only seen sadness and pain.
-    Hazel: That’s the only thing the river brings with it nowadays.
+    Well, never heard of that place, but it seems quite nice.
+    East I’ve only seen sadness and pain.
+    That’s the only thing the river brings with it nowadays.
     #speaker:Tails #portrait:tails_default
     I can only image what you have seen.
     #speaker:
     The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
     The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_default 
-    Hazel: Fear not. This otter is going to find a structural weakness and breach the damn thing.
+    Fear not. This otter is going to find a structural weakness and breach the damn thing.
     #speaker:Sparks #portrait:sparks_happy #layout:left:sparks_happy
     Ih, ih…
     #speaker: #layout:right:default
@@ -169,24 +173,25 @@ They had to decide.
     A couple of minutes pass and they hear a crumbling sound from the far-left extremity of the dam.
     Debris crumble and a pathway is created, where the water starts flowing faster.
     #speaker:Hazel #layout:middle:tails_happy #layout:left:sparks_happy #layout:right:hazel_happy_m #portrait:hazel_happy
-    Hazel: Ta dah!
+    Ta dah!
     #speaker:
     The otter emerges hands raised as if magic was used.
     #speaker:Sparks #portrait:sparks_happy
     Hurray Miss Hazel, you’re the best!
     #speaker: #layout:left:sparks_default #layout:middle:tails_default #layout:right:hazel_default_m
     They both jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
+    #background:river
     The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default
-    Hazel: There you go, free flow to the West you go.
+    There you go, free flow to the West you go.
     #speaker:Tails #portrait:tails_default
     We can’t thank you enough Miss Hazel.
     #speaker:
     She makes a small bow and then raises her nose remembering something.
     #speaker:Hazel #portrait:hazel_sad #layout:right:hazel_sad_m
-    Hazel: Actually, if you’ll be so kind to give me a little food.
-    Hazel: It has been hard to find fish the last couple of days and I’m starving.
+    Actually, if you’ll be so kind to give me a little food.
+    It has been hard to find fish the last couple of days and I’m starving.
     #speaker: 
     Tails Looks inside the helmet to the little food they have left.
     
@@ -219,8 +224,8 @@ They had to decide.
         #layout:right:hazel_sad_m
         The otter’s face saddens, but she hurries to hide it.
         #speaker: #layout:right:hazel_default_m #portrait:hazel_default
-        Hazel: It’s alright my friends. I can still hold on a couple of days.
-        Hazel: I’m sure I’ll find food until then.
+        It’s alright my friends. I can still hold on a couple of days.
+        I’m sure I’ll find food until then.
         #speaker:
         She smiled but Tails could fell a lack of faith in her own words.
         Then he thought about something that could mend the situation.

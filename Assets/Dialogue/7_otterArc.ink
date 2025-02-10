@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:river
+#background:Dam
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
 ~unlockImage(7)
 ~unlockImage(1)
@@ -87,6 +87,9 @@ They had to decide.
     #speaker:
     They start to walk backwards when a metal click is heard.
     (Boom)
+
+    ~gameOver()
+        -> END
 
 +[Try to breach the dam]
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
@@ -195,6 +198,7 @@ They had to decide.
     Hurray Miss Hazel, you’re the best!
     #speaker:
     They all jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
+    #background:river
     The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
