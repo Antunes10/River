@@ -8,7 +8,7 @@ INCLUDE globals.ink
 ~unlockImage(17)
 Explosions are heard.
 War is all around in a forest of "concrete mountains", where a battle is still taking place.
-Landslides, craters, buildings turned to dust, bodies scattered. They paint a picture of mankind.
+Landslides, craters, buildings turned to dust, bodies scattered; They paint a picture of mankind.
 The helmet goes slowly and carefully.
 #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
 I can hear humans a couple of blocks away.
@@ -197,6 +197,7 @@ What are we going to do?
         But, Mr.Tails… She will drown!
         #speaker:Tails #portrait:tails_default
         No, she won’t. The wheelbarrow will stay afloat.
+        #speaker: #layout:left:oak_default
         The dog widens his eyes in a moment of realization.
         #speaker:Oak #portrait:oak_default #layout:left:oak_default
         Oh, you cheek!
@@ -214,10 +215,10 @@ What are we going to do?
         #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
         Lucky find!
         #speaker:Sparks #portrait:sparks_happy #layout:left:oak_default #layout:middle_right:tails_default_m #layout:middle_left:bunny_sad 
-        Hi there, miss Rabbit.
+        Hi there, miss rabbit.
         I’m Sparks, what is your name?
         #speaker:
-        The rabbit raises her hears in alarm, looks into the building behind them…
+        The rabbit raises her ears in alarm, looks into the building behind them…
         #layout:middle_left:default
         And darts to it.
         #speaker:Nimbus #portrait:nimbus_scared #layout:right:nimbus_scared_m
@@ -226,13 +227,19 @@ What are we going to do?
         Did I said something wrong?
         #speaker:
         They all stare blankly to the rodent that now enters the huge stone mountain, through a destroyed door.
+        #enviroSound:villageExplosions
         An explosion blows near them, and debris fly everywhere.
-        #speaker:Tails #portrait:tails_default
-        No time to lose! Take the food and follow the rabbit!
-        Everyone wakes up from their slumber and with quick movements take the recently found food and run towards the door.
-            
-        ~changeScene("DialogueScene")
-        ->END
+        #speaker:Nimbus #portrait:nimbus_scared
+        Run! We must get to safety!
+        #enviroSound:villageExplosions
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        Suddently another explosion hits, covering everything with dust.
+        Tails is sent flying against the wheelbarrow.
+        The sound is snuffed out of the world, leaving a high pitching sound.
+        Tails can't see anything.
+        He tries to call for his friends but he can't hear himself.
+
+        ->final_choice
 
     
 -> DONE
@@ -279,14 +286,19 @@ What are we going to do?
         Next to them the rabbit dries her fur and without any notice darts towards one of the buildings.
         #speaker:Nimbus #portrait:nimbus_scared #layout:right:nimbus_scared_m
         What was that?!?
+        #enviroSound:villageExplosions
+        An explosion blows near them, and debris fly everywhere.
         #speaker:Oak #portrait:oak_scared #layout:left:oak_scared
-        No time to lose, lets follow the little rodent.
-        We are vulnerable out here.
-        #speaker:
-        He signals the group, and they follow the rabbit inside one of the huge stone mountains.
+        No time to lose, we are vulnerable out here!
+        #enviroSound:villageExplosions
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        Suddently another explosion hits, covering everything with dust.
+        Tails is sent flying against the wheelbarrow.
+        The sound is snuffed out of the world, leaving a high pitching sound.
+        Tails can't see anything.
+        He tries to call for his friends but he can't hear himself.
         
-        ~changeScene("DialogueScene")
-        ->END
+        ->final_choice
 
     +[Try to salvage some food]
         ->try_to_salvage_food
@@ -319,17 +331,20 @@ What are we going to do?
         You nearly drowned.
         #speaker:Tails
         It was worth it.
-        #speaker:
+        #speaker: #enviroSound:villageExplosions
         Suddenly another explosion blows right near them, sending debris everywhere.
         #speaker:Nimbus #portrait:nimbus_scared #layout:right:nimbus_scared
         We must take shelter!
         We won’t survive if we stay out in the open!
-        #speaker:
-        The mouse looks around really fast and sees the rabbit running towards one of the buildings.
-        He signals the group, and they follow her inside one of the huge stone mountains.
+        #enviroSound:villageExplosions
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        Suddently another explosion hits, covering everything with dust.
+        Tails is sent flying against the wheelbarrow.
+        The sound is snuffed out of the world, leaving a high pitching sound.
+        Tails can't see anything.
+        He tries to call for his friends but he can't hear himself.
         
-        ~changeScene("DialogueScene")
-        ->END
+        ->final_choice
         
     +[Try too salvage more food]
         #speaker:
@@ -338,7 +353,7 @@ What are we going to do?
         He pulled with all his strength.
         And suddenly the metal dome fell hard.
         Darkness fell.
-        The ground underneath him succumbed with the strength of the impact.
+        The ground underneath him succumbs with the strength of the impact.
         And everything starts to sink.
         He tries to escape through the hole.
         But it was too small…
@@ -348,7 +363,37 @@ What are we going to do?
         ~gameOver()
         ->END
 
--> choice_panel
+=== final_choice ===
+
+    +[Look for your friends]
+        #speaker: #layout:left:tails_scared
+        Tails starts walking slowly through the dust.
+        His head is spinning and his paws are burning.
+        #speaker: Tails #portrait:tails_scared
+        Sparks? Oak? Nimbus?
+        Where are you!?
+        #speaker:
+        He stumbles around...
+        But the dust is too thick for him to see anything...
+        #speaker: #enviroSound:villageExplosions #layout:left:default
+        A huge explosion blows.
+        And its the last thing he hears...
+
+        ~gameOver()
+        ->END
+
+    +[Run to safety]
+        #speaker: #layout:left:tails_scared
+        He understands he's in danger, so he decides to run for safety.
+        He remembers the direction the rabbit ran too, so he decides to follow her trail.
+        Running at full speed he hears explosions all around.
+        A hell befalls from the skies.
+        Finnally he reaches the inside of the building...
+        #enviroSound:villageExplosions
+        Just before he's hit by a furious explosion....
+
+        ~changeScene("DialogueScene")
+        ->END
 
 
 
