@@ -10,21 +10,21 @@ INCLUDE globals.ink
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
 The “boat” touches gently on the wet dirt, and they all disembark exhausted.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: That was intense.
-Nimbus: For a moment I though we wouldn’t make it.
+That was intense.
+For a moment I though we wouldn’t make it.
 #speaker:Sparks #portrait:sparks_default
-Sparks: If not for you, Mr.Tails, we would’ve drowned.
+If not for you, Mr.Tails, we would’ve drowned.
 #layout:right:sparks_happy_m #portrait:sparks_happy
-Sparks: You are the best!
+You are the best!
 #speaker:Tails #portrait:tails_default
-Tails: We all did our part. I think we all deserve praise.
+We all did our part. I think we all deserve praise.
 #speaker:
 All of them fall onto the ground in order to recover their strength and breath.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
-Sparks: My wings hurt…
-Sparks: My belly hurts…
+My wings hurt…
+My belly hurts…
 #speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad_m
-Nimbus: I’m starving too. Thank the heavens we still have some food left.
+I’m starving too. Thank the heavens we still have some food left.
 
 +[Eat together to recover your strength]
     ~currentFood = currentFood - 1 
@@ -35,8 +35,8 @@ Nimbus: I’m starving too. Thank the heavens we still have some food left.
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the bird and retrieves a bit more.
     #speaker:Tails #portrait:tails_default
-    Tails: Here.
-    Tails: It will do us no good to travel on an empty belly.
+    Here.
+    It will do us no good to travel on an empty belly.
     #speaker: #layout:middle:nimbus_default_m #layout:right:sparks_default_m
     As the crunching sounds begin, a couple of smiles start to appear all around.
     They had just avoided death and food was the fire they needed to keep hope from fading away.
@@ -46,8 +46,8 @@ Nimbus: I’m starving too. Thank the heavens we still have some food left.
     ~currentHope = currentHope - 1
     ~decreaseHope(1)
     #speaker:Tails #portrait:tails_sad
-    Tails: I know it is hard, but we have to ration our food.
-    Tails: We don’t know what lies ahead.
+    I know it is hard, but we have to ration our food.
+    We don’t know what lies ahead.
     #speaker:
     The little firefly’s antennas go down. And she sadly sits down on the grass, with her hands on her belly.
     Tails knew it was hard to make that choice, but they didn’t know when they would find food again.
@@ -60,44 +60,44 @@ Nimbus: I’m starving too. Thank the heavens we still have some food left.
 His eyes look up and see the everchanging clouds. Totally unfazed by what was happening below.
 There was a certain serenity, a certain comfort those cotton seas inspired in him.
 #speaker:Tails #portrait:tails_default
-Tails: I bet no problem in the world ever reaches the blue skies.
-Tails: I bet everything is peaceful up there.
+I bet no problem in the world ever reaches the blue skies.
+I bet everything is peaceful up there.
 #speaker:
 The rest of them imitate Tails and place their eyes on the big blue.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: Yup.
-Nimbus: That’s why they call it heaven.
-Nimbus: Mountains of white and a roof of deep blue.
+Yup.
+That’s why they call it heaven.
+Mountains of white and a roof of deep blue.
 #speaker:Sparks #portrait:sparks_default
-Sparks: I always dreamed to fly up there too, but the winds are too strong for fireflies.
+I always dreamed to fly up there too, but the winds are too strong for fireflies.
 #speaker:
 The bird looks at his wing still patched.
 #speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad_m
-Nimbus: I guess none of us is ever going to.
+I guess none of us is ever going to.
 #speaker:Tails #portrait:tails_default
-Tails: Well, we also have enchanted lands here on the ground.
+Well, we also have enchanted lands here on the ground.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default_m
-Nimbus: And where that might be?
+And where that might be?
 #speaker:Tails #portrait:tails_default
-Tails: West.
-Tails: There is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
+West.
+There is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 #speaker:Sparks #portrait:sparks_default
-Sparks: Yes the beautiful valley you talked about earlier!
+Yes the beautiful valley you talked about earlier!
 #layout:right:sparks_happy_m #portrait:sparks_happy
-Sparks: There must be hundreds of fireflies there. All shining together.
+There must be hundreds of fireflies there. All shining together.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: It seems too good to be true.
-Nimbus: How do we know it even exists?
+It seems too good to be true.
+How do we know it even exists?
 #speaker:Tails #portrait:tails_default
-Tails: I had some friends who’ve been there and told tales of it, before the war.
+I had some friends who’ve been there and told tales of it, before the war.
 #speaker:
 They all open their eyes wide with amazement.
 #speaker:Tails #portrait:tails_default
-Tails: It’s a wonderful place. Where we don’t have to worry about fires or explosions.
+It’s a wonderful place. Where we don’t have to worry about fires or explosions.
 #speaker:
 The firefly’s face lightens up alongside his behind.
 #speaker:Sparks #portrait:sparks_happy
-Sparks: Word?!
+Word?!
 #speaker:
 The mouse nods with a smile.
 His words make them all dream.
@@ -105,19 +105,19 @@ Dream they will reach that enchanted place and leave all their pain and sufferin
 Dream they will be happy again.
 And they deserve it, don’t they?
 #speaker:Tails #portrait:tails_happy
-Tails: We will get there in a couple of days.
-Tails: We just have to keep pressing on.
+We will get there in a couple of days.
+We just have to keep pressing on.
 #speaker:
 Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
-Sparks: Ay ay, Mr.Captain.
+Ay ay, Mr.Captain.
 #speaker:
 He then flies back to the helmet with renewed motivation.
 They all laugh.
 #speaker:Tails #portrait:tails_default
-Tails: I did not mean right now.
+I did not mean right now.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: She is right, there sooner we get there the better!
+She is right, there sooner we get there the better!
 #speaker:
 In agreement the band goes back to the helmet and set sail to their assured horizon.
 
