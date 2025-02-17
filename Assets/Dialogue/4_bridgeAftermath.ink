@@ -180,7 +180,7 @@ Or perhaps it was best if Tails spent some time with his companions.
     ++[Go anyway.]
         ~increaseFood(1)
         ~currentFood = currentFood + 1
-        ~ found_food = found_food + 1
+        ~ foundOldMan()
         #speaker: #layout:middle:tails_sad
         It was uncomfortable, but it was a necessary evil.
         #layout:middle:tails_scared

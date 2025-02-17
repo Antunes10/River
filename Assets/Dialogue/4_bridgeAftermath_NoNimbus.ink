@@ -183,6 +183,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     ++[Go anyway]
         ~increaseFood(1)
         ~currentFood = currentFood + 1
+        ~ foundOldMan()
         It was uncomfortable, but it was a necessary evil.
         He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
         It was an old man.

@@ -3,8 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-
-#background:villageSquare
+#background:villageHouseDawn
 #speaker: #layout:left:tails_default #layout:right:sparks_sad_m
 #music:villageArrival
 ~unlockImage(13)
@@ -27,7 +26,7 @@ It seems the juvenile sleepiness is common for all species.
 #speaker: #layout:middle:tails_happy 
 The mouse smiles entertained with his own remark.
 He should take the time to check the rest of the village. He might get lucky and find some food.
-
+#background:villageSquare
 #speaker: #layout:middle:tails_default
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
 The road is a bit drier than yesterday.
@@ -64,14 +63,14 @@ He had seen mice teared to shreds by angry mongrels.
         He feels the earth move behind him and turns around…
         Only to find the huge dog right in front of them.
     --
-    #layout:middle:default #layout:left:tails_scared #layout:right:oak_default_m
+    #layout:middle:default #layout:left:tails_scared #layout:right:oak_default_noHat
     He jumps terrified.
     The dog’s dark eyes are locked on him.
-    #speaker:??? #portrait:oak_default
+    #speaker:??? #portrait:oak_default_noHat
     Dog: What are you doing here?
     #speaker:
     The mouse is catatonic.
-    #speaker:Oak #portrait:oak_default #music:villageArrival
+    #speaker:Oak #portrait:oak_default_noHat #music:villageArrival
     Dog: Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -81,38 +80,38 @@ He had seen mice teared to shreds by angry mongrels.
     I’m not looking for trouble, please let me go.
     #speaker:
     The dog raises one eyebrow.
-    #speaker:Oak #portrait:oak_default
+    #speaker:Oak #portrait:oak_default_noHat
     Why would old Oak prevent you gentleman from leaving?
     #speaker:Tails #portrait:tails_scared
     I… don’t know…
     Because you want to eat me?
-    #speaker:Oak #portrait:oak_default
+    #speaker:Oak #portrait:oak_default_noHat
     That would be most uncivilized.
     Old oak does not eat little animals.
-    #portrait:oak_happy #layout:right:oak_happy_m
+    #portrait:oak_happy_noHat #layout:right:oak_happy_noHat
     Old oak only eats canned food, cooked food and delicious white cookies from the pastry down the road.
     Tails doesn’t how to react.
-    #speaker:Tails #portrait:tails_default #layout:left:tails_default #layout:right:oak_default_m
+    #speaker:Tails #portrait:tails_default #layout:left:tails_default #layout:right:oak_default_noHat
     I am Tails...
     Together with a small firefly I’m trying to escape this calamity and find refuge to the West.
     We wandered into this village to spend the night.
-    #speaker: #layout:right:oak_default_m
+    #speaker: #layout:right:oak_default_noHat
     The dog smiles.
-    #speaker:Oak #portrait:oak_happy
+    #speaker:Oak #portrait:oak_happy_noHat
     What a marvellous pair you make.
     It is a pleasure to get your acquaintance.
-    #speaker: #layout:right:oak_default_m
+    #speaker: #layout:right:oak_default_noHat
     The dog makes a small bow, and the recipient tries to respond, doing it awkwardly.
     #speaker:Tails #portrait:tails_default
     And what are you doing here… Old Oak?
-    #speaker: #layout:right:oak_happy_m
+    #speaker: #layout:right:oak_happy_noHat
     The dog laughs out loud.
-    #speaker:Oak #layout:right:oak_default_m #portrait:oak_default
+    #speaker:Oak #layout:right:oak_default_noHat #portrait:oak_default_noHat
     Oh no, “old” is merely used adjectively, ah, ah.
     My name is merely “Oak”.
     #speaker:Tails #portrait:tails_default 
     Forgive me. What are you doing here, Oak?
-    #speaker:Oak #portrait:oak_default 
+    #speaker:Oak #portrait:oak_default_noHat
     This is my village you see. Or was.
     It was attacked by the other humans that came from the East.
     My owner advised me to run to the woods and wait for the "storm of fire" to pass.
@@ -126,24 +125,24 @@ He had seen mice teared to shreds by angry mongrels.
         ~currentHope = currentHope + 1
         #speaker:Tails #portrait:tails_default
         I could help you find him.
-        #speaker: #layout:right:oak_happy_m
+        #speaker: #layout:right:oak_happy_noHat
         The dog smiles.
-        #speaker:Oak #portrait:oak_happy
+        #speaker:Oak #portrait:oak_happy_noHat
         That would be most kind.
         #speaker:Tails #portrait:tails_default
         Could you give me a description?
-        #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+        #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
         He is grey already. With fur on his face, bright eyes and forest-coloured clothes.
         Oh! And he wears a green hat that looks like a bucket.
         
-        {found_food == 1: 
+        {getFoundOldMan(): 
             #speaker:
             The image of the man lying on the ground in the rain flashes on the mouse’s mind.
             #layout:left:tails_sad
             His eyes lower with sadness.
             #speaker:Tails #portrait:tails_sad
             I think I know where he is.
-            #speaker:Oak #layout:right:oak_sad_m #portrait:oak_sad
+            #speaker:Oak #layout:right:oak_sad_noHat #portrait:oak_sad_noHat
             Oh…
             #speaker:
             The rodent does not share his master’s fate, but the dog lowers his ears, feeling it.
@@ -159,7 +158,7 @@ He had seen mice teared to shreds by angry mongrels.
             They agree and start looking for the man.
             Clouds start to gather.
             The humidity does not help to identify the different scents.
-            #layout:right:oak_sad_m #layout:left:tails_sad
+            #layout:right:oak_sad_noHat #layout:left:tails_sad
             It takes a couple of minutes until the dog freezes.
             In front of him lies an old man motionless on the ground.
             Alone.

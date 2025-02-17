@@ -221,6 +221,18 @@ public class DialogueManager : MonoBehaviour
             return GameManager.Instance.GetHasCotton();
         });
 
+        currentStory.BindExternalFunction("foundOldMan", () =>
+        {
+            ExitDialogueMode();
+            GameManager.Instance.foundOldMan();
+        });
+
+        currentStory.BindExternalFunction("getFoundOldMan", () =>
+        {
+            ExitDialogueMode();
+            return GameManager.Instance.GetFoundOldMan();
+        });
+
         currentStory.BindExternalFunction("increaseFood", (int val) =>
     {
       ExitDialogueMode();

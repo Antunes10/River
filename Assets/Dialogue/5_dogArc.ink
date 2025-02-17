@@ -102,7 +102,7 @@ He had seen mice teared to shreds by angry mongrels.
         You are right, let’s go.
         #speaker:
         They both turn around.
-        #layout:right:oak_default_m
+        #layout:right:oak_default_noHat
         And totally unprepared find the dog behind them.
 
     ++[Go talk to the dog]
@@ -115,18 +115,18 @@ He had seen mice teared to shreds by angry mongrels.
         #speaker:
         The mouse turns to face the well but the dog isn’t there anymore.
         A scream breaches the silence.
-        #layout:right:oak_default_m
+        #layout:right:oak_default_noHat
         Nimbus' voice makes Tails turn around, only to find the huge dog right in front of them.
     
     -- #speaker: #layout:middle:tails_scared
     They jump terrified.
     The dog’s dark eyes are locked on them.
     Nimbus tries to run away but stumbles to the ground.
-    #speaker:Dog #portrait:oak_sad #layout:right:oak_sad_m
+    #speaker:Dog #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
     Where are you going?
     #speaker:
     Both of them are catatonic.
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m #music:villageArrival
+    #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat #music:villageArrival
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -134,24 +134,24 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Tails #portrait:tails_scared
     We… we are just passing by…
     We are not looking for trouble, please let us go.
-    #speaker: #layout:right:oak_sad_m
+    #speaker: #layout:right:oak_sad_noHat
     The dog raises one eyebrow.
-    #speaker:Oak #portrait:oak_sad
+    #speaker:Oak #portrait:oak_sad_noHat
     Why would old Oak prevent you both gentlemen from leaving?
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
     I… don’t know…
     Because you want to eat us?
-    #speaker:Oak #portrait:oak_sad
+    #speaker:Oak #portrait:oak_sad_noHat
     That would be most uncivilized.
     Old oak does not eat little animals.
-    #speaker:Oak #portrait:oak_happy #layout:right:oak_happy_m
+    #speaker:Oak #portrait:oak_happy_noHat #layout:right:oak_happy_noHat
     Old oak only eats canned food, cooked food and delicious white cookies from the pastry down the road.
     #speaker: #layout:middle:tails_default #layout:left:nimbus_default
     The two small animals look at each other without knowing how to react.
     The dog seems genuinely harmless.
     #speaker:Nimbus #portrait:nimbus_default
     So… you.. you.. won’t do us any harm?
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
     Categorically, little bird.
     #speaker:
     With the mouse’s help, the woodpecker gets up on his feet.
@@ -159,9 +159,9 @@ He had seen mice teared to shreds by angry mongrels.
     I am Tails, and this is Nimbus.
     Together with a small firefly we are trying to escape this calamity and find refuge to the West.
     We wandered into this village to spend the night.
-    #speaker: #layout:right:oak_happy_m
+    #speaker: #layout:right:oak_happy_noHat
     The dog smiles.
-    #speaker:Oak #portrait:oak_happy
+    #speaker:Oak #portrait:oak_happy_noHat
     What a marvellous entourage you have forged.
     It is a pleasure to get your acquaintance.
     #speaker:
@@ -170,18 +170,18 @@ He had seen mice teared to shreds by angry mongrels.
     And what are you doing here… Old Oak?
     #speaker:
     The dog laughs out loud.
-    #speaker:Oak #portrait:oak_happy
+    #speaker:Oak #portrait:oak_happy_noHat
     Oh no, “old” is merely used adjectively, ah, ah.
     My name is merely “Oak”.
     #speaker:Nimbus #portrait:nimbus_default
     Forgive me. What are you doing here, Sir Oak?
-    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
     This is my village you see. Or was.
     It was attacked by the other humans that came from the East.
-    #portrait:oak_sad #layout:right:oak_sad_m
+    #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
     My owner advised me to run to the woods and wait for the "storm of fire" to pass.
     And so, I did. Although he never came back to meet me.
-    #portrait:oak_default #layout:right:oak_default_m
+    #portrait:oak_default_noHat #layout:right:oak_default_noHat
     Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
@@ -189,16 +189,16 @@ He had seen mice teared to shreds by angry mongrels.
         ~currentHope = currentHope + 1
         #speaker:Tails #portrait:tails_default 
         We could help you find him.
-        #speaker: #layout:right:oak_happy_m
+        #speaker: #layout:right:oak_happy_noHat
         The dog smiles.
-        #speaker:Oak #portrait:oak_happy
+        #speaker:Oak #portrait:oak_happy_noHat
         That would be most kind.
         #speaker:Tails #portrait:tails_default
         Could you give us a description?
-        #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+        #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
         He is grey already. With fur on his face, bright eyes and forest coloured clothes.
         Oh! And he wears a green hat that looks like a bucket.
-        {found_food == 1: ->if_1 | ->if_2}
+        {getFoundOldMan(): ->if_1 | ->if_2}
         
         ->continuation
 
@@ -258,7 +258,7 @@ He had seen mice teared to shreds by angry mongrels.
     His eyes lower with sadness.
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad 
     I think I know where he is.
-    #speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
+    #speaker:Oak #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
     Oh…
     #speaker:
     The rodent does not share his master’s fate, but the dog lowers his ears, feeling it.
@@ -275,7 +275,7 @@ He had seen mice teared to shreds by angry mongrels.
     They agree and start looking for the man.
     Clouds start to gather.
     The humidity does not help to identify the different scents.
-    #layout:right:oak_sad_m #layout:middle:tails_sad
+    #layout:right:oak_sad_noHat #layout:middle:tails_sad
     It takes a couple of minutes until the dog freezes.
     In front of him lies an old man motionless on the ground.
     Alone.
@@ -306,6 +306,7 @@ A band of birds flies away from the tall grass, spooked by something.
 Silence reigns.
 #speaker:Nimbus #portrait:nimbus_sad #layout:left:nimbus_sad
 Something is wrong, Tails. They flew from something.
+#speaker:
 The mouse looks around, worried.
 In that moment one of the dog’s ears rises up.
 And his eyes widen up.

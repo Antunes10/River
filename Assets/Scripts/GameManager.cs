@@ -43,7 +43,12 @@ public class GameManager : MonoBehaviour
     return _gs.hasCotton;
   }
 
-  public int GetCurrentInk() 
+    public bool GetFoundOldMan()
+    {
+        return _gs.FoundOldMan;
+    }
+
+    public int GetCurrentInk() 
   {
     return _gs.currentInkIndex;
   }
@@ -64,6 +69,7 @@ public class GameManager : MonoBehaviour
   public void recruitNimbus() { _gs.hasNimbus = true; }
   public void recruitOak() { _gs.hasOak = true; }
   public void recruitCotton() { _gs.hasCotton = true; }
+  public void foundOldMan() { _gs.FoundOldMan = true; }
 
   public bool isGameOver() { 
     return _gs.gameOver;
@@ -316,6 +322,7 @@ public class GameState
   public bool NimbusSaved;
   public bool OakSaved;
   public bool CottonSaved;
+    public bool FoundOldMan;
 
   //Resources
   public int currentFood;
