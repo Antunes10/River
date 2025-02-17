@@ -1,16 +1,18 @@
-EXTERNAL increaseHope(val)
-EXTERNAL decreaseHope(val)
-EXTERNAL increaseFood(val)
-EXTERNAL decreaseFood(val)
+EXTERNAL changeHope(val)
+EXTERNAL changeFood(val)
+EXTERNAL getFood()
 EXTERNAL gameOver()
 EXTERNAL changeScene(scene)
 EXTERNAL recruitSparks()
 EXTERNAL recruitNimbus()
 EXTERNAL recruitOak()
 EXTERNAL recruitCotton()
+EXTERNAL hasSparks()
 EXTERNAL hasNimbus()
 EXTERNAL hasOak()
 EXTERNAL hasCotton()
+EXTERNAL killNimbus()
+EXTERNAL killedNimbus()
 EXTERNAL foundOldMan()
 EXTERNAL getFoundOldMan()
 EXTERNAL unlockImage(val)
@@ -30,15 +32,5 @@ VAR rabbitSaved_final = 0
 VAR oakSaved_final = 0
 VAR nimbusSaved_final = 0
 VAR nSaved = 0
-
-VAR currentFood = 3
-VAR currentHope = 3
-
-VAR nimbusStatus = 2
-
-VAR nimbusRecruited = 0
-VAR oakRecruited = 0
-VAR sparksRecruited = 0
-VAR cottonRecruited = 0
 
 

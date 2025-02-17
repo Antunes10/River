@@ -25,10 +25,10 @@ public class PlayerAnimations : MonoBehaviour
     void Start()
     {
         _gameManager = GameManager.Instance;
-        _hasSparks = _gameManager.GetHasSparks();
-        _hasNimbus = _gameManager.GetHasNimbus();
-        _hasOak = _gameManager.GetHasOak();
-        _hasCotton = _gameManager.GetHasCotton();
+        _hasSparks = _gameManager._gs.hasSparks;
+        _hasNimbus = _gameManager._gs.hasNimbus;
+        _hasOak = _gameManager._gs.hasOak;
+        _hasCotton = _gameManager._gs.hasCotton;
 
         if (!_hasSparks)
         {

@@ -16,73 +16,31 @@ public class GameManager : MonoBehaviour
 	public TextAsset _currentInk;
 
 	//Game State
-	private GameState _gs;
+	public GameState _gs { get; private set; }
 
 	// int array 
 	public int[] unlockedImages = new int[20];
 
-	#region Getters and Setters
-	public bool GetHasSparks()
-	{
-		return _gs.hasSparks;
-	}
+	#region Setters
 
-  public bool GetHasNimbus()
-  {
-	return _gs.hasNimbus;
-  }
+	public void changeFood(int val) { _gs.currentFood += val; Debug.Log(_gs.currentFood); }
+	public void changeHope(int val) { _gs.currentHope += val; Debug.Log(_gs.currentHope); }
 
-  public bool GetHasOak()
-  {
-	return _gs.hasOak;
-  }
-
-  public bool GetHasCotton()
-  {
-	return _gs.hasCotton;
-  }
-
-	public bool GetFoundOldMan()
-	{
-		return _gs.FoundOldMan;
-	}
-
-	public int GetCurrentInk() 
-  {
-	return _gs.currentInkIndex;
-  }
-
-  public int GetCurrentRiver() {
-	return _gs.currentLevelIndex;
-  }
-
-	public int getFood() { return _gs.currentFood; }
-	public int getHope() { return _gs.currentHope; }
-	public int getDay() { return _gs.day; }
-
-  public void increaseFood(int val) { _gs.currentFood += val; Debug.Log(_gs.currentFood); }
-  public void increaseHope(int val) { _gs.currentHope += val; Debug.Log(_gs.currentHope); }
-  public void decreaseFood(int val) { _gs.currentFood -= val; Debug.Log(_gs.currentFood); }
-  public void decreaseHope(int val) { _gs.currentHope -= val; Debug.Log(_gs.currentHope);}
-
-  public void recruitSparks() { _gs.hasSparks = true; }
-  public void recruitNimbus() { _gs.hasNimbus = true; }
-  public void recruitOak() { _gs.hasOak = true; }
-  public void recruitCotton() { _gs.hasCotton = true; }
-  public void foundOldMan() { _gs.FoundOldMan = true; }
-
-  public bool isGameOver() { 
-	return _gs.gameOver;
-  }
+	public void recruitSparks() { _gs.hasSparks = true; }
+	public void recruitNimbus() { _gs.hasNimbus = true; }
+	public void recruitOak() { _gs.hasOak = true; }
+	public void recruitCotton() { _gs.hasCotton = true; }
+	public void foundOldMan() { _gs.FoundOldMan = true; }
+	public void killedNimbus() { _gs.KilledNimbus = true; }
   #endregion
 
-  private void Awake()
-  {
-	if (Instance != this)
+	private void Awake()
 	{
-	  Destroy(gameObject);
+		if (Instance != this)
+		{
+			Destroy(gameObject);
+		}
 	}
-  }
 
 	void Start()
 	{
@@ -202,7 +160,7 @@ public class GameManager : MonoBehaviour
 	{
 		AudioManager.Instance.StopAllSounds();
 		// -1 food at the end of every day
-		decreaseFood(1);
+		changeFood(-1);
 		_gs.day += 1;
 
 	if (_gs.currentFood <= 0 || _gs.currentHope <= 0)
@@ -315,30 +273,31 @@ public class GameManager : MonoBehaviour
 
 public class GameState
 {
-  //Characters
-  public bool hasSparks;
-  public bool hasNimbus;
-  public bool hasOak;
-  public bool hasCotton;
+	//Characters
+	public bool hasSparks;
+	public bool hasNimbus;
+	public bool hasOak;
+	public bool hasCotton;
 
-  //Decisions
-  public bool NimbusSaved;
-  public bool OakSaved;
-  public bool CottonSaved;
-  public bool FoundOldMan;
+	//Decisions
+	public bool NimbusSaved;
+	public bool OakSaved;
+	public bool CottonSaved;
+	public bool FoundOldMan;
+	public bool KilledNimbus;
 
 	//Resources
 	public int day;
 	public int currentFood;
 	public int currentHope;
 
-  //Scene variables
-  public int currentLevelIndex;
-  public int currentInkIndex;
-  public int dialogueIndex;
+	//Scene variables
+	public int currentLevelIndex;
+	public int currentInkIndex;
+	public int dialogueIndex;
 
-  //Save data variables
-  public String date;
+	//Save data variables
+	public String date;
 
-  public bool gameOver;
+	public bool gameOver;
 }

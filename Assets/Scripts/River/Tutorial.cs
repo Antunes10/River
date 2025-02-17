@@ -19,7 +19,7 @@ public class Tutorial : MonoBehaviour
 
         int index = 0;
         foreach (int i in tutorialLevels) {
-            if (i == GameManager.Instance.GetCurrentRiver() + 1) {
+            if (i == GameManager.Instance._gs.currentLevelIndex + 1) {
                 SetImage(index);
                 return;
             }
@@ -40,7 +40,7 @@ public class Tutorial : MonoBehaviour
         if (index == 0) {
             _imagePanel.GetComponent<Image>().sprite = _tutorialImages[index];
         }
-        else if (index == 1 && GameManager.Instance.GetHasNimbus()) {
+        else if (index == 1 && GameManager.Instance._gs.hasNimbus) {
             _imagePanel.GetComponent<Image>().sprite = _tutorialImages[index];
         }
         else {

@@ -120,9 +120,7 @@ He had seen mice teared to shreds by angry mongrels.
     
     ++[Offer to help]
         ~recruitOak()
-        ~oakRecruited = 1
-        ~increaseHope(1)
-        ~currentHope = currentHope + 1
+        ~changeHope(1)
         #speaker:Tails #portrait:tails_default
         I could help you find him.
         #speaker: #layout:right:oak_happy_noHat

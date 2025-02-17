@@ -13,26 +13,24 @@ The world outside is engulfed by an obscurity that transcends the one provided b
 There is death all around and explosions can still be heard far away.
 But what was really hurting Tails...
 {
-- nimbusRecruited == 1 || oakRecruited == 1:
+- hasNimbus() || hasOak():
     Was the absence of his friends.
     He was worried about them.
     He couldn't stop imagining them lost and afraid in a cold corner of the city.
 
     {
-    - nimbusRecruited == 1:
+    - hasNimbus():
         Nimbus trying to fly away from danger.
     }
     {
-    - oakRecruited == 1:
+    - hasOak():
         Oak too old and tired to be able to run.
     }
     And above all...
     Little Sparks...
     Alone...
     Without no one to take care of her...
-}
-{
-- nimbusRecruited == 0 && oakRecruited == 0:
+- else:
     Was the absence of his friend.
     He was worried about her.
     He couldn't stop imagining little sparks...

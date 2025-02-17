@@ -197,15 +197,14 @@ Looking around with dark eyes.
 
 === KeepWaiting === 
         
-{currentFood > 0: ->hasFoodAndWaited | ->noFoodAndWaited}
+{getFood() > 0: ->hasFoodAndWaited | ->noFoodAndWaited}
 
 ~changeScene("RiverScene")
 
 ->END
 
-=== hasFoodAndWaited === 
-~currentFood = currentFood - 1
-~decreaseFood(1)
+=== hasFoodAndWaited ===
+~changeFood(-1)
 
 #speaker:
 The mouse returns inside.

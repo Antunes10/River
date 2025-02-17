@@ -120,8 +120,7 @@ Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Avoid the light.]
     #speaker: #layout:middle:tails_default
-    ~decreaseHope(1)
-    ~ currentHope = currentHope - 1
+    ~changeHope(-1)
     There's a hint of curiosity in his eyes, but his instincts reign his body.
     He's a mouse after all, any danger is possibly a deadly one.
     He just saw an entire "stone forest" razed by fire and explosions; he isn't going to take any risks now.
@@ -217,7 +216,6 @@ Its origin unknown to the little mouse, moves closer to the ground.
 - 
 
 ~recruitSparks()
-~sparksRecruited = 1
 ~changeScene("RiverScene")
 
 ->END

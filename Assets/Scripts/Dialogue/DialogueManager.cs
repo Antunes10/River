@@ -202,23 +202,28 @@ public class DialogueManager : MonoBehaviour
       ExitDialogueMode();
       GameManager.Instance.recruitNimbus();
     });
+		currentStory.BindExternalFunction("hasSparks", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.hasSparks;
+		});
 
-        currentStory.BindExternalFunction("hasNimbus", () =>
+		currentStory.BindExternalFunction("hasNimbus", () =>
         {
             ExitDialogueMode();
-            return GameManager.Instance.GetHasNimbus();
+            return GameManager.Instance._gs.hasNimbus;
         });
 
         currentStory.BindExternalFunction("hasOak", () =>
         {
             ExitDialogueMode();
-            return GameManager.Instance.GetHasOak();
+            return GameManager.Instance._gs.hasOak;
         });
 
         currentStory.BindExternalFunction("hasCotton", () =>
         {
             ExitDialogueMode();
-            return GameManager.Instance.GetHasCotton();
+            return GameManager.Instance._gs.hasCotton;
         });
 
         currentStory.BindExternalFunction("foundOldMan", () =>
@@ -230,31 +235,37 @@ public class DialogueManager : MonoBehaviour
         currentStory.BindExternalFunction("getFoundOldMan", () =>
         {
             ExitDialogueMode();
-            return GameManager.Instance.GetFoundOldMan();
+            return GameManager.Instance._gs.FoundOldMan;
         });
 
-        currentStory.BindExternalFunction("increaseFood", (int val) =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.increaseFood(val);
-    });
+		currentStory.BindExternalFunction("killNimbus", () =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.killedNimbus();
+		});
 
-    currentStory.BindExternalFunction("decreaseFood", (int val) =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.decreaseFood(val);
-    });
+		currentStory.BindExternalFunction("killedNimbus", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.KilledNimbus;
+		});
 
-    currentStory.BindExternalFunction("increaseHope", (int val) =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.increaseHope(val);
-    });
+		currentStory.BindExternalFunction("changeFood", (int val) =>
+        {
+            ExitDialogueMode();
+            GameManager.Instance.changeFood(val);
+        });
 
-    currentStory.BindExternalFunction("decreaseHope", (int val) =>
+		currentStory.BindExternalFunction("getFood", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.currentFood;
+		});
+
+		currentStory.BindExternalFunction("changeHope", (int val) =>
     {
       ExitDialogueMode();
-      GameManager.Instance.decreaseHope(val);
+      GameManager.Instance.changeHope(val);
     });
 
     currentStory.BindExternalFunction("unlockImage", (int val) =>

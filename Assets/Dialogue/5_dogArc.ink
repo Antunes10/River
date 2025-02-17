@@ -185,8 +185,7 @@ He had seen mice teared to shreds by angry mongrels.
     Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
-        ~increaseHope(1)
-        ~currentHope = currentHope + 1
+        ~changeHope(1)
         #speaker:Tails #portrait:tails_default 
         We could help you find him.
         #speaker: #layout:right:oak_happy_noHat
@@ -330,7 +329,6 @@ AH!
 They all rush to push the helmet into the water.
 
 ~recruitOak()
-~oakRecruited = 1
 ~changeScene("RiverScene")
 
 ->END

@@ -21,8 +21,7 @@ His paws touch the murky sands, and he starts walking in the direction of the vi
 Sparks is still in the shell.
 
 +[Ask Sparks to go check the village.]
-    ~increaseHope(1)
-    ~currentHope = currentHope + 1
+    ~changeHope(1)
     #speaker:Tails #portrait:tails_sad
     Hey, little girl… are you alright?
     #speaker:
@@ -45,17 +44,17 @@ Sparks is still in the shell.
     #speaker:Tails #layout:left:tails_sad #portrait:tails_sad
     Did I do the right thing?
     
-    {nimbusStatus == 1:
-        It was risky to try and save him.
-        I was just trying to keep us both safe.
-        #speaker:
-        Unsure if he made the right decision, his mind loses itself in thoughts.
-        - else:
+    {killedNimbus():
         I was trying to save him…
         I didn’t expect him too…
         #speaker:
         He sniffs his little nose, while his tears drop in the river’s waters.
         He lowers his head while bearing the pain in his chest.
+    - else:
+        It was risky to try and save him.
+        I was just trying to keep us both safe.
+        #speaker:
+        Unsure if he made the right decision, his mind loses itself in thoughts.
     }
     
     #speaker:
@@ -181,8 +180,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     Death.
     
     ++[Go anyway]
-        ~increaseFood(1)
-        ~currentFood = currentFood + 1
+        ~changeFood(1)
         ~ foundOldMan()
         It was uncomfortable, but it was a necessary evil.
         He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
@@ -243,32 +241,28 @@ Or perhaps it was best if Tails spent some time with his companion.
     He could imagine everything beautiful again.
     A few moments pass.
     
-    {nimbusStatus == 1:
-        #speaker:Sparks #layout:right:sparks_sad_m #portrait:sparks_sad
-        Why did we leave him behind?
-        #speaker: #layout:left:tails_sad
-        The words pierce the silence abruptly, leaving Tails apprehensive.
-        He knows he must tackle this problem, or his friend might lose hope.
-        ->nimbusLeftBehind
-        
-    - else:
+    {killedNimbus():
         #speaker:Sparks #layout:right:sparks_sad_m #portrait:sparks_sad
         Why did he had to die?
         #speaker: #layout:left:tails_sad
         The words pierce the silence abruptly, leaving Tails apprehensive.
         He knows he must tackle this problem, or his friend might lose hope.
         ->nimbusDead
+    - else:
+        #speaker:Sparks #layout:right:sparks_sad_m #portrait:sparks_sad
+        Why did we leave him behind?
+        #speaker: #layout:left:tails_sad
+        The words pierce the silence abruptly, leaving Tails apprehensive.
+        He knows he must tackle this problem, or his friend might lose hope.
+        ->nimbusLeftBehind 
     }
 -
-// TODO: change this back to end day scene
-~currentFood = currentFood - 1
 ~changeScene("EndDayScene")
 ->END
 
 === nimbusLeftBehind ===
 +[It was too risky]
-    ~decreaseHope(1)
-    ~currentHope = currentHope - 1
+    ~changeHope(-1)
     #speaker:Tails #portrait:tails_sad
     It was too risky.
     We would have died there too.
@@ -291,8 +285,6 @@ Or perhaps it was best if Tails spent some time with his companion.
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
     
-    // TODO: change this back to end day scene
-    ~currentFood = currentFood - 1
     ~changeScene("EndDayScene")
     ->DONE
 
@@ -334,14 +326,12 @@ Yes, I know she will.
 #speaker:
 The mouse places a little kiss on the firefly’s forehead and goes back to the nest.
 
-~currentFood = currentFood - 1
 ~changeScene("EndDayScene")
 ->END
 
 === nimbusDead ===
 +[It was mankind’s fault]
-    ~decreaseHope(1)
-    ~currentHope = currentHope - 1
+    ~changeHope(-1)
     #speaker:Tails #portrait:tails_sad
     We did the best we could.
     But look around you.
@@ -357,8 +347,7 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
     #speaker:
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
-    
-    ~currentFood = currentFood - 1
+
     ~changeScene("EndDayScene")
     ->DONE
     
@@ -404,7 +393,6 @@ Yes, I know she will.
 #speaker:
 The mouse places a little kiss on the firefly’s forehead and goes back to the nest.
 
-~currentFood = currentFood - 1
 ~changeScene("EndDayScene")
 ->END
 

@@ -29,8 +29,7 @@ I’m afraid, Mr.Tails.
 I don’t like the "big booms".
 
 +[Console her]
-    ~increaseHope(1)
-    ~currentHope = currentHope + 1 
+    ~changeHope(1)
 
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Don’t worry, Sparky. I'll protect you, no matter what.
@@ -45,8 +44,7 @@ I don’t like the "big booms".
     The firefly hugs him.
 
 +[Stay focused]
-    ~ decreaseHope(1)
-    ~ currentHope = currentHope - 1
+    ~ changeHope(-1)
     ~ stayedFocused = 1
     
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
@@ -169,8 +167,7 @@ What are we going to do?
         ->try_to_find_rope_continuation
 
     +{send_sparks_continuation}[Seal the hole]
-        ~increaseFood(2)
-        ~currentFood  = currentFood + 2
+        ~changeFood(2)
         
         #speaker:
         The little mouse understands that the rabbit will drown if they don’t seal that small hole.
@@ -306,6 +303,7 @@ What are we going to do?
 -> choice_panel
 
 === try_to_salvage_food ===
+    ~changeFood(1)
     #speaker: #layout:sparks:default #layout:right:default #layout:left:default
     Against his most primal instincts, Tails jumps inside the dark cove of metal and lunges towards the food.
     The ground starts shaking again with the movement and it lowers even more into the water.
