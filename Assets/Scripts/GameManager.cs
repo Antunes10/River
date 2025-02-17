@@ -312,6 +312,11 @@ public class GameState
   public bool hasOak;
   public bool hasCotton;
 
+  //Decisions
+  public bool NimbusSaved;
+  public bool OakSaved;
+  public bool CottonSaved;
+
   //Resources
   public int currentFood;
   public int currentHope;

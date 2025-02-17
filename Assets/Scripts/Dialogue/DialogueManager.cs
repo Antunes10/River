@@ -203,7 +203,25 @@ public class DialogueManager : MonoBehaviour
       GameManager.Instance.recruitNimbus();
     });
 
-    currentStory.BindExternalFunction("increaseFood", (int val) =>
+        currentStory.BindExternalFunction("hasNimbus", () =>
+        {
+            ExitDialogueMode();
+            return GameManager.Instance.GetHasNimbus();
+        });
+
+        currentStory.BindExternalFunction("hasOak", () =>
+        {
+            ExitDialogueMode();
+            return GameManager.Instance.GetHasOak();
+        });
+
+        currentStory.BindExternalFunction("hasCotton", () =>
+        {
+            ExitDialogueMode();
+            return GameManager.Instance.GetHasCotton();
+        });
+
+        currentStory.BindExternalFunction("increaseFood", (int val) =>
     {
       ExitDialogueMode();
       GameManager.Instance.increaseFood(val);

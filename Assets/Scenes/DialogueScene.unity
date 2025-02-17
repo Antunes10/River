@@ -6840,9 +6840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveMenuUi: {fileID: 0}
   loadMenuUi: {fileID: 0}
-  masterVolumeSlider: {fileID: 568011400}
-  musicVolumeSlider: {fileID: 1059599219}
-  sfxVolumeSlider: {fileID: 1983572736}
   typingSpeed: 0.02
   loadGlobalsJSON: {fileID: 4900000, guid: ff1ad422a3910884f9916578684dbe92, type: 3}
   currentInk: {fileID: 4900000, guid: 6285302f074fc6642b024f9787d5ba0f, type: 3}
