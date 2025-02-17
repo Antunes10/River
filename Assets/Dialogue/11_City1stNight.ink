@@ -1,20 +1,52 @@
 INCLUDE globals.ink
 
-->choice_panel
+
+->main
 
 === main ===
 #background:room
 #speaker: #layout:middle:tails_default
-The darkness that has set in the room, mirrors the darkness in Tail’s little heart.
-They are tired from all the strife and suffering in this world.
-The world outside is engulfed by an obscurity that transcends the one provided by night. There is death all around. The explosions can still be heard far away, but loud enough to stop their minds from finding peace.
+Night falls.
+The darkness that sets in the room, mirrors the one in Tail’s little heart.
+He's tired from all the strife and suffering.
+The world outside is engulfed by an obscurity that transcends the one provided by dusk.
+There is death all around and explosions can still be heard far away.
+But what was really hurting Tails...
+{
+- nimbusRecruited == 1 || oakRecruited == 1:
+    Was the absence of his friends.
+    He was worried about them.
+    He couldn't stop imagining them lost and afraid in a cold corner of the city.
+
+    {
+    - nimbusRecruited == 1:
+        Nimbus trying to fly away from danger.
+    }
+    {
+    - oakRecruited == 1:
+        Oak too old and tired to be able to run.
+    }
+    And above all...
+    Little Sparks...
+    Alone...
+    Without no one to take care of her...
+}
+{
+- nimbusRecruited == 0 && oakRecruited == 0:
+    Was the absence of his friend.
+    He was worried about her.
+    He couldn't stop imagining little sparks...
+    Afraid and alone...
+    without no one to take care of her...
+}
+
 Tails lets himself fall to the ground.
 They had been traveling for days.
 Until now the spirit managed to keep the exhaustion away, but tonight it was too weak.
 Around him the others were also crestfallen. With their eyes pointing towards the ground and their aura covered in cold and grey.
 
 {
-- followedRabbit == 0: 
+- hasCotton():
     The rabbit was in the worse condition.
     Still grieving her loss, she cowered in a dark corner, lying down, holding her belly occasionally sobbing.
     No one had the courage to talk to her yet.

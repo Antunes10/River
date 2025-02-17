@@ -3,104 +3,51 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:citySquare
-#layout:left:oak_sad #layout:middle:tails_sad #layout:sparks:sparks_sad_m #layout:right:nimbus_default_m #speaker:
-Inside the building, the explosions sound like distant nightmares.
-Waiting for them to come out of hiding.
-The rabbit runs faster than any of them and occasionally they lose sight of her.
-#layout:right:default
-Nimbus could not follow them, so he stayed behind.
-Oak’s breathing was starting to become ever more audible.
-#speaker:Oak #portrait:oak_sad
-I am uncertain about my ability to keep up this pace.
-I am quite the elder.
-#speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
-C’mon Mr.Oaks, you can do it!
-#speaker: #layout:sparks:sparks_default
-The firefly’s words serve as an incentive and the canine regains some energy.
-The rabbit clearly knew the way.
+#background:hallway
+#layout:middle:tails_default #speaker:
+Tails wakes up in the hallway.
+The sun rays are already faint and orange.
+He sees none of his friends around him.
+Behind him the entrance to the building has collapsed.
+And he hears humans on the otherside.
+#speaker:Tails #portrait:tails_default
+I can't get out now...
+I hope they're all okay...
+#speaker: #portrait:default
+Suddently a noise comming from the lower levels interrupts his thoughts.
+Some rumagging.
+He remembers the rabbit went that way.
 She took no time choosing her path even when there were several possibilities.
-She kept on descending into the underground levels.
-Suddenly, Oak slips and crashes into the ground, hard.
-#layout:sparks:sparks_sad_m
-The bug stops in her tracks to look out for her friend.
 
-+[Forget the rabbit and go help Oak]
-    Tails stops in his tracks.
-    His breathing was heavy.
-    They had been running for several minutes and the rabbit did not turn back once.
-    It was not worth it.
-    #layout:middle:tails_default_m
-    He turns back and approaches the old dog.
-    #speaker:Tails #portrait:tails_sad
-    Are you alright, Oak?
-    #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
-    Nothing major. I slipped and landed badly with my front paws.
-    #portrait:oak_default #layout:left:oak_default
-    Just need a bit of rest to recover.
-    #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
-    It must be really hard to run so fast!
-    #speaker:Oak #portrait:oak_default
-    Not as hard as being old.
-    #speaker: #layout:middle:tails_happy
-    They both smile at the remark.
-    #speaker:Tails #portrait:tails_happy 
-    That’s the advantage of having wings. You don’t have to worry about where you step.
-    #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-    That’s true!
-    I never thought about that.
++[Forget the rabbit and go find a place to rest]
+    His back is hurting.
+    The rabbit didn't even look back after being saved.
+    Tails sees to reason to keep chasing her.
+    He was more worried about his friends.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    Can you get up?
-    #speaker:Oak #portrait:oak_default
-    I would rather lie a bit. If we are not in a hurry, that is.
+    I should probably find a place to rest.
+    If I go to the higher levels I might find a vantage point to see if I can find them.
     #speaker:
-    The mouse confirms they gave up on their chase and the three sit over a dusty rug to catch their breath.
+    Decided the mouse ignores the sounds coming from bellow and climbs up the stairs.
+    After some time he manages to find a empty room, with sturfy walls...
+    And a intact roof to protect him from the rain.
+    {followedRabbit}
+
     
-    #layout:middle:tails_default #layout:right:nimbus_default_m
-    A few moments pass and Nimbus reunites with the group.
-    He clearly had been putting an effort into walking fast.
-    #speaker:Nimbus #portrait:nimbus_default 
-    Finally, caught up with you!
-    Still getting use to walking so much.
-    #speaker: #layout:right:nimbus_scared_m
-    He looks around perplexed.
-    #speaker:Nimbus #portrait:nimbus_scared
-    Where is the rabbit?
-    #spekaer:Tails #portrait:tails_sad #layout:middle:tails_sad
-    We lost it.
-    #layout:right:nimbus_default_m
-    And to be honest I don’t think she was interested in us. She never looked back.
-    #speaker:
-    The silence of the empty building takes centre stage, and they take a good look at their surroundings.
-    Doors were unlocked and some broken.
-    There were bags and clothes spread throughout the floor and there were even some walls with bullet holes.
-    #speaker:Oak #portrait:oak_default #layout:left:oak_default
-    We should find a place to spend the night.
-    #speaker:Nimbus #portrait:nimbus_default
-    Perhaps in the upper levels? At least there we can see the rest of the city.
-    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Might be less protected from the explosions…
-    But I think the visibility is a greater advantage.
-    #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-    And we can gaze the night’s sky!
-    With luck we can spot other fireflies on their way West!
-    #speaker: #layout:left:oak_happy #layout:middle:tails_happy #layout:right:nimbus_happy_m
-    The contagious positivity engulfs the whole group, and they agree to find shelter in the upper levels.
+    ~changeScene("DialogueScene")
+    ->END
 
 
-+[Keep following the rabbit]
-    ~followedRabbit = 1
++[Try and find the rabbit]
+    ~recruitCotton()
     #speaker:
-    The rabbit clearly was in a rush. Perhaps she needed help.
-    #speaker:Tails #portrait:tails_default #layout:middle:tails_default
-    Sparks, stay with Oak!
-    #speaker: #portrait:sparks_default #layout:sparks:sparks_default_m
-    The firefly signals affirmatively and the mouse goes back on track.
+    The rabbit clearly was in a rush. Perhaps she needed help. {followedRabbit}
+    Tails turns to the stairs and starts descending, following the faint noises.
     #layout:sparks:default #layout:left:default
-    The light becomes weak as they arrive to the lower levels.
+    The light becomes weak as he arrives to the lower levels.
     #background:hallway
     #layout:middle:default #layout:left:tails_default #layout:right:bunny_sad
-    Tails arrives at a corridor and sees the rabbit trying to move a piece of wood that fell from the ceiling.
+    Entering a corridor, he sees the rabbit trying to move a piece of wood that fell from the ceiling.
     She’s doing it like her life depends on it.
     There is rubble all around, revealing a recent crumbling.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
