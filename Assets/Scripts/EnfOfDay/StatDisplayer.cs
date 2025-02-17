@@ -1,185 +1,94 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class StatDisplayer : MonoBehaviour
 {
-  [SerializeField] private TextMeshProUGUI foodText;
-  [SerializeField] private TextMeshProUGUI hopeText;
-  [SerializeField] private TextMeshProUGUI dayText;
-  [SerializeField] private TextMeshProUGUI food;
-  [SerializeField] private TextMeshProUGUI hope;
-  [SerializeField] public GameObject Button;
-  [SerializeField] public GameObject ButtonGameOver;
-  GameManager gm;
+	[SerializeField] private TextMeshProUGUI foodText;
+	[SerializeField] private TextMeshProUGUI hopeText;
+	[SerializeField] private TextMeshProUGUI dayText;
+	[SerializeField] public TextMeshProUGUI Button;
+	GameManager gm;
 
-  #region Menus Variables
-  [Header("Backgrounds")]
-  [SerializeField] private GameObject[] campFireImg;
-  [SerializeField] private GameObject tailsImg;
-  [SerializeField] private GameObject[] sparksImg;
-  [SerializeField] private GameObject[] nimbusImg;
-  [SerializeField] private GameObject[] oakImg;
-  [SerializeField] private GameObject[] cottonImg;
-  [SerializeField] private GameObject[] villageImg;
-  [SerializeField] private GameObject[] riverImg;
-  [SerializeField] private GameObject[] cityImg;
-  #endregion
+	#region Menus Variables
+	[Header("Images")]
+	[SerializeField] private Image foodPaw;
+	[SerializeField] private Image hopePaw;
+	[SerializeField] private Image backgroundImg;
+	[SerializeField] private Image campFireImg;
+	[SerializeField] private Image tailsImg;
+	[SerializeField] private Image sparksImg;
+	[SerializeField] private Image nimbusImg;
+	[SerializeField] private Image oakImg;
+	[SerializeField] private Image cottonImg;
 
-  // Start is called before the first frame update
-  void Start()
-  {
-    gm = GameManager.Instance;
-    HideBackground();
+	[SerializeField] private Sprite[] pawSprites;
+	[SerializeField] private Sprite[] backgroundSprites;
+	[SerializeField] private Sprite[] campFireSprites;
+	[SerializeField] private Sprite[] tailsSprites;
+	[SerializeField] private Sprite[] sparksSprites;
+	[SerializeField] private Sprite[] nimbusSprites;
+	[SerializeField] private Sprite[] oakSprites;
+	[SerializeField] private Sprite[] cottonSprites;
+	#endregion
 
-    StartCoroutine(ButtonCoroutine());
-    int i = GameManager.Instance.GetCurrentInk();
+	// Start is called before the first frame update
+	void Start()
+	{
+		gm = GameManager.Instance;
+		ImageInit();
+	}
 
-    if (i == 2)
-    {
-        dayText.text = "End of Day 1";
-        BackgroundChanger(1);
-    }
-    else if (i == 4) {
-        dayText.text = "End of Day 2";
-        BackgroundChanger(0);
-    }
-    else if (i == 7) {
-        dayText.text = "End of Day 3";
-        BackgroundChanger(1);
-    }
-    else if (i == 10) {
-        dayText.text = "End of Day 4";
-        BackgroundChanger(2);
-    }
-    else {
-      dayText.text = "game over";
-      if (i <= 4) {BackgroundChanger(0); }
-      else if (i > 4 && i <= 7) {BackgroundChanger(1); }
-      else if (i > 7) {BackgroundChanger(2); }
-    } 
+	private void setupGameOver()
+	{
+		dayText.text = "Game Over";
+		Button.text = "Back to Main Menu";
+	}
 
-    
+	public void ImageInit()
+	{
+		int gameOver = gm.isGameOver() ? 1 : 0;
+		int i = GameManager.Instance.getDay();
+		int numberChar = 1;
 
-    if (gm.isGameOver()) { setupGameOver(); }
+		//Base
+		dayText.text = gm.isGameOver() ? "Game Over" : "End of Day " + i;
+		Button.text = gm.isGameOver() ? "Back to Main Menu" : "Keep going...";
+		campFireImg.sprite = campFireSprites[gameOver];
+		tailsImg.sprite = tailsSprites[gameOver];
 
-    switch (GameManager.Instance.getFood())
-    {
-      case 1:
-        foodText.text = "Low";
-        foodText.color = Color.red;
-        break;
-      case 2:
-        foodText.text = "Medium";
-        foodText.color = Color.yellow;
-        break;
-      case 3:
-        foodText.text = "High";
-        foodText.color = Color.green;
-        break;
-      default:
-        foodText.text = "High";
-        foodText.color = Color.green;
-        break;
-    }
+		//Characters
+		if (gm.GetHasSparks()) { sparksImg.enabled = true; sparksImg.sprite = sparksSprites[gameOver]; numberChar++; }
+		if (gm.GetHasNimbus()) { nimbusImg.enabled = true; nimbusImg.sprite = nimbusSprites[gameOver]; numberChar++; }
+		if (gm.GetHasOak()) { oakImg.enabled = true; oakImg.sprite = oakSprites[gameOver]; numberChar++; }
+		if (gm.GetHasCotton()) { cottonImg.enabled = true; cottonImg.sprite = cottonSprites[gameOver]; numberChar++; }
 
-    switch (GameManager.Instance.getHope())
-    {
-      case 1:
-        hopeText.text = "Low";
-        hopeText.color = Color.red;
-        break;
-      case 2:
-        hopeText.text = "Medium";
-        hopeText.color = Color.yellow;
-        break;
-      case 3:
-        hopeText.text = "High";
-        hopeText.color = Color.green;
-        break;
-      default:
-        hopeText.text = "High";
-        hopeText.color = Color.green;
-        break;
-    }
+		//Background
+		if (i == 1) { backgroundImg.sprite = gm.isGameOver() ? backgroundSprites[0] : backgroundSprites[1]; }
+		if (i == 2) { backgroundImg.sprite = gm.isGameOver() ? backgroundSprites[0] : backgroundSprites[1]; }
+		if (i == 3) { backgroundImg.sprite = gm.isGameOver() ? backgroundSprites[0] : backgroundSprites[1]; }
 
-  }
+		//Indicators
+		int totalFoodDays = gm.getFood() / numberChar;
+		int hopeLevel = Math.Clamp(gm.getHope(), 0, 3) +1;
+		foodPaw.sprite = pawSprites[totalFoodDays];
+		hopePaw.sprite = pawSprites[hopeLevel -1];
+		foodText.text = gm.getFood().ToString();
+		hopeText.text = hopeLevel.ToString();
+	}
 
-  IEnumerator ButtonCoroutine()
-  {
-      yield return new WaitForSeconds(2.5f);
-      if (gm.isGameOver()) {
-        ButtonGameOver.SetActive(true);
-      } else {
-        Button.SetActive(true);
-      }
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
-  private void setupGameOver() {
-    dayText.text = "game over";
-    foodText.gameObject.SetActive(false);
-    hopeText.gameObject.SetActive(false);
-    food.gameObject.SetActive(false);
-    hope.gameObject.SetActive(false);
-  }
-
-  public void BackgroundChanger(int i) {
-    bool gameOver = gm.isGameOver();
-
-    if (gameOver) {campFireImg[1].SetActive(true); } else {campFireImg[0].SetActive(true); }
-
-    if (!gameOver) { tailsImg.SetActive(true); }
-
-    if (gm.GetHasSparks()) {
-      if (gameOver) { sparksImg[1].SetActive(true); } 
-      else {sparksImg[0].SetActive(true);}
-    } 
-    if (gm.GetHasNimbus()) {
-      if (gameOver) { nimbusImg[1].SetActive(true); } 
-      else {nimbusImg[0].SetActive(true);}
-    } 
-    if (gm.GetHasOak()) {
-      if (gameOver) { oakImg[1].SetActive(true); } 
-      else {oakImg[0].SetActive(true);}
-    } 
-    if (gm.GetHasCotton()) {
-      if (gameOver) { cottonImg[1].SetActive(true); } 
-      else {cottonImg[0].SetActive(true);}
-    } 
-
-    if (i == 0) {villageImg[0].SetActive(true); } else { if (gm.isGameOver()) { villageImg[1].SetActive(true); } }
-    if (i == 1) {riverImg[0].SetActive(true); } else { if (gm.isGameOver()) { riverImg[1].SetActive(true); } }
-    if (i == 2) {cityImg[0].SetActive(true); } else { if (gm.isGameOver()) { cityImg[1].SetActive(true); } }
-
-  }
-
-  public void HideBackground() {
-    for (int i = 0; i < 2; i++) {
-      campFireImg[i].SetActive(false);
-      sparksImg[i].SetActive(false);
-      nimbusImg[i].SetActive(false);
-      oakImg[i].SetActive(false);
-      cottonImg[i].SetActive(false);
-      villageImg[i].SetActive(false);
-      riverImg[i].SetActive(false);
-      cityImg[i].SetActive(false);
-    }
-  }
-
-  public void switchScene() {
-    if (gm.isGameOver()) {
-      GameManager.Instance.changeToMenuScene();
-    }
-        else
-        {
-            GameManager.Instance.changeToNextDialogueScene();
-        }
-  }
+	public void switchScene()
+	{
+		if (gm.isGameOver())
+		{
+			GameManager.Instance.changeToMenuScene();
+		}
+		else
+		{
+			GameManager.Instance.changeToNextDialogueScene();
+		}
+	}
 }

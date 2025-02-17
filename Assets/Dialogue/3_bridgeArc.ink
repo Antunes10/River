@@ -169,10 +169,11 @@ Stop it! Are you crazy! It hurts!
     He's dead.
     Blood is running everywhere.
     He should have stopped cutting...
-    #speaker:Tails #portrait:tails_sad #layout:right:tails_sad_m #music:silence
+    #speaker:Tails #portrait:tails_sad #layout:right:sparks_sad_m #music:silence
     Let's go Sparks... we must... continue...
-    #speaker
+    #speaker:
     In silence they return to the water, leaving behind a bloody corpse.
+
     He should have stopped cutting...
     ~changeScene("RiverScene")
     ->END
