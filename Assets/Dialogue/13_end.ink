@@ -15,17 +15,17 @@ The hope that is singing.
 #speaker:Sparks #portrait:sparks_happy
 #layout:sparks:sparks_happy_m 
 #layout:middle_left:tails_default
-Sparks: Mr.Tails you are awake!!
+Mr.Tails you are awake!!
 #speaker: 
 #layout:right:bunny_default_m
 #layout:left:oak_default 
 #layout:middle_right:nimbus_default_m
 The joyfulness of Sparks wakes up the other companions. They brush their faces in surprise and gather around the weaken mouse.
 #speaker:Oak #portrait:oak_default #layout:left:oak_default 
-Oak: It’s so good to see you smiling Sir.Tails. The most joyful image an old dog could ask for.
+It’s so good to see you smiling Sir.Tails. The most joyful image an old dog could ask for.
 #speaker:Nimbus #portrait:nimbus_default
-Nimbus: Yes! We though we had lost you…
-Nimbus: We were not sure you would wake up…
+Yes! We though we had lost you…
+We were not sure you would wake up…
 #speaker:
 The rabbit steps forward.
 #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m
@@ -36,17 +36,17 @@ Tails wanted to speak, but his throat didn’t allow…
 However, his smile is all that’s needed to convey his emotions.
 The breeze blows stronger, and its songs of hope grow louder.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
-Sparks: We’re almost there Mr.Tails! I can feel it, I can feel it!
+We’re almost there Mr.Tails! I can feel it, I can feel it!
 #speaker:
 The small firefly flys around in excitement.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
-Sparks: It will be perfect, green, cozy, peaceful…
-Sparks: And all kinds of animals will be there. Dogs, cats, otters, birds, mice, tortoi… tortou… tor…
+It will be perfect, green, cozy, peaceful…
+And all kinds of animals will be there. Dogs, cats, otters, birds, mice, tortoi… tortou… tor…
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
-Nimbus: Tortoises.
+Tortoises.
 Says the bird containing his laugh.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
-Nimbus: I dunno if they are already there, they tend to be the last ones to arrive.
+I dunno if they are already there, they tend to be the last ones to arrive.
 #speaker: #layout:middle_right:nimbus_happy_m #layout:sparks:sparks_happy_m  #layout:right:bunny_happy_m 
 The rest of the group laughs at the remark.
 For the first time in days, they are confident and happy.
@@ -59,7 +59,7 @@ His throat is dry, and his body is cold.
 The firefly looks at him concerned, but the rabbit is fast to get some water and help him out.
 The water helps, but his body is still frail.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
-Sparks: You have to get up Mr.Tails, you don’t wanna lose this moment!
+You have to get up Mr.Tails, you don’t wanna lose this moment!
 #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m
 Cotton: I think its best if he stays like this, sweety.
 #speaker: #layout:sparks:sparks_default_m 
@@ -80,11 +80,11 @@ Beautiful…
 They have arrived to their destination.
 After countless perils. Untold sacrifices and painful losses, they are safe.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
-Nimbus: It’s a dream… It can only be a dream…
+It’s a dream… It can only be a dream…
 #speaker:
 The bird smiles as wide as the skies that he once flew.
 #speaker:Oak #portrait:oak_default #layout:left:oak_default 
-Oak: It’s real my boy, ah ah! It’s real!
+It’s real my boy, ah ah! It’s real!
 #speaker:
 The dog raises the rabbit on his head, making her giggle atop his hat.
 She opens her arms kissing the welcoming breeze that is pushing them into the Valley.
@@ -95,26 +95,26 @@ Joy overflows.
 #layout:right:bunny_default_m
 Sparks looks down and joins her friend, who is too weak to stand.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
-Sparks: It’s so beautiful Mr.Tails… You will see it, it’s soooo beautiful!
+It’s so beautiful Mr.Tails… You will see it, it’s soooo beautiful!
 #speaker:
 The mouse coughs.
 Through the pain he musters the strength to utter a few words. Like a whisper of a cloud.
 #speaker:Tails #portrait:tails_sad #layout:middle_left:tails_sad
-Tails: Tell me…
+Tell me…
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
-Sparks: It’s, it’s green… so green. Like moss on a small lake.
-Sparks: The mountains around it are huge! Bigger than any “stone forest” I’ve ever seen.
+It’s, it’s green… so green. Like moss on a small lake.
+The mountains around it are huge! Bigger than any “stone forest” I’ve ever seen.
 #speaker:
 Tails tries to move his feet, but he can’t feel them.
 #speaker:Tails #portrait:tails_sad
-Tails: Is there a lake?
+Is there a lake?
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
-Sparks: Yes, there is! So blue! The river will take us there and we can already see many fish swimming so fast!
-Sparks: I bet Miss Otter is there already!
+Yes, there is! So blue! The river will take us there and we can already see many fish swimming so fast!
+I bet Miss Otter is there already!
 #speaker:
 The dog slowly places the rabbit back on the helmet, taking his hat down.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
-Sparks: Oh, and I can already hear the birds! So many with lively colours and pretty patterns!
+Oh, and I can already hear the birds! So many with lively colours and pretty patterns!
 #speaker:
 Tails smiles with the young firefly innocent joy, as his face pales.
 Nimbus slowly steps of the helmet’s border, into the nest where his friend is lying…
@@ -122,52 +122,52 @@ Nimbus slowly steps of the helmet’s border, into the nest where his friend is 
 He is strong and proud, but he can’t hold back the tears.
 The firefly notices his sobbing.
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
-Sparks: Why are you crying Mr.Nimbus? We are here!
+Why are you crying Mr.Nimbus? We are here!
 #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
-Oak: He is crying with joy, little one…
+He is crying with joy, little one…
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
-Sparks: Oh, that’s good!
+Oh, that’s good!
 #speaker:Oak #portrait:oak_default #layout:left:oak_default #layout:middle_right:nimbus_default_m
-Oak: Keep describing that beautiful valley, I know Tails wants to hear it.
+Keep describing that beautiful valley, I know Tails wants to hear it.
 #speaker:
 The mouse thanks him with a subtle smile, as his eyes lose focus.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
-Sparks: Of course! But he will see it in a bit, anyways…
+Of course! But he will see it in a bit, anyways…
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
 Cotton: Yes, he will, sweety. Yes, he will.
 #speaker:
 The firefly flies up again to remember the dream came true.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
-Sparks: Oh, and you’re not going to believe it Mr.Tails, there are no two-legged giants! None to be seen.
-Sparks: No fires, no loud noises, not even a puff of smoke.
-Sparks: It’s like a dream…
+Oh, and you’re not going to believe it Mr.Tails, there are no two-legged giants! None to be seen.
+No fires, no loud noises, not even a puff of smoke.
+It’s like a dream…
 #speaker:
 The mouse grabs his friend’s hand.
 #speaker:Tails #portrait:tails_happy #layout:middle_left:tails_happy
-Tails: Thank you Sparks…
+Thank you Sparks…
 #layout:middle_left:tails_sad
 #speaker:
 A whisper carried by the breeze.
 #speaker:Tails #portrait:tails_happy #layout:middle_left:tails_happy
-Tails: I’m so happy…
-Tails: So… 
+I’m so happy…
+So… 
 #layout:middle_left:tails_sad
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
-Sparks: I am too Mr.Tails!
-Sparks: It was all thanks to you! You saved me and all our friends!
-Sparks: You never gave up and now we’re here!
-Sparks: I can’t wait to play with you on the valley. We will have so much fun.
+I am too Mr.Tails!
+It was all thanks to you! You saved me and all our friends!
+You never gave up and now we’re here!
+I can’t wait to play with you on the valley. We will have so much fun.
 #speaker:
 A smile as pure as the sky shines light among rainy emotions.
 Sparks looks at the valley dreaming of a happy future.
 At the same time, Tails closes his eyes, tired of his journey.
 The breeze calms down and the sun dims its rays.
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
-Sparks: His he sleeping?
+His he sleeping?
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
-Nimbus: Yes…
-Nimbus: He’s tired little Sparks…
-Nimbus: Saving all of us was a tiring task.
+Yes…
+He’s tired little Sparks…
+Saving all of us was a tiring task.
 #speaker:Cotton #portrait:bunny_sad #layout:right:bunny_sad_m
 Cotton: And he deserves a rest, more than anyone in this world.
 #speaker:
