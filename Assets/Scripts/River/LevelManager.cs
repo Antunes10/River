@@ -158,7 +158,7 @@ public class LevelManager : MonoBehaviour
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.RiverVictory);
         yield return new WaitForSeconds(5);
 
-        if(!_levelData.GoesToCampfire) { _gameManager.changeToNextDialogueScene(); } else { _gameManager.changeToEndDayScene(); }
+        if(!_levelData.GoesToCampfire) { _gameManager.loadDialogueScene(1); } else { _gameManager.changeToEndDayScene(); }
     }
 
     IEnumerator Rain()

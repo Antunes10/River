@@ -34,7 +34,7 @@ public class Menu_UI_Manager : MonoBehaviour
     /// </summary>
     public void AddButtonListeners()
     {
-        _playButton.onClick.AddListener(() => GameManager.Instance.changeToNextDialogueScene());
+        _playButton.onClick.AddListener(() => GameManager.Instance.loadDialogueScene(1));
         _quitButton.onClick.AddListener(() => GameManager.Instance.Exit());
     }
 

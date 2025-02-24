@@ -88,7 +88,7 @@ public class StatDisplayer : MonoBehaviour
 		}
 		else
 		{
-			GameManager.Instance.changeToNextDialogueScene();
+			GameManager.Instance.loadDialogueScene(1);
 		}
 	}
 }
