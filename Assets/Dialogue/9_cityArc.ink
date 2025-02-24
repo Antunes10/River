@@ -229,7 +229,7 @@ What are we going to do?
         #speaker:Nimbus #portrait:nimbus_scared
         Run! We must get to safety!
         #enviroSound:villageExplosions
-        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default #layout:middle_right:default
         Suddently another explosion hits, covering everything with dust.
         Tails is sent flying against the wheelbarrow.
         The sound is snuffed out of the world, leaving a high pitching sound.
@@ -288,7 +288,7 @@ What are we going to do?
         #speaker:Oak #portrait:oak_scared #layout:left:oak_scared
         No time to lose, we are vulnerable out here!
         #enviroSound:villageExplosions
-        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default #layout:middle_right:default
         Suddently another explosion hits, covering everything with dust.
         Tails is sent flying against the wheelbarrow.
         The sound is snuffed out of the world, leaving a high pitching sound.
@@ -335,7 +335,7 @@ What are we going to do?
         We must take shelter!
         We won’t survive if we stay out in the open!
         #enviroSound:villageExplosions
-        #speaker: #layout:left:tails_scared #layout:right:default #layout:centre:default #layout:sparks:default #layout:centre:default #layout:sparks:default #layout:middle_right:default
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default #layout:middle_right:default
         Suddently another explosion hits, covering everything with dust.
         Tails is sent flying against the wheelbarrow.
         The sound is snuffed out of the world, leaving a high pitching sound.
