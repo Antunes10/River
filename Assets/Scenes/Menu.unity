@@ -1558,6 +1558,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 029baa2861b942748bcc0e5da46432c3, type: 3}
   - {fileID: 8300000, guid: ee4a5c43604bc674faea78d84225207a, type: 3}
   - {fileID: 8300000, guid: a3bffb17eafcb054ead8e89f197bab51, type: 3}
+  - {fileID: 8300000, guid: 780279668b89259439fee17d6920fe25, type: 3}
   _EnvSounds:
   - {fileID: 8300000, guid: 301483eab070bd14aafca33bafb3f861, type: 3}
   - {fileID: 8300000, guid: 2c0676f4da1f2e4499e6a458e07ccd05, type: 3}

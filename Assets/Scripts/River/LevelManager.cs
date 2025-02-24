@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private ObstacleGenerator _generator;
     [SerializeField] private GameObject _rainSprite;
     [SerializeField] private Slider _progressSlider;
-    [SerializeField] private Canvas _inGameCanvas;
+	[SerializeField] private TextMeshProUGUI _appleCounter;
+	[SerializeField] private Canvas _inGameCanvas;
     [SerializeField] private Canvas _pauseMenuCanvas;
 
     private GameManager _gameManager;
@@ -24,6 +26,7 @@ public class LevelManager : MonoBehaviour
     private bool _rain;
     private float _rainInterval;
     private float _levelLength;
+    private int _foodCollected;
 
     public event Action StartRain;
     public event Action EndRain;
@@ -86,6 +89,12 @@ public class LevelManager : MonoBehaviour
 
     public string GetLevelName() {
         return _levelData.name;
+    }
+
+    public void CollectFood()
+    {
+        _foodCollected++;
+		_appleCounter.text = _foodCollected.ToString();
     }
 
     public void PauseUnpause()
@@ -154,9 +163,14 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator WinGame()
     {
+        //Trigger Victory Single
         AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.silence);
         AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.RiverVictory);
-        yield return new WaitForSeconds(5);
+
+        //Add food collected
+        GameManager.Instance.changeFood(_foodCollected);
+
+		yield return new WaitForSeconds(5);
 
         if(!_levelData.GoesToCampfire) { _gameManager.loadDialogueScene(1); } else { _gameManager.changeToEndDayScene(); }
     }
