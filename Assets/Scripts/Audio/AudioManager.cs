@@ -217,7 +217,8 @@ public class AudioManager : MonoBehaviour
         pouringWaterOut = 11,
         rain = 12,
         RiverVictory = 13,
-        RiverDefeat = 14
+        RiverDefeat = 14,
+        FoodColletion = 15
     }
 
     private void Load()
