@@ -1,5 +1,8 @@
 INCLUDE globals.ink
 
+~recruitSparks(false)
+~recruitNimbus(false)
+~recruitOak(false)
 ->main
 
 === main ===
@@ -29,19 +32,18 @@ She took no time choosing her path even when there were several possibilities.
     If I go to the higher levels I might find a vantage point to see if I can find them.
     #speaker:
     Decided the mouse ignores the sounds coming from bellow and climbs up the stairs.
+    #background:roomNight
     After some time he manages to find a empty room, with sturfy walls...
     And a intact roof to protect him from the rain.
-    {followedRabbit}
 
-    
     ~changeScene("DialogueScene")
     ->END
 
 
 +[Try and find the rabbit]
-    ~recruitCotton()
+    ~recruitCotton(true)
     #speaker:
-    The rabbit clearly was in a rush. Perhaps she needed help. {followedRabbit}
+    The rabbit clearly was in a rush. Perhaps she needed help.
     Tails turns to the stairs and starts descending, following the faint noises.
     #layout:sparks:default #layout:left:default
     The light becomes weak as he arrives to the lower levels.

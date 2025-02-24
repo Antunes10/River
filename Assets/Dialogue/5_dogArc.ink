@@ -328,7 +328,7 @@ AH!
 #speaker:
 They all rush to push the helmet into the water.
 
-~recruitOak()
+~recruitOak(true)
 ~changeScene("RiverScene")
 
 ->END

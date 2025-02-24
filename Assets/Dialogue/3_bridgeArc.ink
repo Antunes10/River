@@ -322,7 +322,6 @@ The river keeps on flowing.
 Taking them away from the forest.
 In the direction of the far away land they are searching for.
 
-~ nimbusSaved = 1
-~recruitNimbus()
+~recruitNimbus(true)
 ~changeScene("RiverScene")
 ->END

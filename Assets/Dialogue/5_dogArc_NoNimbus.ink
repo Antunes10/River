@@ -119,7 +119,7 @@ He had seen mice teared to shreds by angry mongrels.
     Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
-        ~recruitOak()
+        ~recruitOak(true)
         ~changeHope(1)
         #speaker:Tails #portrait:tails_default
         I could help you find him.
