@@ -10,7 +10,8 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private Sprite _alternateSprite;
     [SerializeField] private Animator _animController;
 
-    public bool _barbed;
+	public bool _apple;
+	public bool _barbed;
     public bool _barrier;
     public bool _debris;
     public bool _debrisFalling = false;
@@ -79,6 +80,14 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(_apple == true)
+        {
+			LevelManager.Instance.CollectFood();
+			AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.FoodColletion);
+			Destroy(this.gameObject);
+            return;
+		}
+
         //Verifica se esta invulneravel
         if (_player.GetComponent<PlayerController>()._invulnerable)
         {
@@ -146,7 +155,11 @@ public class Obstacle : MonoBehaviour
         {
             _animController.SetTrigger("Barrier");
         }
-        else if (_debris)
+		else if (_apple)
+		{
+			_animController.SetTrigger("Apple");
+		}
+		else if (_debris)
         {
             return;
         }
