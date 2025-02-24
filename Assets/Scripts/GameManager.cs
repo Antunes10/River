@@ -21,18 +21,66 @@ public class GameManager : MonoBehaviour
 	// int array 
 	public int[] unlockedImages = new int[20];
 
-	#region Setters
+	#region Setters&Getters
 
 	public void changeFood(int val) { _gs.currentFood += val; Debug.Log(_gs.currentFood); }
 	public void changeHope(int val) { _gs.currentHope += val; Debug.Log(_gs.currentHope); }
 
-	public void recruitSparks() { _gs.hasSparks = true; }
-	public void recruitNimbus() { _gs.hasNimbus = true; }
-	public void recruitOak() { _gs.hasOak = true; }
-	public void recruitCotton() { _gs.hasCotton = true; }
+	public void recruitSparks(bool val) { _gs.hasSparks = val; }
+	public void recruitNimbus(bool val) { _gs.hasNimbus = val; _gs.NimbusSaved = true; }
+	public void recruitOak(bool val) { _gs.hasOak = val; _gs.OakSaved = true; }
+	public void recruitCotton(bool val) { _gs.hasCotton = val; _gs.CottonSaved = true; }
 	public void foundOldMan() { _gs.FoundOldMan = true; }
 	public void killedNimbus() { _gs.KilledNimbus = true; }
-  #endregion
+	public bool foundNimbus() { return _gs.wenttoFindNimbus; }
+	public bool foundOak() { return _gs.wenttoFindOak; }
+	public bool foundFood() { return _gs.wenttoFindFood; }
+	public void cityDecision(int val)
+	{
+		//0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random
+		_gs.cityDecision = val;
+		switch (val){
+			case 0:
+				_gs.wenttoFindFood = true;
+				break;
+			case 1:
+				_gs.wenttoFindNimbus = true;
+				break;
+			case 2:
+				_gs.wenttoFindOak = true;
+				break;
+			case 3:
+				int randomNum = 0;
+				while (randomNum != 0)
+				{
+					randomNum = UnityEngine.Random.Range(1, 3);
+					if(_gs.wenttoFindNimbus == false && randomNum == 1)
+					{
+						_gs.wenttoFindNimbus = true;
+						_gs.cityDecision = 1;
+						break;
+					}
+					else if(_gs.wenttoFindOak == true && randomNum == 2)
+					{
+						_gs.wenttoFindOak = true;
+						_gs.cityDecision = 2;
+						break;
+					}
+					else if(randomNum == 3)
+					{
+						_gs.cityDecision = 3;
+						break;
+					}
+					else
+					{
+						continue;
+					}
+				}
+				break;
+		}
+	}
+	public int getCityDecision() { return _gs.cityDecision; }
+	#endregion
 
 	private void Awake()
 	{
@@ -91,7 +139,7 @@ public class GameManager : MonoBehaviour
 	sr.Close();
 	_gs = FromJson<GameState>(json);
 
-	loadDialogueScene();
+		loadDialogueScene(0);
   }
 
   public void SaveGame(int number)
@@ -141,8 +189,6 @@ public class GameManager : MonoBehaviour
 	string json2 = sr2.ReadToEnd();
 	sr2.Close();
 	unlockedImages = JsonHelper.FromJson<int>(json2);
-
-	Debug.Log(json2);
   }
 
   public void SaveUnlockables()
@@ -180,45 +226,27 @@ public class GameManager : MonoBehaviour
 	SceneManager.LoadScene("RiverScene");
   }
 
-  public void loadDialogueScene()
-  {
-	AudioManager.Instance.StopAllSounds();
-	if (_gs.currentInkIndex == 3 || _gs.currentInkIndex == 4)
+	public void loadDialogueScene(int val)
 	{
-	  if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
-	  else { _gs.dialogueIndex = 0; }
-	}
-	//Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-	else if (_gs.currentInkIndex == 5 || _gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10)
-	{
-	  if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
-	  else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 1; }
-	  else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 2; }
-	  else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
-	}
-
-	_currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
-	SceneManager.LoadScene("DialogueScene");
-  }
-
-  public void changeToNextDialogueScene()
-  {
-	AudioManager.Instance.StopAllSounds();
-	_gs.currentInkIndex++;
-	//Changing to Bridge Aftermath Scene OR Oak Scene
-	if (_gs.currentInkIndex == 4 || _gs.currentInkIndex == 5)
-	{
-	  if (_gs.hasNimbus) { _gs.dialogueIndex = 1; }
-	  else { _gs.dialogueIndex = 0; }
-	}
-	//Changing to Oak Aftermath Scene OR Hazel Scene OR Crow Scene
-	else if (_gs.currentInkIndex == 6 || _gs.currentInkIndex == 7 || _gs.currentInkIndex == 8 || _gs.currentInkIndex == 9 || _gs.currentInkIndex == 10 || _gs.currentInkIndex == 11)
-	{
-	  if (!_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 0; }
-	  else if (!_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 1; }
-	  else if (_gs.hasNimbus && !_gs.hasOak) { _gs.dialogueIndex = 2; }
-	  else if (_gs.hasNimbus && _gs.hasOak) { _gs.dialogueIndex = 3; }
-	}
+		//Val = 1 if next scene, = 0 to default load
+		AudioManager.Instance.StopAllSounds();
+		_gs.currentInkIndex += val;
+		if (!_gs.hasNimbus && !_gs.hasOak)
+		{
+			_gs.dialogueIndex = 0;
+		}
+		else if(!_gs.hasOak)
+		{
+			_gs.dialogueIndex = 1;
+		}
+		else if (!_gs.hasNimbus)
+		{
+			_gs.dialogueIndex = 2;
+		}
+		else
+		{
+			_gs.dialogueIndex = 3;
+		}
 
 	_currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
 	SceneManager.LoadScene("DialogueScene");
@@ -285,6 +313,10 @@ public class GameState
 	public bool CottonSaved;
 	public bool FoundOldMan;
 	public bool KilledNimbus;
+	public bool wenttoFindNimbus;
+	public bool wenttoFindOak;
+	public bool wenttoFindFood;
+	public int cityDecision;
 
 	//Resources
 	public int day;

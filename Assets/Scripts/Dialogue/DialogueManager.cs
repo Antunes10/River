@@ -79,7 +79,6 @@ public class DialogueManager : MonoBehaviour
 
     dialogueVariables = new DialogueVariables(loadGlobalsJSON);
 
-    Debug.Log("Starting Dialogue Manager");
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
     choosing = false;
@@ -146,62 +145,78 @@ public class DialogueManager : MonoBehaviour
 
   public void EnterDialogueMode(TextAsset inkJSON)
   {
-    currentStory = new Story(inkJSON.text);
+        currentStory = new Story(inkJSON.text);
 
-    dialogueIsPlaying = true;
-    dialoguePanel.SetActive(true);
+        dialogueIsPlaying = true;
+        dialoguePanel.SetActive(true);
+        dialogueVariables.StartListening(currentStory);
 
-    dialogueVariables.StartListening(currentStory);
+        BindFunctions();
 
-    currentStory.BindExternalFunction("changeScene", (string sceneName) =>
+		// sets everything to the default state
+		displayNameText.text = "default";
+        portraitAnimator.Play("default");
+        leftLayoutAnimator.Play("default");
+        rightLayoutAnimator.Play("default");
+        middleLayoutAnimator.Play("default");
+        sparksLayoutAnimator.Play("default");
+        middleLeftAnimator.Play("default");
+        middleRightAnimator.Play("default");
+
+        ContinueStory();
+  }
+
+    private void BindFunctions()
     {
-      ExitDialogueMode();
-      switch (sceneName)
-      {
-        case "RiverScene":
-          GameManager.Instance.changeToRiverScene();
-          break;
-        case "DialogueScene":
-          GameManager.Instance.changeToNextDialogueScene();
-          break;
-        case "EndDayScene":
-          GameManager.Instance.changeToEndDayScene();
-          break;
-        case "Credits":
-          GameManager.Instance.changeToCreditsScene();
-          break;
-      }
-    });
+		currentStory.BindExternalFunction("changeScene", (string sceneName) =>
+		{
+			ExitDialogueMode();
+			switch (sceneName)
+			{
+				case "RiverScene":
+					GameManager.Instance.changeToRiverScene();
+					break;
+				case "DialogueScene":
+                    GameManager.Instance.loadDialogueScene(1);
+					break;
+				case "EndDayScene":
+					GameManager.Instance.changeToEndDayScene();
+					break;
+				case "Credits":
+					GameManager.Instance.changeToCreditsScene();
+					break;
+			}
+		});
 
-    currentStory.BindExternalFunction("gameOver", () =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.gameOver();
-    });
+		currentStory.BindExternalFunction("gameOver", () =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.gameOver();
+		});
 
-    currentStory.BindExternalFunction("recruitSparks", () =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.recruitSparks();
-    });
+		currentStory.BindExternalFunction("recruitSparks", (bool val) =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.recruitSparks(val);
+		});
 
-    currentStory.BindExternalFunction("recruitOak", () =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.recruitOak();
-    });
+		currentStory.BindExternalFunction("recruitOak", (bool val) =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.recruitOak(val);
+		});
 
-    currentStory.BindExternalFunction("recruitCotton", () =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.recruitCotton();
-    });
+		currentStory.BindExternalFunction("recruitCotton", (bool val) =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.recruitCotton(val);
+		});
 
-    currentStory.BindExternalFunction("recruitNimbus", () =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.recruitNimbus();
-    });
+		currentStory.BindExternalFunction("recruitNimbus", (bool val) =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.recruitNimbus(val);
+		});
 		currentStory.BindExternalFunction("hasSparks", () =>
 		{
 			ExitDialogueMode();
@@ -209,34 +224,52 @@ public class DialogueManager : MonoBehaviour
 		});
 
 		currentStory.BindExternalFunction("hasNimbus", () =>
-        {
-            ExitDialogueMode();
-            return GameManager.Instance._gs.hasNimbus;
-        });
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.hasNimbus;
+		});
 
-        currentStory.BindExternalFunction("hasOak", () =>
-        {
-            ExitDialogueMode();
-            return GameManager.Instance._gs.hasOak;
-        });
+		currentStory.BindExternalFunction("hasOak", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.hasOak;
+		});
 
-        currentStory.BindExternalFunction("hasCotton", () =>
-        {
-            ExitDialogueMode();
-            return GameManager.Instance._gs.hasCotton;
-        });
+		currentStory.BindExternalFunction("hasCotton", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.hasCotton;
+		});
 
-        currentStory.BindExternalFunction("foundOldMan", () =>
-        {
-            ExitDialogueMode();
-            GameManager.Instance.foundOldMan();
-        });
+		currentStory.BindExternalFunction("savedNimbus", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.NimbusSaved;
+		});
 
-        currentStory.BindExternalFunction("getFoundOldMan", () =>
-        {
-            ExitDialogueMode();
-            return GameManager.Instance._gs.FoundOldMan;
-        });
+		currentStory.BindExternalFunction("savedOak", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.OakSaved;
+		});
+
+		currentStory.BindExternalFunction("savedCotton", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.CottonSaved;
+		});
+
+		currentStory.BindExternalFunction("foundOldMan", () =>
+		{
+			ExitDialogueMode();
+			GameManager.Instance.foundOldMan();
+		});
+
+		currentStory.BindExternalFunction("getFoundOldMan", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance._gs.FoundOldMan;
+		});
 
 		currentStory.BindExternalFunction("killNimbus", () =>
 		{
@@ -251,10 +284,10 @@ public class DialogueManager : MonoBehaviour
 		});
 
 		currentStory.BindExternalFunction("changeFood", (int val) =>
-        {
-            ExitDialogueMode();
-            GameManager.Instance.changeFood(val);
-        });
+		{
+			ExitDialogueMode();
+			GameManager.Instance.changeFood(val);
+		});
 
 		currentStory.BindExternalFunction("getFood", () =>
 		{
@@ -263,40 +296,64 @@ public class DialogueManager : MonoBehaviour
 		});
 
 		currentStory.BindExternalFunction("changeHope", (int val) =>
-    {
-      ExitDialogueMode();
-      GameManager.Instance.changeHope(val);
-    });
+		{
+			ExitDialogueMode();
+			GameManager.Instance.changeHope(val);
+		});
 
-    currentStory.BindExternalFunction("unlockImage", (int val) =>
-    {
-      Debug.Log("Unlocking image " + val);
-      ShowPopup();
-      ExitDialogueMode();
-      GameManager.Instance.UnlockImage(val);
-    });
+		currentStory.BindExternalFunction("foundNimbus", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance.foundNimbus();
+		});
 
-    currentStory.BindExternalFunction("playSparksAnim", () =>
-    {
-      ExitDialogueMode();
-      playingVideo = true;
-      image.SetActive(true);
+		currentStory.BindExternalFunction("foundOak", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance.foundOak();
+		});
 
-      StartCoroutine(ExitVideo());
-    });
+		currentStory.BindExternalFunction("foundFood", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance.foundFood();
+		});
 
-    // sets everything to the default state
-    displayNameText.text = "default";
-    portraitAnimator.Play("default");
-    leftLayoutAnimator.Play("default");
-    rightLayoutAnimator.Play("default");
-    middleLayoutAnimator.Play("default");
-    sparksLayoutAnimator.Play("default");
-    middleLeftAnimator.Play("default");
-    middleRightAnimator.Play("default");
+		currentStory.BindExternalFunction("cityDecision", (int val) =>
+		{
+            //0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random
+			ExitDialogueMode();
+			GameManager.Instance.cityDecision(val);
+		});
 
-    ContinueStory();
-  }
+		currentStory.BindExternalFunction("getCityDecision", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance.getCityDecision();
+		});
+
+		currentStory.BindExternalFunction("unlockImage", (int val) =>
+		{
+			ShowPopup();
+			ExitDialogueMode();
+			GameManager.Instance.UnlockImage(val);
+		});
+
+		currentStory.BindExternalFunction("playSparksAnim", () =>
+		{
+			ExitDialogueMode();
+			playingVideo = true;
+			image.SetActive(true);
+
+			StartCoroutine(ExitVideo());
+		});
+
+		currentStory.BindExternalFunction("getRandom", (int val) =>
+		{
+			ExitDialogueMode();
+			return Random.Range(0, val);
+		});
+	}
 
   private IEnumerator ExitVideo() {
     yield return new WaitForSeconds(1.8f);
