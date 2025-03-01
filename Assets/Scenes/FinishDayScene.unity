@@ -1076,12 +1076,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 53f14c0425035c846b97fd98d068bce2, type: 3}
   - {fileID: 21300000, guid: a64b7c16fbe6ce343bc82d1b0071b654, type: 3}
   backgroundSprites:
-  - {fileID: 21300000, guid: d1e09dd499fb67a4d961b6f8db7baf36, type: 3}
   - {fileID: 21300000, guid: 28cd01385b7d9b84d8222395a8c45c6d, type: 3}
-  - {fileID: 21300000, guid: b31af5f3ce061be49899701c735aa534, type: 3}
+  - {fileID: 21300000, guid: d1e09dd499fb67a4d961b6f8db7baf36, type: 3}
   - {fileID: 21300000, guid: da8d4470e9e22214a82ef62d8de9c686, type: 3}
-  - {fileID: 21300000, guid: ad9104885047d4d40b430432abcd9e47, type: 3}
+  - {fileID: 21300000, guid: b31af5f3ce061be49899701c735aa534, type: 3}
   - {fileID: 21300000, guid: 14775e1cd31d9f54a8c9bc6ebab56ffb, type: 3}
+  - {fileID: 21300000, guid: ad9104885047d4d40b430432abcd9e47, type: 3}
   campFireSprites:
   - {fileID: 21300000, guid: aecff677d74ffc341bf2c43fecf2ffd8, type: 3}
   - {fileID: 21300000, guid: b3318c227994d5d4caba2510d6da43cd, type: 3}
