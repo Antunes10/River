@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour
 	public bool foundFood() { return _gs.wenttoFindFood; }
 	public void cityDecision(int val)
 	{
-		//0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random
+		_gs.cityTime++;
+		//0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random, 4 = Back
 		_gs.cityDecision = val;
 		switch (val){
 			case 0:
@@ -60,7 +61,7 @@ public class GameManager : MonoBehaviour
 						_gs.cityDecision = 1;
 						break;
 					}
-					else if(_gs.wenttoFindOak == true && randomNum == 2)
+					else if(_gs.wenttoFindOak == false && randomNum == 2)
 					{
 						_gs.wenttoFindOak = true;
 						_gs.cityDecision = 2;
@@ -80,6 +81,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 	public int getCityDecision() { return _gs.cityDecision; }
+	public int getCityTime() { return _gs.cityTime; }
 	#endregion
 
 	private void Awake()
@@ -107,16 +109,17 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-  public void InitGameState()
-  {
-	_gs = new GameState();
-	_gs.currentLevelIndex = -1;
-	_gs.currentInkIndex = -1;
-	_gs.dialogueIndex = 0;
-	_gs.currentFood = 3;
-	_gs.currentHope = 3;
-	_gs.gameOver = false;
-  }
+	public void InitGameState()
+	{
+		_gs = new GameState();
+		_gs.currentLevelIndex = -1;
+		_gs.currentInkIndex = -1;
+		_gs.dialogueIndex = 0;
+		_gs.currentFood = 3;
+		_gs.currentHope = 3;
+		_gs.cityDecision = -1;
+		_gs.gameOver = false;
+	}
 
   public void UnlockImage(int n)
   {
@@ -317,6 +320,7 @@ public class GameState
 	public bool wenttoFindOak;
 	public bool wenttoFindFood;
 	public int cityDecision;
+	public int cityTime;
 
 	//Resources
 	public int day;

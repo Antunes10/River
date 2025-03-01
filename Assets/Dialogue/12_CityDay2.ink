@@ -232,7 +232,7 @@ It will be dangerous.
 - else:
     #speaker:
     Tails had no way of knowing where his friend was.
-    It was a shot i the dark, but he had to try...
+    It was a shot in the dark, but he had to try...
     For everything Sparks meant to him.
 }
 ->take_the_boat

@@ -332,6 +332,12 @@ public class DialogueManager : MonoBehaviour
 			return GameManager.Instance.getCityDecision();
 		});
 
+		currentStory.BindExternalFunction("getCityTime", () =>
+		{
+			ExitDialogueMode();
+			return GameManager.Instance.getCityTime();
+		});
+
 		currentStory.BindExternalFunction("unlockImage", (int val) =>
 		{
 			ShowPopup();

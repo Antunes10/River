@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLength: 30
   GoesToCampfire: 0
-  backgrounds: {fileID: 1022511215364492915, guid: 4603494f6cb0e7f49a37f61f8357224b, type: 3}
-  music: 4
-  envSounds: 1
+  backgrounds: {fileID: 1022511215364492915, guid: 78a3678a69674474380d0661e269e638, type: 3}
+  music: 2
+  envSounds: 10
   obstacleList:
   - {fileID: 3421729367470482422, guid: 7ce8a84ad375bc543beb7d3dfcd4b32f, type: 3}
   minProb: 1
