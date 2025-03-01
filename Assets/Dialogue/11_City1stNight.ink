@@ -58,7 +58,7 @@ But what was really hurting Tails...
 +[Go to sleep alone]
     ->SleepAlone
 
-~changeScene("DialogueScene")
+~changeScene("EndDayScene")
 -> END
 
 === Talk_to_rabbit_Q1 ===
@@ -77,9 +77,10 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     On that moment he just wanted time to grieve.
     Sometimes the best way to help someone is to leave them alone.
     He sadly turns around and goes back to the middle of the room.
+    ~recruitCotton(false)
     ->choice_panel
 
-++[Don't give up o her]
+++[Don't give up on her]
     #speaker:Tails #portrait:tails_default
     We didn’t have time to exchange names…
     #portrait:tails_happy #layout:left:tails_default
@@ -217,7 +218,7 @@ You join her and together you make a comfortable place to sleep.
 Sharing your warmth you forget the strife that engulfs the world around you.
 And you dream of your family and your childhood.
 
-~changeScene("DialogueScene")
+~changeScene("EndDayScene")
 ->END
 
 === SleepAlone ===
@@ -232,5 +233,5 @@ There is no one to keep him warm.
     And he fears he will never see his friends again.
 }
 
-~changeScene("DialogueScene")
+~changeScene("EndDayScene")
 ->END
