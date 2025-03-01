@@ -251,6 +251,12 @@ public class GameManager : MonoBehaviour
 			_gs.dialogueIndex = 3;
 		}
 
+		//insert the case for Day 2 logic
+		if (_gs.currentInkIndex == 13 || _gs.currentInkIndex == 14)
+		{
+			_gs.dialogueIndex = _gs.cityDecision;
+		}
+
 	_currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
 	SceneManager.LoadScene("DialogueScene");
   }

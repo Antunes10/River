@@ -439,7 +439,7 @@ Tails looks at the skies.
 == choices ==
 +{hasCotton() and savedNimbus() and not hasNimbus()}[Follow Nimbus's Trail]
     ->nimbus_trail
-+{not getCityDecision() == 0}[Look for food]
++[Look for food]
     ->food_trail
 +[Go Back to the Shelter]
     ->back_trail
@@ -520,7 +520,7 @@ However he knew this meant Nimbus would have to be left behind.
 }
 #speaker:
 The mouse turns his back and goes to the helmet slowly.
-Heartbroken.
+Heartbroken, for giving up on his friends.
 ~changeScene("RiverScene")
 -> END
 
