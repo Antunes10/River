@@ -182,6 +182,7 @@ public class AudioManager : MonoBehaviour
         crow = 10,
         deadBodies= 11,
         silence = 12,
+        credits = 15
     }
 
     public enum EnvironmentSounds
