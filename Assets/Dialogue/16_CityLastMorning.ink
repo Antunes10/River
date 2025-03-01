@@ -4,16 +4,14 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:finalValley
+#background:roomDay
 #speaker:
 
 { - hasSparks() || hasNimbus() || hasOak() || hasCotton():
     -> not_alone
 - else:
     -> alone
-} 
-
-->END
+}
 
 === alone ===
 #layout:middle:tails_sad #portrait:tails_sad
@@ -41,11 +39,10 @@ He knows that he will only survive if he manages to escape!
 It’s now or never!
 
 ~changeScene("RiverScene")
-
 -> END
 
 === not_alone ===
-#layout:middle:tails_sad #portrait:tails_sad
+#layout:left:tails_sad #portrait:tails_sad
 As the dawn arrives, a cold morning awakens.
 Tails feels the coldness in his bones.
 He was having a bad dream.
@@ -57,12 +54,12 @@ But suddenly a warm embrace comforts him in a cozy awakening.
     -> afterWords
 }
 {hasNimbus():
-    #layout:middle_left:nimbus_default #portrait:nimbus_default #speaker:Nimbus
+    #layout:middle_right:nimbus_default_m #portrait:nimbus_default #speaker:Nimbus
     Don’t worry Tails, we’re still here. There is still a road to finish.
     -> afterWords
 }
 {hasOak():
-    #layout:left:oak_default #portrait:oak_default #speaker:Oak
+    #layout:middle:oak_default #portrait:oak_default_m #speaker:Oak
     Don’t worry little mouse, it was just a bad dream. You’re awake now and safe.
     -> afterWords
 }
@@ -73,53 +70,66 @@ But suddenly a warm embrace comforts him in a cozy awakening.
 }
 
 ==afterWords==
-#speaker:
+#speaker: #layout:left:tails_happy
 The words give him the energy he needs to rise up to a new day.
 They still have to find the valley.
 They still have to get away from this city.
 He looks around the room.
 
-{not hasCotton():
-    The rabbit is gone.
-    The pain of losing her cubs was too much to bear.
-    And she had nothing left in this world to fight for.
-}
-
-{not hasOak():
-    Oak’s hat was still on the floor.
-    But the dog was gone.
-}
-
-{not hasNimbus():
-    {not hasOak() || not hasCotton():
-        The bird was also gone.
-    - else:
-        The bird was nowhere to be seen.
+{hasCotton():
+    #layout:right:bunny_default_m
+    He sees Cotton.
+    {
+        - hasNimbus():
+            #layout:middle_right:nimbus_default_m
+            She approaches Nimbus to help him tie the cloth around his wing.
+            The young bird bickers a bit as any teenager would.
+            But the soft hands and voice of a mother, calms him down.
+            They just met yesterday, but they seem to be bounding quick.
+        -else:
+            #layout:right:bunny_happy_m
+            Cleaning her fur with her tongue.
+            She smiles at Tails and in return he smiles back.
+            Her positive energy calms him down.
     }
+    
 }
 
-He did not say goodbye.
-Ran away in the middle of the night. Too afraid to face his friend.
+{hasOak():
+    #layout:middle:oak_default_m
+    Oak is standing near the window looking vilant at the world beyond.
+    His yesterday doubts are but a bad dream long gone.
+}
+
+{hasNimbus() and not hasCotton():
+    #layout:middle_right:nimbus_default_m
+    The bird ties a cloth around his wing.
+    Determined, decided.
+    Tails words woke a courage he though he never had.
+    But it shows now it was always within him.
+}
 
 {not hasSparks():
-    But what hurt him the most was the fact that the little firefly…
-    The one that was with him since the start of this journey…
-    Left him…
-	She left to find her mother.
-    He could not blame her, but the pain was still there.
+    #layout:left:tails_sad
+    There was one friend, Tails really misses.
+    The little firefly...
+    The one that had been with him since the start of this journey...
+    Left him...
+	So she could find her mother.
+    He can't not blame her, but the pain is still there.
 }
 
-Then the familiar face that awoke him, gave him a smile.
-And made Tails remember that he wasn’t alone.
-#layout:middle:tails_happy
+Then the familiar face that awoke him, gives him a smile.
+And makes Tails remember that he wasn’t alone.
+#layout:left:tails_happy
 He still had friends to fight for.
 
 
 {hasSparks() && hasNimbus() && hasOak() && hasCotton():
-    They were all still here.
+    They are all still here.
     All his friends.
-    He managed to inspire them all to stay and fight another day.
-    It would be a dangerous getaway, but as long as they were together, they would prevail.
+    He managed to save them all and inspire them to fight another day.
+    It would be a dangerous getaway, but as long as they are together, they will prevail.
     He knew it.
 }
 
@@ -136,6 +146,5 @@ There is no hope in this forsaken city.
 They know that they will only survive if they manage to escape!
 It’s now or never!
 
-~changeScene("DialogueScene")
-
+~changeScene("RiverScene")
 -> END
