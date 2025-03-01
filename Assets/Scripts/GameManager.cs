@@ -203,7 +203,7 @@ public class GameManager : MonoBehaviour
   }
   #endregion
 
-  #region Change Scenes
+	#region Change Scenes
 
 	public void changeToEndDayScene()
 	{
@@ -221,13 +221,20 @@ public class GameManager : MonoBehaviour
 	SceneManager.LoadScene("FinishDayScene");
 	}
 
-  public void changeToRiverScene()
-  {
-	AudioManager.Instance.StopAllSounds();
-	_gs.currentLevelIndex++;
-	_currentLevel = _levels[_gs.currentLevelIndex];
-	SceneManager.LoadScene("RiverScene");
-  }
+	public void changeToRiverScene()
+	{
+		AudioManager.Instance.StopAllSounds();
+		//Assure after 2nd choice of 2nd city day it goes to Sparks Narrative
+		if(_gs.currentInkIndex == 14)
+		{
+			loadDialogueScene(1);
+			return;
+		}
+
+		_gs.currentLevelIndex++;
+		_currentLevel = _levels[_gs.currentLevelIndex];
+		SceneManager.LoadScene("RiverScene");
+	}
 
 	public void loadDialogueScene(int val)
 	{
@@ -283,10 +290,10 @@ public class GameManager : MonoBehaviour
 
   #endregion
 
-  public void Exit()
-  {
-	Application.Quit();
-  }
+	public void Exit()
+	{
+		Application.Quit();
+	}
 
   [System.Serializable]
   public class DialogueGrid
