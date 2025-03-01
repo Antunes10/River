@@ -4,7 +4,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:roomNight
+#background:roomDay
 #speaker:
 Dawn Breaks.
 #layout:middle:tails_sad
