@@ -36,8 +36,6 @@ public class AudioVolumeSettings : MonoBehaviour
         string json = sr.ReadToEnd();
         sr.Close();
         volumes = JsonHelper.FromJson<float>(json);
-
-        Debug.Log("LOAD: " + json);
     }
 
     public void SaveAudio(float master, float music, float sfx)

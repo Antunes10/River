@@ -1397,10 +1397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tutorialPanel: {fileID: 658576652}
-  _imagePanel: {fileID: 1016445118}
-  _tutorialImages:
-  - {fileID: 21300000, guid: c2102a5a27630b74da86f7df9da241a2, type: 3}
-  - {fileID: 21300000, guid: 6df07b469e53a4c4aa5fd1c55589f31f, type: 3}
+  _image: {fileID: 1016445120}
 --- !u!1 &381629956
 GameObject:
   m_ObjectHideFlags: 0
@@ -6894,7 +6891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &658576653
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14136,6 +14133,7 @@ MonoBehaviour:
   _appleCounter: {fileID: 1423058058}
   _inGameCanvas: {fileID: 938484967}
   _pauseMenuCanvas: {fileID: 1335392623}
+  _tutorial: {fileID: 354536903}
   _gameLost: 0
 --- !u!4 &1610527294
 Transform:

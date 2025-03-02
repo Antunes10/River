@@ -17,7 +17,7 @@ public class PauseMenuRiver : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !LevelManager.Instance._gameLost)
+        if (Input.GetKeyDown(KeyCode.Escape) && !LevelManager.Instance._gameLost && !LevelManager.Instance.inTutorial)
         {
             AudioManager.Instance.PlaySFX(AudioManager.SFXSounds.button);
             LevelManager.Instance.PauseUnpause();

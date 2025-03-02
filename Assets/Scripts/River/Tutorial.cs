@@ -5,50 +5,57 @@ using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-    private LevelManager _levelManager;
     [SerializeField] private GameObject _tutorialPanel;
-    [SerializeField] private GameObject _imagePanel;
-    [SerializeField] private Sprite[] _tutorialImages;
+    [SerializeField] private Image _image;
 
-    private int[] tutorialLevels = {1, 4};
-
-    void Start()
+    public void Init(Level levelData)
     {
-        _levelManager = LevelManager.Instance;
-        _levelManager.PauseUnpause();   
-
-        int index = 0;
-        foreach (int i in tutorialLevels) {
-            if (i == GameManager.Instance._gs.currentLevelIndex + 1) {
-                SetImage(index);
-                return;
-            }
-            index++;
-        }
-
-        Unpause();
+		_tutorialPanel.SetActive(true);
+		AudioManager.Instance.StopAllSounds();
+        switch (levelData.dependance)
+        {
+            case Level.TutorialDependance.None:
+                _image.sprite = levelData.tutorials[0];
+                break;
+			case Level.TutorialDependance.Nimbus:
+                if (GameManager.Instance._gs.hasNimbus)
+                {
+					_image.sprite = levelData.tutorials[0];
+				}
+				else
+				{
+					Unpause();
+				}
+				break;
+			case Level.TutorialDependance.Oak:
+				if (GameManager.Instance._gs.hasOak)
+				{
+					_image.sprite = levelData.tutorials[0];
+                }
+                else
+                {
+					_image.sprite = levelData.tutorials[1];
+				}
+				break;
+			case Level.TutorialDependance.Cotton:
+				if (GameManager.Instance._gs.hasCotton)
+				{
+					_image.sprite = levelData.tutorials[0];
+				}
+				else
+				{
+					Unpause();
+				}
+				break;
+		}
     }
 
     public void Unpause()
     {
-        _tutorialPanel.SetActive(false);
-        _levelManager.PauseUnpause();
-        _levelManager.StartMusic();
+		_tutorialPanel.SetActive(false);
+		LevelManager.Instance.inTutorial = false;
+		LevelManager.Instance.PauseUnpause();
+		LevelManager.Instance.StartMusic();
     }
-
-    private void SetImage(int index) {
-        if (index == 0) {
-            _imagePanel.GetComponent<Image>().sprite = _tutorialImages[index];
-        }
-        else if (index == 1 && GameManager.Instance._gs.hasNimbus) {
-            _imagePanel.GetComponent<Image>().sprite = _tutorialImages[index];
-        }
-        else {
-            Unpause();
-            return;
-        }
-        
-    }
-
 
 }

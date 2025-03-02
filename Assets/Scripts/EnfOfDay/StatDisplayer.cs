@@ -15,6 +15,8 @@ public class StatDisplayer : MonoBehaviour
 
 	#region Menus Variables
 	[Header("Images")]
+	[SerializeField] private Canvas _tutorialCanvas;
+	[Header("Images")]
 	[SerializeField] private Image foodPaw;
 	[SerializeField] private Image hopePaw;
 	[SerializeField] private Image backgroundImg;
@@ -40,6 +42,7 @@ public class StatDisplayer : MonoBehaviour
 	{
 		gm = GameManager.Instance;
 		ImageInit();
+		CheckTutorial();
 	}
 
 	private void setupGameOver()
@@ -74,10 +77,23 @@ public class StatDisplayer : MonoBehaviour
 		//Indicators
 		int totalFoodDays = gm._gs.currentFood / numberChar;
 		int hopeLevel = Math.Clamp(gm._gs.currentHope, 0, 3) +1;
-		foodPaw.sprite = pawSprites[totalFoodDays];
+		foodPaw.sprite = pawSprites[Math.Clamp(totalFoodDays, 0, 3)];
 		hopePaw.sprite = pawSprites[hopeLevel -1];
 		foodText.text = gm._gs.currentFood.ToString();
 		hopeText.text = hopeLevel.ToString();
+	}
+
+	public void CheckTutorial()
+	{
+		if(GameManager.Instance._gs.day == 1)
+		{
+			_tutorialCanvas.enabled = true;
+		}
+	}
+
+	public void CloseTutorial()
+	{
+		_tutorialCanvas.enabled = false;
 	}
 
 	public void switchScene()

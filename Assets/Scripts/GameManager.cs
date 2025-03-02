@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
 
 	#region Setters&Getters
 
-	public void changeFood(int val) { _gs.currentFood += val; Debug.Log(_gs.currentFood); }
-	public void changeHope(int val) { _gs.currentHope += val; Debug.Log(_gs.currentHope); }
+	public void changeFood(int val) { _gs.currentFood += val; }
+	public void changeHope(int val) { _gs.currentHope += val; }
 
 	public void recruitSparks(bool val) { _gs.hasSparks = val; }
 	public void recruitNimbus(bool val) { _gs.hasNimbus = val; _gs.NimbusSaved = true; }

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class LevelManager : MonoBehaviour
 {
@@ -16,9 +17,11 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI _appleCounter;
 	[SerializeField] private Canvas _inGameCanvas;
     [SerializeField] private Canvas _pauseMenuCanvas;
+    [SerializeField] private Tutorial _tutorial;
 
-    private GameManager _gameManager;
+	private GameManager _gameManager;
 
+    public bool inTutorial;
     private bool _gamePaused;
     public bool _gameLost;
     private bool _alreadyVic;
@@ -78,9 +81,23 @@ public class LevelManager : MonoBehaviour
         _levelLength = _levelData.levelLength;
 
         _progressSlider.maxValue = _levelData.levelLength;
+        InitTutorial();
     }
 
-    public void StartMusic() {
+    public void InitTutorial()
+    {
+        if(_levelData.hasTutorial)
+        {
+			inTutorial = true;
+			PauseUnpause(true);
+			_tutorial.Init(_levelData);
+			return;
+        }
+        StartMusic();
+    }
+
+
+	public void StartMusic() {
         _gameManager = GameManager.Instance;
         _levelData = _gameManager._currentLevel;
         AudioManager.Instance.PlayRiverMusic(_levelData.music);
@@ -125,6 +142,16 @@ public class LevelManager : MonoBehaviour
             _inGameCanvas.enabled = true;
             _pauseMenuCanvas.enabled = false;
         }
+    }
+
+    public void PauseUnpause(bool force)
+    {
+        if (force)
+        {
+			_gamePaused = !_gamePaused;
+			Time.timeScale = 0;
+			_inGameCanvas.enabled = false;
+		}
     }
 
     public bool GetPaused()
