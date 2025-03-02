@@ -4,7 +4,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:forest
+#background:RestField
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:oak_default_m #enviroSound:forest
 ~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.

@@ -4,7 +4,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:forest
+#background:RestField
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m #enviroSound:forest
 ~unlockImage(12)
 ~unlockImage(0)
