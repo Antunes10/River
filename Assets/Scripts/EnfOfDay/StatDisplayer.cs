@@ -45,12 +45,6 @@ public class StatDisplayer : MonoBehaviour
 		CheckTutorial();
 	}
 
-	private void setupGameOver()
-	{
-		dayText.text = "Game Over";
-		Button.text = "Back to Main Menu";
-	}
-
 	public void ImageInit()
 	{
 		int gameOver = gm._gs.gameOver ? 1 : 0;
@@ -76,9 +70,9 @@ public class StatDisplayer : MonoBehaviour
 
 		//Indicators
 		int totalFoodDays = gm._gs.currentFood / numberChar;
-		int hopeLevel = Math.Clamp(gm._gs.currentHope, 0, 3) +1;
-		foodPaw.sprite = pawSprites[Math.Clamp(totalFoodDays, 0, 3)];
-		hopePaw.sprite = pawSprites[hopeLevel -1];
+		int hopeLevel = gm._gs.currentHope;
+		foodPaw.sprite = pawSprites[Math.Clamp(totalFoodDays-1, 0, 3)];
+		hopePaw.sprite = pawSprites[Math.Clamp(hopeLevel-1, 0, 3)];
 		foodText.text = gm._gs.currentFood.ToString();
 		hopeText.text = hopeLevel.ToString();
 	}

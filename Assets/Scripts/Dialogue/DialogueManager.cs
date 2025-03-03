@@ -192,6 +192,7 @@ public class DialogueManager : MonoBehaviour
 		{
 			ExitDialogueMode();
 			GameManager.Instance.gameOver();
+            GameManager.Instance.changeToEndDayScene();
 		});
 
 		currentStory.BindExternalFunction("recruitSparks", (bool val) =>

@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 	#region Setters&Getters
 
 	public void changeFood(int val) { _gs.currentFood += val; }
-	public void changeHope(int val) { _gs.currentHope += val; }
+	public void changeHope(int val) { _gs.currentHope += val; _gs.currentHope = Math.Clamp(_gs.currentHope, 0, 5); }
 
 	public void recruitSparks(bool val) { _gs.hasSparks = val; }
 	public void recruitNimbus(bool val) { _gs.hasNimbus = val; _gs.NimbusSaved = true; }
@@ -127,11 +127,10 @@ public class GameManager : MonoBehaviour
 	SaveUnlockables();
   }
 
-  public void gameOver()
-  {
-	_gs.gameOver = true;
-	SceneManager.LoadScene("FinishDayScene");
-  }
+	public void gameOver()
+	{
+		_gs.gameOver = true;
+	}
 
   #region SaveSystem
   public void LoadGame(int number, string saveMode)
@@ -215,9 +214,7 @@ public class GameManager : MonoBehaviour
 	if (_gs.currentFood <= 0 || _gs.currentHope <= 0)
 	{
 	  gameOver();
-			return;
 	} 
-
 	SceneManager.LoadScene("FinishDayScene");
 	}
 
