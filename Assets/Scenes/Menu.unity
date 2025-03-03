@@ -1542,10 +1542,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
-  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
-  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
-  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
-  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
+  - {fileID: 8300000, guid: cda6c70842e019042a58d2ca0babc324, type: 3}
+  - {fileID: 8300000, guid: cda6c70842e019042a58d2ca0babc324, type: 3}
+  - {fileID: 8300000, guid: cda6c70842e019042a58d2ca0babc324, type: 3}
+  - {fileID: 8300000, guid: cda6c70842e019042a58d2ca0babc324, type: 3}
   _sfxSounds:
   - {fileID: 8300000, guid: aceccdfc1f5e56d438897991392d0c17, type: 3}
   - {fileID: 8300000, guid: aceccdfc1f5e56d438897991392d0c17, type: 3}
