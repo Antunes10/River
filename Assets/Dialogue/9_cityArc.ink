@@ -97,9 +97,18 @@ There is a small hole on the top of the wheelbarrow. Only big enough for Sparks 
 #speaker:Nimbus #portrait:nimbus_default 
 What are we going to do?
 
--> choice_panel
+-> choice_panel1
 
-=== choice_panel ===
+=== choice_panel1 ===
++[Leave them]
+    ->leaver_her
++[Help them]
+    ->choice_panel2
+
+=== choice_panel2 ===
+
+    #speaker:
+    Tails moves the "half-shell" closer as he decides to help the one trapped.
 
     +{not send_sparks_continuation}[Send Sparks inside]
         ~sentSparks = 1
@@ -139,6 +148,10 @@ What are we going to do?
         -> END
 
     +[Try to find a rope]
+        ~changeHope(2)
+        ~recruitCotton(true)
+        ~recruitCotton(false)
+
         #speaker:
         There was little time to act.
         #speaker:Tails #portrait:tails_default #layout:middle:tails_default
@@ -168,6 +181,9 @@ What are we going to do?
 
     +{send_sparks_continuation}[Seal the hole]
         ~changeFood(2)
+        ~changeHope(2)
+        ~recruitCotton(true)
+        ~recruitCotton(false)
         
         #speaker:
         The little mouse understands that the rabbit will drown if they don’t seal that small hole.
@@ -264,7 +280,7 @@ What are we going to do?
     She will drown if we don’t take her out.
     #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
     Also, there’s lots of food in there!
-->choice_panel
+->choice_panel2
 
 === try_to_find_rope_continuation ===
     +[Let go of the Wheelbarrow]
@@ -300,7 +316,7 @@ What are we going to do?
     +[Try to salvage some food]
         ->try_to_salvage_food
     
--> choice_panel
+-> choice_panel2
 
 === try_to_salvage_food ===
     ~changeFood(1)
@@ -335,7 +351,7 @@ What are we going to do?
         We must take shelter!
         We won’t survive if we stay out in the open!
         #enviroSound:villageExplosions
-        #speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default #layout:middle_right:default
+        #speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default
         Suddently another explosion hits, covering everything with dust.
         Tails is sent flying against the wheelbarrow.
         The sound is snuffed out of the world, leaving a high pitching sound.
@@ -360,6 +376,44 @@ What are we going to do?
         
         ~gameOver()
         ->END
+
+=== leaver_her ===
+~changeHope(-2)
+#speaker: #layout:left:oak_sad #layout:middle:tails_sad #layout:right:nimbus_sad_m #layout:sparks:sparks_sad_m
+The mouse makes a hard decision.
+#speaker:Tails #portrait:tails_sad
+I'm sorry...
+It's too risky...
+We have to find shelter.
+#speaker:
+Sadness takes hold of everybody.
+They all look at Tails but no one voices their discontent.
+The desperate sounds start to fade, as the helmet moves away towards the shore.
+As it touches the ground they look behind and...
+The wheelbarrow disappears under the waters.
+#speaker:Nimbus #portrait:nimbus_sad
+We could've tried...
+At least tried...
+#speaker:Oak #portrait:oak_sad
+It's done, little one.
+We have to find shelter now.
+#speaker:
+Tails looks at the destruction all around them.
+#speaker:Tails #portrait:tails_default #layout:middle:tails_default
+I don't know if there is any shelter capable of holding off this kind of destruction.
+#speaker: #enviroSound:villageExplosions
+Suddenly another explosion blows right near them, sending debris everywhere.
+#speaker:Nimbus #portrait:nimbus_scared #layout:right:nimbus_scared #layout:left:oak_scared #layout:middle:tails_scared #layout:right:nimbus_scared_m
+We must take shelter!
+We won’t survive if we stay out in the open!
+#enviroSound:villageExplosions
+#speaker: #layout:left:tails_scared #layout:right:default #layout:middle:default #layout:sparks:default #layout:middle_right:default
+Suddently another explosion hits, covering everything with dust.
+Tails is sent flying against the wheelbarrow.
+The sound is snuffed out of the world, leaving a high pitching sound.
+Tails can't see anything.
+He tries to call for his friends but he can't hear himself.
+->final_choice
 
 === final_choice ===
 

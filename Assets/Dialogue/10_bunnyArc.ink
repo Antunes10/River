@@ -16,7 +16,26 @@ And he hears humans on the otherside.
 #speaker:Tails #portrait:tails_default
 I can't get out now...
 I hope they're all okay...
-#speaker: #portrait:default
+
+{not savedCotton():
+    #speaker:
+    His back is hurting.
+    And he was worried about his friends.
+    #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
+    I should probably find a place to rest.
+    If I go to the higher levels I might find a vantage point to see if I can find them.
+    #speaker:
+    Decided the mouse ignores the sounds coming from bellow and climbs up the stairs.
+    #background:roomNight
+    After some time he manages to find a empty room, with sturfy walls...
+    And a intact roof to protect him from the rain.
+
+    ~changeScene("DialogueScene")
+    ->END
+}
+
+
+#speaker:
 Suddently a noise comming from the lower levels interrupts his thoughts.
 Some rumagging.
 He remembers the rabbit went that way.
