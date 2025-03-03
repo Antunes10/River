@@ -207,8 +207,14 @@ public class GameManager : MonoBehaviour
 	public void changeToEndDayScene()
 	{
 		AudioManager.Instance.StopAllSounds();
-		// -1 food at the end of every day
-		changeFood(-1);
+		// -1 food at the end of every day for each animal
+		int TotalAnimals = 1;
+		if (_gs.hasSparks) { TotalAnimals++; }
+		if (_gs.hasNimbus) { TotalAnimals++; }
+		if (_gs.hasOak) { TotalAnimals++; }
+		if (_gs.hasCotton) { TotalAnimals++; }
+
+		changeFood(-TotalAnimals);
 		_gs.day += 1;
 
 	if (_gs.currentFood <= 0 || _gs.currentHope <= 0)
