@@ -31,7 +31,7 @@ The lazy youngling dozes off.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 It seems the juvenile sleepiness is common for all species.
 #speaker:
-The mouse smiles entertained with his own remark.
+The mouse smiles, entertained with his own remark.
 #speaker: Nimbus #portrait:nimbus_default #layout:left:tails_default
 We should take the time to check the other half of the village. We might get lucky and find some food.
 #speaker: #layout:right:default
@@ -42,7 +42,7 @@ The road is a bit drier than yesterday.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default_m
 It is going to rain in a few hours.
 #speaker:
-The mouse looks up but the sky is all too cloudy to identify different levels of possible precipitation.
+The mouse looks up, but the sky is all too cloudy to identify different levels of possible precipitation.
 #speaker:Tails #portrait:tails_default
 How do you know?
 #speaker:Nimbus #portrait:nimbus_default
@@ -62,7 +62,7 @@ Humans are pretty good at destroying sturdy things.
 #speaker:
 The mouse saw the association and could not argue with its logic.
 Suddenly his hair gets bristly.
-His nose sniffs the coming scent and he get a bit apprehensive.
+His nose sniffs the coming scent and he gets a bit apprehensive.
 #speaker:Tails #portrait:tails_scared #layout:left:tails_scared #music:nimbus
 Dog…
 #speaker: #layout:middle:nimbus_scared
@@ -82,16 +82,16 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:
     Tails does not respond. He was now focused on finding this animal.
     He roams around, following the invisible line.
-    Goes over a downed fence and arrives at an open space with a well at its centre.
-    Next to it a brown dog sniffs the inside of a wooden bucket.
+    Goes over a downed fence and arrives at an open space with a well at its center.
+    Next to it, a brown dog sniffs the inside of a wooden bucket.
     It has a small tail, pointing down, while his head is obstructed from vision.
-    Suddenly the mouse feels himself being pulled from behind.
+    Suddenly, the mouse feels himself being pulled from behind.
     #speaker:Nimbus #portrait:nimbus_scared
-    Please Tails, let’s get out of here.
+    Please, Tails let’s get out of here.
     #speaker:
     His whispered voice is loaded with fear.
     #speaker:Nimbus #portrait:
-    He seems starved and I don’t have both wings to fly away from him, if he decides to chase us.
+    He seems starved, and I don’t have both wings to fly away from him, if he decides to chase us.
     
     ++[Heed his warning.]
         #speaker: 
@@ -103,7 +103,7 @@ He had seen mice teared to shreds by angry mongrels.
         #speaker:
         They both turn around.
         #layout:right:oak_default_noHat
-        And totally unprepared find the dog behind them.
+        And totally unprepared to find the dog behind them.
 
     ++[Go talk to the dog]
         #speaker:Tails #portrait:tails_default
@@ -113,7 +113,7 @@ He had seen mice teared to shreds by angry mongrels.
         #speaker:Tails #portrait:tails_default
         He probably is as afraid as we are.
         #speaker:
-        The mouse turns to face the well but the dog isn’t there anymore.
+        The mouse turns to face the well, but the dog isn’t there anymore.
         A scream breaches the silence.
         #layout:right:oak_default_noHat
         Nimbus' voice makes Tails turn around, only to find the huge dog right in front of them.
@@ -130,7 +130,7 @@ He had seen mice teared to shreds by angry mongrels.
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
-    Tails takes the initiative still shaking from the scare.
+    Tails takes the initiative, still shaking from the scare.
     #speaker:Tails #portrait:tails_scared
     We… we are just passing by…
     We are not looking for trouble, please let us go.
@@ -150,14 +150,14 @@ He had seen mice teared to shreds by angry mongrels.
     The two small animals look at each other without knowing how to react.
     The dog seems genuinely harmless.
     #speaker:Nimbus #portrait:nimbus_default
-    So… you.. you.. won’t do us any harm?
+    So… you... you... won’t do us any harm?
     #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
     Categorically, little bird.
     #speaker:
     With the mouse’s help, the woodpecker gets up on his feet.
     #speaker:Tails #portrait:tails_default
     I am Tails, and this is Nimbus.
-    Together with a small firefly we are trying to escape this calamity and find refuge to the West.
+    Together with a small firefly, we are trying to escape this calamity and find refuge to the West.
     We wandered into this village to spend the night.
     #speaker: #layout:right:oak_happy_noHat
     The dog smiles.
@@ -176,11 +176,11 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Nimbus #portrait:nimbus_default
     Forgive me. What are you doing here, Sir Oak?
     #speaker:Oak #portrait:oak_default_noHat #layout:right:oak_default_noHat
-    This is my village you see. Or was.
+    This is my village, you see. Or was.
     It was attacked by the other humans that came from the East.
     #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
     My owner advised me to run to the woods and wait for the "storm of fire" to pass.
-    And so, I did. Although he never came back to meet me.
+    And so, I did. Although, he never came back to meet me.
     #portrait:oak_default_noHat #layout:right:oak_default_noHat
     Consequently, I came back to him. I know by scent that he is still around.
     
@@ -208,7 +208,7 @@ He had seen mice teared to shreds by angry mongrels.
         
         #speaker:Tails #portrait:tails_default
         I hope you find your human friend...
-        But sadly we cannot linger.
+        But sadly, we cannot linger.
         #speaker: #layout:right:default
         The dog smiles with kindness and goes back to sniffing around.
         A little sadness invades Tails heart for not helping him out.
@@ -228,17 +228,17 @@ He had seen mice teared to shreds by angry mongrels.
 #speaker:
     Both friends go back to the shelter.
     #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_default_m
-	They arrive and the little bug is still lying down.
+	They arrive, and the little bug is still lying down.
 	#speaker:Tails #portrait:tails_default
-	Come one, Sparks is time to get on our way.
+	Come on, Sparks is time to get on our way.
 	#speaker: #layout:right:sparks_sad_m
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad
 	Fine, fine. I’m up and flying.
     #music:silence #enviroSound:villageBirds
 	#speaker: 
-	Suddenly the sound of birds fleeing is heard.
-    They all go outside curious and see a band of birds disappearing in the clouds.
+	Suddenly, the sound of birds fleeing is heard.
+    They all go outside, curious and see a band of birds disappearing in the clouds.
     #speaker:Nimbus #portrait:nimbus_default #music:nimbus
     Something is wrong, Tails. They flew from something.
     #speaker:Tails #portrait:tails_default
@@ -277,7 +277,7 @@ He had seen mice teared to shreds by angry mongrels.
 
 === if_2 ===
     #speaker:Tails #portrait:tails_default
-    With both our noses it should be faster.
+    With both our noses, it should be faster.
     #speaker:
     They agree and start looking for the man.
     Clouds start to gather.
@@ -293,7 +293,7 @@ He had seen mice teared to shreds by angry mongrels.
 #speaker:
 The dog approaches him and sniffs him, licking his face for a bit.
 He then sits silently, looking at the ephemerality of life.
-Th wind howls and rain starts to fall.
+The wind howls and rain starts to fall.
 The dog grabs the owner’s hat and places it on his.
 #speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
 I should have stayed, you old fool…
@@ -315,7 +315,7 @@ Silence reigns.
 Something is wrong, Tails. They flew from something.
 #speaker:
 The mouse looks around, worried.
-In that moment one of the dog’s ears rises up.
+At that moment one of the dog’s ears rises up.
 And his eyes widen up.
 #speaker:Oak #portrait:oak_scared #music:nimbus
 RUN!
@@ -323,14 +323,14 @@ Explosions!
 #speaker:
 Both animals don’t know how to react, so he grabs them by the mouth and tosses them over his back.
 He runs towards the river, barking to alert every animal in the vicinity.
-Nimbus almost falls off but they both manage to make the voyage unscathed.
+Nimbus almost falls off, but they both manage to make the voyage unscathed.
 #layout:right:sparks_default_m #layout:middle:oak_scared #layout:left:tails_scared
 The firefly arrives moments after.
 #speaker:Sparks #portrait:sparks_default
 Heya, friends, what’s going on, why are you running?
 #speaker:
 #enviroSound:villageExplosions
-The moment the question is asked a huge bang is heard nearby.
+The moment the question is asked, a huge bang is heard nearby.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
 AH!
 #speaker:

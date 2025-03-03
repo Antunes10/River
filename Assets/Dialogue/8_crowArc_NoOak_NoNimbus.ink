@@ -20,7 +20,7 @@ INCLUDE globals.ink
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The night went by and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
+The night went by, and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:left:tails_sad #layout:right:sparks_sad_m
 A scent of death hangs in the air.
@@ -53,7 +53,7 @@ Looking around with dark eyes.
     #speaker: #layout:right:sparks_sad_m
     Tails pushes the helmet forward and away from the dead tree.
     #speaker:Sparks  #portrait:sparks_sad
-    Are we going to run fromt he bad crow?
+    Are we going to run from the bad crow?
     #speaker:Tails #portrait:tails_sad
     Yes, I sense he's not to be trusted.
     #speaker: #background:swamp
@@ -64,9 +64,9 @@ Looking around with dark eyes.
     Just mud, drowned brushes, and a scent of death.
     #speaker:Sparks #portrait:sparks_sad
     I think we’ve been here.
-    Are we going in circles, Mr.Tails?
+    Are we going in circles, Mr. Tails?
     #speaker:Tails #portrait:sparks_sad
-    I don’t know, Sparks. With this heavy fog I can’t see much.
+    I don’t know, Sparks. With this heavy fog, I can’t see much.
     #speaker:
     The mouse looks around, but he can’t seem to find the right path.
     
@@ -76,7 +76,7 @@ Looking around with dark eyes.
     Tails pushes the helmet forward.
     The tree gets bigger and bigger. Becoming even more frightening.
     They stop right under it.
-    The crow looks down unsurprised.
+    The crow looks down, unsurprised.
     #speaker:Tails #portrait:tails_sad
     Hey there, friend!
     #speaker:
@@ -109,7 +109,7 @@ Looking around with dark eyes.
     #speaker:Sparks #portrait:sparks_sad #layout:middle:tails_default_m
     He’s going the other way…
     #speaker:
-    Sparks face lightens up with the new route.
+    Sparks' face lightens up with the new route.
     Some time passes as the bird keeps flying above them, within voice reach.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Is it much further?
@@ -155,16 +155,16 @@ Looking around with dark eyes.
     Hey! Mr. Crow! We are stuck.
     #speaker:
     But the flying guide is nowhere to be seen.
-    Suddenly the helmet starts to sink.
+    Suddenly, the helmet starts to sink.
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad_m
     This is not mud, this is oil!
     #speaker:
     They all scream.
-    Slowly the helmet starts to sink in the tar pit.
+    Slowly, the helmet starts to sink in the tar pit.
     #layout:left:default
-    Tails looks for Sparks but she's nowhere to be found.
+    Tails looks for Sparks, but she's nowhere to be found.
     #background:black #layout:middle:default 
-    They try to escape but are also swallowed by the artificial blackness.
+    They try to escape, but are also swallowed by the artificial blackness.
     The crow’s laugh is heard again...
     As they drown in agony and fear.
     A slow and asphyxiating death.
@@ -214,7 +214,7 @@ And again, the mist hasn’t disappeared.
 ->ChoicePanel
 
 === noFoodAndWaited ===
-As you return to the inside of the helmet you notice there's no more food left.
+As you return to the inside of the helmet, you notice there's no more food left.
 ->RiskIt
 
 === Wait ===
@@ -228,9 +228,9 @@ Are we going to stay here too long?
 #speaker:Tails #portrait:tails_default
 Just until the mist starts to disappear.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-It’s comfy inside. Mr.Oak keeps us all warm.
+It’s comfy inside. Mr. Oak keeps us all warm.
 #speaker: 
-The firefly smiles looking at the dog, that returns the smile.
+The firefly smiles, looking at the dog, that returns the smile.
 Time passes.
 Finally, tired of waiting, Tails peaks from under Oak’s hat.
 The mist hasn’t disappeared.
@@ -240,7 +240,7 @@ The mist hasn’t disappeared.
 #speaker: #layout:right:sparks_sad_m
 Tails has a feeling they will starve if they stay in this forsaken place.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
+We can’t risk waiting anymore. We have to venture forward, no matter the direction we take.
 #speaker:
 Apprehension is all around, but no other animal voices a better option.
 The mouse takes out his faithful stick and pushes the helmet forward.
@@ -252,7 +252,7 @@ Hours pass.
 And the only thing getting stronger is the smell of death.
 (Bump)
 The shell gets stuck.
-Tails perches on the helmet’s border to see what is holding it down and his eyes widen.
+Tails perches on the helmet’s border to see what is holding it down, and his eyes widen.
 A dead human blocks the way.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 Is everything alright?
@@ -261,9 +261,9 @@ Yeah, yeah…
 Don’t worry, you can stay there.
 #speaker:
 He does is best to avoid sharing the horror he is seeing.
-With some effort he frees the helmet and goes around the body.
+With some effort, he frees the helmet and goes around the body.
 The mist starts to dissipate and a terrifying image lays before the small mouse’s eyes.
-Tens of bodies sunken and swallowed by the marsh’s waters, float all around them.
+Tens of bodies, sunken and swallowed by the marsh’s waters, float all around them.
 Some bodies still red, others, maimed in ways inconceivable.
 His hands shake with the horror he was seeing.
 But he keeps going, occasionally closing his eyes to avoid the nightmares that already shook his life.

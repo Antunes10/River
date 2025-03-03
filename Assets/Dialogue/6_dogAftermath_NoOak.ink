@@ -20,12 +20,12 @@ INCLUDE globals.ink
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:nimbus_default_m #enviroSound:forest
 ~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
-The “boat” touches gently on the wet dirt, and they all disembark exhausted.
+The “boat” touches gently on the wet dirt, and they all disembark, exhausted.
 #speaker:Nimbus #portrait:nimbus_default
 That was intense.
-For a moment I though we wouldn’t make it.
+For a moment I thought we wouldn’t make it.
 #speaker:Sparks #portrait:sparks_default
-If not for you, Mr.Tails, we would’ve drowned.
+If not for you, Mr. Tails, we would’ve drowned.
 #layout:right:sparks_happy_m #portrait:sparks_happy
 You are the best!
 #speaker:Tails #portrait:tails_default
@@ -50,7 +50,7 @@ I’m starving too. Thank the heavens we still have some food left.
     It will do us no good to travel on an empty belly.
     #speaker: #layout:middle:nimbus_default_m #layout:right:sparks_default_m
     As the crunching sounds begin, a couple of smiles start to appear all around.
-    They had just avoided death and food was the fire they needed to keep hope from fading away.
+    They had just avoided death, and food was the fire they needed to keep hope from fading away.
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
@@ -68,7 +68,7 @@ I’m starving too. Thank the heavens we still have some food left.
 
 -
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default_m #layout:right:sparks_default_m
-His eyes look up and see the everchanging clouds. Totally unfazed by what was happening below.
+His eyes look up and see the ever-changing clouds. Totally unfazed by what was happening below.
 There was a certain serenity, a certain comfort those cotton seas inspired in him.
 #speaker:Tails #portrait:tails_default
 I bet no problem in the world ever reaches the blue skies.
@@ -93,7 +93,7 @@ And where that might be?
 West.
 There is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 #speaker:Sparks #portrait:sparks_default
-Yes the beautiful valley you talked about earlier!
+Yes, the beautiful valley you talked about earlier!
 #layout:right:sparks_happy_m #portrait:sparks_happy
 There must be hundreds of fireflies there. All shining together.
 #speaker:Nimbus #portrait:nimbus_default
@@ -121,7 +121,7 @@ We just have to keep pressing on.
 #speaker:
 Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
-Ay ay, Mr.Captain.
+Ay ay, Mr. Captain.
 #speaker:
 He then flies back to the helmet with renewed motivation.
 They all laugh.
@@ -130,7 +130,7 @@ I did not mean right now.
 #speaker:Nimbus #portrait:nimbus_default
 She is right, there sooner we get there the better!
 #speaker:
-In agreement the band goes back to the helmet and set sail to their assured horizon.
+In agreement, the band goes back to the helmet and set sail to their assured horizon.
 
 ~changeScene("RiverScene")
 ->END

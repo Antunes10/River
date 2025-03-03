@@ -20,10 +20,10 @@ INCLUDE globals.ink
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m
 ~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
-The “boat” touches gently on the wet dirt, and they all disembark exhausted.
+The “boat” touches gently on the wet dirt, and they all disembark, exhausted.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 That was scary.
-If not for you, Mr.Tails, we would’ve drowned.
+If not for you, Mr. Tails, we would’ve drowned.
 #portrait:sparks_happy #layout:right:sparks_happy_m
 You are the best!
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
@@ -33,7 +33,7 @@ Both fall onto the ground to recover their strength and breath.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 My wings hurt…
 My belly hurts…
-Can we eat something, Mr.Tails?
+Can we eat something, Mr. Tails?
 
 +[Eat together to recover your strength]
     ~changeFood(-nSaved)
@@ -46,7 +46,7 @@ Can we eat something, Mr.Tails?
     It will do us no good to travel on an empty belly.
     #speaker: #layout:right:sparks_happy_m
     The firefly gives him a huge smile and starts munching vigorously.
-    They had just avoided death and food was the fire they needed to keep hope from fading away.
+    They had just avoided death, and food was the fire they needed to keep hope from fading away.
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
@@ -64,7 +64,7 @@ Can we eat something, Mr.Tails?
 
 -
 #speaker: #layout:left:tails_default 
-His eyes look up and see the everchanging clouds. Totally unfazed by what was happening below.
+His eyes look up and see the ever-changing clouds. Totally unfazed by what was happening below.
 There was a certain serenity, a certain comfort those cotton seas inspired in him.
 #speaker:Tails #portrait:tails_default #layout:right:sparks_default_m
 I bet no problem in the world ever reaches the blue skies.
@@ -78,7 +78,7 @@ Only birds go there.
 #speaker:
 The wind breezes by.
 #speaker:Tails #portrait:tails_default
-When we reach the valley we might ask them, then.
+When we reach the valley, we might ask them, then.
 #speaker:
 The firefly looks at the mouse, with dreams in her eyes.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
@@ -87,7 +87,7 @@ Can you tell me about the valley? Pretty please?
 Tails breaks a smile.
 #speaker:Tails #portrait:tails_happy
 It’s a valley full of green. Where water flows in abundance and men are nowhere to be seen.
-A place were there is no fire or explosions. Where animals live in peace and happiness.
+A place where there is no fire or explosions. Where animals live in peace and happiness.
 #speaker:Sparks #portrait:sparks_happy
 There must be tens of fireflies there! All shining together.
 #speaker:Tails #portrait:tails_happy
@@ -97,9 +97,9 @@ Hundreds!?
 #speaker: #portrait:sparks_happy #layout:right:sparks_happy_m
 The firefly’s face lightens up alongside his behind.
 #speaker:Tails #portrait:tails_happy
-If we keep following the river we will get there, little one.
+If we keep following the river, we will get there, little one.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_happy_m
-Spaks: And do you think my mother will be there too?
+And do you think my mother will be there too?
 #speaker:Tails #portrait:tails_default #layout:right:sparks_default_m
 Of course, she will be waiting for you.
 #speaker: #layout:right:sparks_happy_m
@@ -125,7 +125,7 @@ I did not mean right now.
 Not time to waste, Mr. Captain.
 #speaker:
 The mouse is conquered by her enthusiasm.
-In agreement the pair goes back to the helmet and set sail to their assured horizon.
+In agreement, the pair goes back to the helmet and set sail to their assured horizon.
 
 ~changeScene("RiverScene")
 ->END

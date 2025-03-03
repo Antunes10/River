@@ -20,15 +20,15 @@ INCLUDE globals.ink
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:oak_default_m #enviroSound:forest
 ~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
-The “boat” touches gently on the wet dirt, and they all disembark exhausted.
+The “boat” touches gently on the wet dirt, and they all disembark, exhausted.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 Sparks: That was scary.
 #speaker:
 The dog pours out the water that is still inside his hat.
 #speaker:Oak #portrait:oak_default
-That was extraordinary Sir Tails. The way you steered us into safety.
+That was extraordinary, Sir Tails. The way you steered us into safety.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
-Yes, you are the best Mr.Tails!
+Yes, you are the best Mr. Tails!
 #speaker:Tails #portrait:tails_default
 We all did our part. I think we all deserve praise.
 #speaker:
@@ -36,7 +36,7 @@ All of them fall onto the ground to recover their strength and breath.
 #speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 My wings hurt…
 My belly hurts…
-Can we eat something, Mr.Tails?
+Can we eat something, Mr. Tails?
 
 +[Eat together to recover strength]
     ~changeFood(-nSaved)
@@ -50,7 +50,7 @@ Can we eat something, Mr.Tails?
     It will do us no good to travel on an empty belly.
     #speaker: 
     As the crunching sounds begin, a couple of smiles start to appear all around.
-    They had just avoided death and food was the fire they needed to keep hope from fading away.
+    They had just avoided death, and food was the fire they needed to keep hope from fading away.
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
@@ -68,7 +68,7 @@ Can we eat something, Mr.Tails?
     
 -
 #speaker: #layout:left:tails_default #layout:middle:oak_default_m #layout:right:sparks_default_m
-His eyes look up and see the everchanging clouds. Totally unfazed by what was happening below.
+His eyes look up and see the ever-changing clouds. Totally unfazed by what was happening below.
 There was a certain serenity, a certain comfort those cotton seas inspired in him.
 #speaker:Tails #portrait:tails_default
 I bet no problem in the world ever reaches the blue skies.
@@ -88,7 +88,7 @@ Well, I am fine just admiring it from down below.
 We also have enchanted lands here on the lowly ground.
 West of here there is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
-That’s the place Mr.Tails talked to us about!
+That’s the place Mr. Tails talked to us about!
 There must be tens of fireflies there. All shining together.
 #speaker:Oak #portrait:oak_default 
 Hundreds.
@@ -99,7 +99,7 @@ I know it because I have been there.
 #speaker:
 They both open their eyes wide with amazement.
 #speaker:Oak #portrait:oak_default
-My human took me there some of years ago.
+My human took me there some years ago.
 We ran through the woods, howled at the moon and slept under the starry night sky.
 It’s a wonderful place.
 #speaker: 
@@ -118,7 +118,7 @@ We just have to keep pressing on.
 #speaker: #layout:right:sparks_default_m
 Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_default
-Ay ay, Mr.Captain.
+Ay ay, Mr. Captain.
 #speaker:
 He then flies back to the helmet with renewed motivation.
 #layout:left:tails_happy #layout:middle:oak_happy_m #layout:right:sparks_happy_m
@@ -128,7 +128,7 @@ I did not mean right now.
 #speaker:Oak #portrait:oak_default
 I guess it is best to take advantage of her high spirits.
 #speaker:
-In agreement the band goes back to the helmet and set sail to their assured horizon.
+In agreement, the band goes back to the helmet and set sail to their assured horizon.
 
 ~changeScene("RiverScene")
 ->END

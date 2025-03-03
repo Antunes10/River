@@ -10,7 +10,7 @@ The night is about to fall.
 They reach the outskirts of a small destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
 #speaker:Tails #portrait:tails_default
-Perhaps its best if we stop here for the night.
+Perhaps it's best if we stop here for the night.
 #speaker: 
 The firefly doesn’t answer.
 #layout:left:tails_sad
@@ -34,7 +34,7 @@ Sparks is still in the shell.
     #speaker:Tails #portrait:tails_default
     I need you to go and check the village up ahead.
     To make sure it’s safe.
-    With your wings you should have a much better view than me.
+    With your wings, you should have a much better view than me.
     #speaker:Sparks #layout:right:sparks_default_m 
     O… Okay.
     #speaker: #layout:right:default
@@ -72,14 +72,14 @@ Sparks is still in the shell.
     The bug takes an exaggerated breath and then smiles jokingly.
     #speaker:Sparks #portrait:sparks_happy
     It’s empty!
-    No badies around.
+    No baddies around.
     #speaker: #layout:left:tails_happy
-    The good news are amplified by the fact that the bug seems a little less depressed.
+    The good news is amplified by the fact that the bug seems a little less depressed.
     Perhaps it was a good idea to give her a task.
     Soothed by the information, the animals go to the human settlement in search of a place to spend the night.
     #background:village
-    Now closer they see that most of the buildings are reduced to rubble, with the house they are eyeing, one of the few that can offer any kind of shelter.
-    Craters make the path uneven and what were once fences are now piles.
+    Now closer, they see that most of the buildings are reduced to rubble, with the house they are eyeing, one of the few that can offer any kind of shelter.
+    Craters make the path uneven, and what were once fences are now piles.
     #speaker:Tails #portrait:tails_default
     Why would they destroy so much?
     #speaker:
@@ -95,15 +95,15 @@ Sparks is still in the shell.
     #speaker:Sparks #layout:right:sparks_happy_m #portrait:sparks_happy
     Awesome! Our own little nest.
     #speaker:Tails #portrait:tails_default
-    It’s a bit dark though.
+    It’s a bit dark, though.
     #speaker:Sparks #portrait:sparks_happy
     I got it cover.
-    Lo and behold my shiny booty!
+    Lo and behold, my shiny booty!
     #background:villageHouse
     #speaker: #layout:left:tails_happy
     The firefly raises her butt and shines light inside the shelter.
     The mouse laughs with joy.
-    Inside they could share their heat and sleep more comfortably.
+    Inside, they could share their heat and sleep more comfortably.
 
 +[Go and check the village yourself.]
     #speaker:Tails #layout:left:tails_default #layout:right:sparks_sad_m #portrait:tails_default
@@ -114,20 +114,20 @@ Sparks is still in the shell.
     I am going to check the village ahead, to see if it’s safe.
     Can you stay here quiet, until I come back?
     #speaker:Sparks #portrait:sparks_sad
-    Yes, Mr.Tails…
+    Yes, Mr. Tails…
     #speaker:
     The mouse kisses her forehead and then runs towards the village.
     #background:village #layout:right:default #layout:left:default #layout:middle:tails_default
-    Now closer he sees that most of the buildings are reduce to rubble. With the house he was eyeing, one of the few that could offer any kind of shelter.
-    Craters make the path uneven and what were once fences are now piles.
+    Now closer, he sees that most of the buildings are reduced to rubble. With the house he was eyeing, one of the few that could offer any kind of shelter.
+    Craters make the path uneven, and what were once fences are now piles.
     However, the village seemed deserted.
     And deserted means, safe.
     He didn’t want to stay too much time away from the little bug, so he urged back.
     #background:villageFar #layout:left:tails_happy #layout:right:sparks_sad_m #layout:middle:default
     Sparks was still sitting quietly on the shell.
     #speaker:Tails #portrait:tails_default
-    Good news little one, the village is safe.
-    We can spend the night inside of the houses.
+    Good news, little one, the village is safe.
+    We can spend the night inside the houses.
     #speaker:Sparks #portrait:sparks_sad
     O… Okay.
     #speaker: #layout:left:tails_default
@@ -143,7 +143,7 @@ Sparks is still in the shell.
     Tails was able to build a small shelter of leaves and twigs.
     It took a bit of time without Spark’s help.
     Who could blame her?
-    She sat in a corner sniffing occasionally.
+    She sat in a corner, sniffing occasionally.
     #speaker:Tails #portrait:tails_default
     Hey little one, do you want to join me in this cozy shelter?
     #speaker: #layout:left:tails_default #layout:right:sparks_default_m #layout:middle:default
@@ -210,12 +210,12 @@ Or perhaps it was best if Tails spent some time with his companion.
     Right now, hope was more important than fighting hunger.
     Her mother always taught him the spirit was as much important as the body.
     And right now, his friend was suffering.
-    Tails looked around and found the firefly’s light hight above, on the parapet on an open window.
+    Tails looked around and found the firefly’s light high above, on the parapet on an open window.
     Nimbly he climbed onto it and sat next to Sparks.
     She was shining her light brightly into the night.
     #speaker:Sparks #layout:right:sparks_default_m #portrait:sparks_default
-    Hey Mr.Tails.
-    Do mouses like to stare at the dark too?
+    Hey Mr. Tails.
+    Do mice like to stare at the dark too?
     #speaker:Tails #portrait:tails_default
     Not usually...
     I don’t think most animals enjoy the dark.
@@ -245,7 +245,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     
     {killedNimbus():
         #speaker:Sparks #layout:right:sparks_sad_m #portrait:sparks_sad
-        Why did he had to die?
+        Why did he have to die?
         #speaker: #layout:left:tails_sad
         The words pierce the silence abruptly, leaving Tails apprehensive.
         He knows he must tackle this problem, or his friend might lose hope.
@@ -283,7 +283,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     The firefly takes the advice badly.
     She gets sad and moves away from the mouse.
     #speaker:Sparks #portrait:sparks_sad
-    I would like to be alone a bit, Mr.Tails…
+    I would like to be alone a bit, Mr. Tails…
     #speaker:
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
@@ -306,7 +306,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     You already saved me, so that’s one more than no one.
     #speaker: #layout:middle:default #layout:left:tails_default #layout:right:sparks_default_m
     They both share a smile.
-    Looking at the stary sky.
+    Looking at the starry sky.
 
 -
 #speaker:Tails #portrait:tails_default
@@ -320,7 +320,7 @@ You can shine it down there if you want.
 But that way my mother won’t be able to see it.
 #speaker:
 Tails understands now why she was there facing the open night.
-Why she was looking hopefully at the stary night.
+Why she was looking hopefully at the starry night.
 #speaker:Sparks #portrait:sparks_default
 Here in the night, she will be able to spot my light.
 She will find me, I know she will.
@@ -347,7 +347,7 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
     #speaker:Sparks #portrait:sparks_sad
     But we couldn’t save him…
     We are too weak to save anybody…
-    I would like to be alone a bit, Mr.Tails…
+    I would like to be alone a bit, Mr. Tails…
     #speaker:
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
@@ -388,7 +388,7 @@ You can shine it down there if you want.
 But that way my mother won’t be able to see it.
 #speaker:
 Tails understands now why she was there facing the open night.
-Why she was looking hopefully at the stary night.
+Why she was looking hopefully at the starry night.
 #speaker:Sparks #portrait:sparks_default
 Here in the night, she will be able to spot my light.
 She will find me; I know she will.

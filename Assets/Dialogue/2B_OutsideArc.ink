@@ -49,17 +49,17 @@ We fireflies always manage to find each other!
 #speaker:
 Her hope is unwavering.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-Well in that case we will keep on traveling together.
+Well, in that case we will keep on traveling together.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
 Yay!
 #speaker:
 Tails smiles happily.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-The sun is going down so its better if we find a place to sleep.
+The sun is going down, so it's better if we find a place to sleep.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
 Are we going to sleep in the forest!
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
-Yes I suppose we can... we just have to find a safe place.
+Yes, I suppose we can... we just have to find a safe place.
 Let's keep on the river a bit more until we find a good spot.
 #speaker:
 The firefly draws a big smile.

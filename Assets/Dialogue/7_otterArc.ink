@@ -7,14 +7,14 @@ INCLUDE globals.ink
 #speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
 ~unlockImage(7)
 ~unlockImage(1)
-Hours pass and they reach a wider body of water, surrounded by gravel and bushes.
+Hours pass, and they reach a wider body of water, surrounded by gravel and bushes.
 Trees block the skies again, as the river slithers inside another forest.
 The wind doesn't howl, since the trees block it from entering that green place.
 The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Nimbus #portrait:nimbus_default
 I think we have a problem.
 #speaker:
-As they get closer to the centre of the lake, the bird points towards a dam of debris, that blocks the river’s natural flow.
+As they get closer to the center of the lake, the bird points towards a dam of debris, that blocks the river’s natural flow.
 #speaker:Sparks #portrait:sparks_default
 So that’s why there are trees inside the water.
 #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
@@ -31,9 +31,9 @@ It’s huge!
 What are we going to do?
 #speaker:Tails #portrait:tails_default
 We could carry on foot…
-Or we could try to create a small breach so the helmet could fit.
+Or we could try to create a small breach, so the helmet could fit.
 #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
-It’s going to take ages just us four. Perhaps the helmet served its purpose.
+It’s going to take ages, just us four. Perhaps the helmet served its purpose.
 #speaker:Sparks #portrait:sparks_default
 Oh, but I liked it.
 #speaker:
@@ -68,7 +68,7 @@ They had to decide.
     The ground starts to become uneven, and an unnatural silence takes control.
     #speaker:Oak #portrait:oak_scared #layout:left:oak_scared
     I don’t like this… I smell humans.
-    Perhaps its better if we go back.
+    Perhaps it's better if we go back.
     #speaker: #layout:middle:tails_scared #layout:right:nimbus_scared_m
     They all look around nervously.
     #speaker:Tails #portrait:tails_scared
@@ -79,7 +79,7 @@ They had to decide.
     #speaker:Nimbus #portrait:nimbus_default
     Traps?
     #speaker:
-    Their eyes wander around the ground and they noticed that the soil has been tampered with.
+    Their eyes wander around the ground, and they noticed that the soil has been tampered with.
     Their hearts began to race.
     #speaker:Oak #portrait:oak_sad #layout:left:oak_sad
     This is bad… We should not have taken this path.
@@ -94,7 +94,7 @@ They had to decide.
 
 +[Try to breach the dam]
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    Out there its dangerous and we go faster by water.
+    Out there it's dangerous and we go faster by water.
     Let’s try to find a way through.
     #speaker:Nimbus #portrait:nimbus_default
     What if we don’t find it?
@@ -107,8 +107,8 @@ They had to decide.
     Oak stays in the water, checking near the bottom.
     Nimbus jumps towards the top and is accompanied by Sparks that zigzags her way through the air.
     Lastly, Tails squirms through a breach and enters inside the dam to look for a way through.
-    As a team they work efficiently.
-    However there seems to be no way through.
+    As a team, they work efficiently.
+    However, there seems to be no way through.
     Tails goes back outside.
     #speaker: Tails #portrait:tails_default
     Did you find anything, Nimbus?
@@ -119,17 +119,17 @@ They had to decide.
     #speaker: #layout:middle:tails_happy
     The mouse smiles with the childish remark and turns to the brown fur down in the water.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
-    And you Sir Oak?
+    And you, Sir Oak?
     #music:hazel
     #speaker:??? #portrait:hazel_default #layout:left:hazel_default
-    Well, hello to you to, but my name is not Sir Oak.
+    Well, hello to you too, but my name is not Sir Oak.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy
     I’m Hazel.
     #speaker:
     The mouse has to look twice to understand his mistake.
     The brown mass down there is not his dog friend, but rather a long and sharp Otter that swims around happily.
     #speaker:Sparks #portrait:sparks_scared #layout:sparks:sparks_scared_m
-    Oh, my light! She ate Mr.Oak!
+    Oh, my light! She ate Mr. Oak!
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
     Well… oaks are quite tasteful.
     #speaker: 
@@ -148,7 +148,7 @@ They had to decide.
     As destined, the fourth companion emerges from underwater, shaking away the excessive water that now drips heavily from his hat and fur.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Look who I was fortunate to find.
-    Otters are masters of dams. If anybody can help us it's her.
+    Otters are masters of dams. If anybody can help us, it's her.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy
     Actually… those are beavers…
     #portrait:hazel_default #layout:left:hazel_default
@@ -176,7 +176,7 @@ They had to decide.
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad_m
     I can only image what you have seen.
     #speaker:
-    The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
+    The destruction, death and suffering from a destroyed village crosses Tails’ mind, and he remembers what horrible things the river had to carry down West.
     The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_default
     Fear not. This otter is going to find a structural weakness and breach the damn thing.
@@ -190,28 +190,28 @@ They had to decide.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     Indeed, we were lucky to find her.
     #speaker:
-    A couple of minutes pass and they hear a crumbling sound from the far left extremity of the dam.
-    Debris crumble and a pathway is created, where the water starts flowing faster.
+    A couple of minutes pass, and they hear a crumbling sound from the far left extremity of the dam.
+    Debris crumble, and a pathway is created, where the water starts flowing faster.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy
     Ta dah!
     #speaker:
-    The otter emerges hands raised as if magic was used.
+    The otter emerges, hands raised as if magic was used.
     #speaker:Sparks #portrait:sparks_happy #layout:middle:tails_default_m
     Hurray Miss Hazel, you’re the best!
     #speaker:
     They all jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
     #background:river
-    The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
+    The water runs slowly but steadily. Their progress would be slower, but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
     There you go, free flow to the West you go.
     #speaker:Sparks #portrait:sparks_default
-    We can’t thank you enough Miss Hazel.
+    We can’t thank you enough, Miss Hazel.
     #speaker:
-    She makes a small bow and then raises her nose remembering something.
+    She makes a small bow and then raises her nose, remembering something.
     #speaker:Hazel #portrait:hazel_sad #layout:left:hazel_sad
     Actually, if you’ll be so kind to give me a little food.
-    It has been hard to find fish the last couple of days and I’m starving.
+    It has been hard to find fish the last couple of days, and I’m starving.
     #speaker:
     Tails looks inside the helmet to the little food they have left.
     
@@ -243,11 +243,11 @@ They had to decide.
         #speaker: #layout:left:hazel_sad
         The otter’s face saddens, but she hurries to hide it.
         #layout:left:hazel_default #speaker:Hazel #portrait:hazel_default
-        It’s alright my friends. I can still hold on a couple of days.
+        It’s alright, my friends. I can still hold on a couple of days.
         I’m sure I’ll find food until then.
         #speaker:
-        She smiled but Tails could fell a lack of faith in her own words.
-        Then he though about something that could mend the situation.
+        She smiled, but Tails could fell a lack of faith in her own words.
+        Then he thought about something that could mend the situation.
 
     --
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
@@ -256,10 +256,10 @@ They had to decide.
     The otter looks West and then back at the lake.
     #speaker:Hazel #portrait:hazel_default #layout:left:hazel_default
     I would love to, little mouse, but…
-    Tomorrow others might need my help traversing the river.
+    Tomorrow, others might need my help traversing the river.
     I must stay and do my part.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
-    Honourable and caring. May you receive as half as you give, Miss Hazel.
+    Honorable and caring. May you receive as half as you give, Miss Hazel.
     #speaker:
     They all wave their paws and wings and go their separate ways.
     The group was now closer to reaching their western destination.

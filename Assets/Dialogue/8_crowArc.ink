@@ -21,7 +21,7 @@ INCLUDE globals.ink
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The night went by and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
+The night went by, and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:middle:tails_sad #layout:sparks:sparks_sad_m #layout:left:oak_scared #layout:right:nimbus_default_m
 A scent of death hangs in the air.
@@ -94,7 +94,7 @@ Looking around with dark eyes.
     Tails pushes the helmet forward.
     The tree gets bigger and bigger. Becoming even more frightening.
     They stop right under it.
-    The crow looks down unsurprised.
+    The crow looks down, unsurprised.
     #speaker:Tails #portrait:tails_sad
     Hey there, friend!
     #speaker:
@@ -167,7 +167,7 @@ Looking around with dark eyes.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     What do you mean?
     #speaker:Oak #portrait:oak_scared
-    I mean we better turn back…
+    I mean, we better turn back…
     #speaker:Nimbus #portrait:nimbus_default
     Nonsense, he flies, he can see the way better than us.
     And he said this is his swamp, so he must know it well.
@@ -183,18 +183,18 @@ Looking around with dark eyes.
     Hey! Crow! We are stuck.
     #speaker:
     But the flying guide is nowhere to be seen.
-    Suddenly the helmet starts to sink.
+    Suddenly, the helmet starts to sink.
     #speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
     This is not mud, this is oil!
     #layout:left:oak_scared #layout:right:nimbus_sad_m #speaker:
     They all scream.
-    Slowly the helmet starts to sink in the tar pit.
+    Slowly, the helmet starts to sink in the tar pit.
     #layout:left:default
     Oak tries to jump out of the helmet, but the oil gets to him.
     #layout:right:default
-    Nimbus opens his wings but he can't fly away.
+    Nimbus opens his wings, but he can't fly away.
     #background:black #layout:middle:default #layout:sparks:default
-    They try to escape but are also swallowed by the artificial blackness.
+    They try to escape, but are also swallowed by the artificial blackness.
     The crow’s laugh is heard again...
     As they drown in agony and fear.
     A slow and asphyxiating death.
@@ -249,7 +249,7 @@ And again, the mist hasn’t disappeared.
 
 === noFoodAndWaited ===
 #speaker:
-As you return to the inside of the helmet you notice there's no more food left.
+As you return to the inside of the helmet, you notice there's no more food left.
 ->RiskIt
 
 === Wait ===
@@ -263,9 +263,9 @@ Are we going to stay here too long?
 #speaker:Tails #portrait:tails_default
 Just until the mist starts to disappear.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m
-It’s comfy inside. Mr.Oak keeps us all warm.
+It’s comfy inside. Mr. Oak keeps us all warm.
 #speaker:
-The firefly smiles looking at the dog, that returns the smile.
+The firefly smiles, looking at the dog, that returns the smile.
 Time passes.
 Finally, tired of waiting, Tails peaks from under Oak’s hat.
 The mist hasn’t disappeared.
@@ -276,7 +276,7 @@ The mist hasn’t disappeared.
 #speaker: 
 Tails has a feeling they will starve if they stay in this forsaken place.
 #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
-We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
+We can’t risk waiting anymore. We have to venture forward, no matter the direction we take.
 #speaker:
 Apprehension is all around, but no other animal voices a better option.
 The mouse takes out his faithful stick and pushes the helmet forward.
@@ -288,7 +288,7 @@ Hours pass.
 And the only thing getting stronger is the smell of death.
 (Bump)
 The shell gets stuck.
-Tails perches on the helmet’s border to see what is holding it down and his eyes widen.
+Tails perches on the helmet’s border to see what is holding it down, and his eyes widen.
 A dead human blocks the way.
 #speaker:Nimbus #portrait:nimbus_sad #layout:right:nimbus_sad_m
 Is everything alright?
@@ -297,9 +297,9 @@ Yeah, yeah…
 Don’t worry, you can stay there.
 #speaker:
 He does is best to avoid sharing the horror he is seeing.
-With some effort he frees the helmet and goes around the body.
+With some effort, he frees the helmet and goes around the body.
 The mist start to dissipate and a terrifying image lays before the small mouse’s eyes.
-Tens of bodies sunken and swallowed by the marsh’s waters, float all around them.
+Tens of bodies, sunken and swallowed by the marsh’s waters, float all around them.
 Some bodies still red, others, maimed in ways inconceivable.
 His hands shake with the horror he was seeing.
 But he keeps going, occasionally closing his eyes to avoid the nightmares that already shook his life.
@@ -313,7 +313,7 @@ What in the…
 #speaker:
 A huge building appears from inside the mist.
 Bigger than any tree they had seen.
-It has huge scarns on his body, with half its structure already collapsed.
+It has huge scars on his body, with half its structure already collapsed.
 And another building follows behind.
 And another, and another…
 #speaker:Oak #portrait:oak_scared #layout:left:oak_scared

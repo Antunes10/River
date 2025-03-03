@@ -13,7 +13,7 @@ The water stops almost completely when the helmet enters an involuntary lake.
 #speaker:Tails #portrait:tails_default
 I think we have a problem.
 #speaker:
-As they get closer to the centre of the lake, the mouse points towards a dam of debris, that blocks the river’s natural flow.
+As they get closer to the center of the lake, the mouse points towards a dam of debris, that blocks the river’s natural flow.
 #speaker:Sparks #portrait:sparks_default
 So that’s why there are trees inside the water.
 #portrait:sparks_sad #layout:right:sparks_sad_m
@@ -30,7 +30,7 @@ It’s huge!
 What are we going to do?
 #speaker:Tails #portrait:tails_default
 We could carry on foot…
-Or we could try to create a small breach so the helmet could fit.
+Or we could try to create a small breach, so the helmet could fit.
 But honestly, it seems an impossible task for us both.
 #speaker:Sparks #portrait:sparks_default
 Oh, but I like our shell.
@@ -70,7 +70,7 @@ They had to decide.
     #speaker:Tails #portrait:tails_sad
     Stay close to me, Sparks.
     #speaker:
-    Their eyes wander around the ground and they noticed that the soil has been tampered with.
+    Their eyes wander around the ground, and they noticed that the soil has been tampered with.
     Their hearts begin to race.
     #speaker:Tails #portrait:tails_sad
     What the hell did they leave behind?
@@ -83,7 +83,7 @@ They had to decide.
 
 + [Try to breach the dam]
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
-    Out there its dangerous and we go faster by water.
+    Out there it's dangerous and we go faster by water.
     Let’s try to find a way through.
     #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
     That means we can keep the green shell?
@@ -95,14 +95,14 @@ They had to decide.
     Spreading out, the animals start to evaluate the blockage.
     Sparks zigzags her way through the air, to have a better look from above.
     While Tails squirms through a breach and enters inside the dam to look for a way through.
-    As a team they work efficiently.
-    However there seems to be no way through.
+    As a team, they work efficiently.
+    However, there seems to be no way through.
     Tails goes back outside.
     #speaker: Tails #portrait:tails_default 
     Did you find anything, Sparks?
     #speaker:Sparks #portrait:sparks_default
     No. It’s very big and branchy.
-    Can’t we try drag it around, through the ground?
+    Can’t we try to drag it around, through the ground?
     #speaker:Tails #portrait:tails_default
     I’m afraid we’re too small for that task.
     #speaker:
@@ -116,15 +116,15 @@ They had to decide.
     Sparks gets immediately behind is friend as the shape pops out of the water.
     #music:hazel
     #speaker:??? #portrait:hazel_default #layout:right:hazel_default_m
-    Otter: Well, hello to you, little ones.
+    Well, hello to you, little ones.
     #speaker: #layout:middle:tails_default #layout:left:sparks_default
-    The mouse loses his stiffness has soon as the long and sharp Otter emerges and greets them.
+    The mouse loses his stiffness as soon as the long and sharp Otter emerges and greets them.
     #speaker:Sparks #portrait:sparks_scared #layout:left:sparks_scared
     Oh, my light! It’s a cat!
     #speaker: #layout:right:hazel_happy_m
     The mammal hides her laugher.
     #speaker:??? #portrait:hazel_happy
-    Otter: I’m no cat, little one, cats are afraid of water.
+    I’m no cat, little one, cats are afraid of water.
     #speaker: 
     The bug peaks her head from behind Tails, transforming her fear into curiosity.
     #speaker:left:sparks_default
@@ -133,9 +133,9 @@ They had to decide.
     I’m an Otter, and my name is Hazel!
     #speaker:Sparks #portrait:sparks_default
     Oh…
-    My name is Sparks, and this is my friend Tails.
+    My name is Sparks, and this is my friend, Tails.
     #speaker:Hazel #portrait:hazel_default
-    Pleasure to meet you both, fellow river travellers.
+    Pleasure to meet you both, fellow river travelers.
     What brings you here?
     #speaker:
     The mouse descends a few steps until he’s at the water's level.
@@ -159,7 +159,7 @@ They had to decide.
     #speaker:Tails #portrait:tails_default
     I can only image what you have seen.
     #speaker:
-    The destruction, death and suffering of a destroyed village crosses Tails’ mind and he remembers what horrible things the river had to carry down West.
+    The destruction, death and suffering from a destroyed village crosses Tails’ mind, and he remembers what horrible things the river had to carry down West.
     The otter washes her hands vigorously.
     #speaker:Hazel #portrait:hazel_default 
     Fear not. This otter is going to find a structural weakness and breach the damn thing.
@@ -172,28 +172,28 @@ They had to decide.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     Indeed, we were lucky to find her.
     #speaker:
-    A couple of minutes pass and they hear a crumbling sound from the far-left extremity of the dam.
-    Debris crumble and a pathway is created, where the water starts flowing faster.
+    A couple of minutes pass, and they hear a crumbling sound from the far-left extremity of the dam.
+    Debris crumble, and a pathway is created, where the water starts flowing faster.
     #speaker:Hazel #layout:middle:tails_happy #layout:left:sparks_happy #layout:right:hazel_happy_m #portrait:hazel_happy
     Ta dah!
     #speaker:
-    The otter emerges hands raised as if magic was used.
+    The otter emerges, hands raised as if magic was used.
     #speaker:Sparks #portrait:sparks_happy
     Hurray Miss Hazel, you’re the best!
     #speaker: #layout:left:sparks_default #layout:middle:tails_default #layout:right:hazel_default_m
     They both jump aboard the "shell" and with the otter’s help they traverse the dam into the other side.
     #background:river
-    The water runs slowly but steadily. Their progress would be slower but at least they were no longer stranded.
+    The water runs slowly but steadily. Their progress would be slower, but at least they were no longer stranded.
     The swimmer emerges.
     #speaker:Hazel #portrait:hazel_default
     There you go, free flow to the West you go.
     #speaker:Tails #portrait:tails_default
-    We can’t thank you enough Miss Hazel.
+    We can’t thank you enough, Miss Hazel.
     #speaker:
-    She makes a small bow and then raises her nose remembering something.
+    She makes a small bow and then raises her nose, remembering something.
     #speaker:Hazel #portrait:hazel_sad #layout:right:hazel_sad_m
     Actually, if you’ll be so kind to give me a little food.
-    It has been hard to find fish the last couple of days and I’m starving.
+    It has been hard to find fish the last couple of days, and I’m starving.
     #speaker: 
     Tails Looks inside the helmet to the little food they have left.
     
@@ -208,8 +208,8 @@ They had to decide.
         #speaker:
         The otter receives the rations with a smile on her face.
         #speaker:Hazel #portrait:hazel_happy #layout:right:hazel_happy_m
-        Otter: You are most kind.
-        Otter: It has been difficult lately.
+        You are most kind.
+        It has been difficult lately.
         #speaker:Tails #portrait:tails_default #layout:right:hazel_default_m
         We understand. We all have lost something.
         The little we can do is share the burden with each other.
@@ -224,10 +224,10 @@ They had to decide.
         #layout:right:hazel_sad_m
         The otter’s face saddens, but she hurries to hide it.
         #speaker: #layout:right:hazel_default_m #portrait:hazel_default
-        It’s alright my friends. I can still hold on a couple of days.
+        It’s alright, my friends. I can still hold on a couple of days.
         I’m sure I’ll find food until then.
         #speaker:
-        She smiled but Tails could fell a lack of faith in her own words.
+        She smiled, but Tails could fell a lack of faith in her own words.
         Then he thought about something that could mend the situation.
     
     --
@@ -236,11 +236,11 @@ They had to decide.
     #speaker:
     The otter looks West and then back at the lake.
     #speaker:Hazel #portrait:hazel_default #layout:right:hazel_default_m
-    Otter: I would love to, little mouse, but…
-    Otter: Tomorrow others might need my help traversing the river.
-    Otter: I must stay and do my part.
+    I would love to, little mouse, but…
+    Tomorrow others might need my help traversing the river.
+    I must stay and do my part.
     #speaker:Sparks #portrait:sparks_default 
-    Your really kind Miss Hazel!
+    You're really kind, Miss Hazel!
     I hope you can help those who need it.
     #speaker:
     They all wave their paws and legs and go their separate ways.

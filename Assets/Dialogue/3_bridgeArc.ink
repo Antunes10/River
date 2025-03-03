@@ -14,7 +14,7 @@ Silence is now the primary sound.
 #speaker:Tails #portrait:tails_scared #layout:left:tails_scared
 Something is wrong, stay close Sparks.
 #speaker:
-The firefly nodds silently.
+The firefly nods silently.
 A chirp pierces the emptiness.
 A desperate chirp. Clearly screaming of hopelessness.
 #layout:middle:nimbus_sad_hurt_m #music:nimbus
@@ -31,7 +31,7 @@ Trapped, it's trying to free itself, but each movement makes the claws pierce hi
     #speaker:Bird #portrait:nimbus_scared #layout:middle:nimbus_scared_hurt_m
     Help me please! I can’t get out! I’ve been trying for hours.
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
-    Don’t worry, we're going to help you. Just stay still or you’re going to hurt yourself even more.
+    Don’t worry, we're going to help you. Just stay still, or you’re going to hurt yourself even more.
     #speaker:
     Blood is already running down one of his wings.
     
@@ -154,7 +154,7 @@ Stop it! Are you crazy! It hurts!
 
     #speaker:
     Tails ignores the bird’s cries.
-    With determination he starts cutting again.
+    With determination, he starts cutting again.
     Everything shakes.
     #layout:right:sparks_scared_m
     The bird starts to cry again for him to stop.
@@ -172,7 +172,7 @@ Stop it! Are you crazy! It hurts!
     #speaker:Tails #portrait:tails_sad #layout:right:sparks_sad_m #music:silence
     Let's go Sparks... we must... continue...
     #speaker:
-    In silence they return to the water, leaving behind a bloody corpse.
+    In silence, they return to the water, leaving behind a bloody corpse.
 
     He should have stopped cutting...
     ~changeScene("RiverScene")
@@ -211,7 +211,7 @@ There's no place for naivety if they want to reach the West.
 
 === UseBranches ===
 #speaker:
-If they want to free the bird they need to protect him from the metal razors.
+If they want to free the bird, they need to protect him from the metal razors.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
 Sparks, help me find some branches.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
@@ -223,10 +223,10 @@ A couple of minutes later, they return with half a dozen dry branches.
 Hold still, friend.
 #speaker:
 The bird looks apprehensive as the mouse places several branches between him and the "wired fangs" that encircled him.
-Finally, when Tails feels it's safe he places his hands on one of the wires and starts to untangle the bird.
+Finally, when Tails feels it's safe, he places his hands on one of the wires and starts to untangle the bird.
 The wires move, but don't cut the bird.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
-That’s it! You’re doing it, Mr.Tails!
+That’s it! You’re doing it, Mr. Tails!
 #speaker: #layout:left:tails_scared #layout:middle:nimbus_scared_hurt_m #layout:right:sparks_scared_m #enviroSound:bridge #background:bridgeTanks
 The joyous words are suddenly stuffed by a huge metal roar from above the bridge.
 #speaker:Bird #portrait:nimbus_scared
@@ -263,26 +263,26 @@ Time is running out.
 Tails keeps on with his task of removing the wires.
 If the bird is to die here, he won't die alone.
 #layout:middle:nimbus_sad_m
-Finally, the last wire is removed and the bird manages to escape the trap.
-He tries to fly away immediatly, but falls miserably on the ground.
+Finally, the last wire is removed, and the bird manages to escape the trap.
+He tries to fly away immediately, but falls miserably on the ground.
 His right wing is bleeding heavily, and it seems displaced.
 #speaker:Bird #portrait:nimbus_sad 
 Darned, I can’t move my right wing!
 #speaker:
 A huge rock falls right next to the mouse, making him jump with the scare.
 #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
-Hurry Mr.Tails, the bridge is about to fall!
+Hurry Mr. Tails, the bridge is about to fall!
 #speaker:
 The mouse looks towards the struggling bird and runs to him, grabbing his left wing.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
 Come on, we can take you inside our "shell".
 #speaker:
-The bird initially argues in pain but then accepts the help.
+The bird initially argues in pain, but then accepts the help.
 They drag each other slowly towards the helmet.
 Falling debris are now big enough to kill them on impact.
-The bird is lunged inside and the mouse jumps behind, pushing the helmet into the river, with his stick.
+The bird is lunged inside, and the mouse jumps behind, pushing the helmet into the river, with his stick.
 #enviroSound:silence #enviroSound:bridgeFalling #music:silence
-In an instant the bridge collapses.
+In an instant, the bridge collapses.
 And the shockwave sends the helmet flying with the strength of the tide.
 The dust settles.
 All three are safe.
@@ -306,16 +306,16 @@ I can’t thank you enough for saving me.
 #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m
 You don’t have to! That’s what friends do.
 #speaker:
-The bird smiles but then he looks at his wing and his face darkens.
+The bird smiles, but then he looks at his wing and his face darkens.
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
-Now its not the time for you to worry about it.
+Now it's not the time for you to worry about it.
 I will patch it up in a bit, but our focus should be on getting away from this place.
 #speaker:Nimbus #portrait:nimbus_default
 Where are you going?
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
 West, towards the enchanted land.
 #speaker:Nimbus #portrait:nimbus_default 
-Guess I’ll accompany you..
+Guess I’ll accompany you...
 For now…
 #speaker:
 Tails understands his reservation.

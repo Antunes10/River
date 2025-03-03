@@ -21,17 +21,17 @@ INCLUDE globals.ink
 ~unlockImage(12)
 ~unlockImage(0)
 The waters of the river slow down as the rain goes away, allowing a brighter day rips slightly through the clouds.
-The “boat” touches gently on the wet dirt, and they all disembark exhausted.
+The “boat” touches gently on the wet dirt, and they all disembark, exhausted.
 #speaker:Nimbus #portrait:nimbus_default
 That was intense.
 #portrait:nimbus_sad #layout:right:nimbus_sad_m
-For a moment I though we wouldn’t make it.
+For a moment I thought we wouldn’t make it.
 #layout:right:nimbus_sad_m
 The dog pours out the water that is still inside his hat.
 #speaker:Oak #portrait:oak_happy #layout:left:oak_happy
-That was extraordinary Sir Tails. The way you steered us into safety.
+That was extraordinary, Sir Tails. The way you steered us into safety.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_happy_m
-Yes, you are the best Mr.Tails!
+Yes, you are the best Mr. Tails!
 #speaker:Tails #portrait:tails_default #layout:middle:tails_default
 We all did our part. I think we all deserve praise.
 #speaker: 
@@ -72,7 +72,7 @@ I’m starving too. Thank the heavens we still have some food left.
 
 -
 #speaker: #layout:left:oak_default #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
-His eyes look up and see the everchanging clouds. Totally unfazed by what was happening below.
+His eyes look up and see the ever-changing clouds. Totally unfazed by what was happening below.
 There was a certain serenity, a certain comfort those cotton seas inspired in him.
 #speaker:Tails #portrait:tails_default #layout:middle:tails_default
 I bet no problem in the world ever reaches the blue skies.
@@ -98,7 +98,7 @@ And where that might be?
 West.
 There is a valley full of green. Where water flows in abundance and men are nowhere to be seen.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
-That’s the place Mr.Tails talked to us about!
+That’s the place Mr. Tails talked to us about!
 There must be hundreds of fireflies there. All shining together.
 #speaker:Nimbus #portrait:nimbus_default
 It seems too good to be true.
@@ -127,7 +127,7 @@ We just have to keep pressing on.
 #speaker:
 Sparks straightens himself and makes a salutation.
 #speaker:Sparks #portrait:sparks_happy
-Ay ay, Mr.Captain.
+Ay ay, Mr. Captain.
 #speaker:
 She then flies back to the helmet with renewed motivation.
 #layout:left:oak_happy #layout:middle:tails_happy_m #layout:right:nimbus_happy_m
@@ -137,7 +137,7 @@ I did not mean right now.
 #speaker:Oak #portrait:oak_happy 
 I guess it is best to take advantage of her high spirits.
 #speaker:
-In agreement the band goes back to the helmet and set sail to their assured horizon.
+In agreement, the band goes back to the helmet and set sail to their assured horizon.
 
 ~changeScene("RiverScene")
 

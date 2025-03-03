@@ -10,7 +10,7 @@ The night is about to fall.
 They reach the outskirts of a small, destroyed village, illuminated by the shimmering pale light of the sunset.
 They have been travelling for hours.
 #speaker:Tails #portrait:tails_default
-Perhaps its best if we stop here for the night.
+Perhaps it's best if we stop here for the night.
 #speaker:Nimbus #portrait:nimbus_default
 Why don’t we keep going? The river is making all the work.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
@@ -21,7 +21,7 @@ Besides, we don’t know what dangers might lurk in the dark of night.
 They agree with the plan, docking the helmet near the river’s shoreline, next to a large log.
 Their paws and feet touch the murky sands and start walking in the direction of the village.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle:nimbus_happy
-Perhaps its best if I scout ahead, my wing should be healed now.
+Perhaps it's best if I scout ahead, my wing should be healed now.
 #speaker:
 The bird flaps his wings and lunges upwards.
 #speaker:Nimbus #portrait:nimbus_scared #layout:middle:nimbus_scared
@@ -34,7 +34,7 @@ My wing!
 The other two rush to his side.
 His wing still seems badly hurt.
 #speaker:Sparks #portrait:sparks_default #layout:right:sparks_default_m
-Don’t worry Mr.Nimbus, I can go take a look!
+Don’t worry Mr. Nimbus, I can go take a look!
 You should rest your beautiful wings.
 #speaker: #layout:right:default
 She takes off buzzing through the air, disappearing in the night.
@@ -66,7 +66,7 @@ That the wing’s damage is irreversible.
     #speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad
     No… no…
     #speaker:
-    His initially hard demeanour starts crumbling and tears start to fall.
+    His initially hard demeanor starts crumbling and tears start to fall.
     The mouse places his little paw on the bird’s head.
     The darkness of night falls even stronger.
     Perhaps because it was time.
@@ -80,7 +80,7 @@ That the wing’s damage is irreversible.
     I know you want to be helpful.
     But that wing won’t fix itself if you don’t let it rest.
     #speaker: #layout:middle:nimbus_sad
-    The bird exhales unsatisfied with the situation.
+    The bird exhales, unsatisfied with the situation.
     #speaker:Nimbus #portrait:nimbus_sad
     You’re right.
     #portrait:nimbus_default #layout:middle:nimbus_default
@@ -102,7 +102,7 @@ That the wing’s damage is irreversible.
     #speaker:
     He then regains his determination.
     #speaker:Nimbus #portrait:nimbus_default #layout:middle:nimbus_default
-    No, you are invaluable. Without you I would've died in that wire.
+    No, you are invaluable. Without you, I would've died in that wire.
     I will follow your example and try to find ways to be helpful.
     #speaker: #layout:left:tails_happy
     Tails smiles happily.
@@ -112,7 +112,7 @@ That the wing’s damage is irreversible.
 -#speaker: #layout:left:tails_default #layout:middle:nimbus_default 
 The buzzing is heard again.
 #layout:right:sparks_happy_m
-With a fast landing the firefly re-joins the group.
+With a fast landing, the firefly re-joins the group.
 #speaker:Sparks #portrait:sparks_happy
 It’s… it’s… it’s…
 #speaker:Tails #portrait:tails_default
@@ -121,12 +121,12 @@ Breathe first, little one.
 The bug takes an exaggerated breath and then smiles jokingly.
 #speaker:Sparks #portrait:sparks_happy 
 It’s empty!
-No badies around.
+No baddies around.
 #speaker:
 Soothed by the information, the animals go to the human settlement in search for a place to spend the night.
 #background:village
-Now closer they see that most of the buildings are reduced to rubble, with the house they were eyeing, one of the few that could offer any kind of shelter.
-Craters make the path uneven and what were once fences are now piles.
+Now closer, they see that most of the buildings are reduced to rubble, with the house they were eyeing, one of the few that could offer any kind of shelter.
+Craters make the path uneven, and what were once fences are now piles.
 #speaker:Tails #portrait:tails_default
 Why would they destroy so much?
 #speaker:Nimbus #portrait:nimbus_default
@@ -188,7 +188,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         There was a good lump of bread still edible, protected by the clothes.
         He pulled hard and made it fall into the dirt.
         That would feed them for another day.
-        As he starts to drag the food back to the shelter he takes one last look back.
+        As he starts to drag the food back to the shelter, he takes one last look back.
         It was sad.
         Left there alone and forgotten.
         A fate no one deserved.
@@ -212,12 +212,12 @@ Or perhaps it was best if Tails spent some time with his companions.
     
     ++[Sparks]
         #speaker: #layout:left:tails_default #layout:middle:default #layout:right:sparks_default_m
-        Tails looked around and found the firefly’s light hight above, on the parapet on an open window.
+        Tails looked around and found the firefly’s light high above, on the parapet on an open window.
         Nimbly he climbed unto it and sat next to Sparks.
         She was shinning her light brightly into the night.
         #speaker:Sparks #portrait:sparks_default
-        Hey Mr.Tails!
-        Do mouses like to stare at the dark too?
+        Hey Mr. Tails!
+        Do mice like to stare at the dark too?
         #speaker:Tails #portrait:sparks_default
         Not usually.
         I don’t think most animals enjoy the dark.
@@ -248,8 +248,8 @@ Or perhaps it was best if Tails spent some time with his companions.
         #speaker:Sparks #portrait:sparks_default
         But that way my mother won’t be able to see it.
         #speaker:
-        Tails understands now why she was there facing the open night.
-        Why she was looking hopefully at the stary night.
+        Tails understands now why she was there, facing the open night.
+        Why she was looking hopefully at the starry night.
         #speaker:Sparks #portrait:sparks_default
         Here in the night, she will be able to spot my light.
         She will find me, I know she will.
@@ -271,19 +271,19 @@ Or perhaps it was best if Tails spent some time with his companions.
 #speaker: #layout:left:tails_default #layout:middle:nimbus_default #layout:right:sparks_default_m
 With nimbus’s help, Tails was able to build a small shelter of leaves and twigs.
 Although unable to fly, his beak could still carry several things.
-And thanks to Tail’s words he was determined to help.
+And thanks to Tail’s words, he was determined to help.
 #speaker:Sparks #portrait:sparks_happy
 Awesome! Our own little nest.
 #speaker:Nimbus #portrait:nimbus_default
-It’s a bit dark though.
+It’s a bit dark, though.
 #speaker:Sparks #portrait:sparks_happy
 I got it cover.
 Behold my shiny booty!
 #background:villageHouse
 #speaker:
 The firefly raises her behind and shines light inside the shelter.
-The bird and mouse laugh with the juvenal joy of Sparks and take their place with comfort.
-Inside they could share their heat and sleep more comfortably.
+The bird and mouse laugh with the juvenile joy of Sparks and take their place with comfort.
+Inside, they could share their heat and sleep more comfortably.
 
 ->main2
 
@@ -293,9 +293,9 @@ Inside they could share their heat and sleep more comfortably.
 Tails was able to build a small shelter of leaves and twigs.
 It took a bit of time without Nimbus’ help.
 Who could blame him?
-He sat in a corner sniffing occasionally, while checking his wing for the inevitable truth.
+He sat in a corner, sniffing occasionally, while checking his wing for the inevitable truth.
 #speaker:Sparks #portrait:sparks_happy
-Hey Mr.nimbus, do you want to join us in this cozy shelter?
+Hey Mr. Nimbus, do you want to join us in this cozy shelter?
 #speaker:
 The bird did not answer.
 #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
@@ -329,7 +329,7 @@ You seem to have learned a lot from your brother.
 #speaker:Nimbus #portrait:nimbus_default
 Yes. He is wise as an owl, strong as an eagle and brave as a pigeon.
 #speaker:
-The fact that nimbus said “is” gave Tails courage to make the question.
+The fact that nimbus said “is” gave Tails the courage to make the question.
 #speaker:Tails #portrait:tails_default
 Where is he now?
 #speaker:
@@ -344,7 +344,7 @@ Animals. All kinds.
 #speaker:Tails #portrait:tails_default
 Brave and kind. That is a great brother.
 #layout:right:nimbus_sad_m
-Nimbus looks down a bit sad.
+Nimbus looks down, a bit sad.
 #speaker:Nimbus #portrait:nimbus_sad 
 Yes, he is. But a part of me wishes he didn’t stay behind. That he’d be selfish for once.
 That way we would still be together.
@@ -360,7 +360,7 @@ You will need your full strength for that!
 And a good night’s rest.
 #speaker:Nimbus #portrait:nimbus_default
 Oi! Don’t go acting like a lousy parent.
-I’m almost full grown!
+I’m almost full-grown!
 #speaker: #layout:left:tails_happy #layout:right:nimbus_happy_m
 They try to initially but fail to contain a thunderous laughter.
 Tails falls on his back and Nimbus feels his injury sting with the uncontrollable giggling.
@@ -390,7 +390,7 @@ It was not enough to lose everything, I had to lose the most important thing to 
 #speaker:Tails #portrait:tails_default
 No, you did not…
 You're still alive.
-Lots of other birds where not that lucky.
+Lots of other birds were not that lucky.
 #speaker:
 Silence speaks.
 Then the bird finally turns around.
@@ -398,11 +398,11 @@ Then the bird finally turns around.
 I guess you’re right.
 Rather alive and flyless than dead with wings.
 #speaker:
-It was a macabre line of thought but it was better than the previous one he was having.
+It was a macabre line of thought, but it was better than the previous one he was having.
 Right now, he needed motivation to go on.
 #speaker:Tails #portrait:tails_default
 This is not over yet. We saved you today, but we might need you to save us tomorrow.
-We're only three and we need you with us.
+We're only three, and we need you with us.
 #speaker:Nimbus #portrait:nimbus_sad #layout:right:nimbus_sad_m
 Why would you need a wingless bird?
 #speaker:Tails #portrait:tails_default
@@ -418,7 +418,7 @@ Try is all we can do.
 And together we might prevail.
 #speaker:
 They share a small moment of hope.
-Even though the world outside harbours dangers too greater to face. In that small moment they fear nothing.
+Even though the world outside harbors dangers too greater to face. In that small moment, they fear nothing.
 #speaker:Tails #portrait:tails_default
 I will go back. We have a long day ahead of us.
 Want to come too?

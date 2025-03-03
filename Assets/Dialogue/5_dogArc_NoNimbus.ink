@@ -31,7 +31,7 @@ He should take the time to check the rest of the village. He might get lucky and
 The morning brings a soothing humidity to the world, but it is not enough to cover the markings of destruction that surround them.
 The road is a bit drier than yesterday.
 Suddenly his hair gets bristly.
-His nose sniffs a new scent and he get a bit apprehensive.
+His nose sniffs a new scent and he gets a bit apprehensive.
 #speaker:Tails #portrait:tails_scared #layout:middle:tails_scared #music:nimbus
 Dog…
 #speaker:
@@ -44,10 +44,10 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:
     The mouse gathers his courage and steps forward.
     He roams around, following the invisible line.
-    Goes over a downed fence and arrives at an open space with a well at its centre.
-    Next to it a brown dog sniffs the inside of a wooden bucket.
+    Goes over a downed fence and arrives at an open space with a well at its center.
+    Next to it, a brown dog sniffs the inside of a wooden bucket.
     It has a small tail, pointing down, while his head is obstructed from vision.
-    He his ten times bigger than him.
+    He is ten times bigger than him.
     Was this really a good idea?
     
     ++[Go back]
@@ -55,7 +55,7 @@ He had seen mice teared to shreds by angry mongrels.
         A mouse could escape a rabid dog, but it also could get eaten.
         And what would happen to Sparks, if he was left alone in this hellish world.
         He decides to turn around.
-        And totally unprepared finds the dog behind them.
+        And totally unprepared, finds the dog behind them.
 
     ++[Go talk to the dog]
         He doesn’t know him. Perhaps he could be of help.
@@ -74,7 +74,7 @@ He had seen mice teared to shreds by angry mongrels.
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
-    Tails takes the initiative still shaking from the scare.
+    Tails takes the initiative, still shaking from the scare.
     #speaker:Tails #portrait:tails_scared
     We… I’m just passing by…
     I’m not looking for trouble, please let me go.
@@ -90,10 +90,10 @@ He had seen mice teared to shreds by angry mongrels.
     Old oak does not eat little animals.
     #portrait:oak_happy_noHat #layout:right:oak_happy_noHat
     Old oak only eats canned food, cooked food and delicious white cookies from the pastry down the road.
-    Tails doesn’t how to react.
+    Tails doesn’t know how to react.
     #speaker:Tails #portrait:tails_default #layout:left:tails_default #layout:right:oak_default_noHat
     I am Tails...
-    Together with a small firefly I’m trying to escape this calamity and find refuge to the West.
+    Together with a small firefly, I’m trying to escape this calamity and find refuge to the West.
     We wandered into this village to spend the night.
     #speaker: #layout:right:oak_default_noHat
     The dog smiles.
@@ -112,10 +112,10 @@ He had seen mice teared to shreds by angry mongrels.
     #speaker:Tails #portrait:tails_default 
     Forgive me. What are you doing here, Oak?
     #speaker:Oak #portrait:oak_default_noHat
-    This is my village you see. Or was.
+    This is my village, you see. Or was.
     It was attacked by the other humans that came from the East.
     My owner advised me to run to the woods and wait for the "storm of fire" to pass.
-    And so, I did. Although he never came back to meet me.
+    And so, I did. Although, he never came back to meet me.
     Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
@@ -151,7 +151,7 @@ He had seen mice teared to shreds by angry mongrels.
 
             - else:
             #speaker:Tails #portrait:tails_default
-            With both our noses it should be faster.
+            With both our noses, it should be faster.
             #speaker:
             They agree and start looking for the man.
             Clouds start to gather.
@@ -187,7 +187,7 @@ He had seen mice teared to shreds by angry mongrels.
         #layout:left:tails_scared
         The mouse looks around, worried.
         #layout:right:oak_scared_m
-        In that moment one of the dog’s ears rises up.
+        At that moment one of the dog’s ears rises up.
         And his eyes widen up.
         #speaker:Oak #portrait:oak_scared #music:nimbus
         RUN!
@@ -201,7 +201,7 @@ He had seen mice teared to shreds by angry mongrels.
         Heya, friends, what’s going on, why are you running?
         #enviroSound:villageExplosions
         #speaker:
-        The moment the question is asked a huge bang is heard nearby.
+        The moment the question is asked, a huge bang is heard nearby.
         #speaker:Sparks #portrait:sparks_scared #layout:middle:sparks_scared_m
         AH!
         #speaker:
@@ -222,15 +222,15 @@ He had seen mice teared to shreds by angry mongrels.
     #layout:middle:default #layout:left:tails_default #layout:right:sparks_default_m
 	Where the little bug is still lying down.
 	#speaker:Tails #portrait:tails_default
-	Come on Sparks, it's time to get on our way.
+	Come on, Sparks it's time to get on our way.
 	#speaker: 
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 	Fine, fine. I’m up and flying.
     #music:silence #enviroSound:villageBirds
 	#speaker:
-	Suddenly the sound of birds fleeing is heard.
-    They go outside curious and see a band of birds disappearing in the clouds.
+	Suddenly, the sound of birds fleeing is heard.
+    They go outside, curious and see a band of birds disappearing in the clouds.
     #speaker:Tails #portrait:tails_scared #layout:left:tails_scared
     Something is wrong.
     Let’s go back to the shell and get away from this place.

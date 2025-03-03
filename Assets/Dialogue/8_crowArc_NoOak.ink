@@ -20,7 +20,7 @@ INCLUDE globals.ink
 ~unlockImage(14)
 Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
-The night went by and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
+The night went by, and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
 #layout:middle:tails_sad #layout:right:sparks_sad_m
 A scent of death hangs in the air.
@@ -91,7 +91,7 @@ Looking around with dark eyes.
     Tails pushes the helmet forward.
     The tree gets bigger and bigger. Becoming even more frightening.
     They stop right under it.
-    The crow looks down unsurprised.
+    The crow looks down, unsurprised.
     #speaker:Tails #portrait:tails_sad
     Hey there, friend!
     #speaker:
@@ -170,7 +170,7 @@ Looking around with dark eyes.
     Don’t worry Sparks, he flies, he can see the way better than us.
     And he said this is his swamp, so he must know it well.
     #speaker:
-    Tails gets pensative.
+    Tails gets pensive.
     #speaker:Tails #portrait:tails_sad
     Who would want to stay in a place like this?
     #speaker:Nimbus #portrait:nimbus_default
@@ -184,18 +184,18 @@ Looking around with dark eyes.
     A sticky and shifty mud.
     Hey! Crow! We are stuck.
     But the flying guide is nowhere to be seen.
-    Suddenly the helmet starts to sink.
+    Suddenly, the helmet starts to sink.
     #speaker:Tails #portrait:tails_scared #layout:middle:tails_scared
     This is not mud, this is oil!
     #speaker: #layout:left:nimbus_scared
     They all scream.
-    Slowly the helmet starts to sink in the tar pit.
+    Slowly, the helmet starts to sink in the tar pit.
     #layout:right:default
-    Nimbus opens his wings but he can't fly away.
+    Nimbus opens his wings, but he can't fly away.
     #layout:sparks:default
-    Tails looks for Sparks but she's nowhere to be found.
+    Tails looks for Sparks, but she's nowhere to be found.
     #background:black #layout:middle:default
-    They try to escape but are also swallowed by the artificial blackness.
+    They try to escape, but are also swallowed by the artificial blackness.
     The crow’s laugh is heard again...
     As they drown in agony and fear.
     A slow and asphyxiating death.
@@ -241,7 +241,7 @@ And again, the mist hasn’t disappeared.
 ->ChoicePanel
 
 === noFoodAndWaited ===
-As you return to the inside of the helmet you notice there's no more food left.
+As you return to the inside of the helmet, you notice there's no more food left.
 ->RiskIt
 
 === Wait ===
@@ -262,7 +262,7 @@ The mist hasn’t disappeared.
 
 === RiskIt ===
 Tails has a feeling they will starve if they stay in this forsaken place.
-We can’t risk waiting any more. We have to venture forward, no matter the direction we take.
+We can’t risk waiting anymore. We have to venture forward, no matter the direction we take.
 Apprehension is all around, but no other animal voices a better option.
 The mouse takes out his faithful stick and pushes the helmet forward.
 On mud and murky waters, they travel.
@@ -273,15 +273,15 @@ Hours pass.
 And the only thing getting stronger is the smell of death.
 (Bump)
 The shell gets stuck.
-Tails perches on the helmet’s border to see what is holding it down and his eyes widen.
+Tails perches on the helmet’s border to see what is holding it down, and his eyes widen.
 A dead human blocks the way.
 Is everything alright?
 Yeah, yeah…
 Don’t worry, you can stay there.
 He does is best to avoid sharing the horror he is seeing.
-With some effort he frees the helmet and goes around the body.
+With some effort, he frees the helmet and goes around the body.
 The mist starts to dissipate and a terrifying image lays before the small mouse’s eyes.
-Tens of bodies sunken and swallowed by the marsh’s waters, float all around them.
+Tens of bodies, sunken and swallowed by the marsh’s waters, float all around them.
 Some bodies still red, others, maimed in ways inconceivable.
 His hands shake with the horror he was seeing.
 But he keeps going, occasionally closing his eyes to avoid the nightmares that already shook his life.
