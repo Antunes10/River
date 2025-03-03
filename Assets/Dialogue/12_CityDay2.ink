@@ -260,7 +260,9 @@ And perhaps he would be lucky enough to find clues about his friends while looki
 ->take_the_boat
 
 == run_away ==
+~changeHope(-2)
 ~gaveUp = 1
+
 #speaker:
 Tails looks around him.
 He sees the black clounds rising behind the "stone trees".

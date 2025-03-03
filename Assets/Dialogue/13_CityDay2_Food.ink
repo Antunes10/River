@@ -150,6 +150,8 @@ But finally he emerges victorious.
 ->go_back_food
 
 == go_back_food ==
+~changeFood(4)
+
 #background:city
 #speaker: #layout:middle_left:tails_default
 {- hasCotton(): 
@@ -204,6 +206,8 @@ But finally he emerges victorious.
 ->conclusion
 
 == go_back_nofood ==
+~changeHope(-1)
+
 #background:city
 #speaker: #layout:middle_left:tails_default
 {- hasCotton(): 

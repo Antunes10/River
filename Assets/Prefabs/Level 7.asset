@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c82a0251f0eb345a1d5586cbddca65, type: 3}
   m_Name: Level 7
   m_EditorClassIdentifier: 
-  levelLength: 90
+  levelLength: 100
+  hasTutorial: 0
+  tutorials: []
+  dependance: 0
   GoesToCampfire: 0
   backgrounds: {fileID: 1022511215364492915, guid: fd67f3c01e181e149accdf4b4bfcda27, type: 3}
   music: 4
@@ -34,7 +37,8 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 7ce8a84ad375bc543beb7d3dfcd4b32f, type: 3}
   minProb: 1
   maxProb: 2
-  rain: 1
+  rain: 0
   rainInterval: 15

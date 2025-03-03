@@ -43,6 +43,7 @@ That the wing’s damage is irreversible.
 
 +[Tell him the truth about his wing.]
     ~changeHope(-1)
+
     ~nimbus_hopeful_VS_truth = 1
     #speaker:
     Tails approaches him and his voice goes soft.
@@ -73,6 +74,7 @@ That the wing’s damage is irreversible.
 
 +[Keep him hopeful.]
     ~changeHope(1)
+
     ~ nimbus_hopeful_VS_truth = 0
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     I know you want to be helpful.
@@ -170,8 +172,9 @@ Or perhaps it was best if Tails spent some time with his companions.
     Death.
     
     ++[Go anyway.]
-        ~changeFood(1)
-        ~ foundOldMan()
+        ~changeFood(3)
+        ~foundOldMan()
+
         #speaker: #layout:middle:tails_sad
         It was uncomfortable, but it was a necessary evil.
         #layout:middle:tails_scared
@@ -202,6 +205,7 @@ Or perhaps it was best if Tails spent some time with his companions.
 
 +[Talk with the others]
     ~changeHope(1)
+    
     #speaker:
     Right now, hope was more important than fighting hunger.
     Her mother always taught him the spirit was as much important as the body.

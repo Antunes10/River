@@ -262,6 +262,8 @@ Was it all worth it?
     -> Oak_lost
 
 == Oak_saved ==
+~changeHope(2)
+
 #speaker: #background:city #layout:middle_left:default #layout:right:default
 After a bit of effort they finnally see daylight again.
 
@@ -301,6 +303,14 @@ After a bit of effort they finnally see daylight again.
 
     #speaker: #layout:left:bunny_happy #layout:middle_right:tails_happy_m
     They all laught together.
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    Would you have some food left, Tails?
+    I'm starving.
+    #spaker:
+    The mouse gives him some of the food they brought in the helmet.
+    ~changeFood(-2)
+
+    The dog takes it all in one bite, making a happy face afterwards.
     #speaker:Tails #portrait:tails_default #layout:middle_right:tails_default_m
     It's time to decide what to do next.
     -> conclusion
@@ -338,12 +348,22 @@ After a bit of effort they finnally see daylight again.
 
     #speaker:
     They all laught together.
+    #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+    Would you have some food left, Tails?
+    I'm starving.
+    #spaker:
+    The mouse gives him some of the food he brought in the helmet.
+    ~changeFood(-2)
+
+    The dog takes it all in one bite, making a happy face afterwards.
     #speaker:Tails #portrait:tails_default
     It's time to decide what to do next.
     -> conclusion
 }
 
 == Oak_lost ==
+~changeHope(-2)
+
 #speaker: #background:city #layout:middle_left:tails_sad #layout:right:default
 After a bit of effort he finnally sees daylight again.
 {

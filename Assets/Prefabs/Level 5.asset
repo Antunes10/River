@@ -45,6 +45,7 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
   - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 3421729367470482422, guid: 7ce8a84ad375bc543beb7d3dfcd4b32f, type: 3}
   minProb: 1
   maxProb: 2
   rain: 1

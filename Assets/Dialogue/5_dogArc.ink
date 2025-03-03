@@ -185,7 +185,9 @@ He had seen mice teared to shreds by angry mongrels.
     Consequently, I came back to him. I know by scent that he is still around.
     
     ++[Offer to help]
-        ~changeHope(1)
+        ~changeHope(2)
+        ~recruitOak(true)
+
         #speaker:Tails #portrait:tails_default 
         We could help you find him.
         #speaker: #layout:right:oak_happy_noHat
@@ -202,8 +204,14 @@ He had seen mice teared to shreds by angry mongrels.
         ->continuation
 
     ++[Wish him luck and go on your way]
-        I hope you find your human friend. We have to go now.
+        ~changeHope(-1)
+        
+        #speaker:Tails #portrait:tails_default
+        I hope you find your human friend...
+        But sadly we cannot linger.
+        #speaker: #layout:right:default
         The dog smiles with kindness and goes back to sniffing around.
+        A little sadness invades Tails heart for not helping him out.
         
         ->get_away
 
@@ -328,7 +336,5 @@ AH!
 #speaker:
 They all rush to push the helmet into the water.
 
-~recruitOak(true)
 ~changeScene("RiverScene")
-
 ->END

@@ -22,6 +22,7 @@ Sparks is still in the shell.
 
 +[Ask Sparks to go check the village.]
     ~changeHope(1)
+
     #speaker:Tails #portrait:tails_sad
     Hey, little girl… are you alright?
     #speaker:
@@ -180,8 +181,9 @@ Or perhaps it was best if Tails spent some time with his companion.
     Death.
     
     ++[Go anyway]
-        ~changeFood(1)
-        ~ foundOldMan()
+        ~changeFood(3)
+        ~foundOldMan()
+
         It was uncomfortable, but it was a necessary evil.
         He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
         It was an old man.
@@ -263,6 +265,7 @@ Or perhaps it was best if Tails spent some time with his companion.
 === nimbusLeftBehind ===
 +[It was too risky]
     ~changeHope(-1)
+
     #speaker:Tails #portrait:tails_sad
     It was too risky.
     We would have died there too.
@@ -332,6 +335,7 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
 === nimbusDead ===
 +[It was mankind’s fault]
     ~changeHope(-1)
+    
     #speaker:Tails #portrait:tails_sad
     We did the best we could.
     But look around you.

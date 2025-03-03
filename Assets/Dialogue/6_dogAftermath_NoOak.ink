@@ -1,6 +1,18 @@
 INCLUDE globals.ink
 
-
+{
+    - hasSparks():
+        ~nSaved = nSaved+1
+}
+{
+    - hasNimbus():
+        ~nSaved = nSaved+1
+}
+{
+    - hasOak():
+        ~nSaved = nSaved+1
+}
+~nSaved = nSaved+1
 ->main
 
 === main ===
@@ -27,8 +39,9 @@ My belly hurts…
 I’m starving too. Thank the heavens we still have some food left.
 
 +[Eat together to recover your strength]
-    ~changeFood(-1)
+    ~changeFood(-nSaved)
     ~changeHope(1)
+
     #speaker:
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the bird and retrieves a bit more.
@@ -42,6 +55,7 @@ I’m starving too. Thank the heavens we still have some food left.
 
 +[Argue to save food]
     ~changeHope(-1)
+    
     #speaker:Tails #portrait:tails_sad
     I know it is hard, but we have to ration our food.
     We don’t know what lies ahead.

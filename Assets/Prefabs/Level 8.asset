@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c82a0251f0eb345a1d5586cbddca65, type: 3}
   m_Name: Level 8
   m_EditorClassIdentifier: 
-  levelLength: 90
+  levelLength: 80
   hasTutorial: 0
   tutorials:
   - {fileID: 21300000, guid: aab0feb31aad7364aa54b607c3fb5f5e, type: 3}
   dependance: 3
   GoesToCampfire: 0
-  backgrounds: {fileID: 1022511215364492915, guid: fd67f3c01e181e149accdf4b4bfcda27, type: 3}
+  backgrounds: {fileID: 1022511215364492915, guid: 1aa9ee2a116d38e40b04513162b0d7a6, type: 3}
   music: 4
   envSounds: 1
   obstacleList:
@@ -30,14 +30,16 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: b5760318ebcb53c4194c4053e09c9176, type: 3}
   - {fileID: 3421729367470482422, guid: 3fe5b83c70546db46ab4fe806cd908aa, type: 3}
   - {fileID: 6958465596665280448, guid: 395f59e9f4cdc794b85d9e2ab5c5608f, type: 3}
+  - {fileID: 6958465596665280448, guid: 395f59e9f4cdc794b85d9e2ab5c5608f, type: 3}
+  - {fileID: 6958465596665280448, guid: 93fee0691636679479cf0207523b02a2, type: 3}
   - {fileID: 6958465596665280448, guid: 93fee0691636679479cf0207523b02a2, type: 3}
   - {fileID: 3421729367470482422, guid: de7fb87ec6928d34fac60ea0cb8eed97, type: 3}
   - {fileID: 3421729367470482422, guid: 5afd44770f06a6e4181f48a1e7e163f2, type: 3}
-  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
-  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
-  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
-  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
-  - {fileID: 3421729367470482422, guid: 152936daa3700674d88ea59363331e05, type: 3}
+  - {fileID: 6958465596665280448, guid: f99b1cb7c9909ac41be86ff8dbe588ae, type: 3}
+  - {fileID: 6958465596665280448, guid: f99b1cb7c9909ac41be86ff8dbe588ae, type: 3}
+  - {fileID: 6958465596665280448, guid: e1bc08be2ef8fe441b77e17d71962815, type: 3}
+  - {fileID: 6958465596665280448, guid: e1bc08be2ef8fe441b77e17d71962815, type: 3}
+  - {fileID: 3421729367470482422, guid: 7ce8a84ad375bc543beb7d3dfcd4b32f, type: 3}
   minProb: 1
   maxProb: 2
   rain: 1

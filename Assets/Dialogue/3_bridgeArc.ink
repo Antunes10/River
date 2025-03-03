@@ -38,7 +38,8 @@ Trapped, it's trying to free itself, but each movement makes the claws pierce hi
     ->ChoicePanel
 
 +[Ignore the Bird]
-    ~changeHope(-1)
+    ~changeHope(-2)
+
     #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad_m
     There is nothing that they could do.
     A trap like that is too complex for them to disarm.
@@ -148,8 +149,9 @@ Stop it! Are you crazy! It hurts!
     ->ChoicePanel
     
 +++[Continue]
-    ~changeHope(-2)
+    ~changeHope(-3)
     ~killNimbus()
+
     #speaker:
     Tails ignores the bird’s cries.
     With determination he starts cutting again.
@@ -177,7 +179,8 @@ Stop it! Are you crazy! It hurts!
     ->END
 
 === LeaveHim ===
-~changeHope(-1)
+~changeHope(-2)
+
 #speaker: #layout:left:nimbus_sad_hurt #layout:middle:tails_sad #layout:right:sparks_sad_m
 There's nothing that they could do.
 A trap like that is too complex for them to disarm.
@@ -253,7 +256,9 @@ Time is running out.
 ->ChoicePanel
 
 === KeepTrying ===
-~changeHope(1)
+~changeHope(2)
+~recruitNimbus(true)
+
 #speaker: #layout:middle:nimbus_sad_hurt_m #layout:left:tails_sad #layout:right:sparks_sad_m
 Tails keeps on with his task of removing the wires.
 If the bird is to die here, he won't die alone.
@@ -322,6 +327,5 @@ The river keeps on flowing.
 Taking them away from the forest.
 In the direction of the far away land they are searching for.
 
-~recruitNimbus(true)
 ~changeScene("RiverScene")
 ->END

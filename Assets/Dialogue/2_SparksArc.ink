@@ -32,6 +32,8 @@ And suddenly it moves!
 Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
+    ~changeHope(1)
+    
     #background:tunnel #music:tunnel
     Against his most primal instincts, Tails puts the little stick in the waters and changes the "boat's" direction, approaching the light.
     Once the "shell" hits the dirt, he jumps onto the ground.
@@ -120,7 +122,6 @@ Its origin unknown to the little mouse, moves closer to the ground.
 
 +[Avoid the light.]
     #speaker: #layout:middle:tails_default
-    ~changeHope(-1)
     There's a hint of curiosity in his eyes, but his instincts reign his body.
     He's a mouse after all, any danger is possibly a deadly one.
     He just saw an entire "stone forest" razed by fire and explosions; he isn't going to take any risks now.

@@ -204,6 +204,7 @@ Is she ever coming back?
     It's hard, but inside Tails' heart, there is tranquility.
     He knows Sparks is going to find her mother.
     And that her story will have a happy ending.
+
     ~changeHope(1)
     ~changeScene("EndDayScene")
     ->END
@@ -278,7 +279,8 @@ Is she ever coming back?
     No longer alone.
     After losing everything, they have found each other.
     And no amount of war was ever going to change that.
-    ~changeHope(2)
+
+    ~changeHope(3)
     ~recruitSparks(true)
     ~changeScene("EndDayScene")
     ->END
@@ -310,7 +312,8 @@ Is she ever coming back?
     As her light disappears into the nothingess of the void.
     Tails is left alone...
     His chest in pain.
-    He didn't manage to save his friend....
-    ~changeHope(-2)
+    He didn't manage to save his friend...
+
+    ~changeHope(-3)
     ~changeScene("EndDayScene")
     ->END

@@ -1,5 +1,18 @@
 INCLUDE globals.ink
 
+{
+    - hasSparks():
+        ~nSaved = nSaved+1
+}
+{
+    - hasNimbus():
+        ~nSaved = nSaved+1
+}
+{
+    - hasOak():
+        ~nSaved = nSaved+1
+}
+~nSaved = nSaved+1
 ->main
 
 === main ===
@@ -214,7 +227,8 @@ Looking around with dark eyes.
 
 
 === hasFoodAndWaited ===
-~changeFood(-1)
+~changeFood(-nSaved)
+
 
 #speaker:
 The mouse returns inside.
@@ -234,8 +248,9 @@ And again, the mist hasn’t disappeared.
 ->ChoicePanel
 
 === noFoodAndWaited ===
-~changeScene("gameOver")
--> END
+#speaker:
+As you return to the inside of the helmet you notice there's no more food left.
+->RiskIt
 
 === Wait ===
 #speaker:Tails #portrait:tails_default

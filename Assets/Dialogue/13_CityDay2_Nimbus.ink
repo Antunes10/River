@@ -76,6 +76,10 @@ The same cloth that Nimbus uses to hold his wing.
 Tails steers the "half-shell" in the direction of a small extruded iron where the cloth is held.
 But he has to brake immediately as he sees an underground entrance next to it...
 Swallowing water by the waves.
+Unfortunately the sudent stop made some of the food spill from the helmet.
+~changeFood(-2)
+
+However Tails remains unfased, looking at the underground hole.
 ->Underground
 
 {- hasOak():
@@ -310,6 +314,8 @@ Leaving his wing hangging.
     ->Nimbus_saved
 
 == Nimbus_saved ==
+~changeHope(2)
+
 #speaker: #background:city #layout:middle:default #layout:right:default
 They climb the ledge back to the surface, helping each other as they go.
 
@@ -406,6 +412,8 @@ They climb the ledge back to the surface, helping each other as they go.
 }
 
 == Nimbus_lost ==
+~changeHope(-2)
+
 #speaker: #background:city #layout:middle_left:tails_sad #layout:right:default
 After a bit of effort he finnally sees daylight again.
 {

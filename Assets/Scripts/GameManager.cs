@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
 
 	#region Setters&Getters
 
-	public void changeFood(int val) { _gs.currentFood += val; }
-	public void changeHope(int val) { _gs.currentHope += val; _gs.currentHope = Math.Clamp(_gs.currentHope, 0, 5); }
+	public void changeFood(int val) { _gs.currentFood += val; _gs.currentFood = Math.Clamp(_gs.currentFood, 0, 16); Debug.Log(_gs.currentFood); }
+	public void changeHope(int val) { _gs.currentHope += val; _gs.currentHope = Math.Clamp(_gs.currentHope, 0, 5); Debug.Log(_gs.currentHope); }
 
 	public void recruitSparks(bool val) { _gs.hasSparks = val; }
 	public void recruitNimbus(bool val) { _gs.hasNimbus = val; _gs.NimbusSaved = true; }
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 	public void cityDecision(int val)
 	{
 		_gs.cityTime++;
-		//0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random, 4 = Back
+		//0 = Food, 1 = Nimbus, 2 = Oak, 3 = Random, 4 = Back, 5 = GaveUp
 		_gs.cityDecision = val;
 		switch (val){
 			case 0:
@@ -259,6 +259,16 @@ public class GameManager : MonoBehaviour
 		if (_gs.currentInkIndex == 13 || _gs.currentInkIndex == 14)
 		{
 			_gs.dialogueIndex = _gs.cityDecision;
+			//After river where the decision was to leave the city, it goes to last chapter
+			if (_gs.cityDecision == 4)
+			{
+				_gs.currentInkIndex = 15;
+			}
+		}
+		//After river where the decision was to leave the city, it goes to last chapter
+		if (_gs.cityDecision == 5)
+		{
+			_gs.currentInkIndex = 17;
 		}
 
 	_currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];

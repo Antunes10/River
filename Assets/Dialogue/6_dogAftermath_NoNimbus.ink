@@ -1,6 +1,18 @@
 INCLUDE globals.ink
 
-
+{
+    - hasSparks():
+        ~nSaved = nSaved+1
+}
+{
+    - hasNimbus():
+        ~nSaved = nSaved+1
+}
+{
+    - hasOak():
+        ~nSaved = nSaved+1
+}
+~nSaved = nSaved+1
 ->main
 
 === main ===
@@ -27,6 +39,9 @@ My belly hurts…
 Can we eat something, Mr.Tails?
 
 +[Eat together to recover strength]
+    ~changeFood(-nSaved)
+    ~changeHope(1)
+
     #speaker:
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the dog and retrieves a bit more.
@@ -39,6 +54,8 @@ Can we eat something, Mr.Tails?
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
+    ~changeHope(-1)
+
     #speaker:Tails #portrait:tails_sad #layout:left:tails_sad #layout:middle_oak_sad
     I know it is hard, but we have to ration our food.
     We don’t know what lies ahead.

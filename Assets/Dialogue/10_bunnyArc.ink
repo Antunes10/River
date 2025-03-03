@@ -143,6 +143,7 @@ She took no time choosing her path even when there were several possibilities.
     Gone…
     She starts to cry, unable to stop digging.
     Unable to believe the nightmare she is living.
+    ~changeHope(-1)
     
     ++[Place a paw on her shoulder]
         The mouse cleans his tears and moves slowly towards the rabbit.

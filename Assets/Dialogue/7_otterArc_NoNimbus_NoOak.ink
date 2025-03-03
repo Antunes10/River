@@ -196,8 +196,9 @@ They had to decide.
     Tails Looks inside the helmet to the little food they have left.
     
     ++ [Give some food.]
-        ~changeFood(-1)
+        ~changeFood(-3)
         ~changeHope(1)
+        
         #speaker:Tails #portrait:tails_default
         We don’t have much to spare, but we can share a bit with you.
         #speaker:Sparks #portrait:sparks_default

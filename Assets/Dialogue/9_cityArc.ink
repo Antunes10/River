@@ -180,8 +180,7 @@ What are we going to do?
         ->try_to_find_rope_continuation
 
     +{send_sparks_continuation}[Seal the hole]
-        ~changeFood(2)
-        ~changeHope(2)
+        ~changeFood(4)
         ~recruitCotton(true)
         ~recruitCotton(false)
         
@@ -319,7 +318,8 @@ What are we going to do?
 -> choice_panel2
 
 === try_to_salvage_food ===
-    ~changeFood(1)
+    ~changeFood(2)
+
     #speaker: #layout:sparks:default #layout:right:default #layout:left:default
     Against his most primal instincts, Tails jumps inside the dark cove of metal and lunges towards the food.
     The ground starts shaking again with the movement and it lowers even more into the water.
@@ -379,6 +379,7 @@ What are we going to do?
 
 === leaver_her ===
 ~changeHope(-2)
+
 #speaker: #layout:left:oak_sad #layout:middle:tails_sad #layout:right:nimbus_sad_m #layout:sparks:sparks_sad_m
 The mouse makes a hard decision.
 #speaker:Tails #portrait:tails_sad

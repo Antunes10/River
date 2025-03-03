@@ -27,9 +27,11 @@ MonoBehaviour:
   - {fileID: 3421729367470482422, guid: 3fe5b83c70546db46ab4fe806cd908aa, type: 3}
   - {fileID: 3421729367470482422, guid: c29b25968002d5843b10f2039e206577, type: 3}
   - {fileID: 3421729367470482422, guid: 71ef482032359934aafbff7d2361ab7d, type: 3}
+  - {fileID: 3421729367470482422, guid: 71ef482032359934aafbff7d2361ab7d, type: 3}
+  - {fileID: 3421729367470482422, guid: 94a47cc03de27b545a3ca156cd6af9d2, type: 3}
   - {fileID: 3421729367470482422, guid: 94a47cc03de27b545a3ca156cd6af9d2, type: 3}
   - {fileID: 3421729367470482422, guid: 7ce8a84ad375bc543beb7d3dfcd4b32f, type: 3}
-  minProb: 1
+  minProb: 2
   maxProb: 3
   rain: 0
   rainInterval: 0

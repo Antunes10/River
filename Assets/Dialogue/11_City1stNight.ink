@@ -14,17 +14,17 @@ There is death all around and explosions can still be heard far away.
 But what was really hurting Tails...
 #layout:middle:tails_sad
 {
-- hasNimbus() || hasOak():
+- savedNimbus() || savedOak():
     Was the absence of his friends.
     He was worried about them.
     He couldn't stop imagining them lost and afraid in a cold corner of the city.
 
     {
-    - hasNimbus():
+    - savedNimbus():
         Nimbus trying to fly away from danger.
     }
     {
-    - hasOak():
+    - savedOak():
         Oak too old and tired to be able to run.
     }
     And above all...
@@ -77,7 +77,6 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     On that moment he just wanted time to grieve.
     Sometimes the best way to help someone is to leave them alone.
     He sadly turns around and goes back to the middle of the room.
-    ~recruitCotton(false)
     ->choice_panel
 
 ++[Don't give up on her]
@@ -164,10 +163,11 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     She turns towards the darkness.
     And slowly lies down again.
     You failed to give her the light she needed to keep going…
-    ~recruitCotton(false)
     ->choice_panel
 
 ++[The ones that still live]
+    ~changeHope(2)
+
     #speaker:Tails #portrait:tails_default #layout:middle_left:tails_default 
     Those that still live.
     Those that were left behind in this forsaken world.
@@ -228,6 +228,8 @@ It's cold.
 There is no one to keep him warm.
 {
 - hasCotton():
+    ~recruitCotton(false)
+    ~changeHope(-2)
     And he fears tomorrow, the rabbit that shares the room with him, will be gone.
 - else:
     And he fears he will never see his friends again.
