@@ -102,7 +102,7 @@ She took no time choosing her path even when there were several possibilities.
     It was clearly human made and the rabbit must have taken advantage of it.
     The mouse starts to feel a bit nervous.
     Afraid that this story wouldn’t have a happy ending.
-    #background:room
+    #background:room #music:tunnel
     The tunnel ends inside a small room, with just a tiny window close to the ceiling, on the opposite wall.
     There is a lot of dust around.
     Silence is heard.

@@ -70,7 +70,7 @@ He had seen mice teared to shreds by angry mongrels.
     What are you doing here?
     #speaker:
     The mouse is catatonic.
-    #speaker:Oak #portrait:oak_default_noHat #music:villageArrival
+    #speaker:Oak #portrait:oak_default_noHat #music:oak
     Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
@@ -180,7 +180,7 @@ He had seen mice teared to shreds by angry mongrels.
         It is alright. I was already expecting it, once he did not came back.
         With age comes the acceptance of life and death.
         And I am already old…
-        #music:tunnel #enviroSound:villageBirds
+        #music:silence #enviroSound:villageBirds
         #speaker:
         A band of birds flies away from the tall grass, spooked by something.
         Silence reigns.
@@ -227,7 +227,7 @@ He had seen mice teared to shreds by angry mongrels.
 	The firefly rises up disappointed.
 	#speaker:Sparks #portrait:sparks_sad #layout:right:sparks_sad_m
 	Fine, fine. I’m up and flying.
-    #music:tunnel #enviroSound:villageBirds
+    #music:silence #enviroSound:villageBirds
 	#speaker:
 	Suddenly the sound of birds fleeing is heard.
     They go outside curious and see a band of birds disappearing in the clouds.

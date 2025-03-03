@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:Dam
+#background:Dam #enviroSound:forest
 # speaker: #layout:left:oak_default #layout:middle:tails_default #layout:right:sparks_default_m
 ~unlockImage(5)
 Hours pass and they reach a wider body of water, surrounded by gravel and bushes.
@@ -57,6 +57,7 @@ They had to decide.
     #speaker:
     They all jump unto solid ground and with a last goodbye turn their backs to the helmet and press forward through the middle of the forest.
     A couple of minutes pass and the mantle of leaves thickens.
+    #enviroSound:silence #music:nimbus
     The ground starts to become uneven, and an unnatural silence takes control.
     #speaker:Oak #portrait:oak_scared #layout:left:oak_scared
     I don’t like this… I smell humans.
@@ -106,6 +107,7 @@ They had to decide.
     The mouse turns to the brown fur down in the water.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     And you Sir Oak?
+    #music:hazel
     #speaker:??? #portrait:hazel_default #layout:left:hazel_default
     Otter: Well, hello to you to, but my name is not Sir Oak.
     #speaker:Hazel #portrait:hazel_happy #layout:left:hazel_happy

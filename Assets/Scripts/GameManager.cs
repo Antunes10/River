@@ -275,6 +275,7 @@ public class GameManager : MonoBehaviour
 		if (_gs.cityDecision == 5)
 		{
 			_gs.currentInkIndex = 17;
+			_gs.dialogueIndex = 0;
 		}
 
 		//TODO: dar fix

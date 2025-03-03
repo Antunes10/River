@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:Dam
+#background:Dam #enviroSound:forest
 #speaker: #layout:left:tails_default #layout:right:sparks_default_m 
 ~unlockImage(4)
 Hours pass and they both reach a wider body of water, surrounded by gravel and bushes.
@@ -59,6 +59,7 @@ They had to decide.
 	#speaker:
     The mouse jumps unto solid ground and with a last goodbye they turn their backs to the helmet and press forward through the middle of the forest.
     A couple of minutes pass and the mantle of leaves thickens.
+    #enviroSound:silence #music:nimbus
     The ground starts to become uneven, and an unnatural silence takes control.
     Something was afoot.
     #speaker:Sparks #portrait:sparks_scared #layout:right:sparks_scared_m
@@ -113,6 +114,7 @@ They had to decide.
     It seems dark and long.
     #layout:left:sparks_scared #layout:middle:tails_sad
     Sparks gets immediately behind is friend as the shape pops out of the water.
+    #music:hazel
     #speaker:??? #portrait:hazel_default #layout:right:hazel_default_m
     Otter: Well, hello to you, little ones.
     #speaker: #layout:middle:tails_default #layout:left:sparks_default
