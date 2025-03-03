@@ -23,12 +23,12 @@ public class GameManager : MonoBehaviour
 
 	#region Setters&Getters
 
-	public void changeFood(int val) { _gs.currentFood += val; _gs.currentFood = Math.Clamp(_gs.currentFood, 0, 16); Debug.Log(_gs.currentFood); }
-	public void changeHope(int val) { _gs.currentHope += val; _gs.currentHope = Math.Clamp(_gs.currentHope, 0, 5); Debug.Log(_gs.currentHope); }
+	public void changeFood(int val) { _gs.currentFood += val; _gs.currentFood = Math.Clamp(_gs.currentFood, 0, 16); }
+	public void changeHope(int val) { _gs.currentHope += val; _gs.currentHope = Math.Clamp(_gs.currentHope, 0, 5); }
 
 	public void recruitSparks(bool val) { _gs.hasSparks = val; }
-	public void recruitNimbus(bool val) { _gs.hasNimbus = val; _gs.NimbusSaved = true; }
-	public void recruitOak(bool val) { _gs.hasOak = val; _gs.OakSaved = true; }
+	public void recruitNimbus(bool val) { _gs.hasNimbus = val; if (val) { _gs.NimbusSaved = true; } }
+	public void recruitOak(bool val) { _gs.hasOak = val; if (val) { _gs.OakSaved = true; } }
 	public void recruitCotton(bool val) { _gs.hasCotton = val; _gs.CottonSaved = true; }
 	public void foundOldMan() { _gs.FoundOldMan = true; }
 	public void killedNimbus() { _gs.KilledNimbus = true; }
@@ -277,6 +277,7 @@ public class GameManager : MonoBehaviour
 			_gs.currentInkIndex = 17;
 		}
 
+		//TODO: dar fix
 	_currentInk = _inkJSONs[_gs.currentInkIndex]._InkJSONs[_gs.dialogueIndex];
 	SceneManager.LoadScene("DialogueScene");
   }
