@@ -173,15 +173,15 @@ Cotton: And he deserves a rest, more than anyone in this world.
 #speaker:
 The firefly smiles seeing his friends cry with joy.
 Without knowing…
-His smile is suddenly joined by tears.
-He had never cried and smiled at the same time…
+Her smile is suddenly joined by tears.
+She had never cried and smiled at the same time…
 It is a weird sensation.
-As if his heart was both happy and sad.
+As if her heart was both happy and sad.
 Like a rainbow on a rainy day.
-He doesn’t know why he feels that way.
-He is too small to understand.
-But he will one day…
-Thanks to the mouse at his side.
+Shee doesn’t know why she feels that way.
+She is too small to understand.
+But she will one day…
+Thanks to the mouse at her side.
 
 ~changeScene("Credits")
 
