@@ -9,11 +9,15 @@ public class CreditsManager : MonoBehaviour
     {
         // play credits song
         AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.credits);
+        AudioManager.Instance.ChangeVolume(7, 0);
+		AudioManager.Instance.ChangeVolume(7, 1);
+        AudioManager.Instance.SaveVolumes();
 
-    }
+
+	}
 
     public void ChangeToMainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        GameManager.Instance.changeToMenuScene();
     }
 }
