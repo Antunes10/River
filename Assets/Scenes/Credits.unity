@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Design
+  m_text: a story by
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
   m_sharedMaterial: {fileID: -690766383893640419, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
@@ -2172,7 +2172,7 @@ GameObject:
   - component: {fileID: 543095902}
   - component: {fileID: 543095903}
   m_Layer: 5
-  m_Name: Game Design
+  m_Name: Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3591,7 +3591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Written and Produced by Andr\xE9 Antunes"
+  m_text: "Composed and Written by Andr\xE9 Antunes"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d59d598aa249c047b3a40ee91ad491b, type: 2}
   m_sharedMaterial: {fileID: 3066352059609786081, guid: 8d59d598aa249c047b3a40ee91ad491b, type: 2}
@@ -3618,7 +3618,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.55
+  m_fontSize: 55.5
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6059,7 +6059,7 @@ GameObject:
   - component: {fileID: 1536049357}
   - component: {fileID: 1536049358}
   m_Layer: 5
-  m_Name: Writing
+  m_Name: GaneDesign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6555,7 +6555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Writing
+  m_text: game design
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
   m_sharedMaterial: {fileID: -690766383893640419, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
@@ -7408,7 +7408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '" You won''t be Alone "'
+  m_text: '" You won''t be alone "'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
   m_sharedMaterial: {fileID: -690766383893640419, guid: edf8b4dc3e2cd9c47995a86e8438b5d4, type: 2}
