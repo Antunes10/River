@@ -1539,13 +1539,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
   - {fileID: 8300000, guid: c57bfee69dd1ab140b5e7138ab20d1e8, type: 3}
-  - {fileID: 8300000, guid: 790c33e9601d5d547aeec1ba3a66fe92, type: 3}
-  - {fileID: 8300000, guid: 074e153d7a806f3499ffd3204fc930d9, type: 3}
   - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
-  - {fileID: 8300000, guid: 074e153d7a806f3499ffd3204fc930d9, type: 3}
-  - {fileID: 8300000, guid: 074e153d7a806f3499ffd3204fc930d9, type: 3}
-  - {fileID: 8300000, guid: 074e153d7a806f3499ffd3204fc930d9, type: 3}
-  - {fileID: 8300000, guid: 074e153d7a806f3499ffd3204fc930d9, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4685fc0aaf5b64747b011b2b28db54f0, type: 3}
+  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
+  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
+  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
+  - {fileID: 8300000, guid: 4096ee36cb01cec4bb7f27b5e4cab909, type: 3}
   _sfxSounds:
   - {fileID: 8300000, guid: aceccdfc1f5e56d438897991392d0c17, type: 3}
   - {fileID: 8300000, guid: aceccdfc1f5e56d438897991392d0c17, type: 3}
@@ -3197,10 +3197,10 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 4ec8219def85f5f4a95e78fbc2405a09, type: 3}
     - {fileID: 4900000, guid: 4ec8219def85f5f4a95e78fbc2405a09, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 3fe619a68a6a3054abbece28435c4d17, type: 3}
-    - {fileID: 4900000, guid: 3fe619a68a6a3054abbece28435c4d17, type: 3}
-    - {fileID: 4900000, guid: 3fe619a68a6a3054abbece28435c4d17, type: 3}
-    - {fileID: 4900000, guid: 3fe619a68a6a3054abbece28435c4d17, type: 3}
+    - {fileID: 4900000, guid: 1cb244f45625cdd4a9ea646f15d52bbd, type: 3}
+    - {fileID: 4900000, guid: 1cb244f45625cdd4a9ea646f15d52bbd, type: 3}
+    - {fileID: 4900000, guid: 1cb244f45625cdd4a9ea646f15d52bbd, type: 3}
+    - {fileID: 4900000, guid: 1cb244f45625cdd4a9ea646f15d52bbd, type: 3}
   _currentInk: {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
   unlockedImages: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &730998456
