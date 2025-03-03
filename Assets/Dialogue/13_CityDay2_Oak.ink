@@ -451,7 +451,7 @@ Tails looks at the skies.
 ~cityDecision(1)
 #speaker:Tails #portrait:tails_default #layout:left:tails_default
 We have to find Nimbus.
-Where does the West trail leaded?
+Where did the West trail led?
 #speaker: #layout:middle_right:bunny_default_m
 {
     - hasOak():
