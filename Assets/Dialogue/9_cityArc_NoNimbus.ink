@@ -188,7 +188,7 @@ What are we going to do, Mr.Tails?
         #speaker:Tails #portrait:tails_default
         Just do it.
         #speaker:
-        They all seem a bit confused with Tails request, but they help him none less.
+        They all seem a bit confused with Tails request, but they help him noneless.
         A few minutes pass and Sparks finds a garbage bag that they use to seal the small hole.
         #speaker:Tails #portrait:tails_happy #layout:middle:tails_happy
         Perfect!
