@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         //Rise water level if its raining
         if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory && !_levelManager.GetPaused())
         {
-            _slider.value += 0.05f;
+            _slider.value += 0.03f;
             if (_slider.value > 99)
             {
                 LevelManager.Instance.LoseGame();
