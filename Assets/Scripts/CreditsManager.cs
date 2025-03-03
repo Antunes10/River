@@ -7,7 +7,7 @@ public class CreditsManager : MonoBehaviour
 {
     public void Start()
     {
-        // play menu song
+        // play credits song
         AudioManager.Instance.PlayNarrativeMusic(AudioManager.MusicsNarrative.credits);
 
     }

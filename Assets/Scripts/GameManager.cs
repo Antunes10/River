@@ -283,7 +283,6 @@ public class GameManager : MonoBehaviour
 
   public void changeToCreditsScene()
   {
-	InitGameState();
 	AudioManager.Instance.StopAllSounds();
 	SceneManager.LoadScene("Credits");
   }
