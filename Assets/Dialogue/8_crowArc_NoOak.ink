@@ -1,5 +1,17 @@
 INCLUDE globals.ink
-
+{
+    - hasSparks():
+        ~nSaved = nSaved+1
+}
+{
+    - hasNimbus():
+        ~nSaved = nSaved+1
+}
+{
+    - hasOak():
+        ~nSaved = nSaved+1
+}
+~nSaved = nSaved+1
 ->main
 
 === main ===
@@ -92,24 +104,24 @@ Looking around with dark eyes.
     He then flaps them with ease and lowers himself to a branch closer to them.
     #portrait:crow_default #layout:right:crow_default_m #layout:middle_left:sparks_sad
     #speaker:Crow 
-    Crow: Many greetings to you all.
-    Crow: What brings you to my swamp?
+    Many greetings to you all.
+    What brings you to my swamp?
     #speaker:
     His voice is harsh and deep.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default
     We got lost, thanks to this sly mist. And we are trying to find our way West.
     #speaker:Crow #portrait:crow_default #background:swapTree
-    Crow: I see…
-    Crow: Many more have passed through here.
-    Crow: Many more traveling West.
+    I see…
+    Many more have passed through here.
+    Many more traveling West.
     #portrait:crow_menacing #layout:right:crow_menacing_m
-    Crow: I helped them all.
+    I helped them all.
     #speaker:Nimbus #portrait:nimbus_default #layout:left:nimbus_default
     That’s great. Can you help us too?
     #speaker: #layout:right:crow_default_m
     The crow looks at each of them individually.
     #speaker:Crow #portrait:crow_menacing #layout:right:crow_menacing_m
-    Crow: Of course.
+    Of course.
     #speaker: #layout:right:default #layout:right:sparks_sad_m
     He opens his wings again and starts flying away.
     The mouse loses no time getting back in the water and following the black bird.
@@ -123,25 +135,25 @@ Looking around with dark eyes.
     #speaker:
     The crow looks around.
     #speaker:Crow #portrait:crow_default
-    Crow: Just a bit.
-    Crow: This swamp covers all the land.
+    Just a bit.
+    This swamp covers all the land.
     #speaker:Tails #portrait:tails_default
     Is it that big?
     #speaker:
     The bird laughs.
     #speaker:Crow #portrait:crow_menacing
-    Crow: Much bigger than you can imagine.
-    Crow: And it is not alone. Hundred more now paint the once green fields.
-    Crow: Grey and mud fills the world.
-    Crow: As bodies pile up East and are brought by the murky river.
+    Much bigger than you can imagine.
+    And it is not alone. Hundred more now paint the once green fields.
+    Grey and mud fills the world.
+    As bodies pile up East and are brought by the murky river.
     #speaker:Sparks #portrait:sparks_sad
     But there is an enchanted land in the West, right?
     #speaker:
     The bird laughs again.
     #speaker:Crow #portrait:crow_menacing
-    Crow: That’s what they all say.
-    Crow: But there are humans West too.
-    Crow: And death follows in their wake.
+    That’s what they all say.
+    But there are humans West too.
+    And death follows in their wake.
     #speaker:
     The ominous words make everyone go sad.
     Hope is drowned by the blackness of the bird’s figure.
@@ -189,7 +201,7 @@ Looking around with dark eyes.
     A slow and asphyxiating death.
 
 -
-~changeScene("gameOver")
+~gameOver()
 
 ->END
 
@@ -206,14 +218,15 @@ Looking around with dark eyes.
 
 === KeepWaiting ===
 
-{getFood() > 0: ->hasFoodAndWaited | ->noFoodAndWaited}
-
-~changeScene("RiverScene")
-
-->END
+{
+    - getFood() > 0:
+        ->hasFoodAndWaited
+    -else:
+        ->noFoodAndWaited
+}
 
 === hasFoodAndWaited ===
-~changeFood(-1)
+~changeFood(-nSaved)
 
 The mouse returns inside.
 Any changes?
@@ -228,8 +241,8 @@ And again, the mist hasn’t disappeared.
 ->ChoicePanel
 
 === noFoodAndWaited ===
-~changeScene("gameOver")
--> END
+As you return to the inside of the helmet you notice there's no more food left.
+->RiskIt
 
 === Wait ===
 Let’s play safe.

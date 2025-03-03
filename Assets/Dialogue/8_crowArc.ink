@@ -200,8 +200,7 @@ Looking around with dark eyes.
     A slow and asphyxiating death.
     
 -
-~changeScene("gameOver")
-
+~gameOver()
 ->END
 
 
@@ -219,11 +218,12 @@ Looking around with dark eyes.
 
 === KeepWaiting ===
 
-{getFood() > 0: ->hasFoodAndWaited | ->noFoodAndWaited}
-
-~changeScene("RiverScene")
-
-->END
+{
+    - getFood() > 0:
+        ->hasFoodAndWaited
+    -else:
+        ->noFoodAndWaited
+}
 
 
 === hasFoodAndWaited ===
@@ -242,7 +242,7 @@ Here we are safe from the cold.
 #speaker:
 They all agree and start munching away their anxiety and hunger.
 Time passes.
-And again, the mouse goas to the top.
+And again, the mouse goes to the top.
 And again, the mist hasn’t disappeared.
 
 ->ChoicePanel

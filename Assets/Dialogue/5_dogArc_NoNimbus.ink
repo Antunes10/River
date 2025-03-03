@@ -67,11 +67,11 @@ He had seen mice teared to shreds by angry mongrels.
     He jumps terrified.
     The dog’s dark eyes are locked on him.
     #speaker:??? #portrait:oak_default_noHat
-    Dog: What are you doing here?
+    What are you doing here?
     #speaker:
     The mouse is catatonic.
     #speaker:Oak #portrait:oak_default_noHat #music:villageArrival
-    Dog: Are you afraid of old Oak?
+    Are you afraid of old Oak?
     #speaker:
     The canine seems genuinely confused.
     Tails takes the initiative still shaking from the scare.
@@ -167,7 +167,7 @@ He had seen mice teared to shreds by angry mongrels.
         He then sits silently, looking at the ephemerality of life.
         The wind howls and rain starts to fall.
         The dog grabs the owner’s hat and places it on his.
-        #speaker:Oak #portrait:oak_sad 
+        #speaker:Oak #portrait:oak_sad #layout:right:oak_sad_m
         I should have stayed, you old fool…
         I should have stayed.
         #speaker:
