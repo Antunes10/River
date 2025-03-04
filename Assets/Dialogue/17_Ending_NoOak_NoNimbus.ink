@@ -355,7 +355,7 @@ The water helps, but his body is still frail.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
 You have to get up Mr.Tails, you don’t wanna lose this moment!
 #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m
-Cotton: I think its best if he stays like this, sweetie.
+I think its best if he stays like this, sweetie.
 #speaker:
 Suddenly, a strong ray pierces the sky above them.
 The clouds part.
@@ -410,7 +410,7 @@ The mouse thanks her with a subtle smile, as his eyes lose focus.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
 Of course! But he will see it in a bit, anyways…
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
-Cotton: Yes, he will, sweetie. Yes, he will.
+Yes, he will, sweetie. Yes, he will.
 #speaker:
 The firefly flies up again to remember the dream came true.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 

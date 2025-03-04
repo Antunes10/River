@@ -26,7 +26,7 @@ We were not sure you would wake up…
 #speaker:
 The rabbit steps forward.
 #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m
-Cotton: Give him a little space you dummies. He needs air, he’s still hurt.
+Give him a little space you dummies. He needs air, he’s still hurt.
 #speaker:
 The rabbit adjusts his head on the feathery nest he is lying, like a mother comforting her sick cub.
 Tails wanted to speak, but his throat didn’t allow…
@@ -58,7 +58,7 @@ The water helps, but his body is still frail.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
 You have to get up Mr.Tails, you don’t wanna lose this moment!
 #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m
-Cotton: I think its best if he stays like this, sweety.
+I think its best if he stays like this, sweety.
 #speaker:
 Suddenly, a strong ray pierces the sky above them.
 The clouds part.
@@ -80,7 +80,7 @@ It’s a dream… It can only be a dream…
 #speaker:
 The bird smiles as wide as the skies that he once flew.
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
-Cotton: Yes! Yes! Yes! Yes! We are here!
+Yes! Yes! Yes! Yes! We are here!
 #speaker:
 Joy overflows.
 #layout:right:bunny_default_m
@@ -123,7 +123,7 @@ The mouse thanks him with a subtle smile, as his eyes lose focus.
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
 Of course! But he will see it in a bit, anyways…
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
-Cotton: Yes, he will, sweety. Yes, he will.
+Yes, he will, sweety. Yes, he will.
 #speaker:
 The firefly flies up again to remember the dream came true.
 #speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
@@ -158,7 +158,7 @@ Yes…
 He’s tired little Sparks…
 Saving all of us was a tiring task.
 #speaker:Cotton #portrait:bunny_sad #layout:right:bunny_sad_m
-Cotton: And he deserves a rest, more than anyone in this world.
+And he deserves a rest, more than anyone in this world.
 #speaker:
 The firefly smiles seeing his friends cry with joy.
 Without knowing…
