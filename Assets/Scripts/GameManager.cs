@@ -269,6 +269,7 @@ public class GameManager : MonoBehaviour
 			if (_gs.cityDecision == 4)
 			{
 				_gs.currentInkIndex = 15;
+				_gs.dialogueIndex = 0;
 			}
 		}
 		//After river where the decision was to leave the city, it goes to last chapter
