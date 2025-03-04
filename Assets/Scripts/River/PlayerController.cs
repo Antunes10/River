@@ -51,17 +51,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Rise water level if its raining
-        if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory && !_levelManager.GetPaused())
-        {
-            _slider.value += 0.03f;
-            if (_slider.value > 99)
-            {
-                LevelManager.Instance.LoseGame();
-            }
-        }
-
-
+        
         //Move Helmet
         _horizontalM = Input.GetAxisRaw("Horizontal") * _speed;
         _verticalM = Input.GetAxisRaw("Vertical") * _speed;
@@ -122,7 +112,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_victory)
+		//Rise water level if its raining
+		if (_isRaining && !_helmetState.Equals(HelmetState.oak) && !_victory && !_levelManager.GetPaused())
+		{
+			_slider.value += 0.07f;
+			if (_slider.value > 99)
+			{
+				LevelManager.Instance.LoseGame();
+			}
+		}
+		if (_victory)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             transform.Translate(Vector3.right * Time.deltaTime * 5, Camera.main.transform);
