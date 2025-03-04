@@ -1,7 +1,7 @@
 INCLUDE globals.ink
 {
     - hasCotton() and hasSparks():
-        -> Sparks&CottonN
+        -> SparksCottonN
 }
 {
     - hasSparks():
@@ -14,9 +14,69 @@ INCLUDE globals.ink
         ->aloneN
 }
 
-->alone
-
 === aloneN ===
+The river flows serene. Carrying the helmet in a soothing motion.
+The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.
+#layout:middle:tails_default
+Tails looks up to the skies and sees white clouds, kissed by the glowing rays of a sleepy sun. A young golden morning.
+He woke up at peace.
+Like he was waking for the first time.
+His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
+The hope that is singing.
+#layout:middle:tails_sad
+Then it hits him.
+Sparks wasn't with him...
+The little firefly he protected all this time.
+She was alone...
+Somewhere else.
+{
+    - savedOak():
+        Not just her, but also the old dog.
+    -savedNimbus():
+        The young and courageous bird.
+}
+He left important friends behind...
+#speaker:Tails #portrait:tails_default #layout:middle:tails_default
+I survived.
+I must take confort in that.
+#speaker:
+The breeze blows stronger, and its songs of hope grow louder.
+He is going to reach the valley and he knows it.
+#layout:middle:tails_scared
+Suddenly, a strong ray pierces the sky above them.
+The clouds part.
+The wind runs in excitement.
+He brightens up with a smile on his faces.
+He looks towards the closing horizon and sees it…
+Finally…
+The sleepy fog dissolves and their journey unfolds…
+A dream thought too hopeful to reach…
+The Valley…
+His eyes widen and the heart fills with unvaluable joy.
+Green…
+Bright…
+Beautiful…
+He has arrived to his destination.
+After countless perils. Untold sacrifices and painful losses, he's safe.
+#layout:middle:tails_happy
+He jumps with joy.
+Screams and sings to the wind.
+Almost falling overboard.
+#speaker:Tails #portrait:tails_happy
+Yes! Yes! Yes! Yes!
+#speaker:
+Joy overflows.
+#speaker:Tails #portrait:tails_happy
+It’s so beautiful...
+#speaker:
+He looks back and thinks about what he went through...
+And those who were left behind.
+He owned this dream to them...
+He would be able to live on thanks to them.
+#speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
+Goodbye Sparks...
+I'll see you again...
+
 ~changeScene("Credits")
 ->END
 
@@ -170,10 +230,80 @@ Thanks to the mouse at her side.
 ->END
 
 === CottonN ===
+#background:finalValley
+#speaker: 
+The river flows serene. Carrying the helmet in a soothing motion.
+The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.
+#layout:middle_left:tails_default
+Tails looks up to the skies and sees white clouds, kissed by the glowing rays of a sleepy sun. A young golden morning.
+He woke up at peace.
+Like he was waking for the first time.
+His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
+The hope that is singing.
+#layout:right:bunny_default_m
+Cotton wakes up soon after. She brushes her faces in surprise and gathers around the weaken mouse.
+#speaker:
+#speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
+It's so good to see you awake, little mouse.
+#speaker:
+Tails arises and puts his head above the helmet's ledge.
+The breeze blows stronger, and its songs of hope grow louder.
+#speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
+We'll soon arive, little one. To that enchanted land you told me.
+#speaker:Tails #portrait:tails_default
+Yes...
+I'm so happy...
+#layout:middle_left:tails_sad
+And sad...
+#speaker:Cotton #portrait:bunny_sad #layout:right:bunny_sad_m
+You miss little Sparks?
+#speaker:
+The mouse doesn't need to answer.
+She knew how much the young firefly meant to him.
+#layout:right:bunny_scared_m #layout:middle_left:tails_scared
+Suddenly, a strong ray pierces the sky above them.
+The clouds part.
+The wind runs in excitement.
+They all brighten up with smiles on their faces.
+They look towards the closing horizon and see it…
+Finally…
+The sleepy fog dissolves and their journey unfolds…
+A dream thought too hopeful to reach…
+The Valley…
+Their eyes widen and their hearts fill with unvaluable joy.
+Green…
+Bright…
+Beautiful…
+They have arrived to their destination.
+After countless perils. Untold sacrifices and painful losses, they are safe.
+#speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m 
+We're here, ah ah! It’s real!
+#speaker:
+She fills with joy and gives a dozen kisses to the mouse, which smiles radiant.
+#speaker:Tails #portrait:tails_happy
+Yes! Yes! Yes! Yes!
+#speaker:
+Joy overflows.
+#speaker:Tails #portrait:tails_happy
+It’s so beautiful...
+It’s, it’s green… so green. Like moss on a small lake.
+Look at those mountains around it, they are huge! Bigger than any “stone forest” I’ve ever seen.
+#speaker:Cotton #portrait:bunny_happy
+It's a dream come true.
+Thank you, sweetie.
+I managed to arrive here thanks to you...
+#speaker:
+They embrace.
+A strong and warm show of love.
+For they had survived against all odds.
+In a world that didn't care for them...
+But they cared...
+Cared for each other.
+And they would never again be alone.
 ~changeScene("Credits")
 ->END
 
-=== Sparks&CottonN ===
+=== SparksCottonN ===
 #background:finalValley
 #speaker: 
 The river flows serene. Carrying the helmet in a soothing motion.
