@@ -41,6 +41,7 @@ It will be perfect, green, cozy, peaceful…
 And all kinds of animals will be there. Dogs, cats, otters, birds, mice, tortoi… tortou… tor…
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
 Tortoises.
+#speaker:
 Says the bird containing his laugh.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 I dunno if they are already there, they tend to be the last ones to arrive.

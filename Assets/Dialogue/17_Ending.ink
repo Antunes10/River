@@ -58,6 +58,7 @@ It will be perfect, green, cozy, peaceful…
 And all kinds of animals will be there. Dogs, cats, otters, birds, mice, tortoi… tortou… tor…
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
 Tortoises.
+#speaker:
 Says the bird containing his laugh.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 I dunno if they are already there, they tend to be the last ones to arrive.
@@ -219,7 +220,7 @@ Mr.Tails you are awake!!
 The joyfulness of Sparks wakes up the other companions. They brush their faces in surprise and gather around the weaken mouse.
 #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
 It’s so good to see you smiling Sir.Tails. The most joyful image an old dog could ask for.
-#speaker:Nimbus #portrait:nimbus_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 Yes! We though we had lost you…
 We were not sure you would wake up…
 #speaker:
@@ -235,6 +236,7 @@ It will be perfect, green, cozy, peaceful…
 And all kinds of animals will be there. Dogs, cats, otters, birds, mice, tortoi… tortou… tor…
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
 Tortoises.
+#speaker:
 Says the bird containing his laugh.
 #speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 I dunno if they are already there, they tend to be the last ones to arrive.
@@ -310,11 +312,11 @@ He is strong and proud, but he can’t hold back the tears.
 The firefly notices his sobbing.
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
 Why are you crying Mr.Nimbus? We are here!
-#speaker:Oak #portrait:oak_sad #layout:left:oak_sad
+#speaker:Oak #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
 He is crying with joy, little one…
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
 Oh, that’s good!
-#speaker:Oak #portrait:oak_default #layout:left:oak_default #layout:middle_right:nimbus_default_m
+#speaker:Oak #portrait:oak_sad_noHat
 Keep describing that beautiful valley, I know Tails wants to hear it.
 #speaker:
 The mouse thanks him with a subtle smile, as his eyes lose focus.
@@ -347,11 +349,11 @@ At the same time, Tails closes his eyes, tired of his journey.
 The breeze calms down and the sun dims its rays.
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
 His he sleeping?
-#speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
+#speaker:Nimbus #portrait:nimbus_sad
 Yes…
 He’s tired little Sparks…
 Saving all of us was a tiring task.
-#speaker:Oak #portrait:oak_sad_noHat #layout:right:oak_sad_noHat
+#speaker:Oak #portrait:oak_sad_noHat
 And he deserves the rest, more than anyone in the entire world.
 #speaker:
 The firefly smiles seeing his friends cry with joy.
@@ -389,9 +391,9 @@ Look guys, Tails is awake!!
 #layout:left:bunny_default
 #layout:right:oak_default_m
 The other companions wake up with the announcement. They brush their faces in surprise and gather around the weaken mouse.
-#speaker:Oak #portrait:oak_default #layout:left:oak_default 
+#speaker:Oak #portrait:oak_default
 It’s so good to see you smiling Sir.Tails. The most joyful image an old dog could ask for.
-#speaker:Nimbus #portrait:nimbus_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 Yes! We though we had lost you…
 We were not sure you would wake up…
 #speaker:
@@ -424,7 +426,8 @@ You miss little Sparks?
 #speaker:
 The mouse doesn't need to answer.
 They knew how much the young firefly meant to him.
-#layout:right:bunny_scared_m #layout:middle_right:nimbus_scared_m #layout:right:oak_scared_m layout:middle_left:tails_scared
+#layout:right:oak_scared_m
+#layout:left:bunny_scared #layout:middle_right:nimbus_scared_m layout:middle_left:tails_scared
 Suddenly, a strong ray pierces the sky above them.
 The clouds part.
 The wind runs in excitement.
@@ -446,7 +449,7 @@ It’s a dream… It can only be a dream…
 The bird smiles as wide as the skies that he once flew.
 #speaker:Oak #portrait:oak_happy #layout:right:oak_happy_m
 It’s real my boy, ah ah! It’s real!
-#speaker: #layout:right:bunny_happy_m
+#speaker: #layout:left:bunny_happy
 The dog raises the rabbit on his head, making her giggle atop his hat.
 She opens her arms kissing the welcoming breeze that is pushing them into the Valley.
 #speaker:Cotton #portrait:bunny_happy
@@ -462,24 +465,43 @@ It's a dream come true.
 #speaker:Nimbus #portrait:nimbus_happy
 Thank you, my friend...
 We wouldn't be here if not for you.
+#speaker: #layout:middle_left:tails_happy
+Tails smiles with the remark...
+#layout:middle_left:tails_sad
+But then his heart saddens.
+He remembers the young firefly.
+The one that was with him from the beggining.
+#speaker:Tails #portrait:tails_sad #layout:right:oak_sad_m #layout:middle_right:nimbus_sad_m #layout:left:bunny_sad
+But I couldn't save her...
+She should have been here with us...
+I failed her...
 #speaker:
-Tails turns around and sees all his friends looking at him.
-With smiles on their faces.
-#speaker:Tails #portrait:tails_default #layout:middle_left:tails_default
-Oh... you're exagerating...
-We helped each other survive all this.
-#speaker:Oak #portrait:oak_default #layout:right:oak_default_m
-Perhaps...
-But you were the one that never gave up.
-That went back for each one of us.
-#speaker:Cotton #portrait:bunny_default #layout:left:bunny_default
-You held on to hope when no one else could.
-Even though you're the smallest of us.
+Tears start to fall.
+Has they arrive at the valley they so hopefully looked for.
+#layout:middle:nimbus_default_m #layout:middle_right:default
+Then Tails feels a warm embrace...
+With feathers and warmth.
+#speaker:Nimbus #portrait:nimbus_default
+You did all you could.
+You might have failed to save everyone, but...
+You saved us.
 #speaker:
 Tails wants to say something...
 But he can't...
-He hugs the rabbit....
-And soon the other two join in the embrace.
+#layout:middle_left:tails_default
+He hugs the bird....
+#speaker:Tails #portrait:tails_sad
+Thank you...
+#speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+No.
+Thank you, little one.
+You were the one that never gave up.
+That went back for both of us.
+#speaker:Cotton #portrait:bunny_default #layout:left:bunny_default
+You held on to hope when no one else could.
+Even though you're the smallest of us.
+#speaker: #layout:right:default #layout:middle_right:oak_default_m
+Oak and Cotton join in the embrace.
 A strong and warm show of love.
 For they had survived against all odds.
 In a world that didn't care for them...
@@ -500,30 +522,29 @@ He wakes up at peace.
 Like he's waking for the first time.
 His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
 The hope that is singing.
-#speaker:Nimbus #portrait:nimbus_happy
-#layout:middle_right:nimbus_happy_m
+#speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
 #layout:middle_left:tails_hurt
-Look guys, Tails is awake!!
+Look Oak, Tails is awake!!
 #speaker:
 #layout:right:oak_default_m
-The other companions wake up with the announcement. They brush their faces in surprise and gather around the weaken mouse.
-#speaker:Oak #portrait:oak_default #layout:left:oak_default 
+The dog wakes up with the announcement. He brush his face in surprise and gathers around the weaken mouse.
+#speaker:Oak #portrait:oak_default
 It’s so good to see you smiling Sir.Tails. The most joyful image an old dog could ask for.
-#speaker:Nimbus #portrait:nimbus_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m
 Yes! We though we had lost you…
 We were not sure you would wake up…
-#speaker:
+#speaker: #layout:middle_left:tails_default
 Tails rises up with some effort, to meet his friends.
 #speaker:Oak #portrait:oak_happy #layout:right:oak_happy_m
 See, young Nimbus, this mouse is made of rock and bark!
 #speaker:
 The dog gives a pat on Tail's back, taking out the air in his little lungs.
-#speaker:Tails #portrait:tails_default #layout:middle_left:tails_sad
+#speaker:Tails #portrait:tails_sad #layout:middle_left:tails_sad
 Easy... I'm still made of bone!
 #speaker: #layout:middle_right:nimbus_happy_m #layout:middle_left:tails_happy
 They all laugh out loud.
 The breeze blows stronger, and its songs of hope grow louder.
-#speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m #layout:right:oak_default_m #layout:middle_left:tails_default
+#speaker:Nimbus #portrait:nimbus_default #layout:middle_right:nimbus_default_m #layout:right:oak_default_m #layout:middle_left:tails_default
 We'll soon arive, Tails. To our destination...
 Our dream...
 #speaker:Tails #portrait:tails_default
@@ -537,7 +558,7 @@ Sparks?
 #speaker:
 The mouse doesn't need to answer.
 They knew how much the young firefly meant to him.
-#layout:middle_right:nimbus_scared_m #layout:right:oak_scared_m layout:middle_left:tails_scared
+#layout:middle_right:nimbus_scared_m #layout:right:oak_scared_m #layout:middle_left:tails_scared
 Suddenly, a strong ray pierces the sky above them.
 The clouds part.
 The wind runs in excitement.
@@ -569,25 +590,43 @@ Look at those mountains around it, they are huge! Bigger than any “stone fores
 I can't belive it.
 Thank you, my friend...
 We wouldn't be here if not for you.
+#speaker: #layout:middle_left:tails_happy
+Tails smiles with the remark...
+#layout:middle_left:tails_sad
+But then his heart saddens.
+He remembers the young firefly.
+The one that was with him from the beggining.
+#speaker:Tails #portrait:tails_sad #layout:right:oak_sad_m #layout:middle_right:nimbus_sad_m
+But I couldn't save her...
+She should have been here with us...
+I failed her...
 #speaker:
-Tails turns around and sees all his friends looking at him.
-With smiles on their faces.
-#speaker:Tails #portrait:tails_default #layout:middle_left:tails_default
-Oh... you're exagerating...
-We helped each other survive all this.
-#speaker:Oak #portrait:oak_default #layout:right:oak_default_m
-Perhaps...
-But you were the one that never gave up.
-That went back for each one of us.
-#speaker:Nimbus #portrait:nimbus_default #layout:middle_left:nimbus_default_m
-And saved us...
-From ourselves.
+Tears start to fall.
+Has they arrive at the valley they so hopefully looked for.
+#layout:middle:nimbus_default_m #layout:middle_right:default
+Then Tails feels a warm embrace...
+With feathers and warmth.
+#speaker:Nimbus #portrait:nimbus_default
+You did all you could.
+You might have failed to save everyone, but...
+You saved us.
 #speaker:
 Tails wants to say something...
 But he can't...
-#layout:middle_left:oak_default #layout:middle:tails_default
+#layout:middle_left:tails_default
 He hugs the bird....
-And soon Oak joins in the embrace.
+#speaker:Tails #portrait:tails_sad
+Thank you...
+#speaker:Oak #portrait:oak_default #layout:right:oak_default_m
+No.
+Thank you, little one.
+You were the one that never gave up.
+That went back for both of us.
+#speaker:Nimbus #portrait:nimbus_default
+And saved us...
+From ourselves.
+#speaker: #layout:right:default #layout:left:oak_default
+Oak joins in the embrace.
 A strong and warm show of love.
 For they had survived against all odds.
 In a world that didn't care for them...
