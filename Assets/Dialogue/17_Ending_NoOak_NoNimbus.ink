@@ -238,7 +238,7 @@ Like he's waking for the first time.
 His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
 The hope that is singing.
 #layout:right:bunny_default_m
-Cotton wakes up soon after. She brushes her faces in surprise and gathers around the weaken mouse.
+Cotton wakes up soon after. She brushes her face in surprise and gathers around the weaken mouse.
 #speaker:
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
 It's so good to see you awake, little mouse.
@@ -314,7 +314,7 @@ The hope that is singing.
 Mr.Tails you are awake!!
 #speaker: 
 #layout:right:bunny_default_m
-The joyfulness of Sparks wakes up Cotton. She brushes her faces in surprise and gathers around the weaken mouse.
+The joyfulness of Sparks wakes up Cotton. She brushes her face in surprise and gathers around the weaken mouse.
 #speaker:
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
 It's so good to see you awake, little mouse.
