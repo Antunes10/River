@@ -259,7 +259,7 @@ Or perhaps it was best if Tails spent some time with his companion.
         ->nimbusLeftBehind 
     }
 -
-~changeScene("EndDayScene")
+~changeScene("Menu")
 ->END
 
 === nimbusLeftBehind ===
@@ -288,7 +288,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
     
-    ~changeScene("EndDayScene")
+    ~changeScene("Menu")
     ->DONE
 
 +[You both are the ones that matter]
@@ -329,7 +329,7 @@ Yes, I know she will.
 #speaker:
 The mouse places a little kiss on the firefly’s forehead and goes back to the nest.
 
-~changeScene("EndDayScene")
+~changeScene("Menu")
 ->END
 
 === nimbusDead ===
@@ -352,7 +352,7 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
     The request hurts the rodent’s feelings, but he heeds it.
     Tails turns his back to his friend and goes back to the nest to sleep away the pain.
 
-    ~changeScene("EndDayScene")
+    ~changeScene("Menu")
     ->DONE
     
 +[It wasn’t your fault.]
@@ -397,7 +397,7 @@ Yes, I know she will.
 #speaker:
 The mouse places a little kiss on the firefly’s forehead and goes back to the nest.
 
-~changeScene("EndDayScene")
+~changeScene("Menu")
 ->END
 
 === endDialogue ===

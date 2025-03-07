@@ -262,7 +262,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         {nimbus_hopeful_VS_truth == 0: ->if_hopeful_2 | ->if_truth_2}
         
     -
-~changeScene("EndDayScene")
+~changeScene("Menu")
 
 ->END
 
@@ -372,7 +372,7 @@ You and me both.
 #speaker:
 With a smile and a small goodbye, the woodpecker goes to lie down on a small pile of leaves.
 
-~changeScene("EndDayScene")
+~changeScene("Menu")
 
 ->DONE
 
@@ -425,7 +425,7 @@ Want to come too?
 #speaker:Tails
 The bird confirms with a small nod, and they go back to the warmth of the shelter together.
 
-~changeScene("EndDayScene")
+~changeScene("Menu")
 
 ->DONE
 

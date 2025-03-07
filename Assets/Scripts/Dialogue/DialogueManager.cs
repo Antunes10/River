@@ -9,63 +9,72 @@ using UnityEngine.Video;
 
 public class DialogueManager : MonoBehaviour
 {
-  public GameObject saveMenuUi;
-  public GameObject loadMenuUi;
+    public GameObject saveMenuUi;
+    public GameObject loadMenuUi;
 
-  [Header("Params")]
-  [SerializeField] private float typingSpeed = 0.04f;
+    [Header("Params")]
+    [SerializeField] private float typingSpeed = 0.04f;
 
-  [Header("Globals Ink File")]
-  [SerializeField] private TextAsset loadGlobalsJSON;
+    [Header("Globals Ink File")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
 
-  public TextAsset currentInk;
+    public TextAsset currentInk;
 
-  [Header("Dialogue UI")]
-  private static DialogueManager instance;
-  private Coroutine displayLineCoroutine;
-  private bool canContinueNextLine = false;
-  [SerializeField] private GameObject dialoguePanel;
-  [SerializeField] private TextMeshProUGUI dialogueText;
-  [SerializeField] private TextMeshProUGUI displayNameText;
-  [SerializeField] private GameObject continueIcon;
-  [SerializeField] private Animator portraitAnimator;
-  [SerializeField] private Animator leftLayoutAnimator;
-  [SerializeField] private Animator middleLayoutAnimator;
-  [SerializeField] private Animator rightLayoutAnimator;
-  [SerializeField] private Animator sparksLayoutAnimator;
-  [SerializeField] private Animator middleLeftAnimator;
-  [SerializeField] private Animator middleRightAnimator;
-  [SerializeField] private Animator backgroundAnimator;
-  [SerializeField] private Animator popupAnimator;
-  [SerializeField] private GameObject image;
-  [SerializeField] private Animator videoAnimator;
-  private GameObject popup;
+    [Header("Dialogue UI")]
+    private static DialogueManager instance;
+    private Coroutine displayLineCoroutine;
+    private bool canContinueNextLine = false;
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI displayNameText;
+    [SerializeField] private GameObject continueIcon;
+    [SerializeField] private Animator portraitAnimator;
+    [SerializeField] private Animator leftLayoutAnimator;
+    [SerializeField] private Animator middleLayoutAnimator;
+    [SerializeField] private Animator rightLayoutAnimator;
+    [SerializeField] private Animator sparksLayoutAnimator;
+    [SerializeField] private Animator middleLeftAnimator;
+    [SerializeField] private Animator middleRightAnimator;
+    [SerializeField] private Animator backgroundAnimator;
+	[SerializeField] private Animator videoAnimator;
 
-  private Animator layoutAnimator;
+	[SerializeField] private GameObject image;
+    
+    private GameObject popup;
 
-  [Header("Choices UI")]
-  [SerializeField] private GameObject[] choices;
-  private TextMeshProUGUI[] choicesText;
-  private bool choosing;
+    private Animator layoutAnimator;
 
-  private Story currentStory;
-  public bool dialogueIsPlaying { get; private set; }
-  private bool canSkip = false;
-  private bool submitSkip = false;
-  private bool playingVideo = false;
+    [Header("Choices UI")]
+    [SerializeField] private TextMeshProUGUI _hopeText;
+    [SerializeField] private TextMeshProUGUI _foodText;
+	[SerializeField] private Animator _popupAnimator;
+	[SerializeField] private Animator _hopeAnimator;
+	[SerializeField] private Animator _foodAnimator;
+	
 
-  private const string SPEAKER_TAG = "speaker";
-  private const string PORTRAIT_TAG = "portrait";
-  private const string LAYOUT_TAG = "layout";
-  private const string BACKGROUND_TAG = "background";
-  private const string NEXT_MUSIC_TAG = "music";
-  private const string ENVIRONMENT_TAG = "enviroSound";
+	[Header("Choices UI")]
+    [SerializeField] private GameObject[] choices;
+    private TextMeshProUGUI[] choicesText;
+    private bool choosing;
+
+    private Story currentStory;
+    public bool dialogueIsPlaying { get; private set; }
+    private bool canSkip = false;
+    private bool submitSkip = false;
+    private bool playingVideo = false;
+
+    private const string SPEAKER_TAG = "speaker";
+    private const string PORTRAIT_TAG = "portrait";
+    private const string LAYOUT_TAG = "layout";
+    private const string BACKGROUND_TAG = "background";
+    private const string NEXT_MUSIC_TAG = "music";
+    private const string ENVIRONMENT_TAG = "enviroSound";
 
     private string savedJson;
 
-  private DialogueVariables dialogueVariables;
+    private DialogueVariables dialogueVariables;
 
-  public GameObject pauseMenuUI;
+    public GameObject pauseMenuUI;
 
   private void Awake()
   {
@@ -185,6 +194,9 @@ public class DialogueManager : MonoBehaviour
 				case "Credits":
 					GameManager.Instance.changeToCreditsScene();
 					break;
+				case "Menu":
+					GameManager.Instance.changeToMenuScene();
+					break;
 			}
 		});
 
@@ -287,6 +299,7 @@ public class DialogueManager : MonoBehaviour
 		currentStory.BindExternalFunction("changeFood", (int val) =>
 		{
 			ExitDialogueMode();
+            ShowFoodPopUp(val);
 			GameManager.Instance.changeFood(val);
 		});
 
@@ -299,6 +312,7 @@ public class DialogueManager : MonoBehaviour
 		currentStory.BindExternalFunction("changeHope", (int val) =>
 		{
 			ExitDialogueMode();
+			ShowHopePopUp(val);
 			GameManager.Instance.changeHope(val);
 		});
 
@@ -667,8 +681,8 @@ public class DialogueManager : MonoBehaviour
     }
   }
 
-  public Ink.Runtime.Object GetVariableState(string variableName)
-  {
+    public Ink.Runtime.Object GetVariableState(string variableName)
+    {
     Ink.Runtime.Object variableValue = null;
     dialogueVariables.variables.TryGetValue(variableName, out variableValue);
     if (variableValue == null)
@@ -676,10 +690,26 @@ public class DialogueManager : MonoBehaviour
       Debug.LogWarning("Ink Variable was null: " + variableName);
     }
     return variableValue;
-  }
+    }
 
-  private void ShowPopup() {
-    popupAnimator.Play("FadeIn");
-  }
+    private void ShowPopup() {
+        _popupAnimator.Play("FadeIn");
+    }
+
+    private void ShowHopePopUp(int val)
+    {
+        string value = val.ToString();
+        if (value[0] != '-') { value = "+" + value; };
+		_hopeText.text = value + " Hope";
+		_hopeAnimator.Play("FadeIn");
+	}
+
+	private void ShowFoodPopUp(int val)
+	{
+		string value = val.ToString();
+		if (value[0] != '-') { value = "+" + value; };
+		_foodText.text = value + " Food";
+		_foodAnimator.Play("FadeIn");
+	}
 
 }

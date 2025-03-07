@@ -306,7 +306,7 @@ After a bit of effort they finnally see daylight again.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Would you have some food left, Tails?
     I'm starving.
-    #spaker:
+    #speaker:
     The mouse gives him some of the food they brought in the helmet.
     ~changeFood(-2)
 
@@ -351,7 +351,7 @@ After a bit of effort they finnally see daylight again.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Would you have some food left, Tails?
     I'm starving.
-    #spaker:
+    #speaker:
     The mouse gives him some of the food he brought in the helmet.
     ~changeFood(-2)
 

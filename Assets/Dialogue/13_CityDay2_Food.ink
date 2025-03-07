@@ -223,7 +223,7 @@ But finally he emerges victorious.
     ~nSaved = nSaved + 1
         {
             - not hasNimbus() and not hasCotton():
-                #layout:middle_right:oak_default_m
+                #layout:middle_right:oak_default_m #layout:left:default
         }
 }
 

@@ -140,6 +140,7 @@ Then an explosion!
 And another even closer!
 And another!
 Screams pierce the skies and huge metal tanks start appearing in the streams, firing their long cannons.
+#background:city
 They rush down the stairs into the helmet.
 Not for safety but as means of escape.
 There is no hope in this forsaken city.

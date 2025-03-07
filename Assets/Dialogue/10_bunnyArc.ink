@@ -20,7 +20,7 @@ I hope they're all okay...
 {not savedCotton():
     #speaker:
     His back is hurting.
-    And he was worried about his friends.
+    And he is worried about his friends.
     #speaker:Tails #portrait:tails_default #layout:middle:tails_default_m
     I should probably find a place to rest.
     If I go to the higher levels I might find a vantage point to see if I can find them.

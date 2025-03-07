@@ -8,8 +8,8 @@ INCLUDE globals.ink
 The river flows serene. Carrying the helmet in a soothing motion.
 The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.
 Tails looks up to the skies and sees white clouds, kissed by the glowing rays of a sleepy sun. A young golden morning.
-He woke up at peace.
-Like he was waking for the first time.
+He wakes up at peace.
+Like he's waking for the first time.
 His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
 The hope that is singing.
 #speaker:Sparks #portrait:sparks_happy
