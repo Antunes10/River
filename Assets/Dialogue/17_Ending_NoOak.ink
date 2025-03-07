@@ -14,7 +14,7 @@ His body is too weak to move, but his heart is strong enough to feel the warmth 
 The hope that is singing.
 #speaker:Sparks #portrait:sparks_happy
 #layout:sparks:sparks_happy_m 
-#layout:middle_left:tails_default
+#layout:middle_left:tails_hurt
 Mr.Tails you're awake!!
 #speaker: 
 #layout:right:bunny_default_m
@@ -90,7 +90,7 @@ It’s so beautiful Mr.Tails… You will see it, it’s soooo beautiful!
 #speaker:
 The mouse coughs.
 Through the pain he musters the strength to utter a few words. Like a whisper of a cloud.
-#speaker:Tails #portrait:tails_sad #layout:middle_left:tails_sad
+#speaker:Tails #portrait:tails_sad
 Tell me…
 #speaker:Sparks #portrait:sparks_sad #layout:sparks:sparks_sad_m 
 It’s, it’s green… so green. Like moss on a small lake.
@@ -132,15 +132,13 @@ No fires, no loud noises, not even a puff of smoke.
 It’s like a dream…
 #speaker:
 The mouse grabs his friend’s hand.
-#speaker:Tails #portrait:tails_happy #layout:middle_left:tails_happy
+#speaker:Tails #portrait:tails_happy
 Thank you Sparks…
-#layout:middle_left:tails_sad
 #speaker:
 A whisper carried by the breeze.
-#speaker:Tails #portrait:tails_happy #layout:middle_left:tails_happy
+#speaker:Tails #portrait:tails_happy
 I’m so happy…
-So… 
-#layout:middle_left:tails_sad
+So…
 #speaker:Sparks #portrait:sparks_default #layout:sparks:sparks_default_m 
 I am too Mr.Tails!
 It was all thanks to you! You saved me and all our friends!
