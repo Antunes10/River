@@ -168,8 +168,6 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     ->choice_panel
 
 ++[The ones that still live]
-    ~changeHope(2)
-
     #speaker:Tails #portrait:tails_default #layout:middle_left:tails_default 
     Those that still live.
     Those that were left behind in this forsaken world.
@@ -192,6 +190,7 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     #speaker:
     Silence.
     Compassion.
+    ~changeHope(2)
     And suddenly a warm hug.
     The rabbits fur embraces Tails in a show of love.
     #speaker:Cotton #portrait:bunny_sad

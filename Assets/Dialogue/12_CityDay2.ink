@@ -260,7 +260,6 @@ And perhaps he would be lucky enough to find clues about his friends while looki
 ->take_the_boat
 
 == run_away ==
-~changeHope(-2)
 ~gaveUp = 1
 
 #speaker:
@@ -282,6 +281,7 @@ There is nothing left for me here...
     
 
 - else:
+    ~changeHope(-2)
     I have to leave this place...
     #speaker:
     He looks around and sees a city submersed.
@@ -305,6 +305,7 @@ There is nothing left for me here...
     That's the reason keeping me here.
     If you don't want to do that anymore, then I have no reason to follow you.
     #speaker: #layout:right:default
+    ~changeHope(-2)
     Before Tails can said a thing, she runs away into the building.
     He is left alone to venture forth.
     ~recruitCotton(false)

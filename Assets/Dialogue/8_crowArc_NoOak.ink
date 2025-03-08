@@ -226,13 +226,12 @@ Looking around with dark eyes.
 }
 
 === hasFoodAndWaited ===
-~changeFood(-nSaved)
-
 The mouse returns inside.
 Any changes?
 He shakes his head.
 It’s fine, let’s eat something while we wait.
 Here we are safe from the cold.
+~changeFood(-nSaved)
 They all agree and start munching away their anxiety and hunger.
 Time passes.
 And again, the mouse goes to the top.

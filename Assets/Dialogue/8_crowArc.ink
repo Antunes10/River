@@ -227,9 +227,6 @@ Looking around with dark eyes.
 
 
 === hasFoodAndWaited ===
-~changeFood(-nSaved)
-
-
 #speaker:
 The mouse returns inside.
 #speaker:Nimbus #portrait:nimbus_default
@@ -240,6 +237,7 @@ He shakes his head.
 It’s fine, let’s eat something while we wait.
 Here we are safe from the cold.
 #speaker:
+~changeFood(-nSaved)
 They all agree and start munching away their anxiety and hunger.
 Time passes.
 And again, the mouse goes to the top.
