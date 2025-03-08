@@ -20,12 +20,12 @@ It's the first time since the start of the journey, that he awakes without Spark
     {
     - hasCotton():
         #speaker:Cotton #portrait:bunny_default #layout:right:bunny_default_m #layout:middle_left:tails_sad #layout:middle:default
-        You though it was your friend?
+        You thought it was your friend?
         #speaker:
         Cotton joins him at the window.
         #speaker:Tails #portrait:tails_sad #layout:middle_left:tails_sad
         Yes...
-        I though he was Oak...
+        I thought he was Oak...
         #speaker:
         #layout:right:bunny_scared_m
         The rabbit raises her ears and look outside.

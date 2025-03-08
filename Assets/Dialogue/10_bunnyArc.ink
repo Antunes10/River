@@ -110,7 +110,7 @@ She took no time choosing her path even when there were several possibilities.
     Tails sees an enormous mountain of rubble.
     The ceiling had collapsed.
     Half of the room was covered in rocks, metals and wooden planks.
-    Th rabbit stops.
+    The rabbit stops.
     She sniffs the air with her ears wide open.
     #layout:middle_right:bunny_scared_m #speaker:??? #portrait:bunny_scared
     No… no… no…
@@ -122,9 +122,9 @@ She took no time choosing her path even when there were several possibilities.
     She moves slowly towards the rubble.
     #speaker:??? #portrait:bunny_scared
     Darlings?
-    Hazel?
+    Cherry?
     Blue?
-    Silk? Cotton?
+    Silk? Autumn?
     #speaker:
     Tails heart sinks.
     His lungs lacking enough air to breath.

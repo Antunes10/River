@@ -91,7 +91,9 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
 	Cotton.
 	#speaker: #layout:left:tails_happy
 	The mouse’s face lights up a bit.
+    #speaker:Tails #portrait:tails_default
 	It’s nice to meet you, Cotton.
+    #speaker:
 	She goes silent again.
 	
 --
@@ -152,7 +154,7 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     If we give up on ourselves, we give up on them too.
     #speaker:
     The rabbit lowers her eyes.
-    And them raises them again towards the mouse.
+    And then raises them again towards the mouse.
     There is no hope in them.
     #speaker:Cotton #portrait:bunny_sad
     It is the children who should carry the memory of their parents…
@@ -179,7 +181,9 @@ She clearly wants to be left alone. But was it right to leave her to her fate?
     She was alone, and I was the only one around.
     Her mother wasn’t there to protect her and give her the love she deserved.
     What gives me the right to give up on that love? To abandon her to her fate when her mother would give everything to keep her safe.
+    #speaker:
     Her eyes widen up still watery.
+    #speaker:Tails #portrait:tails_sad
     I know you have lost… everything…
     But I need your help, Cotton...
     I need to find my friends.

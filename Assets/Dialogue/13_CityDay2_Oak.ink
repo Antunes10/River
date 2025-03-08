@@ -177,8 +177,8 @@ Was it all worth it?
     You did it to keep us going.
     #speaker:Oak #portrait:oak_sad_noHat
     It’s still a lie.
-    What if we die in this city.
-    What if my lie is revealed and everyone gives up because the hope it created is now too dear to lose.
+    What if we die in this city?
+    What if my lie is revealed and everyone gives up because the hope it created is now too dear to lose?
     #speaker:
     The dog faces Tails.
     #speaker:Oak #portrait:oak_sad_noHat
@@ -302,7 +302,7 @@ After a bit of effort they finnally see daylight again.
     }
 
     #speaker: #layout:left:bunny_happy #layout:middle_right:tails_happy_m
-    They all laught together.
+    They all laugh together.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Would you have some food left, Tails?
     I'm starving.
@@ -347,7 +347,7 @@ After a bit of effort they finnally see daylight again.
     }
 
     #speaker:
-    They all laught together.
+    They all laugh together.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
     Would you have some food left, Tails?
     I'm starving.
