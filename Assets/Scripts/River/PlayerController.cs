@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool _hasOak;
     [SerializeField] private bool _hasCotton;
     [SerializeField] private bool _hasSparks;
+    private int numbAnimals = 0;
 
     [SerializeField] private SpriteRenderer _indicator;
     [SerializeField] private Sprite[] _indicatorImages;
@@ -45,8 +46,15 @@ public class PlayerController : MonoBehaviour
 		_hasNimbus = _gameManager._gs.hasNimbus;
 		_hasOak = _gameManager._gs.hasOak;
         _hasCotton = _gameManager._gs.hasCotton;
-        
-    }
+
+        //define speed
+        if (_hasSparks) { numbAnimals++; };
+		if (_hasNimbus) { numbAnimals++; };
+		if (_hasOak) { numbAnimals++; };
+		if (_hasCotton) { numbAnimals++; };
+        _speed -= numbAnimals * 0.2f;
+
+	}
 
     // Update is called once per frame
     void Update()

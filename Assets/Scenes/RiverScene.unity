@@ -14134,6 +14134,7 @@ MonoBehaviour:
   _inGameCanvas: {fileID: 938484967}
   _pauseMenuCanvas: {fileID: 1335392623}
   _tutorial: {fileID: 354536903}
+  inTutorial: 0
   _gameLost: 0
 --- !u!4 &1610527294
 Transform:
@@ -15278,7 +15279,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4837785539666705978, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: _speed
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4837785539666705978, guid: 1669c7436678f0f4190e2dfaa45803c4, type: 3}
       propertyPath: _slider
