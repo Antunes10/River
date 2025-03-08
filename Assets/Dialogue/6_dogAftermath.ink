@@ -44,13 +44,12 @@ My belly hurts…
 I’m starving too. Thank the heavens we still have some food left.
 
 +[Eat together to recover your strength]
-    ~changeFood(-nSaved)
-    ~changeHope(1)
-    
     #speaker:
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the dog and retrieves a bit more.
     #speaker:Tails #portrait:tails_default
+    ~changeFood(-nSaved)
+    ~changeHope(1)
     Here.
     It will do us no good to travel on an empty belly.
     #speaker: #layout:right:nimbus_default_m #layout:sparks:sparks_default_m
@@ -59,12 +58,11 @@ I’m starving too. Thank the heavens we still have some food left.
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
-    ~changeHope(-1)
-
     #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad
     I know it is hard, but we have to ration our food.
     We don’t know what lies ahead.
     #speaker: #layout:left:oak_sad #layout:right:nimbus_sad_m #layout:sparks:sparks_sad_m
+    ~changeHope(-1)
     The little firefly’s antennas go down. And she sadly sits down on the grass, with her hands on her belly.
     Tails knew it was hard to make that choice, but they didn’t know when they would find food again.
     Time passes as they try to rest their limbs.

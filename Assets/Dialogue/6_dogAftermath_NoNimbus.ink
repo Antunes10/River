@@ -39,13 +39,12 @@ My belly hurts…
 Can we eat something, Mr. Tails?
 
 +[Eat together to recover strength]
-    ~changeFood(-nSaved)
-    ~changeHope(1)
-
     #speaker:
     Tails goes back to the helmet and retrieves some food they had stored.
     Then he looks at the dog and retrieves a bit more.
     #speaker:Tails #portrait:tails_default #layout:right:sparks_default_m
+    ~changeFood(-nSaved)
+    ~changeHope(1)
     Here.
     It will do us no good to travel on an empty belly.
     #speaker: 
@@ -54,12 +53,11 @@ Can we eat something, Mr. Tails?
     The mouse finishes his share and lies down on his belly, tired of all the strife.
 
 +[Argue to save food]
-    ~changeHope(-1)
-
-    #speaker:Tails #portrait:tails_sad #layout:left:tails_sad #layout:middle_oak_sad
+    #speaker:Tails #portrait:tails_sad #layout:left:tails_sad
     I know it is hard, but we have to ration our food.
     We don’t know what lies ahead.
-    #speaker: 
+    #speaker: #layout:middle:oak_sad #layout:right:sparks_sad_m
+    ~changeHope(-1)
     The little firefly’s antennas go down. And she sadly sits down on the grass, with her hands on her belly.
     Tails knew it was hard to make that choice, but they didn’t know when they would find food again.
     Time passes as they try to rest their limbs.
