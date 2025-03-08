@@ -85,7 +85,7 @@ Someone is trapped inside!
 #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
 We must help them!
 #speaker: 
-They get close and immediately jump unto de structure.
+They get close and immediately jump onto the structure.
 A deep sound is heard as the ground shakes.
 #speaker:Tails
 Are you ok?
@@ -134,7 +134,7 @@ What are we going to do?
         Put your back into it!
         #speaker:
         Suddenly everything collapses and they are thrown into the cold water.
-        #speaker:??? #portrait:
+        #speaker:??? #portrait:default
         No, help!!
         #speaker: #layout:middle:tails_sad #layout:sparks:sparks_sad_m
         Terrified screams are heard from inside the metal dome.
@@ -335,6 +335,7 @@ What are we going to do?
         Mr.Tails!!
         #speaker:Tails #portrait:tails_default
         I’m alright, Sparks.
+        #speaker:
         The mouse waves while floating over a plastic package of food.
         #layout:left:oak_scared #layout:sparks:sparks_sad #layout:right:nimbus_default
         He swims to the shore.
@@ -343,7 +344,7 @@ What are we going to do?
         #speaker:Oak #portrait:oak_scared
         That was not the most logical of actions.
         You nearly drowned.
-        #speaker:Tails
+        #speaker:Tails #portrait:tails_default
         It was worth it.
         #speaker: #enviroSound:villageExplosions
         Suddenly another explosion blows right near them, sending debris everywhere.

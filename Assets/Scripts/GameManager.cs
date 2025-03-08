@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 						_gs.cityDecision = 2;
 						break;
 					}
-					else if(randomNum == 3)
+					else if(_gs.wenttoFindFood == false && randomNum == 3)
 					{
 						_gs.cityDecision = 3;
 						break;

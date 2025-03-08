@@ -259,7 +259,7 @@ They had to decide.
     Tomorrow, others might need my help traversing the river.
     I must stay and do my part.
     #speaker:Oak #portrait:oak_default #layout:right:oak_default_m
-    Honorable and caring. May you receive as half as you give, Miss Hazel.
+    Honorable and caring. May you receive as much as you give, Miss Hazel.
     #speaker:
     They all wave their paws and wings and go their separate ways.
     The group was now closer to reaching their western destination.

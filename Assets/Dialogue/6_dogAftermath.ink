@@ -27,6 +27,7 @@ That was intense.
 #portrait:nimbus_sad #layout:right:nimbus_sad_m
 For a moment I thought we wouldn’t make it.
 #layout:right:nimbus_sad_m
+#speaker:
 The dog pours out the water that is still inside his hat.
 #speaker:Oak #portrait:oak_happy #layout:left:oak_happy
 That was extraordinary, Sir Tails. The way you steered us into safety.

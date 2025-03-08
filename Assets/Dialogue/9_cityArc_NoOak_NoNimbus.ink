@@ -78,7 +78,7 @@ There is no one around and the screams are muffled.
 It comes from the wheelbarrow!
 Someone needs our help!
 #speaker: 
-They get close and immediately jump unto de structure.
+They get close and immediately jump onto the structure.
 A deep sound is heard as the ground shakes.
 #speaker:Tails
 Are you ok?

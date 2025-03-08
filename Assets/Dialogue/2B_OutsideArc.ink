@@ -57,7 +57,7 @@ Tails smiles happily.
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 The sun is going down, so it's better if we find a place to sleep.
 #speaker: Tails #portrait:sparks_happy #layout:right:sparks_happy_m
-Are we going to sleep in the forest!
+Are we going to sleep in the forest!?
 #speaker:Tails #portrait:tails_happy #layout:left:tails_happy
 Yes, I suppose we can... we just have to find a safe place.
 Let's keep on the river a bit more until we find a good spot.

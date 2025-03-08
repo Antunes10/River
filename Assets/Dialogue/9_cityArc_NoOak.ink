@@ -81,7 +81,7 @@ The wheelbarrow!
 Someone is trapped inside!
 We must help them!
 #speaker: 
-They get close and immediately jump unto de structure.
+They get close and immediately jump onto the structure.
 A deep sound is heard as the ground shakes.
 #speaker:Tails
 Are you ok?
@@ -128,7 +128,7 @@ What are we going to do?
         It’s too heavy.
         #speaker:
         Suddenly everything collapses and they are thrown into the cold water.
-        #speaker:??? #portrait:
+        #speaker:??? #portrait:default
         No, help!!
         #speaker: #layout:middle:tails_sad #layout:sparks:sparks_sad_m
         Terrified screams are heard from inside the metal dome.
