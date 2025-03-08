@@ -3,7 +3,7 @@ INCLUDE globals.ink
 -> main
 
 === main ===
-#background:city
+#background:city #enviroSound:cityWar
 #speaker: #layout:left:oak_scared #layout:middle:tails_scared #layout:right:nimbus_scared_m #layout:sparks:sparks_scared_m
 ~unlockImage(17)
 Explosions are heard.

@@ -199,8 +199,8 @@ public class AudioManager : MonoBehaviour
         plains = 9,
         plainsWar = 10,
         villageDepartue = 11,
-        swamp = 12, // meet oak
-        respite = 13, // scene before otter
+        swamp = 12,
+        cityWar = 13,
         silence = 14
     }
 

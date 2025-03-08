@@ -145,7 +145,8 @@ public class Obstacle : MonoBehaviour
     public void InitiateAnim()
     {
         _animController.SetInteger("Int", _animNumber);
-        _animController.SetBool("Ripped", false);
+        if (_barrier) { _animController.SetBool("Ripped", false); }
+        
 
         if(_barbed)
         {

@@ -22,7 +22,7 @@ Grey is the world clouded by the uncertain mist.
 A greyness that brings confusion, fear and the loss of bearings.
 The night went by, and now the slow river reaches a marsh and its waters spread throughout the unseen horizon.
 From few meters wide, it transforms into several hundred, with no unified flow or direction.
-#layout:middle:tails_sad #layout:right:sparks_sad_m
+#layout:middle:tails_sad #layout:right:sparks_sad_m #layout:left:nimbus_default
 A scent of death hangs in the air.
 #speaker:Tails #portrait:tails_sad
 I cannot see where we are going.
