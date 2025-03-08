@@ -265,7 +265,7 @@ public class GameManager : MonoBehaviour
 		if (_gs.currentInkIndex == 13 || _gs.currentInkIndex == 14)
 		{
 			_gs.dialogueIndex = _gs.cityDecision;
-			//After river where the decision was to leave the city, it goes to last chapter
+			//After river where the decision was to go back, it goes to sparks chapter
 			if (_gs.cityDecision == 4)
 			{
 				_gs.currentInkIndex = 15;
@@ -275,7 +275,7 @@ public class GameManager : MonoBehaviour
 		//After river where the decision was to leave the city, it goes to last chapter
 		if (_gs.cityDecision == 5)
 		{
-			_gs.currentInkIndex = 17;
+			_gs.currentInkIndex = 18;
 			_gs.dialogueIndex = 0;
 		}
 

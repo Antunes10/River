@@ -3197,10 +3197,15 @@ MonoBehaviour:
     - {fileID: 4900000, guid: 4ec8219def85f5f4a95e78fbc2405a09, type: 3}
     - {fileID: 4900000, guid: 4ec8219def85f5f4a95e78fbc2405a09, type: 3}
   - _InkJSONs:
-    - {fileID: 4900000, guid: 89ad5d9ec53b5e34e874c0ed3930b9b5, type: 3}
-    - {fileID: 4900000, guid: f0aa9980dbf83d24d8ecda5046d1ae57, type: 3}
-    - {fileID: 4900000, guid: 0662223349f3f0b4b85bafc3c212b89e, type: 3}
-    - {fileID: 4900000, guid: 1cb244f45625cdd4a9ea646f15d52bbd, type: 3}
+    - {fileID: 4900000, guid: 47172c68271843649804e0d422ddab3b, type: 3}
+    - {fileID: 4900000, guid: 47172c68271843649804e0d422ddab3b, type: 3}
+    - {fileID: 4900000, guid: 47172c68271843649804e0d422ddab3b, type: 3}
+    - {fileID: 4900000, guid: 47172c68271843649804e0d422ddab3b, type: 3}
+  - _InkJSONs:
+    - {fileID: 4900000, guid: 5bdb03da394cd474fae1c4400d23905f, type: 3}
+    - {fileID: 4900000, guid: 0bade3a195257fb48b6de6967fd5f342, type: 3}
+    - {fileID: 4900000, guid: bbf50d840acc2324aa0b80c023a670eb, type: 3}
+    - {fileID: 4900000, guid: b654dd8e249ebfa4ab2f04ee4aa1bae1, type: 3}
   _currentInk: {fileID: 4900000, guid: fb5f0d43decd47a4cb0ba7ddd6932c62, type: 3}
   unlockedImages: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &730998456

@@ -15,6 +15,8 @@ INCLUDE globals.ink
 }
 
 === aloneN ===
+#background:finalValley
+#speaker: 
 The river flows serene. Carrying the helmet in a soothing motion.
 The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.
 #layout:middle:tails_default
@@ -94,6 +96,8 @@ The hope that is singing.
 #layout:sparks:sparks_happy_m 
 #layout:middle_left:tails_hurt
 Mr.Tails you are awake!!
+I was so worried, you been sleeping since you hit that rock...
+After saving me.
 #speaker: 
 She flies around radiant.
 Tails wanted to speak, but his throat didn’t allow…
@@ -312,6 +316,8 @@ The hope that is singing.
 #speaker:Sparks #portrait:sparks_happy
 #layout:sparks:sparks_happy_m
 Mr.Tails you are awake!!
+I was so worried, you been sleeping since you hit that rock...
+After saving me.
 #speaker: 
 #layout:right:bunny_default_m
 The joyfulness of Sparks wakes up Cotton. She brushes her face in surprise and gathers around the weaken mouse.

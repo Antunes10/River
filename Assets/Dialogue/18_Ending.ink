@@ -30,6 +30,8 @@ The hope that is singing.
 #layout:sparks:sparks_happy_m 
 #layout:middle_left:tails_hurt
 Mr.Tails you are awake!!
+I was so worried, you been sleeping since you hit that rock...
+After saving me.
 #speaker: 
 #layout:right:bunny_default_m
 #layout:left:oak_default 
@@ -49,7 +51,7 @@ The rabbit adjusts his head on the feathery nest he is lying, like a mother comf
 Tails wanted to speak, but his throat didn’t allow…
 However, his smile is all that’s needed to convey his emotions.
 The breeze blows stronger, and its songs of hope grow louder.
-#speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m 
+#speaker:Sparks #portrait:sparks_happy #layout:sparks:sparks_happy_m
 We’re almost there Mr.Tails! I can feel it, I can feel it!
 #speaker:
 The small firefly flys around in excitement.
@@ -214,6 +216,8 @@ The hope that is singing.
 #layout:sparks:sparks_happy_m 
 #layout:middle_left:tails_hurt
 Mr.Tails you are awake!!
+I was so worried, you been sleeping since you hit that rock...
+After saving me.
 #speaker:
 #layout:right:oak_default_m
 #layout:middle_right:nimbus_default_m
@@ -518,12 +522,12 @@ And they would never again be alone.
 The river flows serene. Carrying the helmet in a soothing motion.
 The blades of grass, in carpets of living green, sway with tranquillity, blessed by a comforting breeze that carries hope into the West.
 Tails looks up to the skies and sees white clouds, kissed by the glowing rays of a sleepy sun. A young golden morning.
+#layout:middle_left:tails_hurt
 He wakes up at peace.
 Like he's waking for the first time.
 His body is too weak to move, but his heart is strong enough to feel the warmth that is embracing him…
 The hope that is singing.
 #speaker:Nimbus #portrait:nimbus_happy #layout:middle_right:nimbus_happy_m
-#layout:middle_left:tails_hurt
 Look Oak, Tails is awake!!
 #speaker:
 #layout:right:oak_default_m

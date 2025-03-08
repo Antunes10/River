@@ -64,7 +64,7 @@ public class StatDisplayer : MonoBehaviour
 		if (gm._gs.hasCotton) { cottonImg.enabled = true; cottonImg.sprite = cottonSprites[gameOver]; numberChar++; }
 
 		//Background
-		if (i == 1 || i == 3) { backgroundImg.sprite = gm._gs.gameOver ? backgroundSprites[0] : backgroundSprites[1]; }
+		if (i == 1 || i == 3 || i == 6) { backgroundImg.sprite = gm._gs.gameOver ? backgroundSprites[0] : backgroundSprites[1]; }
 		if (i == 2) { backgroundImg.sprite = gm._gs.gameOver ? backgroundSprites[2] : backgroundSprites[3]; }
 		if (i == 4 || i == 5) { backgroundImg.sprite = gm._gs.gameOver ? backgroundSprites[4] : backgroundSprites[5]; }
 
