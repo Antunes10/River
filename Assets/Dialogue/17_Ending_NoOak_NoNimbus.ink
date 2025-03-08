@@ -246,7 +246,7 @@ It's so good to see you awake, little mouse.
 Tails arises and puts his head above the helmet's ledge.
 The breeze blows stronger, and its songs of hope grow louder.
 #speaker:Cotton #portrait:bunny_happy #layout:right:bunny_happy_m
-We'll soon arive, little one. To that enchanted land you told me.
+We'll soon arrive, little one. To that enchanted land you told me.
 #speaker:Tails #portrait:tails_default
 Yes...
 I'm so happy...
