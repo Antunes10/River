@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:city
+#background:city #enviroSound:cityWar
 
 {
 - hasCotton():
@@ -80,7 +80,7 @@ INCLUDE globals.ink
 
 
 == Oak_Arc ==
-#background:Collapsed #layout:middle_left:default #layout:right:default #layout:middle:default #layout:middle_right:default
+#background:Collapsed #layout:middle_left:default #layout:right:default #layout:middle:default #layout:middle_right:default #enviroSound:silence
 Dust hangs in the air, while an inconsistent mountain of rocks and debris create a system of caves and tunnels.
 Tails slithers through the gaps until he finds blood stains on the ground.
 #speaker:Tails #layout:middle_left:tails_sad #portrait:tails_sad
@@ -264,7 +264,7 @@ Was it all worth it?
 == Oak_saved ==
 ~changeHope(2)
 
-#speaker: #background:city #layout:middle_left:default #layout:right:default
+#speaker: #background:city #layout:middle_left:default #layout:right:default #enviroSound:cityWar
 After a bit of effort they finnally see daylight again.
 
 {
@@ -364,7 +364,7 @@ After a bit of effort they finnally see daylight again.
 == Oak_lost ==
 ~changeHope(-2)
 
-#speaker: #background:city #layout:middle_left:tails_sad #layout:right:default
+#speaker: #background:city #layout:middle_left:tails_sad #layout:right:default #enviroSound:cityWar
 After a bit of effort he finnally sees daylight again.
 {
 - hasCotton():

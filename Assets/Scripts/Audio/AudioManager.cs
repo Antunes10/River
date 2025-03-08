@@ -98,7 +98,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlayEvironmentSound(EnvironmentSounds indexer)
     {
-        EnvSource.clip = _EnvSounds[(int)indexer];
+		EnvSource.Stop();
+		EnvSource.clip = _EnvSounds[(int)indexer];
         EnvSource.Play();
     }
 

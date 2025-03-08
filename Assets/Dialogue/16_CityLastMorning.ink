@@ -133,6 +133,7 @@ He still had friends to fight for.
     He knew it.
 }
 
+#enviroSound:cityWar
 Then, he hears sirens!
 Loud noises screaming as danger approaches.
 Several humans run from the streets into building and holes, like rabbits running from a fox.

@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:city #layout:middle:tails_default
+#background:city #layout:middle:tails_default #enviroSound:cityWar
 
 {- hasCotton(): 
     #layout:left:bunny_default
@@ -110,7 +110,7 @@ However Tails remains unfased, looking at the underground hole.
 #speaker:
 Tails takes the helmet to a place where it can be anchored.
 And then jumps onto a ledge that goes down without being touched by the waves that dive underground.
-#background:tunnel #layout:middle_left:default #layout:left:default
+#background:tunnel #layout:middle_left:default #layout:left:default #enviroSound:tunnel
 
 #speaker:
 The water crashes with force against the rocks as its sound echoes through the tunnel.
@@ -316,7 +316,7 @@ Leaving his wing hangging.
 == Nimbus_saved ==
 ~changeHope(2)
 
-#speaker: #background:city #layout:middle:default #layout:right:default
+#speaker: #background:city #layout:middle:default #layout:right:default #enviroSound:cityWar
 They climb the ledge back to the surface, helping each other as they go.
 
 {
@@ -414,7 +414,7 @@ They climb the ledge back to the surface, helping each other as they go.
 == Nimbus_lost ==
 ~changeHope(-2)
 
-#speaker: #background:city #layout:middle_left:tails_sad #layout:right:default
+#speaker: #background:city #layout:middle_left:tails_sad #layout:right:default #enviroSound:cityWar
 After a bit of effort he finnally sees daylight again.
 {
 - hasCotton():

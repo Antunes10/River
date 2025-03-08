@@ -73,7 +73,7 @@ He enters the other building without a single hint of caution...
 And climbs the stairs while his lungs ask for air.
 
 At the end he finds a locked door but a small window gives him a pathway to reach the rooftop.
-#background:rooftop
+#background:rooftop #enviroSound:nightWind
 The night is cold and windy.
 #layout:left:tails_scared
 Tails pauses in awe of the view.

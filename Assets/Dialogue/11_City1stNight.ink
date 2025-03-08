@@ -4,7 +4,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:roomNight
+#background:roomNight #enviroSound:cityWar
 #speaker: #layout:middle:tails_default
 Night falls.
 The darkness that sets in the room, mirrors the one in Tail’s little heart.

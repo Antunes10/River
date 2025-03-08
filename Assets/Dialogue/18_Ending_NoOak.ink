@@ -1,4 +1,5 @@
 INCLUDE globals.ink
+#enviroSound:village
 {
     - hasCotton() and hasSparks():
         -> main

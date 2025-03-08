@@ -83,7 +83,7 @@ It's the first time since the start of the journey, that he awakes without Spark
             #speaker:Tails #portrait:tails_default #layout:middle_left:tails_default
             You're right, let's go outside and look for tracks.
     - else:
-         #speaker:Tails #portrait:tails_sad #layout:middle_left:tails_sad
+         #speaker:Tails #portrait:tails_sad #layout:middle:tails_sad 
         {
         - savedNimbus():
             I'm afraid they are hurting or worse...

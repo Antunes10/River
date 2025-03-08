@@ -7,7 +7,7 @@ INCLUDE globals.ink
 }
 
 === main ===
-#background:city
+#background:city #enviroSound:river
 #speaker: #layout:middle_left:tails_default #layout:sparks:sparks_default_m
 {
     - hasNimbus():

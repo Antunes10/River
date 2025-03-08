@@ -3,7 +3,7 @@ INCLUDE globals.ink
 ->main
 
 === main ===
-#background:city
+#background:city #enviroSound:cityWar
 #speaker: #layout:middle_left:tails_default
 {- hasCotton(): 
     #layout:right:bunny_default_m
@@ -92,7 +92,7 @@ INCLUDE globals.ink
 
 == looking_for_food ==
 #background:hallway #layout:middle_left:tails_default #layout:right:default #layout:middle_right:default #layout:left:default
-#speaker:
+#speaker: #enviroSound:silence
 Tails enters the building cautiously.
 The scent of food is now more easily identified...
 But there is also a strange scent of metal and ash.
@@ -152,7 +152,7 @@ But finally he emerges victorious.
 == go_back_food ==
 ~changeFood(4)
 
-#background:city
+#background:city #enviroSound:cityWar
 #speaker: #layout:middle_left:tails_default
 {- hasCotton(): 
     #layout:right:bunny_default_m
@@ -208,7 +208,7 @@ But finally he emerges victorious.
 == go_back_nofood ==
 ~changeHope(-1)
 
-#background:city
+#background:city #enviroSound:cityWar
 #speaker: #layout:middle_left:tails_default
 {- hasCotton(): 
     #layout:right:bunny_default_m
