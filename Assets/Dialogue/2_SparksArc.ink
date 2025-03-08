@@ -32,7 +32,6 @@ And suddenly it moves!
 Its origin, unknown to the little mouse, moves closer to the ground.
 
 +[Follow the light.]
-    ~changeHope(1)
     
     #background:tunnel #music:tunnel
     Against his most primal instincts, Tails puts the little stick in the waters and changes the "boat's" direction, approaching the light.
@@ -48,6 +47,7 @@ Its origin, unknown to the little mouse, moves closer to the ground.
     Tails loses his fear and stands over the trash can so he can see the firefly better.
     On that moment, the bug takes notice.
     #speaker:Sparks #portrait:sparks_happy #layout:right:sparks_happy_m #layout:left:tails_default #layout:middle:default #music:sparks
+    ~changeHope(1)
     Oh, hi there, friend! 
     My name is Sparks, and I’m a firefly as you can see. What is your name?
     #speaker:

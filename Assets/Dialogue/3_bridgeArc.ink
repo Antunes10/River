@@ -149,7 +149,6 @@ Stop it! Are you crazy! It hurts!
     ->ChoicePanel
     
 +++[Continue]
-    ~changeHope(-3)
     ~killNimbus()
 
     #speaker:
@@ -166,6 +165,7 @@ Stop it! Are you crazy! It hurts!
     Ta… Tails… I think he…
     #speaker:
     The mouse, blinded by his task until now, rises his head to meet the trapped animal.
+    ~changeHope(-3)
     He's dead.
     Blood is running everywhere.
     He should have stopped cutting...
@@ -256,13 +256,13 @@ Time is running out.
 ->ChoicePanel
 
 === KeepTrying ===
-~changeHope(2)
 ~recruitNimbus(true)
 
 #speaker: #layout:middle:nimbus_sad_hurt_m #layout:left:tails_sad #layout:right:sparks_sad_m
 Tails keeps on with his task of removing the wires.
 If the bird is to die here, he won't die alone.
 #layout:middle:nimbus_sad_m
+~changeHope(2)
 Finally, the last wire is removed, and the bird manages to escape the trap.
 He tries to fly away immediately, but falls miserably on the ground.
 His right wing is bleeding heavily, and it seems displaced.

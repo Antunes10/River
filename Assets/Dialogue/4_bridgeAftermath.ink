@@ -42,8 +42,6 @@ Tails and nimbus stand next to each other, and the mouse can see...
 That the wing’s damage is irreversible.
 
 +[Tell him the truth about his wing.]
-    ~changeHope(-1)
-
     ~nimbus_hopeful_VS_truth = 1
     #speaker:
     Tails approaches him and his voice goes soft.
@@ -64,6 +62,7 @@ That the wing’s damage is irreversible.
     You know it as well as I.
     I’m sorry.
     #speaker:Nimbus #portrait:nimbus_sad #layout:middle:nimbus_sad
+    ~changeHope(-1)
     No… no…
     #speaker:
     His initially hard demeanor starts crumbling and tears start to fall.
@@ -73,8 +72,6 @@ That the wing’s damage is irreversible.
     Or perhaps because of a broken spirit.
 
 +[Keep him hopeful.]
-    ~changeHope(1)
-
     ~ nimbus_hopeful_VS_truth = 0
     #speaker:Tails #portrait:tails_default #layout:left:tails_default
     I know you want to be helpful.
@@ -82,6 +79,7 @@ That the wing’s damage is irreversible.
     #speaker: #layout:middle:nimbus_sad
     The bird exhales, unsatisfied with the situation.
     #speaker:Nimbus #portrait:nimbus_sad
+    ~changeHope(1)
     You’re right.
     #portrait:nimbus_default #layout:middle:nimbus_default
     But I want to do my part. I don’t want to be a burden to both of you.
@@ -172,40 +170,37 @@ Or perhaps it was best if Tails spent some time with his companions.
     Death.
     
     ++[Go anyway.]
-        ~changeFood(3)
         ~foundOldMan()
 
+        #speaker: #layout:middle:tails_default
+        It's uncomfortable, but it's a necessary evil.
+        He gets closer to the origin and sees a body lying on the ground, in a pool of murky red.
+        It's an old man.
         #speaker: #layout:middle:tails_sad
-        It was uncomfortable, but it was a necessary evil.
-        #layout:middle:tails_scared
-        He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
-        It was an old man.
-        #layout:middle:tails_sad
         With grey hair and a green bucket hat.
         He didn’t deserve that fate.
         No one did.
-        Tails washed away his eyes and climbed the cold body to reach his pocket.
-        There was a good lump of bread still edible, protected by the clothes.
-        He pulled hard and made it fall into the dirt.
-        That would feed them for another day.
+        Tails washes away his eyes and climbs the cold body to reach his pocket.
+        ~changeFood(3)
+        There's a good lump of bread still edible, protected by the clothes.
+        He pulls hard and makes it fall into the dirt.
+        That will feed them for another day.
         As he starts to drag the food back to the shelter, he takes one last look back.
-        It was sad.
+        It's sad.
         Left there alone and forgotten.
         A fate no one deserved.
 
     ++[Go back to the shelter.]
         #speaker:
-        It was not worth it.
+        It's not worth it.
         They could fight hunger for a bit…
         But to fight against desperation…
         That was a much harder fight.
-        He turned his back and went back to the cosiness of their nest.
+        He turns his back and goes back to the cosiness of their nest.
         
     
 
 +[Talk with the others]
-    ~changeHope(1)
-    
     #speaker:
     Right now, hope was more important than fighting hunger.
     Her mother always taught him the spirit was as much important as the body.
@@ -216,6 +211,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         Nimbly he climbed unto it and sat next to Sparks.
         She was shinning her light brightly into the night.
         #speaker:Sparks #portrait:sparks_default
+        ~changeHope(1)
         Hey Mr. Tails!
         Do mice like to stare at the dark too?
         #speaker:Tails #portrait:sparks_default
@@ -262,7 +258,7 @@ Or perhaps it was best if Tails spent some time with his companions.
         {nimbus_hopeful_VS_truth == 0: ->if_hopeful_2 | ->if_truth_2}
         
     -
-~changeScene("Menu")
+~changeScene("EndDayScene")
 
 ->END
 
@@ -351,6 +347,7 @@ That way we would still be together.
 #speaker:Tails #portrait:tails_default
 Somewhere out there, someone is thinking otherwise.
 #speaker: #layout:right:nimbus_happy_m
+~changeHope(1)
 The bird gave him a proud smile.
 #speaker:Nimbus #portrait:nimbus_default #layout:right:nimbus_default_m
 Yes, for sure.
@@ -372,7 +369,7 @@ You and me both.
 #speaker:
 With a smile and a small goodbye, the woodpecker goes to lie down on a small pile of leaves.
 
-~changeScene("Menu")
+~changeScene("EndDayScene")
 
 ->DONE
 
@@ -412,6 +409,7 @@ The basic revelation weights on Nimbus’s mind.
 #layout:right:nimbus_default_m
 He then looks at Tails with more energy.
 #speaker:Nimbus #portrait:nimbus_default
+~changeHope(1)
 I will try to help.
 #speaker:Tails #portrait:tails_default
 Try is all we can do.
@@ -425,7 +423,7 @@ Want to come too?
 #speaker:Tails
 The bird confirms with a small nod, and they go back to the warmth of the shelter together.
 
-~changeScene("Menu")
+~changeScene("EndDayScene")
 
 ->DONE
 

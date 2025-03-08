@@ -21,8 +21,6 @@ His paws touch the murky sands, and he starts walking in the direction of the vi
 Sparks is still in the shell.
 
 +[Ask Sparks to go check the village.]
-    ~changeHope(1)
-
     #speaker:Tails #portrait:tails_sad
     Hey, little girl… are you alright?
     #speaker:
@@ -35,7 +33,8 @@ Sparks is still in the shell.
     I need you to go and check the village up ahead.
     To make sure it’s safe.
     With your wings, you should have a much better view than me.
-    #speaker:Sparks #layout:right:sparks_default_m 
+    #speaker:Sparks #layout:right:sparks_default_m
+    ~changeHope(1)
     O… Okay.
     #speaker: #layout:right:default
     She gets up slowly and takes off buzzing through the air, disappearing in the skies.
@@ -181,29 +180,32 @@ Or perhaps it was best if Tails spent some time with his companion.
     Death.
     
     ++[Go anyway]
-        ~changeFood(3)
         ~foundOldMan()
 
-        It was uncomfortable, but it was a necessary evil.
-        He got closer to the origin and saw a body lying on the ground, in a pool of murky red.
-        It was an old man.
+        #speaker: #layout:middle:tails_default
+        It's uncomfortable, but it's a necessary evil.
+        He gets closer to the origin and sees a body lying on the ground, in a pool of murky red.
+        It's an old man.
+        #speaker: #layout:middle:tails_sad
         With grey hair and a green bucket hat.
         He didn’t deserve that fate.
         No one did.
-        Tails washed away his eyes and climbed the cold body to reach his pocket.
-        There was a good lump of bread still edible, protected by the clothes.
-        He pulled hard and made it fall into the dirt.
-        That would feed them for another day.
+        Tails washes away his eyes and climbs the cold body to reach his pocket.
+        ~changeFood(3)
+        There's a good lump of bread still edible, protected by the clothes.
+        He pulls hard and makes it fall into the dirt.
+        That will feed them for another day.
         As he starts to drag the food back to the shelter, he takes one last look back.
-        It was sad.
+        It's sad.
         Left there alone and forgotten.
         A fate no one deserved.
     ++[Go back to the shelter]
-        It was not worth it.
+        #speaker:
+        It's not worth it.
         They could fight hunger for a bit…
         But to fight against desperation…
         That was a much harder fight.
-        He turned his back and went back to the cosiness of their nest.
+        He turns his back and goes back to the cosiness of their nest.
     --
 +[Talk with Sparks]
     #speaker: #layout:left:tails_default #layout:right:sparks_sad_m
@@ -264,8 +266,6 @@ Or perhaps it was best if Tails spent some time with his companion.
 
 === nimbusLeftBehind ===
 +[It was too risky]
-    ~changeHope(-1)
-
     #speaker:Tails #portrait:tails_sad
     It was too risky.
     We would have died there too.
@@ -296,6 +296,7 @@ Or perhaps it was best if Tails spent some time with his companion.
     We are the ones that matter, little bug.
     I had a hard choice to make, but in the end I did it for you.
     #speaker:Sparks #portrait:sparks_sad
+    ~changeHope(1)
     I know…
     I’m not mad at you for that.
     I’m just sad we can’t save everyone.
@@ -334,8 +335,6 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
 
 === nimbusDead ===
 +[It was mankind’s fault]
-    ~changeHope(-1)
-    
     #speaker:Tails #portrait:tails_sad
     We did the best we could.
     But look around you.
@@ -372,6 +371,7 @@ The mouse places a little kiss on the firefly’s forehead and goes back to the 
     Sparks tears dry up.
     She raises her eyes towards his friend.
     #speaker:Sparks #layout:right:sparks_default_m #layout:left:tails_default #portrait:sparks_default
+    ~changeHope(1)
     You’re right.
     #speaker:
     And embraces him, recovering her spirit.
