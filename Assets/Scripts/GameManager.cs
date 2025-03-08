@@ -55,13 +55,13 @@ public class GameManager : MonoBehaviour
 				while (randomNum != 0)
 				{
 					randomNum = UnityEngine.Random.Range(1, 3);
-					if(_gs.wenttoFindNimbus == false && randomNum == 1)
+					if(_gs.wenttoFindNimbus == false && randomNum == 1 && _gs.NimbusSaved)
 					{
 						_gs.wenttoFindNimbus = true;
 						_gs.cityDecision = 1;
 						break;
 					}
-					else if(_gs.wenttoFindOak == false && randomNum == 2)
+					else if(_gs.wenttoFindOak == false && randomNum == 2 && _gs.OakSaved)
 					{
 						_gs.wenttoFindOak = true;
 						_gs.cityDecision = 2;
